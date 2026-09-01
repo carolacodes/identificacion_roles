@@ -1,0 +1,4 @@
+gliner2[local]
+gliner
+PyYAML
+pytest

@@ -1,0 +1,338 @@
+{
+  "configuracion": {
+    "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+    "schema": "schema_v3_persona_structured",
+    "threshold": 0.65,
+    "cantidad_documentos_dataset_documentos": 80,
+    "cantidad_documentos_dataset_fragmentos": 80,
+    "cantidad_documentos_comparados": 80,
+    "cantidad_fragmentos": 235,
+    "ids_solo_documentos": [],
+    "ids_solo_fragmentos": [],
+    "ids_comunes": [
+      "494151",
+      "494160",
+      "495011",
+      "495014",
+      "495683",
+      "495686",
+      "495690",
+      "498352",
+      "501201",
+      "501211",
+      "501696",
+      "503810",
+      "503824",
+      "507931",
+      "507932",
+      "513482",
+      "513487",
+      "513551",
+      "514558",
+      "516901",
+      "516903",
+      "516904",
+      "518796",
+      "522290",
+      "523977",
+      "523990",
+      "523996",
+      "524013",
+      "524053",
+      "524057",
+      "525055",
+      "526651",
+      "529383",
+      "529783",
+      "529847",
+      "531066",
+      "531075",
+      "531094",
+      "532501",
+      "534526",
+      "535814",
+      "535837",
+      "535845",
+      "536705",
+      "536707",
+      "536715",
+      "536718",
+      "536721",
+      "536724",
+      "536725",
+      "536728",
+      "536730",
+      "536738",
+      "536739",
+      "536741",
+      "536742",
+      "536750",
+      "538037",
+      "538066",
+      "538081",
+      "538084",
+      "538090",
+      "538114",
+      "538118",
+      "538119",
+      "538120",
+      "538122",
+      "542996",
+      "543609",
+      "543631",
+      "546236",
+      "546238",
+      "546314",
+      "546332",
+      "546334",
+      "547366",
+      "547369",
+      "547372",
+      "547373",
+      "547376"
+    ]
+  },
+  "cobertura_documentos_completos": {
+    "total_documentos": 80,
+    "documentos_con_alguna_deteccion": {
+      "cantidad": 76,
+      "porcentaje": 95.0
+    },
+    "documentos_con_nombre": {
+      "cantidad": 36,
+      "porcentaje": 45.0
+    },
+    "documentos_con_dni": {
+      "cantidad": 70,
+      "porcentaje": 87.5
+    },
+    "documentos_con_cuil_cuit": {
+      "cantidad": 39,
+      "porcentaje": 48.75
+    },
+    "documentos_no_detectados": {
+      "cantidad": 4,
+      "porcentaje": 5.0
+    },
+    "documentos_multiples_candidatos": {
+      "cantidad": 1,
+      "porcentaje": 1.25
+    }
+  },
+  "cobertura_fragmentos_por_documento": {
+    "total_documentos": 80,
+    "total_fragmentos": 235,
+    "documentos_con_alguna_deteccion": {
+      "cantidad": 68,
+      "porcentaje": 85.0
+    },
+    "documentos_con_nombre": {
+      "cantidad": 66,
+      "porcentaje": 82.5
+    },
+    "documentos_con_dni": {
+      "cantidad": 52,
+      "porcentaje": 65.0
+    },
+    "documentos_con_cuil_cuit": {
+      "cantidad": 17,
+      "porcentaje": 21.25
+    },
+    "documentos_sin_deteccion_en_ningun_fragmento": {
+      "cantidad": 12,
+      "porcentaje": 15.0
+    },
+    "documentos_con_multiples_nombres_distintos": {
+      "cantidad": 15,
+      "porcentaje": 18.75
+    },
+    "documentos_con_multiples_dni_distintos": {
+      "cantidad": 1,
+      "porcentaje": 1.25
+    },
+    "documentos_con_multiples_cuil_cuit_distintos": {
+      "cantidad": 1,
+      "porcentaje": 1.25
+    }
+  },
+  "agreement_entre_modos": {
+    "acuerdo_nombre_count": 17,
+    "acuerdo_nombre_denominador": 30,
+    "acuerdo_nombre_pct": 56.6667,
+    "acuerdo_dni_count": 46,
+    "acuerdo_dni_denominador": 49,
+    "acuerdo_dni_pct": 93.8776,
+    "acuerdo_cuil_cuit_count": 11,
+    "acuerdo_cuil_cuit_denominador": 13,
+    "acuerdo_cuil_cuit_pct": 84.6154
+  },
+  "deteccion_exclusiva": {
+    "total_documentos_comparados": 80,
+    "nombre": {
+      "solo_documento": {
+        "cantidad": 6,
+        "porcentaje": 7.5
+      },
+      "solo_fragmentos": {
+        "cantidad": 36,
+        "porcentaje": 45.0
+      },
+      "ambos": {
+        "cantidad": 30,
+        "porcentaje": 37.5
+      },
+      "ninguno": {
+        "cantidad": 8,
+        "porcentaje": 10.0
+      }
+    },
+    "dni": {
+      "solo_documento": {
+        "cantidad": 21,
+        "porcentaje": 26.25
+      },
+      "solo_fragmentos": {
+        "cantidad": 3,
+        "porcentaje": 3.75
+      },
+      "ambos": {
+        "cantidad": 49,
+        "porcentaje": 61.25
+      },
+      "ninguno": {
+        "cantidad": 7,
+        "porcentaje": 8.75
+      }
+    },
+    "cuil_cuit": {
+      "solo_documento": {
+        "cantidad": 26,
+        "porcentaje": 32.5
+      },
+      "solo_fragmentos": {
+        "cantidad": 4,
+        "porcentaje": 5.0
+      },
+      "ambos": {
+        "cantidad": 13,
+        "porcentaje": 16.25
+      },
+      "ninguno": {
+        "cantidad": 37,
+        "porcentaje": 46.25
+      }
+    }
+  },
+  "ambiguedad_fragmentos": {
+    "nombre": {
+      "0_unicos": {
+        "cantidad": 14,
+        "porcentaje": 17.5
+      },
+      "1_unico": {
+        "cantidad": 51,
+        "porcentaje": 63.75
+      },
+      "mas_de_1_unico": {
+        "cantidad": 15,
+        "porcentaje": 18.75
+      }
+    },
+    "dni": {
+      "0_unicos": {
+        "cantidad": 28,
+        "porcentaje": 35.0
+      },
+      "1_unico": {
+        "cantidad": 51,
+        "porcentaje": 63.75
+      },
+      "mas_de_1_unico": {
+        "cantidad": 1,
+        "porcentaje": 1.25
+      }
+    },
+    "cuil_cuit": {
+      "0_unicos": {
+        "cantidad": 63,
+        "porcentaje": 78.75
+      },
+      "1_unico": {
+        "cantidad": 16,
+        "porcentaje": 20.0
+      },
+      "mas_de_1_unico": {
+        "cantidad": 1,
+        "porcentaje": 1.25
+      }
+    }
+  },
+  "confidence": {
+    "documentos": {
+      "nombre_confidence": {
+        "media": 0.7773723420169618,
+        "mediana": 0.7781110405921936,
+        "minimo": 0.6503080129623413,
+        "maximo": 0.9175178408622742
+      },
+      "dni_confidence": {
+        "media": 0.9364786148071289,
+        "mediana": 0.9661133289337158,
+        "minimo": 0.6861831545829773,
+        "maximo": 0.9999150037765503
+      },
+      "cuil_cuit_confidence": {
+        "media": 0.8458884113874191,
+        "mediana": 0.8684840798377991,
+        "minimo": 0.6538264155387878,
+        "maximo": 0.9746488928794861
+      }
+    },
+    "fragmentos": {
+      "nombre_confidence_max_por_documento": {
+        "media": 0.8943962635415973,
+        "mediana": 0.9138362407684326,
+        "minimo": 0.682222306728363,
+        "maximo": 0.9924934506416321
+      },
+      "nombre_confidence_media_por_documento": {
+        "media": 0.8710463181890623,
+        "mediana": 0.8778258512417476,
+        "minimo": 0.682222306728363,
+        "maximo": 0.984761118888855
+      },
+      "dni_confidence_max_por_documento": {
+        "media": 0.9760804967238352,
+        "mediana": 0.9918588399887085,
+        "minimo": 0.813862681388855,
+        "maximo": 0.9999266862869263
+      },
+      "dni_confidence_media_por_documento": {
+        "media": 0.9728111646878413,
+        "mediana": 0.9899305800596874,
+        "minimo": 0.813862681388855,
+        "maximo": 0.9989816546440125
+      },
+      "cuil_cuit_confidence_max_por_documento": {
+        "media": 0.8395796032512889,
+        "mediana": 0.8411879539489746,
+        "minimo": 0.6690171957015991,
+        "maximo": 0.9900805354118347
+      },
+      "cuil_cuit_confidence_media_por_documento": {
+        "media": 0.8302939779618207,
+        "mediana": 0.8175317645072937,
+        "minimo": 0.6690171957015991,
+        "maximo": 0.977335512638092
+      }
+    }
+  },
+  "rendimiento": {
+    "tiempo_total_documentos": 872.277,
+    "tiempo_total_fragmentos": 164.663,
+    "segundos_por_documento_documentos": 10.9034625,
+    "segundos_por_documento_fragmentos": 2.0582875,
+    "segundos_por_fragmento": 0.7006936170212766,
+    "speedup_fragmentos_vs_documentos": 5.29734670205207
+  }
+}

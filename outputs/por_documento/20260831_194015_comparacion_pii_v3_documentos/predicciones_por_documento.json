@@ -1,0 +1,6197 @@
+[
+  {
+    "id": "538118",
+    "numero_archivo": "1",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "NAHUEL OSCAR MARQUEZ",
+            "fields": {
+              "nombre": {
+                "text": "NAHUEL OSCAR MARQUEZ",
+                "confidence": 0.8556088209152222,
+                "start": 3852,
+                "end": 3872
+              },
+              "dni": {
+                "text": "33.470.065",
+                "confidence": 0.968622624874115,
+                "start": 1750,
+                "end": 1760
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "NAHUEL OSCAR MARQUEZ",
+            "dni": "33.470.065",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.8556088209152222,
+            "dni_confidence": 0.968622624874115,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 3852,
+            "nombre_span_fin": 3872,
+            "dni_span_inicio": 1750,
+            "dni_span_fin": 1760,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.8556088209152222,
+            "span_inicio": 3852,
+            "span_fin": 3872
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "NAHUEL OSCAR MARQUEZ",
+                "confidence": 0.8556088209152222,
+                "start": 3852,
+                "end": 3872
+              },
+              "dni": {
+                "text": "33.470.065",
+                "confidence": 0.968622624874115,
+                "start": 1750,
+                "end": 1760
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "538084",
+    "numero_archivo": "2",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "32.630.518",
+                "confidence": 0.8661728501319885,
+                "start": 3102,
+                "end": 3112
+              },
+              "cuil_cuit": {
+                "text": "20203135239",
+                "confidence": 0.6898655891418457,
+                "start": 5901,
+                "end": 5912
+              }
+            },
+            "nombre": null,
+            "dni": "32.630.518",
+            "cuil_cuit": "20203135239",
+            "nombre_confidence": null,
+            "dni_confidence": 0.8661728501319885,
+            "cuil_cuit_confidence": 0.6898655891418457,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 3102,
+            "dni_span_fin": 3112,
+            "cuil_cuit_span_inicio": 5901,
+            "cuil_cuit_span_fin": 5912,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "32.630.518",
+                "confidence": 0.8661728501319885,
+                "start": 3102,
+                "end": 3112
+              },
+              "cuil_cuit": {
+                "text": "20203135239",
+                "confidence": 0.6898655891418457,
+                "start": 5901,
+                "end": 5912
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "495011",
+    "numero_archivo": "3",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "34.436.998",
+                "confidence": 0.9736673831939697,
+                "start": 2658,
+                "end": 2668
+              },
+              "cuil_cuit": {
+                "text": "20-34436998-5",
+                "confidence": 0.9683918356895447,
+                "start": 2674,
+                "end": 2687
+              }
+            },
+            "nombre": null,
+            "dni": "34.436.998",
+            "cuil_cuit": "20-34436998-5",
+            "nombre_confidence": null,
+            "dni_confidence": 0.9736673831939697,
+            "cuil_cuit_confidence": 0.9683918356895447,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 2658,
+            "dni_span_fin": 2668,
+            "cuil_cuit_span_inicio": 2674,
+            "cuil_cuit_span_fin": 2687,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "34.436.998",
+                "confidence": 0.9736673831939697,
+                "start": 2658,
+                "end": 2668
+              },
+              "cuil_cuit": {
+                "text": "20-34436998-5",
+                "confidence": 0.9683918356895447,
+                "start": 2674,
+                "end": 2687
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "534526",
+    "numero_archivo": "4",
+    "nombre": "Embargo - Empleado",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "40770662",
+                "confidence": 0.9360331296920776,
+                "start": 2453,
+                "end": 2461
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "40770662",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.9360331296920776,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 2453,
+            "dni_span_fin": 2461,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "40770662",
+                "confidence": 0.9360331296920776,
+                "start": 2453,
+                "end": 2461
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "542996",
+    "numero_archivo": "5",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "CHIAMINO WALTER RICARDO",
+            "fields": {
+              "nombre": {
+                "text": "CHIAMINO WALTER RICARDO",
+                "confidence": 0.7118203043937683,
+                "start": 312,
+                "end": 335
+              },
+              "dni": {
+                "text": "6551699",
+                "confidence": 0.958569347858429,
+                "start": 2133,
+                "end": 2140
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "CHIAMINO WALTER RICARDO",
+            "dni": "6551699",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.7118203043937683,
+            "dni_confidence": 0.958569347858429,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 312,
+            "nombre_span_fin": 335,
+            "dni_span_inicio": 2133,
+            "dni_span_fin": 2140,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.7118203043937683,
+            "span_inicio": 312,
+            "span_fin": 335
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "CHIAMINO WALTER RICARDO",
+                "confidence": 0.7118203043937683,
+                "start": 312,
+                "end": 335
+              },
+              "dni": {
+                "text": "6551699",
+                "confidence": 0.958569347858429,
+                "start": 2133,
+                "end": 2140
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "538081",
+    "numero_archivo": "6",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "27.164.468",
+                "confidence": 0.8969293236732483,
+                "start": 3183,
+                "end": 3193
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "27.164.468",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.8969293236732483,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 3183,
+            "dni_span_fin": 3193,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "27.164.468",
+                "confidence": 0.8969293236732483,
+                "start": 3183,
+                "end": 3193
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "524057",
+    "numero_archivo": "7",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "29178884",
+                "confidence": 0.9256709814071655,
+                "start": 1624,
+                "end": 1632
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "29178884",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.9256709814071655,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1624,
+            "dni_span_fin": 1632,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "29178884",
+                "confidence": 0.9256709814071655,
+                "start": 1624,
+                "end": 1632
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536725",
+    "numero_archivo": "8",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "MIGUEL ANGEL SEGOVIA",
+            "fields": {
+              "nombre": {
+                "text": "MIGUEL ANGEL SEGOVIA",
+                "confidence": 0.7859214544296265,
+                "start": 2602,
+                "end": 2622
+              },
+              "dni": {
+                "text": "36003333",
+                "confidence": 0.9995445609092712,
+                "start": 2628,
+                "end": 2636
+              },
+              "cuil_cuit": {
+                "text": "20360033334",
+                "confidence": 0.9302746057510376,
+                "start": 2650,
+                "end": 2661
+              }
+            },
+            "nombre": "MIGUEL ANGEL SEGOVIA",
+            "dni": "36003333",
+            "cuil_cuit": "20360033334",
+            "nombre_confidence": 0.7859214544296265,
+            "dni_confidence": 0.9995445609092712,
+            "cuil_cuit_confidence": 0.9302746057510376,
+            "nombre_span_inicio": 2602,
+            "nombre_span_fin": 2622,
+            "dni_span_inicio": 2628,
+            "dni_span_fin": 2636,
+            "cuil_cuit_span_inicio": 2650,
+            "cuil_cuit_span_fin": 2661,
+            "confidence": 0.7859214544296265,
+            "span_inicio": 2602,
+            "span_fin": 2622
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "MIGUEL ANGEL SEGOVIA",
+                "confidence": 0.7859214544296265,
+                "start": 2602,
+                "end": 2622
+              },
+              "dni": {
+                "text": "36003333",
+                "confidence": 0.9995445609092712,
+                "start": 2628,
+                "end": 2636
+              },
+              "cuil_cuit": {
+                "text": "20360033334",
+                "confidence": 0.9302746057510376,
+                "start": 2650,
+                "end": 2661
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536741",
+    "numero_archivo": "9",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "Marcelo Finvarb",
+            "fields": {
+              "nombre": {
+                "text": "Marcelo Finvarb",
+                "confidence": 0.6945810914039612,
+                "start": 1917,
+                "end": 1932
+              },
+              "dni": {
+                "text": "21773000",
+                "confidence": 0.9830198884010315,
+                "start": 995,
+                "end": 1003
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "Marcelo Finvarb",
+            "dni": "21773000",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.6945810914039612,
+            "dni_confidence": 0.9830198884010315,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 1917,
+            "nombre_span_fin": 1932,
+            "dni_span_inicio": 995,
+            "dni_span_fin": 1003,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.6945810914039612,
+            "span_inicio": 1917,
+            "span_fin": 1932
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "Marcelo Finvarb",
+                "confidence": 0.6945810914039612,
+                "start": 1917,
+                "end": 1932
+              },
+              "dni": {
+                "text": "21773000",
+                "confidence": 0.9830198884010315,
+                "start": 995,
+                "end": 1003
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "524053",
+    "numero_archivo": "10",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "cuil_cuit": {
+                "text": "30-71606862-1",
+                "confidence": 0.7090186476707458,
+                "start": 2742,
+                "end": 2755
+              }
+            },
+            "nombre": null,
+            "dni": null,
+            "cuil_cuit": "30-71606862-1",
+            "nombre_confidence": null,
+            "dni_confidence": null,
+            "cuil_cuit_confidence": 0.7090186476707458,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": null,
+            "dni_span_fin": null,
+            "cuil_cuit_span_inicio": 2742,
+            "cuil_cuit_span_fin": 2755,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": null,
+              "cuil_cuit": {
+                "text": "30-71606862-1",
+                "confidence": 0.7090186476707458,
+                "start": 2742,
+                "end": 2755
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "546314",
+    "numero_archivo": "11",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "SANCHEZ Walter Mariano",
+            "fields": {
+              "nombre": {
+                "text": "SANCHEZ Walter Mariano",
+                "confidence": 0.6862266063690186,
+                "start": 161,
+                "end": 183
+              },
+              "dni": {
+                "text": "31973182",
+                "confidence": 0.9949886202812195,
+                "start": 2881,
+                "end": 2889
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.6810193657875061,
+                "start": 2391,
+                "end": 2404
+              }
+            },
+            "nombre": "SANCHEZ Walter Mariano",
+            "dni": "31973182",
+            "cuil_cuit": "30-70721665-0",
+            "nombre_confidence": 0.6862266063690186,
+            "dni_confidence": 0.9949886202812195,
+            "cuil_cuit_confidence": 0.6810193657875061,
+            "nombre_span_inicio": 161,
+            "nombre_span_fin": 183,
+            "dni_span_inicio": 2881,
+            "dni_span_fin": 2889,
+            "cuil_cuit_span_inicio": 2391,
+            "cuil_cuit_span_fin": 2404,
+            "confidence": 0.6862266063690186,
+            "span_inicio": 161,
+            "span_fin": 183
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "SANCHEZ Walter Mariano",
+                "confidence": 0.6862266063690186,
+                "start": 161,
+                "end": 183
+              },
+              "dni": {
+                "text": "31973182",
+                "confidence": 0.9949886202812195,
+                "start": 2881,
+                "end": 2889
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.6810193657875061,
+                "start": 2391,
+                "end": 2404
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "529383",
+    "numero_archivo": "12",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "34418062",
+                "confidence": 0.7547715306282043,
+                "start": 2385,
+                "end": 2393
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "34418062",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.7547715306282043,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 2385,
+            "dni_span_fin": 2393,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "34418062",
+                "confidence": 0.7547715306282043,
+                "start": 2385,
+                "end": 2393
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "538122",
+    "numero_archivo": "13",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "23.360.827",
+                "confidence": 0.8477295637130737,
+                "start": 1749,
+                "end": 1759
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.7009745836257935,
+                "start": 2658,
+                "end": 2671
+              }
+            },
+            "nombre": null,
+            "dni": "23.360.827",
+            "cuil_cuit": "30-70721665-0",
+            "nombre_confidence": null,
+            "dni_confidence": 0.8477295637130737,
+            "cuil_cuit_confidence": 0.7009745836257935,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1749,
+            "dni_span_fin": 1759,
+            "cuil_cuit_span_inicio": 2658,
+            "cuil_cuit_span_fin": 2671,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "23.360.827",
+                "confidence": 0.8477295637130737,
+                "start": 1749,
+                "end": 1759
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.7009745836257935,
+                "start": 2658,
+                "end": 2671
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536721",
+    "numero_archivo": "14",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "MIGUEL MARCELO MEDINA",
+            "fields": {
+              "nombre": {
+                "text": "MIGUEL MARCELO MEDINA",
+                "confidence": 0.7362486124038696,
+                "start": 1554,
+                "end": 1575
+              },
+              "dni": {
+                "text": "16269506",
+                "confidence": 0.9992861151695251,
+                "start": 2642,
+                "end": 2650
+              },
+              "cuil_cuit": {
+                "text": "20162695062",
+                "confidence": 0.9746488928794861,
+                "start": 2664,
+                "end": 2675
+              }
+            },
+            "nombre": "MIGUEL MARCELO MEDINA",
+            "dni": "16269506",
+            "cuil_cuit": "20162695062",
+            "nombre_confidence": 0.7362486124038696,
+            "dni_confidence": 0.9992861151695251,
+            "cuil_cuit_confidence": 0.9746488928794861,
+            "nombre_span_inicio": 1554,
+            "nombre_span_fin": 1575,
+            "dni_span_inicio": 2642,
+            "dni_span_fin": 2650,
+            "cuil_cuit_span_inicio": 2664,
+            "cuil_cuit_span_fin": 2675,
+            "confidence": 0.7362486124038696,
+            "span_inicio": 1554,
+            "span_fin": 1575
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "MIGUEL MARCELO MEDINA",
+                "confidence": 0.7362486124038696,
+                "start": 1554,
+                "end": 1575
+              },
+              "dni": {
+                "text": "16269506",
+                "confidence": 0.9992861151695251,
+                "start": 2642,
+                "end": 2650
+              },
+              "cuil_cuit": {
+                "text": "20162695062",
+                "confidence": 0.9746488928794861,
+                "start": 2664,
+                "end": 2675
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "516904",
+    "numero_archivo": "15",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "no_detectado",
+        "candidates": [],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "546236",
+    "numero_archivo": "16",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "AURELIO RODOLFO\r\nMELGAREJO",
+            "fields": {
+              "nombre": {
+                "text": "AURELIO RODOLFO\r\nMELGAREJO",
+                "confidence": 0.7106136679649353,
+                "start": 1191,
+                "end": 1217
+              },
+              "dni": {
+                "text": "13273828",
+                "confidence": 0.9914646744728088,
+                "start": 1227,
+                "end": 1235
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "AURELIO RODOLFO\r\nMELGAREJO",
+            "dni": "13273828",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.7106136679649353,
+            "dni_confidence": 0.9914646744728088,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 1191,
+            "nombre_span_fin": 1217,
+            "dni_span_inicio": 1227,
+            "dni_span_fin": 1235,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.7106136679649353,
+            "span_inicio": 1191,
+            "span_fin": 1217
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "AURELIO RODOLFO\r\nMELGAREJO",
+                "confidence": 0.7106136679649353,
+                "start": 1191,
+                "end": 1217
+              },
+              "dni": {
+                "text": "13273828",
+                "confidence": 0.9914646744728088,
+                "start": 1227,
+                "end": 1235
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "546332",
+    "numero_archivo": "17",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "VALERIA ALEJANDRA JIMENEZ",
+            "fields": {
+              "nombre": {
+                "text": "VALERIA ALEJANDRA JIMENEZ",
+                "confidence": 0.7754160761833191,
+                "start": 2205,
+                "end": 2230
+              },
+              "dni": {
+                "text": "29231660",
+                "confidence": 0.9999150037765503,
+                "start": 1801,
+                "end": 1809
+              },
+              "cuil_cuit": {
+                "text": "27-29231660-2",
+                "confidence": 0.9208183288574219,
+                "start": 2252,
+                "end": 2265
+              }
+            },
+            "nombre": "VALERIA ALEJANDRA JIMENEZ",
+            "dni": "29231660",
+            "cuil_cuit": "27-29231660-2",
+            "nombre_confidence": 0.7754160761833191,
+            "dni_confidence": 0.9999150037765503,
+            "cuil_cuit_confidence": 0.9208183288574219,
+            "nombre_span_inicio": 2205,
+            "nombre_span_fin": 2230,
+            "dni_span_inicio": 1801,
+            "dni_span_fin": 1809,
+            "cuil_cuit_span_inicio": 2252,
+            "cuil_cuit_span_fin": 2265,
+            "confidence": 0.7754160761833191,
+            "span_inicio": 2205,
+            "span_fin": 2230
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "VALERIA ALEJANDRA JIMENEZ",
+                "confidence": 0.7754160761833191,
+                "start": 2205,
+                "end": 2230
+              },
+              "dni": {
+                "text": "29231660",
+                "confidence": 0.9999150037765503,
+                "start": 1801,
+                "end": 1809
+              },
+              "cuil_cuit": {
+                "text": "27-29231660-2",
+                "confidence": 0.9208183288574219,
+                "start": 2252,
+                "end": 2265
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "538119",
+    "numero_archivo": "18",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "Sandra Fabiana Ávila",
+            "fields": {
+              "nombre": {
+                "text": "Sandra Fabiana Ávila",
+                "confidence": 0.8703386783599854,
+                "start": 4514,
+                "end": 4534
+              },
+              "dni": {
+                "text": "44.398.455",
+                "confidence": 0.9941669702529907,
+                "start": 1688,
+                "end": 1698
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "Sandra Fabiana Ávila",
+            "dni": "44.398.455",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.8703386783599854,
+            "dni_confidence": 0.9941669702529907,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 4514,
+            "nombre_span_fin": 4534,
+            "dni_span_inicio": 1688,
+            "dni_span_fin": 1698,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.8703386783599854,
+            "span_inicio": 4514,
+            "span_fin": 4534
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "Sandra Fabiana Ávila",
+                "confidence": 0.8703386783599854,
+                "start": 4514,
+                "end": 4534
+              },
+              "dni": {
+                "text": "44.398.455",
+                "confidence": 0.9941669702529907,
+                "start": 1688,
+                "end": 1698
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "501696",
+    "numero_archivo": "19",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "39.872.112",
+                "confidence": 0.998661994934082,
+                "start": 1023,
+                "end": 1033
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "39.872.112",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.998661994934082,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1023,
+            "dni_span_fin": 1033,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "39.872.112",
+                "confidence": 0.998661994934082,
+                "start": 1023,
+                "end": 1033
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536705",
+    "numero_archivo": "20",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "CARLOS ROBERTO SOLOHAGA",
+            "fields": {
+              "nombre": {
+                "text": "CARLOS ROBERTO SOLOHAGA",
+                "confidence": 0.8518340587615967,
+                "start": 2292,
+                "end": 2315
+              },
+              "dni": {
+                "text": "17.516.617",
+                "confidence": 0.9462919235229492,
+                "start": 2321,
+                "end": 2331
+              },
+              "cuil_cuit": {
+                "text": "30-99913926-0",
+                "confidence": 0.8869199752807617,
+                "start": 4262,
+                "end": 4275
+              }
+            },
+            "nombre": "CARLOS ROBERTO SOLOHAGA",
+            "dni": "17.516.617",
+            "cuil_cuit": "30-99913926-0",
+            "nombre_confidence": 0.8518340587615967,
+            "dni_confidence": 0.9462919235229492,
+            "cuil_cuit_confidence": 0.8869199752807617,
+            "nombre_span_inicio": 2292,
+            "nombre_span_fin": 2315,
+            "dni_span_inicio": 2321,
+            "dni_span_fin": 2331,
+            "cuil_cuit_span_inicio": 4262,
+            "cuil_cuit_span_fin": 4275,
+            "confidence": 0.8518340587615967,
+            "span_inicio": 2292,
+            "span_fin": 2315
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "CARLOS ROBERTO SOLOHAGA",
+                "confidence": 0.8518340587615967,
+                "start": 2292,
+                "end": 2315
+              },
+              "dni": {
+                "text": "17.516.617",
+                "confidence": 0.9462919235229492,
+                "start": 2321,
+                "end": 2331
+              },
+              "cuil_cuit": {
+                "text": "30-99913926-0",
+                "confidence": 0.8869199752807617,
+                "start": 4262,
+                "end": 4275
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "535845",
+    "numero_archivo": "21",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "multiples_candidatos",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "HORACIO OSCAR\r\n\r\nNUÑEZ",
+            "fields": {
+              "nombre": {
+                "text": "HORACIO OSCAR\r\n\r\nNUÑEZ",
+                "confidence": 0.908163845539093,
+                "start": 1729,
+                "end": 1751
+              },
+              "dni": {
+                "text": "26592524",
+                "confidence": 0.9969542026519775,
+                "start": 1756,
+                "end": 1764
+              },
+              "cuil_cuit": {
+                "text": "20-26592524-4",
+                "confidence": 0.8324031233787537,
+                "start": 1770,
+                "end": 1783
+              }
+            },
+            "nombre": "HORACIO OSCAR\r\n\r\nNUÑEZ",
+            "dni": "26592524",
+            "cuil_cuit": "20-26592524-4",
+            "nombre_confidence": 0.908163845539093,
+            "dni_confidence": 0.9969542026519775,
+            "cuil_cuit_confidence": 0.8324031233787537,
+            "nombre_span_inicio": 1729,
+            "nombre_span_fin": 1751,
+            "dni_span_inicio": 1756,
+            "dni_span_fin": 1764,
+            "cuil_cuit_span_inicio": 1770,
+            "cuil_cuit_span_fin": 1783,
+            "confidence": 0.908163845539093,
+            "span_inicio": 1729,
+            "span_fin": 1751
+          },
+          {
+            "tipo": "persona_embargada",
+            "valor": "MIRTA EDITH BONACALZA",
+            "fields": {
+              "nombre": {
+                "text": "MIRTA EDITH BONACALZA",
+                "confidence": 0.9110963344573975,
+                "start": 1786,
+                "end": 1807
+              },
+              "dni": {
+                "text": "24846229",
+                "confidence": 0.9322096705436707,
+                "start": 1865,
+                "end": 1873
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "MIRTA EDITH BONACALZA",
+            "dni": "24846229",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.9110963344573975,
+            "dni_confidence": 0.9322096705436707,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 1786,
+            "nombre_span_fin": 1807,
+            "dni_span_inicio": 1865,
+            "dni_span_fin": 1873,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.9110963344573975,
+            "span_inicio": 1786,
+            "span_fin": 1807
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "HORACIO OSCAR\r\n\r\nNUÑEZ",
+                "confidence": 0.908163845539093,
+                "start": 1729,
+                "end": 1751
+              },
+              "dni": {
+                "text": "26592524",
+                "confidence": 0.9969542026519775,
+                "start": 1756,
+                "end": 1764
+              },
+              "cuil_cuit": {
+                "text": "20-26592524-4",
+                "confidence": 0.8324031233787537,
+                "start": 1770,
+                "end": 1783
+              }
+            },
+            {
+              "nombre": {
+                "text": "MIRTA EDITH BONACALZA",
+                "confidence": 0.9110963344573975,
+                "start": 1786,
+                "end": 1807
+              },
+              "dni": {
+                "text": "24846229",
+                "confidence": 0.9322096705436707,
+                "start": 1865,
+                "end": 1873
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536718",
+    "numero_archivo": "22",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "14.748.434",
+                "confidence": 0.9438323378562927,
+                "start": 2760,
+                "end": 2770
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.9227171540260315,
+                "start": 2218,
+                "end": 2231
+              }
+            },
+            "nombre": null,
+            "dni": "14.748.434",
+            "cuil_cuit": "30-70721665-0",
+            "nombre_confidence": null,
+            "dni_confidence": 0.9438323378562927,
+            "cuil_cuit_confidence": 0.9227171540260315,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 2760,
+            "dni_span_fin": 2770,
+            "cuil_cuit_span_inicio": 2218,
+            "cuil_cuit_span_fin": 2231,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "14.748.434",
+                "confidence": 0.9438323378562927,
+                "start": 2760,
+                "end": 2770
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.9227171540260315,
+                "start": 2218,
+                "end": 2231
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536742",
+    "numero_archivo": "23",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "Marcelo Finvarb",
+            "fields": {
+              "nombre": {
+                "text": "Marcelo Finvarb",
+                "confidence": 0.8511442542076111,
+                "start": 1890,
+                "end": 1905
+              },
+              "dni": {
+                "text": "10533729",
+                "confidence": 0.9759051203727722,
+                "start": 1035,
+                "end": 1043
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "Marcelo Finvarb",
+            "dni": "10533729",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.8511442542076111,
+            "dni_confidence": 0.9759051203727722,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 1890,
+            "nombre_span_fin": 1905,
+            "dni_span_inicio": 1035,
+            "dni_span_fin": 1043,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.8511442542076111,
+            "span_inicio": 1890,
+            "span_fin": 1905
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "Marcelo Finvarb",
+                "confidence": 0.8511442542076111,
+                "start": 1890,
+                "end": 1905
+              },
+              "dni": {
+                "text": "10533729",
+                "confidence": 0.9759051203727722,
+                "start": 1035,
+                "end": 1043
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "535814",
+    "numero_archivo": "24",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "Nancy Mariela Benedetti",
+            "fields": {
+              "nombre": {
+                "text": "Nancy Mariela Benedetti",
+                "confidence": 0.7914751768112183,
+                "start": 2253,
+                "end": 2276
+              },
+              "dni": {
+                "text": "25.688.264",
+                "confidence": 0.9364954233169556,
+                "start": 1522,
+                "end": 1532
+              },
+              "cuil_cuit": {
+                "text": "33-71862856-9",
+                "confidence": 0.895415723323822,
+                "start": 3311,
+                "end": 3324
+              }
+            },
+            "nombre": "Nancy Mariela Benedetti",
+            "dni": "25.688.264",
+            "cuil_cuit": "33-71862856-9",
+            "nombre_confidence": 0.7914751768112183,
+            "dni_confidence": 0.9364954233169556,
+            "cuil_cuit_confidence": 0.895415723323822,
+            "nombre_span_inicio": 2253,
+            "nombre_span_fin": 2276,
+            "dni_span_inicio": 1522,
+            "dni_span_fin": 1532,
+            "cuil_cuit_span_inicio": 3311,
+            "cuil_cuit_span_fin": 3324,
+            "confidence": 0.7914751768112183,
+            "span_inicio": 2253,
+            "span_fin": 2276
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "Nancy Mariela Benedetti",
+                "confidence": 0.7914751768112183,
+                "start": 2253,
+                "end": 2276
+              },
+              "dni": {
+                "text": "25.688.264",
+                "confidence": 0.9364954233169556,
+                "start": 1522,
+                "end": 1532
+              },
+              "cuil_cuit": {
+                "text": "33-71862856-9",
+                "confidence": 0.895415723323822,
+                "start": 3311,
+                "end": 3324
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "518796",
+    "numero_archivo": "25",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "LEONARDO GABRIEL",
+            "fields": {
+              "nombre": {
+                "text": "LEONARDO GABRIEL",
+                "confidence": 0.6608619093894958,
+                "start": 3137,
+                "end": 3153
+              },
+              "dni": {
+                "text": "28.731.512",
+                "confidence": 0.9875164031982422,
+                "start": 3160,
+                "end": 3170
+              },
+              "cuil_cuit": {
+                "text": "20-28731512-1",
+                "confidence": 0.7987378239631653,
+                "start": 3178,
+                "end": 3191
+              }
+            },
+            "nombre": "LEONARDO GABRIEL",
+            "dni": "28.731.512",
+            "cuil_cuit": "20-28731512-1",
+            "nombre_confidence": 0.6608619093894958,
+            "dni_confidence": 0.9875164031982422,
+            "cuil_cuit_confidence": 0.7987378239631653,
+            "nombre_span_inicio": 3137,
+            "nombre_span_fin": 3153,
+            "dni_span_inicio": 3160,
+            "dni_span_fin": 3170,
+            "cuil_cuit_span_inicio": 3178,
+            "cuil_cuit_span_fin": 3191,
+            "confidence": 0.6608619093894958,
+            "span_inicio": 3137,
+            "span_fin": 3153
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "LEONARDO GABRIEL",
+                "confidence": 0.6608619093894958,
+                "start": 3137,
+                "end": 3153
+              },
+              "dni": {
+                "text": "28.731.512",
+                "confidence": 0.9875164031982422,
+                "start": 3160,
+                "end": 3170
+              },
+              "cuil_cuit": {
+                "text": "20-28731512-1",
+                "confidence": 0.7987378239631653,
+                "start": 3178,
+                "end": 3191
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "495683",
+    "numero_archivo": "26",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "31.095.679",
+                "confidence": 0.9561314582824707,
+                "start": 1105,
+                "end": 1115
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.9052594900131226,
+                "start": 1402,
+                "end": 1415
+              }
+            },
+            "nombre": null,
+            "dni": "31.095.679",
+            "cuil_cuit": "30-70721665-0",
+            "nombre_confidence": null,
+            "dni_confidence": 0.9561314582824707,
+            "cuil_cuit_confidence": 0.9052594900131226,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1105,
+            "dni_span_fin": 1115,
+            "cuil_cuit_span_inicio": 1402,
+            "cuil_cuit_span_fin": 1415,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "31.095.679",
+                "confidence": 0.9561314582824707,
+                "start": 1105,
+                "end": 1115
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.9052594900131226,
+                "start": 1402,
+                "end": 1415
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "516903",
+    "numero_archivo": "27",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "27680733",
+                "confidence": 0.9994943141937256,
+                "start": 1099,
+                "end": 1107
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "27680733",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.9994943141937256,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1099,
+            "dni_span_fin": 1107,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "27680733",
+                "confidence": 0.9994943141937256,
+                "start": 1099,
+                "end": 1107
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "538120",
+    "numero_archivo": "28",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "26.294.008",
+                "confidence": 0.8758482336997986,
+                "start": 1755,
+                "end": 1765
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "26.294.008",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.8758482336997986,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1755,
+            "dni_span_fin": 1765,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "26.294.008",
+                "confidence": 0.8758482336997986,
+                "start": 1755,
+                "end": 1765
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "532501",
+    "numero_archivo": "29",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "21993417",
+                "confidence": 0.9297694563865662,
+                "start": 3602,
+                "end": 3610
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.8793147206306458,
+                "start": 2497,
+                "end": 2510
+              }
+            },
+            "nombre": null,
+            "dni": "21993417",
+            "cuil_cuit": "30-70721665-0",
+            "nombre_confidence": null,
+            "dni_confidence": 0.9297694563865662,
+            "cuil_cuit_confidence": 0.8793147206306458,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 3602,
+            "dni_span_fin": 3610,
+            "cuil_cuit_span_inicio": 2497,
+            "cuil_cuit_span_fin": 2510,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "21993417",
+                "confidence": 0.9297694563865662,
+                "start": 3602,
+                "end": 3610
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.8793147206306458,
+                "start": 2497,
+                "end": 2510
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "503824",
+    "numero_archivo": "30",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "JACQUET ROBERTO LUIS",
+            "fields": {
+              "nombre": {
+                "text": "JACQUET ROBERTO LUIS",
+                "confidence": 0.7795485854148865,
+                "start": 2001,
+                "end": 2021
+              },
+              "dni": {
+                "text": "20.258.157",
+                "confidence": 0.9713208079338074,
+                "start": 2028,
+                "end": 2038
+              },
+              "cuil_cuit": {
+                "text": "23-20258157-9",
+                "confidence": 0.9044550657272339,
+                "start": 2046,
+                "end": 2059
+              }
+            },
+            "nombre": "JACQUET ROBERTO LUIS",
+            "dni": "20.258.157",
+            "cuil_cuit": "23-20258157-9",
+            "nombre_confidence": 0.7795485854148865,
+            "dni_confidence": 0.9713208079338074,
+            "cuil_cuit_confidence": 0.9044550657272339,
+            "nombre_span_inicio": 2001,
+            "nombre_span_fin": 2021,
+            "dni_span_inicio": 2028,
+            "dni_span_fin": 2038,
+            "cuil_cuit_span_inicio": 2046,
+            "cuil_cuit_span_fin": 2059,
+            "confidence": 0.7795485854148865,
+            "span_inicio": 2001,
+            "span_fin": 2021
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "JACQUET ROBERTO LUIS",
+                "confidence": 0.7795485854148865,
+                "start": 2001,
+                "end": 2021
+              },
+              "dni": {
+                "text": "20.258.157",
+                "confidence": 0.9713208079338074,
+                "start": 2028,
+                "end": 2038
+              },
+              "cuil_cuit": {
+                "text": "23-20258157-9",
+                "confidence": 0.9044550657272339,
+                "start": 2046,
+                "end": 2059
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536750",
+    "numero_archivo": "31",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "29.987.246",
+                "confidence": 0.944011926651001,
+                "start": 1198,
+                "end": 1208
+              },
+              "cuil_cuit": {
+                "text": "20299872468",
+                "confidence": 0.8349866271018982,
+                "start": 2889,
+                "end": 2900
+              }
+            },
+            "nombre": null,
+            "dni": "29.987.246",
+            "cuil_cuit": "20299872468",
+            "nombre_confidence": null,
+            "dni_confidence": 0.944011926651001,
+            "cuil_cuit_confidence": 0.8349866271018982,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1198,
+            "dni_span_fin": 1208,
+            "cuil_cuit_span_inicio": 2889,
+            "cuil_cuit_span_fin": 2900,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "29.987.246",
+                "confidence": 0.944011926651001,
+                "start": 1198,
+                "end": 1208
+              },
+              "cuil_cuit": {
+                "text": "20299872468",
+                "confidence": 0.8349866271018982,
+                "start": 2889,
+                "end": 2900
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "514558",
+    "numero_archivo": "32",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "Gustavo Ezequiel Godoy",
+            "fields": {
+              "nombre": {
+                "text": "Gustavo Ezequiel Godoy",
+                "confidence": 0.7174937129020691,
+                "start": 1586,
+                "end": 1608
+              },
+              "dni": {
+                "text": "31.317.421",
+                "confidence": 0.9759199619293213,
+                "start": 5871,
+                "end": 5881
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "Gustavo Ezequiel Godoy",
+            "dni": "31.317.421",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.7174937129020691,
+            "dni_confidence": 0.9759199619293213,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 1586,
+            "nombre_span_fin": 1608,
+            "dni_span_inicio": 5871,
+            "dni_span_fin": 5881,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.7174937129020691,
+            "span_inicio": 1586,
+            "span_fin": 1608
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "Gustavo Ezequiel Godoy",
+                "confidence": 0.7174937129020691,
+                "start": 1586,
+                "end": 1608
+              },
+              "dni": {
+                "text": "31.317.421",
+                "confidence": 0.9759199619293213,
+                "start": 5871,
+                "end": 5881
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "494160",
+    "numero_archivo": "33",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "93757465",
+                "confidence": 0.9957854151725769,
+                "start": 3996,
+                "end": 4004
+              },
+              "cuil_cuit": {
+                "text": "27-93757465-2",
+                "confidence": 0.774871826171875,
+                "start": 4011,
+                "end": 4024
+              }
+            },
+            "nombre": null,
+            "dni": "93757465",
+            "cuil_cuit": "27-93757465-2",
+            "nombre_confidence": null,
+            "dni_confidence": 0.9957854151725769,
+            "cuil_cuit_confidence": 0.774871826171875,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 3996,
+            "dni_span_fin": 4004,
+            "cuil_cuit_span_inicio": 4011,
+            "cuil_cuit_span_fin": 4024,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "93757465",
+                "confidence": 0.9957854151725769,
+                "start": 3996,
+                "end": 4004
+              },
+              "cuil_cuit": {
+                "text": "27-93757465-2",
+                "confidence": 0.774871826171875,
+                "start": 4011,
+                "end": 4024
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "529783",
+    "numero_archivo": "34",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "10.700.496",
+                "confidence": 0.7979243993759155,
+                "start": 2365,
+                "end": 2375
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "10.700.496",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.7979243993759155,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 2365,
+            "dni_span_fin": 2375,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "10.700.496",
+                "confidence": 0.7979243993759155,
+                "start": 2365,
+                "end": 2375
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "525055",
+    "numero_archivo": "35",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "SAYUS Enrique",
+            "fields": {
+              "nombre": {
+                "text": "SAYUS Enrique",
+                "confidence": 0.7203435301780701,
+                "start": 859,
+                "end": 872
+              },
+              "dni": {
+                "text": "34.704.592",
+                "confidence": 0.7244421243667603,
+                "start": 6187,
+                "end": 6197
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "SAYUS Enrique",
+            "dni": "34.704.592",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.7203435301780701,
+            "dni_confidence": 0.7244421243667603,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 859,
+            "nombre_span_fin": 872,
+            "dni_span_inicio": 6187,
+            "dni_span_fin": 6197,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.7203435301780701,
+            "span_inicio": 859,
+            "span_fin": 872
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "SAYUS Enrique",
+                "confidence": 0.7203435301780701,
+                "start": 859,
+                "end": 872
+              },
+              "dni": {
+                "text": "34.704.592",
+                "confidence": 0.7244421243667603,
+                "start": 6187,
+                "end": 6197
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "501211",
+    "numero_archivo": "36",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "cuil_cuit": {
+                "text": "30-99913926-0",
+                "confidence": 0.9424458742141724,
+                "start": 6305,
+                "end": 6318
+              }
+            },
+            "nombre": null,
+            "dni": null,
+            "cuil_cuit": "30-99913926-0",
+            "nombre_confidence": null,
+            "dni_confidence": null,
+            "cuil_cuit_confidence": 0.9424458742141724,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": null,
+            "dni_span_fin": null,
+            "cuil_cuit_span_inicio": 6305,
+            "cuil_cuit_span_fin": 6318,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": null,
+              "cuil_cuit": {
+                "text": "30-99913926-0",
+                "confidence": 0.9424458742141724,
+                "start": 6305,
+                "end": 6318
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "531075",
+    "numero_archivo": "37",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "24391072",
+                "confidence": 0.9857659339904785,
+                "start": 3052,
+                "end": 3060
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "24391072",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.9857659339904785,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 3052,
+            "dni_span_fin": 3060,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "24391072",
+                "confidence": 0.9857659339904785,
+                "start": 3052,
+                "end": 3060
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "494151",
+    "numero_archivo": "38",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "JOSÉ LUIS VALENTINI",
+            "fields": {
+              "nombre": {
+                "text": "JOSÉ LUIS VALENTINI",
+                "confidence": 0.6503080129623413,
+                "start": 1573,
+                "end": 1592
+              },
+              "dni": {
+                "text": "17.196.196",
+                "confidence": 0.9947903156280518,
+                "start": 3390,
+                "end": 3400
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "JOSÉ LUIS VALENTINI",
+            "dni": "17.196.196",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.6503080129623413,
+            "dni_confidence": 0.9947903156280518,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 1573,
+            "nombre_span_fin": 1592,
+            "dni_span_inicio": 3390,
+            "dni_span_fin": 3400,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.6503080129623413,
+            "span_inicio": 1573,
+            "span_fin": 1592
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "JOSÉ LUIS VALENTINI",
+                "confidence": 0.6503080129623413,
+                "start": 1573,
+                "end": 1592
+              },
+              "dni": {
+                "text": "17.196.196",
+                "confidence": 0.9947903156280518,
+                "start": 3390,
+                "end": 3400
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "546334",
+    "numero_archivo": "39",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "cuil_cuit": {
+                "text": "30-99913926-0",
+                "confidence": 0.7345747351646423,
+                "start": 6772,
+                "end": 6785
+              }
+            },
+            "nombre": null,
+            "dni": null,
+            "cuil_cuit": "30-99913926-0",
+            "nombre_confidence": null,
+            "dni_confidence": null,
+            "cuil_cuit_confidence": 0.7345747351646423,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": null,
+            "dni_span_fin": null,
+            "cuil_cuit_span_inicio": 6772,
+            "cuil_cuit_span_fin": 6785,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": null,
+              "cuil_cuit": {
+                "text": "30-99913926-0",
+                "confidence": 0.7345747351646423,
+                "start": 6772,
+                "end": 6785
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "547373",
+    "numero_archivo": "40",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "JULIO",
+            "fields": {
+              "nombre": {
+                "text": "JULIO",
+                "confidence": 0.7545416951179504,
+                "start": 713,
+                "end": 718
+              },
+              "dni": {
+                "text": "36.024.191",
+                "confidence": 0.8370857834815979,
+                "start": 6642,
+                "end": 6652
+              },
+              "cuil_cuit": {
+                "text": "30-71412954-2",
+                "confidence": 0.8435789346694946,
+                "start": 3481,
+                "end": 3494
+              }
+            },
+            "nombre": "JULIO",
+            "dni": "36.024.191",
+            "cuil_cuit": "30-71412954-2",
+            "nombre_confidence": 0.7545416951179504,
+            "dni_confidence": 0.8370857834815979,
+            "cuil_cuit_confidence": 0.8435789346694946,
+            "nombre_span_inicio": 713,
+            "nombre_span_fin": 718,
+            "dni_span_inicio": 6642,
+            "dni_span_fin": 6652,
+            "cuil_cuit_span_inicio": 3481,
+            "cuil_cuit_span_fin": 3494,
+            "confidence": 0.7545416951179504,
+            "span_inicio": 713,
+            "span_fin": 718
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "JULIO",
+                "confidence": 0.7545416951179504,
+                "start": 713,
+                "end": 718
+              },
+              "dni": {
+                "text": "36.024.191",
+                "confidence": 0.8370857834815979,
+                "start": 6642,
+                "end": 6652
+              },
+              "cuil_cuit": {
+                "text": "30-71412954-2",
+                "confidence": 0.8435789346694946,
+                "start": 3481,
+                "end": 3494
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "507932",
+    "numero_archivo": "41",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "34.704.592",
+                "confidence": 0.8406174182891846,
+                "start": 4071,
+                "end": 4081
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "34.704.592",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.8406174182891846,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 4071,
+            "dni_span_fin": 4081,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "34.704.592",
+                "confidence": 0.8406174182891846,
+                "start": 4071,
+                "end": 4081
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "538090",
+    "numero_archivo": "42",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "Maria Soledad Casazza",
+            "fields": {
+              "nombre": {
+                "text": "Maria Soledad Casazza",
+                "confidence": 0.8100337982177734,
+                "start": 1566,
+                "end": 1587
+              },
+              "dni": {
+                "text": "94.542.024",
+                "confidence": 0.9201974272727966,
+                "start": 4559,
+                "end": 4569
+              },
+              "cuil_cuit": {
+                "text": "27-94542024-9",
+                "confidence": 0.8540177345275879,
+                "start": 3616,
+                "end": 3629
+              }
+            },
+            "nombre": "Maria Soledad Casazza",
+            "dni": "94.542.024",
+            "cuil_cuit": "27-94542024-9",
+            "nombre_confidence": 0.8100337982177734,
+            "dni_confidence": 0.9201974272727966,
+            "cuil_cuit_confidence": 0.8540177345275879,
+            "nombre_span_inicio": 1566,
+            "nombre_span_fin": 1587,
+            "dni_span_inicio": 4559,
+            "dni_span_fin": 4569,
+            "cuil_cuit_span_inicio": 3616,
+            "cuil_cuit_span_fin": 3629,
+            "confidence": 0.8100337982177734,
+            "span_inicio": 1566,
+            "span_fin": 1587
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "Maria Soledad Casazza",
+                "confidence": 0.8100337982177734,
+                "start": 1566,
+                "end": 1587
+              },
+              "dni": {
+                "text": "94.542.024",
+                "confidence": 0.9201974272727966,
+                "start": 4559,
+                "end": 4569
+              },
+              "cuil_cuit": {
+                "text": "27-94542024-9",
+                "confidence": 0.8540177345275879,
+                "start": 3616,
+                "end": 3629
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "531066",
+    "numero_archivo": "43",
+    "nombre": "Embargo - Empleado",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "no_detectado",
+        "candidates": [],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "513551",
+    "numero_archivo": "44",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "RONDINELLA Virna Silvana",
+            "fields": {
+              "nombre": {
+                "text": "RONDINELLA Virna Silvana",
+                "confidence": 0.7232275605201721,
+                "start": 6197,
+                "end": 6221
+              },
+              "dni": {
+                "text": "36.301.174",
+                "confidence": 0.8159319758415222,
+                "start": 4121,
+                "end": 4131
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "RONDINELLA Virna Silvana",
+            "dni": "36.301.174",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.7232275605201721,
+            "dni_confidence": 0.8159319758415222,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 6197,
+            "nombre_span_fin": 6221,
+            "dni_span_inicio": 4121,
+            "dni_span_fin": 4131,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.7232275605201721,
+            "span_inicio": 6197,
+            "span_fin": 6221
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "RONDINELLA Virna Silvana",
+                "confidence": 0.7232275605201721,
+                "start": 6197,
+                "end": 6221
+              },
+              "dni": {
+                "text": "36.301.174",
+                "confidence": 0.8159319758415222,
+                "start": 4121,
+                "end": 4131
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "522290",
+    "numero_archivo": "45",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "no_detectado",
+        "candidates": [],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "501201",
+    "numero_archivo": "46",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "24.535.698",
+                "confidence": 0.9543644785881042,
+                "start": 1167,
+                "end": 1177
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "24.535.698",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.9543644785881042,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1167,
+            "dni_span_fin": 1177,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "24.535.698",
+                "confidence": 0.9543644785881042,
+                "start": 1167,
+                "end": 1177
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "538037",
+    "numero_archivo": "47",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "Graciela Garbagna",
+            "fields": {
+              "nombre": {
+                "text": "Graciela Garbagna",
+                "confidence": 0.7428786754608154,
+                "start": 4094,
+                "end": 4111
+              },
+              "dni": {
+                "text": "24.326.675",
+                "confidence": 0.961260199546814,
+                "start": 1633,
+                "end": 1643
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "Graciela Garbagna",
+            "dni": "24.326.675",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.7428786754608154,
+            "dni_confidence": 0.961260199546814,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 4094,
+            "nombre_span_fin": 4111,
+            "dni_span_inicio": 1633,
+            "dni_span_fin": 1643,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.7428786754608154,
+            "span_inicio": 4094,
+            "span_fin": 4111
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "Graciela Garbagna",
+                "confidence": 0.7428786754608154,
+                "start": 4094,
+                "end": 4111
+              },
+              "dni": {
+                "text": "24.326.675",
+                "confidence": 0.961260199546814,
+                "start": 1633,
+                "end": 1643
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "538114",
+    "numero_archivo": "48",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "44.583.812",
+                "confidence": 0.9659455418586731,
+                "start": 1790,
+                "end": 1800
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.7813467979431152,
+                "start": 2297,
+                "end": 2310
+              }
+            },
+            "nombre": null,
+            "dni": "44.583.812",
+            "cuil_cuit": "30-70721665-0",
+            "nombre_confidence": null,
+            "dni_confidence": 0.9659455418586731,
+            "cuil_cuit_confidence": 0.7813467979431152,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1790,
+            "dni_span_fin": 1800,
+            "cuil_cuit_span_inicio": 2297,
+            "cuil_cuit_span_fin": 2310,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "44.583.812",
+                "confidence": 0.9659455418586731,
+                "start": 1790,
+                "end": 1800
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.7813467979431152,
+                "start": 2297,
+                "end": 2310
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "529847",
+    "numero_archivo": "49",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "36.024.191",
+                "confidence": 0.9876499772071838,
+                "start": 5749,
+                "end": 5759
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "36.024.191",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.9876499772071838,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 5749,
+            "dni_span_fin": 5759,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "36.024.191",
+                "confidence": 0.9876499772071838,
+                "start": 5749,
+                "end": 5759
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "495014",
+    "numero_archivo": "50",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "17711031",
+                "confidence": 0.9662811160087585,
+                "start": 1633,
+                "end": 1641
+              },
+              "cuil_cuit": {
+                "text": "30-70308853-4",
+                "confidence": 0.8315431475639343,
+                "start": 1220,
+                "end": 1233
+              }
+            },
+            "nombre": null,
+            "dni": "17711031",
+            "cuil_cuit": "30-70308853-4",
+            "nombre_confidence": null,
+            "dni_confidence": 0.9662811160087585,
+            "cuil_cuit_confidence": 0.8315431475639343,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1633,
+            "dni_span_fin": 1641,
+            "cuil_cuit_span_inicio": 1220,
+            "cuil_cuit_span_fin": 1233,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "17711031",
+                "confidence": 0.9662811160087585,
+                "start": 1633,
+                "end": 1641
+              },
+              "cuil_cuit": {
+                "text": "30-70308853-4",
+                "confidence": 0.8315431475639343,
+                "start": 1220,
+                "end": 1233
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "543609",
+    "numero_archivo": "51",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "23087819",
+                "confidence": 0.9406308531761169,
+                "start": 1580,
+                "end": 1588
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "23087819",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.9406308531761169,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1580,
+            "dni_span_fin": 1588,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "23087819",
+                "confidence": 0.9406308531761169,
+                "start": 1580,
+                "end": 1588
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "535837",
+    "numero_archivo": "52",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "LUNA HORACIO EMANUEL",
+            "fields": {
+              "nombre": {
+                "text": "LUNA HORACIO EMANUEL",
+                "confidence": 0.8138998746871948,
+                "start": 2745,
+                "end": 2765
+              },
+              "dni": {
+                "text": "35499690",
+                "confidence": 0.9955909252166748,
+                "start": 2770,
+                "end": 2778
+              },
+              "cuil_cuit": {
+                "text": "30-99913926-0",
+                "confidence": 0.935545802116394,
+                "start": 2347,
+                "end": 2360
+              }
+            },
+            "nombre": "LUNA HORACIO EMANUEL",
+            "dni": "35499690",
+            "cuil_cuit": "30-99913926-0",
+            "nombre_confidence": 0.8138998746871948,
+            "dni_confidence": 0.9955909252166748,
+            "cuil_cuit_confidence": 0.935545802116394,
+            "nombre_span_inicio": 2745,
+            "nombre_span_fin": 2765,
+            "dni_span_inicio": 2770,
+            "dni_span_fin": 2778,
+            "cuil_cuit_span_inicio": 2347,
+            "cuil_cuit_span_fin": 2360,
+            "confidence": 0.8138998746871948,
+            "span_inicio": 2745,
+            "span_fin": 2765
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "LUNA HORACIO EMANUEL",
+                "confidence": 0.8138998746871948,
+                "start": 2745,
+                "end": 2765
+              },
+              "dni": {
+                "text": "35499690",
+                "confidence": 0.9955909252166748,
+                "start": 2770,
+                "end": 2778
+              },
+              "cuil_cuit": {
+                "text": "30-99913926-0",
+                "confidence": 0.935545802116394,
+                "start": 2347,
+                "end": 2360
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "503810",
+    "numero_archivo": "53",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "11.376.446",
+                "confidence": 0.6861831545829773,
+                "start": 2754,
+                "end": 2764
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.8033336997032166,
+                "start": 899,
+                "end": 912
+              }
+            },
+            "nombre": null,
+            "dni": "11.376.446",
+            "cuil_cuit": "30-70721665-0",
+            "nombre_confidence": null,
+            "dni_confidence": 0.6861831545829773,
+            "cuil_cuit_confidence": 0.8033336997032166,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 2754,
+            "dni_span_fin": 2764,
+            "cuil_cuit_span_inicio": 899,
+            "cuil_cuit_span_fin": 912,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "11.376.446",
+                "confidence": 0.6861831545829773,
+                "start": 2754,
+                "end": 2764
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.8033336997032166,
+                "start": 899,
+                "end": 912
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "495686",
+    "numero_archivo": "54",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "27.825.597",
+                "confidence": 0.8775514364242554,
+                "start": 1550,
+                "end": 1560
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.8464110493659973,
+                "start": 1853,
+                "end": 1866
+              }
+            },
+            "nombre": null,
+            "dni": "27.825.597",
+            "cuil_cuit": "30-70721665-0",
+            "nombre_confidence": null,
+            "dni_confidence": 0.8775514364242554,
+            "cuil_cuit_confidence": 0.8464110493659973,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1550,
+            "dni_span_fin": 1560,
+            "cuil_cuit_span_inicio": 1853,
+            "cuil_cuit_span_fin": 1866,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "27.825.597",
+                "confidence": 0.8775514364242554,
+                "start": 1550,
+                "end": 1560
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.8464110493659973,
+                "start": 1853,
+                "end": 1866
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "495690",
+    "numero_archivo": "55",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "34.300.506",
+                "confidence": 0.8720586895942688,
+                "start": 1721,
+                "end": 1731
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.9134063720703125,
+                "start": 2029,
+                "end": 2042
+              }
+            },
+            "nombre": null,
+            "dni": "34.300.506",
+            "cuil_cuit": "30-70721665-0",
+            "nombre_confidence": null,
+            "dni_confidence": 0.8720586895942688,
+            "cuil_cuit_confidence": 0.9134063720703125,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1721,
+            "dni_span_fin": 1731,
+            "cuil_cuit_span_inicio": 2029,
+            "cuil_cuit_span_fin": 2042,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "34.300.506",
+                "confidence": 0.8720586895942688,
+                "start": 1721,
+                "end": 1731
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.9134063720703125,
+                "start": 2029,
+                "end": 2042
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536730",
+    "numero_archivo": "56",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "ROMERO GABRIEL GUSTAVO",
+            "fields": {
+              "nombre": {
+                "text": "ROMERO GABRIEL GUSTAVO",
+                "confidence": 0.7044733762741089,
+                "start": 1506,
+                "end": 1528
+              },
+              "dni": {
+                "text": "25.925.481",
+                "confidence": 0.8359106779098511,
+                "start": 1534,
+                "end": 1544
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "ROMERO GABRIEL GUSTAVO",
+            "dni": "25.925.481",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.7044733762741089,
+            "dni_confidence": 0.8359106779098511,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 1506,
+            "nombre_span_fin": 1528,
+            "dni_span_inicio": 1534,
+            "dni_span_fin": 1544,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.7044733762741089,
+            "span_inicio": 1506,
+            "span_fin": 1528
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "ROMERO GABRIEL GUSTAVO",
+                "confidence": 0.7044733762741089,
+                "start": 1506,
+                "end": 1528
+              },
+              "dni": {
+                "text": "25.925.481",
+                "confidence": 0.8359106779098511,
+                "start": 1534,
+                "end": 1544
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "507931",
+    "numero_archivo": "57",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "SAYUS Enrique",
+            "fields": {
+              "nombre": {
+                "text": "SAYUS Enrique",
+                "confidence": 0.7257313132286072,
+                "start": 638,
+                "end": 651
+              },
+              "dni": {
+                "text": "34.704.592",
+                "confidence": 0.9118354320526123,
+                "start": 3802,
+                "end": 3812
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "SAYUS Enrique",
+            "dni": "34.704.592",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.7257313132286072,
+            "dni_confidence": 0.9118354320526123,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 638,
+            "nombre_span_fin": 651,
+            "dni_span_inicio": 3802,
+            "dni_span_fin": 3812,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.7257313132286072,
+            "span_inicio": 638,
+            "span_fin": 651
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "SAYUS Enrique",
+                "confidence": 0.7257313132286072,
+                "start": 638,
+                "end": 651
+              },
+              "dni": {
+                "text": "34.704.592",
+                "confidence": 0.9118354320526123,
+                "start": 3802,
+                "end": 3812
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536724",
+    "numero_archivo": "58",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "23.420.002",
+                "confidence": 0.9712629914283752,
+                "start": 1664,
+                "end": 1674
+              },
+              "cuil_cuit": {
+                "text": "30-70308853-4",
+                "confidence": 0.9348911643028259,
+                "start": 2697,
+                "end": 2710
+              }
+            },
+            "nombre": null,
+            "dni": "23.420.002",
+            "cuil_cuit": "30-70308853-4",
+            "nombre_confidence": null,
+            "dni_confidence": 0.9712629914283752,
+            "cuil_cuit_confidence": 0.9348911643028259,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1664,
+            "dni_span_fin": 1674,
+            "cuil_cuit_span_inicio": 2697,
+            "cuil_cuit_span_fin": 2710,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "23.420.002",
+                "confidence": 0.9712629914283752,
+                "start": 1664,
+                "end": 1674
+              },
+              "cuil_cuit": {
+                "text": "30-70308853-4",
+                "confidence": 0.9348911643028259,
+                "start": 2697,
+                "end": 2710
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536738",
+    "numero_archivo": "59",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "LUCINDO RAMÓN\r\nCORNEJO",
+            "fields": {
+              "nombre": {
+                "text": "LUCINDO RAMÓN\r\nCORNEJO",
+                "confidence": 0.9086571335792542,
+                "start": 1227,
+                "end": 1249
+              },
+              "dni": {
+                "text": "12.848.992",
+                "confidence": 0.9835081100463867,
+                "start": 1259,
+                "end": 1269
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "LUCINDO RAMÓN\r\nCORNEJO",
+            "dni": "12.848.992",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.9086571335792542,
+            "dni_confidence": 0.9835081100463867,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 1227,
+            "nombre_span_fin": 1249,
+            "dni_span_inicio": 1259,
+            "dni_span_fin": 1269,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.9086571335792542,
+            "span_inicio": 1227,
+            "span_fin": 1249
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "LUCINDO RAMÓN\r\nCORNEJO",
+                "confidence": 0.9086571335792542,
+                "start": 1227,
+                "end": 1249
+              },
+              "dni": {
+                "text": "12.848.992",
+                "confidence": 0.9835081100463867,
+                "start": 1259,
+                "end": 1269
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "516901",
+    "numero_archivo": "60",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "Daniel Ezequiel Romero",
+            "fields": {
+              "nombre": {
+                "text": "Daniel Ezequiel Romero",
+                "confidence": 0.9175178408622742,
+                "start": 2234,
+                "end": 2256
+              },
+              "dni": {
+                "text": "29.225.672",
+                "confidence": 0.9992746710777283,
+                "start": 712,
+                "end": 722
+              },
+              "cuil_cuit": {
+                "text": "30-99903208-3",
+                "confidence": 0.8843194842338562,
+                "start": 1581,
+                "end": 1594
+              }
+            },
+            "nombre": "Daniel Ezequiel Romero",
+            "dni": "29.225.672",
+            "cuil_cuit": "30-99903208-3",
+            "nombre_confidence": 0.9175178408622742,
+            "dni_confidence": 0.9992746710777283,
+            "cuil_cuit_confidence": 0.8843194842338562,
+            "nombre_span_inicio": 2234,
+            "nombre_span_fin": 2256,
+            "dni_span_inicio": 712,
+            "dni_span_fin": 722,
+            "cuil_cuit_span_inicio": 1581,
+            "cuil_cuit_span_fin": 1594,
+            "confidence": 0.9175178408622742,
+            "span_inicio": 2234,
+            "span_fin": 2256
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "Daniel Ezequiel Romero",
+                "confidence": 0.9175178408622742,
+                "start": 2234,
+                "end": 2256
+              },
+              "dni": {
+                "text": "29.225.672",
+                "confidence": 0.9992746710777283,
+                "start": 712,
+                "end": 722
+              },
+              "cuil_cuit": {
+                "text": "30-99903208-3",
+                "confidence": 0.8843194842338562,
+                "start": 1581,
+                "end": 1594
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "547366",
+    "numero_archivo": "61",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "43.084.298",
+                "confidence": 0.9665533304214478,
+                "start": 2805,
+                "end": 2815
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "43.084.298",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.9665533304214478,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 2805,
+            "dni_span_fin": 2815,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "43.084.298",
+                "confidence": 0.9665533304214478,
+                "start": 2805,
+                "end": 2815
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "523996",
+    "numero_archivo": "62",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "RUBEN ALBERTO",
+            "fields": {
+              "nombre": {
+                "text": "RUBEN ALBERTO",
+                "confidence": 0.8152315020561218,
+                "start": 1321,
+                "end": 1334
+              },
+              "dni": {
+                "text": "5.612.521",
+                "confidence": 0.9795290231704712,
+                "start": 2565,
+                "end": 2574
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "RUBEN ALBERTO",
+            "dni": "5.612.521",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.8152315020561218,
+            "dni_confidence": 0.9795290231704712,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 1321,
+            "nombre_span_fin": 1334,
+            "dni_span_inicio": 2565,
+            "dni_span_fin": 2574,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.8152315020561218,
+            "span_inicio": 1321,
+            "span_fin": 1334
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "RUBEN ALBERTO",
+                "confidence": 0.8152315020561218,
+                "start": 1321,
+                "end": 1334
+              },
+              "dni": {
+                "text": "5.612.521",
+                "confidence": 0.9795290231704712,
+                "start": 2565,
+                "end": 2574
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "523977",
+    "numero_archivo": "63",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "EDUARDO JAVIER FERNAN",
+            "fields": {
+              "nombre": {
+                "text": "EDUARDO JAVIER FERNAN",
+                "confidence": 0.6745761036872864,
+                "start": 944,
+                "end": 965
+              },
+              "dni": {
+                "text": "21.594.165",
+                "confidence": 0.9567075371742249,
+                "start": 975,
+                "end": 985
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "EDUARDO JAVIER FERNAN",
+            "dni": "21.594.165",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.6745761036872864,
+            "dni_confidence": 0.9567075371742249,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 944,
+            "nombre_span_fin": 965,
+            "dni_span_inicio": 975,
+            "dni_span_fin": 985,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.6745761036872864,
+            "span_inicio": 944,
+            "span_fin": 965
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "EDUARDO JAVIER FERNAN",
+                "confidence": 0.6745761036872864,
+                "start": 944,
+                "end": 965
+              },
+              "dni": {
+                "text": "21.594.165",
+                "confidence": 0.9567075371742249,
+                "start": 975,
+                "end": 985
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "543631",
+    "numero_archivo": "64",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "35.646.104",
+                "confidence": 0.9859212040901184,
+                "start": 1659,
+                "end": 1669
+              },
+              "cuil_cuit": {
+                "text": "30-70308853-4",
+                "confidence": 0.9104310870170593,
+                "start": 2591,
+                "end": 2604
+              }
+            },
+            "nombre": null,
+            "dni": "35.646.104",
+            "cuil_cuit": "30-70308853-4",
+            "nombre_confidence": null,
+            "dni_confidence": 0.9859212040901184,
+            "cuil_cuit_confidence": 0.9104310870170593,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1659,
+            "dni_span_fin": 1669,
+            "cuil_cuit_span_inicio": 2591,
+            "cuil_cuit_span_fin": 2604,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "35.646.104",
+                "confidence": 0.9859212040901184,
+                "start": 1659,
+                "end": 1669
+              },
+              "cuil_cuit": {
+                "text": "30-70308853-4",
+                "confidence": 0.9104310870170593,
+                "start": 2591,
+                "end": 2604
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "523990",
+    "numero_archivo": "65",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "20.583.561",
+                "confidence": 0.9933851361274719,
+                "start": 2404,
+                "end": 2414
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "20.583.561",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.9933851361274719,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 2404,
+            "dni_span_fin": 2414,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "20.583.561",
+                "confidence": 0.9933851361274719,
+                "start": 2404,
+                "end": 2414
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "513487",
+    "numero_archivo": "66",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "AGUSTIN MARIANO PEROSIO",
+            "fields": {
+              "nombre": {
+                "text": "AGUSTIN MARIANO PEROSIO",
+                "confidence": 0.8716984391212463,
+                "start": 2008,
+                "end": 2031
+              },
+              "dni": {
+                "text": "16.893.287",
+                "confidence": 0.9891176819801331,
+                "start": 2061,
+                "end": 2071
+              },
+              "cuil_cuit": {
+                "text": "20-16893287-2",
+                "confidence": 0.9664801359176636,
+                "start": 2041,
+                "end": 2054
+              }
+            },
+            "nombre": "AGUSTIN MARIANO PEROSIO",
+            "dni": "16.893.287",
+            "cuil_cuit": "20-16893287-2",
+            "nombre_confidence": 0.8716984391212463,
+            "dni_confidence": 0.9891176819801331,
+            "cuil_cuit_confidence": 0.9664801359176636,
+            "nombre_span_inicio": 2008,
+            "nombre_span_fin": 2031,
+            "dni_span_inicio": 2061,
+            "dni_span_fin": 2071,
+            "cuil_cuit_span_inicio": 2041,
+            "cuil_cuit_span_fin": 2054,
+            "confidence": 0.8716984391212463,
+            "span_inicio": 2008,
+            "span_fin": 2031
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "AGUSTIN MARIANO PEROSIO",
+                "confidence": 0.8716984391212463,
+                "start": 2008,
+                "end": 2031
+              },
+              "dni": {
+                "text": "16.893.287",
+                "confidence": 0.9891176819801331,
+                "start": 2061,
+                "end": 2071
+              },
+              "cuil_cuit": {
+                "text": "20-16893287-2",
+                "confidence": 0.9664801359176636,
+                "start": 2041,
+                "end": 2054
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "547376",
+    "numero_archivo": "67",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "cuil_cuit": {
+                "text": "20-94958329-6",
+                "confidence": 0.7572847008705139,
+                "start": 871,
+                "end": 884
+              }
+            },
+            "nombre": null,
+            "dni": null,
+            "cuil_cuit": "20-94958329-6",
+            "nombre_confidence": null,
+            "dni_confidence": null,
+            "cuil_cuit_confidence": 0.7572847008705139,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": null,
+            "dni_span_fin": null,
+            "cuil_cuit_span_inicio": 871,
+            "cuil_cuit_span_fin": 884,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": null,
+              "cuil_cuit": {
+                "text": "20-94958329-6",
+                "confidence": 0.7572847008705139,
+                "start": 871,
+                "end": 884
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "524013",
+    "numero_archivo": "68",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "2603424",
+                "confidence": 0.9854506254196167,
+                "start": 955,
+                "end": 962
+              },
+              "cuil_cuit": {
+                "text": "33-71862856-9",
+                "confidence": 0.9044135808944702,
+                "start": 2258,
+                "end": 2271
+              }
+            },
+            "nombre": null,
+            "dni": "2603424",
+            "cuil_cuit": "33-71862856-9",
+            "nombre_confidence": null,
+            "dni_confidence": 0.9854506254196167,
+            "cuil_cuit_confidence": 0.9044135808944702,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 955,
+            "dni_span_fin": 962,
+            "cuil_cuit_span_inicio": 2258,
+            "cuil_cuit_span_fin": 2271,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "2603424",
+                "confidence": 0.9854506254196167,
+                "start": 955,
+                "end": 962
+              },
+              "cuil_cuit": {
+                "text": "33-71862856-9",
+                "confidence": 0.9044135808944702,
+                "start": 2258,
+                "end": 2271
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "498352",
+    "numero_archivo": "69",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "Gabriela Francisco",
+            "fields": {
+              "nombre": {
+                "text": "Gabriela Francisco",
+                "confidence": 0.8228746652603149,
+                "start": 48,
+                "end": 66
+              },
+              "dni": {
+                "text": "28007580",
+                "confidence": 0.9886497259140015,
+                "start": 73,
+                "end": 81
+              },
+              "cuil_cuit": {
+                "text": "30-70308853-4",
+                "confidence": 0.6538264155387878,
+                "start": 2294,
+                "end": 2307
+              }
+            },
+            "nombre": "Gabriela Francisco",
+            "dni": "28007580",
+            "cuil_cuit": "30-70308853-4",
+            "nombre_confidence": 0.8228746652603149,
+            "dni_confidence": 0.9886497259140015,
+            "cuil_cuit_confidence": 0.6538264155387878,
+            "nombre_span_inicio": 48,
+            "nombre_span_fin": 66,
+            "dni_span_inicio": 73,
+            "dni_span_fin": 81,
+            "cuil_cuit_span_inicio": 2294,
+            "cuil_cuit_span_fin": 2307,
+            "confidence": 0.8228746652603149,
+            "span_inicio": 48,
+            "span_fin": 66
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "Gabriela Francisco",
+                "confidence": 0.8228746652603149,
+                "start": 48,
+                "end": 66
+              },
+              "dni": {
+                "text": "28007580",
+                "confidence": 0.9886497259140015,
+                "start": 73,
+                "end": 81
+              },
+              "cuil_cuit": {
+                "text": "30-70308853-4",
+                "confidence": 0.6538264155387878,
+                "start": 2294,
+                "end": 2307
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "526651",
+    "numero_archivo": "70",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "PORCO MAIRA GABRIELA",
+            "fields": {
+              "nombre": {
+                "text": "PORCO MAIRA GABRIELA",
+                "confidence": 0.7983587980270386,
+                "start": 2298,
+                "end": 2318
+              },
+              "dni": {
+                "text": "31.370.360",
+                "confidence": 0.9690213799476624,
+                "start": 1636,
+                "end": 1646
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "PORCO MAIRA GABRIELA",
+            "dni": "31.370.360",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.7983587980270386,
+            "dni_confidence": 0.9690213799476624,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 2298,
+            "nombre_span_fin": 2318,
+            "dni_span_inicio": 1636,
+            "dni_span_fin": 1646,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.7983587980270386,
+            "span_inicio": 2298,
+            "span_fin": 2318
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "PORCO MAIRA GABRIELA",
+                "confidence": 0.7983587980270386,
+                "start": 2298,
+                "end": 2318
+              },
+              "dni": {
+                "text": "31.370.360",
+                "confidence": 0.9690213799476624,
+                "start": 1636,
+                "end": 1646
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "531094",
+    "numero_archivo": "71",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "cuil_cuit": {
+                "text": "30500061711",
+                "confidence": 0.7169365286827087,
+                "start": 4200,
+                "end": 4211
+              }
+            },
+            "nombre": null,
+            "dni": null,
+            "cuil_cuit": "30500061711",
+            "nombre_confidence": null,
+            "dni_confidence": null,
+            "cuil_cuit_confidence": 0.7169365286827087,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": null,
+            "dni_span_fin": null,
+            "cuil_cuit_span_inicio": 4200,
+            "cuil_cuit_span_fin": 4211,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": null,
+              "cuil_cuit": {
+                "text": "30500061711",
+                "confidence": 0.7169365286827087,
+                "start": 4200,
+                "end": 4211
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "547369",
+    "numero_archivo": "72",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "FASSETTA Domingo Ignacio",
+            "fields": {
+              "nombre": {
+                "text": "FASSETTA Domingo Ignacio",
+                "confidence": 0.7101202607154846,
+                "start": 858,
+                "end": 882
+              },
+              "dni": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "FASSETTA Domingo Ignacio",
+            "dni": null,
+            "cuil_cuit": null,
+            "nombre_confidence": 0.7101202607154846,
+            "dni_confidence": null,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 858,
+            "nombre_span_fin": 882,
+            "dni_span_inicio": null,
+            "dni_span_fin": null,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.7101202607154846,
+            "span_inicio": 858,
+            "span_fin": 882
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "FASSETTA Domingo Ignacio",
+                "confidence": 0.7101202607154846,
+                "start": 858,
+                "end": 882
+              },
+              "dni": null,
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536715",
+    "numero_archivo": "73",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "27015232",
+                "confidence": 0.9572471976280212,
+                "start": 943,
+                "end": 951
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "27015232",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.9572471976280212,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 943,
+            "dni_span_fin": 951,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "27015232",
+                "confidence": 0.9572471976280212,
+                "start": 943,
+                "end": 951
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536707",
+    "numero_archivo": "74",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "4.513.281",
+                "confidence": 0.9666024446487427,
+                "start": 997,
+                "end": 1006
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "4.513.281",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.9666024446487427,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 997,
+            "dni_span_fin": 1006,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "4.513.281",
+                "confidence": 0.9666024446487427,
+                "start": 997,
+                "end": 1006
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "547372",
+    "numero_archivo": "75",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "no_detectado",
+        "candidates": [],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "538066",
+    "numero_archivo": "76",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "23492823",
+                "confidence": 0.9687637686729431,
+                "start": 1606,
+                "end": 1614
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": null,
+            "dni": "23492823",
+            "cuil_cuit": null,
+            "nombre_confidence": null,
+            "dni_confidence": 0.9687637686729431,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 1606,
+            "dni_span_fin": 1614,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "23492823",
+                "confidence": 0.9687637686729431,
+                "start": 1606,
+                "end": 1614
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536739",
+    "numero_archivo": "77",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "PAULA ALEJANDRA",
+            "fields": {
+              "nombre": {
+                "text": "PAULA ALEJANDRA",
+                "confidence": 0.8186402916908264,
+                "start": 1021,
+                "end": 1036
+              },
+              "dni": {
+                "text": "21.594.889",
+                "confidence": 0.9546696543693542,
+                "start": 1067,
+                "end": 1077
+              },
+              "cuil_cuit": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              }
+            },
+            "nombre": "PAULA ALEJANDRA",
+            "dni": "21.594.889",
+            "cuil_cuit": null,
+            "nombre_confidence": 0.8186402916908264,
+            "dni_confidence": 0.9546696543693542,
+            "cuil_cuit_confidence": null,
+            "nombre_span_inicio": 1021,
+            "nombre_span_fin": 1036,
+            "dni_span_inicio": 1067,
+            "dni_span_fin": 1077,
+            "cuil_cuit_span_inicio": null,
+            "cuil_cuit_span_fin": null,
+            "confidence": 0.8186402916908264,
+            "span_inicio": 1021,
+            "span_fin": 1036
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "PAULA ALEJANDRA",
+                "confidence": 0.8186402916908264,
+                "start": 1021,
+                "end": 1036
+              },
+              "dni": {
+                "text": "21.594.889",
+                "confidence": 0.9546696543693542,
+                "start": 1067,
+                "end": 1077
+              },
+              "cuil_cuit": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "546238",
+    "numero_archivo": "78",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": null,
+            "fields": {
+              "nombre": {
+                "text": null,
+                "confidence": null,
+                "start": null,
+                "end": null
+              },
+              "dni": {
+                "text": "7.759.088",
+                "confidence": 0.8205451369285583,
+                "start": 2770,
+                "end": 2779
+              },
+              "cuil_cuit": {
+                "text": "33-71862856-9",
+                "confidence": 0.8684840798377991,
+                "start": 2852,
+                "end": 2865
+              }
+            },
+            "nombre": null,
+            "dni": "7.759.088",
+            "cuil_cuit": "33-71862856-9",
+            "nombre_confidence": null,
+            "dni_confidence": 0.8205451369285583,
+            "cuil_cuit_confidence": 0.8684840798377991,
+            "nombre_span_inicio": null,
+            "nombre_span_fin": null,
+            "dni_span_inicio": 2770,
+            "dni_span_fin": 2779,
+            "cuil_cuit_span_inicio": 2852,
+            "cuil_cuit_span_fin": 2865,
+            "confidence": null,
+            "span_inicio": null,
+            "span_fin": null
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": null,
+              "dni": {
+                "text": "7.759.088",
+                "confidence": 0.8205451369285583,
+                "start": 2770,
+                "end": 2779
+              },
+              "cuil_cuit": {
+                "text": "33-71862856-9",
+                "confidence": 0.8684840798377991,
+                "start": 2852,
+                "end": 2865
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "513482",
+    "numero_archivo": "79",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "Sonia Raquel Bobadilla",
+            "fields": {
+              "nombre": {
+                "text": "Sonia Raquel Bobadilla",
+                "confidence": 0.8353886008262634,
+                "start": 1741,
+                "end": 1763
+              },
+              "dni": {
+                "text": "16.893.287",
+                "confidence": 0.7850318551063538,
+                "start": 2440,
+                "end": 2450
+              },
+              "cuil_cuit": {
+                "text": "20-16893287-2",
+                "confidence": 0.7534899115562439,
+                "start": 2458,
+                "end": 2471
+              }
+            },
+            "nombre": "Sonia Raquel Bobadilla",
+            "dni": "16.893.287",
+            "cuil_cuit": "20-16893287-2",
+            "nombre_confidence": 0.8353886008262634,
+            "dni_confidence": 0.7850318551063538,
+            "cuil_cuit_confidence": 0.7534899115562439,
+            "nombre_span_inicio": 1741,
+            "nombre_span_fin": 1763,
+            "dni_span_inicio": 2440,
+            "dni_span_fin": 2450,
+            "cuil_cuit_span_inicio": 2458,
+            "cuil_cuit_span_fin": 2471,
+            "confidence": 0.8353886008262634,
+            "span_inicio": 1741,
+            "span_fin": 1763
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "Sonia Raquel Bobadilla",
+                "confidence": 0.8353886008262634,
+                "start": 1741,
+                "end": 1763
+              },
+              "dni": {
+                "text": "16.893.287",
+                "confidence": 0.7850318551063538,
+                "start": 2440,
+                "end": 2450
+              },
+              "cuil_cuit": {
+                "text": "20-16893287-2",
+                "confidence": 0.7534899115562439,
+                "start": 2458,
+                "end": 2471
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "536728",
+    "numero_archivo": "80",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "documentos_completos",
+    "resultados": [
+      {
+        "contador_interno": null,
+        "palabra_clave": null,
+        "posicion_inicio": null,
+        "posicion_fin": null,
+        "inicio_fragmento": null,
+        "fin_fragmento": null,
+        "status": "candidato_unico",
+        "candidates": [
+          {
+            "tipo": "persona_embargada",
+            "valor": "MONTIEL DARIO RUBEN",
+            "fields": {
+              "nombre": {
+                "text": "MONTIEL DARIO RUBEN",
+                "confidence": 0.7766734957695007,
+                "start": 1110,
+                "end": 1129
+              },
+              "dni": {
+                "text": "21.525.457",
+                "confidence": 0.9357521533966064,
+                "start": 1581,
+                "end": 1591
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.9427934288978577,
+                "start": 1914,
+                "end": 1927
+              }
+            },
+            "nombre": "MONTIEL DARIO RUBEN",
+            "dni": "21.525.457",
+            "cuil_cuit": "30-70721665-0",
+            "nombre_confidence": 0.7766734957695007,
+            "dni_confidence": 0.9357521533966064,
+            "cuil_cuit_confidence": 0.9427934288978577,
+            "nombre_span_inicio": 1110,
+            "nombre_span_fin": 1129,
+            "dni_span_inicio": 1581,
+            "dni_span_fin": 1591,
+            "cuil_cuit_span_inicio": 1914,
+            "cuil_cuit_span_fin": 1927,
+            "confidence": 0.7766734957695007,
+            "span_inicio": 1110,
+            "span_fin": 1129
+          }
+        ],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.65,
+        "raw_response": {
+          "persona_embargada": [
+            {
+              "nombre": {
+                "text": "MONTIEL DARIO RUBEN",
+                "confidence": 0.7766734957695007,
+                "start": 1110,
+                "end": 1129
+              },
+              "dni": {
+                "text": "21.525.457",
+                "confidence": 0.9357521533966064,
+                "start": 1581,
+                "end": 1591
+              },
+              "cuil_cuit": {
+                "text": "30-70721665-0",
+                "confidence": 0.9427934288978577,
+                "start": 1914,
+                "end": 1927
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

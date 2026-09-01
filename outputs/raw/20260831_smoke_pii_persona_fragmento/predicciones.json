@@ -1,0 +1,28 @@
+[
+  {
+    "numero_archivo": "1",
+    "id": "538118",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "fragmentos",
+    "contador_interno": "1",
+    "palabra_clave": "decretase embargo sobre",
+    "posicion_inicio": "0",
+    "posicion_fin": "0",
+    "inicio_fragmento": "0",
+    "fin_fragmento": "0",
+    "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+    "schema": "schema_v3_persona_structured",
+    "threshold": 0.5,
+    "texto_usado": "El objeto del presente es comunicarle que se ha decretado el embargo sobre los fondos que tenga la parte demandada en autos, NAHUEL OSCAR MARQUEZ, DNI 33.470.065, así como los que en el futuro puedan ingresarse.",
+    "estado_postprocess": "no_detectado",
+    "entidad_tipo": null,
+    "entidad_valor": null,
+    "confidence": null,
+    "span_inicio": null,
+    "span_fin": null,
+    "nombre_detectado": null,
+    "dni_detectado": null,
+    "cuil_cuit_detectado": null,
+    "raw_json": "{\"persona_embargada\": [{\"nombre\": {\"text\": \"NAHUEL OSCAR MARQUEZ\", \"confidence\": 0.9328603744506836, \"start\": 125, \"end\": 145}, \"dni\": {\"text\": \"33.470.065\", \"confidence\": 0.987149715423584, \"start\": 151, \"end\": 161}, \"cuil_cuit\": null}]}"
+  }
+]

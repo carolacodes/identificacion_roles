@@ -1,0 +1,24 @@
+models:
+  gliner2_pii:
+    model_id: fastino/gliner2-privacy-filter-PII-multi
+    display_name: GLiNER2 Privacy Filter PII Multi
+    architecture: gliner2
+    enabled: true
+    device: cpu
+    default_threshold: 0.50
+
+  gliner2_multi:
+    model_id: fastino/gliner2-multi-v1
+    display_name: GLiNER2 Multi v1
+    architecture: gliner2
+    enabled: true
+    device: cpu
+    default_threshold: 0.50
+
+  contractner:
+    model_id: agilelab-org/Contractner
+    display_name: AgileLab ContractNER
+    architecture: gliner
+    enabled: true
+    device: cpu
+    default_threshold: 0.80

@@ -1,0 +1,6046 @@
+[
+  {
+    "id": "494151",
+    "numero_archivo": "38",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "JOSÉ LUIS VALENTINI",
+    "docs_nombre_normalizado": "JOSE LUIS VALENTINI",
+    "docs_nombres_unicos": [
+      "JOSÉ LUIS VALENTINI"
+    ],
+    "docs_nombres_normalizados": [
+      "JOSE LUIS VALENTINI"
+    ],
+    "docs_nombre_confidence": 0.6503080129623413,
+    "docs_detecto_dni": true,
+    "docs_dni": "17.196.196",
+    "docs_dni_normalizado": "17196196",
+    "docs_dni_unicos": [
+      "17.196.196"
+    ],
+    "docs_dni_normalizados": [
+      "17196196"
+    ],
+    "docs_dni_confidence": 0.9947903156280518,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "JOSÉ LUIS VALENTINI"
+    ],
+    "frag_nombres_normalizados": [
+      "JOSE LUIS VALENTINI"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "17.196.196"
+    ],
+    "frag_dni_normalizados": [
+      "17196196"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9135180711746216,
+    "frag_nombre_confidence_media": 0.9135180711746216,
+    "frag_dni_confidence_max": 0.9605319499969482,
+    "frag_dni_confidence_media": 0.9605319499969482,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "494160",
+    "numero_archivo": "33",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "93757465",
+    "docs_dni_normalizado": "93757465",
+    "docs_dni_unicos": [
+      "93757465"
+    ],
+    "docs_dni_normalizados": [
+      "93757465"
+    ],
+    "docs_dni_confidence": 0.9957854151725769,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "27-93757465-2",
+    "docs_cuil_cuit_normalizado": "27937574652",
+    "docs_cuil_cuit_unicos": [
+      "27-93757465-2"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "27937574652"
+    ],
+    "docs_cuil_cuit_confidence": 0.774871826171875,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 5,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "ELA PATRICIA GARCIA PALACIOS"
+    ],
+    "frag_nombres_normalizados": [
+      "ELA PATRICIA GARCIA PALACIOS"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9141544103622437,
+    "frag_nombre_confidence_media": 0.9038769006729126,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "495011",
+    "numero_archivo": "3",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "34.436.998",
+    "docs_dni_normalizado": "34436998",
+    "docs_dni_unicos": [
+      "34.436.998"
+    ],
+    "docs_dni_normalizados": [
+      "34436998"
+    ],
+    "docs_dni_confidence": 0.9736673831939697,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "20-34436998-5",
+    "docs_cuil_cuit_normalizado": "20344369985",
+    "docs_cuil_cuit_unicos": [
+      "20-34436998-5"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "20344369985"
+    ],
+    "docs_cuil_cuit_confidence": 0.9683918356895447,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "VINCI BRIAN EMMANUEL",
+      "BRIAN EMMANUEL"
+    ],
+    "frag_nombres_normalizados": [
+      "VINCI BRIAN EMMANUEL",
+      "BRIAN EMMANUEL"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "34.436.998"
+    ],
+    "frag_dni_normalizados": [
+      "34436998"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "20-34436998-5"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "20344369985"
+    ],
+    "frag_nombre_confidence_max": 0.9551043510437012,
+    "frag_nombre_confidence_media": 0.8171865046024323,
+    "frag_dni_confidence_max": 0.9985166192054749,
+    "frag_dni_confidence_media": 0.9985166192054749,
+    "frag_cuil_cuit_confidence_max": 0.8617112040519714,
+    "frag_cuil_cuit_confidence_media": 0.8617112040519714,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": true,
+    "ambos_detectan_cuil_cuit": true,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "495014",
+    "numero_archivo": "50",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "17711031",
+    "docs_dni_normalizado": "17711031",
+    "docs_dni_unicos": [
+      "17711031"
+    ],
+    "docs_dni_normalizados": [
+      "17711031"
+    ],
+    "docs_dni_confidence": 0.9662811160087585,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70308853-4",
+    "docs_cuil_cuit_normalizado": "30703088534",
+    "docs_cuil_cuit_unicos": [
+      "30-70308853-4"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30703088534"
+    ],
+    "docs_cuil_cuit_confidence": 0.8315431475639343,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "ELA MONICA ZARZA"
+    ],
+    "frag_nombres_normalizados": [
+      "ELA MONICA ZARZA"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "17711031"
+    ],
+    "frag_dni_normalizados": [
+      "17711031"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.899895966053009,
+    "frag_nombre_confidence_media": 0.899895966053009,
+    "frag_dni_confidence_max": 0.9910346865653992,
+    "frag_dni_confidence_media": 0.9910346865653992,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "495683",
+    "numero_archivo": "26",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "31.095.679",
+    "docs_dni_normalizado": "31095679",
+    "docs_dni_unicos": [
+      "31.095.679"
+    ],
+    "docs_dni_normalizados": [
+      "31095679"
+    ],
+    "docs_dni_confidence": 0.9561314582824707,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70721665-0",
+    "docs_cuil_cuit_normalizado": "30707216650",
+    "docs_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "docs_cuil_cuit_confidence": 0.9052594900131226,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "ILLALBA JOSE ALBERTO"
+    ],
+    "frag_nombres_normalizados": [
+      "ILLALBA JOSE ALBERTO"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "31.095.679"
+    ],
+    "frag_dni_normalizados": [
+      "31095679"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "frag_nombre_confidence_max": 0.9755887985229492,
+    "frag_nombre_confidence_media": 0.9755887985229492,
+    "frag_dni_confidence_max": 0.9970583915710449,
+    "frag_dni_confidence_media": 0.9970583915710449,
+    "frag_cuil_cuit_confidence_max": 0.9176911115646362,
+    "frag_cuil_cuit_confidence_media": 0.9176911115646362,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": true,
+    "ambos_detectan_cuil_cuit": true,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "495686",
+    "numero_archivo": "54",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "27.825.597",
+    "docs_dni_normalizado": "27825597",
+    "docs_dni_unicos": [
+      "27.825.597"
+    ],
+    "docs_dni_normalizados": [
+      "27825597"
+    ],
+    "docs_dni_confidence": 0.8775514364242554,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70721665-0",
+    "docs_cuil_cuit_normalizado": "30707216650",
+    "docs_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "docs_cuil_cuit_confidence": 0.8464110493659973,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "MACIEL FERNANDO OSCAR"
+    ],
+    "frag_nombres_normalizados": [
+      "MACIEL FERNANDO OSCAR"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "27.825.597"
+    ],
+    "frag_dni_normalizados": [
+      "27825597"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "frag_nombre_confidence_max": 0.8957264423370361,
+    "frag_nombre_confidence_media": 0.8957264423370361,
+    "frag_dni_confidence_max": 0.9901267290115356,
+    "frag_dni_confidence_media": 0.9901267290115356,
+    "frag_cuil_cuit_confidence_max": 0.8133471012115479,
+    "frag_cuil_cuit_confidence_media": 0.8133471012115479,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": true,
+    "ambos_detectan_cuil_cuit": true,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "495690",
+    "numero_archivo": "55",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "34.300.506",
+    "docs_dni_normalizado": "34300506",
+    "docs_dni_unicos": [
+      "34.300.506"
+    ],
+    "docs_dni_normalizados": [
+      "34300506"
+    ],
+    "docs_dni_confidence": 0.8720586895942688,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70721665-0",
+    "docs_cuil_cuit_normalizado": "30707216650",
+    "docs_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "docs_cuil_cuit_confidence": 0.9134063720703125,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "JUAN RAMON"
+    ],
+    "frag_nombres_normalizados": [
+      "JUAN RAMON"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "34.300.506"
+    ],
+    "frag_dni_normalizados": [
+      "34300506"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "frag_nombre_confidence_max": 0.9427700638771057,
+    "frag_nombre_confidence_media": 0.9427700638771057,
+    "frag_dni_confidence_max": 0.9904837608337402,
+    "frag_dni_confidence_media": 0.9904837608337402,
+    "frag_cuil_cuit_confidence_max": 0.8411879539489746,
+    "frag_cuil_cuit_confidence_media": 0.8411879539489746,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": true,
+    "ambos_detectan_cuil_cuit": true,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "498352",
+    "numero_archivo": "69",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "Gabriela Francisco",
+    "docs_nombre_normalizado": "GABRIELA FRANCISCO",
+    "docs_nombres_unicos": [
+      "Gabriela Francisco"
+    ],
+    "docs_nombres_normalizados": [
+      "GABRIELA FRANCISCO"
+    ],
+    "docs_nombre_confidence": 0.8228746652603149,
+    "docs_detecto_dni": true,
+    "docs_dni": "28007580",
+    "docs_dni_normalizado": "28007580",
+    "docs_dni_unicos": [
+      "28007580"
+    ],
+    "docs_dni_normalizados": [
+      "28007580"
+    ],
+    "docs_dni_confidence": 0.9886497259140015,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70308853-4",
+    "docs_cuil_cuit_normalizado": "30703088534",
+    "docs_cuil_cuit_unicos": [
+      "30-70308853-4"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30703088534"
+    ],
+    "docs_cuil_cuit_confidence": 0.6538264155387878,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "Maximiliano Joel ALVAREZ\nMILLAR"
+    ],
+    "frag_nombres_normalizados": [
+      "MAXIMILIANO JOEL ALVAREZ MILLAR"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "40.209.549"
+    ],
+    "frag_dni_normalizados": [
+      "40209549"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.7987545132637024,
+    "frag_nombre_confidence_media": 0.7987545132637024,
+    "frag_dni_confidence_max": 0.9285446405410767,
+    "frag_dni_confidence_media": 0.9285446405410767,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "501201",
+    "numero_archivo": "46",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "24.535.698",
+    "docs_dni_normalizado": "24535698",
+    "docs_dni_unicos": [
+      "24.535.698"
+    ],
+    "docs_dni_normalizados": [
+      "24535698"
+    ],
+    "docs_dni_confidence": 0.9543644785881042,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "Claudia Marcela Ledo"
+    ],
+    "frag_nombres_normalizados": [
+      "CLAUDIA MARCELA LEDO"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "24.535.698"
+    ],
+    "frag_dni_normalizados": [
+      "24535698"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.7592039108276367,
+    "frag_nombre_confidence_media": 0.7592039108276367,
+    "frag_dni_confidence_max": 0.9582569599151611,
+    "frag_dni_confidence_media": 0.9582569599151611,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "501211",
+    "numero_archivo": "36",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": false,
+    "docs_dni": null,
+    "docs_dni_normalizado": "",
+    "docs_dni_unicos": [],
+    "docs_dni_normalizados": [],
+    "docs_dni_confidence": null,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-99913926-0",
+    "docs_cuil_cuit_normalizado": "30999139260",
+    "docs_cuil_cuit_unicos": [
+      "30-99913926-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30999139260"
+    ],
+    "docs_cuil_cuit_confidence": 0.9424458742141724,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "PEDRAZA TEODORO ROVEL"
+    ],
+    "frag_nombres_normalizados": [
+      "PEDRAZA TEODORO ROVEL"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "20.276.462"
+    ],
+    "frag_dni_normalizados": [
+      "20276462"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "20-20276462-3"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "20202764623"
+    ],
+    "frag_nombre_confidence_max": 0.8601040840148926,
+    "frag_nombre_confidence_media": 0.8601040840148926,
+    "frag_dni_confidence_max": 0.9411343336105347,
+    "frag_dni_confidence_media": 0.9411343336105347,
+    "frag_cuil_cuit_confidence_max": 0.9449753761291504,
+    "frag_cuil_cuit_confidence_media": 0.9449753761291504,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": true,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": true,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "501696",
+    "numero_archivo": "19",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "39.872.112",
+    "docs_dni_normalizado": "39872112",
+    "docs_dni_unicos": [
+      "39.872.112"
+    ],
+    "docs_dni_normalizados": [
+      "39872112"
+    ],
+    "docs_dni_confidence": 0.998661994934082,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "SANTIAGO NICOLAS %\nGONZALEZ"
+    ],
+    "frag_nombres_normalizados": [
+      "SANTIAGO NICOLAS % GONZALEZ"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "39.872.112"
+    ],
+    "frag_dni_normalizados": [
+      "39872112"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.8309733867645264,
+    "frag_nombre_confidence_media": 0.8309733867645264,
+    "frag_dni_confidence_max": 0.9975789189338684,
+    "frag_dni_confidence_media": 0.9975789189338684,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "503810",
+    "numero_archivo": "53",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "11.376.446",
+    "docs_dni_normalizado": "11376446",
+    "docs_dni_unicos": [
+      "11.376.446"
+    ],
+    "docs_dni_normalizados": [
+      "11376446"
+    ],
+    "docs_dni_confidence": 0.6861831545829773,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70721665-0",
+    "docs_cuil_cuit_normalizado": "30707216650",
+    "docs_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "docs_cuil_cuit_confidence": 0.8033336997032166,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 0,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": false,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": true,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "503824",
+    "numero_archivo": "30",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "JACQUET ROBERTO LUIS",
+    "docs_nombre_normalizado": "JACQUET ROBERTO LUIS",
+    "docs_nombres_unicos": [
+      "JACQUET ROBERTO LUIS"
+    ],
+    "docs_nombres_normalizados": [
+      "JACQUET ROBERTO LUIS"
+    ],
+    "docs_nombre_confidence": 0.7795485854148865,
+    "docs_detecto_dni": true,
+    "docs_dni": "20.258.157",
+    "docs_dni_normalizado": "20258157",
+    "docs_dni_unicos": [
+      "20.258.157"
+    ],
+    "docs_dni_normalizados": [
+      "20258157"
+    ],
+    "docs_dni_confidence": 0.9713208079338074,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "23-20258157-9",
+    "docs_cuil_cuit_normalizado": "23202581579",
+    "docs_cuil_cuit_unicos": [
+      "23-20258157-9"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "23202581579"
+    ],
+    "docs_cuil_cuit_confidence": 0.9044550657272339,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "Romina Olivera Vila"
+    ],
+    "frag_nombres_normalizados": [
+      "ROMINA OLIVERA VILA"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9260048866271973,
+    "frag_nombre_confidence_media": 0.9260048866271973,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "507931",
+    "numero_archivo": "57",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "SAYUS Enrique",
+    "docs_nombre_normalizado": "SAYUS ENRIQUE",
+    "docs_nombres_unicos": [
+      "SAYUS Enrique"
+    ],
+    "docs_nombres_normalizados": [
+      "SAYUS ENRIQUE"
+    ],
+    "docs_nombre_confidence": 0.7257313132286072,
+    "docs_detecto_dni": true,
+    "docs_dni": "34.704.592",
+    "docs_dni_normalizado": "34704592",
+    "docs_dni_unicos": [
+      "34.704.592"
+    ],
+    "docs_dni_normalizados": [
+      "34704592"
+    ],
+    "docs_dni_confidence": 0.9118354320526123,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "JORGE Alberto"
+    ],
+    "frag_nombres_normalizados": [
+      "JORGE ALBERTO"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.8582029938697815,
+    "frag_nombre_confidence_media": 0.8582029938697815,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "507932",
+    "numero_archivo": "41",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "34.704.592",
+    "docs_dni_normalizado": "34704592",
+    "docs_dni_unicos": [
+      "34.704.592"
+    ],
+    "docs_dni_normalizados": [
+      "34704592"
+    ],
+    "docs_dni_confidence": 0.8406174182891846,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "IVAN ROBERTO SIL"
+    ],
+    "frag_nombres_normalizados": [
+      "IVAN ROBERTO SIL"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9068617224693298,
+    "frag_nombre_confidence_media": 0.9068617224693298,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "513482",
+    "numero_archivo": "79",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "Sonia Raquel Bobadilla",
+    "docs_nombre_normalizado": "SONIA RAQUEL BOBADILLA",
+    "docs_nombres_unicos": [
+      "Sonia Raquel Bobadilla"
+    ],
+    "docs_nombres_normalizados": [
+      "SONIA RAQUEL BOBADILLA"
+    ],
+    "docs_nombre_confidence": 0.8353886008262634,
+    "docs_detecto_dni": true,
+    "docs_dni": "16.893.287",
+    "docs_dni_normalizado": "16893287",
+    "docs_dni_unicos": [
+      "16.893.287"
+    ],
+    "docs_dni_normalizados": [
+      "16893287"
+    ],
+    "docs_dni_confidence": 0.7850318551063538,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "20-16893287-2",
+    "docs_cuil_cuit_normalizado": "20168932872",
+    "docs_cuil_cuit_unicos": [
+      "20-16893287-2"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "20168932872"
+    ],
+    "docs_cuil_cuit_confidence": 0.7534899115562439,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 0,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": false,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": true,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "513487",
+    "numero_archivo": "66",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "AGUSTIN MARIANO PEROSIO",
+    "docs_nombre_normalizado": "AGUSTIN MARIANO PEROSIO",
+    "docs_nombres_unicos": [
+      "AGUSTIN MARIANO PEROSIO"
+    ],
+    "docs_nombres_normalizados": [
+      "AGUSTIN MARIANO PEROSIO"
+    ],
+    "docs_nombre_confidence": 0.8716984391212463,
+    "docs_detecto_dni": true,
+    "docs_dni": "16.893.287",
+    "docs_dni_normalizado": "16893287",
+    "docs_dni_unicos": [
+      "16.893.287"
+    ],
+    "docs_dni_normalizados": [
+      "16893287"
+    ],
+    "docs_dni_confidence": 0.9891176819801331,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "20-16893287-2",
+    "docs_cuil_cuit_normalizado": "20168932872",
+    "docs_cuil_cuit_unicos": [
+      "20-16893287-2"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "20168932872"
+    ],
+    "docs_cuil_cuit_confidence": 0.9664801359176636,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 0,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": false,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": true,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "513551",
+    "numero_archivo": "44",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "RONDINELLA Virna Silvana",
+    "docs_nombre_normalizado": "RONDINELLA VIRNA SILVANA",
+    "docs_nombres_unicos": [
+      "RONDINELLA Virna Silvana"
+    ],
+    "docs_nombres_normalizados": [
+      "RONDINELLA VIRNA SILVANA"
+    ],
+    "docs_nombre_confidence": 0.7232275605201721,
+    "docs_detecto_dni": true,
+    "docs_dni": "36.301.174",
+    "docs_dni_normalizado": "36301174",
+    "docs_dni_unicos": [
+      "36.301.174"
+    ],
+    "docs_dni_normalizados": [
+      "36301174"
+    ],
+    "docs_dni_confidence": 0.8159319758415222,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "KRZYSZYCHA Hernán Felix"
+    ],
+    "frag_nombres_normalizados": [
+      "KRZYSZYCHA HERNAN FELIX"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.8158366680145264,
+    "frag_nombre_confidence_media": 0.8158366680145264,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "514558",
+    "numero_archivo": "32",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "Gustavo Ezequiel Godoy",
+    "docs_nombre_normalizado": "GUSTAVO EZEQUIEL GODOY",
+    "docs_nombres_unicos": [
+      "Gustavo Ezequiel Godoy"
+    ],
+    "docs_nombres_normalizados": [
+      "GUSTAVO EZEQUIEL GODOY"
+    ],
+    "docs_nombre_confidence": 0.7174937129020691,
+    "docs_detecto_dni": true,
+    "docs_dni": "31.317.421",
+    "docs_dni_normalizado": "31317421",
+    "docs_dni_unicos": [
+      "31.317.421"
+    ],
+    "docs_dni_normalizados": [
+      "31317421"
+    ],
+    "docs_dni_confidence": 0.9759199619293213,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 9,
+    "frag_fragmentos_con_candidato": 6,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "Gustavo Ezequiel Godoy"
+    ],
+    "frag_nombres_normalizados": [
+      "GUSTAVO EZEQUIEL GODOY"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "31.317.421"
+    ],
+    "frag_dni_normalizados": [
+      "31317421"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.871425986289978,
+    "frag_nombre_confidence_media": 0.8107321759064993,
+    "frag_dni_confidence_max": 0.996080219745636,
+    "frag_dni_confidence_media": 0.9934695065021515,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "516901",
+    "numero_archivo": "60",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "Daniel Ezequiel Romero",
+    "docs_nombre_normalizado": "DANIEL EZEQUIEL ROMERO",
+    "docs_nombres_unicos": [
+      "Daniel Ezequiel Romero"
+    ],
+    "docs_nombres_normalizados": [
+      "DANIEL EZEQUIEL ROMERO"
+    ],
+    "docs_nombre_confidence": 0.9175178408622742,
+    "docs_detecto_dni": true,
+    "docs_dni": "29.225.672",
+    "docs_dni_normalizado": "29225672",
+    "docs_dni_unicos": [
+      "29.225.672"
+    ],
+    "docs_dni_normalizados": [
+      "29225672"
+    ],
+    "docs_dni_confidence": 0.9992746710777283,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-99903208-3",
+    "docs_cuil_cuit_normalizado": "30999032083",
+    "docs_cuil_cuit_unicos": [
+      "30-99903208-3"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30999032083"
+    ],
+    "docs_cuil_cuit_confidence": 0.8843194842338562,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 0,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": false,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": true,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "516903",
+    "numero_archivo": "27",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "27680733",
+    "docs_dni_normalizado": "27680733",
+    "docs_dni_unicos": [
+      "27680733"
+    ],
+    "docs_dni_normalizados": [
+      "27680733"
+    ],
+    "docs_dni_confidence": 0.9994943141937256,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 4,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "Fernando Martín González"
+    ],
+    "frag_nombres_normalizados": [
+      "FERNANDO MARTIN GONZALEZ"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "27680733"
+    ],
+    "frag_dni_normalizados": [
+      "27680733"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.923785924911499,
+    "frag_nombre_confidence_media": 0.8823921382427216,
+    "frag_dni_confidence_max": 0.9960009455680847,
+    "frag_dni_confidence_media": 0.9947472214698792,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "516904",
+    "numero_archivo": "15",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": false,
+    "docs_dni": null,
+    "docs_dni_normalizado": "",
+    "docs_dni_unicos": [],
+    "docs_dni_normalizados": [],
+    "docs_dni_confidence": null,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "no_detectado"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": false,
+    "frag_cantidad_fragmentos": 5,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "LAURA ESTELA\n\nNDEZ",
+      "JAVIER J. COSENTINO"
+    ],
+    "frag_nombres_normalizados": [
+      "LAURA ESTELA NDEZ",
+      "JAVIER J. COSENTINO"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9298789501190186,
+    "frag_nombre_confidence_media": 0.9077249467372894,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": true,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "518796",
+    "numero_archivo": "25",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "LEONARDO GABRIEL",
+    "docs_nombre_normalizado": "LEONARDO GABRIEL",
+    "docs_nombres_unicos": [
+      "LEONARDO GABRIEL"
+    ],
+    "docs_nombres_normalizados": [
+      "LEONARDO GABRIEL"
+    ],
+    "docs_nombre_confidence": 0.6608619093894958,
+    "docs_detecto_dni": true,
+    "docs_dni": "28.731.512",
+    "docs_dni_normalizado": "28731512",
+    "docs_dni_unicos": [
+      "28.731.512"
+    ],
+    "docs_dni_normalizados": [
+      "28731512"
+    ],
+    "docs_dni_confidence": 0.9875164031982422,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "20-28731512-1",
+    "docs_cuil_cuit_normalizado": "20287315121",
+    "docs_cuil_cuit_unicos": [
+      "20-28731512-1"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "20287315121"
+    ],
+    "docs_cuil_cuit_confidence": 0.7987378239631653,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 3,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "LEONARDO GABRIE",
+      "LEONARDO GABRIEL"
+    ],
+    "frag_nombres_normalizados": [
+      "LEONARDO GABRIE",
+      "LEONARDO GABRIEL"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "28.731.512"
+    ],
+    "frag_dni_normalizados": [
+      "28731512"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "20-28731512-1"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "20287315121"
+    ],
+    "frag_nombre_confidence_max": 0.9384245276451111,
+    "frag_nombre_confidence_media": 0.9333523909250895,
+    "frag_dni_confidence_max": 0.9951000809669495,
+    "frag_dni_confidence_media": 0.9947488009929657,
+    "frag_cuil_cuit_confidence_max": 0.9539992809295654,
+    "frag_cuil_cuit_confidence_media": 0.9535346031188965,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": true,
+    "ambos_detectan_cuil_cuit": true,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "522290",
+    "numero_archivo": "45",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": false,
+    "docs_dni": null,
+    "docs_dni_normalizado": "",
+    "docs_dni_unicos": [],
+    "docs_dni_normalizados": [],
+    "docs_dni_confidence": null,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "no_detectado"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": false,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 0,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": false,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": true,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": true,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "523977",
+    "numero_archivo": "63",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "EDUARDO JAVIER FERNAN",
+    "docs_nombre_normalizado": "EDUARDO JAVIER FERNAN",
+    "docs_nombres_unicos": [
+      "EDUARDO JAVIER FERNAN"
+    ],
+    "docs_nombres_normalizados": [
+      "EDUARDO JAVIER FERNAN"
+    ],
+    "docs_nombre_confidence": 0.6745761036872864,
+    "docs_detecto_dni": true,
+    "docs_dni": "21.594.165",
+    "docs_dni_normalizado": "21594165",
+    "docs_dni_unicos": [
+      "21.594.165"
+    ],
+    "docs_dni_normalizados": [
+      "21594165"
+    ],
+    "docs_dni_confidence": 0.9567075371742249,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 3,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "EDUARDO JAVIER FERNAN"
+    ],
+    "frag_nombres_normalizados": [
+      "EDUARDO JAVIER FERNAN"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "21.594.165"
+    ],
+    "frag_dni_normalizados": [
+      "21594165"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9233901500701904,
+    "frag_nombre_confidence_media": 0.8350786765416464,
+    "frag_dni_confidence_max": 0.9977274537086487,
+    "frag_dni_confidence_media": 0.9977274537086487,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "523990",
+    "numero_archivo": "65",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "20.583.561",
+    "docs_dni_normalizado": "20583561",
+    "docs_dni_unicos": [
+      "20.583.561"
+    ],
+    "docs_dni_normalizados": [
+      "20583561"
+    ],
+    "docs_dni_confidence": 0.9933851361274719,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 3,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "Joaquín Fernández Cortés",
+      "ALEJANDRO RODRIGO ALBO"
+    ],
+    "frag_nombres_normalizados": [
+      "JOAQUIN FERNANDEZ CORTES",
+      "ALEJANDRO RODRIGO ALBO"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "20.583.561"
+    ],
+    "frag_dni_normalizados": [
+      "20583561"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9760718941688538,
+    "frag_nombre_confidence_media": 0.7921674450238546,
+    "frag_dni_confidence_max": 0.9960856437683105,
+    "frag_dni_confidence_media": 0.9960856437683105,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "523996",
+    "numero_archivo": "62",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "RUBEN ALBERTO",
+    "docs_nombre_normalizado": "RUBEN ALBERTO",
+    "docs_nombres_unicos": [
+      "RUBEN ALBERTO"
+    ],
+    "docs_nombres_normalizados": [
+      "RUBEN ALBERTO"
+    ],
+    "docs_nombre_confidence": 0.8152315020561218,
+    "docs_detecto_dni": true,
+    "docs_dni": "5.612.521",
+    "docs_dni_normalizado": "5612521",
+    "docs_dni_unicos": [
+      "5.612.521"
+    ],
+    "docs_dni_normalizados": [
+      "5612521"
+    ],
+    "docs_dni_confidence": 0.9795290231704712,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "RUBEN ALBERTO"
+    ],
+    "frag_nombres_normalizados": [
+      "RUBEN ALBERTO"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "5.612.521"
+    ],
+    "frag_dni_normalizados": [
+      "5612521"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "33-71862856-9"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "33718628569"
+    ],
+    "frag_nombre_confidence_max": 0.9733726382255554,
+    "frag_nombre_confidence_media": 0.9733726382255554,
+    "frag_dni_confidence_max": 0.994236171245575,
+    "frag_dni_confidence_media": 0.994236171245575,
+    "frag_cuil_cuit_confidence_max": 0.8132783770561218,
+    "frag_cuil_cuit_confidence_media": 0.8132783770561218,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": true,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "524013",
+    "numero_archivo": "68",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "2603424",
+    "docs_dni_normalizado": "2603424",
+    "docs_dni_unicos": [
+      "2603424"
+    ],
+    "docs_dni_normalizados": [
+      "2603424"
+    ],
+    "docs_dni_confidence": 0.9854506254196167,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "33-71862856-9",
+    "docs_cuil_cuit_normalizado": "33718628569",
+    "docs_cuil_cuit_unicos": [
+      "33-71862856-9"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "33718628569"
+    ],
+    "docs_cuil_cuit_confidence": 0.9044135808944702,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "DIEGO CISTERNA"
+    ],
+    "frag_nombres_normalizados": [
+      "DIEGO CISTERNA"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "2603424"
+    ],
+    "frag_dni_normalizados": [
+      "2603424"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9674611687660217,
+    "frag_nombre_confidence_media": 0.9674611687660217,
+    "frag_dni_confidence_max": 0.9988240599632263,
+    "frag_dni_confidence_media": 0.9988240599632263,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "524053",
+    "numero_archivo": "10",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": false,
+    "docs_dni": null,
+    "docs_dni_normalizado": "",
+    "docs_dni_unicos": [],
+    "docs_dni_normalizados": [],
+    "docs_dni_confidence": null,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-71606862-1",
+    "docs_cuil_cuit_normalizado": "30716068621",
+    "docs_cuil_cuit_unicos": [
+      "30-71606862-1"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30716068621"
+    ],
+    "docs_cuil_cuit_confidence": 0.7090186476707458,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "ANDREA\nJAQUÍ LINA"
+    ],
+    "frag_nombres_normalizados": [
+      "ANDREA JAQUI LINA"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "23.333.216"
+    ],
+    "frag_dni_normalizados": [
+      "23333216"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.8358618021011353,
+    "frag_nombre_confidence_media": 0.8358618021011353,
+    "frag_dni_confidence_max": 0.8770240545272827,
+    "frag_dni_confidence_media": 0.8770240545272827,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": true,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "524057",
+    "numero_archivo": "7",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "29178884",
+    "docs_dni_normalizado": "29178884",
+    "docs_dni_unicos": [
+      "29178884"
+    ],
+    "docs_dni_normalizados": [
+      "29178884"
+    ],
+    "docs_dni_confidence": 0.9256709814071655,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 0,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": false,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": true,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "525055",
+    "numero_archivo": "35",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "SAYUS Enrique",
+    "docs_nombre_normalizado": "SAYUS ENRIQUE",
+    "docs_nombres_unicos": [
+      "SAYUS Enrique"
+    ],
+    "docs_nombres_normalizados": [
+      "SAYUS ENRIQUE"
+    ],
+    "docs_nombre_confidence": 0.7203435301780701,
+    "docs_detecto_dni": true,
+    "docs_dni": "34.704.592",
+    "docs_dni_normalizado": "34704592",
+    "docs_dni_unicos": [
+      "34.704.592"
+    ],
+    "docs_dni_normalizados": [
+      "34704592"
+    ],
+    "docs_dni_confidence": 0.7244421243667603,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 4,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "BENITO CABRERA VASQUEZ",
+      "ELVER\nBRUNO ESTRADA QUINTO"
+    ],
+    "frag_nombres_normalizados": [
+      "BENITO CABRERA VASQUEZ",
+      "ELVER BRUNO ESTRADA QUINTO"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9882196187973022,
+    "frag_nombre_confidence_media": 0.9258454889059067,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "526651",
+    "numero_archivo": "70",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "PORCO MAIRA GABRIELA",
+    "docs_nombre_normalizado": "PORCO MAIRA GABRIELA",
+    "docs_nombres_unicos": [
+      "PORCO MAIRA GABRIELA"
+    ],
+    "docs_nombres_normalizados": [
+      "PORCO MAIRA GABRIELA"
+    ],
+    "docs_nombre_confidence": 0.7983587980270386,
+    "docs_detecto_dni": true,
+    "docs_dni": "31.370.360",
+    "docs_dni_normalizado": "31370360",
+    "docs_dni_unicos": [
+      "31.370.360"
+    ],
+    "docs_dni_normalizados": [
+      "31370360"
+    ],
+    "docs_dni_confidence": 0.9690213799476624,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 0,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": false,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": true,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "529383",
+    "numero_archivo": "12",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "34418062",
+    "docs_dni_normalizado": "34418062",
+    "docs_dni_unicos": [
+      "34418062"
+    ],
+    "docs_dni_normalizados": [
+      "34418062"
+    ],
+    "docs_dni_confidence": 0.7547715306282043,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "ROZQO ER STO ARIEL"
+    ],
+    "frag_nombres_normalizados": [
+      "ROZQO ER STO ARIEL"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "34418062"
+    ],
+    "frag_dni_normalizados": [
+      "34418062"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.7293329834938049,
+    "frag_nombre_confidence_media": 0.7005326151847839,
+    "frag_dni_confidence_max": 0.9922812581062317,
+    "frag_dni_confidence_media": 0.9907706677913666,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "529783",
+    "numero_archivo": "34",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "10.700.496",
+    "docs_dni_normalizado": "10700496",
+    "docs_dni_unicos": [
+      "10.700.496"
+    ],
+    "docs_dni_normalizados": [
+      "10700496"
+    ],
+    "docs_dni_confidence": 0.7979243993759155,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 10,
+    "frag_fragmentos_con_candidato": 5,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "ALFREDO ANTONIO ARIAS",
+      "Marcos Fernandez",
+      "Ramon Gabriel Velardez"
+    ],
+    "frag_nombres_normalizados": [
+      "ALFREDO ANTONIO ARIAS",
+      "MARCOS FERNANDEZ",
+      "RAMON GABRIEL VELARDEZ"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "10.700.496"
+    ],
+    "frag_dni_normalizados": [
+      "10700496"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.8474899530410767,
+    "frag_nombre_confidence_media": 0.7917143106460571,
+    "frag_dni_confidence_max": 0.9050142765045166,
+    "frag_dni_confidence_media": 0.9050142765045166,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "529847",
+    "numero_archivo": "49",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "36.024.191",
+    "docs_dni_normalizado": "36024191",
+    "docs_dni_unicos": [
+      "36.024.191"
+    ],
+    "docs_dni_normalizados": [
+      "36024191"
+    ],
+    "docs_dni_confidence": 0.9876499772071838,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "LIPSKER MATIAS\nALEXIS"
+    ],
+    "frag_nombres_normalizados": [
+      "LIPSKER MATIAS ALEXIS"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "24.564.225"
+    ],
+    "frag_dni_normalizados": [
+      "24564225"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.8990368247032166,
+    "frag_nombre_confidence_media": 0.8990368247032166,
+    "frag_dni_confidence_max": 0.9839752912521362,
+    "frag_dni_confidence_media": 0.9839752912521362,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "531066",
+    "numero_archivo": "43",
+    "nombre_documento": "Embargo - Empleado",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": false,
+    "docs_dni": null,
+    "docs_dni_normalizado": "",
+    "docs_dni_unicos": [],
+    "docs_dni_normalizados": [],
+    "docs_dni_confidence": null,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "no_detectado"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": false,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "GRACIELA EDITH GARCETE"
+    ],
+    "frag_nombres_normalizados": [
+      "GRACIELA EDITH GARCETE"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.682222306728363,
+    "frag_nombre_confidence_media": 0.682222306728363,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": true,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "531075",
+    "numero_archivo": "37",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "24391072",
+    "docs_dni_normalizado": "24391072",
+    "docs_dni_unicos": [
+      "24391072"
+    ],
+    "docs_dni_normalizados": [
+      "24391072"
+    ],
+    "docs_dni_confidence": 0.9857659339904785,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 4,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "DANIEL CARLOS PEREZ"
+    ],
+    "frag_nombres_normalizados": [
+      "DANIEL CARLOS PEREZ"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "24391072"
+    ],
+    "frag_dni_normalizados": [
+      "24391072"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "33-71862856-9"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "33718628569"
+    ],
+    "frag_nombre_confidence_max": 0.9361676573753357,
+    "frag_nombre_confidence_media": 0.9341934124628702,
+    "frag_dni_confidence_max": 0.9961962699890137,
+    "frag_dni_confidence_media": 0.9932347933451334,
+    "frag_cuil_cuit_confidence_max": 0.7611884474754333,
+    "frag_cuil_cuit_confidence_media": 0.7611884474754333,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": true,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "531094",
+    "numero_archivo": "71",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": false,
+    "docs_dni": null,
+    "docs_dni_normalizado": "",
+    "docs_dni_unicos": [],
+    "docs_dni_normalizados": [],
+    "docs_dni_confidence": null,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30500061711",
+    "docs_cuil_cuit_normalizado": "30500061711",
+    "docs_cuil_cuit_unicos": [
+      "30500061711"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30500061711"
+    ],
+    "docs_cuil_cuit_confidence": 0.7169365286827087,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 0,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": false,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": true,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": true,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "532501",
+    "numero_archivo": "29",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "21993417",
+    "docs_dni_normalizado": "21993417",
+    "docs_dni_unicos": [
+      "21993417"
+    ],
+    "docs_dni_normalizados": [
+      "21993417"
+    ],
+    "docs_dni_confidence": 0.9297694563865662,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70721665-0",
+    "docs_cuil_cuit_normalizado": "30707216650",
+    "docs_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "docs_cuil_cuit_confidence": 0.8793147206306458,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "ELIAS EZEQUIEL RODRIGUEZ"
+    ],
+    "frag_nombres_normalizados": [
+      "ELIAS EZEQUIEL RODRIGUEZ"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.8325123190879822,
+    "frag_nombre_confidence_media": 0.8325123190879822,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "534526",
+    "numero_archivo": "4",
+    "nombre_documento": "Embargo - Empleado",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "40770662",
+    "docs_dni_normalizado": "40770662",
+    "docs_dni_unicos": [
+      "40770662"
+    ],
+    "docs_dni_normalizados": [
+      "40770662"
+    ],
+    "docs_dni_confidence": 0.9360331296920776,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "BRAVO LUIS ALBERTO",
+      "LBERTO"
+    ],
+    "frag_nombres_normalizados": [
+      "BRAVO LUIS ALBERTO",
+      "LBERTO"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "40770662"
+    ],
+    "frag_dni_normalizados": [
+      "40770662"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9730892181396484,
+    "frag_nombre_confidence_media": 0.8576717674732208,
+    "frag_dni_confidence_max": 0.9979392886161804,
+    "frag_dni_confidence_media": 0.9918773472309113,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "535814",
+    "numero_archivo": "24",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "Nancy Mariela Benedetti",
+    "docs_nombre_normalizado": "NANCY MARIELA BENEDETTI",
+    "docs_nombres_unicos": [
+      "Nancy Mariela Benedetti"
+    ],
+    "docs_nombres_normalizados": [
+      "NANCY MARIELA BENEDETTI"
+    ],
+    "docs_nombre_confidence": 0.7914751768112183,
+    "docs_detecto_dni": true,
+    "docs_dni": "25.688.264",
+    "docs_dni_normalizado": "25688264",
+    "docs_dni_unicos": [
+      "25.688.264"
+    ],
+    "docs_dni_normalizados": [
+      "25688264"
+    ],
+    "docs_dni_confidence": 0.9364954233169556,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "33-71862856-9",
+    "docs_cuil_cuit_normalizado": "33718628569",
+    "docs_cuil_cuit_unicos": [
+      "33-71862856-9"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "33718628569"
+    ],
+    "docs_cuil_cuit_confidence": 0.895415723323822,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 4,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "Nancy Mariela\nBenedetti"
+    ],
+    "frag_nombres_normalizados": [
+      "NANCY MARIELA BENEDETTI"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "25.688.264"
+    ],
+    "frag_dni_normalizados": [
+      "25688264"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.968145489692688,
+    "frag_nombre_confidence_media": 0.9365941137075424,
+    "frag_dni_confidence_max": 0.9595229029655457,
+    "frag_dni_confidence_media": 0.9505031406879425,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "535837",
+    "numero_archivo": "52",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "LUNA HORACIO EMANUEL",
+    "docs_nombre_normalizado": "LUNA HORACIO EMANUEL",
+    "docs_nombres_unicos": [
+      "LUNA HORACIO EMANUEL"
+    ],
+    "docs_nombres_normalizados": [
+      "LUNA HORACIO EMANUEL"
+    ],
+    "docs_nombre_confidence": 0.8138998746871948,
+    "docs_detecto_dni": true,
+    "docs_dni": "35499690",
+    "docs_dni_normalizado": "35499690",
+    "docs_dni_unicos": [
+      "35499690"
+    ],
+    "docs_dni_normalizados": [
+      "35499690"
+    ],
+    "docs_dni_confidence": 0.9955909252166748,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-99913926-0",
+    "docs_cuil_cuit_normalizado": "30999139260",
+    "docs_cuil_cuit_unicos": [
+      "30-99913926-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30999139260"
+    ],
+    "docs_cuil_cuit_confidence": 0.935545802116394,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 4,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "LUNA HORACIO EMANUEL"
+    ],
+    "frag_nombres_normalizados": [
+      "LUNA HORACIO EMANUEL"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "35499690"
+    ],
+    "frag_dni_normalizados": [
+      "35499690"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9462392926216125,
+    "frag_nombre_confidence_media": 0.940009132027626,
+    "frag_dni_confidence_max": 0.996184766292572,
+    "frag_dni_confidence_media": 0.9944672882556915,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "535845",
+    "numero_archivo": "21",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [
+      "HORACIO OSCAR\r\n\r\nNUÑEZ",
+      "MIRTA EDITH BONACALZA"
+    ],
+    "docs_nombres_normalizados": [
+      "HORACIO OSCAR NUNEZ",
+      "MIRTA EDITH BONACALZA"
+    ],
+    "docs_nombre_confidence": 0.9110963344573975,
+    "docs_detecto_dni": true,
+    "docs_dni": null,
+    "docs_dni_normalizado": "",
+    "docs_dni_unicos": [
+      "26592524",
+      "24846229"
+    ],
+    "docs_dni_normalizados": [
+      "26592524",
+      "24846229"
+    ],
+    "docs_dni_confidence": 0.9969542026519775,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "20-26592524-4",
+    "docs_cuil_cuit_normalizado": "20265925244",
+    "docs_cuil_cuit_unicos": [
+      "20-26592524-4"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "20265925244"
+    ],
+    "docs_cuil_cuit_confidence": 0.8324031233787537,
+    "docs_estado_postprocess": [
+      "multiples_candidatos"
+    ],
+    "docs_multiples_candidatos": true,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 5,
+    "frag_fragmentos_con_candidato": 5,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "HORACIO OSCAR\n\nNUÑEZ",
+      "MIRTA EDITH BONACALZA"
+    ],
+    "frag_nombres_normalizados": [
+      "HORACIO OSCAR NUNEZ",
+      "MIRTA EDITH BONACALZA"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "26592524",
+      "24846229",
+      "40797926"
+    ],
+    "frag_dni_normalizados": [
+      "26592524",
+      "24846229",
+      "40797926"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "20-26592524-4"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "20265925244"
+    ],
+    "frag_nombre_confidence_max": 0.9924934506416321,
+    "frag_nombre_confidence_media": 0.9610342741012573,
+    "frag_dni_confidence_max": 0.9999266862869263,
+    "frag_dni_confidence_media": 0.9905262390772501,
+    "frag_cuil_cuit_confidence_max": 0.944192111492157,
+    "frag_cuil_cuit_confidence_media": 0.8175317645072937,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": true,
+    "ambos_detectan_cuil_cuit": true,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "536705",
+    "numero_archivo": "20",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "CARLOS ROBERTO SOLOHAGA",
+    "docs_nombre_normalizado": "CARLOS ROBERTO SOLOHAGA",
+    "docs_nombres_unicos": [
+      "CARLOS ROBERTO SOLOHAGA"
+    ],
+    "docs_nombres_normalizados": [
+      "CARLOS ROBERTO SOLOHAGA"
+    ],
+    "docs_nombre_confidence": 0.8518340587615967,
+    "docs_detecto_dni": true,
+    "docs_dni": "17.516.617",
+    "docs_dni_normalizado": "17516617",
+    "docs_dni_unicos": [
+      "17.516.617"
+    ],
+    "docs_dni_normalizados": [
+      "17516617"
+    ],
+    "docs_dni_confidence": 0.9462919235229492,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-99913926-0",
+    "docs_cuil_cuit_normalizado": "30999139260",
+    "docs_cuil_cuit_unicos": [
+      "30-99913926-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30999139260"
+    ],
+    "docs_cuil_cuit_confidence": 0.8869199752807617,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 0,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": false,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": true,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "536707",
+    "numero_archivo": "74",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "4.513.281",
+    "docs_dni_normalizado": "4513281",
+    "docs_dni_unicos": [
+      "4.513.281"
+    ],
+    "docs_dni_normalizados": [
+      "4513281"
+    ],
+    "docs_dni_confidence": 0.9666024446487427,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "JUAN CARLOS SEQUERA"
+    ],
+    "frag_nombres_normalizados": [
+      "JUAN CARLOS SEQUERA"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "4.513.281"
+    ],
+    "frag_dni_normalizados": [
+      "4513281"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9562069177627563,
+    "frag_nombre_confidence_media": 0.9562069177627563,
+    "frag_dni_confidence_max": 0.9959051609039307,
+    "frag_dni_confidence_media": 0.9959051609039307,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "536715",
+    "numero_archivo": "73",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "27015232",
+    "docs_dni_normalizado": "27015232",
+    "docs_dni_unicos": [
+      "27015232"
+    ],
+    "docs_dni_normalizados": [
+      "27015232"
+    ],
+    "docs_dni_confidence": 0.9572471976280212,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 5,
+    "frag_fragmentos_con_candidato": 3,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "ALFREDO ISMAEL LOPEZ"
+    ],
+    "frag_nombres_normalizados": [
+      "ALFREDO ISMAEL LOPEZ"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "27015232"
+    ],
+    "frag_dni_normalizados": [
+      "27015232"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9277000427246094,
+    "frag_nombre_confidence_media": 0.9184075991312662,
+    "frag_dni_confidence_max": 0.9983567595481873,
+    "frag_dni_confidence_media": 0.9839994708697001,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "536718",
+    "numero_archivo": "22",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "14.748.434",
+    "docs_dni_normalizado": "14748434",
+    "docs_dni_unicos": [
+      "14.748.434"
+    ],
+    "docs_dni_normalizados": [
+      "14748434"
+    ],
+    "docs_dni_confidence": 0.9438323378562927,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70721665-0",
+    "docs_cuil_cuit_normalizado": "30707216650",
+    "docs_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "docs_cuil_cuit_confidence": 0.9227171540260315,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 6,
+    "frag_fragmentos_con_candidato": 5,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "GROSSO JUAN JOSE",
+      "JUAN JOSE"
+    ],
+    "frag_nombres_normalizados": [
+      "GROSSO JUAN JOSE",
+      "JUAN JOSE"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "14.748.434"
+    ],
+    "frag_dni_normalizados": [
+      "14748434"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.8898815512657166,
+    "frag_nombre_confidence_media": 0.8507054646809896,
+    "frag_dni_confidence_max": 0.9733237028121948,
+    "frag_dni_confidence_media": 0.9259747505187989,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "536721",
+    "numero_archivo": "14",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "MIGUEL MARCELO MEDINA",
+    "docs_nombre_normalizado": "MIGUEL MARCELO MEDINA",
+    "docs_nombres_unicos": [
+      "MIGUEL MARCELO MEDINA"
+    ],
+    "docs_nombres_normalizados": [
+      "MIGUEL MARCELO MEDINA"
+    ],
+    "docs_nombre_confidence": 0.7362486124038696,
+    "docs_detecto_dni": true,
+    "docs_dni": "16269506",
+    "docs_dni_normalizado": "16269506",
+    "docs_dni_unicos": [
+      "16269506"
+    ],
+    "docs_dni_normalizados": [
+      "16269506"
+    ],
+    "docs_dni_confidence": 0.9992861151695251,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "20162695062",
+    "docs_cuil_cuit_normalizado": "20162695062",
+    "docs_cuil_cuit_unicos": [
+      "20162695062"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "20162695062"
+    ],
+    "docs_cuil_cuit_confidence": 0.9746488928794861,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 3,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "MIGUEL MARCELO MEDINA"
+    ],
+    "frag_nombres_normalizados": [
+      "MIGUEL MARCELO MEDINA"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "16269506"
+    ],
+    "frag_dni_normalizados": [
+      "16269506"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "20162695082",
+      "20162695062"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "20162695082",
+      "20162695062"
+    ],
+    "frag_nombre_confidence_max": 0.892989993095398,
+    "frag_nombre_confidence_media": 0.8699023127555847,
+    "frag_dni_confidence_max": 0.998924195766449,
+    "frag_dni_confidence_media": 0.9984773397445679,
+    "frag_cuil_cuit_confidence_max": 0.9900805354118347,
+    "frag_cuil_cuit_confidence_media": 0.977335512638092,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": true,
+    "ambos_detectan_cuil_cuit": true,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "536724",
+    "numero_archivo": "58",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "23.420.002",
+    "docs_dni_normalizado": "23420002",
+    "docs_dni_unicos": [
+      "23.420.002"
+    ],
+    "docs_dni_normalizados": [
+      "23420002"
+    ],
+    "docs_dni_confidence": 0.9712629914283752,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70308853-4",
+    "docs_cuil_cuit_normalizado": "30703088534",
+    "docs_cuil_cuit_unicos": [
+      "30-70308853-4"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30703088534"
+    ],
+    "docs_cuil_cuit_confidence": 0.9348911643028259,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "César Hugo SANTILLÁN"
+    ],
+    "frag_nombres_normalizados": [
+      "CESAR HUGO SANTILLAN"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "23.420.002"
+    ],
+    "frag_dni_normalizados": [
+      "23420002"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.7323697209358215,
+    "frag_nombre_confidence_media": 0.7323697209358215,
+    "frag_dni_confidence_max": 0.83997642993927,
+    "frag_dni_confidence_media": 0.83997642993927,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "536725",
+    "numero_archivo": "8",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "MIGUEL ANGEL SEGOVIA",
+    "docs_nombre_normalizado": "MIGUEL ANGEL SEGOVIA",
+    "docs_nombres_unicos": [
+      "MIGUEL ANGEL SEGOVIA"
+    ],
+    "docs_nombres_normalizados": [
+      "MIGUEL ANGEL SEGOVIA"
+    ],
+    "docs_nombre_confidence": 0.7859214544296265,
+    "docs_detecto_dni": true,
+    "docs_dni": "36003333",
+    "docs_dni_normalizado": "36003333",
+    "docs_dni_unicos": [
+      "36003333"
+    ],
+    "docs_dni_normalizados": [
+      "36003333"
+    ],
+    "docs_dni_confidence": 0.9995445609092712,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "20360033334",
+    "docs_cuil_cuit_normalizado": "20360033334",
+    "docs_cuil_cuit_unicos": [
+      "20360033334"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "20360033334"
+    ],
+    "docs_cuil_cuit_confidence": 0.9302746057510376,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "MIGUEL ANGEL SEGOVIA"
+    ],
+    "frag_nombres_normalizados": [
+      "MIGUEL ANGEL SEGOVIA"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "36003333"
+    ],
+    "frag_dni_normalizados": [
+      "36003333"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "20360033334"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "20360033334"
+    ],
+    "frag_nombre_confidence_max": 0.805997371673584,
+    "frag_nombre_confidence_media": 0.7576759457588196,
+    "frag_dni_confidence_max": 0.9990173578262329,
+    "frag_dni_confidence_media": 0.9985604882240295,
+    "frag_cuil_cuit_confidence_max": 0.951483964920044,
+    "frag_cuil_cuit_confidence_media": 0.9425105452537537,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": true,
+    "ambos_detectan_cuil_cuit": true,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "536728",
+    "numero_archivo": "80",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "MONTIEL DARIO RUBEN",
+    "docs_nombre_normalizado": "MONTIEL DARIO RUBEN",
+    "docs_nombres_unicos": [
+      "MONTIEL DARIO RUBEN"
+    ],
+    "docs_nombres_normalizados": [
+      "MONTIEL DARIO RUBEN"
+    ],
+    "docs_nombre_confidence": 0.7766734957695007,
+    "docs_detecto_dni": true,
+    "docs_dni": "21.525.457",
+    "docs_dni_normalizado": "21525457",
+    "docs_dni_unicos": [
+      "21.525.457"
+    ],
+    "docs_dni_normalizados": [
+      "21525457"
+    ],
+    "docs_dni_confidence": 0.9357521533966064,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70721665-0",
+    "docs_cuil_cuit_normalizado": "30707216650",
+    "docs_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "docs_cuil_cuit_confidence": 0.9427934288978577,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "MONTIEL DARIO RUBEN"
+    ],
+    "frag_nombres_normalizados": [
+      "MONTIEL DARIO RUBEN"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "21.525.457"
+    ],
+    "frag_dni_normalizados": [
+      "21525457"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9076098799705505,
+    "frag_nombre_confidence_media": 0.9076098799705505,
+    "frag_dni_confidence_max": 0.9886544942855835,
+    "frag_dni_confidence_media": 0.9886544942855835,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "536730",
+    "numero_archivo": "56",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "ROMERO GABRIEL GUSTAVO",
+    "docs_nombre_normalizado": "ROMERO GABRIEL GUSTAVO",
+    "docs_nombres_unicos": [
+      "ROMERO GABRIEL GUSTAVO"
+    ],
+    "docs_nombres_normalizados": [
+      "ROMERO GABRIEL GUSTAVO"
+    ],
+    "docs_nombre_confidence": 0.7044733762741089,
+    "docs_detecto_dni": true,
+    "docs_dni": "25.925.481",
+    "docs_dni_normalizado": "25925481",
+    "docs_dni_unicos": [
+      "25.925.481"
+    ],
+    "docs_dni_normalizados": [
+      "25925481"
+    ],
+    "docs_dni_confidence": 0.8359106779098511,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "ROMERO GABRIEL GUSTAVO",
+      "Jose Igna"
+    ],
+    "frag_nombres_normalizados": [
+      "ROMERO GABRIEL GUSTAVO",
+      "JOSE IGNA"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "25.925.481"
+    ],
+    "frag_dni_normalizados": [
+      "25925481"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9409167766571045,
+    "frag_nombre_confidence_media": 0.9367929995059967,
+    "frag_dni_confidence_max": 0.9894431829452515,
+    "frag_dni_confidence_media": 0.9894431829452515,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "536738",
+    "numero_archivo": "59",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "LUCINDO RAMÓN\r\nCORNEJO",
+    "docs_nombre_normalizado": "LUCINDO RAMON CORNEJO",
+    "docs_nombres_unicos": [
+      "LUCINDO RAMÓN\r\nCORNEJO"
+    ],
+    "docs_nombres_normalizados": [
+      "LUCINDO RAMON CORNEJO"
+    ],
+    "docs_nombre_confidence": 0.9086571335792542,
+    "docs_detecto_dni": true,
+    "docs_dni": "12.848.992",
+    "docs_dni_normalizado": "12848992",
+    "docs_dni_unicos": [
+      "12.848.992"
+    ],
+    "docs_dni_normalizados": [
+      "12848992"
+    ],
+    "docs_dni_confidence": 0.9835081100463867,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "LUCINDO RAMÓN\nCORNEJO"
+    ],
+    "frag_nombres_normalizados": [
+      "LUCINDO RAMON CORNEJO"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "12.848.992"
+    ],
+    "frag_dni_normalizados": [
+      "12848992"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9323726296424866,
+    "frag_nombre_confidence_media": 0.9323726296424866,
+    "frag_dni_confidence_max": 0.9950594902038574,
+    "frag_dni_confidence_media": 0.9950594902038574,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "536739",
+    "numero_archivo": "77",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "PAULA ALEJANDRA",
+    "docs_nombre_normalizado": "PAULA ALEJANDRA",
+    "docs_nombres_unicos": [
+      "PAULA ALEJANDRA"
+    ],
+    "docs_nombres_normalizados": [
+      "PAULA ALEJANDRA"
+    ],
+    "docs_nombre_confidence": 0.8186402916908264,
+    "docs_detecto_dni": true,
+    "docs_dni": "21.594.889",
+    "docs_dni_normalizado": "21594889",
+    "docs_dni_unicos": [
+      "21.594.889"
+    ],
+    "docs_dni_normalizados": [
+      "21594889"
+    ],
+    "docs_dni_confidence": 0.9546696543693542,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 3,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "Daniela Robasio"
+    ],
+    "frag_nombres_normalizados": [
+      "DANIELA ROBASIO"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "21.594.889"
+    ],
+    "frag_dni_normalizados": [
+      "21594889"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.8719969391822815,
+    "frag_nombre_confidence_media": 0.8590519428253174,
+    "frag_dni_confidence_max": 0.9961949586868286,
+    "frag_dni_confidence_media": 0.9961949586868286,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "536741",
+    "numero_archivo": "9",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "Marcelo Finvarb",
+    "docs_nombre_normalizado": "MARCELO FINVARB",
+    "docs_nombres_unicos": [
+      "Marcelo Finvarb"
+    ],
+    "docs_nombres_normalizados": [
+      "MARCELO FINVARB"
+    ],
+    "docs_nombre_confidence": 0.6945810914039612,
+    "docs_detecto_dni": true,
+    "docs_dni": "21773000",
+    "docs_dni_normalizado": "21773000",
+    "docs_dni_unicos": [
+      "21773000"
+    ],
+    "docs_dni_normalizados": [
+      "21773000"
+    ],
+    "docs_dni_confidence": 0.9830198884010315,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "ROBERTO\nCARLOS LOBO"
+    ],
+    "frag_nombres_normalizados": [
+      "ROBERTO CARLOS LOBO"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "21773000"
+    ],
+    "frag_dni_normalizados": [
+      "21773000"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9573071599006653,
+    "frag_nombre_confidence_media": 0.9573071599006653,
+    "frag_dni_confidence_max": 0.9989816546440125,
+    "frag_dni_confidence_media": 0.9989816546440125,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "536742",
+    "numero_archivo": "23",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "Marcelo Finvarb",
+    "docs_nombre_normalizado": "MARCELO FINVARB",
+    "docs_nombres_unicos": [
+      "Marcelo Finvarb"
+    ],
+    "docs_nombres_normalizados": [
+      "MARCELO FINVARB"
+    ],
+    "docs_nombre_confidence": 0.8511442542076111,
+    "docs_detecto_dni": true,
+    "docs_dni": "10533729",
+    "docs_dni_normalizado": "10533729",
+    "docs_dni_unicos": [
+      "10533729"
+    ],
+    "docs_dni_normalizados": [
+      "10533729"
+    ],
+    "docs_dni_confidence": 0.9759051203727722,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "ESTER JOAQUINA PRATS"
+    ],
+    "frag_nombres_normalizados": [
+      "ESTER JOAQUINA PRATS"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "10533729"
+    ],
+    "frag_dni_normalizados": [
+      "10533729"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.8067640066146851,
+    "frag_nombre_confidence_media": 0.8067640066146851,
+    "frag_dni_confidence_max": 0.9986615180969238,
+    "frag_dni_confidence_media": 0.9986615180969238,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "536750",
+    "numero_archivo": "31",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "29.987.246",
+    "docs_dni_normalizado": "29987246",
+    "docs_dni_unicos": [
+      "29.987.246"
+    ],
+    "docs_dni_normalizados": [
+      "29987246"
+    ],
+    "docs_dni_confidence": 0.944011926651001,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "20299872468",
+    "docs_cuil_cuit_normalizado": "20299872468",
+    "docs_cuil_cuit_unicos": [
+      "20299872468"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "20299872468"
+    ],
+    "docs_cuil_cuit_confidence": 0.8349866271018982,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "Lucila Ines"
+    ],
+    "frag_nombres_normalizados": [
+      "LUCILA INES"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.7600750923156738,
+    "frag_nombre_confidence_media": 0.7600750923156738,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "538037",
+    "numero_archivo": "47",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "Graciela Garbagna",
+    "docs_nombre_normalizado": "GRACIELA GARBAGNA",
+    "docs_nombres_unicos": [
+      "Graciela Garbagna"
+    ],
+    "docs_nombres_normalizados": [
+      "GRACIELA GARBAGNA"
+    ],
+    "docs_nombre_confidence": 0.7428786754608154,
+    "docs_detecto_dni": true,
+    "docs_dni": "24.326.675",
+    "docs_dni_normalizado": "24326675",
+    "docs_dni_unicos": [
+      "24.326.675"
+    ],
+    "docs_dni_normalizados": [
+      "24326675"
+    ],
+    "docs_dni_confidence": 0.961260199546814,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "GRISELDA BEATRIZ VALENZUELA"
+    ],
+    "frag_nombres_normalizados": [
+      "GRISELDA BEATRIZ VALENZUELA"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "24.326.675"
+    ],
+    "frag_dni_normalizados": [
+      "24326675"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.8075769543647766,
+    "frag_nombre_confidence_media": 0.8075769543647766,
+    "frag_dni_confidence_max": 0.984409511089325,
+    "frag_dni_confidence_media": 0.984409511089325,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "538066",
+    "numero_archivo": "76",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "23492823",
+    "docs_dni_normalizado": "23492823",
+    "docs_dni_unicos": [
+      "23492823"
+    ],
+    "docs_dni_normalizados": [
+      "23492823"
+    ],
+    "docs_dni_confidence": 0.9687637686729431,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "Clara Evangelina Torres"
+    ],
+    "frag_nombres_normalizados": [
+      "CLARA EVANGELINA TORRES"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.8876549005508423,
+    "frag_nombre_confidence_media": 0.8753791749477386,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "538081",
+    "numero_archivo": "6",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "27.164.468",
+    "docs_dni_normalizado": "27164468",
+    "docs_dni_unicos": [
+      "27.164.468"
+    ],
+    "docs_dni_normalizados": [
+      "27164468"
+    ],
+    "docs_dni_confidence": 0.8969293236732483,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "Mariana Lucia"
+    ],
+    "frag_nombres_normalizados": [
+      "MARIANA LUCIA"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9503844380378723,
+    "frag_nombre_confidence_media": 0.9503844380378723,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "538084",
+    "numero_archivo": "2",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "32.630.518",
+    "docs_dni_normalizado": "32630518",
+    "docs_dni_unicos": [
+      "32.630.518"
+    ],
+    "docs_dni_normalizados": [
+      "32630518"
+    ],
+    "docs_dni_confidence": 0.8661728501319885,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "20203135239",
+    "docs_cuil_cuit_normalizado": "20203135239",
+    "docs_cuil_cuit_unicos": [
+      "20203135239"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "20203135239"
+    ],
+    "docs_cuil_cuit_confidence": 0.6898655891418457,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "JUAREZ Patricia Noemi"
+    ],
+    "frag_nombres_normalizados": [
+      "JUAREZ PATRICIA NOEMI"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.7875996232032776,
+    "frag_nombre_confidence_media": 0.7875996232032776,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "538090",
+    "numero_archivo": "42",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "Maria Soledad Casazza",
+    "docs_nombre_normalizado": "MARIA SOLEDAD CASAZZA",
+    "docs_nombres_unicos": [
+      "Maria Soledad Casazza"
+    ],
+    "docs_nombres_normalizados": [
+      "MARIA SOLEDAD CASAZZA"
+    ],
+    "docs_nombre_confidence": 0.8100337982177734,
+    "docs_detecto_dni": true,
+    "docs_dni": "94.542.024",
+    "docs_dni_normalizado": "94542024",
+    "docs_dni_unicos": [
+      "94.542.024"
+    ],
+    "docs_dni_normalizados": [
+      "94542024"
+    ],
+    "docs_dni_confidence": 0.9201974272727966,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "27-94542024-9",
+    "docs_cuil_cuit_normalizado": "27945420249",
+    "docs_cuil_cuit_unicos": [
+      "27-94542024-9"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "27945420249"
+    ],
+    "docs_cuil_cuit_confidence": 0.8540177345275879,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "MIRIAM LOPEZ FRANCO"
+    ],
+    "frag_nombres_normalizados": [
+      "MIRIAM LOPEZ FRANCO"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "27-94542024-9"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "27945420249"
+    ],
+    "frag_nombre_confidence_max": 0.9493837952613831,
+    "frag_nombre_confidence_media": 0.9493837952613831,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": 0.8864195942878723,
+    "frag_cuil_cuit_confidence_media": 0.8864195942878723,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": true,
+    "ambos_detectan_cuil_cuit": true,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "538114",
+    "numero_archivo": "48",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "44.583.812",
+    "docs_dni_normalizado": "44583812",
+    "docs_dni_unicos": [
+      "44.583.812"
+    ],
+    "docs_dni_normalizados": [
+      "44583812"
+    ],
+    "docs_dni_confidence": 0.9659455418586731,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70721665-0",
+    "docs_cuil_cuit_normalizado": "30707216650",
+    "docs_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "docs_cuil_cuit_confidence": 0.7813467979431152,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "ANGEL EZEQUIEL ALARCON"
+    ],
+    "frag_nombres_normalizados": [
+      "ANGEL EZEQUIEL ALARCON"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "44.583.812"
+    ],
+    "frag_dni_normalizados": [
+      "44583812"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.8471688032150269,
+    "frag_nombre_confidence_media": 0.8471688032150269,
+    "frag_dni_confidence_max": 0.9785297513008118,
+    "frag_dni_confidence_media": 0.9785297513008118,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "538118",
+    "numero_archivo": "1",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "NAHUEL OSCAR MARQUEZ",
+    "docs_nombre_normalizado": "NAHUEL OSCAR MARQUEZ",
+    "docs_nombres_unicos": [
+      "NAHUEL OSCAR MARQUEZ"
+    ],
+    "docs_nombres_normalizados": [
+      "NAHUEL OSCAR MARQUEZ"
+    ],
+    "docs_nombre_confidence": 0.8556088209152222,
+    "docs_detecto_dni": true,
+    "docs_dni": "33.470.065",
+    "docs_dni_normalizado": "33470065",
+    "docs_dni_unicos": [
+      "33.470.065"
+    ],
+    "docs_dni_normalizados": [
+      "33470065"
+    ],
+    "docs_dni_confidence": 0.968622624874115,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 5,
+    "frag_fragmentos_con_candidato": 3,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "NAHUEL OSCAR MARQUEZ",
+      "PETRONE Maria Tere"
+    ],
+    "frag_nombres_normalizados": [
+      "NAHUEL OSCAR MARQUEZ",
+      "PETRONE MARIA TERE"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "33.470.065"
+    ],
+    "frag_dni_normalizados": [
+      "33470065"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9384778738021851,
+    "frag_nombre_confidence_media": 0.9191065629323324,
+    "frag_dni_confidence_max": 0.9877930283546448,
+    "frag_dni_confidence_media": 0.9863938689231873,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "538119",
+    "numero_archivo": "18",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "Sandra Fabiana Ávila",
+    "docs_nombre_normalizado": "SANDRA FABIANA AVILA",
+    "docs_nombres_unicos": [
+      "Sandra Fabiana Ávila"
+    ],
+    "docs_nombres_normalizados": [
+      "SANDRA FABIANA AVILA"
+    ],
+    "docs_nombre_confidence": 0.8703386783599854,
+    "docs_detecto_dni": true,
+    "docs_dni": "44.398.455",
+    "docs_dni_normalizado": "44398455",
+    "docs_dni_unicos": [
+      "44.398.455"
+    ],
+    "docs_dni_normalizados": [
+      "44398455"
+    ],
+    "docs_dni_confidence": 0.9941669702529907,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "ESTEFANIA MIHANOVICH"
+    ],
+    "frag_nombres_normalizados": [
+      "ESTEFANIA MIHANOVICH"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "44.398.455"
+    ],
+    "frag_dni_normalizados": [
+      "44398455"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9287132620811462,
+    "frag_nombre_confidence_media": 0.9287132620811462,
+    "frag_dni_confidence_max": 0.9896960258483887,
+    "frag_dni_confidence_media": 0.9896960258483887,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "538120",
+    "numero_archivo": "28",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "26.294.008",
+    "docs_dni_normalizado": "26294008",
+    "docs_dni_unicos": [
+      "26.294.008"
+    ],
+    "docs_dni_normalizados": [
+      "26294008"
+    ],
+    "docs_dni_confidence": 0.8758482336997986,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 1,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "NATALIA ANDREA ONA"
+    ],
+    "frag_nombres_normalizados": [
+      "NATALIA ANDREA ONA"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "26.294.008"
+    ],
+    "frag_dni_normalizados": [
+      "26294008"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.984761118888855,
+    "frag_nombre_confidence_media": 0.984761118888855,
+    "frag_dni_confidence_max": 0.9497454762458801,
+    "frag_dni_confidence_media": 0.9497454762458801,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "538122",
+    "numero_archivo": "13",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "23.360.827",
+    "docs_dni_normalizado": "23360827",
+    "docs_dni_unicos": [
+      "23.360.827"
+    ],
+    "docs_dni_normalizados": [
+      "23360827"
+    ],
+    "docs_dni_confidence": 0.8477295637130737,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70721665-0",
+    "docs_cuil_cuit_normalizado": "30707216650",
+    "docs_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "docs_cuil_cuit_confidence": 0.7009745836257935,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 6,
+    "frag_fragmentos_con_candidato": 3,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "CLAUDIA ALEJANDRA MIRANDA",
+      "7718552123980",
+      "CASTILLO Pablo Mariano"
+    ],
+    "frag_nombres_normalizados": [
+      "CLAUDIA ALEJANDRA MIRANDA",
+      "7718552123980",
+      "CASTILLO PABLO MARIANO"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "23.360.827"
+    ],
+    "frag_dni_normalizados": [
+      "23360827"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "frag_nombre_confidence_max": 0.9556575417518616,
+    "frag_nombre_confidence_media": 0.8420021732648214,
+    "frag_dni_confidence_max": 0.9217301607131958,
+    "frag_dni_confidence_media": 0.9217301607131958,
+    "frag_cuil_cuit_confidence_max": 0.7380080223083496,
+    "frag_cuil_cuit_confidence_media": 0.7380080223083496,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": true,
+    "ambos_detectan_cuil_cuit": true,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "542996",
+    "numero_archivo": "5",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "CHIAMINO WALTER RICARDO",
+    "docs_nombre_normalizado": "CHIAMINO WALTER RICARDO",
+    "docs_nombres_unicos": [
+      "CHIAMINO WALTER RICARDO"
+    ],
+    "docs_nombres_normalizados": [
+      "CHIAMINO WALTER RICARDO"
+    ],
+    "docs_nombre_confidence": 0.7118203043937683,
+    "docs_detecto_dni": true,
+    "docs_dni": "6551699",
+    "docs_dni_normalizado": "6551699",
+    "docs_dni_unicos": [
+      "6551699"
+    ],
+    "docs_dni_normalizados": [
+      "6551699"
+    ],
+    "docs_dni_confidence": 0.958569347858429,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "MARIA AMELIA",
+      "STIO\nMARIA AMELIA"
+    ],
+    "frag_nombres_normalizados": [
+      "MARIA AMELIA",
+      "STIO MARIA AMELIA"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "6551699"
+    ],
+    "frag_dni_normalizados": [
+      "6551699"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9268108010292053,
+    "frag_nombre_confidence_media": 0.853113055229187,
+    "frag_dni_confidence_max": 0.9956996440887451,
+    "frag_dni_confidence_media": 0.963573157787323,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "543609",
+    "numero_archivo": "51",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "23087819",
+    "docs_dni_normalizado": "23087819",
+    "docs_dni_unicos": [
+      "23087819"
+    ],
+    "docs_dni_normalizados": [
+      "23087819"
+    ],
+    "docs_dni_confidence": 0.9406308531761169,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 2,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "CARDOZO MIGUEL ÁNGEL",
+      "CABRERA\nFERNANDA MARISOL"
+    ],
+    "frag_nombres_normalizados": [
+      "CARDOZO MIGUEL ANGEL",
+      "CABRERA FERNANDA MARISOL"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "23087819"
+    ],
+    "frag_dni_normalizados": [
+      "23087819"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9589877128601074,
+    "frag_nombre_confidence_media": 0.8423503339290619,
+    "frag_dni_confidence_max": 0.984205961227417,
+    "frag_dni_confidence_media": 0.984205961227417,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "543631",
+    "numero_archivo": "64",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "35.646.104",
+    "docs_dni_normalizado": "35646104",
+    "docs_dni_unicos": [
+      "35.646.104"
+    ],
+    "docs_dni_normalizados": [
+      "35646104"
+    ],
+    "docs_dni_confidence": 0.9859212040901184,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70308853-4",
+    "docs_cuil_cuit_normalizado": "30703088534",
+    "docs_cuil_cuit_unicos": [
+      "30-70308853-4"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30703088534"
+    ],
+    "docs_cuil_cuit_confidence": 0.9104310870170593,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 3,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "GONZALEZ LEDESMA\nMAURICIO"
+    ],
+    "frag_nombres_normalizados": [
+      "GONZALEZ LEDESMA MAURICIO"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "35.646.104"
+    ],
+    "frag_dni_normalizados": [
+      "35646104"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9044128060340881,
+    "frag_nombre_confidence_media": 0.8802725275357565,
+    "frag_dni_confidence_max": 0.9914364218711853,
+    "frag_dni_confidence_media": 0.989734431107839,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "546236",
+    "numero_archivo": "16",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "AURELIO RODOLFO\r\nMELGAREJO",
+    "docs_nombre_normalizado": "AURELIO RODOLFO MELGAREJO",
+    "docs_nombres_unicos": [
+      "AURELIO RODOLFO\r\nMELGAREJO"
+    ],
+    "docs_nombres_normalizados": [
+      "AURELIO RODOLFO MELGAREJO"
+    ],
+    "docs_nombre_confidence": 0.7106136679649353,
+    "docs_detecto_dni": true,
+    "docs_dni": "13273828",
+    "docs_dni_normalizado": "13273828",
+    "docs_dni_unicos": [
+      "13273828"
+    ],
+    "docs_dni_normalizados": [
+      "13273828"
+    ],
+    "docs_dni_confidence": 0.9914646744728088,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "AURELIO RODOLFO\nMELGAREJO"
+    ],
+    "frag_nombres_normalizados": [
+      "AURELIO RODOLFO MELGAREJO"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "13273828"
+    ],
+    "frag_dni_normalizados": [
+      "13273828"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9571019411087036,
+    "frag_nombre_confidence_media": 0.9368963241577148,
+    "frag_dni_confidence_max": 0.9993502497673035,
+    "frag_dni_confidence_media": 0.966381311416626,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "546238",
+    "numero_archivo": "78",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "7.759.088",
+    "docs_dni_normalizado": "7759088",
+    "docs_dni_unicos": [
+      "7.759.088"
+    ],
+    "docs_dni_normalizados": [
+      "7759088"
+    ],
+    "docs_dni_confidence": 0.8205451369285583,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "33-71862856-9",
+    "docs_cuil_cuit_normalizado": "33718628569",
+    "docs_cuil_cuit_unicos": [
+      "33-71862856-9"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "33718628569"
+    ],
+    "docs_cuil_cuit_confidence": 0.8684840798377991,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 0,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": false,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": true,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "546314",
+    "numero_archivo": "11",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "SANCHEZ Walter Mariano",
+    "docs_nombre_normalizado": "SANCHEZ WALTER MARIANO",
+    "docs_nombres_unicos": [
+      "SANCHEZ Walter Mariano"
+    ],
+    "docs_nombres_normalizados": [
+      "SANCHEZ WALTER MARIANO"
+    ],
+    "docs_nombre_confidence": 0.6862266063690186,
+    "docs_detecto_dni": true,
+    "docs_dni": "31973182",
+    "docs_dni_normalizado": "31973182",
+    "docs_dni_unicos": [
+      "31973182"
+    ],
+    "docs_dni_normalizados": [
+      "31973182"
+    ],
+    "docs_dni_confidence": 0.9949886202812195,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-70721665-0",
+    "docs_cuil_cuit_normalizado": "30707216650",
+    "docs_cuil_cuit_unicos": [
+      "30-70721665-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30707216650"
+    ],
+    "docs_cuil_cuit_confidence": 0.6810193657875061,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 5,
+    "frag_fragmentos_con_candidato": 5,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "SILVA HERMINIO ISAUL ANTONIO"
+    ],
+    "frag_nombres_normalizados": [
+      "SILVA HERMINIO ISAUL ANTONIO"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "31973182"
+    ],
+    "frag_dni_normalizados": [
+      "31973182"
+    ],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.9154073596000671,
+    "frag_nombre_confidence_media": 0.8701856136322021,
+    "frag_dni_confidence_max": 0.9952502250671387,
+    "frag_dni_confidence_media": 0.990938913822174,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "546332",
+    "numero_archivo": "17",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "VALERIA ALEJANDRA JIMENEZ",
+    "docs_nombre_normalizado": "VALERIA ALEJANDRA JIMENEZ",
+    "docs_nombres_unicos": [
+      "VALERIA ALEJANDRA JIMENEZ"
+    ],
+    "docs_nombres_normalizados": [
+      "VALERIA ALEJANDRA JIMENEZ"
+    ],
+    "docs_nombre_confidence": 0.7754160761833191,
+    "docs_detecto_dni": true,
+    "docs_dni": "29231660",
+    "docs_dni_normalizado": "29231660",
+    "docs_dni_unicos": [
+      "29231660"
+    ],
+    "docs_dni_normalizados": [
+      "29231660"
+    ],
+    "docs_dni_confidence": 0.9999150037765503,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "27-29231660-2",
+    "docs_cuil_cuit_normalizado": "27292316602",
+    "docs_cuil_cuit_unicos": [
+      "27-29231660-2"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "27292316602"
+    ],
+    "docs_cuil_cuit_confidence": 0.9208183288574219,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 3,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "VALERIA ALEJANDRA JIMENEZ"
+    ],
+    "frag_nombres_normalizados": [
+      "VALERIA ALEJANDRA JIMENEZ"
+    ],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "29231660"
+    ],
+    "frag_dni_normalizados": [
+      "29231660"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "30-99913926-0"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "30999139260"
+    ],
+    "frag_nombre_confidence_max": 0.8647404313087463,
+    "frag_nombre_confidence_media": 0.8647404313087463,
+    "frag_dni_confidence_max": 0.9707393050193787,
+    "frag_dni_confidence_media": 0.9707393050193787,
+    "frag_cuil_cuit_confidence_max": 0.7242328524589539,
+    "frag_cuil_cuit_confidence_media": 0.7242328524589539,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": true,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": true,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "546334",
+    "numero_archivo": "39",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": false,
+    "docs_dni": null,
+    "docs_dni_normalizado": "",
+    "docs_dni_unicos": [],
+    "docs_dni_normalizados": [],
+    "docs_dni_confidence": null,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-99913926-0",
+    "docs_cuil_cuit_normalizado": "30999139260",
+    "docs_cuil_cuit_unicos": [
+      "30-99913926-0"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30999139260"
+    ],
+    "docs_cuil_cuit_confidence": 0.7345747351646423,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 6,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "Lucas Rene Lee",
+      "Carmen Angelini"
+    ],
+    "frag_nombres_normalizados": [
+      "LUCAS RENE LEE",
+      "CARMEN ANGELINI"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": 0.912506639957428,
+    "frag_nombre_confidence_media": 0.9105194807052612,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": true,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": true,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "547366",
+    "numero_archivo": "61",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": true,
+    "docs_dni": "43.084.298",
+    "docs_dni_normalizado": "43084298",
+    "docs_dni_unicos": [
+      "43.084.298"
+    ],
+    "docs_dni_normalizados": [
+      "43084298"
+    ],
+    "docs_dni_confidence": 0.9665533304214478,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 5,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "33.414.252"
+    ],
+    "frag_dni_normalizados": [
+      "33414252"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "33-71862856-9"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "33718628569"
+    ],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": 0.9858521223068237,
+    "frag_dni_confidence_media": 0.9858521223068237,
+    "frag_cuil_cuit_confidence_max": 0.7692676186561584,
+    "frag_cuil_cuit_confidence_media": 0.7692676186561584,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": true,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": true,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": true,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "547369",
+    "numero_archivo": "72",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "FASSETTA Domingo Ignacio",
+    "docs_nombre_normalizado": "FASSETTA DOMINGO IGNACIO",
+    "docs_nombres_unicos": [
+      "FASSETTA Domingo Ignacio"
+    ],
+    "docs_nombres_normalizados": [
+      "FASSETTA DOMINGO IGNACIO"
+    ],
+    "docs_nombre_confidence": 0.7101202607154846,
+    "docs_detecto_dni": false,
+    "docs_dni": null,
+    "docs_dni_normalizado": "",
+    "docs_dni_unicos": [],
+    "docs_dni_normalizados": [],
+    "docs_dni_confidence": null,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 3,
+    "frag_fragmentos_con_candidato": 2,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": true,
+    "frag_dni_unicos": [
+      "33.627.258"
+    ],
+    "frag_dni_normalizados": [
+      "33627258"
+    ],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "33-71862856-9"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "33718628569"
+    ],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": 0.813862681388855,
+    "frag_dni_confidence_media": 0.813862681388855,
+    "frag_cuil_cuit_confidence_max": 0.6690171957015991,
+    "frag_cuil_cuit_confidence_media": 0.6690171957015991,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": true,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": true,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": true,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "547372",
+    "numero_archivo": "75",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": false,
+    "docs_dni": null,
+    "docs_dni_normalizado": "",
+    "docs_dni_unicos": [],
+    "docs_dni_normalizados": [],
+    "docs_dni_confidence": null,
+    "docs_detecto_cuil_cuit": false,
+    "docs_cuil_cuit": null,
+    "docs_cuil_cuit_normalizado": "",
+    "docs_cuil_cuit_unicos": [],
+    "docs_cuil_cuit_normalizados": [],
+    "docs_cuil_cuit_confidence": null,
+    "docs_estado_postprocess": [
+      "no_detectado"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": false,
+    "frag_cantidad_fragmentos": 5,
+    "frag_fragmentos_con_candidato": 0,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": false,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": true,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": true,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": true
+  },
+  {
+    "id": "547373",
+    "numero_archivo": "40",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": true,
+    "docs_nombre": "JULIO",
+    "docs_nombre_normalizado": "JULIO",
+    "docs_nombres_unicos": [
+      "JULIO"
+    ],
+    "docs_nombres_normalizados": [
+      "JULIO"
+    ],
+    "docs_nombre_confidence": 0.7545416951179504,
+    "docs_detecto_dni": true,
+    "docs_dni": "36.024.191",
+    "docs_dni_normalizado": "36024191",
+    "docs_dni_unicos": [
+      "36.024.191"
+    ],
+    "docs_dni_normalizados": [
+      "36024191"
+    ],
+    "docs_dni_confidence": 0.8370857834815979,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "30-71412954-2",
+    "docs_cuil_cuit_normalizado": "30714129542",
+    "docs_cuil_cuit_unicos": [
+      "30-71412954-2"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "30714129542"
+    ],
+    "docs_cuil_cuit_confidence": 0.8435789346694946,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 4,
+    "frag_fragmentos_con_candidato": 4,
+    "frag_detecto_nombre": true,
+    "frag_nombres_unicos": [
+      "JULIO"
+    ],
+    "frag_nombres_normalizados": [
+      "JULIO"
+    ],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": true,
+    "frag_cuil_cuit_unicos": [
+      "CUIT 30-71412954-2"
+    ],
+    "frag_cuil_cuit_normalizados": [
+      "30714129542"
+    ],
+    "frag_nombre_confidence_max": 0.7832968831062317,
+    "frag_nombre_confidence_media": 0.6896467953920364,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": 0.6927725076675415,
+    "frag_cuil_cuit_confidence_media": 0.6837603449821472,
+    "frag_detecto_algo": true,
+    "acuerdo_nombre": true,
+    "ambos_detectan_nombre": true,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": false,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": true,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": false,
+    "acuerdo_cuil_cuit": true,
+    "ambos_detectan_cuil_cuit": true,
+    "solo_documento_detecta_cuil_cuit": false,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  },
+  {
+    "id": "547376",
+    "numero_archivo": "67",
+    "nombre_documento": "Embargo - usuario",
+    "docs_detecto_nombre": false,
+    "docs_nombre": null,
+    "docs_nombre_normalizado": "",
+    "docs_nombres_unicos": [],
+    "docs_nombres_normalizados": [],
+    "docs_nombre_confidence": null,
+    "docs_detecto_dni": false,
+    "docs_dni": null,
+    "docs_dni_normalizado": "",
+    "docs_dni_unicos": [],
+    "docs_dni_normalizados": [],
+    "docs_dni_confidence": null,
+    "docs_detecto_cuil_cuit": true,
+    "docs_cuil_cuit": "20-94958329-6",
+    "docs_cuil_cuit_normalizado": "20949583296",
+    "docs_cuil_cuit_unicos": [
+      "20-94958329-6"
+    ],
+    "docs_cuil_cuit_normalizados": [
+      "20949583296"
+    ],
+    "docs_cuil_cuit_confidence": 0.7572847008705139,
+    "docs_estado_postprocess": [
+      "candidato_unico"
+    ],
+    "docs_multiples_candidatos": false,
+    "docs_detecto_algo": true,
+    "frag_cantidad_fragmentos": 1,
+    "frag_fragmentos_con_candidato": 0,
+    "frag_detecto_nombre": false,
+    "frag_nombres_unicos": [],
+    "frag_nombres_normalizados": [],
+    "frag_detecto_dni": false,
+    "frag_dni_unicos": [],
+    "frag_dni_normalizados": [],
+    "frag_detecto_cuil_cuit": false,
+    "frag_cuil_cuit_unicos": [],
+    "frag_cuil_cuit_normalizados": [],
+    "frag_nombre_confidence_max": null,
+    "frag_nombre_confidence_media": null,
+    "frag_dni_confidence_max": null,
+    "frag_dni_confidence_media": null,
+    "frag_cuil_cuit_confidence_max": null,
+    "frag_cuil_cuit_confidence_media": null,
+    "frag_detecto_algo": false,
+    "acuerdo_nombre": false,
+    "ambos_detectan_nombre": false,
+    "solo_documento_detecta_nombre": false,
+    "solo_fragmentos_detectan_nombre": false,
+    "ninguno_detecta_nombre": true,
+    "acuerdo_dni": false,
+    "ambos_detectan_dni": false,
+    "solo_documento_detecta_dni": false,
+    "solo_fragmentos_detectan_dni": false,
+    "ninguno_detecta_dni": true,
+    "acuerdo_cuil_cuit": false,
+    "ambos_detectan_cuil_cuit": false,
+    "solo_documento_detecta_cuil_cuit": true,
+    "solo_fragmentos_detectan_cuil_cuit": false,
+    "ninguno_detecta_cuil_cuit": false
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "538118",
+    "numero_archivo": "1",
+    "nombre": "Embargo - usuario",
+    "modo_entrada": "fragmentos",
+    "resultados": [
+      {
+        "contador_interno": "1",
+        "palabra_clave": "decretase embargo sobre",
+        "posicion_inicio": "0",
+        "posicion_fin": "0",
+        "inicio_fragmento": "0",
+        "fin_fragmento": "0",
+        "status": "no_detectado",
+        "candidates": [],
+        "modelo": "fastino/gliner2-privacy-filter-PII-multi",
+        "schema": "schema_v3_persona_structured",
+        "threshold": 0.5
+      }
+    ]
+  }
+]

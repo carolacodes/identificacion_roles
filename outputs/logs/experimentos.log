@@ -1,0 +1,21 @@
+2026-08-31 18:46:43,437 INFO __main__ - Inicio de experimento: smoke_pii_persona_fragmento
+2026-08-31 18:52:35,702 INFO __main__ - Inicio de experimento: smoke_pii_persona_fragmento
+2026-08-31 18:52:35,729 INFO __main__ - Dataset cargado: experimento=smoke_pii_persona_fragmento modelo=gliner2_pii schema=schema_v3_persona_structured modo=fragmentos registros=1
+2026-08-31 18:52:44,260 WARNING huggingface_hub.file_download - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-08-31 18:52:55,592 WARNING huggingface_hub.file_download - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-08-31 18:53:29,940 INFO __main__ - Finalizacion de experimento: smoke_pii_persona_fragmento
+2026-08-31 19:05:39,463 INFO __main__ - Inicio de experimento: smoke_pii_persona_fragmento
+2026-08-31 19:05:39,507 INFO __main__ - Dataset cargado: experimento=smoke_pii_persona_fragmento modelo=gliner2_pii schema=schema_v3_persona_structured modo=fragmentos registros=1
+2026-08-31 19:06:00,517 INFO __main__ - Finalizacion de experimento: smoke_pii_persona_fragmento
+2026-08-31 19:25:43,814 INFO __main__ - Inicio de experimento: comparacion_pii_v3_documentos
+2026-08-31 19:25:43,922 INFO __main__ - Dataset cargado: experimento=comparacion_pii_v3_documentos modelo=gliner2_pii schema=schema_v3_persona_structured modo=documentos_completos registros=80
+2026-08-31 19:40:16,091 INFO __main__ - Finalizacion de experimento: comparacion_pii_v3_documentos
+2026-08-31 19:41:15,918 INFO __main__ - Inicio de experimento: comparacion_pii_v3_fragmentos
+2026-08-31 19:41:15,995 INFO __main__ - Dataset cargado: experimento=comparacion_pii_v3_fragmentos modelo=gliner2_pii schema=schema_v3_persona_structured modo=fragmentos registros=230
+2026-08-31 19:44:00,581 INFO __main__ - Finalizacion de experimento: comparacion_pii_v3_fragmentos
+2026-08-31 23:18:33,679 INFO __main__ - Inicio de experimento: pii_v1_documentos
+2026-08-31 23:18:33,753 INFO __main__ - Dataset cargado: experimento=pii_v1_documentos modelo=gliner2_pii schema=schema_v1_persona_simple modo=documentos_completos registros=80
+2026-08-31 23:31:17,020 INFO __main__ - Finalizacion de experimento: pii_v1_documentos
+2026-08-31 23:36:25,476 INFO __main__ - Inicio de experimento: pii_v1_fragmentos
+2026-08-31 23:36:25,539 INFO __main__ - Dataset cargado: experimento=pii_v1_fragmentos modelo=gliner2_pii schema=schema_v1_persona_simple modo=fragmentos registros=230
+2026-08-31 23:38:26,709 INFO __main__ - Finalizacion de experimento: pii_v1_fragmentos

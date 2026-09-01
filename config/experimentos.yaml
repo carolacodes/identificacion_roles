@@ -1,0 +1,163 @@
+experiments:
+  # ============================================================
+  # PRUEBA DE HUMO - PII + PERSONA STRUCTURED + FRAGMENTO
+  # ============================================================
+  smoke_pii_persona_fragmento:
+    run_name: smoke_pii_persona_fragmento
+    model: gliner2_pii
+    schema: schema_v3_persona_structured
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/prueba_fragmento.csv
+    text_column: fragmento
+    threshold: 0.50
+    field_thresholds:
+      nombre: 0.50
+      dni: 0.50
+      cuil_cuit: 0.50
+
+  # ============================================================
+  # GLINER2 PII - PERSONA SIMPLE
+  # ============================================================
+  pii_v1_documentos:
+    run_name: pii_schema_v1_documentos
+    model: gliner2_pii
+    schema: schema_v1_persona_simple
+    input_mode: documentos_completos
+    input_file: data/input_documentos/documentos.csv
+    text_column: texto_limpio
+    threshold: 0.60
+    field_thresholds: {}
+
+  pii_v1_fragmentos:
+    run_name: pii_schema_v1_fragmentos
+    model: gliner2_pii
+    schema: schema_v1_persona_simple
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: fragmento
+    threshold: 0.60
+    field_thresholds: {}
+
+  # ============================================================
+  # COMPARACIÓN: DOCUMENTO COMPLETO VS FRAGMENTOS
+  # Modelo: GLiNER2 PII
+  # Schema: persona embargada structured
+  # ============================================================
+
+  comparacion_pii_v3_documentos:
+    run_name: comparacion_pii_v3_documentos
+    model: gliner2_pii
+    schema: schema_v3_persona_structured
+
+    input_mode: documentos_completos
+    input_file: data/input_documentos/documentos.csv
+    text_column: texto_limpio
+
+    threshold: 0.65
+    field_thresholds:
+      nombre: 0.65
+      dni: 0.55
+      cuil_cuit: 0.55
+
+  comparacion_pii_v3_fragmentos:
+    run_name: comparacion_pii_v3_fragmentos
+    model: gliner2_pii
+    schema: schema_v3_persona_structured
+
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: fragmento
+
+    threshold: 0.65
+    field_thresholds:
+      nombre: 0.65
+      dni: 0.55
+      cuil_cuit: 0.55
+
+  # ============================================================
+  # GLINER2 MULTI - PERSONA STRUCTURED
+  # ============================================================
+  multi_v3_documentos:
+    run_name: multi_schema_v3_documentos
+    model: gliner2_multi
+    schema: schema_v3_persona_structured
+    input_mode: documentos_completos
+    input_file: data/input_documentos/documentos.csv
+    text_column: texto_limpio
+    threshold: 0.65
+    field_thresholds:
+      nombre: 0.65
+      dni: 0.55
+      cuil_cuit: 0.55
+
+  multi_v3_fragmentos:
+    run_name: multi_schema_v3_fragmentos
+    model: gliner2_multi
+    schema: schema_v3_persona_structured
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: fragmento
+    threshold: 0.65
+    field_thresholds:
+      nombre: 0.65
+      dni: 0.55
+      cuil_cuit: 0.55
+
+  # ============================================================
+  # CONTRACTNER - PERSONA / ROLES
+  # ============================================================
+  contractner_v1_fragmentos:
+    run_name: contractner_schema_v1_fragmentos
+    model: contractner
+    schema: schema_v1_persona_simple
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: fragmento
+    threshold: 0.80
+    field_thresholds: {}
+
+  contractner_v2_fragmentos:
+    run_name: contractner_schema_v2_fragmentos
+    model: contractner
+    schema: schema_v2_roles
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: fragmento
+    threshold: 0.80
+    field_thresholds: {}
+
+  # ============================================================
+  # DATOS ECONÓMICOS DEL EMBARGO
+  # ============================================================
+  pii_v4_fragmentos:
+    run_name: pii_schema_v4_fragmentos
+    model: gliner2_pii
+    schema: schema_v4_datos_embargo
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: fragmento
+    threshold: 0.60
+    field_thresholds:
+      monto_capital: 0.60
+      monto_costas: 0.55
+      monto_total: 0.60
+      moneda: 0.50
+
+  # ============================================================
+  # CUENTA DE DEPÓSITO
+  # ============================================================
+  pii_v5_fragmentos:
+    run_name: pii_schema_v5_fragmentos
+    model: gliner2_pii
+    schema: schema_v5_cuenta_deposito
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: fragmento
+    threshold: 0.60
+    field_thresholds:
+      cbu: 0.55
+      cvu: 0.55
+      alias: 0.50
+      numero_cuenta: 0.50
+      banco: 0.55
+      titular: 0.55
