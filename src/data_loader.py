@@ -11,10 +11,10 @@ from typing import Any, Iterable, TextIO
 DOCUMENT_MODE = "documentos_completos"
 FRAGMENT_MODE = "fragmentos"
 
+# Para documentos completos solo exigimos id.
+# La columna de texto se valida dinámicamente con text_column.
 DOCUMENT_REQUIRED_COLUMNS = {
-    "numero_archivo",
     "id",
-    "nombre",
 }
 
 FRAGMENT_REQUIRED_COLUMNS = {
@@ -248,6 +248,15 @@ def load_records(
     Carga registros desde un CSV y los normaliza para inferencia.
 
     El delimitador se detecta automáticamente.
+
+    Para documentos completos:
+    - id es obligatorio;
+    - text_column es obligatorio;
+    - numero_archivo y nombre son opcionales.
+
+    Para fragmentos:
+    - se mantienen las columnas obligatorias definidas
+      en FRAGMENT_REQUIRED_COLUMNS.
     """
     path = Path(input_file)
 

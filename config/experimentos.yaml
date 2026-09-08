@@ -161,3 +161,25 @@ experiments:
       numero_cuenta: 0.50
       banco: 0.55
       titular: 0.55
+
+  # ============================================================
+  # GLINER2 PII - PERSONA EMBARGADA ESTRICTA
+  # Nuevo OCR limpio Q8
+  # ============================================================
+  pii_v6_documentos_ocr_q8:
+    run_name: pii_schema_v6_documentos_ocr_q8
+    model: gliner2_pii
+    schema: schema_v6_persona_embargada_estricta
+
+    input_mode: documentos_completos
+    input_file: data/input_documentos/embargos_ocr_limpios.csv
+    text_column: texto_ocr_limpio_Q8
+
+    threshold: 0.65
+
+    field_thresholds:
+      nombre: 0.65
+      rol_mencionado: 0.55
+      evidencia_rol: 0.55
+      dni: 0.55
+      cuil_cuit: 0.55

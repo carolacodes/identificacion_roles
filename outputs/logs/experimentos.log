@@ -19,3 +19,7 @@
 2026-08-31 23:36:25,476 INFO __main__ - Inicio de experimento: pii_v1_fragmentos
 2026-08-31 23:36:25,539 INFO __main__ - Dataset cargado: experimento=pii_v1_fragmentos modelo=gliner2_pii schema=schema_v1_persona_simple modo=fragmentos registros=230
 2026-08-31 23:38:26,709 INFO __main__ - Finalizacion de experimento: pii_v1_fragmentos
+2026-09-08 14:38:44,068 INFO __main__ - Inicio de experimento: pii_v6_documentos_ocr_q8
+2026-09-08 14:41:30,944 INFO __main__ - Inicio de experimento: pii_v6_documentos_ocr_q8
+2026-09-08 14:41:31,064 INFO __main__ - Dataset cargado: experimento=pii_v6_documentos_ocr_q8 modelo=gliner2_pii schema=schema_v6_persona_embargada_estricta modo=documentos_completos registros=80
+2026-09-08 14:56:42,998 INFO __main__ - Finalizacion de experimento: pii_v6_documentos_ocr_q8
