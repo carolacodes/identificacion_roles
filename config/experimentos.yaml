@@ -183,3 +183,194 @@ experiments:
       evidencia_rol: 0.55
       dni: 0.55
       cuil_cuit: 0.55
+
+  # ============================================================
+  # GLINER2 PII - PERSONA EMBARGADA DESDE FRAGMENTOS
+  #
+  # Primera pasada del nuevo pipeline:
+  # solamente fragmentos categoria Datos_Embargado.
+  #
+  # Las predicciones posteriormente se consolidan por
+  # numero_archivo mediante consolidacion_embargado.py.
+  # ============================================================
+  pii_v7_datos_embargado_fragmentos:
+    run_name: pii_v7_datos_embargado_fragmentos
+
+    model: gliner2_pii
+    schema: schema_v7_persona_embargada_fragmentos
+
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: fragmento
+
+    threshold: 0.55
+
+    field_thresholds:
+      nombre_embargado: 0.60
+      dni_embargado: 0.50
+      cuit_cuil_embargado: 0.50
+      rol_embargado: 0.50
+
+    filters:
+      categoria:
+        - Datos_Embargado
+
+    metadata_columns:
+      - numero_archivo
+      - id
+      - nombre
+      - contador_interno
+      - palabra_clave
+      - categoria
+      - posicion_inicio
+      - posicion_fin
+      - inicio_fragmento
+      - fin_fragmento
+
+  # ============================================================
+  # V7 - GLINER2 PII - THRESHOLD NOMBRE 0.55
+  # ============================================================
+  pii_v7_fragmentos_thr55:
+    run_name: pii_v7_fragmentos_thr55
+
+    model: gliner2_pii
+    schema: schema_v7_persona_embargada_fragmentos
+
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: fragmento
+
+    threshold: 0.55
+
+    field_thresholds:
+      nombre_embargado: 0.55
+      dni_embargado: 0.50
+      cuit_cuil_embargado: 0.50
+      rol_embargado: 0.50
+
+    filters:
+      categoria:
+        - Datos_Embargado
+
+    metadata_columns:
+      - numero_archivo
+      - id
+      - nombre
+      - contador_interno
+      - palabra_clave
+      - categoria
+      - posicion_inicio
+      - posicion_fin
+      - inicio_fragmento
+      - fin_fragmento
+
+  # ============================================================
+  # V7 - GLINER2 PII - THRESHOLD NOMBRE 0.50
+  # ============================================================
+  pii_v7_fragmentos_thr50:
+    run_name: pii_v7_fragmentos_thr50
+
+    model: gliner2_pii
+    schema: schema_v7_persona_embargada_fragmentos
+
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: fragmento
+
+    threshold: 0.50
+
+    field_thresholds:
+      nombre_embargado: 0.50
+      dni_embargado: 0.50
+      cuit_cuil_embargado: 0.50
+      rol_embargado: 0.50
+
+    filters:
+      categoria:
+        - Datos_Embargado
+
+    metadata_columns:
+      - numero_archivo
+      - id
+      - nombre
+      - contador_interno
+      - palabra_clave
+      - categoria
+      - posicion_inicio
+      - posicion_fin
+      - inicio_fragmento
+      - fin_fragmento
+
+  # ============================================================
+  # V7 - GLINER2 MULTI - THRESHOLD NOMBRE 0.55
+  # ============================================================
+  multi_v7_fragmentos_thr55:
+    run_name: multi_v7_fragmentos_thr55
+
+    model: gliner2_multi
+    schema: schema_v7_persona_embargada_fragmentos
+
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: fragmento
+
+    threshold: 0.55
+
+    field_thresholds:
+      nombre_embargado: 0.55
+      dni_embargado: 0.50
+      cuit_cuil_embargado: 0.50
+      rol_embargado: 0.50
+
+    filters:
+      categoria:
+        - Datos_Embargado
+
+    metadata_columns:
+      - numero_archivo
+      - id
+      - nombre
+      - contador_interno
+      - palabra_clave
+      - categoria
+      - posicion_inicio
+      - posicion_fin
+      - inicio_fragmento
+      - fin_fragmento
+
+  # ============================================================
+  # V7 - GLINER2 MULTI - THRESHOLD NOMBRE 0.50
+  # ============================================================
+  multi_v7_fragmentos_thr50:
+    run_name: multi_v7_fragmentos_thr50
+
+    model: gliner2_multi
+    schema: schema_v7_persona_embargada_fragmentos
+
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: fragmento
+
+    threshold: 0.50
+
+    field_thresholds:
+      nombre_embargado: 0.50
+      dni_embargado: 0.50
+      cuit_cuil_embargado: 0.50
+      rol_embargado: 0.50
+
+    filters:
+      categoria:
+        - Datos_Embargado
+
+    metadata_columns:
+      - numero_archivo
+      - id
+      - nombre
+      - contador_interno
+      - palabra_clave
+      - categoria
+      - posicion_inicio
+      - posicion_fin
+      - inicio_fragmento
+      - fin_fragmento

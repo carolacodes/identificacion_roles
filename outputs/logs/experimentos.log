@@ -23,3 +23,15 @@
 2026-09-08 14:41:30,944 INFO __main__ - Inicio de experimento: pii_v6_documentos_ocr_q8
 2026-09-08 14:41:31,064 INFO __main__ - Dataset cargado: experimento=pii_v6_documentos_ocr_q8 modelo=gliner2_pii schema=schema_v6_persona_embargada_estricta modo=documentos_completos registros=80
 2026-09-08 14:56:42,998 INFO __main__ - Finalizacion de experimento: pii_v6_documentos_ocr_q8
+2026-09-11 14:51:30,977 INFO __main__ - Inicio de experimento: pii_v7_datos_embargado_fragmentos
+2026-09-11 14:51:31,055 INFO __main__ - Dataset cargado: experimento=pii_v7_datos_embargado_fragmentos modelo=gliner2_pii schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=178 filtros={'categoria': ['Datos_Embargado']}
+2026-09-11 14:55:48,096 INFO __main__ - Finalizacion de experimento: pii_v7_datos_embargado_fragmentos registros=178
+2026-09-11 15:13:09,837 INFO __main__ - Inicio de experimento: pii_v7_fragmentos_thr50
+2026-09-11 15:13:09,883 INFO __main__ - Dataset cargado: experimento=pii_v7_fragmentos_thr50 modelo=gliner2_pii schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=178 filtros={'categoria': ['Datos_Embargado']}
+2026-09-11 15:17:05,003 INFO __main__ - Finalizacion de experimento: pii_v7_fragmentos_thr50 registros=178
+2026-09-11 15:25:56,000 INFO __main__ - Inicio de experimento: multi_v7_fragmentos_thr50
+2026-09-11 15:25:56,045 INFO __main__ - Dataset cargado: experimento=multi_v7_fragmentos_thr50 modelo=gliner2_multi schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=178 filtros={'categoria': ['Datos_Embargado']}
+2026-09-11 15:26:03,734 WARNING huggingface_hub.file_download - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-09-11 15:26:06,866 WARNING huggingface_hub.file_download - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-09-11 15:26:14,443 WARNING huggingface_hub.file_download - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-09-11 15:31:03,333 INFO __main__ - Finalizacion de experimento: multi_v7_fragmentos_thr50 registros=178

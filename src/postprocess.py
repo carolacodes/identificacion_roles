@@ -1,4 +1,4 @@
-"""Normalización conservadora de candidatos sin reglas jurídicas complejas."""
+"""Normalizacion conservadora de candidatos."""
 
 from __future__ import annotations
 
@@ -10,37 +10,53 @@ from .inference import PredictionResult
 
 @dataclass(slots=True)
 class PostprocessedResult:
-    """Resultado normalizado para exportación y futura revisión humana."""
+    """Resultado normalizado para exportacion."""
 
     prediction: PredictionResult
     status: str
-    candidates: list[dict[str, Any]] = field(default_factory=list)
+
+    candidates: list[
+        dict[str, Any]
+    ] = field(
+        default_factory=list
+    )
 
 
 def postprocess_results(
-    predictions: list[PredictionResult],
-) -> list[PostprocessedResult]:
-    """Produce candidatos conservadores a partir de predicciones crudas."""
+    predictions: list[
+        PredictionResult
+    ],
+) -> list[
+    PostprocessedResult
+]:
+
     return [
-        postprocess_prediction(prediction)
-        for prediction in predictions
+        postprocess_prediction(
+            prediction
+        )
+        for prediction
+        in predictions
     ]
 
 
 def postprocess_prediction(
     prediction: PredictionResult,
 ) -> PostprocessedResult:
-    """Normaliza un resultado individual."""
 
-    candidates = _extract_candidates(prediction)
+    candidates = _extract_candidates(
+        prediction
+    )
 
     if not candidates:
+
         status = "no_detectado"
 
     elif len(candidates) == 1:
+
         status = "candidato_unico"
 
     else:
+
         status = "multiples_candidatos"
 
     return PostprocessedResult(
@@ -52,12 +68,14 @@ def postprocess_prediction(
 
 def _extract_candidates(
     prediction: PredictionResult,
-) -> list[dict[str, Any]]:
-    """
-    Selecciona el normalizador apropiado según el tipo de schema.
-    """
+) -> list[
+    dict[str, Any]
+]:
 
-    if prediction.schema_type == "structured":
+    if (
+        prediction.schema_type
+        == "structured"
+    ):
         return _structured_candidates(
             prediction.raw_response
         )
@@ -72,21 +90,19 @@ def _extract_candidates(
 # ============================================================
 
 def _entity_candidates(
-    items: list[dict[str, Any]],
-) -> list[dict[str, Any]]:
-    """
-    Normaliza entidades simples como:
+    items: list[
+        dict[str, Any]
+    ],
+) -> list[
+    dict[str, Any]
+]:
 
-    persona_embargada
-    demandado
-    embargado
-    ejecutado
-    deudor
-    """
-
-    candidates: list[dict[str, Any]] = []
+    candidates: list[
+        dict[str, Any]
+    ] = []
 
     for item in items:
+
         value = _first_present(
             item,
             (
@@ -96,40 +112,54 @@ def _entity_candidates(
             ),
         )
 
-        if value in (None, ""):
+        if value in (
+            None,
+            "",
+        ):
             continue
 
         candidates.append(
             {
                 "tipo": (
-                    item.get("entity_type")
-                    or item.get("label")
+                    item.get(
+                        "entity_type"
+                    )
+                    or item.get(
+                        "label"
+                    )
                 ),
+
                 "valor": value,
-                "confidence": _first_present(
-                    item,
-                    (
-                        "score",
-                        "confidence",
-                        "probability",
+
+                "confidence":
+                    _first_present(
+                        item,
+                        (
+                            "score",
+                            "confidence",
+                            "probability",
+                        ),
                     ),
-                ),
-                "span_inicio": _first_present(
-                    item,
-                    (
-                        "start",
-                        "start_char",
-                        "span_inicio",
+
+                "span_inicio":
+                    _first_present(
+                        item,
+                        (
+                            "start",
+                            "start_char",
+                            "span_inicio",
+                        ),
                     ),
-                ),
-                "span_fin": _first_present(
-                    item,
-                    (
-                        "end",
-                        "end_char",
-                        "span_fin",
+
+                "span_fin":
+                    _first_present(
+                        item,
+                        (
+                            "end",
+                            "end_char",
+                            "span_fin",
+                        ),
                     ),
-                ),
             }
         )
 
@@ -137,67 +167,61 @@ def _entity_candidates(
 
 
 # ============================================================
-# STRUCTURED SCHEMAS
+# STRUCTURED
 # ============================================================
 
 def _structured_candidates(
     raw_response: Any,
-) -> list[dict[str, Any]]:
-    """
-    Normaliza la salida structured real de GLiNER2.
+) -> list[
+    dict[str, Any]
+]:
 
-    Forma real observada:
-
-    {
-        "persona_embargada": [
-            {
-                "nombre": {
-                    "text": "NAHUEL OSCAR MARQUEZ",
-                    "confidence": 0.93,
-                    "start": 125,
-                    "end": 145
-                },
-                "dni": {
-                    "text": "33.470.065",
-                    "confidence": 0.98,
-                    "start": 151,
-                    "end": 161
-                },
-                "cuil_cuit": null
-            }
-        ]
-    }
-
-    También funciona para otras estructuras:
-    - datos_embargo
-    - cuenta_deposito
-    """
-
-    if not isinstance(raw_response, dict):
+    if not isinstance(
+        raw_response,
+        dict,
+    ):
         return []
 
-    candidates: list[dict[str, Any]] = []
+    candidates: list[
+        dict[str, Any]
+    ] = []
 
-    for structure_name, structures in raw_response.items():
+    for (
+        structure_name,
+        structures,
+    ) in raw_response.items():
 
         if structures is None:
             continue
 
-        if not isinstance(structures, list):
-            structures = [structures]
+        if not isinstance(
+            structures,
+            list,
+        ):
+            structures = [
+                structures
+            ]
 
         for structure in structures:
 
-            if not isinstance(structure, dict):
+            if not isinstance(
+                structure,
+                dict,
+            ):
                 continue
 
-            candidate = _normalize_structure(
-                structure_name,
-                structure,
+            candidate = (
+                _normalize_structure(
+                    structure_name,
+                    structure,
+                )
             )
 
             if candidate is not None:
-                candidates.append(candidate)
+
+                candidates.append(
+                    candidate
+                )
 
     return candidates
 
@@ -206,34 +230,56 @@ def _normalize_structure(
     structure_name: str,
     structure: dict[str, Any],
 ) -> dict[str, Any] | None:
-    """
-    Convierte cualquier structure de GLiNER2
-    a una representación homogénea.
-    """
 
-    candidate: dict[str, Any] = {
-        "tipo": structure_name,
-        "valor": None,
-        "fields": {},
+    candidate: dict[
+        str,
+        Any,
+    ] = {
+        "tipo":
+            structure_name,
+
+        "valor":
+            None,
+
+        "fields":
+            {},
     }
 
     found_any_value = False
 
-    confidences: list[float] = []
+    confidences: list[
+        float
+    ] = []
 
-    for field_name, field_value in structure.items():
+    for (
+        field_name,
+        field_value,
+    ) in structure.items():
 
-        normalized_field = _normalize_field(
-            field_value
+        normalized_field = (
+            _normalize_field(
+                field_value
+            )
         )
 
-        candidate["fields"][field_name] = normalized_field
+        candidate[
+            "fields"
+        ][
+            field_name
+        ] = normalized_field
 
-        if normalized_field["text"] not in (None, ""):
+        if normalized_field[
+            "text"
+        ] not in (
+            None,
+            "",
+        ):
             found_any_value = True
 
-        confidence = normalized_field.get(
-            "confidence"
+        confidence = (
+            normalized_field.get(
+                "confidence"
+            )
         )
 
         if isinstance(
@@ -247,146 +293,355 @@ def _normalize_structure(
     if not found_any_value:
         return None
 
-    # ========================================================
-    # Campos comunes de persona_embargada
-    # ========================================================
+    # --------------------------------------------------------
+    # Exponer siempre todos los campos structured
+    # --------------------------------------------------------
 
-    if structure_name == "persona_embargada":
+    for (
+        field_name,
+        normalized_field,
+    ) in candidate[
+        "fields"
+    ].items():
 
-        nombre = candidate["fields"].get(
-            "nombre",
-            {},
+        candidate[
+            field_name
+        ] = normalized_field.get(
+            "text"
         )
 
-        dni = candidate["fields"].get(
-            "dni",
-            {},
+        candidate[
+            f"{field_name}_confidence"
+        ] = normalized_field.get(
+            "confidence"
         )
 
-        cuil_cuit = candidate["fields"].get(
-            "cuil_cuit",
-            {},
+        candidate[
+            f"{field_name}_span_inicio"
+        ] = normalized_field.get(
+            "start"
         )
 
-        candidate.update(
-            {
-                "valor": nombre.get("text"),
-                "nombre": nombre.get("text"),
-                "dni": dni.get("text"),
-                "cuil_cuit": cuil_cuit.get("text"),
-
-                "nombre_confidence": nombre.get(
-                    "confidence"
-                ),
-                "dni_confidence": dni.get(
-                    "confidence"
-                ),
-                "cuil_cuit_confidence": (
-                    cuil_cuit.get("confidence")
-                ),
-
-                "nombre_span_inicio": nombre.get(
-                    "start"
-                ),
-                "nombre_span_fin": nombre.get(
-                    "end"
-                ),
-
-                "dni_span_inicio": dni.get(
-                    "start"
-                ),
-                "dni_span_fin": dni.get(
-                    "end"
-                ),
-
-                "cuil_cuit_span_inicio": (
-                    cuil_cuit.get("start")
-                ),
-                "cuil_cuit_span_fin": (
-                    cuil_cuit.get("end")
-                ),
-            }
+        candidate[
+            f"{field_name}_span_fin"
+        ] = normalized_field.get(
+            "end"
         )
 
-        # Para compatibilidad con exporter actual.
-        candidate["confidence"] = (
-            nombre.get("confidence")
+    # --------------------------------------------------------
+    # Persona embargada
+    #
+    # Compatibilidad:
+    #
+    # V3/V6:
+    #   nombre
+    #   dni
+    #   cuil_cuit
+    #
+    # V7:
+    #   nombre_embargado
+    #   dni_embargado
+    #   cuit_cuil_embargado
+    #   rol_embargado
+    # --------------------------------------------------------
+
+    if structure_name == (
+        "persona_embargada"
+    ):
+
+        nombre = _get_field_alias(
+            candidate["fields"],
+            (
+                "nombre_embargado",
+                "nombre",
+            ),
         )
 
-        candidate["span_inicio"] = (
-            nombre.get("start")
+        dni = _get_field_alias(
+            candidate["fields"],
+            (
+                "dni_embargado",
+                "dni",
+            ),
         )
 
-        candidate["span_fin"] = (
-            nombre.get("end")
+        cuit_cuil = (
+            _get_field_alias(
+                candidate["fields"],
+                (
+                    "cuit_cuil_embargado",
+                    "cuil_cuit",
+                    "cuit_cuil",
+                ),
+            )
         )
 
-    # ========================================================
-    # Otros structured schemas
-    # ========================================================
+        rol = _get_field_alias(
+            candidate["fields"],
+            (
+                "rol_embargado",
+                "rol_mencionado",
+            ),
+        )
+
+        # Nombres canonicos nuevos.
+        candidate[
+            "nombre_embargado"
+        ] = nombre.get(
+            "text"
+        )
+
+        candidate[
+            "dni_embargado"
+        ] = dni.get(
+            "text"
+        )
+
+        candidate[
+            "cuit_cuil_embargado"
+        ] = cuit_cuil.get(
+            "text"
+        )
+
+        candidate[
+            "rol_embargado"
+        ] = rol.get(
+            "text"
+        )
+
+        # Compatibilidad historica.
+        candidate[
+            "nombre"
+        ] = nombre.get(
+            "text"
+        )
+
+        candidate[
+            "dni"
+        ] = dni.get(
+            "text"
+        )
+
+        candidate[
+            "cuil_cuit"
+        ] = cuit_cuil.get(
+            "text"
+        )
+
+        # ----------------------------------------------------
+        # Confidences
+        # ----------------------------------------------------
+
+        candidate[
+            "nombre_embargado_confidence"
+        ] = nombre.get(
+            "confidence"
+        )
+
+        candidate[
+            "dni_embargado_confidence"
+        ] = dni.get(
+            "confidence"
+        )
+
+        candidate[
+            "cuit_cuil_embargado_confidence"
+        ] = cuit_cuil.get(
+            "confidence"
+        )
+
+        candidate[
+            "rol_embargado_confidence"
+        ] = rol.get(
+            "confidence"
+        )
+
+        # Compatibilidad.
+        candidate[
+            "nombre_confidence"
+        ] = nombre.get(
+            "confidence"
+        )
+
+        candidate[
+            "dni_confidence"
+        ] = dni.get(
+            "confidence"
+        )
+
+        candidate[
+            "cuil_cuit_confidence"
+        ] = cuit_cuil.get(
+            "confidence"
+        )
+
+        # ----------------------------------------------------
+        # Spans
+        # ----------------------------------------------------
+
+        candidate[
+            "nombre_embargado_span_inicio"
+        ] = nombre.get(
+            "start"
+        )
+
+        candidate[
+            "nombre_embargado_span_fin"
+        ] = nombre.get(
+            "end"
+        )
+
+        candidate[
+            "dni_embargado_span_inicio"
+        ] = dni.get(
+            "start"
+        )
+
+        candidate[
+            "dni_embargado_span_fin"
+        ] = dni.get(
+            "end"
+        )
+
+        candidate[
+            "cuit_cuil_embargado_span_inicio"
+        ] = cuit_cuil.get(
+            "start"
+        )
+
+        candidate[
+            "cuit_cuil_embargado_span_fin"
+        ] = cuit_cuil.get(
+            "end"
+        )
+
+        # Compatibilidad spans antiguos.
+        candidate[
+            "nombre_span_inicio"
+        ] = nombre.get(
+            "start"
+        )
+
+        candidate[
+            "nombre_span_fin"
+        ] = nombre.get(
+            "end"
+        )
+
+        candidate[
+            "dni_span_inicio"
+        ] = dni.get(
+            "start"
+        )
+
+        candidate[
+            "dni_span_fin"
+        ] = dni.get(
+            "end"
+        )
+
+        candidate[
+            "cuil_cuit_span_inicio"
+        ] = cuit_cuil.get(
+            "start"
+        )
+
+        candidate[
+            "cuil_cuit_span_fin"
+        ] = cuit_cuil.get(
+            "end"
+        )
+
+        # Campo principal del candidato.
+        candidate[
+            "valor"
+        ] = nombre.get(
+            "text"
+        )
+
+        candidate[
+            "confidence"
+        ] = nombre.get(
+            "confidence"
+        )
+
+        candidate[
+            "span_inicio"
+        ] = nombre.get(
+            "start"
+        )
+
+        candidate[
+            "span_fin"
+        ] = nombre.get(
+            "end"
+        )
+
+    # --------------------------------------------------------
+    # Otros schemas structured
+    # --------------------------------------------------------
 
     else:
-        candidate["valor"] = _first_text_field(
-            candidate["fields"]
+
+        candidate[
+            "valor"
+        ] = _first_text_field(
+            candidate[
+                "fields"
+            ]
         )
 
-        candidate["confidence"] = (
+        candidate[
+            "confidence"
+        ] = (
             min(confidences)
             if confidences
             else None
         )
 
-        candidate["span_inicio"] = None
-        candidate["span_fin"] = None
+        candidate[
+            "span_inicio"
+        ] = None
 
-        # También exponemos cada field en primer nivel.
-        for field_name, normalized_field in (
-            candidate["fields"].items()
-        ):
-            candidate[field_name] = (
-                normalized_field.get("text")
-            )
-
-            candidate[
-                f"{field_name}_confidence"
-            ] = normalized_field.get(
-                "confidence"
-            )
-
-            candidate[
-                f"{field_name}_span_inicio"
-            ] = normalized_field.get(
-                "start"
-            )
-
-            candidate[
-                f"{field_name}_span_fin"
-            ] = normalized_field.get(
-                "end"
-            )
+        candidate[
+            "span_fin"
+        ] = None
 
     return candidate
+
+
+def _get_field_alias(
+    fields: dict[
+        str,
+        dict[str, Any],
+    ],
+    aliases: tuple[str, ...],
+) -> dict[str, Any]:
+    """Devuelve el primer campo existente entre varios aliases."""
+
+    for alias in aliases:
+
+        field = fields.get(
+            alias
+        )
+
+        if field is not None:
+            return field
+
+    return {
+        "text": None,
+        "confidence": None,
+        "start": None,
+        "end": None,
+    }
 
 
 def _normalize_field(
     value: Any,
 ) -> dict[str, Any]:
-    """
-    Normaliza un field structured.
-
-    GLiNER2 puede devolver:
-
-    {
-        "text": "...",
-        "confidence": 0.9,
-        "start": 10,
-        "end": 20
-    }
-
-    o null.
-    """
 
     if value is None:
+
         return {
             "text": None,
             "confidence": None,
@@ -394,39 +649,50 @@ def _normalize_field(
             "end": None,
         }
 
-    if isinstance(value, dict):
+    if isinstance(
+        value,
+        dict,
+    ):
+
         return {
-            "text": _first_present(
-                value,
-                (
-                    "text",
-                    "value",
+            "text":
+                _first_present(
+                    value,
+                    (
+                        "text",
+                        "value",
+                    ),
                 ),
-            ),
-            "confidence": _first_present(
-                value,
-                (
-                    "confidence",
-                    "score",
-                    "probability",
+
+            "confidence":
+                _first_present(
+                    value,
+                    (
+                        "confidence",
+                        "score",
+                        "probability",
+                    ),
                 ),
-            ),
-            "start": _first_present(
-                value,
-                (
-                    "start",
-                    "start_char",
-                    "span_inicio",
+
+            "start":
+                _first_present(
+                    value,
+                    (
+                        "start",
+                        "start_char",
+                        "span_inicio",
+                    ),
                 ),
-            ),
-            "end": _first_present(
-                value,
-                (
-                    "end",
-                    "end_char",
-                    "span_fin",
+
+            "end":
+                _first_present(
+                    value,
+                    (
+                        "end",
+                        "end_char",
+                        "span_fin",
+                    ),
                 ),
-            ),
         }
 
     return {
@@ -438,14 +704,22 @@ def _normalize_field(
 
 
 def _first_text_field(
-    fields: dict[str, dict[str, Any]],
+    fields: dict[
+        str,
+        dict[str, Any],
+    ],
 ) -> Any:
-    """Devuelve el primer field no vacío."""
 
     for field in fields.values():
-        value = field.get("text")
 
-        if value not in (None, ""):
+        value = field.get(
+            "text"
+        )
+
+        if value not in (
+            None,
+            "",
+        ):
             return value
 
     return None
@@ -455,14 +729,19 @@ def _first_present(
     mapping: dict[str, Any],
     keys: tuple[str, ...],
 ) -> Any:
-    """Devuelve el primer valor existente y no vacío."""
 
     for key in keys:
 
         if (
             key in mapping
-            and mapping[key] not in (None, "")
+            and mapping[key]
+            not in (
+                None,
+                "",
+            )
         ):
-            return mapping[key]
+            return mapping[
+                key
+            ]
 
     return None

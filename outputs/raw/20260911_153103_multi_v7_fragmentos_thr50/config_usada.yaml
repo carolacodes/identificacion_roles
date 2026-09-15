@@ -1,0 +1,141 @@
+experiment_name: multi_v7_fragmentos_thr50
+experiment:
+  run_name: multi_v7_fragmentos_thr50
+  model: gliner2_multi
+  schema: schema_v7_persona_embargada_fragmentos
+  input_mode: fragmentos
+  input_file: data/input_fragmentos/fragmentos.csv
+  text_column: fragmento
+  threshold: 0.5
+  field_thresholds:
+    nombre_embargado: 0.5
+    dni_embargado: 0.5
+    cuit_cuil_embargado: 0.5
+    rol_embargado: 0.5
+  filters:
+    categoria:
+    - Datos_Embargado
+  metadata_columns:
+  - numero_archivo
+  - id
+  - nombre
+  - contador_interno
+  - palabra_clave
+  - categoria
+  - posicion_inicio
+  - posicion_fin
+  - inicio_fragmento
+  - fin_fragmento
+model:
+  model_id: fastino/gliner2-multi-v1
+  display_name: GLiNER2 Multi v1
+  architecture: gliner2
+  enabled: true
+  device: cpu
+  default_threshold: 0.5
+schema:
+  type: structured
+  name: persona_embargada
+  description: 'Extraer exclusivamente los datos de la persona fisica o juridica sobre
+    la cual recae directamente la medida judicial de embargo, retencion o ejecucion
+    mencionada en este fragmento.
+
+    El fragmento puede provenir de una ventana de contexto asociada a expresiones
+    como demandado, demandada, embargado, embargada, ejecutado, ejecutada, deudor,
+    deudora, titular de fondos, titular de cuentas o frases equivalentes que indiquen
+    que los bienes, fondos, cuentas, haberes o activos de una persona son objeto de
+    la medida.
+
+    No extraer una persona solamente porque aparezca mencionada dentro del fragmento.
+
+    Excluir siempre: jueces, secretarios, abogados, letrados, funcionarios, firmantes,
+    personas autorizadas para diligenciar, actores, acreedores, representantes, notificadores,
+    destinatarios del oficio, empleados judiciales, y titulares de cuentas utilizadas
+    exclusivamente para depositar fondos judiciales.
+
+    Es posible que un fragmento individual no contenga el nombre del embargado. En
+    ese caso no inventar ni inferir un nombre. Otros fragmentos del mismo documento
+    podran aportar esa informacion y posteriormente seran consolidados.
+
+    '
+  fields:
+    nombre_embargado:
+      dtype: str
+      description: 'Nombre completo de la persona fisica o razon social de la persona
+        juridica sobre la cual recae directamente la medida de embargo, retencion
+        o ejecucion.
+
+        Extraer el nombre solamente cuando el fragmento proporcione evidencia suficiente
+        de que esa persona es el sujeto afectado por la medida.
+
+        No devolver nombres de jueces, abogados, secretarios, funcionarios, firmantes,
+        autorizados, actores, acreedores, destinatarios ni otras personas mencionadas
+        incidentalmente.
+
+        Si el nombre del sujeto embargado no aparece en este fragmento, dejar el campo
+        sin extraer. No inventar un nombre.
+
+        '
+      required: false
+      threshold: 0.5
+    dni_embargado:
+      dtype: str
+      description: 'DNI perteneciente exclusivamente a la misma persona indicada en
+        nombre_embargado.
+
+        Extraerlo solamente cuando pueda vincularse claramente con la persona afectada
+        por la medida.
+
+        Conservar el valor tal como aparece en el fragmento, incluyendo puntos, espacios
+        u otros separadores.
+
+        No extraer DNI de jueces, abogados, funcionarios, autorizados, actores, acreedores
+        ni otras personas mencionadas.
+
+        '
+      required: false
+      threshold: 0.5
+      validator:
+        type: regex
+        pattern: ^\s*(?:D\.?\s*N\.?\s*I\.?\s*)?(?:N[º°o]?\.?\s*)?\d{1,2}(?:[.\s]?\d{3}){2}\s*$
+    cuit_cuil_embargado:
+      dtype: str
+      description: 'CUIT o CUIL perteneciente exclusivamente a la misma persona indicada
+        en nombre_embargado.
+
+        Extraerlo solamente cuando pueda vincularse claramente con el sujeto afectado
+        por la medida.
+
+        Conservar el valor tal como aparece en el fragmento.
+
+        No extraer CUIT o CUIL del Poder Judicial, bancos, empresas destinatarias,
+        abogados, funcionarios, acreedores ni otras personas ajenas al sujeto embargado.
+
+        '
+      required: false
+      threshold: 0.5
+      validator:
+        type: regex
+        pattern: ^\s*(?:CUIL|CUIT|CUIL/CUIT)?\s*[:Nº°#-]?\s*\d{2}[-\s]?\d{8}[-\s]?\d\s*$
+    rol_embargado:
+      dtype: str
+      description: 'Rol juridico o expresion utilizada en el fragmento para identificar
+        al sujeto sobre el cual recae la medida.
+
+        Seleccionar el rol que mejor represente la mencion explicita del fragmento.
+        No asignar un rol perteneciente a otra persona.
+
+        '
+      required: false
+      threshold: 0.5
+      choices:
+      - demandado
+      - demandada
+      - embargado
+      - embargada
+      - ejecutado
+      - ejecutada
+      - deudor
+      - deudora
+      - titular
+      - otro

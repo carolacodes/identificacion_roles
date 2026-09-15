@@ -11,11 +11,11 @@ from typing import Any, Iterable, TextIO
 DOCUMENT_MODE = "documentos_completos"
 FRAGMENT_MODE = "fragmentos"
 
-# Para documentos completos solo exigimos id.
-# La columna de texto se valida dinámicamente con text_column.
+
 DOCUMENT_REQUIRED_COLUMNS = {
     "id",
 }
+
 
 FRAGMENT_REQUIRED_COLUMNS = {
     "numero_archivo",
@@ -23,6 +23,7 @@ FRAGMENT_REQUIRED_COLUMNS = {
     "nombre",
     "contador_interno",
     "palabra_clave",
+    "categoria",
     "posicion_inicio",
     "posicion_fin",
     "inicio_fragmento",
@@ -31,7 +32,7 @@ FRAGMENT_REQUIRED_COLUMNS = {
 
 
 class DataLoaderError(ValueError):
-    """Error de lectura o validación de datos."""
+    """Error de lectura o validacion de datos."""
 
 
 @dataclass(slots=True)
@@ -46,6 +47,8 @@ class InputRecord:
 
     contador_interno: str | None = None
     palabra_clave: str | None = None
+    categoria: str | None = None
+
     posicion_inicio: str | None = None
     posicion_fin: str | None = None
     inicio_fragmento: str | None = None
@@ -55,14 +58,18 @@ class InputRecord:
 
     def to_dict(self) -> dict[str, Any]:
         """Convierte el registro a dict conservando metadata adicional."""
+
         base = {
             "numero_archivo": self.numero_archivo,
             "id": self.id,
             "nombre": self.nombre,
             "texto": self.texto,
             "modo_entrada": self.modo_entrada,
+
             "contador_interno": self.contador_interno,
             "palabra_clave": self.palabra_clave,
+            "categoria": self.categoria,
+
             "posicion_inicio": self.posicion_inicio,
             "posicion_fin": self.posicion_fin,
             "inicio_fragmento": self.inicio_fragmento,
@@ -70,22 +77,20 @@ class InputRecord:
         }
 
         base.update(self.metadata)
+
         return base
 
 
 def _open_csv(path: Path) -> TextIO:
-    """
-    Abre CSV tolerando UTF-8 con o sin BOM.
+    """Abre CSV tolerando UTF-8 con o sin BOM."""
 
-    utf-8-sig también funciona correctamente con archivos UTF-8 normales,
-    por lo que es suficiente como primera opción.
-    """
     try:
         return path.open(
             "r",
             encoding="utf-8-sig",
             newline="",
         )
+
     except UnicodeError as exc:
         raise DataLoaderError(
             f"No se pudo leer el archivo como UTF-8: {path}"
@@ -93,42 +98,32 @@ def _open_csv(path: Path) -> TextIO:
 
 
 def _detect_delimiter(fh: TextIO) -> str:
-    """
-    Detecta automáticamente el delimitador del CSV.
+    """Detecta delimitador ; , o tabulacion."""
 
-    Soporta principalmente:
-    - ;
-    - ,
-    - tabulación
-
-    Si csv.Sniffer no puede determinarlo, usa ';' como fallback
-    porque es el formato principal de los datasets del proyecto.
-    """
     sample = fh.read(8192)
     fh.seek(0)
 
     if not sample:
-        raise DataLoaderError("El archivo CSV está vacío.")
+        raise DataLoaderError(
+            "El archivo CSV esta vacio."
+        )
 
     try:
         dialect = csv.Sniffer().sniff(
             sample,
             delimiters=";,\t",
         )
+
         return dialect.delimiter
 
     except csv.Error:
-        # Fallback manual para archivos con texto jurídico complejo.
+
         first_line = sample.splitlines()[0]
 
-        semicolons = first_line.count(";")
-        commas = first_line.count(",")
-        tabs = first_line.count("\t")
-
         counts = {
-            ";": semicolons,
-            ",": commas,
-            "\t": tabs,
+            ";": first_line.count(";"),
+            ",": first_line.count(","),
+            "\t": first_line.count("\t"),
         }
 
         delimiter = max(
@@ -137,7 +132,6 @@ def _detect_delimiter(fh: TextIO) -> str:
         )
 
         if counts[delimiter] == 0:
-            # El proyecto trabaja principalmente con ';'.
             return ";"
 
         return delimiter
@@ -146,20 +140,15 @@ def _detect_delimiter(fh: TextIO) -> str:
 def _normalize_fieldnames(
     fieldnames: Iterable[str] | None,
 ) -> list[str]:
-    """
-    Limpia nombres de columnas.
+    """Limpia los nombres de columnas."""
 
-    Evita problemas por:
-    - espacios accidentales;
-    - BOM residual;
-    - headers vacíos.
-    """
     if fieldnames is None:
         return []
 
     normalized: list[str] = []
 
     for fieldname in fieldnames:
+
         if fieldname is None:
             continue
 
@@ -179,8 +168,11 @@ def _validate_columns(
     fieldnames: Iterable[str] | None,
     required: set[str],
     text_column: str,
+    filters: dict[str, Any] | None = None,
+    metadata_columns: list[str] | None = None,
 ) -> None:
-    """Valida que estén presentes todas las columnas obligatorias."""
+    """Valida columnas obligatorias y columnas usadas por config."""
+
     columns = set(
         _normalize_fieldnames(fieldnames)
     )
@@ -188,11 +180,18 @@ def _validate_columns(
     expected = set(required)
     expected.add(text_column)
 
+    if filters:
+        expected.update(filters.keys())
+
+    if metadata_columns:
+        expected.update(metadata_columns)
+
     missing = sorted(
         expected - columns
     )
 
     if missing:
+
         present = (
             ", ".join(sorted(columns))
             if columns
@@ -207,14 +206,17 @@ def _validate_columns(
 
 
 def _clean_row(
-    row: dict[str | None, str | list[str] | None],
+    row: dict[
+        str | None,
+        str | list[str] | None,
+    ],
 ) -> dict[str, str]:
-    """
-    Normaliza claves y valores de una fila de DictReader.
-    """
+    """Normaliza claves y valores de una fila."""
+
     cleaned: dict[str, str] = {}
 
     for key, value in row.items():
+
         if key is None:
             continue
 
@@ -225,13 +227,18 @@ def _clean_row(
         )
 
         if isinstance(value, list):
+
             clean_value = " ".join(
                 str(item)
                 for item in value
             )
+
         elif value is None:
+
             clean_value = ""
+
         else:
+
             clean_value = str(value)
 
         cleaned[clean_key] = clean_value
@@ -239,25 +246,105 @@ def _clean_row(
     return cleaned
 
 
+def _matches_filters(
+    row: dict[str, str],
+    filters: dict[str, Any] | None,
+) -> bool:
+    """Indica si una fila cumple todos los filtros configurados.
+
+    Ejemplo:
+
+        filters:
+          categoria:
+            - Datos_Embargado
+
+    equivale a:
+
+        row["categoria"] in {"Datos_Embargado"}
+    """
+
+    if not filters:
+        return True
+
+    for column, allowed_values in filters.items():
+
+        if isinstance(
+            allowed_values,
+            (list, tuple, set),
+        ):
+            accepted = {
+                str(value)
+                for value in allowed_values
+            }
+
+        else:
+            accepted = {
+                str(allowed_values)
+            }
+
+        row_value = str(
+            row.get(column, "")
+        )
+
+        if row_value not in accepted:
+            return False
+
+    return True
+
+
+def _build_metadata(
+    row: dict[str, str],
+    required: set[str],
+    text_column: str,
+    metadata_columns: list[str] | None,
+) -> dict[str, Any]:
+    """Construye metadata adicional del registro.
+
+    Si metadata_columns fue configurado, conserva explicitamente
+    esas columnas.
+
+    Si no fue configurado, mantiene el comportamiento historico:
+    conserva todas las columnas adicionales.
+    """
+
+    if metadata_columns is not None:
+
+        return {
+            column: row.get(column, "")
+            for column in metadata_columns
+        }
+
+    return {
+        key: value
+        for key, value in row.items()
+        if key not in required
+        and key != text_column
+    }
+
+
 def load_records(
     input_file: str | Path,
     input_mode: str,
     text_column: str,
+    filters: dict[str, Any] | None = None,
+    metadata_columns: list[str] | None = None,
 ) -> list[InputRecord]:
-    """
-    Carga registros desde un CSV y los normaliza para inferencia.
-
-    El delimitador se detecta automáticamente.
+    """Carga registros desde CSV y los normaliza para inferencia.
 
     Para documentos completos:
     - id es obligatorio;
-    - text_column es obligatorio;
-    - numero_archivo y nombre son opcionales.
+    - text_column es obligatorio.
 
     Para fragmentos:
-    - se mantienen las columnas obligatorias definidas
-      en FRAGMENT_REQUIRED_COLUMNS.
+    - conserva numero_archivo;
+    - contador_interno;
+    - palabra_clave;
+    - categoria;
+    - posiciones del fragmento.
+
+    Tambien permite aplicar filtros declarados en experimentos.yaml.
     """
+
     path = Path(input_file)
 
     if not path.exists():
@@ -266,17 +353,21 @@ def load_records(
         )
 
     if input_mode == DOCUMENT_MODE:
+
         required = DOCUMENT_REQUIRED_COLUMNS
 
     elif input_mode == FRAGMENT_MODE:
+
         required = FRAGMENT_REQUIRED_COLUMNS
 
     else:
+
         raise DataLoaderError(
             f"Modo de entrada no soportado: {input_mode}"
         )
 
     with _open_csv(path) as fh:
+
         delimiter = _detect_delimiter(fh)
 
         reader = csv.DictReader(
@@ -289,37 +380,50 @@ def load_records(
                 f"El CSV no contiene cabecera: {path}"
             )
 
-        # Normalizamos los nombres directamente en el reader.
         reader.fieldnames = _normalize_fieldnames(
             reader.fieldnames
         )
 
         _validate_columns(
-            reader.fieldnames,
-            required,
-            text_column,
+            fieldnames=reader.fieldnames,
+            required=required,
+            text_column=text_column,
+            filters=filters,
+            metadata_columns=metadata_columns,
         )
 
-        rows = [
-            _clean_row(row)
-            for row in reader
-            if row
-        ]
+        rows: list[dict[str, str]] = []
+
+        for row in reader:
+
+            if not row:
+                continue
+
+            cleaned_row = _clean_row(row)
+
+            if not _matches_filters(
+                cleaned_row,
+                filters,
+            ):
+                continue
+
+            rows.append(cleaned_row)
 
     records: list[InputRecord] = []
 
     for row in rows:
+
         texto = row.get(
             text_column,
             "",
         )
 
-        metadata = {
-            key: value
-            for key, value in row.items()
-            if key not in required
-            and key != text_column
-        }
+        metadata = _build_metadata(
+            row=row,
+            required=required,
+            text_column=text_column,
+            metadata_columns=metadata_columns,
+        )
 
         records.append(
             InputRecord(
@@ -327,49 +431,73 @@ def load_records(
                     "numero_archivo",
                     "",
                 ),
+
                 id=row.get(
                     "id",
                     "",
                 ),
+
                 nombre=row.get(
                     "nombre",
                     "",
                 ),
+
                 texto=texto,
+
                 modo_entrada=input_mode,
 
                 contador_interno=(
-                    row.get("contador_interno")
+                    row.get(
+                        "contador_interno"
+                    )
                     if input_mode == FRAGMENT_MODE
                     else None
                 ),
 
                 palabra_clave=(
-                    row.get("palabra_clave")
+                    row.get(
+                        "palabra_clave"
+                    )
+                    if input_mode == FRAGMENT_MODE
+                    else None
+                ),
+
+                categoria=(
+                    row.get(
+                        "categoria"
+                    )
                     if input_mode == FRAGMENT_MODE
                     else None
                 ),
 
                 posicion_inicio=(
-                    row.get("posicion_inicio")
+                    row.get(
+                        "posicion_inicio"
+                    )
                     if input_mode == FRAGMENT_MODE
                     else None
                 ),
 
                 posicion_fin=(
-                    row.get("posicion_fin")
+                    row.get(
+                        "posicion_fin"
+                    )
                     if input_mode == FRAGMENT_MODE
                     else None
                 ),
 
                 inicio_fragmento=(
-                    row.get("inicio_fragmento")
+                    row.get(
+                        "inicio_fragmento"
+                    )
                     if input_mode == FRAGMENT_MODE
                     else None
                 ),
 
                 fin_fragmento=(
-                    row.get("fin_fragmento")
+                    row.get(
+                        "fin_fragmento"
+                    )
                     if input_mode == FRAGMENT_MODE
                     else None
                 ),

@@ -1,4 +1,4 @@
-"""Exportación CSV/JSON de resultados crudos y por documento."""
+"""Exportacion CSV/JSON de resultados crudos y por documento."""
 
 from __future__ import annotations
 
@@ -11,25 +11,44 @@ from typing import Any
 
 import yaml
 
-from .postprocess import PostprocessedResult
+from .postprocess import (
+    PostprocessedResult,
+)
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-OUTPUTS_DIR = PROJECT_ROOT / "outputs"
+PROJECT_ROOT = (
+    Path(__file__)
+    .resolve()
+    .parents[1]
+)
+
+OUTPUTS_DIR = (
+    PROJECT_ROOT
+    / "outputs"
+)
 
 
 RAW_COLUMNS = [
+    # --------------------------------------------------------
+    # Metadata documento / fragmento
+    # --------------------------------------------------------
     "numero_archivo",
     "id",
     "nombre",
     "modo_entrada",
+
     "contador_interno",
     "palabra_clave",
+    "categoria",
+
     "posicion_inicio",
     "posicion_fin",
     "inicio_fragmento",
     "fin_fragmento",
 
+    # --------------------------------------------------------
+    # Configuracion
+    # --------------------------------------------------------
     "modelo",
     "schema",
     "threshold",
@@ -37,14 +56,39 @@ RAW_COLUMNS = [
     "texto_usado",
     "estado_postprocess",
 
+    # --------------------------------------------------------
+    # Entidad generica
+    # --------------------------------------------------------
     "entidad_tipo",
     "entidad_valor",
-
     "confidence",
     "span_inicio",
     "span_fin",
 
-    # Persona embargada
+    # --------------------------------------------------------
+    # Persona embargada V7
+    # --------------------------------------------------------
+    "nombre_embargado",
+    "nombre_embargado_confidence",
+    "nombre_embargado_span_inicio",
+    "nombre_embargado_span_fin",
+
+    "dni_embargado",
+    "dni_embargado_confidence",
+    "dni_embargado_span_inicio",
+    "dni_embargado_span_fin",
+
+    "cuit_cuil_embargado",
+    "cuit_cuil_embargado_confidence",
+    "cuit_cuil_embargado_span_inicio",
+    "cuit_cuil_embargado_span_fin",
+
+    "rol_embargado",
+    "rol_embargado_confidence",
+
+    # --------------------------------------------------------
+    # Compatibilidad con V3/V6
+    # --------------------------------------------------------
     "nombre_detectado",
     "nombre_confidence",
     "nombre_span_inicio",
@@ -60,26 +104,33 @@ RAW_COLUMNS = [
     "cuil_cuit_span_inicio",
     "cuil_cuit_span_fin",
 
-    # Información structured completa
+    # --------------------------------------------------------
+    # Structured completo
+    # --------------------------------------------------------
     "fields_json",
 
-    # Respuesta original completa
+    # --------------------------------------------------------
+    # Respuesta original
+    # --------------------------------------------------------
     "raw_json",
 ]
 
 
 def export_results(
-    postprocessed: list[PostprocessedResult],
+    postprocessed: list[
+        PostprocessedResult
+    ],
     experiment_name: str,
     used_config: dict[str, Any],
     outputs_dir: str | Path = OUTPUTS_DIR,
     now: datetime | None = None,
 ) -> dict[str, Path]:
-    """Exporta resultados raw y agrupación inicial por documento."""
 
     timestamp = (
         now or datetime.now()
-    ).strftime("%Y%m%d_%H%M%S")
+    ).strftime(
+        "%Y%m%d_%H%M%S"
+    )
 
     safe_name = _safe_name(
         experiment_name
@@ -123,21 +174,32 @@ def export_results(
         postprocessed
     )
 
+    # --------------------------------------------------------
+    # RAW
+    # --------------------------------------------------------
+
     _write_csv(
-        raw_dir / "predicciones.csv",
+        raw_dir
+        / "predicciones.csv",
         raw_rows,
         RAW_COLUMNS,
     )
 
     _write_json(
-        raw_dir / "predicciones.json",
+        raw_dir
+        / "predicciones.json",
         raw_rows,
     )
 
     _write_yaml(
-        raw_dir / "config_usada.yaml",
+        raw_dir
+        / "config_usada.yaml",
         used_config,
     )
+
+    # --------------------------------------------------------
+    # POR DOCUMENTO
+    # --------------------------------------------------------
 
     _write_json(
         document_dir
@@ -148,7 +210,11 @@ def export_results(
     _write_csv(
         document_dir
         / "predicciones_por_documento.csv",
-        _flatten_grouped_rows(grouped),
+
+        _flatten_grouped_rows(
+            grouped
+        ),
+
         [
             "id",
             "numero_archivo",
@@ -160,32 +226,41 @@ def export_results(
     )
 
     _write_yaml(
-        document_dir / "config_usada.yaml",
+        document_dir
+        / "config_usada.yaml",
         used_config,
     )
 
     return {
-        "raw_dir": raw_dir,
-        "por_documento_dir": document_dir,
+        "raw_dir":
+            raw_dir,
+
+        "por_documento_dir":
+            document_dir,
     }
 
 
 def build_raw_rows(
-    postprocessed: list[PostprocessedResult],
-) -> list[dict[str, Any]]:
-    """
-    Arma filas auditables.
+    postprocessed: list[
+        PostprocessedResult
+    ],
+) -> list[
+    dict[str, Any]
+]:
 
-    Una fila por candidato.
-    Si no hubo candidato, genera igualmente una fila.
-    """
-
-    rows: list[dict[str, Any]] = []
+    rows: list[
+        dict[str, Any]
+    ] = []
 
     for item in postprocessed:
 
-        prediction = item.prediction
-        record = prediction.record
+        prediction = (
+            item.prediction
+        )
+
+        record = (
+            prediction.record
+        )
 
         candidates = (
             item.candidates
@@ -197,6 +272,10 @@ def build_raw_rows(
 
             rows.append(
                 {
+                    # ----------------------------------------
+                    # Metadata
+                    # ----------------------------------------
+
                     "numero_archivo":
                         record.numero_archivo,
 
@@ -215,6 +294,9 @@ def build_raw_rows(
                     "palabra_clave":
                         record.palabra_clave,
 
+                    "categoria":
+                        record.categoria,
+
                     "posicion_inicio":
                         record.posicion_inicio,
 
@@ -226,6 +308,10 @@ def build_raw_rows(
 
                     "fin_fragmento":
                         record.fin_fragmento,
+
+                    # ----------------------------------------
+                    # Config
+                    # ----------------------------------------
 
                     "modelo":
                         prediction.model_id,
@@ -242,27 +328,129 @@ def build_raw_rows(
                     "estado_postprocess":
                         item.status,
 
+                    # ----------------------------------------
+                    # Generico
+                    # ----------------------------------------
+
                     "entidad_tipo":
-                        candidate.get("tipo"),
+                        candidate.get(
+                            "tipo"
+                        ),
 
                     "entidad_valor":
-                        candidate.get("valor"),
+                        candidate.get(
+                            "valor"
+                        ),
 
                     "confidence":
-                        candidate.get("confidence"),
+                        candidate.get(
+                            "confidence"
+                        ),
 
                     "span_inicio":
-                        candidate.get("span_inicio"),
+                        candidate.get(
+                            "span_inicio"
+                        ),
 
                     "span_fin":
-                        candidate.get("span_fin"),
+                        candidate.get(
+                            "span_fin"
+                        ),
 
-                    # ==================================================
-                    # PERSONA
-                    # ==================================================
+                    # ----------------------------------------
+                    # V7 nombre_embargado
+                    # ----------------------------------------
+
+                    "nombre_embargado":
+                        candidate.get(
+                            "nombre_embargado"
+                        ),
+
+                    "nombre_embargado_confidence":
+                        candidate.get(
+                            "nombre_embargado_confidence"
+                        ),
+
+                    "nombre_embargado_span_inicio":
+                        candidate.get(
+                            "nombre_embargado_span_inicio"
+                        ),
+
+                    "nombre_embargado_span_fin":
+                        candidate.get(
+                            "nombre_embargado_span_fin"
+                        ),
+
+                    # ----------------------------------------
+                    # V7 DNI
+                    # ----------------------------------------
+
+                    "dni_embargado":
+                        candidate.get(
+                            "dni_embargado"
+                        ),
+
+                    "dni_embargado_confidence":
+                        candidate.get(
+                            "dni_embargado_confidence"
+                        ),
+
+                    "dni_embargado_span_inicio":
+                        candidate.get(
+                            "dni_embargado_span_inicio"
+                        ),
+
+                    "dni_embargado_span_fin":
+                        candidate.get(
+                            "dni_embargado_span_fin"
+                        ),
+
+                    # ----------------------------------------
+                    # V7 CUIT/CUIL
+                    # ----------------------------------------
+
+                    "cuit_cuil_embargado":
+                        candidate.get(
+                            "cuit_cuil_embargado"
+                        ),
+
+                    "cuit_cuil_embargado_confidence":
+                        candidate.get(
+                            "cuit_cuil_embargado_confidence"
+                        ),
+
+                    "cuit_cuil_embargado_span_inicio":
+                        candidate.get(
+                            "cuit_cuil_embargado_span_inicio"
+                        ),
+
+                    "cuit_cuil_embargado_span_fin":
+                        candidate.get(
+                            "cuit_cuil_embargado_span_fin"
+                        ),
+
+                    # ----------------------------------------
+                    # Rol
+                    # ----------------------------------------
+
+                    "rol_embargado":
+                        candidate.get(
+                            "rol_embargado"
+                        ),
+
+                    "rol_embargado_confidence":
+                        candidate.get(
+                            "rol_embargado_confidence"
+                        ),
+
+                    # ----------------------------------------
+                    # Compatibilidad nombre
+                    # ----------------------------------------
 
                     "nombre_detectado":
-                        candidate.get("nombre"),
+                        candidate.get(
+                            "nombre"
+                        ),
 
                     "nombre_confidence":
                         candidate.get(
@@ -279,12 +467,14 @@ def build_raw_rows(
                             "nombre_span_fin"
                         ),
 
-                    # ==================================================
-                    # DNI
-                    # ==================================================
+                    # ----------------------------------------
+                    # Compatibilidad DNI
+                    # ----------------------------------------
 
                     "dni_detectado":
-                        candidate.get("dni"),
+                        candidate.get(
+                            "dni"
+                        ),
 
                     "dni_confidence":
                         candidate.get(
@@ -301,9 +491,9 @@ def build_raw_rows(
                             "dni_span_fin"
                         ),
 
-                    # ==================================================
-                    # CUIL / CUIT
-                    # ==================================================
+                    # ----------------------------------------
+                    # Compatibilidad CUIT/CUIL
+                    # ----------------------------------------
 
                     "cuil_cuit_detectado":
                         candidate.get(
@@ -325,9 +515,9 @@ def build_raw_rows(
                             "cuil_cuit_span_fin"
                         ),
 
-                    # ==================================================
-                    # STRUCTURED COMPLETO
-                    # ==================================================
+                    # ----------------------------------------
+                    # Structured completo
+                    # ----------------------------------------
 
                     "fields_json":
                         json.dumps(
@@ -339,9 +529,9 @@ def build_raw_rows(
                             default=str,
                         ),
 
-                    # ==================================================
-                    # RAW
-                    # ==================================================
+                    # ----------------------------------------
+                    # Raw
+                    # ----------------------------------------
 
                     "raw_json":
                         json.dumps(
@@ -356,13 +546,12 @@ def build_raw_rows(
 
 
 def build_document_rows(
-    postprocessed: list[PostprocessedResult],
-) -> list[dict[str, Any]]:
-    """
-    Agrupa resultados por documento.
-
-    NO decide cuál demandado es definitivo.
-    """
+    postprocessed: list[
+        PostprocessedResult
+    ],
+) -> list[
+    dict[str, Any]
+]:
 
     grouped: dict[
         str,
@@ -371,8 +560,13 @@ def build_document_rows(
 
     for item in postprocessed:
 
-        prediction = item.prediction
-        record = prediction.record
+        prediction = (
+            item.prediction
+        )
+
+        record = (
+            prediction.record
+        )
 
         bucket = grouped.setdefault(
             record.id,
@@ -394,13 +588,21 @@ def build_document_rows(
             },
         )
 
-        bucket["resultados"].append(
+        bucket[
+            "resultados"
+        ].append(
             {
                 "contador_interno":
                     record.contador_interno,
 
                 "palabra_clave":
                     record.palabra_clave,
+
+                "categoria":
+                    record.categoria,
+
+                "fragmento":
+                    record.texto,
 
                 "posicion_inicio":
                     record.posicion_inicio,
@@ -440,9 +642,12 @@ def build_document_rows(
 
 
 def _flatten_grouped_rows(
-    grouped: list[dict[str, Any]],
-) -> list[dict[str, Any]]:
-    """Genera resumen CSV por documento."""
+    grouped: list[
+        dict[str, Any]
+    ],
+) -> list[
+    dict[str, Any]
+]:
 
     rows: list[
         dict[str, Any]
@@ -458,7 +663,9 @@ def _flatten_grouped_rows(
         rows.append(
             {
                 "id":
-                    item.get("id"),
+                    item.get(
+                        "id"
+                    ),
 
                 "numero_archivo":
                     item.get(
@@ -466,10 +673,14 @@ def _flatten_grouped_rows(
                     ),
 
                 "nombre":
-                    item.get("nombre"),
+                    item.get(
+                        "nombre"
+                    ),
 
                 "cantidad_resultados":
-                    len(results),
+                    len(
+                        results
+                    ),
 
                 "cantidad_candidatos":
                     sum(
@@ -495,10 +706,11 @@ def _flatten_grouped_rows(
 
 def _write_csv(
     path: Path,
-    rows: list[dict[str, Any]],
+    rows: list[
+        dict[str, Any]
+    ],
     fieldnames: list[str],
 ) -> None:
-    """Escribe CSV con UTF-8 BOM."""
 
     with path.open(
         "w",
@@ -513,14 +725,16 @@ def _write_csv(
         )
 
         writer.writeheader()
-        writer.writerows(rows)
+
+        writer.writerows(
+            rows
+        )
 
 
 def _write_json(
     path: Path,
     data: Any,
 ) -> None:
-    """Escribe JSON preservando Unicode."""
 
     with path.open(
         "w",
@@ -540,7 +754,6 @@ def _write_yaml(
     path: Path,
     data: dict[str, Any],
 ) -> None:
-    """Escribe configuración usada."""
 
     with path.open(
         "w",
@@ -558,22 +771,37 @@ def _write_yaml(
 def _safe_name(
     value: str,
 ) -> str:
-    """Convierte un nombre de experimento en nombre de carpeta seguro."""
 
-    allowed: list[str] = []
+    allowed: list[
+        str
+    ] = []
 
-    for char in value.lower().strip():
+    for char in (
+        value
+        .lower()
+        .strip()
+    ):
 
         if (
             char.isalnum()
-            or char in {"_", "-"}
+            or char in {
+                "_",
+                "-",
+            }
         ):
-            allowed.append(char)
+            allowed.append(
+                char
+            )
 
         elif char.isspace():
-            allowed.append("_")
+
+            allowed.append(
+                "_"
+            )
 
     return (
-        "".join(allowed)
+        "".join(
+            allowed
+        )
         or "experimento"
     )
