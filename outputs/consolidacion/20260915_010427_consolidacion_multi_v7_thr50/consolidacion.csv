@@ -1,0 +1,131 @@
+﻿numero_archivo,id,nombre_documento,estado,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total
+1,538118,Embargo - usuario,RESUELTO,1,1,NAHUEL OSCAR MARQUEZ,33.470.065,,demandada,NAHUEL OSCAR MARQUEZ,1,1,11.494
+2,538084,Embargo - usuario,RESUELTO,1,1,MAZA ARIAS MERCEDES FATIMA,32.630.518,,titular,MAZA ARIAS MERCEDES FATIMA,1,1,9.858
+3,495011,Embargo - usuario,RESUELTO,1,1,VINCI BRIAN EMMANUEL,34.436.998,20-34436998-5,embargado,VINCI BRIAN EMMANUEL,5,5,56.294
+4,534526,Embargo - Empleado,NO_RESUELTO,0,,,,,,,0,0,0
+5,542996,Embargo - usuario,RESUELTO,1,1,STIO MARIA AMELIA,6551699,,demandado | titular,STIO MARIA AMELIA,2,2,22.917
+6,538081,Embargo - usuario,RESUELTO,1,1,BIERNVERT CLAUDIA CARINA,27.164.468,,titular,BIERNVERT CLAUDIA CARINA,1,1,9.762
+7,524057,Embargo - usuario,RESUELTO,1,1,DIEGO FABIAN FRETES,29178884,,embargado,DIEGO FABIAN FRETES,1,1,9.848
+8,536725,Embargo - usuario,RESUELTO,1,1,MIGUEL ANGEL SEGOVIA,36003333,,demandado | embargado,MIGUEL ANGEL SEGOVIA,6,6,55.486
+9,536741,Embargo - usuario,RESUELTO,1,1,ROBERTO CARLOS LOBO,21773000,,demandado | embargado,ROBERTO CARLOS LOBO | Roberto Carlos Lobo,2,2,18.473
+10,524053,Embargo - usuario,RESUELTO,1,1,ANDREA JAQUELINA HERRERA,23.333.216,,ejecutado | embargado,ANDREA JAQUELINA HERRERA | HERRERA ANDREA JAQUELINA,2,2,16.819
+11,546314,Embargo - usuario,RESUELTO,1,1,SILVA HERMINIO ISAUL ANTONIO,31973182,,embargado,SILVA HERMINIO ISAUL ANTONIO,2,2,22.732
+12,529383,Embargo - usuario,RESUELTO,1,1,OROZCO ERNESTO ARIEL,34.418.062,20-34418062-2,embargado,OROZCO ERNESTO ARIEL,4,4,41.953
+13,538122,Embargo - usuario,RESUELTO,1,1,CLAUDIA ALEJANDRA MIRANDA,23.360.827,,demandada,CLAUDIA ALEJANDRA MIRANDA,1,1,11.494
+14,536721,Embargo - usuario,RESUELTO,1,1,MIGUEL MARCELO MEDINA,16289505,,demandado,MIGUEL MARCELO MEDINA,4,4,39.988
+15,516904,Embargo - usuario,RESUELTO,1,1,LAURA ESTELA FERNANDEZ,20.371.813,,demandado,LAURA ESTELA FERNANDEZ,1,1,9.994
+16,546236,Embargo - usuario,RESUELTO,1,1,Aurelio Rodolfo Melgarejo,13273828,,demandado | ejecutado,AURELIO RODOLFO MELGAREJO | Aurelio Rodolfo Melgarejo,2,2,19.989
+17,546332,Embargo - usuario,RESUELTO,1,1,VALERIA ALEJANDRA JIMENEZ,29231660,27-29231660-2,demandado | embargado,VALERIA ALEJANDRA JIMENEZ,3,3,33.305
+18,538119,Embargo - usuario,RESUELTO,1,1,Norma Estefanía MIHANOVICH,44.398.455,,demandada,ESTEFANIA MIHANOVICH | Norma Estefanía MIHANOVICH,2,2,22.867
+19,501696,Embargo - usuario,RESUELTO,1,1,GONZALEZ,,,demandada,GONZALEZ,2,2,12.633
+20,536705,Embargo - usuario,RESUELTO,1,1,CARLOS ROBERTO SOLOHAGA,17.516.617,,demandado | embargado,CARLOS ROBERTO SOLOHAGA,2,2,16.814
+21,535845,Embargo - usuario,RESUELTO_MULTIPLE,3,1,MIRTA EDITH BONACALZA,26592524,20-26592524-4,demandada | embargado,HORACIO OSCAR NUÑEZ | MIRTA EDITH BONACALZA,6,6,67.886
+21,535845,Embargo - usuario,RESUELTO_MULTIPLE,3,2,ELIAS CARBALLO,24846229,23-24846229-9,embargado,ELIAS CARBALLO,2,2,19.701
+21,535845,Embargo - usuario,RESUELTO_MULTIPLE,3,3,MIRTA EDITH BONACALZA,40797926,,demandada,MIRTA EDITH BONACALZA,2,2,16.943
+22,536718,Embargo - usuario,RESUELTO,1,1,GROSSO JUAN JOSE,14.748.434,,demandado | embargado,GROSSO JUAN JOSE,2,2,18.388
+23,536742,Embargo - usuario,RESUELTO,1,1,ESTER JOAQUINA PRATS,10533729,,demandado,ESTER JOAQUINA PRATS,1,1,9.986
+24,535814,Embargo - usuario,RESUELTO,1,1,Nancy Mariela Benedetti,25.688.264,,demandada,Nancy Mariela Benedetti,2,2,22.993
+25,518796,Embargo - usuario,RESUELTO,1,1,CHARIANO LEONARDO GABRIEL,28.731.512,20-28731512-1,demandado,CHARIANO LEONARDO GABRIEL | LEONARDO GABRIEL,4,4,52.273
+26,495683,Embargo - usuario,RESUELTO,1,1,VILLALBA JOSE ALBERTO,31.095.679,,demandado,VILLALBA JOSE ALBERTO,1,1,9.97
+27,516903,Embargo - usuario,RESUELTO,1,1,Fernando Martín González,27680733,,embargado | titular,FERNANDO MARTIN GONZALEZ | Fernando Martín González,2,2,16.935
+28,538120,Embargo - usuario,RESUELTO,1,1,NATALIA ANDREA OÑA,26.294.008,,demandada,NATALIA ANDREA OÑA,1,1,11.498
+29,532501,Embargo - usuario,RESUELTO,1,1,ELIAS EZEQUIEL RODRIGUEZ,41.075.050,,demandada,ELIAS EZEQUIEL RODRIGUEZ,1,1,9.782
+30,503824,Embargo - usuario,RESUELTO,1,1,JACQUET ROBERTO LUIS,20.258.157,23-20258157-9,embargado,JACQUET ROBERTO LUIS,2,2,23.492
+31,536750,Embargo - usuario,RESUELTO,1,1,Sr. Federico Mario BOTTI,29.987.246,20299872468,embargado | titular,FEDERICO MARIO | Sr. Federico Mario BOTTI,5,5,50.001
+32,514558,Embargo - usuario,RESUELTO,1,1,Gustavo Ezequiel Godoy,31.317.421,,demandado,Gustavo Ezequiel Godoy,2,2,22.993
+33,494160,Embargo - usuario,RESUELTO_MULTIPLE,2,1,MARCELA PATRICIA GARCIA PALACIOS,93757465,27-93757465-2,demandada | embargada | embargado,ATRICIA GARCIA PALACIOS | MARCELA PATRICIA GARCIA PALACIOS | PATRICIA GARCIA PALACIOS,8,8,91.959
+33,494160,Embargo - usuario,RESUELTO_MULTIPLE,2,2,ROBERTO GABRIEL SZILAK,24678126,20-24678126-6,embargado,ROBERTO GABRIEL SZILAK,4,4,40.983
+34,529783,Embargo - usuario,RESUELTO,1,1,ALFREDO ANTONIO ARIAS,10.700.496,,embargado,ALFREDO ANTONIO ARIAS,2,2,16.982
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,12,1,BENITO CABRERA VASQUEZ,94.310.138,,demandado | embargado,BENITO CABRERA VASQUEZ,6,6,50.772
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,12,2,Juan Roberto Michel,20.855.852,,embargado,Juan Roberto Michel,4,4,33.843
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,12,3,Alejandro Carlos Zothner,25.999.634,,embargado,Alejandro Carlos Zothner,4,4,33.758
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,12,4,Javier Dasso Boullon,26.200.502,,embargado,Javier Dasso Boullon,4,4,33.496
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,12,5,Manuel Agustín González Sáez,37.917.536,,embargado,Manuel Agustín González Sáez,4,4,33.219
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,12,6,Agustín Ernesto Barrera,33.474.275,,embargado,Agustín Ernesto Barrera,3,3,25.372
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,12,7,Joaquín Nicolás Correa Leveratto,34.704.592,,embargado,Joaquín Nicolás Correa Leveratto,3,3,25.362
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,12,8,Valeria Gladys Leveratto,16.927.627,,embargado,Valeria Gladys Leveratto,3,3,24.695
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,12,9,ELVER BRUNO ESTRADA QUINTO,94.635.112,,embargado,ELVER BRUNO ESTRADA QUINTO,2,2,16.957
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,12,10,Brian Damián Galeppi,38.079.326,,embargado,Brian Damián Galeppi,2,2,16.862
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,12,11,Gonzalo Gastón Novo,28.507.191,,embargado,Gonzalo Gastón Novo,2,2,16.844
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,12,12,María José Grande,37.754.365,,embargado,María José Grande,2,2,16.604
+36,501211,Embargo - usuario,RESUELTO,1,1,PEDRAZA TEODORO ROVEL,20.276.462,20-20276462-3,demandado | embargado,PEDRAZA TEODORO ROVEL,4,4,43.314
+37,531075,Embargo - usuario,RESUELTO,1,1,DANIEL CARLOS PEREZ,24391072,,demandado,DANIEL CARLOS PEREZ,1,1,11.497
+38,494151,Embargo - usuario,RESUELTO,1,1,ST. JOSE LUIS VALENTINI,17.196.196,,demandado | deudor,JOSE LUIS VALENTINI | ST. JOSE LUIS VALENTINI,2,2,21.348
+39,546334,Embargo - usuario,NO_RESUELTO,0,,,,,,,0,0,0
+40,547373,Embargo - usuario,RESUELTO_MULTIPLE,2,1,JULIO,,30-71412954-2,embargado,JULIO | OSCAR,3,4,32.77
+40,547373,Embargo - usuario,RESUELTO_MULTIPLE,2,2,OSCAR S.R.L.,,20-93916854-1,embargado,OLARTE MALLQUI JULIO | OSCAR S.R.L.,2,3,24.833
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,1,Juan Roberto Michel,20.855.852,,embargado,Juan Roberto Michel,8,8,67.607
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,2,Alejandro Carlos Zothner,25.999.634,,embargado,Alejandro Carlos Zothner,8,8,67.528
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,3,Gonzalo Gastón Novo,28.507.191,,embargado,Gonzalo Gastón Novo,6,6,50.488
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,4,Patricia Carolina Jara,27.011.924,,embargada | embargado,Beltran Diego Martín | Patricia Carolina Jara,5,5,41.36
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,5,Pedro Luigi Leveratto,43.030.918,,embargado,Pedro Luigi Leveratto,4,4,33.629
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,6,Javier Dasso Boullon,26.200.502,,embargado,Javier Dasso Boullon,4,4,33.496
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,7,Donatella Mía Leveratto,46.876.857,,embargada | embargado,Donatella Mía Leveratto,4,4,33.303
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,8,Manuel Agustín González Sáez,37.917.536,,embargado,Manuel Agustín González Sáez,4,4,33.29
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,9,Agustín Ernesto Barrera,33.474.275,,embargado,Agustín Ernesto Barrera,3,3,25.372
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,10,Joaquín Nicolás Correa Leveratto,34.704.592,,embargado,Joaquín Nicolás Correa Leveratto,3,3,25.362
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,11,Victoria Brennan,43.038.233,,embargado,Victoria Brennan,3,3,23.757
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,12,IVAN ROBERTO SILVA,27.318.472,,embargado,IVAN ROBERTO SILVA,2,2,16.986
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,13,Delfina Guido,42.951.150,,embargado,Delfina Guido,2,2,16.871
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,14,Beltran Diego Martín,27.949.539,,embargado,Beltran Diego Martín,2,2,16.802
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,15,15,María José Grande,37.754.365,,embargado,María José Grande,2,2,16.717
+42,538090,Embargo - usuario,RESUELTO,1,1,MIRIAM LOPEZ FRANCO,94.542.024,27-94542024-9,demandada | embargado,MIRIAM LOPEZ FRANCO | Miriam López Franco,3,3,33.406
+44,513551,Embargo - usuario,RESUELTO,1,1,HERRERA MAXIMILIANO FRANCISCO ALEXIS,36.301.174,,titular,HERRERA MAXIMILIANO FRANCISCO ALEXIS,1,1,9.853
+45,522290,Embargo - usuario,RESUELTO,1,1,Sr. GRACIELA EDITH CANO,18.347.843,,ejecutado,Sr. GRACIELA EDITH CANO,1,1,9.825
+46,501201,Embargo - usuario,RESUELTO,1,1,Claudia Marcela Ledo,24.535.698,,embargada | embargado,Claudia Marcela Ledo,2,2,16.988
+47,538037,Embargo - usuario,RESUELTO_MULTIPLE,2,1,GRISELDA BEATRIZ VALENZUELA,24.326.675,,demandada | embargado,GRISELDA BEATRIZ VALENZUELA,2,2,21.199
+47,538037,Embargo - usuario,RESUELTO_MULTIPLE,2,2,Ruben Di Benedetto,14.048.834,,embargada | embargado,Ruben Di Benedetto,2,2,16.955
+48,538114,Embargo - usuario,RESUELTO,1,1,ANGEL EZEQUIEL ALARCON,44.583.812,,demandada,ANGEL EZEQUIEL ALARCON,1,1,9.489
+49,529847,Embargo - usuario,RESUELTO,1,1,LIPSKER MATIAS ALEXIS,24.564.225,20-24564225-4,demandado,LIPSKER MATIAS ALEXIS,2,2,23.49
+50,495014,Embargo - usuario,NO_RESUELTO,0,,,,,,,0,0,0
+51,543609,Embargo - usuario,RESUELTO,1,1,CARDZO MIGUEL ÁNGEL,23087819,,ejecutado,CARDZO MIGUEL ÁNGEL,1,1,9.679
+52,535837,Embargo - usuario,RESUELTO,1,1,LUNA HORACIO EMANUEL,35499690,,ejecutado | titular,LUNA HORACIO EMANUEL,3,3,29.98
+53,503810,Embargo - usuario,RESUELTO,1,1,HORACIO LUIS VACCHER,11.376.446,,demandado,HORACIO LUIS VACCHER,2,4,39.686
+54,495686,Embargo - usuario,NO_RESUELTO,0,,,,,,,0,0,0
+55,495690,Embargo - usuario,NO_RESUELTO,0,,,,,,,0,0,0
+56,536730,Embargo - usuario,NO_RESUELTO,0,,,,,,,0,0,0
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,1,Juan Roberto Michel,20.855.852,,embargado,Juan Roberto Michel,8,8,67.607
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,2,Alejandro Carlos Zothner,25.999.634,,embargado,Alejandro Carlos Zothner,8,8,67.528
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,3,Gonzalo Gastón Novo,28.507.191,,embargado,Gonzalo Gastón Novo,6,6,50.488
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,4,Patricia Carolina Jara,27.011.924,,embargada | embargado,Beltran Diego Martin | Patricia Carolina Jara,5,5,41.445
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,5,Pedro Luigi Leveratto,43.030.918,,embargado,Pedro Luigi Leveratto,4,4,33.629
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,6,Javier Dasso Boullon,26.200.502,,embargado,Javier Dasso Boullon,4,4,33.496
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,7,Donatella Mía Leveratto,46.876.857,,embargada | embargado,Donatella Mía Leveratto,4,4,33.303
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,8,Manuel Agustín González Sáez,37.917.536,,embargado,Manuel Agustín González Sáez,4,4,33.29
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,9,Agustín Ernesto Barrera,33.474.275,,embargado,Agustín Ernesto Barrera,3,3,25.372
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,10,Joaquín Nicolás Correa Leveratto,34.704.592,,embargado,Joaquín Nicolás Correa Leveratto,3,3,25.362
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,11,Victoria Brennan,43.038.233,,embargado,Victoria Brennan,3,3,23.751
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,12,NADIA VANESA BRUSATIN,31.478.712,,embargado,NADIA VANESA BRUSATIN,2,2,16.983
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,13,Delfina Guido,42.951.150,,embargado,Delfina Guido,2,2,16.871
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,14,Beltran Diego Martin,27.949.539,,embargado,Beltran Diego Martin,2,2,16.82
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,15,15,María José Grande,37.754.365,,embargado,María José Grande,2,2,16.717
+58,536724,Embargo - usuario,RESUELTO,1,1,Horacio Oscar Montenegro,23.420.002,30-70308853-4,embargado,HORACIO OSCAR MONTENEGRO | Horacio Oscar Montenegro,3,3,30.339
+59,536738,Embargo - usuario,RESUELTO,1,1,LUCINDO RAMÓN CORNEJO,12.848.992,,demandado | ejecutado,LUCINDO RAMÓN CORNEJO | Lucindo Ramón Cornejo,2,2,19.953
+60,516901,Embargo - usuario,RESUELTO,1,1,Daniel Ezequiel Romero,29.225.672,,demandado,DANIEL EZEQUIEL ROMERO | Daniel Ezequiel Romero,2,2,19.994
+61,547366,Embargo - usuario,RESUELTO,1,1,"Sra. PAEZ, CARLA STEFANIA",33.414.252,,demandada | demandado,"CARLA STEFANIA | Sra. PAEZ, CARLA STEFANIA",2,2,15.249
+62,523996,Embargo - usuario,RESUELTO,1,1,Sr. PUJADAS RUBEN ALBERTO,5.612.521,,demandado,RUBEN ALBERTO | Sr. PUJADAS RUBEN ALBERTO,2,2,19.671
+63,523977,Embargo - usuario,RESUELTO,1,1,EDUARDO JAVIER FERNANDEZ,21.594.165,,demandado,EDUARDO JAVIER FERNANDEZ,1,1,9.994
+64,543631,Embargo - usuario,RESUELTO_MULTIPLE,3,1,Sr. GONZALEZ LEDESMA MAURICIO,35.646.104,,demandado | embargado,Mauricio Gonzalez Ledesma | Sr. GONZALEZ LEDESMA MAURICIO,3,3,26.643
+64,543631,Embargo - usuario,RESUELTO_MULTIPLE,3,2,NICOLÁS STANGA,38.050.821,,embargado,NICOLÁS STANGA,3,3,15.49
+64,543631,Embargo - usuario,RESUELTO_MULTIPLE,3,3,MERCADO LIBRE SRL/ MERCADO PAGO,,30-70308853-4,embargado,MERCADO LIBRE SRL/ MERCADO PAGO,1,1,10.28
+65,523990,Embargo - usuario,RESUELTO,1,1,ALEJANDRO RODRIGO ALBORNOZ,20.583.561,,demandado | ejecutado,ALEJANDRO RODRIGO ALBORNOZ | Alejandro Rodrigo Albornoz,2,2,19.986
+66,513487,Embargo - usuario,RESUELTO,1,1,AGUSTIN MARIANO PEROSIO,16.893.287,20-16893287-2,demandado | embargado,AGUSTIN MARIANO PEROSIO,4,4,50.438
+67,547376,Embargo - usuario,NO_RESUELTO,0,,,,,,,0,0,0
+68,524013,Embargo - usuario,RESUELTO,1,1,DIEGO CISTERNA,26034291,,demandado | ejecutado,CISTERNA DIEGO | DIEGO CISTERNA,2,2,19.916
+69,498352,Embargo - usuario,RESUELTO_MULTIPLE,2,1,José Emiliano ALVAREZ,40.209.549,,titular,José Emiliano ALVAREZ,2,2,16.853
+69,498352,Embargo - usuario,RESUELTO_MULTIPLE,2,2,Mercado Pago,,30-70308853-4,embargado,Mercado Pago,2,2,15.483
+70,526651,Embargo - usuario,RESUELTO,1,1,PORCO MAIRA GABRIELA,31.370.360,27313703601,ejecutada,PORCO MAIRA GABRIELA,6,6,71.52
+71,531094,Embargo - usuario,RESUELTO,1,1,RIO URUGUAY COOPERATIVA DE SEGUROS LIMITADA,,30500061711,embargado,RIO URUGUAY COOPERATIVA DE SEGUROS LIMITADA,1,1,11.983
+72,547369,Embargo - usuario,RESUELTO,1,1,"Sr. GÓMEZ, CLAUDIO LEONARDO",33.627.258,,demandado,"CLAUDIO LEONARDO | Sr. GÓMEZ | Sr. GÓMEZ, CLAUDIO LEONARDO",4,7,57.158
+73,536715,Embargo - usuario,RESUELTO,1,1,ALFREDO ISMAEL LOPEZ,27015232,,demandado,ALFREDO ISMAEL LOPEZ,1,1,9.996
+74,536707,Embargo - usuario,RESUELTO,1,1,JUAN CARLOS SEQUERA,4.513.281,,demandado,JUAN CARLOS SEQUERA,1,1,9.98
+75,547372,Embargo - usuario,RESUELTO,1,1,"Sr. LETTERUCCI, JOSE LUIS",29.312.586,,demandado,"JOSE LUIS | Sr. LETTERUCCI, JOSE LUIS",4,4,33.993
+76,538066,Embargo - usuario,RESUELTO,1,1,Clara Evangeline Torres,23492823,,embargado | titular,Clara Evangeline Torres,2,2,18.3
+77,536739,Embargo - usuario,RESUELTO,1,1,"PAULA ALEJANDRA
+
+PILARIA",21.594.889,,demandado,"PAULA ALEJANDRA
+
+PILARIA",1,1,9.975
+78,546238,Embargo - usuario,RESUELTO,1,1,LOPEZ CARLOS PASCUAL,7.759.088,,demandado,LOPEZ CARLOS PASCUAL,1,1,9.994
+79,513482,Embargo - usuario,RESUELTO,1,1,AGUSTIN MARIANO PEROSIO,16.893.287,20-16893287-2,demandado,AGUSTIN MARIANO PEROSIO,2,2,15.868
+80,536728,Embargo - usuario,NO_RESUELTO,0,,,,,,,0,0,0

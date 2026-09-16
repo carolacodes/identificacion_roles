@@ -1,0 +1,4348 @@
+[
+  {
+    "id": "538118",
+    "numero_archivo": "1",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "NAHUEL OSCAR MARQUEZ",
+        "dni_embargado": "33.470.065",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "NAHUEL OSCAR MARQUEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 10.79,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "NAHUEL OSCAR MARQUEZ",
+            "dni_detectado": "33.470.065",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7648125886917114,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "decretado el EMBARGO sobre los fondos que tenga la parte demandada en autos, NAHUEL OSCAR MARQUEZ, DNI 33.470.065, así com",
+            "contexto_local": "decretado el EMBARGO sobre los fondos que tenga la parte demandada en autos, NAHUEL OSCAR MARQUEZ, DNI 33.470.065, así com"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "538084",
+    "numero_archivo": "2",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "MAZA ARIAS MERCEDES FATIMA",
+        "dni_embargado": "32.630.518",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "MAZA ARIAS MERCEDES FATIMA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.605,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MAZA ARIAS MERCEDES FATIMA",
+            "dni_detectado": "32.630.518",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.5386322736740112,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "que deberá proceder a embargar los fondos que posea la Sra. MAZA ARIAS MERCEDES FATIMA, titular del Dni 32.630.518, en el p",
+            "contexto_local": "que deberá proceder a embargar los fondos que posea la Sra. MAZA ARIAS MERCEDES FATIMA, titular del Dni 32.630.518, en el p"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "495011",
+    "numero_archivo": "3",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "VINCI BRIAN EMMANUEL",
+        "dni_embargado": "34.436.998",
+        "cuit_cuil_embargado": "20-34436998-5",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "VINCI BRIAN EMMANUEL"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 21.354,
+        "evidencias": [
+          {
+            "contador_interno": "11",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "VINCI BRIAN EMMANUEL",
+            "dni_detectado": "34.436.998",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6216092109680176,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "ENTOS OCHENTA Y NUEVE MIL TRESCIENTOS CUARENTA Y DOS CON 05/100).\n- Embargado: VINCI BRIAN EMMANUEL DNI 34.436.998 CUIL 20-",
+            "contexto_local": "ENTOS OCHENTA Y NUEVE MIL TRESCIENTOS CUARENTA Y DOS CON 05/100).\n- Embargado: VINCI BRIAN EMMANUEL DNI 34.436.998 CUIL 20-"
+          },
+          {
+            "contador_interno": "12",
+            "palabra_clave": "cuil",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "VINCI BRIAN EMMANUEL",
+            "dni_detectado": "34.436.998",
+            "cuit_cuil_detectado": "20-34436998-5",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6669379472732544,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "NUEVE MIL TRESCIENTOS CUARENTA Y DOS CON 05/100).\n- Embargado: VINCI BRIAN EMMANUEL DNI 34.436.998 CUIL 20-34436998-5).\nEl",
+            "contexto_local": "NUEVE MIL TRESCIENTOS CUARENTA Y DOS CON 05/100).\n- Embargado: VINCI BRIAN EMMANUEL DNI 34.436.998 CUIL 20-34436998-5).\nEl"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "534526",
+    "numero_archivo": "4",
+    "nombre_documento": "Embargo - Empleado",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "542996",
+    "numero_archivo": "5",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "STIO MARIA AMELIA",
+        "dni_embargado": "6.551.699",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "STIO MARIA AMELIA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.575,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "STIO MARIA AMELIA",
+            "dni_detectado": "6.551.699",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.530022919178009,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "ce saber que deberá proceder a embargar los fondos que posea la Sra. STIO MARIA AMELIA, titular del Dni 6.551.699 , en el p",
+            "contexto_local": "ce saber que deberá proceder a embargar los fondos que posea la Sra. STIO MARIA AMELIA, titular del Dni 6.551.699 , en el p"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "538081",
+    "numero_archivo": "6",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "524057",
+    "numero_archivo": "7",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "536725",
+    "numero_archivo": "8",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "MIGUEL ANGEL SEGOVIA",
+        "dni_embargado": "36003333",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "MIGUEL ANGEL SEGOVIA"
+        ],
+        "cantidad_fragmentos_soporte": 3,
+        "cantidad_evidencias": 3,
+        "score_total": 26.322,
+        "evidencias": [
+          {
+            "contador_interno": "5",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIGUEL ANGEL SEGOVIA",
+            "dni_detectado": "36003333",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6320766806602478,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "entas y/o fondos y/o sumas de dinero, presentes y/o futuras, que el demandado MIGUEL ANGEL SEGOVIA, DNI 36003333 - CUIL/ CU",
+            "contexto_local": "entas y/o fondos y/o sumas de dinero, presentes y/o futuras, que el demandado MIGUEL ANGEL SEGOVIA, DNI 36003333 - CUIL/ CU"
+          },
+          {
+            "contador_interno": "6",
+            "palabra_clave": "cuil",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIGUEL ANGEL SEGOVIA",
+            "dni_detectado": "36003333",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5230035185813904,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "s y/o sumas de dinero, presentes y/o futuras, que el demandado MIGUEL ANGEL SEGOVIA, DNI 36003333 - CUIL/ CUIT: 2036003334,",
+            "contexto_local": "s y/o sumas de dinero, presentes y/o futuras, que el demandado MIGUEL ANGEL SEGOVIA, DNI 36003333 - CUIL/ CUIT: 2036003334,"
+          },
+          {
+            "contador_interno": "7",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIGUEL ANGEL SEGOVIA",
+            "dni_detectado": "36003333",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6200236678123474,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "sumas de dinero, presentes y/o futuras, que el demandado MIGUEL ANGEL SEGOVIA, DNI 36003333 - CUIL/ CUIT: 2036003334, posea",
+            "contexto_local": "sumas de dinero, presentes y/o futuras, que el demandado MIGUEL ANGEL SEGOVIA, DNI 36003333 - CUIL/ CUIT: 2036003334, posea"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "536741",
+    "numero_archivo": "9",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "ROBERTO CARLOS LOBO",
+        "dni_embargado": "21773000",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "ROBERTO CARLOS LOBO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 3.708,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ROBERTO CARLOS LOBO",
+            "dni_detectado": "21773000",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9033471345901489,
+            "score_contextual": -4.5,
+            "tercero_fuerte": true,
+            "fragmento": "administrado por Mercado Pago Asset Management S.A., el demandado en autos ROBERTO CARLOS LOBO, con DNI 21773000 a su nombr",
+            "contexto_local": "administrado por Mercado Pago Asset Management S.A., el demandado en autos ROBERTO CARLOS LOBO, con DNI 21773000 a su nombr"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "524053",
+    "numero_archivo": "10",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "546314",
+    "numero_archivo": "11",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "529383",
+    "numero_archivo": "12",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "538122",
+    "numero_archivo": "13",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "CLAUDIA ALEJANDRA MIRANDA",
+        "dni_embargado": "23.360.827",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada"
+        ],
+        "variantes_nombre": [
+          "CLAUDIA ALEJANDRA MIRANDA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 10.764,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "CLAUDIA ALEJANDRA MIRANDA",
+            "dni_detectado": "23.360.827",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.7587734460830688,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "autos se ha decretado el EMBARGO sobre las sumas que la parte demandada: CLAUDIA ALEJANDRA MIRANDA, DNI 23.360.827 posea en",
+            "contexto_local": "autos se ha decretado el EMBARGO sobre las sumas que la parte demandada: CLAUDIA ALEJANDRA MIRANDA, DNI 23.360.827 posea en"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "536721",
+    "numero_archivo": "14",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "MIGUEL MARCELO MEDINA",
+        "dni_embargado": "16289505",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "MIGUEL MARCELO MEDINA"
+        ],
+        "cantidad_fragmentos_soporte": 4,
+        "cantidad_evidencias": 4,
+        "score_total": 34.682,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIGUEL MARCELO MEDINA",
+            "dni_detectado": "16289505",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5868191719055176,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "obre los fondos y/o sumas de dinero, presentes y/o futuras, que el demandado MIGUEL MARCELO MEDINA, DNI 16289505 - CUJIL/CU",
+            "contexto_local": "obre los fondos y/o sumas de dinero, presentes y/o futuras, que el demandado MIGUEL MARCELO MEDINA, DNI 16289505 - CUJIL/CU"
+          },
+          {
+            "contador_interno": "2",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIGUEL MARCELO MEDINA",
+            "dni_detectado": "16289505",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5405765771865845,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "umas de dinero, presentes y/o futuras, que el demandado MIGUEL MARCELO MEDINA, DNI 16289505 - CUJIL/CUIT: 201628950562, pose",
+            "contexto_local": "umas de dinero, presentes y/o futuras, que el demandado MIGUEL MARCELO MEDINA, DNI 16289505 - CUJIL/CUIT: 201628950562, pose"
+          },
+          {
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIGUEL MARCELO MEDINA",
+            "dni_detectado": "16289505",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5936295390129089,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "bre las cuentas virtuales de dinero, presentes y/o futuras, que el demandado MIGUEL MARCELO MEDINA, DNI 16289505 - CUJIL/CU",
+            "contexto_local": "bre las cuentas virtuales de dinero, presentes y/o futuras, que el demandado MIGUEL MARCELO MEDINA, DNI 16289505 - CUJIL/CU"
+          },
+          {
+            "contador_interno": "5",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIGUEL MARCELO MEDINA",
+            "dni_detectado": "16289505",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5084933638572693,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "ales de dinero, presentes y/o futuras, que el demandado MIGUEL MARCELO MEDINA, DNI 16289505 - CUJIL/CUIT: 201628950562, pose",
+            "contexto_local": "ales de dinero, presentes y/o futuras, que el demandado MIGUEL MARCELO MEDINA, DNI 16289505 - CUJIL/CUIT: 201628950562, pose"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "516904",
+    "numero_archivo": "15",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "LAURA ESTELA FERNANDEZ",
+        "dni_embargado": "20.371.813",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "LAURA ESTELA FERNANDEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.151,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LAURA ESTELA FERNANDEZ",
+            "dni_detectado": "20.371.813",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.779082715511322,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "ministrado por Mercado Pago Asset Management S.A, el demandado en autos LAURA ESTELA FERNANDEZ, con D.N.I 20.371.813 a su nom",
+            "contexto_local": "ministrado por Mercado Pago Asset Management S.A, el demandado en autos LAURA ESTELA FERNANDEZ, con D.N.I 20.371.813 a su nom"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "546236",
+    "numero_archivo": "16",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "AURELIO RODOLFO MELGAREJO",
+        "dni_embargado": "13273828",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "AURELIO RODOLFO MELGAREJO",
+          "Aurelio Rodolfo Melgarejo"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 17.948,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "AURELIO RODOLFO MELGAREJO",
+            "dni_detectado": "13273828",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.774491012096405,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "istrado por Mercado Pago Asset Management S.A, el demandado en autos AURELIO RODOLFO MELGAREJO, con DNI 13273828 a su nombr",
+            "contexto_local": "istrado por Mercado Pago Asset Management S.A, el demandado en autos AURELIO RODOLFO MELGAREJO, con DNI 13273828 a su nombr"
+          },
+          {
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Aurelio Rodolfo Melgarejo",
+            "dni_detectado": "13.273.828",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.543718695640564,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "el embargo peticionado sobre las sumas que tenga invertidas el ejecutado Aurelio Rodolfo Melgarejo (DNI 13.273.828), en cuo",
+            "contexto_local": "el embargo peticionado sobre las sumas que tenga invertidas el ejecutado Aurelio Rodolfo Melgarejo (DNI 13.273.828), en cuo"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "546332",
+    "numero_archivo": "17",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "538119",
+    "numero_archivo": "18",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "ESTEFANIA MIHANOVICH",
+        "dni_embargado": "44.398.455",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "ESTEFANIA MIHANOVICH",
+          "Estefanía MIHANOVICH"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 21.426,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ESTEFANIA MIHANOVICH",
+            "dni_detectado": "44.398.455",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.898319661617279,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "que se ha decretado el EMBARGO sobre los fondos que la parte demandada, NORMA ESTEFANIA MIHANOVICH, DNI 44.398.455, posea p",
+            "contexto_local": "que se ha decretado el EMBARGO sobre los fondos que la parte demandada, NORMA ESTEFANIA MIHANOVICH, DNI 44.398.455, posea p"
+          },
+          {
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Estefanía MIHANOVICH",
+            "dni_detectado": "44.398.455",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.5843899846076965,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "tereses y costas. decretase el embargo sobre los fondos de la demandada Norma Estefanía MIHANOVICH (DNI 44.398.455) que por",
+            "contexto_local": "tereses y costas. decretase el embargo sobre los fondos de la demandada Norma Estefanía MIHANOVICH (DNI 44.398.455) que por"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "501696",
+    "numero_archivo": "19",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "GONZALEZ",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada"
+        ],
+        "variantes_nombre": [
+          "GONZALEZ"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 11.399,
+        "evidencias": [
+          {
+            "contador_interno": "4",
+            "palabra_clave": "d.n.i.",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "GONZALEZ",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.5609734058380127,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "icial y C.B.U., correspondiente a los presentes autos.\n\nParte Demandada: GONZALEZ, SANTIAGO NICOLÁS\nD.N.I. Nro.: 39.872.112\nCV",
+            "contexto_local": "icial y C.B.U., correspondiente a los presentes autos.\n\nParte Demandada: GONZALEZ, SANTIAGO NICOLÁS\nD.N.I. Nro.: 39.872.112\nCV"
+          },
+          {
+            "contador_interno": "5",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "GONZALEZ",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.5718708634376526,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "icial y C.B.U., correspondiente a los presentes autos.\n\nParte Demandada: GONZALEZ, SANTIAGO NICOLÁS\nD.N.I. Nro.: 39.872.112\nC",
+            "contexto_local": "icial y C.B.U., correspondiente a los presentes autos.\n\nParte Demandada: GONZALEZ, SANTIAGO NICOLÁS\nD.N.I. Nro.: 39.872.112\nC"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "SANTIAGO NICOLAS GONZALEZ",
+        "dni_embargado": "39.872.112",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "SANTIAGO NICOLAS GONZALEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 3.628,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "SANTIAGO NICOLAS GONZALEZ",
+            "dni_detectado": "39.872.112",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.7105301022529602,
+            "score_contextual": -4.0,
+            "tercero_fuerte": false,
+            "fragmento": "s y/o a depositarse en la cuenta en Billetera Virtual de titularidad de, SANTIAGO NICOLAS GONZALEZ, DNI 39.872.112, CVU N°",
+            "contexto_local": "s y/o a depositarse en la cuenta en Billetera Virtual de titularidad de, SANTIAGO NICOLAS GONZALEZ, DNI 39.872.112, CVU N°"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "536705",
+    "numero_archivo": "20",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "535845",
+    "numero_archivo": "21",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO_MULTIPLE",
+    "cantidad_embargados": 2,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "MIRTA EDITH BONACALZA",
+        "dni_embargado": "40797926",
+        "cuit_cuil_embargado": "20-26592524-4",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "MIRTA EDITH BONACALZA"
+        ],
+        "cantidad_fragmentos_soporte": 3,
+        "cantidad_evidencias": 3,
+        "score_total": 27.844,
+        "evidencias": [
+          {
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIRTA EDITH BONACALZA",
+            "dni_detectado": "40797926",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.8945728540420532,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "n las partes demandadas HORACIO OSCAR NUÑEZ DNI 26592524 CUIT 20-26592524-4 , MIRTA EDITH BONACALZA DNI 40797926 CUIT 20- 4",
+            "contexto_local": "n las partes demandadas HORACIO OSCAR NUÑEZ DNI 26592524 CUIT 20-26592524-4 , MIRTA EDITH BONACALZA DNI 40797926 CUIT 20- 4"
+          },
+          {
+            "contador_interno": "4",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIRTA EDITH BONACALZA",
+            "dni_detectado": "40797926",
+            "cuit_cuil_detectado": "20-26592524-4",
+            "rol_detectado": "",
+            "nombre_confidence": 0.8283604979515076,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "demandadas HORACIO OSCAR NUÑEZ DNI 26592524 CUIT 20-26592524-4 , MIRTA EDITH BONACALZA DNI 40797926 CUIT 20- 40797926-6 y EL",
+            "contexto_local": "demandadas HORACIO OSCAR NUÑEZ DNI 26592524 CUIT 20-26592524-4 , MIRTA EDITH BONACALZA DNI 40797926 CUIT 20- 40797926-6 y EL"
+          },
+          {
+            "contador_interno": "6",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIRTA EDITH BONACALZA",
+            "dni_detectado": "40797926",
+            "cuit_cuil_detectado": "23-24846229-9",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8928911685943604,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "0-26592524-4 , MIRTA EDITH BONACALZA DNI 40797926 CUIT 20- 40797926-6 y ELIAS CARBALLO DNI 24846229 CUIT 23-24846229-9 ,hast",
+            "contexto_local": "0-26592524-4 , MIRTA EDITH BONACALZA DNI 40797926 CUIT 20- 40797926-6 y ELIAS CARBALLO DNI 24846229 CUIT 23-24846229-9 ,hast"
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "ELIAS CARBALLO",
+        "dni_embargado": "40797926",
+        "cuit_cuil_embargado": "CUIT 20-26592524-4",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "ELIAS CARBALLO"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 17.037,
+        "evidencias": [
+          {
+            "contador_interno": "5",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ELIAS CARBALLO",
+            "dni_detectado": "40797926",
+            "cuit_cuil_detectado": "CUIT 20-26592524-4",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9727202653884888,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "592524 CUIT 20-26592524-4 , MIRTA EDITH BONACALZA DNI 40797926 CUIT 20- 40797926-6 y ELIAS CARBALLO DNI 24846229 CUIT 23-24",
+            "contexto_local": "592524 CUIT 20-26592524-4 , MIRTA EDITH BONACALZA DNI 40797926 CUIT 20- 40797926-6 y ELIAS CARBALLO DNI 24846229 CUIT 23-24"
+          },
+          {
+            "contador_interno": "6",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ELIAS CARBALLO",
+            "dni_detectado": "40797926",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9883747100830078,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "0-26592524-4 , MIRTA EDITH BONACALZA DNI 40797926 CUIT 20- 40797926-6 y ELIAS CARBALLO DNI 24846229 CUIT 23-24846229-9 ,hast",
+            "contexto_local": "0-26592524-4 , MIRTA EDITH BONACALZA DNI 40797926 CUIT 20- 40797926-6 y ELIAS CARBALLO DNI 24846229 CUIT 23-24846229-9 ,hast"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 3,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "MIRTA EDITH BONACALZA",
+        "dni_embargado": "24846229",
+        "cuit_cuil_embargado": "CUIT 20-26592524-4",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "MIRTA EDITH BONACALZA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 11.184,
+        "evidencias": [
+          {
+            "contador_interno": "5",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIRTA EDITH BONACALZA",
+            "dni_detectado": "24846229",
+            "cuit_cuil_detectado": "CUIT 20-26592524-4",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7911209464073181,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "592524 CUIT 20-26592524-4 , MIRTA EDITH BONACALZA DNI 40797926 CUIT 20- 40797926-6 y ELIAS CARBALLO DNI 24846229 CUIT 23-24",
+            "contexto_local": "592524 CUIT 20-26592524-4 , MIRTA EDITH BONACALZA DNI 40797926 CUIT 20- 40797926-6 y ELIAS CARBALLO DNI 24846229 CUIT 23-24"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 2,
+    "conflictos_identificador": [
+      {
+        "tipo_identificador": "dni",
+        "valor_normalizado": "40797926",
+        "nombre_a": "MIRTA EDITH BONACALZA",
+        "nombre_b": "ELIAS CARBALLO",
+        "variantes_a": [
+          "MIRTA EDITH BONACALZA"
+        ],
+        "variantes_b": [
+          "ELIAS CARBALLO"
+        ]
+      },
+      {
+        "tipo_identificador": "cuit_cuil",
+        "valor_normalizado": "20265925244",
+        "nombre_a": "MIRTA EDITH BONACALZA",
+        "nombre_b": "ELIAS CARBALLO",
+        "variantes_a": [
+          "MIRTA EDITH BONACALZA"
+        ],
+        "variantes_b": [
+          "ELIAS CARBALLO"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "536718",
+    "numero_archivo": "22",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "GROSSO JUAN JOSE",
+        "dni_embargado": "14.748.434",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "GROSSO JUAN JOSE"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 16.264,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "GROSSO JUAN JOSE",
+            "dni_detectado": "14.748.434",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5050463676452637,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "la Cuenta con ID de usuario 63261800 y CVU 0000003100154549693219, perteneciente a GROSSO JUAN JOSE DNI 14.748.434 de Merca",
+            "contexto_local": "la Cuenta con ID de usuario 63261800 y CVU 0000003100154549693219, perteneciente a GROSSO JUAN JOSE DNI 14.748.434 de Merca"
+          },
+          {
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "GROSSO JUAN JOSE",
+            "dni_detectado": "14.748.434",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7528215646743774,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "on ID de usuario 63261800, y CVU 0000003100154549693219 perteneciente al demandado GROSSO JUAN JOSE DNI 14.748.434 de Merca",
+            "contexto_local": "on ID de usuario 63261800, y CVU 0000003100154549693219 perteneciente al demandado GROSSO JUAN JOSE DNI 14.748.434 de Merca"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "536742",
+    "numero_archivo": "23",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "ESTER JOAQUINA PRATS",
+        "dni_embargado": "10533729",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "ESTER JOAQUINA PRATS"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 3.75,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ESTER JOAQUINA PRATS",
+            "dni_detectado": "10533729",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9171798825263977,
+            "score_contextual": -4.5,
+            "tercero_fuerte": true,
+            "fragmento": "administrado por Mercado Pago Asset Management S.A, el demandado en autos ESTER JOAQUINA PRATS, con DNI 10533729 a su nombr",
+            "contexto_local": "administrado por Mercado Pago Asset Management S.A, el demandado en autos ESTER JOAQUINA PRATS, con DNI 10533729 a su nombr"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "535814",
+    "numero_archivo": "24",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "Nancy Mariela Benedetti",
+        "dni_embargado": "25.688.264",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada"
+        ],
+        "variantes_nombre": [
+          "Nancy Mariela Benedetti"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 21.222,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Nancy Mariela Benedetti",
+            "dni_detectado": "25.688.264",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.6819266676902771,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "tarle se proceda a tratar embargo sobre las cuentas que posea la demandada Nancy Mariela Benedetti, DNI. 25.688.264 en \"Mer",
+            "contexto_local": "tarle se proceda a tratar embargo sobre las cuentas que posea la demandada Nancy Mariela Benedetti, DNI. 25.688.264 en \"Mer"
+          },
+          {
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Nancy Mariela Benedetti",
+            "dni_detectado": "25.688.264",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.7349546551704407,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "ido sin motivo, decretáse embargo sobre las cuentas que posea la demandada Nancy Mariela Benedetti, DNI. 25.688.264 en \"Mer",
+            "contexto_local": "ido sin motivo, decretáse embargo sobre las cuentas que posea la demandada Nancy Mariela Benedetti, DNI. 25.688.264 en \"Mer"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "518796",
+    "numero_archivo": "25",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "LEONARDO GABRIEL",
+        "dni_embargado": "28.731.512",
+        "cuit_cuil_embargado": "20-28731512-1",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "LEONARDO GABRIEL"
+        ],
+        "cantidad_fragmentos_soporte": 4,
+        "cantidad_evidencias": 4,
+        "score_total": 51.635,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LEONARDO GABRIEL",
+            "dni_detectado": "28.731.512",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8813977837562561,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "ar el presente a fin de tratar EMBARGO sobre los fondos que el demandado CHARIANO LEONARDO GABRIEL (DNI: 28.731.512; CUIT:",
+            "contexto_local": "ar el presente a fin de tratar EMBARGO sobre los fondos que el demandado CHARIANO LEONARDO GABRIEL (DNI: 28.731.512; CUIT:"
+          },
+          {
+            "contador_interno": "2",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LEONARDO GABRIEL",
+            "dni_detectado": "28.731.512",
+            "cuit_cuil_detectado": "20-28731512-1",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9065009355545044,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "fin de tratar EMBARGO sobre los fondos que el demandado CHARIANO LEONARDO GABRIEL (DNI: 28.731.512; CUIT: 20-28731512-1) pos",
+            "contexto_local": "fin de tratar EMBARGO sobre los fondos que el demandado CHARIANO LEONARDO GABRIEL (DNI: 28.731.512; CUIT: 20-28731512-1) pos"
+          },
+          {
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LEONARDO GABRIEL",
+            "dni_detectado": "28.731.512",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8662594556808472,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "el estado de autos, DECRETASE EMBARGO sobre los fondos que el demandado CHARIANO LEONARDO GABRIEL (DNI: 28.731.512; CUIT:",
+            "contexto_local": "el estado de autos, DECRETASE EMBARGO sobre los fondos que el demandado CHARIANO LEONARDO GABRIEL (DNI: 28.731.512; CUIT:"
+          },
+          {
+            "contador_interno": "5",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LEONARDO GABRIEL",
+            "dni_detectado": "28.731.512",
+            "cuit_cuil_detectado": "20-28731512-1",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8986825942993164,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "os, DECRETASE EMBARGO sobre los fondos que el demandado CHARIANO LEONARDO GABRIEL (DNI: 28.731.512; CUIT: 20-28731512-1) pos",
+            "contexto_local": "os, DECRETASE EMBARGO sobre los fondos que el demandado CHARIANO LEONARDO GABRIEL (DNI: 28.731.512; CUIT: 20-28731512-1) pos"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "495683",
+    "numero_archivo": "26",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "VILLALBA JOSE ALBERTO",
+        "dni_embargado": "31.095.679",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "VILLALBA JOSE ALBERTO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.739,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "VILLALBA JOSE ALBERTO",
+            "dni_detectado": "31.095.679",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9140202403068542,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "s, títulos públicos o privados, o de comercio internacional que el demandado VILLALBA JOSE ALBERTO, DNI 31.095.679, posea e",
+            "contexto_local": "s, títulos públicos o privados, o de comercio internacional que el demandado VILLALBA JOSE ALBERTO, DNI 31.095.679, posea e"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "516903",
+    "numero_archivo": "27",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "Fernando Martín González",
+        "dni_embargado": "27680733",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Fernando Martín González"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.723,
+        "evidencias": [
+          {
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Fernando Martín González",
+            "dni_detectado": "27680733",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7424123883247375,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "que se depositen en cuenta corriente, caja de ahorro y/o plazos fijos que Fernando Martín González (DNI 27680733) tuviere e",
+            "contexto_local": "que se depositen en cuenta corriente, caja de ahorro y/o plazos fijos que Fernando Martín González (DNI 27680733) tuviere e"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "538120",
+    "numero_archivo": "28",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "NATALIA ANDREA OÑA",
+        "dni_embargado": "26.294.008",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada"
+        ],
+        "variantes_nombre": [
+          "NATALIA ANDREA OÑA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 10.958,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "NATALIA ANDREA OÑA",
+            "dni_detectado": "26.294.008",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.8210808634757996,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "s comunicarle que se ha decretado el EMBARGO sobre los fondos que la demandada, NATALIA ANDREA OÑA, DNI 26.294.008, posea,",
+            "contexto_local": "s comunicarle que se ha decretado el EMBARGO sobre los fondos que la demandada, NATALIA ANDREA OÑA, DNI 26.294.008, posea,"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "532501",
+    "numero_archivo": "29",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "503824",
+    "numero_archivo": "30",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "JACQUET ROBERTO LUIS",
+        "dni_embargado": "20.258.157",
+        "cuit_cuil_embargado": "23-20258157-9",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "JACQUET ROBERTO LUIS"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 21.99,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JACQUET ROBERTO LUIS",
+            "dni_detectado": "20.258.157",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7449390292167664,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "SE PRESUPUESTAN PARA RESPONDER A INTERESES Y COSTAS DEL JUICIO.\n\nEMBARGADO: JACQUET ROBERTO LUIS - DNI 20.258.157 / CUIL 2",
+            "contexto_local": "SE PRESUPUESTAN PARA RESPONDER A INTERESES Y COSTAS DEL JUICIO.\n\nEMBARGADO: JACQUET ROBERTO LUIS - DNI 20.258.157 / CUIL 2"
+          },
+          {
+            "contador_interno": "2",
+            "palabra_clave": "cuil",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JACQUET ROBERTO LUIS",
+            "dni_detectado": "20.258.157",
+            "cuit_cuil_detectado": "23-20258157-9",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7558107972145081,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "PARA RESPONDER A INTERESES Y COSTAS DEL JUICIO.\n\nEMBARGADO: JACQUET ROBERTO LUIS - DNI 20.258.157 / CUIL 23-20258157-9-\n\nDEC",
+            "contexto_local": "PARA RESPONDER A INTERESES Y COSTAS DEL JUICIO.\n\nEMBARGADO: JACQUET ROBERTO LUIS - DNI 20.258.157 / CUIL 23-20258157-9-\n\nDEC"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "536750",
+    "numero_archivo": "31",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "FEDERICO MARIO",
+        "dni_embargado": "29.987.246",
+        "cuit_cuil_embargado": "20299872468",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "FEDERICO MARIO"
+        ],
+        "cantidad_fragmentos_soporte": 3,
+        "cantidad_evidencias": 3,
+        "score_total": 31.451,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "FEDERICO MARIO",
+            "dni_detectado": "29.987.246",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9114288687705994,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "actualización de UMA, sobre toda suma de dinero perteneciente a BOTTI. FEDERICO MARIO, titular del DNI 29.987.246. CUIT/CU",
+            "contexto_local": "actualización de UMA, sobre toda suma de dinero perteneciente a BOTTI. FEDERICO MARIO, titular del DNI 29.987.246. CUIT/CU"
+          },
+          {
+            "contador_interno": "2",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "FEDERICO MARIO",
+            "dni_detectado": "29.987.246",
+            "cuit_cuil_detectado": "20299872468",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9141038656234741,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "e UMA, sobre toda suma de dinero perteneciente a BOTTI. FEDERICO MARIO, titular del DNI 29.987.246. CUIT/CUIL 20299872468. q",
+            "contexto_local": "e UMA, sobre toda suma de dinero perteneciente a BOTTI. FEDERICO MARIO, titular del DNI 29.987.246. CUIT/CUIL 20299872468. q"
+          },
+          {
+            "contador_interno": "3",
+            "palabra_clave": "cuil",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "FEDERICO MARIO",
+            "dni_detectado": "29.987.246",
+            "cuit_cuil_detectado": "20299872468",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.8925014734268188,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": ", sobre toda suma de dinero perteneciente a BOTTI. FEDERICO MARIO, titular del DNI 29.987.246. CUIT/CUIL 20299872468. que se",
+            "contexto_local": ", sobre toda suma de dinero perteneciente a BOTTI. FEDERICO MARIO, titular del DNI 29.987.246. CUIT/CUIL 20299872468. que se"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "514558",
+    "numero_archivo": "32",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "494160",
+    "numero_archivo": "33",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "MARCELA PATRICIA GARCIA PALACIOS",
+        "dni_embargado": "93757465",
+        "cuit_cuil_embargado": "27-93757465-2",
+        "roles_detectados": [
+          "demandada",
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "MARCELA PATRICIA GARCIA PALACIOS",
+          "PATRICIA GARCIA PALACIOS"
+        ],
+        "cantidad_fragmentos_soporte": 5,
+        "cantidad_evidencias": 5,
+        "score_total": 53.641,
+        "evidencias": [
+          {
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MARCELA PATRICIA GARCIA PALACIOS",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "27-93757465-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6644623875617981,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "que MARCELA PATRICIA GARCIA PALACIOS (DNI. 93757465, CUIT 27-93757465-2) Y ROBERTO GABRIEL SZILAK (DNI 24678126, CUIT 20-2",
+            "contexto_local": "que MARCELA PATRICIA GARCIA PALACIOS (DNI. 93757465, CUIT 27-93757465-2) Y ROBERTO GABRIEL SZILAK (DNI 24678126, CUIT 20-2"
+          },
+          {
+            "contador_interno": "5",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MARCELA PATRICIA GARCIA PALACIOS",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.5411686897277832,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "nos de la Ley 22.172, se le hace saber que la parte demandada es: MARCELA PATRICIA GARCIA PALACIOS (DNI 93757465, CUIT 27-9",
+            "contexto_local": "nos de la Ley 22.172, se le hace saber que la parte demandada es: MARCELA PATRICIA GARCIA PALACIOS (DNI 93757465, CUIT 27-9"
+          },
+          {
+            "contador_interno": "6",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MARCELA PATRICIA GARCIA PALACIOS",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "27-93757465-2",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.5549665689468384,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "22.172, se le hace saber que la parte demandada es: MARCELA PATRICIA GARCIA PALACIOS (DNI 93757465, CUIT 27-93757465-2) Y RO",
+            "contexto_local": "22.172, se le hace saber que la parte demandada es: MARCELA PATRICIA GARCIA PALACIOS (DNI 93757465, CUIT 27-93757465-2) Y RO"
+          },
+          {
+            "contador_interno": "7",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MARCELA PATRICIA GARCIA PALACIOS",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "27-93757465-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7047417163848877,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "a es: MARCELA PATRICIA GARCIA PALACIOS (DNI 93757465, CUIT 27-93757465-2) Y ROBERTO GABRIEL SZILAK (DNI 24678126, CUIT 20-2",
+            "contexto_local": "a es: MARCELA PATRICIA GARCIA PALACIOS (DNI 93757465, CUIT 27-93757465-2) Y ROBERTO GABRIEL SZILAK (DNI 24678126, CUIT 20-2"
+          },
+          {
+            "contador_interno": "8",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "PATRICIA GARCIA PALACIOS",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "27-93757465-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6083939075469971,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "PATRICIA GARCIA PALACIOS (DNI 93757465, CUIT 27-93757465-2) Y ROBERTO GABRIEL SZILAK (DNI 24678126, CUIT 20-24678126-6); que",
+            "contexto_local": "PATRICIA GARCIA PALACIOS (DNI 93757465, CUIT 27-93757465-2) Y ROBERTO GABRIEL SZILAK (DNI 24678126, CUIT 20-24678126-6); que"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 3,
+    "cantidad_grupos_descartados": 2,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "ROBERTO GABRIEL SZILAK",
+        "dni_embargado": "93757465",
+        "cuit_cuil_embargado": "27-93757465-2",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "ROBERTO GABRIEL SZILAK"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.968,
+        "evidencias": [
+          {
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ROBERTO GABRIEL SZILAK",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "27-93757465-2",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9320326447486877,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "que MARCELA PATRICIA GARCIA PALACIOS (DNI. 93757465, CUIT 27-93757465-2) Y ROBERTO GABRIEL SZILAK (DNI 24678126, CUIT 20-2",
+            "contexto_local": "que MARCELA PATRICIA GARCIA PALACIOS (DNI. 93757465, CUIT 27-93757465-2) Y ROBERTO GABRIEL SZILAK (DNI 24678126, CUIT 20-2"
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "ATRICIA GARCIA PALACIOS",
+        "dni_embargado": "93757465",
+        "cuit_cuil_embargado": "27-93757465-2",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "ATRICIA GARCIA PALACIOS"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 10.889,
+        "evidencias": [
+          {
+            "contador_interno": "4",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ATRICIA GARCIA PALACIOS",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "27-93757465-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6367252469062805,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "ATRICIA GARCIA PALACIOS (DNI. 93757465, CUIT 27-93757465-2) Y ROBERTO GABRIEL SZILAK (DNI 24678126, CUIT 20-24678126-6) tuvi",
+            "contexto_local": "ATRICIA GARCIA PALACIOS (DNI. 93757465, CUIT 27-93757465-2) Y ROBERTO GABRIEL SZILAK (DNI 24678126, CUIT 20-24678126-6) tuvi"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 4,
+    "conflictos_identificador": [
+      {
+        "tipo_identificador": "dni",
+        "valor_normalizado": "93757465",
+        "nombre_a": "MARCELA PATRICIA GARCIA PALACIOS",
+        "nombre_b": "ROBERTO GABRIEL SZILAK",
+        "variantes_a": [
+          "MARCELA PATRICIA GARCIA PALACIOS",
+          "PATRICIA GARCIA PALACIOS"
+        ],
+        "variantes_b": [
+          "ROBERTO GABRIEL SZILAK"
+        ]
+      },
+      {
+        "tipo_identificador": "cuit_cuil",
+        "valor_normalizado": "27937574652",
+        "nombre_a": "MARCELA PATRICIA GARCIA PALACIOS",
+        "nombre_b": "ROBERTO GABRIEL SZILAK",
+        "variantes_a": [
+          "MARCELA PATRICIA GARCIA PALACIOS",
+          "PATRICIA GARCIA PALACIOS"
+        ],
+        "variantes_b": [
+          "ROBERTO GABRIEL SZILAK"
+        ]
+      },
+      {
+        "tipo_identificador": "dni",
+        "valor_normalizado": "93757465",
+        "nombre_a": "ROBERTO GABRIEL SZILAK",
+        "nombre_b": "ATRICIA GARCIA PALACIOS",
+        "variantes_a": [
+          "ROBERTO GABRIEL SZILAK"
+        ],
+        "variantes_b": [
+          "ATRICIA GARCIA PALACIOS"
+        ]
+      },
+      {
+        "tipo_identificador": "cuit_cuil",
+        "valor_normalizado": "27937574652",
+        "nombre_a": "ROBERTO GABRIEL SZILAK",
+        "nombre_b": "ATRICIA GARCIA PALACIOS",
+        "variantes_a": [
+          "ROBERTO GABRIEL SZILAK"
+        ],
+        "variantes_b": [
+          "ATRICIA GARCIA PALACIOS"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "529783",
+    "numero_archivo": "34",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "ALFREDO ANTONIO ARIAS",
+        "dni_embargado": "10.700.496",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "ALFREDO ANTONIO ARIAS"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 14.15,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ALFREDO ANTONIO ARIAS",
+            "dni_detectado": "10.700.496",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5388442873954773,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "der provisoriamente por intereses y costas, sobre los fondos depositados por ALFREDO ANTONIO ARIAS, DNI 10.700.496 en TARJE",
+            "contexto_local": "der provisoriamente por intereses y costas, sobre los fondos depositados por ALFREDO ANTONIO ARIAS, DNI 10.700.496 en TARJE"
+          },
+          {
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ALFREDO ANTONIO ARIAS",
+            "dni_detectado": "10.700.496",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5203869342803955,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "der provisoriamente por intereses y costas, sobre los fondos depositados por ALFREDO ANTONIO ARIAS, DNI 10.700.496 en BRUBA",
+            "contexto_local": "der provisoriamente por intereses y costas, sobre los fondos depositados por ALFREDO ANTONIO ARIAS, DNI 10.700.496 en BRUBA"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "525055",
+    "numero_archivo": "35",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO_MULTIPLE",
+    "cantidad_embargados": 2,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "BENITO CABRERA VASQUEZ",
+        "dni_embargado": "94.310.138",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "BENITO CABRERA VASQUEZ"
+        ],
+        "cantidad_fragmentos_soporte": 6,
+        "cantidad_evidencias": 6,
+        "score_total": 32.113,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "d.n.i.",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "BENITO CABRERA VASQUEZ",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7050774693489075,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "cretado el embargo, sobre el porcentual de ley, sobre las cuentas que posea BENITO CABRERA VASQUEZ (D.N.I. 94.310.138) en vues",
+            "contexto_local": "cretado el embargo, sobre el porcentual de ley, sobre las cuentas que posea BENITO CABRERA VASQUEZ (D.N.I. 94.310.138) en vues"
+          },
+          {
+            "contador_interno": "2",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "BENITO CABRERA VASQUEZ",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6936219334602356,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "cretado el embargo, sobre el porcentual de ley, sobre las cuentas que posea BENITO CABRERA VASQUEZ (D.N.I. 94.310.138) en vue",
+            "contexto_local": "cretado el embargo, sobre el porcentual de ley, sobre las cuentas que posea BENITO CABRERA VASQUEZ (D.N.I. 94.310.138) en vue"
+          },
+          {
+            "contador_interno": "3",
+            "palabra_clave": "d.n.i.",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "BENITO CABRERA VASQUEZ",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5933053493499756,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "los fondos de los demandados que por cualquier concepto posean respecto de BENITO CABRERA VASQUEZ (D.N.I. 94.310.138) en Merc",
+            "contexto_local": "los fondos de los demandados que por cualquier concepto posean respecto de BENITO CABRERA VASQUEZ (D.N.I. 94.310.138) en Merc"
+          },
+          {
+            "contador_interno": "4",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "BENITO CABRERA VASQUEZ",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5926384925842285,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "los fondos de los demandados que por cualquier concepto posean respecto de BENITO CABRERA VASQUEZ (D.N.I. 94.310.138) en Mer",
+            "contexto_local": "los fondos de los demandados que por cualquier concepto posean respecto de BENITO CABRERA VASQUEZ (D.N.I. 94.310.138) en Mer"
+          },
+          {
+            "contador_interno": "5",
+            "palabra_clave": "d.n.i.",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "BENITO CABRERA VASQUEZ",
+            "dni_detectado": "94.310.138",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5956549644470215,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "ecto de BENITO CABRERA VASQUEZ (D.N.I. 94.310.138) en Mercado Pago y de ELVER BRUNO ESTRADA QUINTO (D.N.I. 94.635.112) en Nara",
+            "contexto_local": "ecto de BENITO CABRERA VASQUEZ (D.N.I. 94.310.138) en Mercado Pago y de ELVER BRUNO ESTRADA QUINTO (D.N.I. 94.635.112) en Nara"
+          },
+          {
+            "contador_interno": "6",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "BENITO CABRERA VASQUEZ",
+            "dni_detectado": "94.310.138",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5831711888313293,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "ecto de BENITO CABRERA VASQUEZ (D.N.I. 94.310.138) en Mercado Pago y de ELVER BRUNO ESTRADA QUINTO (D.N.I. 94.635.112) en Nar",
+            "contexto_local": "ecto de BENITO CABRERA VASQUEZ (D.N.I. 94.310.138) en Mercado Pago y de ELVER BRUNO ESTRADA QUINTO (D.N.I. 94.635.112) en Nar"
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "Brian Damián Galeppi",
+        "dni_embargado": "38.079.326",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Brian Damián Galeppi"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 14.058,
+        "evidencias": [
+          {
+            "contador_interno": "13",
+            "palabra_clave": "d.n.i.",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Brian Damián Galeppi",
+            "dni_detectado": "38.079.326",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5563540458679199,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "F. Tº 124 Fº 367) y/o Brian Damián Galeppi (D.N.I 38.079.326) y/o la Sra. Valeria Gladys Leveratto, D.N.I. 16.927.627 y/o el S",
+            "contexto_local": "F. Tº 124 Fº 367) y/o Brian Damián Galeppi (D.N.I 38.079.326) y/o la Sra. Valeria Gladys Leveratto, D.N.I. 16.927.627 y/o el S"
+          },
+          {
+            "contador_interno": "14",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Brian Damián Galeppi",
+            "dni_detectado": "38.079.326",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5082346200942993,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "F. Tº 124 Fº 367) y/o Brian Damián Galeppi (D.N.I 38.079.326) y/o la Sra. Valeria Gladys Leveratto, D.N.I. 16.927.627 y/o el",
+            "contexto_local": "F. Tº 124 Fº 367) y/o Brian Damián Galeppi (D.N.I 38.079.326) y/o la Sra. Valeria Gladys Leveratto, D.N.I. 16.927.627 y/o el"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 3,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "tero",
+        "dni_embargado": "29.670.629",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "tero"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.877,
+        "evidencias": [
+          {
+            "contador_interno": "11",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "tero",
+            "dni_detectado": "29.670.629",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8418472409248352,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "tero (D.N.I. 29.670.629) y/o Marina Isabel Valverde (DNI 28.340.768) y/o María Florencia Ortoigoza (D.N.I. 34.374.813, C.P.A.",
+            "contexto_local": "tero (D.N.I. 29.670.629) y/o Marina Isabel Valverde (DNI 28.340.768) y/o María Florencia Ortoigoza (D.N.I. 34.374.813, C.P.A"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "501211",
+    "numero_archivo": "36",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "PEDRAZA TEODORO ROVEL",
+        "dni_embargado": "20.276.462",
+        "cuit_cuil_embargado": "20-20276462-3",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "PEDRAZA TEODORO ROVEL"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 11.93,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "PEDRAZA TEODORO ROVEL",
+            "dni_detectado": "20.276.462",
+            "cuit_cuil_detectado": "20-20276462-3",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5221715569496155,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "do Pago /Mercado libre), existente a nombre del demandado PEDRAZA TEODORO ROVEL, D.N.I 20.276.462 , CUIT 20-20276462-3.\n\nAct",
+            "contexto_local": "do Pago /Mercado libre), existente a nombre del demandado PEDRAZA TEODORO ROVEL, D.N.I 20.276.462 , CUIT 20-20276462-3.\n\nAct"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "531075",
+    "numero_archivo": "37",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "DANIEL CARLOS PEREZ",
+        "dni_embargado": "24391072",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "DANIEL CARLOS PEREZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 10.549,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "DANIEL CARLOS PEREZ",
+            "dni_detectado": "24391072",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6835214495658875,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "fin de solicitarle tenga a bien tratar embargo sobre el salario del demandado DANIEL CARLOS PEREZ, DNI 24391072 en la corr",
+            "contexto_local": "fin de solicitarle tenga a bien tratar embargo sobre el salario del demandado DANIEL CARLOS PEREZ, DNI 24391072 en la corr"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 3,
+    "cantidad_grupos_descartados": 2,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "Marcos Weisfeld",
+        "dni_embargado": "23.524.519",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Marcos Weisfeld"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 1.997,
+        "evidencias": [
+          {
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Marcos Weisfeld",
+            "dni_detectado": "23.524.519",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8354060053825378,
+            "score_contextual": -6.0,
+            "tercero_fuerte": true,
+            "fragmento": "dan autorizados para diligenciar el presente los Dres. Marcos Weisfeld y/o Cecilia Lorena Satchian (DNI 23.524.519) y/o Lau",
+            "contexto_local": "dan autorizados para diligenciar el presente los Dres. Marcos Weisfeld y/o Cecilia Lorena Satchian (DNI 23.524.519) y/o Lau"
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "andro Giménez",
+        "dni_embargado": "32.092.512",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "andro Giménez"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.247,
+        "evidencias": [
+          {
+            "contador_interno": "5",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "andro Giménez",
+            "dni_detectado": "32.092.512",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9221287369728088,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "andro Giménez y/o Javier Andrés Bulano y/o Daniel Santiago Arru y/o Stas. Vanesa Chantal Rodríguez (DNI 32.092.512) y/o qui",
+            "contexto_local": "andro Giménez y/o Javier Andrés Bulano y/o Daniel Santiago Arru y/o Stas. Vanesa Chantal Rodríguez (DNI 32.092.512) y/o qui"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "494151",
+    "numero_archivo": "38",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "JOSE LUIS VALENTINI",
+        "dni_embargado": "17.196.196",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "JOSE LUIS VALENTINI"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.608,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JOSE LUIS VALENTINI",
+            "dni_detectado": "17.196.196",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8710059523582458,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "ber que deberá proceder a embargar toda suma presente o futura del demandado “JOSE LUIS VALENTINI” (DNI 17.196.196), hasta",
+            "contexto_local": "ber que deberá proceder a embargar toda suma presente o futura del demandado “JOSE LUIS VALENTINI” (DNI 17.196.196), hasta"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "546334",
+    "numero_archivo": "39",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "547373",
+    "numero_archivo": "40",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "JULIO",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "30-71412954-2",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "JULIO"
+        ],
+        "cantidad_fragmentos_soporte": 4,
+        "cantidad_evidencias": 4,
+        "score_total": 32.895,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JULIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "30-71412954-2",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8192372918128967,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "obre los fondos presentes y futuros que perciban en la entidad los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y O",
+            "contexto_local": "obre los fondos presentes y futuros que perciban en la entidad los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y O"
+          },
+          {
+            "contador_interno": "2",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JULIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "30-71412954-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9093766808509827,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "ban en la entidad los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1), por",
+            "contexto_local": "ban en la entidad los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1), por"
+          },
+          {
+            "contador_interno": "3",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JULIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "30-71412954-2",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6127617359161377,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "o embargo de naturaleza ejecutoria sobre los bienes muebles de los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y O",
+            "contexto_local": "o embargo de naturaleza ejecutoria sobre los bienes muebles de los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y O"
+          },
+          {
+            "contador_interno": "4",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JULIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "30-71412954-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.681850254535675,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "bienes muebles de los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1), por",
+            "contexto_local": "bienes muebles de los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1), por"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "507932",
+    "numero_archivo": "41",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO_MULTIPLE",
+    "cantidad_embargados": 2,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "Donatella Mía Leveratto",
+        "dni_embargado": "46.876.857",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Donatella Mía Leveratto"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 14.456,
+        "evidencias": [
+          {
+            "contador_interno": "55",
+            "palabra_clave": "d.n.i.",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Donatella Mía Leveratto",
+            "dni_detectado": "46.876.857",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5946018695831299,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": ".I 43.038.233 y/o la Srita. Donatella Mía Leveratto, D.N.I. 46.876.857 y/o la Srita. Delfina Guido, D.N.I. 42.951.150, todos e",
+            "contexto_local": ".I 43.038.233 y/o la Srita. Donatella Mía Leveratto, D.N.I. 46.876.857 y/o la Srita. Delfina Guido, D.N.I. 42.951.150, todos e"
+          },
+          {
+            "contador_interno": "56",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Donatella Mía Leveratto",
+            "dni_detectado": "46.876.857",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5986703038215637,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": ".I 43.038.233 y/o la Srita. Donatella Mía Leveratto, D.N.I. 46.876.857 y/o la Srita. Delfina Guido, D.N.I. 42.951.150, todos",
+            "contexto_local": ".I 43.038.233 y/o la Srita. Donatella Mía Leveratto, D.N.I. 46.876.857 y/o la Srita. Delfina Guido, D.N.I. 42.951.150, todos"
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "IVAN ROBERTO SILVA",
+        "dni_embargado": "27.318.472",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "IVAN ROBERTO SILVA"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 13.974,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "d.n.i.",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "IVAN ROBERTO SILVA",
+            "dni_detectado": "27.318.472",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5001079440116882,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "a decretado el embargo, sobre el porcentual de ley, sobre las cuentas que posea IVAN ROBERTO SILVA (D.N.I.: 27.318.472) en vue",
+            "contexto_local": "a decretado el embargo, sobre el porcentual de ley, sobre las cuentas que posea IVAN ROBERTO SILVA (D.N.I.: 27.318.472) en vue"
+          },
+          {
+            "contador_interno": "2",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "IVAN ROBERTO SILVA",
+            "dni_detectado": "27.318.472",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5028657913208008,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "a decretado el embargo, sobre el porcentual de ley, sobre las cuentas que posea IVAN ROBERTO SILVA (D.N.I.: 27.318.472) en vu",
+            "contexto_local": "a decretado el embargo, sobre el porcentual de ley, sobre las cuentas que posea IVAN ROBERTO SILVA (D.N.I.: 27.318.472) en vu"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 3,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "María Florencia Ortigoza",
+        "dni_embargado": "28.340.768",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "María Florencia Ortigoza"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.356,
+        "evidencias": [
+          {
+            "contador_interno": "7",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "María Florencia Ortigoza",
+            "dni_detectado": "28.340.768",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6540794968605042,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "ntero (D.N.I 29.670.629) y/o Marina Isabel Valverde (DNI\n\n28.340.768) y/o María Florencia Ortigoza (D.N.I. 34.374.813, C.P.A.",
+            "contexto_local": "ntero (D.N.I 29.670.629) y/o Marina Isabel Valverde (DNI\n\n28.340.768) y/o María Florencia Ortigoza (D.N.I. 34.374.813, C.P.A."
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "538090",
+    "numero_archivo": "42",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "Miriam López Franco",
+        "dni_embargado": "94.542.024",
+        "cuit_cuil_embargado": "27-94542024-9",
+        "roles_detectados": [
+          "demandada",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "MIRIAM LOPEZ FRANCO",
+          "Miriam López Franco"
+        ],
+        "cantidad_fragmentos_soporte": 3,
+        "cantidad_evidencias": 3,
+        "score_total": 31.334,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIRIAM LOPEZ FRANCO",
+            "dni_detectado": "94.542.024",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6749036908149719,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "le proceda a TRABAR EMBARGO sobre fondos que tuviere o llegara a tener la Sra. MIRIAM LOPEZ FRANCO (D.N.I 94.542.024) CUIT 27",
+            "contexto_local": "le proceda a TRABAR EMBARGO sobre fondos que tuviere o llegara a tener la Sra. MIRIAM LOPEZ FRANCO (D.N.I 94.542.024) CUIT 27"
+          },
+          {
+            "contador_interno": "2",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIRIAM LOPEZ FRANCO",
+            "dni_detectado": "94.542.024",
+            "cuit_cuil_detectado": "27-94542024-9",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7003019452095032,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "R EMBARGO sobre fondos que tuviere o llegara a tener la Sra. MIRIAM LOPEZ FRANCO (D.N.I 94.542.024) CUIT 27-94542024-9 en cu",
+            "contexto_local": "R EMBARGO sobre fondos que tuviere o llegara a tener la Sra. MIRIAM LOPEZ FRANCO (D.N.I 94.542.024) CUIT 27-94542024-9 en cu"
+          },
+          {
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Miriam López Franco",
+            "dni_detectado": "94.542.024",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.952083945274353,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "sobre la cuenta de Mercado Pago de Mercado Libre S.R.L. que posea la demandada Miriam López Franco (DNI 94.542.024), a cuyo",
+            "contexto_local": "sobre la cuenta de Mercado Pago de Mercado Libre S.R.L. que posea la demandada Miriam López Franco (DNI 94.542.024), a cuyo"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "513551",
+    "numero_archivo": "44",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "HERRERA MAXIMILIANO FRANCISCO ALEXIS",
+        "dni_embargado": "36.301.174",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "HERRERA MAXIMILIANO FRANCISCO ALEXIS"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.705,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "HERRERA MAXIMILIANO FRANCISCO ALEXIS",
+            "dni_detectado": "36.301.174",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.5710895657539368,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "proceder a\n\nembargar los fondos que posea el Sr. HERRERA MAXIMILIANO FRANCISCO ALEXIS, titular del Dni 36.301.174, en el p",
+            "contexto_local": "proceder a\n\nembargar los fondos que posea el Sr. HERRERA MAXIMILIANO FRANCISCO ALEXIS, titular del Dni 36.301.174, en el p"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "522290",
+    "numero_archivo": "45",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "GRACIELA EDITH CANO",
+        "dni_embargado": "18.347.843",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "GRACIELA EDITH CANO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.556,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "GRACIELA EDITH CANO",
+            "dni_detectado": "18.347.843",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5442982316017151,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "fondos existentes en la cuenta de Mercado Libre SRL\n\na nombre el ejecutado Sr. GRACIELA EDITH CANO (DNI N° 18.347.843);\n\nde",
+            "contexto_local": "fondos existentes en la cuenta de Mercado Libre SRL\n\na nombre el ejecutado Sr. GRACIELA EDITH CANO (DNI N° 18.347.843);\n\nde"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "501201",
+    "numero_archivo": "46",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "538037",
+    "numero_archivo": "47",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO_MULTIPLE",
+    "cantidad_embargados": 2,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "Ruben Di Benedetto",
+        "dni_embargado": "14.048.834",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Ruben Di Benedetto"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 15.721,
+        "evidencias": [
+          {
+            "contador_interno": "13",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Ruben Di Benedetto",
+            "dni_detectado": "14.048.834",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7426656484603882,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "fraudulenta, terceros accedieron sin autorización a la cuenta de mercadeo Pago (Ruben Di Benedetto DNI 14.048.834) y a mi",
+            "contexto_local": "fraudulenta, terceros accedieron sin autorización a la cuenta de mercadeo Pago (Ruben Di Benedetto DNI 14.048.834) y a mi"
+          },
+          {
+            "contador_interno": "14",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Ruben Di Benedetto",
+            "dni_detectado": "14.048.834",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8711006045341492,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "zación a la cuenta de mercadeo Pago (Ruben Di Benedetto DNI 14.048.834) y a mi de Graciela Carabino DNI 14.257.989, ingresa",
+            "contexto_local": "zación a la cuenta de mercadeo Pago (Ruben Di Benedetto DNI 14.048.834) y a mi de Graciela Carabino DNI 14.257.989, ingresa"
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "GRISELDA BEATRIZ VALENZUELA",
+        "dni_embargado": "24.326.675",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "GRISELDA BEATRIZ VALENZUELA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 10.314,
+        "evidencias": [
+          {
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "GRISELDA BEATRIZ VALENZUELA",
+            "dni_detectado": "24.326.675",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6072999238967896,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "ra responder a intereses y costas, trábese embargo sobre los fondos de GRISELDA BEATRIZ VALENZUELA (DNI 24.326.675) que por",
+            "contexto_local": "ra responder a intereses y costas, trábese embargo sobre los fondos de GRISELDA BEATRIZ VALENZUELA (DNI 24.326.675) que por"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "538114",
+    "numero_archivo": "48",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "ANGEL EZEQUIEL ALARCON",
+        "dni_embargado": "44.583.812",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada"
+        ],
+        "variantes_nombre": [
+          "ANGEL EZEQUIEL ALARCON"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.525,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ANGEL EZEQUIEL ALARCON",
+            "dni_detectado": "44.583.812",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.5112517476081848,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "uier concepto posea o integre en el futuro la parte demandada en autos, Sr. ANGEL EZEQUIEL ALARCON, DNI 44.583.812, siempre",
+            "contexto_local": "uier concepto posea o integre en el futuro la parte demandada en autos, Sr. ANGEL EZEQUIEL ALARCON, DNI 44.583.812, siempre"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "529847",
+    "numero_archivo": "49",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "LIPSKER MATIAS ALEXIS",
+        "dni_embargado": "24.564.225",
+        "cuit_cuil_embargado": "20-24564225-4",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "LIPSKER MATIAS ALEXIS"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 22.059,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LIPSKER MATIAS ALEXIS",
+            "dni_detectado": "24.564.225",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.738457202911377,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "de que proceda a tratar embargo de naturaleza ejecutoria, sobre el demandado LIPSKER MATIAS ALEXIS DNI 24.564.225 CUIL 20-",
+            "contexto_local": "de que proceda a tratar embargo de naturaleza ejecutoria, sobre el demandado LIPSKER MATIAS ALEXIS DNI 24.564.225 CUIL 20-"
+          },
+          {
+            "contador_interno": "2",
+            "palabra_clave": "cuil",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LIPSKER MATIAS ALEXIS",
+            "dni_detectado": "24.564.225",
+            "cuit_cuil_detectado": "20-24564225-4",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7843198180198669,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "a tratar embargo de naturaleza ejecutoria, sobre el demandado LIPSKER MATIAS ALEXIS DNI 24.564.225 CUIL 20-24564225-4,--por",
+            "contexto_local": "a tratar embargo de naturaleza ejecutoria, sobre el demandado LIPSKER MATIAS ALEXIS DNI 24.564.225 CUIL 20-24564225-4,--por"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "495014",
+    "numero_archivo": "50",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "543609",
+    "numero_archivo": "51",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "MIGUEL ÁNGEL",
+        "dni_embargado": "23087819",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "MIGUEL ÁNGEL"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.429,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MIGUEL ÁNGEL",
+            "dni_detectado": "23087819",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8108332753181458,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "bargo solicitado sobre las cuentas bancarias informadas en autos del ejecutado CARDZO MIGUEL ÁNGEL, DNI 23087819 hasta cubr",
+            "contexto_local": "bargo solicitado sobre las cuentas bancarias informadas en autos del ejecutado CARDZO MIGUEL ÁNGEL, DNI 23087819 hasta cubr"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "Juan Cruz Millozzi",
+        "dni_embargado": "37.027.693",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "Juan Cruz Millozzi"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.109,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Juan Cruz Millozzi",
+            "dni_detectado": "37.027.693",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.5475836396217346,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "ncuentran autorizados a realizar este diligenciamiento a las al Sr. Juan Cruz Millozzi, titular del DNI 37.027.693; y/o la",
+            "contexto_local": "ncuentran autorizados a realizar este diligenciamiento a las al Sr. Juan Cruz Millozzi, titular del DNI 37.027.693; y/o la"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "535837",
+    "numero_archivo": "52",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "LUNA HORACIO EMANUEL",
+        "dni_embargado": "D.N.I. 35499690",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado",
+          "titular"
+        ],
+        "variantes_nombre": [
+          "LUNA HORACIO EMANUEL"
+        ],
+        "cantidad_fragmentos_soporte": 3,
+        "cantidad_evidencias": 3,
+        "score_total": 26.875,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "d.n.i.",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LUNA HORACIO EMANUEL",
+            "dni_detectado": "D.N.I. 35499690",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.6656466126441956,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "alquier otra tenencia o inversión registrada que percibe el Sr/a: LUNA HORACIO EMANUEL, titular del D.N.I. 35499690, por la su",
+            "contexto_local": "alquier otra tenencia o inversión registrada que percibe el Sr/a: LUNA HORACIO EMANUEL, titular del D.N.I. 35499690, por la su"
+          },
+          {
+            "contador_interno": "2",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LUNA HORACIO EMANUEL",
+            "dni_detectado": "D.N.I. 35499690",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.713534414768219,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "alquier otra tenencia o inversión registrada que percibe el Sr/a: LUNA HORACIO EMANUEL, titular del D.N.I. 35499690, por la s",
+            "contexto_local": "alquier otra tenencia o inversión registrada que percibe el Sr/a: LUNA HORACIO EMANUEL, titular del D.N.I. 35499690, por la s"
+          },
+          {
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LUNA HORACIO EMANUEL",
+            "dni_detectado": "35499690",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6590866446495056,
+            "score_contextual": 4.5,
+            "tercero_fuerte": false,
+            "fragmento": "DE PARTE, trábase embargo sobre los fondos que tuviere acreditado el ejecutado LUNA HORACIO EMANUEL DNI 35499690 en la cuen",
+            "contexto_local": "DE PARTE, trábase embargo sobre los fondos que tuviere acreditado el ejecutado LUNA HORACIO EMANUEL DNI 35499690 en la cuen"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "503810",
+    "numero_archivo": "53",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "HORACIO LUIS VACCHER",
+        "dni_embargado": "11.376.446",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "HORACIO LUIS VACCHER"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 17.379,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "HORACIO LUIS VACCHER",
+            "dni_detectado": "11.376.446",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5643613338470459,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "VU 0000003100112225248889 y 0000003100112225248886, perteneciente al demandado HORACIO LUIS VACCHER DNI 11.376.446 de Merca",
+            "contexto_local": "VU 0000003100112225248889 y 0000003100112225248886, perteneciente al demandado HORACIO LUIS VACCHER DNI 11.376.446 de Merca"
+          },
+          {
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "HORACIO LUIS VACCHER",
+            "dni_detectado": "11.376.446",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5643613338470459,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "VU 0000003100112225248889 y 0000003100112225248886, perteneciente al demandado HORACIO LUIS VACCHER DNI 11.376.446 de Merca",
+            "contexto_local": "VU 0000003100112225248889 y 0000003100112225248886, perteneciente al demandado HORACIO LUIS VACCHER DNI 11.376.446 de Merca"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "495686",
+    "numero_archivo": "54",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "MACIEL FERNANDO OSCAR",
+        "dni_embargado": "27.825.597",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "MACIEL FERNANDO OSCAR"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.187,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MACIEL FERNANDO OSCAR",
+            "dni_detectado": "27.825.597",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5661137104034424,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "ntidades presentes o futuras que tenga depositadas en vuestra entidad el Sr. MACIEL FERNANDO OSCAR, DNI 27.825.597, hasta c",
+            "contexto_local": "ntidades presentes o futuras que tenga depositadas en vuestra entidad el Sr. MACIEL FERNANDO OSCAR, DNI 27.825.597, hasta c"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "495690",
+    "numero_archivo": "55",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "SOTO JUAN RAMON",
+        "dni_embargado": "34.300.506",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "SOTO JUAN RAMON"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.406,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "SOTO JUAN RAMON",
+            "dni_detectado": "34.300.506",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.638347327709198,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "las cantidades presentes o futuras que tenga depositadas en vuestra entidad el Sr. SOTO JUAN RAMON, DNI 34.300.506, hasta c",
+            "contexto_local": "las cantidades presentes o futuras que tenga depositadas en vuestra entidad el Sr. SOTO JUAN RAMON, DNI 34.300.506, hasta c"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "536730",
+    "numero_archivo": "56",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "ROMERO GABRIEL GUSTAVO",
+        "dni_embargado": "25.925.481",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "ROMERO GABRIEL GUSTAVO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.371,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ROMERO GABRIEL GUSTAVO",
+            "dni_detectado": "25.925.481",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6266531944274902,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "ue se ha decretado en autos. Sobre las sumas de dinero que tenga depositada ROMERO GABRIEL GUSTAVO, DNI 25.925.481, en vues",
+            "contexto_local": "ue se ha decretado en autos. Sobre las sumas de dinero que tenga depositada ROMERO GABRIEL GUSTAVO, DNI 25.925.481, en vues"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "507931",
+    "numero_archivo": "57",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "Donatella Mía Leveratto",
+        "dni_embargado": "46.876.857",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Donatella Mía Leveratto"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 14.456,
+        "evidencias": [
+          {
+            "contador_interno": "54",
+            "palabra_clave": "d.n.i.",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Donatella Mía Leveratto",
+            "dni_detectado": "46.876.857",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5946018695831299,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": ".I 43.038.233 y/o la Srita. Donatella Mía Leveratto, D.N.I. 46.876.857 y/o la Srita. Delfina Guido, D.N.I. 42.951.150, todos e",
+            "contexto_local": ".I 43.038.233 y/o la Srita. Donatella Mía Leveratto, D.N.I. 46.876.857 y/o la Srita. Delfina Guido, D.N.I. 42.951.150, todos e"
+          },
+          {
+            "contador_interno": "55",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Donatella Mía Leveratto",
+            "dni_detectado": "46.876.857",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5986703038215637,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": ".I 43.038.233 y/o la Srita. Donatella Mía Leveratto, D.N.I. 46.876.857 y/o la Srita. Delfina Guido, D.N.I. 42.951.150, todos",
+            "contexto_local": ".I 43.038.233 y/o la Srita. Donatella Mía Leveratto, D.N.I. 46.876.857 y/o la Srita. Delfina Guido, D.N.I. 42.951.150, todos"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "María Florencia Ortigoza",
+        "dni_embargado": "28.340.768",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "María Florencia Ortigoza"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.356,
+        "evidencias": [
+          {
+            "contador_interno": "6",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "María Florencia Ortigoza",
+            "dni_detectado": "28.340.768",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6540794968605042,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "ntero (D.N.I 29.670.629) y/o Marina Isabel Valverde (DNI\n\n28.340.768) y/o María Florencia Ortigoza (D.N.I. 34.374.813, C.P.A.",
+            "contexto_local": "ntero (D.N.I 29.670.629) y/o Marina Isabel Valverde (DNI\n\n28.340.768) y/o María Florencia Ortigoza (D.N.I. 34.374.813, C.P.A."
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "536724",
+    "numero_archivo": "58",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "HORACIO OSCAR MONTENEGRO",
+        "dni_embargado": "23.420.002",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "HORACIO OSCAR MONTENEGRO",
+          "Horacio Oscar Montenegro"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 16.354,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "HORACIO OSCAR MONTENEGRO",
+            "dni_detectado": "23.420.002",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6742072701454163,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "ONADO, a fin de solicitarle se trabe embargo sobre las cuentas que el Sr. HORACIO OSCAR MONTENEGRO, DNI 23.420.002 posea en",
+            "contexto_local": "ONADO, a fin de solicitarle se trabe embargo sobre las cuentas que el Sr. HORACIO OSCAR MONTENEGRO, DNI 23.420.002 posea en"
+          },
+          {
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Horacio Oscar Montenegro",
+            "dni_detectado": "23.420.002",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6161678433418274,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": ". Resuelvo: ... IV.- Decretar el embargo de fondos que el alimentante Sr. Horacio Oscar Montenegro, DNI 23.420.002 pudiera",
+            "contexto_local": ". Resuelvo: ... IV.- Decretar el embargo de fondos que el alimentante Sr. Horacio Oscar Montenegro, DNI 23.420.002 pudiera"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "536738",
+    "numero_archivo": "59",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "LUCINDO RAMÓN CORNEJO",
+        "dni_embargado": "12.848.992",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "LUCINDO RAMÓN CORNEJO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.36,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LUCINDO RAMÓN CORNEJO",
+            "dni_detectado": "12.848.992",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.788357675075531,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "al N° 8 - Secretaría N° 15\n\nAsset Management S.A , el demandado en autos LUCINDO RAMÓN CORNEJO, con DNI 12.848.992 a su nom",
+            "contexto_local": "al N° 8 - Secretaría N° 15\n\nAsset Management S.A , el demandado en autos LUCINDO RAMÓN CORNEJO, con DNI 12.848.992 a su nom"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "516901",
+    "numero_archivo": "60",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "Daniel Ezequiel Romero",
+        "dni_embargado": "29.225.672",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "DANIEL EZEQUIEL ROMERO",
+          "Daniel Ezequiel Romero"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 18.899,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "DANIEL EZEQUIEL ROMERO",
+            "dni_detectado": "29.225.672",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8051364421844482,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "rdenada sobre los fondos presentes y futuros que el demandado en autos, DANIEL EZEQUIEL ROMERO, con DNI 29.225.672, tenga i",
+            "contexto_local": "rdenada sobre los fondos presentes y futuros que el demandado en autos, DANIEL EZEQUIEL ROMERO, con DNI 29.225.672, tenga i"
+          },
+          {
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Daniel Ezequiel Romero",
+            "dni_detectado": "29.225.672",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8303725719451904,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "embargo solicitado sobre los fondos disponibles y futuros que el demandado, Daniel Ezequiel Romero. DNI 29.225.672, tenga e",
+            "contexto_local": "embargo solicitado sobre los fondos disponibles y futuros que el demandado, Daniel Ezequiel Romero. DNI 29.225.672, tenga e"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "547366",
+    "numero_archivo": "61",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "CARLA STEFANIA",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "CARLA STEFANIA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 5.63,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "CARLA STEFANIA",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5432392954826355,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "PARTES:\n\nACTOR: GESTIÓN Y ADMINISTRACIÓN DE INVERSIONES SAS\nDEMANDADO: Sra. PAEZ, CARLA STEFANIA, D.N.I: 33.414.252\nOBJETO",
+            "contexto_local": "PARTES:\n\nACTOR: GESTIÓN Y ADMINISTRACIÓN DE INVERSIONES SAS\nDEMANDADO: Sra. PAEZ, CARLA STEFANIA, D.N.I: 33.414.252\nOBJETO"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "523996",
+    "numero_archivo": "62",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "RUBEN ALBERTO",
+        "dni_embargado": "5.612.521",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "RUBEN ALBERTO"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 19.263,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "RUBEN ALBERTO",
+            "dni_detectado": "5.612.521",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9834756851196289,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "dministrado por Mercado Pago Asset Management S.A, el demandado en autos PUJADAS RUBEN ALBERTO, con DNI\n\n5.612.521 a su nom",
+            "contexto_local": "dministrado por Mercado Pago Asset Management S.A, el demandado en autos PUJADAS RUBEN ALBERTO, con DNI\n\n5.612.521 a su nom"
+          },
+          {
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "RUBEN ALBERTO",
+            "dni_detectado": "5.612.521",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7748113870620728,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": ", decretase el embargo peticionado sobre las sumas que el demandado, Sr. PUJADAS RUBEN ALBERTO, con DNI 5.612.521 tenga dep",
+            "contexto_local": ", decretase el embargo peticionado sobre las sumas que el demandado, Sr. PUJADAS RUBEN ALBERTO, con DNI 5.612.521 tenga dep"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "523977",
+    "numero_archivo": "63",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "EDUARDO JAVIER FERNANDEZ",
+        "dni_embargado": "21.594.165",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "EDUARDO JAVIER FERNANDEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.145,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "EDUARDO JAVIER FERNANDEZ",
+            "dni_detectado": "21.594.165",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7161617279052734,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "istrado por Mercado Pago Asset Management S.A., el demandado en autos EDUARDO JAVIER FERNANDEZ, con DNI 21.594.165 a su nom",
+            "contexto_local": "istrado por Mercado Pago Asset Management S.A., el demandado en autos EDUARDO JAVIER FERNANDEZ, con DNI 21.594.165 a su nom"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "543631",
+    "numero_archivo": "64",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "GONZALEZ LEDESMA MAURICIO",
+        "dni_embargado": "35.646.104",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "GONZALEZ LEDESMA MAURICIO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.624,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "GONZALEZ LEDESMA MAURICIO",
+            "dni_detectado": "35.646.104",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5423896312713623,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "e las cuentas de Mercadolibre / Mercado Pago que posea el demandado Sr. GONZALEZ LEDESMA MAURICIO - DNI 35.646.104, hasta c",
+            "contexto_local": "e las cuentas de Mercadolibre / Mercado Pago que posea el demandado Sr. GONZALEZ LEDESMA MAURICIO - DNI 35.646.104, hasta c"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "523990",
+    "numero_archivo": "65",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "ALEJANDRO RODRIGO ALBORNOZ",
+        "dni_embargado": "20.583.561",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "ALEJANDRO RODRIGO ALBORNOZ",
+          "Alejandro Rodrigo Albornoz"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 18.659,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ALEJANDRO RODRIGO ALBORNOZ",
+            "dni_detectado": "20.583.561",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8805411458015442,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "trado por Mercado Pago Asset Management S.A , el demandado en autos ALEJANDRO RODRIGO ALBORNOZ, con DNI 20.583.561 a su nom",
+            "contexto_local": "trado por Mercado Pago Asset Management S.A , el demandado en autos ALEJANDRO RODRIGO ALBORNOZ, con DNI 20.583.561 a su nom"
+          },
+          {
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Alejandro Rodrigo Albornoz",
+            "dni_detectado": "20.583.561",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6746142506599426,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "do por Mercado Pago Asset Management S.A. que tuviera el aquí ejecutado Alejandro Rodrigo Albornoz, DNI 20.583.561, a cuyo",
+            "contexto_local": "do por Mercado Pago Asset Management S.A. que tuviera el aquí ejecutado Alejandro Rodrigo Albornoz, DNI 20.583.561, a cuyo"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "513487",
+    "numero_archivo": "66",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "AGUSTIN MARIANO PEROSIO",
+        "dni_embargado": "16.893.287",
+        "cuit_cuil_embargado": "20-16893287-2",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "AGUSTIN MARIANO PEROSIO"
+        ],
+        "cantidad_fragmentos_soporte": 4,
+        "cantidad_evidencias": 4,
+        "score_total": 44.846,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "cuil",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "AGUSTIN MARIANO PEROSIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "20-16893287-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5538995862007141,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "quier otro tipo de depósito que en el presente o en el futuro el demandado AGUSTIN MARIANO PEROSIO (CUIL 20-16893287-2 / DNI",
+            "contexto_local": "quier otro tipo de depósito que en el presente o en el futuro el demandado AGUSTIN MARIANO PEROSIO (CUIL 20-16893287-2 / DNI"
+          },
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "AGUSTIN MARIANO PEROSIO",
+            "dni_detectado": "16.893.287",
+            "cuit_cuil_detectado": "20-16893287-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5359967350959778,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "pósito que en el presente o en el futuro el demandado AGUSTIN MARIANO PEROSIO (CUIL 20-16893287-2 / DNI 16.893.287) tenga a",
+            "contexto_local": "pósito que en el presente o en el futuro el demandado AGUSTIN MARIANO PEROSIO (CUIL 20-16893287-2 / DNI 16.893.287) tenga a"
+          },
+          {
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "AGUSTIN MARIANO PEROSIO",
+            "dni_detectado": "16.893.287",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5990182757377625,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "responder a intereses y costas, trábase embargo sobre los fondos que posea AGUSTIN MARIANO PEROSIO (DNI 16.893.287 / CUIL 2",
+            "contexto_local": "responder a intereses y costas, trábase embargo sobre los fondos que posea AGUSTIN MARIANO PEROSIO (DNI 16.893.287 / CUIL 2"
+          },
+          {
+            "contador_interno": "5",
+            "palabra_clave": "cuil",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "AGUSTIN MARIANO PEROSIO",
+            "dni_detectado": "16.893.287",
+            "cuit_cuil_detectado": "20-16893287-2",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5221336483955383,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "fragmento": "eses y costas, trábase embargo sobre los fondos que posea AGUSTIN MARIANO PEROSIO (DNI 16.893.287 / CUIL 20-16893287-2) en s",
+            "contexto_local": "eses y costas, trábase embargo sobre los fondos que posea AGUSTIN MARIANO PEROSIO (DNI 16.893.287 / CUIL 20-16893287-2) en s"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "547376",
+    "numero_archivo": "67",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "Favio Duarte Montania",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "20-94958329-6",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "Favio Duarte Montania"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.724,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Favio Duarte Montania",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "20-94958329-6",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.5906410813331604,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "ue ya ha retenido e informado a fs. 34 de las cuentas de titularidad del Sr. Favio Duarte Montania (CUIT 20-94958329-6).- (S",
+            "contexto_local": "ue ya ha retenido e informado a fs. 34 de las cuentas de titularidad del Sr. Favio Duarte Montania (CUIT 20-94958329-6).- (S"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "524013",
+    "numero_archivo": "68",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "DIEGO CISTERNA",
+        "dni_embargado": "26034291",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "CISTERNA DIEGO",
+          "DIEGO CISTERNA"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 13.543,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "DIEGO CISTERNA",
+            "dni_detectado": "26034291",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9744133949279785,
+            "score_contextual": -4.5,
+            "tercero_fuerte": true,
+            "fragmento": "ndos administrado por Mercado Pago Asset Management S.A., el demandado en autos DIEGO CISTERNA, con DNI: 26034291 a su nomb",
+            "contexto_local": "ndos administrado por Mercado Pago Asset Management S.A., el demandado en autos DIEGO CISTERNA, con DNI: 26034291 a su nomb"
+          },
+          {
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "CISTERNA DIEGO",
+            "dni_detectado": "26.034.291",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8774753212928772,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "$4.000,00 para responder por intereses y costas, sobre todo fondo que el ejecutado CISTERNA DIEGO (DNI 26.034.291) tenga i",
+            "contexto_local": "$4.000,00 para responder por intereses y costas, sobre todo fondo que el ejecutado CISTERNA DIEGO (DNI 26.034.291) tenga i"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "498352",
+    "numero_archivo": "69",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "526651",
+    "numero_archivo": "70",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "531094",
+    "numero_archivo": "71",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "547369",
+    "numero_archivo": "72",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "CLAUDIO LEONARDO",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "CLAUDIO LEONARDO"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 12.276,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "d.n.i.",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "CLAUDIO LEONARDO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.715221643447876,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "S:\nACTOR: ADMINISTRACIÓN DE BIENES Y GESTION DE MORA S.A.S.\nDEMANDADO: Sr. GÓMEZ, CLAUDIO LEONARDO, D.N.I. 33.627.258\nOBJETO D",
+            "contexto_local": "S:\nACTOR: ADMINISTRACIÓN DE BIENES Y GESTION DE MORA S.A.S.\nDEMANDADO: Sr. GÓMEZ, CLAUDIO LEONARDO, D.N.I. 33.627.258\nOBJETO D"
+          },
+          {
+            "contador_interno": "2",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "CLAUDIO LEONARDO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7102766036987305,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "S:\nACTOR: ADMINISTRACIÓN DE BIENES Y GESTION DE MORA S.A.S.\nDEMANDADO: Sr. GÓMEZ, CLAUDIO LEONARDO, D.N.I. 33.627.258\nOBJETO",
+            "contexto_local": "S:\nACTOR: ADMINISTRACIÓN DE BIENES Y GESTION DE MORA S.A.S.\nDEMANDADO: Sr. GÓMEZ, CLAUDIO LEONARDO, D.N.I. 33.627.258\nOBJETO"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "536715",
+    "numero_archivo": "73",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "ALFREDO ISMAEL LOPEZ",
+        "dni_embargado": "27015232",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "ALFREDO ISMAEL LOPEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.387,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ALFREDO ISMAEL LOPEZ",
+            "dni_detectado": "27015232",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7964606881141663,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "e ordenada sobre los fondos presentes y futuros que el demandado en autos ALFREDO ISMAEL LOPEZ, con DNI 27015232 tuviera a",
+            "contexto_local": "e ordenada sobre los fondos presentes y futuros que el demandado en autos ALFREDO ISMAEL LOPEZ, con DNI 27015232 tuviera a"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "536707",
+    "numero_archivo": "74",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "JUAN CARLOS SEQUERA",
+        "dni_embargado": "4.513.281",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "JUAN CARLOS SEQUERA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 3.646,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JUAN CARLOS SEQUERA",
+            "dni_detectado": "4.513.281",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8828296065330505,
+            "score_contextual": -4.5,
+            "tercero_fuerte": true,
+            "fragmento": "administrado por Mercado Pago Asset Management S.A , el demandado en autos JUAN CARLOS SEQUERA, con DNI 4.513.281 a su nomb",
+            "contexto_local": "administrado por Mercado Pago Asset Management S.A , el demandado en autos JUAN CARLOS SEQUERA, con DNI 4.513.281 a su nomb"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "547372",
+    "numero_archivo": "75",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "JOSE LUIS",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "JOSE LUIS"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 11.62,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "d.n.i.",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JOSE LUIS",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6033743023872375,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "”\n\nPARTES:\nACTOR: GESTIÓN Y ADMINISTRACIÓN DE INVERSIONES SAS\nDEMANDADO: Sr. LETTERUCCI, JOSE LUIS, D.N.I. 29.312.586\n\nOBJETO",
+            "contexto_local": "”\n\nPARTES:\nACTOR: GESTIÓN Y ADMINISTRACIÓN DE INVERSIONES SAS\nDEMANDADO: Sr. LETTERUCCI, JOSE LUIS, D.N.I. 29.312.586\n\nOBJETO"
+          },
+          {
+            "contador_interno": "2",
+            "palabra_clave": "d.n.i",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JOSE LUIS",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6033743023872375,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "”\n\nPARTES:\nACTOR: GESTIÓN Y ADMINISTRACIÓN DE INVERSIONES SAS\nDEMANDADO: Sr. LETTERUCCI, JOSE LUIS, D.N.I. 29.312.586\n\nOBJETO",
+            "contexto_local": "”\n\nPARTES:\nACTOR: GESTIÓN Y ADMINISTRACIÓN DE INVERSIONES SAS\nDEMANDADO: Sr. LETTERUCCI, JOSE LUIS, D.N.I. 29.312.586\n\nOBJETO"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "538066",
+    "numero_archivo": "76",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "Clara Evangeline Torres",
+        "dni_embargado": "23.492.823",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Clara Evangeline Torres"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.516,
+        "evidencias": [
+          {
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Clara Evangeline Torres",
+            "dni_detectado": "23.492.823",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5072511434555054,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "trátese embargo sobre los fondos existentes en la cuenta que posee el Sr. Clara Evangeline Torres. DNI 23.492.823 con la c",
+            "contexto_local": "trátese embargo sobre los fondos existentes en la cuenta que posee el Sr. Clara Evangeline Torres. DNI 23.492.823 con la c"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "536739",
+    "numero_archivo": "77",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "PAULA ALEJANDRA\n\nPILARIA",
+        "dni_embargado": "21.594.889",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "PAULA ALEJANDRA\n\nPILARIA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.515,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "PAULA ALEJANDRA\n\nPILARIA",
+            "dni_detectado": "21.594.889",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8395252227783203,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "nistrado por Mercado Pago Asset Management S.A, el demandado en autos PAULA ALEJANDRA\n\nPILARIA, con DNI 21.594.889 a su nom",
+            "contexto_local": "nistrado por Mercado Pago Asset Management S.A, el demandado en autos PAULA ALEJANDRA\n\nPILARIA, con DNI 21.594.889 a su nom"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "546238",
+    "numero_archivo": "78",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "LOPEZ CARLOS PASCUAL",
+        "dni_embargado": "7.759.088",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "LOPEZ CARLOS PASCUAL"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.631,
+        "evidencias": [
+          {
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LOPEZ CARLOS PASCUAL",
+            "dni_detectado": "7.759.088",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8791688680648804,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "fragmento": "uota parte del Fondo común de inversión Mercado Fondos que posea el demandado LOPEZ CARLOS PASCUAL (DNI 7.759.088). A tal f",
+            "contexto_local": "uota parte del Fondo común de inversión Mercado Fondos que posea el demandado LOPEZ CARLOS PASCUAL (DNI 7.759.088). A tal f"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "513482",
+    "numero_archivo": "79",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "RESUELTO",
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "AGUSTIN MARIANO PEROSIO",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "23-14564727-4",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "AGUSTIN MARIANO PEROSIO"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 14.38,
+        "evidencias": [
+          {
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "AGUSTIN MARIANO PEROSIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "23-14564727-4",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9374890327453613,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "s fondos que los demandados Sonia Raquel Bobadilla (CUIL: 23-14564727-4) y AGUSTIN MARIANO PEROSIO (DNI 16.893.287 / CUIL 2",
+            "contexto_local": "s fondos que los demandados Sonia Raquel Bobadilla (CUIL: 23-14564727-4) y AGUSTIN MARIANO PEROSIO (DNI 16.893.287 / CUIL 2"
+          },
+          {
+            "contador_interno": "3",
+            "palabra_clave": "cuil",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "AGUSTIN MARIANO PEROSIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "23-14564727-4",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9641178250312805,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "demandados Sonia Raquel Bobadilla (CUIL: 23-14564727-4) y AGUSTIN MARIANO PEROSIO (DNI 16.893.287 / CUIL 20-16893287-2) pose",
+            "contexto_local": "demandados Sonia Raquel Bobadilla (CUIL: 23-14564727-4) y AGUSTIN MARIANO PEROSIO (DNI 16.893.287 / CUIL 20-16893287-2) pose"
+          }
+        ]
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "536728",
+    "numero_archivo": "80",
+    "nombre_documento": "Embargo - usuario",
+    "estado": "NO_RESUELTO",
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "MONTIEL DARUEN RUBEN",
+        "dni_embargado": "21.525.457",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "MONTIEL DARUEN RUBEN"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.45,
+        "evidencias": [
+          {
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MONTIEL DARUEN RUBEN",
+            "dni_detectado": "21.525.457",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6525831818580627,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "fragmento": "antidades presentes o futuras que tenga depositadas en vuestra entidad el Sr. MONTIEL DARUEN RUBEN, DNI 21.525.457, hasta c",
+            "contexto_local": "antidades presentes o futuras que tenga depositadas en vuestra entidad el Sr. MONTIEL DARUEN RUBEN, DNI 21.525.457, hasta c"
+          }
+        ]
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  }
+]

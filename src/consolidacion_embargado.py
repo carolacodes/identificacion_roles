@@ -1,83 +1,93 @@
-"""Consolidacion de candidatos a persona embargada por documento.
+"""
+Consolidacion de personas embargadas a nivel documento.
 
-Este modulo recibe predicciones realizadas sobre fragmentos y consolida
-los candidatos encontrados para cada numero_archivo.
-
-Objetivo principal:
-    resolver un unico nombre_embargado por documento a partir de la
-    evidencia obtenida en multiples fragmentos.
+Este modulo recibe predicciones realizadas por GLiNER sobre fragmentos
+y consolida las distintas evidencias para determinar que personas deben
+considerarse embargadas.
 
 Principios:
-- un fragmento individual puede no contener el nombre;
-- el resultado final se obtiene utilizando todos los fragmentos del documento;
-- se prioriza evidencia repetida y contextual;
-- no se inventan nombres cuando no existe evidencia;
-- si no puede resolverse el nombre, el documento queda como NO_RESUELTO;
-- se conserva trazabilidad de que fragmentos respaldaron la decision.
 
-Este modulo NO realiza inferencia con GLiNER.
-Solo consolida resultados que ya fueron extraidos previamente.
+1. GLiNER trabaja fragmento por fragmento.
+2. Un mismo embargado puede aparecer con variantes de nombre.
+3. RapidFuzz ayuda a reconocer variantes del mismo nombre.
+4. DNI y CUIT/CUIL son evidencia fuerte, pero NO fusionan por si solos
+   nombres incompatibles.
+5. Si un mismo identificador aparece asociado a nombres incompatibles,
+   se registra un conflicto para revision.
+6. Se utilizan señales juridicas positivas y negativas del contexto.
+7. No se fuerza un unico embargado: pueden existir varios.
+8. Se conserva trazabilidad de evidencias, variantes y descartes.
+
+Este modulo NO ejecuta GLiNER.
 """
 
 from __future__ import annotations
 
 import re
 import unicodedata
+
 from collections import defaultdict
+from dataclasses import dataclass, field
 from typing import Any
 
+from rapidfuzz import fuzz
 
-# ---------------------------------------------------------------------------
-# Estados finales
-# ---------------------------------------------------------------------------
+
+# ============================================================
+# ESTADOS
+# ============================================================
 
 ESTADO_RESUELTO = "RESUELTO"
+ESTADO_RESUELTO_MULTIPLE = "RESUELTO_MULTIPLE"
 ESTADO_NO_RESUELTO = "NO_RESUELTO"
-ESTADO_AMBIGUO = "AMBIGUO"
+ESTADO_REVISAR = "REVISAR"
 
 
-# ---------------------------------------------------------------------------
-# Categoria prioritaria
-# ---------------------------------------------------------------------------
+# ============================================================
+# CONFIGURACION
+# ============================================================
 
-CATEGORIA_DATOS_EMBARGADO = "Datos_Embargado"
+# Dos nombres muy similares.
+FUZZY_THRESHOLD_STRICT = 90.0
+
+# Nombre parcial contenido en uno mas completo.
+FUZZY_THRESHOLD_PARTIAL = 85.0
+
+# No fusionar automaticamente por inclusion un solo apellido.
+MIN_TOKENS_PARTIAL_MATCH = 2
+
+# Score minimo general.
+MIN_SCORE_EMBARGADO = 6.0
+
+# Evidencia especialmente fuerte.
+SCORE_EVIDENCIA_FUERTE = 10.0
+
+# Cuando un documento contiene varios candidatos,
+# exigimos algo mas de evidencia para aceptar candidatos
+# sin contexto juridico positivo explicito.
+MIN_SCORE_MULTIPLE_SIN_CONTEXTO = 10.0
 
 
-# ---------------------------------------------------------------------------
-# Palabras clave
-#
-# No se usan para extraer nombres.
-# Solamente aportan peso adicional cuando el modelo YA encontro un candidato.
-# ---------------------------------------------------------------------------
+# ============================================================
+# ROLES POSITIVOS
+# ============================================================
 
-PALABRAS_CLAVE_FUERTES = {
-    "a nombre del demandado",
-    "cuentas de titularidad",
-    "proceder a embargar",
-    "decretado el embargo",
+ROLES_POSITIVOS = {
+    "demandado",
+    "demandada",
+    "embargado",
+    "embargada",
+    "ejecutado",
+    "ejecutada",
+    "deudor",
+    "deudora",
+    "titular",
 }
 
-PALABRAS_CLAVE_MEDIAS = {
-    "decrétase embargo",
-    "decretase embargo",
-    "trabese embargo",
-    "trábese embargo",
-    "trabar embargo",
-    "decretase embargo sobre",
-    "decrétase embargo sobre",
-    "embargo sobre la cuenta",
-}
 
-PALABRAS_CLAVE_DEBILES = {
-    "sobre los fondos",
-    "cuentas que",
-    "traba del embargo",
-}
-
-
-# ---------------------------------------------------------------------------
-# Valores que nunca deben considerarse nombres validos
-# ---------------------------------------------------------------------------
+# ============================================================
+# VALORES INVALIDOS
+# ============================================================
 
 VALORES_VACIOS = {
     "",
@@ -90,17 +100,191 @@ VALORES_VACIOS = {
     "no_encontrado",
     "no resuelto",
     "no_resuelto",
-    "desconocido",
     "unknown",
+    "desconocido",
 }
 
 
-# ---------------------------------------------------------------------------
-# Utilidades generales
-# ---------------------------------------------------------------------------
+EXPRESIONES_NO_NOMBRE = {
+    "usuario incorrecto",
+    "parte demandada",
+    "el demandado",
+    "la demandada",
+    "el embargado",
+    "la embargada",
+    "parte ejecutada",
+    "parte ejecutante",
+}
 
-def _texto_seguro(value: Any) -> str:
-    """Convierte un valor a texto sin generar 'None' artificialmente."""
+
+# ============================================================
+# CONTEXTO POSITIVO
+# ============================================================
+
+PATRONES_CONTEXTO_POSITIVO = (
+    r"\bembargado\b\s*:?",
+    r"\bembargada\b\s*:?",
+    r"\bdemandado\b",
+    r"\bdemandada\b",
+    r"\bejecutado\b",
+    r"\bejecutada\b",
+    r"\bdeudor\b",
+    r"\bdeudora\b",
+
+    r"\bembargar\s+(?:las|los|sus)?\s*"
+    r"(?:cuentas|fondos|haberes)",
+
+    r"\bembargo\s+sobre\b",
+
+    r"\btr[aá]base\s+embargo\b",
+
+    r"\btr[aá]bese\s+embargo\b",
+
+    r"\bretenci[oó]n\s+(?:directa\s+)?de\b",
+)
+
+
+# ============================================================
+# CONTEXTO NEGATIVO
+# ============================================================
+
+PATRONES_CONTEXTO_NEGATIVO = (
+    r"\bdepositarse\b",
+    r"\bdepositar(?:se)?\b",
+
+    r"\bcuenta\s+abierta\s+a\s+nombre\s+de\b",
+
+    r"\bcuenta\s+judicial\b",
+
+    r"\btransferir\b",
+    r"\btransferencia\b",
+
+    r"\bdestinatari[oa]s?\b",
+
+    r"\ba\s+favor\s+de\b",
+)
+
+
+# ============================================================
+# CONTEXTO DE TERCEROS
+#
+# Penalizacion mas fuerte.
+#
+# No contiene nombres concretos.
+# ============================================================
+
+PATRONES_TERCERO_FUERTE = (
+    # Personas autorizadas para diligenciar.
+    r"\bautorizad[oa]s?\s+para\s+diligenciar\b",
+    r"\bautorizad[oa]s?\s+al\s+diligenciamiento\b",
+    r"\bse\s+encuentran?\s+autorizad[oa]s?\b",
+
+    # Profesionales / representantes.
+    r"\blos\s+dres?\b",
+    r"\blas\s+dras?\b",
+    r"\bdr\.?\s",
+    r"\bdra\.?\s",
+    r"\bletrad[oa]s?\b",
+    r"\babogad[oa]s?\b",
+    r"\bapoderad[oa]s?\b",
+
+    # Funcionarios judiciales.
+    r"\bjuez\b",
+    r"\bjueza\b",
+    r"\bsecretari[oa]\b",
+    r"\bauxiliar\s+letrado\b",
+
+    # Firmantes.
+    r"\bfirmado\s+por\b",
+    r"\bfirma\s+digital\b",
+    r"\bcertificado\s+correcto\b",
+
+    # Destino de fondos.
+    r"\bcuenta\s+de\s+dep[oó]sito\b",
+    r"\bcuenta\s+receptora\b",
+
+    # Entidades que administran/prestan servicios.
+    r"\badministrado\s+por\b",
+    r"\badministrada\s+por\b",
+    r"\bservicio\s+de\s+procesamiento\b",
+)
+
+
+# ============================================================
+# DATA CLASSES
+# ============================================================
+
+@dataclass
+class Evidencia:
+    """Prediccion individual obtenida de un fragmento."""
+
+    numero_archivo: str
+    id_documento: str
+
+    contador_interno: str
+    palabra_clave: str
+    categoria: str
+
+    fragmento: str
+
+    nombre: str
+
+    dni: str = ""
+    cuit_cuil: str = ""
+    rol: str = ""
+
+    nombre_confidence: float | None = None
+    dni_confidence: float | None = None
+    cuit_cuil_confidence: float | None = None
+    rol_confidence: float | None = None
+
+    nombre_span_inicio: int | None = None
+    nombre_span_fin: int | None = None
+
+    contexto_local: str = ""
+
+    score_contextual: float = 0.0
+    tercero_fuerte: bool = False
+
+
+@dataclass
+class GrupoPersona:
+    """Conjunto de evidencias que parecen pertenecer a la misma persona."""
+
+    evidencias: list[Evidencia] = field(
+        default_factory=list
+    )
+
+    variantes_nombre: set[str] = field(
+        default_factory=set
+    )
+
+    dni_encontrados: set[str] = field(
+        default_factory=set
+    )
+
+    cuit_cuil_encontrados: set[str] = field(
+        default_factory=set
+    )
+
+    roles_encontrados: set[str] = field(
+        default_factory=set
+    )
+
+    fragmentos_soporte: set[str] = field(
+        default_factory=set
+    )
+
+    score_total: float = 0.0
+
+
+# ============================================================
+# NORMALIZACION
+# ============================================================
+
+def _texto_seguro(
+    value: Any,
+) -> str:
 
     if value is None:
         return ""
@@ -108,692 +292,1949 @@ def _texto_seguro(value: Any) -> str:
     return str(value).strip()
 
 
-def _normalizar_para_comparar(value: Any) -> str:
-    """Normaliza texto para comparar candidatos sin alterar el valor original.
+def _normalizar_texto(
+    value: Any,
+) -> str:
+    """
+    Normalizacion usada exclusivamente para comparacion.
 
-    La normalizacion se utiliza solamente internamente para agrupar nombres
-    equivalentes.
-
-    Ejemplo:
-        'José Pérez'
-        'JOSE PEREZ'
-
-    producen una clave comparable similar.
-
-    El valor original extraido por el modelo se conserva para la salida.
+    No modifica el valor original que se exporta.
     """
 
-    text = _texto_seguro(value)
+    text = _texto_seguro(
+        value
+    )
 
     if not text:
         return ""
 
-    text = unicodedata.normalize("NFKD", text)
+    text = unicodedata.normalize(
+        "NFKD",
+        text,
+    )
 
     text = "".join(
         char
         for char in text
-        if not unicodedata.combining(char)
+        if not unicodedata.combining(
+            char
+        )
     )
 
     text = text.upper()
 
-    text = re.sub(r"\s+", " ", text)
+    text = re.sub(
+        r"[^\w\s]",
+        " ",
+        text,
+    )
 
-    # Se eliminan solamente signos exteriores.
-    text = text.strip(" \t\n\r,.;:-")
+    text = re.sub(
+        r"\s+",
+        " ",
+        text,
+    )
 
-    return text
+    return text.strip()
 
 
-def _es_nombre_valido(value: Any) -> bool:
-    """Valida de forma minima que exista un candidato util.
+def _normalizar_identificador(
+    value: Any,
+) -> str:
+    """
+    Normaliza DNI / CUIT / CUIL.
 
-    No intenta decidir si el texto realmente es una persona.
-    Esa responsabilidad corresponde al modelo de extraccion.
+    Ejemplos:
 
-    Esta funcion solo evita valores vacios o marcadores tecnicos.
+        34.436.998
+        34436998
+
+    producen:
+
+        34436998
     """
 
-    text = _texto_seguro(value)
+    return re.sub(
+        r"\D",
+        "",
+        _texto_seguro(
+            value
+        ),
+    )
+
+
+def _tokens_nombre(
+    nombre: str,
+) -> list[str]:
+
+    normalizado = (
+        _normalizar_texto(
+            nombre
+        )
+    )
+
+    return [
+        token
+        for token in normalizado.split()
+        if token
+    ]
+
+
+# ============================================================
+# NOMBRE VALIDO
+# ============================================================
+
+def _nombre_es_util(
+    nombre: Any,
+) -> bool:
+
+    text = _texto_seguro(
+        nombre
+    )
 
     if not text:
         return False
 
-    if text.lower() in VALORES_VACIOS:
+    if (
+        text.lower()
+        in VALORES_VACIOS
+    ):
         return False
 
-    # Evita cadenas formadas solamente por numeros o puntuacion.
-    if not any(char.isalpha() for char in text):
+    normalizado = (
+        _normalizar_texto(
+            text
+        )
+    )
+
+    if (
+        normalizado.lower()
+        in EXPRESIONES_NO_NOMBRE
+    ):
+        return False
+
+    if not re.search(
+        r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]",
+        text,
+    ):
+        return False
+
+    letras = re.sub(
+        r"[^A-Za-zÁÉÍÓÚÜÑáéíóúüñ]",
+        "",
+        text,
+    )
+
+    # Evita:
+    #
+    # D.
+    # A c.
+    # etc.
+    if len(letras) < 4:
         return False
 
     return True
 
 
-# ---------------------------------------------------------------------------
-# Extraccion de campos desde la prediccion estructurada
-# ---------------------------------------------------------------------------
+# ============================================================
+# COMPARACION DE NOMBRES
+# ============================================================
 
-def _buscar_clave_recursiva(
-    data: Any,
-    clave_buscada: str,
-) -> Any:
-    """Busca una clave dentro de estructuras anidadas de diccionarios/listas."""
+def _nombres_equivalentes(
+    nombre_a: str,
+    nombre_b: str,
+) -> bool:
+    """
+    Determina si dos variantes parecen representar
+    la misma persona.
 
-    if isinstance(data, dict):
-        if clave_buscada in data:
-            return data[clave_buscada]
+    Se consideran:
 
-        for value in data.values():
-            encontrado = _buscar_clave_recursiva(
-                value,
-                clave_buscada,
-            )
-
-            if encontrado is not None:
-                return encontrado
-
-    elif isinstance(data, list):
-        for item in data:
-            encontrado = _buscar_clave_recursiva(
-                item,
-                clave_buscada,
-            )
-
-            if encontrado is not None:
-                return encontrado
-
-    return None
-
-
-def extraer_campos_embargado(
-    registro: dict[str, Any],
-) -> dict[str, str]:
-    """Extrae campos del nuevo esquema desde una prediccion.
-
-    Se buscan EXCLUSIVAMENTE los nombres de campos definidos para el nuevo
-    esquema.
-
-    Deliberadamente NO se busca una clave generica llamada 'nombre',
-    porque el CSV de fragmentos ya contiene una columna 'nombre' con otro
-    significado ('Embargo - usuario').
-
-    Campos esperados:
-        nombre_embargado
-        dni_embargado
-        cuit_cuil_embargado
-        rol_embargado
+    - igualdad normalizada;
+    - mismos tokens en distinto orden;
+    - RapidFuzz;
+    - nombre parcial de al menos dos tokens.
     """
 
-    nombre = _buscar_clave_recursiva(
-        registro,
-        "nombre_embargado",
+    a = _normalizar_texto(
+        nombre_a
     )
 
-    dni = _buscar_clave_recursiva(
-        registro,
-        "dni_embargado",
+    b = _normalizar_texto(
+        nombre_b
     )
 
-    cuit_cuil = _buscar_clave_recursiva(
-        registro,
-        "cuit_cuil_embargado",
+    if not a or not b:
+        return False
+
+    if a == b:
+        return True
+
+    tokens_a = set(
+        a.split()
     )
 
-    rol = _buscar_clave_recursiva(
-        registro,
-        "rol_embargado",
+    tokens_b = set(
+        b.split()
     )
 
-    return {
-        "nombre_embargado": _texto_seguro(nombre),
-        "dni_embargado": _texto_seguro(dni),
-        "cuit_cuil_embargado": _texto_seguro(cuit_cuil),
-        "rol_embargado": _texto_seguro(rol),
-    }
+    # --------------------------------------------------------
+    # Mismos tokens en distinto orden
+    # --------------------------------------------------------
+
+    if (
+        tokens_a
+        and tokens_a == tokens_b
+    ):
+        return True
+
+    token_sort = (
+        fuzz.token_sort_ratio(
+            a,
+            b,
+        )
+    )
+
+    token_set = (
+        fuzz.token_set_ratio(
+            a,
+            b,
+        )
+    )
+
+    # --------------------------------------------------------
+    # Coincidencia fuerte
+    # --------------------------------------------------------
+
+    if (
+        token_sort >= FUZZY_THRESHOLD_STRICT
+        and token_set >= FUZZY_THRESHOLD_STRICT
+    ):
+        return True
+
+    # --------------------------------------------------------
+    # Nombre parcial
+    #
+    # Ejemplo:
+    #
+    # ESTEFANIA MIHANOVICH
+    # NORMA ESTEFANIA MIHANOVICH
+    # --------------------------------------------------------
+
+    if len(
+        tokens_a
+    ) <= len(
+        tokens_b
+    ):
+        smaller = tokens_a
+        larger = tokens_b
+
+    else:
+        smaller = tokens_b
+        larger = tokens_a
+
+    if (
+        len(smaller)
+        >= MIN_TOKENS_PARTIAL_MATCH
+        and smaller.issubset(
+            larger
+        )
+        and token_set
+        >= FUZZY_THRESHOLD_PARTIAL
+    ):
+        return True
+
+    return False
 
 
-# ---------------------------------------------------------------------------
-# Peso contextual
-# ---------------------------------------------------------------------------
+def _nombres_incompatibles(
+    nombre_a: str,
+    nombre_b: str,
+) -> bool:
+    """
+    Inverso conservador de equivalencia.
 
-def _peso_palabra_clave(palabra_clave: Any) -> float:
-    """Asigna peso contextual segun la palabra clave del fragmento."""
+    Se usa para impedir que un DNI/CUIT mal asociado
+    fusione dos nombres completamente diferentes.
+    """
 
-    clave = _normalizar_para_comparar(palabra_clave).lower()
+    if _nombres_equivalentes(
+        nombre_a,
+        nombre_b,
+    ):
+        return False
 
-    fuertes = {
-        _normalizar_para_comparar(x).lower()
-        for x in PALABRAS_CLAVE_FUERTES
-    }
+    a = _normalizar_texto(
+        nombre_a
+    )
 
-    medias = {
-        _normalizar_para_comparar(x).lower()
-        for x in PALABRAS_CLAVE_MEDIAS
-    }
+    b = _normalizar_texto(
+        nombre_b
+    )
 
-    debiles = {
-        _normalizar_para_comparar(x).lower()
-        for x in PALABRAS_CLAVE_DEBILES
-    }
+    if not a or not b:
+        return False
 
-    if clave in fuertes:
-        return 3.0
+    tokens_a = set(
+        a.split()
+    )
 
-    if clave in medias:
-        return 2.0
+    tokens_b = set(
+        b.split()
+    )
 
-    if clave in debiles:
-        return 1.0
+    interseccion = (
+        tokens_a
+        & tokens_b
+    )
 
-    return 0.5
+    # Si no comparten absolutamente ningun token,
+    # son claramente incompatibles.
+    if not interseccion:
+        return True
+
+    # Si solo comparten una fraccion muy pequena
+    # tambien los consideramos incompatibles.
+    union = (
+        tokens_a
+        | tokens_b
+    )
+
+    if union:
+        ratio_tokens = (
+            len(interseccion)
+            / len(union)
+        )
+
+        if ratio_tokens < 0.25:
+            return True
+
+    return False
 
 
-def _peso_categoria(categoria: Any) -> float:
-    """Da mayor peso a fragmentos especificamente clasificados como embargado."""
+# ============================================================
+# IDENTIFICADORES
+# ============================================================
 
-    categoria_texto = _texto_seguro(categoria)
+def _dni_normalizado(
+    evidencia: Evidencia,
+) -> str:
 
-    if categoria_texto == CATEGORIA_DATOS_EMBARGADO:
-        return 3.0
+    return _normalizar_identificador(
+        evidencia.dni
+    )
 
-    return 1.0
+
+def _cuit_normalizado(
+    evidencia: Evidencia,
+) -> str:
+
+    return _normalizar_identificador(
+        evidencia.cuit_cuil
+    )
 
 
-def _peso_identificadores(
-    dni: str,
-    cuit_cuil: str,
+def _identificador_compartido(
+    evidencia_a: Evidencia,
+    evidencia_b: Evidencia,
+) -> tuple[
+    str | None,
+    str | None,
+]:
+    """
+    Devuelve:
+
+        ("dni", valor)
+
+    o:
+
+        ("cuit_cuil", valor)
+
+    cuando ambas evidencias comparten un identificador.
+    """
+
+    dni_a = _dni_normalizado(
+        evidencia_a
+    )
+
+    dni_b = _dni_normalizado(
+        evidencia_b
+    )
+
+    if (
+        dni_a
+        and dni_b
+        and dni_a == dni_b
+    ):
+        return (
+            "dni",
+            dni_a,
+        )
+
+    cuit_a = _cuit_normalizado(
+        evidencia_a
+    )
+
+    cuit_b = _cuit_normalizado(
+        evidencia_b
+    )
+
+    if (
+        cuit_a
+        and cuit_b
+        and cuit_a == cuit_b
+    ):
+        return (
+            "cuit_cuil",
+            cuit_a,
+        )
+
+    return (
+        None,
+        None,
+    )
+
+
+def _identificadores_contradictorios(
+    evidencia_a: Evidencia,
+    evidencia_b: Evidencia,
+) -> bool:
+    """
+    Si ambos tienen un DNI real y son distintos,
+    evita fusionar solamente por nombre.
+
+    Lo mismo para CUIT/CUIL.
+    """
+
+    dni_a = _dni_normalizado(
+        evidencia_a
+    )
+
+    dni_b = _dni_normalizado(
+        evidencia_b
+    )
+
+    if (
+        dni_a
+        and dni_b
+        and dni_a != dni_b
+    ):
+        return True
+
+    cuit_a = _cuit_normalizado(
+        evidencia_a
+    )
+
+    cuit_b = _cuit_normalizado(
+        evidencia_b
+    )
+
+    if (
+        cuit_a
+        and cuit_b
+        and cuit_a != cuit_b
+    ):
+        return True
+
+    return False
+
+
+# ============================================================
+# MISMA PERSONA
+# ============================================================
+
+def _evidencias_misma_persona(
+    evidencia_a: Evidencia,
+    evidencia_b: Evidencia,
+) -> bool:
+    """
+    Regla central de identidad.
+
+    IMPORTANTE:
+
+    Un DNI/CUIT igual ya NO fusiona automaticamente.
+
+    Si el identificador coincide pero los nombres son
+    incompatibles, se mantienen separados y posteriormente
+    se registra el conflicto.
+    """
+
+    # --------------------------------------------------------
+    # Identificadores contradictorios
+    # --------------------------------------------------------
+
+    if _identificadores_contradictorios(
+        evidencia_a,
+        evidencia_b,
+    ):
+        return False
+
+    tipo_id, valor_id = (
+        _identificador_compartido(
+            evidencia_a,
+            evidencia_b,
+        )
+    )
+
+    # --------------------------------------------------------
+    # Mismo identificador
+    # --------------------------------------------------------
+
+    if (
+        tipo_id
+        and valor_id
+    ):
+        # Identificador igual + nombres compatibles.
+        return _nombres_equivalentes(
+            evidencia_a.nombre,
+            evidencia_b.nombre,
+        )
+
+    # --------------------------------------------------------
+    # Sin identificador comparable.
+    #
+    # Se decide por similitud de nombre.
+    # --------------------------------------------------------
+
+    return _nombres_equivalentes(
+        evidencia_a.nombre,
+        evidencia_b.nombre,
+    )
+
+
+# ============================================================
+# CONTEXTO LOCAL
+# ============================================================
+
+def _extraer_contexto_local(
+    fragmento: str,
+    nombre: str,
+    start: int | None,
+    end: int | None,
+    radio: int = 120,
+) -> str:
+    """
+    Extrae una ventana alrededor del nombre.
+
+    Es importante porque un fragmento puede contener
+    varias personas distintas.
+    """
+
+    if not fragmento:
+        return ""
+
+    if (
+        isinstance(
+            start,
+            int,
+        )
+        and isinstance(
+            end,
+            int,
+        )
+        and 0 <= start < len(
+            fragmento
+        )
+    ):
+        inicio = max(
+            0,
+            start - radio,
+        )
+
+        fin = min(
+            len(fragmento),
+            end + radio,
+        )
+
+        return fragmento[
+            inicio:fin
+        ]
+
+    # --------------------------------------------------------
+    # Fallback por busqueda literal
+    # --------------------------------------------------------
+
+    if nombre:
+        match = re.search(
+            re.escape(
+                nombre
+            ),
+            fragmento,
+            flags=re.IGNORECASE,
+        )
+
+        if match:
+            inicio = max(
+                0,
+                match.start() - radio,
+            )
+
+            fin = min(
+                len(fragmento),
+                match.end() + radio,
+            )
+
+            return fragmento[
+                inicio:fin
+            ]
+
+    return fragmento
+
+
+# ============================================================
+# TERCEROS
+# ============================================================
+
+def _es_contexto_tercero_fuerte(
+    contexto: str,
+) -> bool:
+
+    contexto = (
+        _texto_seguro(
+            contexto
+        )
+        .lower()
+    )
+
+    if not contexto:
+        return False
+
+    return any(
+        re.search(
+            pattern,
+            contexto,
+            flags=re.IGNORECASE,
+        )
+        is not None
+        for pattern
+        in PATRONES_TERCERO_FUERTE
+    )
+
+
+# ============================================================
+# SCORE CONTEXTUAL
+# ============================================================
+
+def _score_contexto(
+    evidencia: Evidencia,
 ) -> float:
-    """Agrega evidencia cuando nombre e identificadores aparecen juntos."""
 
-    peso = 0.0
+    contexto = (
+        _texto_seguro(
+            evidencia.contexto_local
+        )
+        .lower()
+    )
 
-    if dni:
-        peso += 2.0
-
-    if cuit_cuil:
-        peso += 2.0
-
-    return peso
-
-
-def _peso_rol(rol: str) -> float:
-    """Da una pequeña bonificacion cuando el modelo encontro tambien un rol."""
-
-    if not rol:
+    if not contexto:
         return 0.0
 
-    rol_normalizado = _normalizar_para_comparar(rol).lower()
+    score = 0.0
 
-    señales = (
-        "demandado",
-        "demandada",
-        "embargado",
-        "embargada",
-        "ejecutado",
-        "ejecutada",
-        "deudor",
-        "deudora",
-        "titular",
+    # --------------------------------------------------------
+    # Positivo
+    # --------------------------------------------------------
+
+    for pattern in (
+        PATRONES_CONTEXTO_POSITIVO
+    ):
+        if re.search(
+            pattern,
+            contexto,
+            flags=re.IGNORECASE,
+        ):
+            score += 1.5
+
+    # --------------------------------------------------------
+    # Negativo
+    # --------------------------------------------------------
+
+    for pattern in (
+        PATRONES_CONTEXTO_NEGATIVO
+    ):
+        if re.search(
+            pattern,
+            contexto,
+            flags=re.IGNORECASE,
+        ):
+            score -= 2.0
+
+    # --------------------------------------------------------
+    # Tercero fuerte
+    # --------------------------------------------------------
+
+    evidencia.tercero_fuerte = (
+        _es_contexto_tercero_fuerte(
+            contexto
+        )
     )
 
-    if any(señal in rol_normalizado for señal in señales):
-        return 2.0
+    if evidencia.tercero_fuerte:
+        score -= 6.0
 
-    return 0.5
+    return score
 
 
-# ---------------------------------------------------------------------------
-# Deduplicacion de fragmentos
-# ---------------------------------------------------------------------------
+# ============================================================
+# SCORE DE EVIDENCIA
+# ============================================================
 
-def _clave_fragmento(registro: dict[str, Any]) -> tuple[str, str]:
-    """Genera una clave estable para detectar fragmentos duplicados.
+def _score_evidencia(
+    evidencia: Evidencia,
+) -> float:
 
-    Se utiliza:
-        numero_archivo + fragmento
+    score = 1.0
 
-    Dos palabras clave distintas pueden haber generado exactamente la misma
-    ventana de texto. Ese texto no debe contar dos veces como evidencia
-    independiente.
+    # --------------------------------------------------------
+    # Nombre
+    # --------------------------------------------------------
+
+    if isinstance(
+        evidencia.nombre_confidence,
+        (int, float),
+    ):
+        score += (
+            float(
+                evidencia.nombre_confidence
+            )
+            * 3.0
+        )
+
+    # --------------------------------------------------------
+    # DNI
+    # --------------------------------------------------------
+
+    if evidencia.dni:
+        score += 2.5
+
+        if isinstance(
+            evidencia.dni_confidence,
+            (int, float),
+        ):
+            score += (
+                float(
+                    evidencia.dni_confidence
+                )
+                * 0.5
+            )
+
+    # --------------------------------------------------------
+    # CUIT/CUIL
+    # --------------------------------------------------------
+
+    if evidencia.cuit_cuil:
+        score += 3.0
+
+        if isinstance(
+            evidencia.cuit_cuil_confidence,
+            (int, float),
+        ):
+            score += (
+                float(
+                    evidencia.cuit_cuil_confidence
+                )
+                * 0.5
+            )
+
+    # --------------------------------------------------------
+    # Rol
+    # --------------------------------------------------------
+
+    rol = (
+        _normalizar_texto(
+            evidencia.rol
+        )
+        .lower()
+    )
+
+    if rol:
+        if rol in ROLES_POSITIVOS:
+            score += 1.5
+        else:
+            score += 0.25
+
+    # --------------------------------------------------------
+    # Contexto
+    # --------------------------------------------------------
+
+    contexto_score = (
+        _score_contexto(
+            evidencia
+        )
+    )
+
+    evidencia.score_contextual = (
+        contexto_score
+    )
+
+    score += contexto_score
+
+    return score
+
+
+# ============================================================
+# EXTRAER EVIDENCIAS
+# ============================================================
+
+def _extraer_evidencias_documento(
+    documento: dict[str, Any],
+) -> list[Evidencia]:
+
+    evidencias: list[
+        Evidencia
+    ] = []
+
+    numero_archivo = (
+        _texto_seguro(
+            documento.get(
+                "numero_archivo"
+            )
+        )
+    )
+
+    id_documento = (
+        _texto_seguro(
+            documento.get(
+                "id"
+            )
+        )
+    )
+
+    resultados = (
+        documento.get(
+            "resultados",
+            [],
+        )
+        or []
+    )
+
+    for resultado in resultados:
+
+        fragmento = (
+            _texto_seguro(
+                resultado.get(
+                    "fragmento"
+                )
+            )
+        )
+
+        candidates = (
+            resultado.get(
+                "candidates",
+                [],
+            )
+            or []
+        )
+
+        for candidate in candidates:
+
+            nombre = _texto_seguro(
+                candidate.get(
+                    "nombre_embargado"
+                )
+                or candidate.get(
+                    "nombre"
+                )
+            )
+
+            if not _nombre_es_util(
+                nombre
+            ):
+                continue
+
+            dni = _texto_seguro(
+                candidate.get(
+                    "dni_embargado"
+                )
+                or candidate.get(
+                    "dni"
+                )
+            )
+
+            cuit_cuil = _texto_seguro(
+                candidate.get(
+                    "cuit_cuil_embargado"
+                )
+                or candidate.get(
+                    "cuil_cuit"
+                )
+            )
+
+            rol = _texto_seguro(
+                candidate.get(
+                    "rol_embargado"
+                )
+            )
+
+            start = candidate.get(
+                "nombre_embargado_span_inicio"
+            )
+
+            if start is None:
+                start = candidate.get(
+                    "nombre_span_inicio"
+                )
+
+            end = candidate.get(
+                "nombre_embargado_span_fin"
+            )
+
+            if end is None:
+                end = candidate.get(
+                    "nombre_span_fin"
+                )
+
+            contexto = (
+                _extraer_contexto_local(
+                    fragmento=fragmento,
+                    nombre=nombre,
+                    start=start,
+                    end=end,
+                )
+            )
+
+            evidencia = Evidencia(
+                numero_archivo=numero_archivo,
+                id_documento=id_documento,
+
+                contador_interno=_texto_seguro(
+                    resultado.get(
+                        "contador_interno"
+                    )
+                ),
+
+                palabra_clave=_texto_seguro(
+                    resultado.get(
+                        "palabra_clave"
+                    )
+                ),
+
+                categoria=_texto_seguro(
+                    resultado.get(
+                        "categoria"
+                    )
+                ),
+
+                fragmento=fragmento,
+
+                nombre=nombre,
+                dni=dni,
+                cuit_cuil=cuit_cuil,
+                rol=rol,
+
+                nombre_confidence=(
+                    candidate.get(
+                        "nombre_embargado_confidence"
+                    )
+                    or candidate.get(
+                        "nombre_confidence"
+                    )
+                ),
+
+                dni_confidence=(
+                    candidate.get(
+                        "dni_embargado_confidence"
+                    )
+                    or candidate.get(
+                        "dni_confidence"
+                    )
+                ),
+
+                cuit_cuil_confidence=(
+                    candidate.get(
+                        "cuit_cuil_embargado_confidence"
+                    )
+                    or candidate.get(
+                        "cuil_cuit_confidence"
+                    )
+                ),
+
+                rol_confidence=(
+                    candidate.get(
+                        "rol_embargado_confidence"
+                    )
+                ),
+
+                nombre_span_inicio=start,
+                nombre_span_fin=end,
+
+                contexto_local=contexto,
+            )
+
+            evidencias.append(
+                evidencia
+            )
+
+    return evidencias
+
+
+# ============================================================
+# AGRUPACION
+# ============================================================
+
+def _grupo_coincide(
+    evidencia: Evidencia,
+    grupo: GrupoPersona,
+) -> bool:
+
+    for existente in (
+        grupo.evidencias
+    ):
+        if _evidencias_misma_persona(
+            evidencia,
+            existente,
+        ):
+            return True
+
+    return False
+
+
+def _agrupar_evidencias(
+    evidencias: list[Evidencia],
+) -> list[GrupoPersona]:
+
+    grupos: list[
+        GrupoPersona
+    ] = []
+
+    for evidencia in evidencias:
+
+        grupo_encontrado = None
+
+        for grupo in grupos:
+
+            if _grupo_coincide(
+                evidencia,
+                grupo,
+            ):
+                grupo_encontrado = (
+                    grupo
+                )
+                break
+
+        if grupo_encontrado is None:
+
+            grupo_encontrado = (
+                GrupoPersona()
+            )
+
+            grupos.append(
+                grupo_encontrado
+            )
+
+        grupo_encontrado.evidencias.append(
+            evidencia
+        )
+
+        grupo_encontrado.variantes_nombre.add(
+            evidencia.nombre
+        )
+
+        if evidencia.dni:
+            grupo_encontrado.dni_encontrados.add(
+                evidencia.dni
+            )
+
+        if evidencia.cuit_cuil:
+            grupo_encontrado.cuit_cuil_encontrados.add(
+                evidencia.cuit_cuil
+            )
+
+        if evidencia.rol:
+            grupo_encontrado.roles_encontrados.add(
+                evidencia.rol
+            )
+
+        fragment_key = (
+            evidencia.contador_interno
+            or evidencia.fragmento
+        )
+
+        grupo_encontrado.fragmentos_soporte.add(
+            fragment_key
+        )
+
+        grupo_encontrado.score_total += (
+            _score_evidencia(
+                evidencia
+            )
+        )
+
+    return grupos
+
+
+# ============================================================
+# CONFLICTOS DE IDENTIFICADORES
+# ============================================================
+
+def _identificadores_grupo(
+    grupo: GrupoPersona,
+) -> dict[str, set[str]]:
+
+    dnis = {
+        _normalizar_identificador(
+            value
+        )
+        for value
+        in grupo.dni_encontrados
+        if _normalizar_identificador(
+            value
+        )
+    }
+
+    cuits = {
+        _normalizar_identificador(
+            value
+        )
+        for value
+        in grupo.cuit_cuil_encontrados
+        if _normalizar_identificador(
+            value
+        )
+    }
+
+    return {
+        "dni": dnis,
+        "cuit_cuil": cuits,
+    }
+
+
+def _detectar_conflictos_identificadores(
+    grupos: list[GrupoPersona],
+) -> list[dict[str, Any]]:
+    """
+    Detecta cuando dos grupos con nombres incompatibles
+    comparten el mismo DNI o CUIT/CUIL.
+
+    Esto suele indicar una asociacion erronea producida
+    por el modelo en un fragmento con varias personas.
     """
 
-    numero_archivo = _texto_seguro(
-        registro.get("numero_archivo")
+    conflictos: list[
+        dict[str, Any]
+    ] = []
+
+    vistos: set[
+        tuple[
+            str,
+            str,
+            str,
+            str,
+        ]
+    ] = set()
+
+    for index_a in range(
+        len(grupos)
+    ):
+
+        grupo_a = grupos[
+            index_a
+        ]
+
+        nombre_a = (
+            _nombre_canonico(
+                grupo_a
+            )
+        )
+
+        ids_a = (
+            _identificadores_grupo(
+                grupo_a
+            )
+        )
+
+        for index_b in range(
+            index_a + 1,
+            len(grupos),
+        ):
+
+            grupo_b = grupos[
+                index_b
+            ]
+
+            nombre_b = (
+                _nombre_canonico(
+                    grupo_b
+                )
+            )
+
+            if not _nombres_incompatibles(
+                nombre_a,
+                nombre_b,
+            ):
+                continue
+
+            ids_b = (
+                _identificadores_grupo(
+                    grupo_b
+                )
+            )
+
+            for tipo in (
+                "dni",
+                "cuit_cuil",
+            ):
+
+                compartidos = (
+                    ids_a[tipo]
+                    & ids_b[tipo]
+                )
+
+                for valor in (
+                    compartidos
+                ):
+
+                    key = (
+                        tipo,
+                        valor,
+                        nombre_a,
+                        nombre_b,
+                    )
+
+                    if key in vistos:
+                        continue
+
+                    vistos.add(
+                        key
+                    )
+
+                    conflictos.append(
+                        {
+                            "tipo_identificador":
+                                tipo,
+
+                            "valor_normalizado":
+                                valor,
+
+                            "nombre_a":
+                                nombre_a,
+
+                            "nombre_b":
+                                nombre_b,
+
+                            "variantes_a":
+                                sorted(
+                                    grupo_a.variantes_nombre
+                                ),
+
+                            "variantes_b":
+                                sorted(
+                                    grupo_b.variantes_nombre
+                                ),
+                        }
+                    )
+
+    return conflictos
+
+
+# ============================================================
+# NOMBRE CANONICO
+# ============================================================
+
+def _nombre_canonico(
+    grupo: GrupoPersona,
+) -> str:
+    """
+    Elige la variante mas completa disponible.
+
+    Nunca inventa ni reconstruye un nombre.
+    Siempre devuelve una variante realmente extraida.
+    """
+
+    mejores: list[
+        tuple[
+            int,
+            float,
+            str,
+        ]
+    ] = []
+
+    for variante in (
+        grupo.variantes_nombre
+    ):
+
+        tokens = len(
+            _tokens_nombre(
+                variante
+            )
+        )
+
+        confidencias = [
+            evidencia.nombre_confidence
+            for evidencia
+            in grupo.evidencias
+            if (
+                evidencia.nombre
+                == variante
+                and isinstance(
+                    evidencia.nombre_confidence,
+                    (int, float),
+                )
+            )
+        ]
+
+        confidence = (
+            max(
+                confidencias
+            )
+            if confidencias
+            else 0.0
+        )
+
+        mejores.append(
+            (
+                tokens,
+                confidence,
+                variante,
+            )
+        )
+
+    if not mejores:
+        return ""
+
+    mejores.sort(
+        reverse=True
     )
 
-    fragmento = _texto_seguro(
-        registro.get("fragmento")
+    return mejores[0][2]
+
+
+# ============================================================
+# VALOR MAS FRECUENTE
+# ============================================================
+
+def _valor_mas_frecuente(
+    values: list[str],
+) -> str:
+
+    values = [
+        value
+        for value in values
+        if value
+    ]
+
+    if not values:
+        return ""
+
+    counts: defaultdict[
+        str,
+        int,
+    ] = defaultdict(
+        int
+    )
+
+    original: dict[
+        str,
+        str,
+    ] = {}
+
+    for value in values:
+
+        key = (
+            _normalizar_identificador(
+                value
+            )
+        )
+
+        if not key:
+            continue
+
+        counts[key] += 1
+
+        original.setdefault(
+            key,
+            value,
+        )
+
+    if not counts:
+        return ""
+
+    winner = max(
+        counts,
+        key=lambda key: counts[key],
+    )
+
+    return original[
+        winner
+    ]
+
+
+# ============================================================
+# VALIDACION DE GRUPOS
+# ============================================================
+
+def _grupo_tiene_identificador(
+    grupo: GrupoPersona,
+) -> bool:
+
+    return bool(
+        grupo.dni_encontrados
+        or grupo.cuit_cuil_encontrados
+    )
+
+
+def _grupo_tiene_contexto_positivo(
+    grupo: GrupoPersona,
+) -> bool:
+
+    return any(
+        evidencia.score_contextual > 0
+        for evidencia
+        in grupo.evidencias
+    )
+
+
+def _grupo_tiene_tercero_fuerte(
+    grupo: GrupoPersona,
+) -> bool:
+
+    if not grupo.evidencias:
+        return False
+
+    cantidad_tercero = sum(
+        1
+        for evidencia
+        in grupo.evidencias
+        if evidencia.tercero_fuerte
+    )
+
+    # Si la mayoria de sus evidencias proviene
+    # de contextos claramente de terceros.
+    return (
+        cantidad_tercero
+        > len(
+            grupo.evidencias
+        ) / 2
+    )
+
+
+def _grupo_tiene_contexto_negativo_fuerte(
+    grupo: GrupoPersona,
+) -> bool:
+
+    positivos = sum(
+        1
+        for evidencia
+        in grupo.evidencias
+        if evidencia.score_contextual > 0
+    )
+
+    negativos = sum(
+        1
+        for evidencia
+        in grupo.evidencias
+        if evidencia.score_contextual < 0
     )
 
     return (
-        numero_archivo,
-        fragmento,
+        negativos > positivos
+        and negativos > 0
     )
 
 
-def deduplicar_fragmentos(
-    registros: list[dict[str, Any]],
-) -> list[dict[str, Any]]:
-    """Elimina ventanas exactamente duplicadas dentro del mismo documento."""
+def _grupo_es_embargado(
+    grupo: GrupoPersona,
+    total_grupos: int,
+) -> bool:
+    """
+    Decide si el grupo tiene evidencia suficiente.
 
-    vistos: set[tuple[str, str]] = set()
-    resultado: list[dict[str, Any]] = []
-
-    for registro in registros:
-        clave = _clave_fragmento(registro)
-
-        if clave in vistos:
-            continue
-
-        vistos.add(clave)
-        resultado.append(registro)
-
-    return resultado
-
-
-# ---------------------------------------------------------------------------
-# Construccion de candidatos
-# ---------------------------------------------------------------------------
-
-def _crear_candidato(
-    nombre_original: str,
-) -> dict[str, Any]:
-    """Inicializa la estructura interna de un candidato."""
-
-    return {
-        "nombre_embargado": nombre_original,
-        "clave_normalizada": _normalizar_para_comparar(
-            nombre_original
-        ),
-        "score": 0.0,
-        "cantidad_fragmentos": 0,
-        "dni_encontrados": set(),
-        "cuit_cuil_encontrados": set(),
-        "roles_encontrados": set(),
-        "fragmentos_soporte": [],
-        "palabras_clave_soporte": set(),
-        "categorias_soporte": set(),
-    }
-
-
-def _agregar_evidencia(
-    candidato: dict[str, Any],
-    registro: dict[str, Any],
-    campos: dict[str, str],
-) -> None:
-    """Agrega al candidato la evidencia de un fragmento."""
-
-    categoria = _texto_seguro(
-        registro.get("categoria")
-    )
-
-    palabra_clave = _texto_seguro(
-        registro.get("palabra_clave")
-    )
-
-    dni = campos["dni_embargado"]
-    cuit_cuil = campos["cuit_cuil_embargado"]
-    rol = campos["rol_embargado"]
-
-    score_fragmento = 1.0
-
-    score_fragmento += _peso_categoria(
-        categoria
-    )
-
-    score_fragmento += _peso_palabra_clave(
-        palabra_clave
-    )
-
-    score_fragmento += _peso_identificadores(
-        dni,
-        cuit_cuil,
-    )
-
-    score_fragmento += _peso_rol(
-        rol
-    )
-
-    candidato["score"] += score_fragmento
-    candidato["cantidad_fragmentos"] += 1
-
-    if dni:
-        candidato["dni_encontrados"].add(dni)
-
-    if cuit_cuil:
-        candidato["cuit_cuil_encontrados"].add(
-            cuit_cuil
-        )
-
-    if rol:
-        candidato["roles_encontrados"].add(rol)
-
-    if palabra_clave:
-        candidato["palabras_clave_soporte"].add(
-            palabra_clave
-        )
-
-    if categoria:
-        candidato["categorias_soporte"].add(
-            categoria
-        )
-
-    candidato["fragmentos_soporte"].append(
-        {
-            "contador_interno": registro.get(
-                "contador_interno"
-            ),
-            "palabra_clave": palabra_clave,
-            "categoria": categoria,
-            "posicion_inicio": registro.get(
-                "posicion_inicio"
-            ),
-            "posicion_fin": registro.get(
-                "posicion_fin"
-            ),
-        }
-    )
-
-
-# ---------------------------------------------------------------------------
-# Serializacion de candidatos
-# ---------------------------------------------------------------------------
-
-def _serializar_candidato(
-    candidato: dict[str, Any],
-) -> dict[str, Any]:
-    """Convierte sets y estructuras internas a formatos serializables JSON."""
-
-    return {
-        "nombre_embargado": candidato[
-            "nombre_embargado"
-        ],
-        "score": round(
-            candidato["score"],
-            3,
-        ),
-        "cantidad_fragmentos": candidato[
-            "cantidad_fragmentos"
-        ],
-        "dni_encontrados": sorted(
-            candidato["dni_encontrados"]
-        ),
-        "cuit_cuil_encontrados": sorted(
-            candidato["cuit_cuil_encontrados"]
-        ),
-        "roles_encontrados": sorted(
-            candidato["roles_encontrados"]
-        ),
-        "palabras_clave_soporte": sorted(
-            candidato["palabras_clave_soporte"]
-        ),
-        "categorias_soporte": sorted(
-            candidato["categorias_soporte"]
-        ),
-        "fragmentos_soporte": candidato[
-            "fragmentos_soporte"
-        ],
-    }
-
-
-# ---------------------------------------------------------------------------
-# Resolucion del ganador
-# ---------------------------------------------------------------------------
-
-def _resolver_estado(
-    candidatos_ordenados: list[dict[str, Any]],
-    margen_ambiguedad: float = 1.0,
-) -> str:
-    """Determina si el documento queda resuelto o ambiguo.
-
-    Si no existen candidatos:
-        NO_RESUELTO
-
-    Si existe uno:
-        RESUELTO
-
-    Si existen varios y los dos mejores tienen scores demasiado cercanos:
-        AMBIGUO
-
-    El margen se mantiene configurable para poder ajustarlo posteriormente
-    con datos reales.
+    Cuando existen varios candidatos dentro del documento
+    se aplica una regla mas estricta.
     """
 
-    if not candidatos_ordenados:
-        return ESTADO_NO_RESUELTO
+    cantidad_fragmentos = len(
+        grupo.fragmentos_soporte
+    )
 
-    if len(candidatos_ordenados) == 1:
-        return ESTADO_RESUELTO
+    tiene_id = (
+        _grupo_tiene_identificador(
+            grupo
+        )
+    )
 
-    primero = candidatos_ordenados[0]["score"]
-    segundo = candidatos_ordenados[1]["score"]
+    tiene_contexto = (
+        _grupo_tiene_contexto_positivo(
+            grupo
+        )
+    )
 
-    diferencia = primero - segundo
+    negativo_fuerte = (
+        _grupo_tiene_contexto_negativo_fuerte(
+            grupo
+        )
+    )
 
-    if diferencia <= margen_ambiguedad:
-        return ESTADO_AMBIGUO
+    tercero_fuerte = (
+        _grupo_tiene_tercero_fuerte(
+            grupo
+        )
+    )
 
-    return ESTADO_RESUELTO
+    # --------------------------------------------------------
+    # Terceros claros
+    # --------------------------------------------------------
+
+    if tercero_fuerte:
+        return False
+
+    # --------------------------------------------------------
+    # Contexto predominantemente negativo
+    # --------------------------------------------------------
+
+    if negativo_fuerte:
+        return False
+
+    # --------------------------------------------------------
+    # Score minimo
+    # --------------------------------------------------------
+
+    if (
+        grupo.score_total
+        < MIN_SCORE_EMBARGADO
+    ):
+        return False
+
+    # ========================================================
+    # DOCUMENTO CON VARIOS CANDIDATOS
+    # ========================================================
+
+    if total_grupos > 1:
+
+        # Contexto juridico positivo + identificador.
+        if (
+            tiene_contexto
+            and tiene_id
+        ):
+            return True
+
+        # Evidencia repetida.
+        if (
+            cantidad_fragmentos >= 2
+            and tiene_id
+            and grupo.score_total
+            >= MIN_SCORE_MULTIPLE_SIN_CONTEXTO
+        ):
+            return True
+
+        # Contexto positivo repetido, aunque falte ID.
+        if (
+            cantidad_fragmentos >= 2
+            and tiene_contexto
+            and grupo.score_total
+            >= SCORE_EVIDENCIA_FUERTE
+        ):
+            return True
+
+        return False
+
+    # ========================================================
+    # DOCUMENTO CON UN SOLO CANDIDATO
+    # ========================================================
+
+    if (
+        cantidad_fragmentos >= 2
+        and (
+            tiene_id
+            or tiene_contexto
+        )
+    ):
+        return True
+
+    if (
+        cantidad_fragmentos == 1
+        and tiene_id
+        and tiene_contexto
+    ):
+        return True
+
+    if (
+        grupo.score_total
+        >= SCORE_EVIDENCIA_FUERTE
+        and tiene_contexto
+    ):
+        return True
+
+    return False
 
 
-# ---------------------------------------------------------------------------
-# Consolidacion de un documento
-# ---------------------------------------------------------------------------
+# ============================================================
+# SERIALIZACION
+# ============================================================
+
+def _serializar_evidencia(
+    evidencia: Evidencia,
+) -> dict[str, Any]:
+
+    return {
+        "contador_interno":
+            evidencia.contador_interno,
+
+        "palabra_clave":
+            evidencia.palabra_clave,
+
+        "categoria":
+            evidencia.categoria,
+
+        "nombre_detectado":
+            evidencia.nombre,
+
+        "dni_detectado":
+            evidencia.dni,
+
+        "cuit_cuil_detectado":
+            evidencia.cuit_cuil,
+
+        "rol_detectado":
+            evidencia.rol,
+
+        "nombre_confidence":
+            evidencia.nombre_confidence,
+
+        "score_contextual":
+            round(
+                evidencia.score_contextual,
+                3,
+            ),
+
+        "tercero_fuerte":
+            evidencia.tercero_fuerte,
+
+        "fragmento":
+            evidencia.fragmento,
+
+        "contexto_local":
+            evidencia.contexto_local,
+    }
+
+
+def _serializar_grupo(
+    grupo: GrupoPersona,
+) -> dict[str, Any]:
+
+    nombre = (
+        _nombre_canonico(
+            grupo
+        )
+    )
+
+    dni = (
+        _valor_mas_frecuente(
+            [
+                evidencia.dni
+                for evidencia
+                in grupo.evidencias
+            ]
+        )
+    )
+
+    cuit_cuil = (
+        _valor_mas_frecuente(
+            [
+                evidencia.cuit_cuil
+                for evidencia
+                in grupo.evidencias
+            ]
+        )
+    )
+
+    return {
+        "nombre_embargado":
+            nombre,
+
+        "dni_embargado":
+            dni,
+
+        "cuit_cuil_embargado":
+            cuit_cuil,
+
+        "roles_detectados":
+            sorted(
+                grupo.roles_encontrados
+            ),
+
+        "variantes_nombre":
+            sorted(
+                grupo.variantes_nombre
+            ),
+
+        "cantidad_fragmentos_soporte":
+            len(
+                grupo.fragmentos_soporte
+            ),
+
+        "cantidad_evidencias":
+            len(
+                grupo.evidencias
+            ),
+
+        "score_total":
+            round(
+                grupo.score_total,
+                3,
+            ),
+
+        "evidencias": [
+            _serializar_evidencia(
+                evidencia
+            )
+            for evidencia
+            in grupo.evidencias
+        ],
+    }
+
+
+# ============================================================
+# CONSOLIDACION DE DOCUMENTO
+# ============================================================
 
 def consolidar_documento(
-    registros: list[dict[str, Any]],
-    margen_ambiguedad: float = 1.0,
+    documento: dict[str, Any],
 ) -> dict[str, Any]:
-    """Consolida todos los fragmentos correspondientes a un documento."""
 
-    if not registros:
-        raise ValueError(
-            "consolidar_documento requiere al menos un registro"
+    evidencias = (
+        _extraer_evidencias_documento(
+            documento
         )
-
-    registros_unicos = deduplicar_fragmentos(
-        registros
     )
 
-    primer_registro = registros_unicos[0]
-
-    numero_archivo = primer_registro.get(
-        "numero_archivo"
+    grupos = (
+        _agrupar_evidencias(
+            evidencias
+        )
     )
 
-    id_documento = primer_registro.get("id")
+    # --------------------------------------------------------
+    # Conflictos DNI/CUIT
+    # --------------------------------------------------------
 
-    candidatos: dict[str, dict[str, Any]] = {}
-
-    for registro in registros_unicos:
-        campos = extraer_campos_embargado(
-            registro
+    conflictos = (
+        _detectar_conflictos_identificadores(
+            grupos
         )
+    )
 
-        nombre = campos["nombre_embargado"]
+    # --------------------------------------------------------
+    # Validar grupos
+    # --------------------------------------------------------
 
-        if not _es_nombre_valido(nombre):
-            continue
-
-        clave = _normalizar_para_comparar(
-            nombre
+    grupos_validos = [
+        grupo
+        for grupo in grupos
+        if _grupo_es_embargado(
+            grupo,
+            total_grupos=len(
+                grupos
+            ),
         )
-
-        if not clave:
-            continue
-
-        if clave not in candidatos:
-            candidatos[clave] = _crear_candidato(
-                nombre
-            )
-
-        _agregar_evidencia(
-            candidatos[clave],
-            registro,
-            campos,
-        )
-
-    candidatos_serializados = [
-        _serializar_candidato(candidato)
-        for candidato in candidatos.values()
     ]
 
-    candidatos_serializados.sort(
-        key=lambda candidato: (
-            candidato["score"],
-            candidato["cantidad_fragmentos"],
-            len(candidato["dni_encontrados"]),
-            len(candidato["cuit_cuil_encontrados"]),
+    grupos_validos.sort(
+        key=lambda grupo: (
+            grupo.score_total,
+            len(
+                grupo.fragmentos_soporte
+            ),
         ),
         reverse=True,
     )
 
-    estado = _resolver_estado(
-        candidatos_serializados,
-        margen_ambiguedad=margen_ambiguedad,
-    )
+    personas_embargadas = [
+        _serializar_grupo(
+            grupo
+        )
+        for grupo
+        in grupos_validos
+    ]
 
-    if candidatos_serializados:
-        mejor = candidatos_serializados[0]
+    # --------------------------------------------------------
+    # Estado
+    # --------------------------------------------------------
 
-        nombre_final = mejor[
-            "nombre_embargado"
-        ]
+    if not personas_embargadas:
 
-        dni_final = (
-            mejor["dni_encontrados"][0]
-            if mejor["dni_encontrados"]
-            else ""
+        estado = (
+            ESTADO_NO_RESUELTO
         )
 
-        cuit_cuil_final = (
-            mejor["cuit_cuil_encontrados"][0]
-            if mejor["cuit_cuil_encontrados"]
-            else ""
-        )
+    elif len(
+        personas_embargadas
+    ) == 1:
 
-        rol_final = (
-            mejor["roles_encontrados"][0]
-            if mejor["roles_encontrados"]
-            else ""
+        estado = (
+            ESTADO_RESUELTO
         )
-
-        score_final = mejor["score"]
 
     else:
-        nombre_final = ""
-        dni_final = ""
-        cuit_cuil_final = ""
-        rol_final = ""
-        score_final = 0.0
+
+        estado = (
+            ESTADO_RESUELTO_MULTIPLE
+        )
+
+    # --------------------------------------------------------
+    # Descartados
+    # --------------------------------------------------------
+
+    grupos_descartados = [
+        _serializar_grupo(
+            grupo
+        )
+        for grupo in grupos
+        if grupo not in grupos_validos
+    ]
 
     return {
-        "numero_archivo": numero_archivo,
-        "id": id_documento,
+        "id":
+            documento.get(
+                "id"
+            ),
 
-        "estado_nombre_embargado": estado,
+        "numero_archivo":
+            documento.get(
+                "numero_archivo"
+            ),
 
-        "nombre_embargado": nombre_final,
-        "dni_embargado": dni_final,
-        "cuit_cuil_embargado": cuit_cuil_final,
-        "rol_embargado": rol_final,
+        "nombre_documento":
+            documento.get(
+                "nombre"
+            ),
 
-        "score_nombre_embargado": score_final,
+        "estado":
+            estado,
 
-        "cantidad_fragmentos_originales": len(
-            registros
-        ),
+        "cantidad_embargados":
+            len(
+                personas_embargadas
+            ),
 
-        "cantidad_fragmentos_unicos": len(
-            registros_unicos
-        ),
+        "personas_embargadas":
+            personas_embargadas,
 
-        "cantidad_candidatos_nombre": len(
-            candidatos_serializados
-        ),
+        "cantidad_grupos_candidatos":
+            len(
+                grupos
+            ),
 
-        "candidatos_nombre_embargado": (
-            candidatos_serializados
-        ),
+        "cantidad_grupos_descartados":
+            len(
+                grupos_descartados
+            ),
+
+        "grupos_descartados":
+            grupos_descartados,
+
+        # ----------------------------------------------------
+        # NUEVO
+        # ----------------------------------------------------
+
+        "requiere_revision":
+            bool(
+                conflictos
+            ),
+
+        "cantidad_conflictos_identificador":
+            len(
+                conflictos
+            ),
+
+        "conflictos_identificador":
+            conflictos,
     }
 
 
-# ---------------------------------------------------------------------------
-# Consolidacion completa
-# ---------------------------------------------------------------------------
+# ============================================================
+# CONSOLIDACION COMPLETA
+# ============================================================
 
-def consolidar_por_documento(
-    predicciones_fragmentos: list[dict[str, Any]],
-    margen_ambiguedad: float = 1.0,
-) -> list[dict[str, Any]]:
-    """Agrupa predicciones por numero_archivo y consolida cada documento."""
+def consolidar_documentos(
+    documentos: list[
+        dict[str, Any]
+    ],
+) -> list[
+    dict[str, Any]
+]:
 
-    documentos: dict[str, list[dict[str, Any]]] = (
-        defaultdict(list)
-    )
-
-    for registro in predicciones_fragmentos:
-        numero_archivo = _texto_seguro(
-            registro.get("numero_archivo")
+    return [
+        consolidar_documento(
+            documento
         )
-
-        if not numero_archivo:
-            raise ValueError(
-                "Se encontro una prediccion sin numero_archivo"
-            )
-
-        documentos[numero_archivo].append(
-            registro
-        )
-
-    resultados: list[dict[str, Any]] = []
-
-    for numero_archivo in sorted(
-        documentos,
-        key=_orden_numero_archivo,
-    ):
-        resultado = consolidar_documento(
-            documentos[numero_archivo],
-            margen_ambiguedad=margen_ambiguedad,
-        )
-
-        resultados.append(resultado)
-
-    return resultados
+        for documento
+        in documentos
+    ]
 
 
-def _orden_numero_archivo(value: str) -> tuple[int, Any]:
-    """Permite ordenar numero_archivo numericamente cuando sea posible."""
-
-    try:
-        return (0, int(value))
-    except ValueError:
-        return (1, value)
-
-
-# ---------------------------------------------------------------------------
-# Resumen
-# ---------------------------------------------------------------------------
+# ============================================================
+# RESUMEN
+# ============================================================
 
 def resumir_consolidacion(
-    resultados: list[dict[str, Any]],
+    resultados: list[
+        dict[str, Any]
+    ],
 ) -> dict[str, int]:
-    """Genera un resumen sencillo de estados finales."""
 
     resumen = {
-        "total_documentos": len(resultados),
-        ESTADO_RESUELTO: 0,
-        ESTADO_AMBIGUO: 0,
-        ESTADO_NO_RESUELTO: 0,
+        "total_documentos":
+            len(
+                resultados
+            ),
+
+        ESTADO_RESUELTO:
+            0,
+
+        ESTADO_RESUELTO_MULTIPLE:
+            0,
+
+        ESTADO_NO_RESUELTO:
+            0,
+
+        "total_personas_embargadas":
+            0,
+
+        "documentos_requieren_revision":
+            0,
+
+        "total_conflictos_identificador":
+            0,
     }
 
     for resultado in resultados:
-        estado = resultado.get(
-            "estado_nombre_embargado"
+
+        estado = (
+            resultado.get(
+                "estado"
+            )
         )
 
         if estado in resumen:
-            resumen[estado] += 1
+            resumen[
+                estado
+            ] += 1
+
+        resumen[
+            "total_personas_embargadas"
+        ] += int(
+            resultado.get(
+                "cantidad_embargados",
+                0,
+            )
+        )
+
+        if resultado.get(
+            "requiere_revision",
+            False,
+        ):
+            resumen[
+                "documentos_requieren_revision"
+            ] += 1
+
+        resumen[
+            "total_conflictos_identificador"
+        ] += int(
+            resultado.get(
+                "cantidad_conflictos_identificador",
+                0,
+            )
+        )
 
     return resumen

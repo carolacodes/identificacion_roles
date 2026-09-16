@@ -447,7 +447,9 @@ schemas:
         threshold: null
         validator:
           type: regex
-          pattern: '^\s*(?:D\.?\s*N\.?\s*I\.?\s*)?(?:N[º°o]?\.?\s*)?\d{1,2}(?:[.\s]?\d{3}){2}\s*$'
+          pattern: '^\s*(?:(?:D\.?\s*N\.?\s*I\.?|DOCUMENTO(?:\s+NACIONAL\s+DE\s+IDENTIDAD)?)\s*(?:(?:NRO|N[º°o])\.?\s*)?[:#-]?\s*)?\d{1,2}(?:[.\s-]?\d{3}){2}\s*$'
+          flags:
+            - IGNORECASE
 
       cuit_cuil_embargado:
         dtype: str
@@ -467,7 +469,9 @@ schemas:
         threshold: null
         validator:
           type: regex
-          pattern: '^\s*(?:CUIL|CUIT|CUIL/CUIT)?\s*[:Nº°#-]?\s*\d{2}[-\s]?\d{8}[-\s]?\d\s*$'
+          pattern: '^\s*(?:(?:C\.?\s*U\.?\s*I\.?\s*L\.?|C\.?\s*U\.?\s*I\.?\s*T\.?|CUIL\s*/\s*CUIT|CUIT\s*/\s*CUIL)\s*(?:(?:NRO|N[º°o])\.?\s*)?[:#-]?\s*)?\d{2}(?:[-.\s]?\d){8}[-.\s]?\d\s*$'
+          flags:
+            - IGNORECASE
 
       rol_embargado:
         dtype: str

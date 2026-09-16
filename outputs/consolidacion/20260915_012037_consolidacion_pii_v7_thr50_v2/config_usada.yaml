@@ -1,0 +1,8 @@
+input_file: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20260914_215229_pii_v7_fragmentos_thr50\predicciones_por_documento.json
+run_name: consolidacion_pii_v7_thr50_v2
+consolidacion:
+  fuzzy_threshold_strict: 90.0
+  fuzzy_threshold_partial: 85.0
+  min_tokens_partial_match: 2
+  min_score_embargado: 6.0
+  score_evidencia_fuerte: 10.0

@@ -27,6 +27,10 @@ OUTPUTS_DIR = (
     / "outputs"
 )
 
+CONSOLIDATION_DIR = (
+    OUTPUTS_DIR
+    / "consolidacion"
+)
 
 RAW_COLUMNS = [
     # --------------------------------------------------------
@@ -805,3 +809,341 @@ def _safe_name(
         )
         or "experimento"
     )
+
+
+def export_consolidation(
+    resultados: list[dict[str, Any]],
+    resumen: dict[str, Any],
+    experiment_name: str,
+    used_config: dict[str, Any],
+    outputs_dir: str | Path = CONSOLIDATION_DIR,
+    now: datetime | None = None,
+) -> dict[str, Path]:
+    """
+    Exporta los resultados de la etapa de consolidacion.
+
+    Esta salida se mantiene separada de las predicciones
+    directas de GLiNER.
+
+    Genera:
+
+        consolidacion.json
+        consolidacion.csv
+        resumen.json
+        config_usada.yaml
+    """
+
+    timestamp = (
+        now or datetime.now()
+    ).strftime(
+        "%Y%m%d_%H%M%S"
+    )
+
+    safe_name = _safe_name(
+        experiment_name
+    )
+
+    run_dir = (
+        Path(outputs_dir)
+        / f"{timestamp}_{safe_name}"
+    )
+
+    run_dir.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    # --------------------------------------------------------
+    # JSON completo
+    # --------------------------------------------------------
+
+    _write_json(
+        run_dir
+        / "consolidacion.json",
+        resultados,
+    )
+
+    # --------------------------------------------------------
+    # CSV simplificado
+    #
+    # Una fila por persona embargada.
+    #
+    # Si un documento tiene dos embargados,
+    # aparecen dos filas.
+    # --------------------------------------------------------
+
+    csv_rows = (
+        _build_consolidation_csv_rows(
+            resultados
+        )
+    )
+
+    consolidation_columns = [
+        "numero_archivo",
+        "id",
+        "nombre_documento",
+        "estado",
+        "cantidad_embargados",
+
+        "indice_embargado",
+
+        "nombre_embargado",
+        "dni_embargado",
+        "cuit_cuil_embargado",
+
+        "roles_detectados",
+        "variantes_nombre",
+
+        "cantidad_fragmentos_soporte",
+        "cantidad_evidencias",
+
+        "score_total",
+    ]
+
+    _write_csv(
+        run_dir
+        / "consolidacion.csv",
+
+        csv_rows,
+
+        consolidation_columns,
+    )
+
+    # --------------------------------------------------------
+    # Resumen
+    # --------------------------------------------------------
+
+    _write_json(
+        run_dir
+        / "resumen.json",
+        resumen,
+    )
+
+    # --------------------------------------------------------
+    # Configuracion utilizada
+    # --------------------------------------------------------
+
+    _write_yaml(
+        run_dir
+        / "config_usada.yaml",
+        used_config,
+    )
+
+    return {
+        "consolidacion_dir":
+            run_dir,
+
+        "consolidacion_json":
+            run_dir
+            / "consolidacion.json",
+
+        "consolidacion_csv":
+            run_dir
+            / "consolidacion.csv",
+
+        "resumen_json":
+            run_dir
+            / "resumen.json",
+    }
+
+
+def _build_consolidation_csv_rows(
+    resultados: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """
+    Convierte el resultado consolidado a un CSV plano.
+
+    Un documento puede generar:
+
+        0 filas de persona
+        1 fila
+        varias filas
+
+    Para documentos NO_RESUELTO se genera igualmente
+    una fila vacia para no perder el documento en el CSV.
+    """
+
+    rows: list[dict[str, Any]] = []
+
+    for resultado in resultados:
+
+        personas = (
+            resultado.get(
+                "personas_embargadas",
+                [],
+            )
+            or []
+        )
+
+        # ----------------------------------------------------
+        # Documento sin embargado resuelto
+        # ----------------------------------------------------
+
+        if not personas:
+
+            rows.append(
+                {
+                    "numero_archivo":
+                        resultado.get(
+                            "numero_archivo"
+                        ),
+
+                    "id":
+                        resultado.get(
+                            "id"
+                        ),
+
+                    "nombre_documento":
+                        resultado.get(
+                            "nombre_documento"
+                        ),
+
+                    "estado":
+                        resultado.get(
+                            "estado"
+                        ),
+
+                    "cantidad_embargados":
+                        resultado.get(
+                            "cantidad_embargados",
+                            0,
+                        ),
+
+                    "indice_embargado":
+                        "",
+
+                    "nombre_embargado":
+                        "",
+
+                    "dni_embargado":
+                        "",
+
+                    "cuit_cuil_embargado":
+                        "",
+
+                    "roles_detectados":
+                        "",
+
+                    "variantes_nombre":
+                        "",
+
+                    "cantidad_fragmentos_soporte":
+                        0,
+
+                    "cantidad_evidencias":
+                        0,
+
+                    "score_total":
+                        0,
+                }
+            )
+
+            continue
+
+        # ----------------------------------------------------
+        # Uno o varios embargados
+        # ----------------------------------------------------
+
+        for index, persona in enumerate(
+            personas,
+            start=1,
+        ):
+
+            roles = (
+                persona.get(
+                    "roles_detectados",
+                    [],
+                )
+                or []
+            )
+
+            variantes = (
+                persona.get(
+                    "variantes_nombre",
+                    [],
+                )
+                or []
+            )
+
+            rows.append(
+                {
+                    "numero_archivo":
+                        resultado.get(
+                            "numero_archivo"
+                        ),
+
+                    "id":
+                        resultado.get(
+                            "id"
+                        ),
+
+                    "nombre_documento":
+                        resultado.get(
+                            "nombre_documento"
+                        ),
+
+                    "estado":
+                        resultado.get(
+                            "estado"
+                        ),
+
+                    "cantidad_embargados":
+                        resultado.get(
+                            "cantidad_embargados",
+                            len(personas),
+                        ),
+
+                    "indice_embargado":
+                        index,
+
+                    "nombre_embargado":
+                        persona.get(
+                            "nombre_embargado",
+                            "",
+                        ),
+
+                    "dni_embargado":
+                        persona.get(
+                            "dni_embargado",
+                            "",
+                        ),
+
+                    "cuit_cuil_embargado":
+                        persona.get(
+                            "cuit_cuil_embargado",
+                            "",
+                        ),
+
+                    "roles_detectados":
+                        " | ".join(
+                            str(role)
+                            for role in roles
+                        ),
+
+                    "variantes_nombre":
+                        " | ".join(
+                            str(variante)
+                            for variante in variantes
+                        ),
+
+                    "cantidad_fragmentos_soporte":
+                        persona.get(
+                            "cantidad_fragmentos_soporte",
+                            0,
+                        ),
+
+                    "cantidad_evidencias":
+                        persona.get(
+                            "cantidad_evidencias",
+                            0,
+                        ),
+
+                    "score_total":
+                        persona.get(
+                            "score_total",
+                            0,
+                        ),
+                }
+            )
+
+    return rows
