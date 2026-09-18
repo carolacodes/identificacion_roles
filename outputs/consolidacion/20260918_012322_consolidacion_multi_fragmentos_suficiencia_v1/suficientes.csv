@@ -1,0 +1,74 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+1,538118,Embargo - usuario,RESUELTO,True,False,,1,1,NAHUEL OSCAR MARQUEZ,33.470.065,,demandada,NAHUEL OSCAR MARQUEZ,1,1,11.494,False,False,0
+2,538084,Embargo - usuario,RESUELTO,True,False,,1,1,MAZA ARIAS MERCEDES FATIMA,32.630.518,,titular,MAZA ARIAS MERCEDES FATIMA,1,1,9.858,False,False,0
+3,495011,Embargo - usuario,RESUELTO,True,False,,1,1,VINCI BRIAN EMMANUEL,34.436.998,20-34436998-5,embargado,VINCI BRIAN EMMANUEL,5,5,56.294,False,False,0
+4,534526,Embargo - usuario,RESUELTO,True,False,,1,1,BRAVO LUIS ALBERTO,40770662,,embargada,BRAVO LUIS ALBERTO,1,1,11.313,False,False,0
+5,542996,Embargo - usuario,RESUELTO,True,False,,1,1,STIO MARIA AMELIA,6551699,,demandado | titular,STIO MARIA AMELIA,2,2,22.917,False,False,0
+6,538081,Embargo - usuario,RESUELTO,True,False,,1,1,BIERNVERT CLAUDIA CARINA,27.164.468,,titular,BIERNVERT CLAUDIA CARINA,1,1,9.762,False,False,0
+7,524057,Embargo - usuario,RESUELTO,True,False,,1,1,DIEGO FABIAN FRETES,29178884,,embargado,DIEGO FABIAN FRETES,1,1,9.848,False,False,0
+8,536725,Embargo - usuario,RESUELTO,True,False,,1,1,MIGUEL ANGEL SEGOVIA,36003333,,demandado | embargado,MIGUEL ANGEL SEGOVIA,6,6,55.486,False,False,0
+9,536741,Embargo - usuario,RESUELTO,True,False,,1,1,ROBERTO CARLOS LOBO,21773000,,demandado | embargado,ROBERTO CARLOS LOBO | Roberto Carlos Lobo,2,2,18.473,False,False,0
+10,524053,Embargo - usuario,RESUELTO,True,False,,1,1,ANDREA JAQUELINA HERRERA,23.333.216,,ejecutado | embargado,ANDREA JAQUELINA HERRERA | HERRERA ANDREA JAQUELINA,2,2,16.819,False,False,0
+11,546314,Embargo - usuario,RESUELTO,True,False,,1,1,SILVA HERMINIO ISAUL ANTONIO,31973182,,embargado,SILVA HERMINIO ISAUL ANTONIO,2,2,22.732,False,False,0
+12,529383,Embargo - usuario,RESUELTO,True,False,,1,1,OROZCO ERNESTO ARIEL,34.418.062,20-34418062-2,embargado,OROZCO ERNESTO ARIEL,4,4,41.953,False,False,0
+13,538122,Embargo - usuario,RESUELTO,True,False,,1,1,CLAUDIA ALEJANDRA MIRANDA,23.360.827,,demandada,CLAUDIA ALEJANDRA MIRANDA,1,1,11.494,False,False,0
+14,536721,Embargo - usuario,RESUELTO,True,False,,1,1,MIGUEL MARCELO MEDINA,16289505,,demandado,MIGUEL MARCELO MEDINA,4,4,39.988,False,False,0
+15,516904,Embargo - usuario,RESUELTO,True,False,,1,1,LAURA ESTELA FERNANDEZ,20.371.813,,demandado,LAURA ESTELA FERNANDEZ,1,1,9.994,False,False,0
+16,546236,Embargo - usuario,RESUELTO,True,False,,1,1,Aurelio Rodolfo Melgarejo,13273828,,demandado | ejecutado,AURELIO RODOLFO MELGAREJO | Aurelio Rodolfo Melgarejo,2,2,19.989,False,False,0
+17,546332,Embargo - usuario,RESUELTO,True,False,,1,1,VALERIA ALEJANDRA JIMENEZ,29231660,27-29231660-2,demandado | embargado,VALERIA ALEJANDRA JIMENEZ,3,3,33.305,False,False,0
+18,538119,Embargo - usuario,RESUELTO,True,False,,1,1,Norma Estefanía MIHANOVICH,44.398.455,,demandada,ESTEFANIA MIHANOVICH | Norma Estefanía MIHANOVICH,2,2,22.867,False,False,0
+20,536705,Embargo - usuario,RESUELTO,True,False,,1,1,CARLOS ROBERTO SOLOHAGA,17.516.617,,demandado | embargado,CARLOS ROBERTO SOLOHAGA,2,2,16.814,False,False,0
+22,536718,Embargo - usuario,RESUELTO,True,False,,1,1,GROSSO JUAN JOSE,14.748.434,,demandado | embargado,GROSSO JUAN JOSE,2,2,18.388,False,False,0
+23,536742,Embargo - usuario,RESUELTO,True,False,,1,1,ESTER JOAQUINA PRATS,10533729,,demandado,ESTER JOAQUINA PRATS,1,1,9.986,False,False,0
+24,535814,Embargo - usuario,RESUELTO,True,False,,1,1,Nancy Mariela Benedetti,25.688.264,,demandada,Nancy Mariela Benedetti,2,2,22.993,False,False,0
+25,518796,Embargo - usuario,RESUELTO,True,False,,1,1,CHARIANO LEONARDO GABRIEL,28.731.512,20-28731512-1,demandado,CHARIANO LEONARDO GABRIEL | LEONARDO GABRIEL,4,4,52.273,False,False,0
+26,495683,Embargo - usuario,RESUELTO,True,False,,1,1,VILLALBA JOSE ALBERTO,31.095.679,,demandado,VILLALBA JOSE ALBERTO,1,1,9.97,False,False,0
+27,516903,Embargo - usuario,RESUELTO,True,False,,1,1,Fernando Martín González,27680733,,embargado | titular,FERNANDO MARTIN GONZALEZ | Fernando Martín González,2,2,16.935,False,False,0
+28,538120,Embargo - usuario,RESUELTO,True,False,,1,1,NATALIA ANDREA OÑA,26.294.008,,demandada,NATALIA ANDREA OÑA,1,1,11.498,False,False,0
+29,532501,Embargo - usuario,RESUELTO,True,False,,1,1,ELIAS EZEQUIEL RODRIGUEZ,41.075.050,,demandada,ELIAS EZEQUIEL RODRIGUEZ,1,1,9.782,False,False,0
+30,503824,Embargo - usuario,RESUELTO,True,False,,1,1,JACQUET ROBERTO LUIS,20.258.157,23-20258157-9,embargado,JACQUET ROBERTO LUIS,2,2,23.492,False,False,0
+31,536750,Embargo - usuario,RESUELTO,True,False,,1,1,Sr. Federico Mario BOTTI,29.987.246,20299872468,embargado | titular,FEDERICO MARIO | Sr. Federico Mario BOTTI,5,5,50.001,False,False,0
+32,514558,Embargo - usuario,RESUELTO,True,False,,1,1,Gustavo Ezequiel Godoy,31.317.421,,demandado,Gustavo Ezequiel Godoy,2,2,22.993,False,False,0
+33,494160,Embargo - usuario,RESUELTO_MULTIPLE,True,False,,2,1,MARCELA PATRICIA GARCIA PALACIOS,93757465,27-93757465-2,demandada | embargada | embargado,MARCELA PATRICIA GARCIA PALACIOS | PATRICIA GARCIA PALACIOS,7,7,79.962,False,False,0
+33,494160,Embargo - usuario,RESUELTO_MULTIPLE,True,False,,2,2,ROBERTO GABRIEL SZILAK,24678126,20-24678126-6,embargado,ROBERTO GABRIEL SZILAK,4,4,40.983,False,False,0
+34,529783,Embargo - usuario,RESUELTO,True,False,,1,1,ALFREDO ANTONIO ARIAS,10.700.496,,embargado,ALFREDO ANTONIO ARIAS,2,2,16.982,False,False,0
+36,501211,Embargo - usuario,RESUELTO,True,False,,1,1,PEDRAZA TEODORO ROVEL,20.276.462,20-20276462-3,demandado | embargado,PEDRAZA TEODORO ROVEL,4,4,43.314,False,False,0
+38,494151,Embargo - usuario,RESUELTO,True,False,,1,1,ST. JOSE LUIS VALENTINI,17.196.196,,demandado | deudor,JOSE LUIS VALENTINI | ST. JOSE LUIS VALENTINI,2,2,21.348,False,False,0
+42,538090,Embargo - usuario,RESUELTO,True,False,,1,1,MIRIAM LOPEZ FRANCO,94.542.024,27-94542024-9,demandada | embargado,MIRIAM LOPEZ FRANCO | Miriam López Franco,3,3,33.406,False,False,0
+44,513551,Embargo - usuario,RESUELTO,True,False,,1,1,HERRERA MAXIMILIANO FRANCISCO ALEXIS,36.301.174,,titular,HERRERA MAXIMILIANO FRANCISCO ALEXIS,1,1,9.853,False,False,0
+45,522290,Embargo - usuario,RESUELTO,True,False,,1,1,Sr. GRACIELA EDITH CANO,18.347.843,,ejecutado,Sr. GRACIELA EDITH CANO,1,1,9.825,False,False,0
+46,501201,Embargo - usuario,RESUELTO,True,False,,1,1,Claudia Marcela Ledo,24.535.698,,embargada | embargado,Claudia Marcela Ledo,2,2,16.988,False,False,0
+47,538037,Embargo - usuario,RESUELTO_MULTIPLE,True,False,,2,1,GRISELDA BEATRIZ VALENZUELA,24.326.675,,demandada | embargado,GRISELDA BEATRIZ VALENZUELA,2,2,21.199,False,False,0
+47,538037,Embargo - usuario,RESUELTO_MULTIPLE,True,False,,2,2,Ruben Di Benedetto,14.048.834,,embargada | embargado,Ruben Di Benedetto,2,2,16.955,False,False,0
+48,538114,Embargo - usuario,RESUELTO,True,False,,1,1,ANGEL EZEQUIEL ALARCON,44.583.812,,demandada,ANGEL EZEQUIEL ALARCON,1,1,9.489,False,False,0
+49,529847,Embargo - usuario,RESUELTO,True,False,,1,1,LIPSKER MATIAS ALEXIS,24.564.225,20-24564225-4,demandado,LIPSKER MATIAS ALEXIS,2,2,23.49,False,False,0
+51,543609,Embargo - usuario,RESUELTO,True,False,,1,1,CARDZO MIGUEL ÁNGEL,23087819,,ejecutado,CARDZO MIGUEL ÁNGEL,1,1,9.679,False,False,0
+52,535837,Embargo - usuario,RESUELTO,True,False,,1,1,LUNA HORACIO EMANUEL,35499690,,ejecutado | titular,LUNA HORACIO EMANUEL,3,3,29.98,False,False,0
+53,503810,Embargo - usuario,RESUELTO,True,False,,1,1,HORACIO LUIS VACCHER,11.376.446,,demandado,HORACIO LUIS VACCHER,2,4,39.686,False,False,0
+58,536724,Embargo - usuario,RESUELTO,True,False,,1,1,HORACIO OSCAR MONTENEGRO,23.420.002,,embargado,HORACIO OSCAR MONTENEGRO | Horacio Oscar Montenegro,2,2,18.344,False,False,0
+59,536738,Embargo - usuario,RESUELTO,True,False,,1,1,LUCINDO RAMÓN CORNEJO,12.848.992,,demandado | ejecutado,LUCINDO RAMÓN CORNEJO | Lucindo Ramón Cornejo,2,2,19.953,False,False,0
+60,516901,Embargo - usuario,RESUELTO,True,False,,1,1,Daniel Ezequiel Romero,29.225.672,,demandado,DANIEL EZEQUIEL ROMERO | Daniel Ezequiel Romero,2,2,19.994,False,False,0
+61,547366,Embargo - usuario,RESUELTO,True,False,,1,1,"Sra. PAEZ, CARLA STEFANIA",33.414.252,,demandada | demandado,"CARLA STEFANIA | Sra. PAEZ, CARLA STEFANIA",2,2,15.249,False,False,0
+62,523996,Embargo - usuario,RESUELTO,True,False,,1,1,Sr. PUJADAS RUBEN ALBERTO,5.612.521,,demandado,RUBEN ALBERTO | Sr. PUJADAS RUBEN ALBERTO,2,2,19.671,False,False,0
+63,523977,Embargo - usuario,RESUELTO,True,False,,1,1,EDUARDO JAVIER FERNANDEZ,21.594.165,,demandado,EDUARDO JAVIER FERNANDEZ,1,1,9.994,False,False,0
+64,543631,Embargo - usuario,RESUELTO_MULTIPLE,True,False,,2,1,Sr. GONZALEZ LEDESMA MAURICIO,35.646.104,,demandado | embargado,Mauricio Gonzalez Ledesma | Sr. GONZALEZ LEDESMA MAURICIO,3,3,26.643,False,False,0
+64,543631,Embargo - usuario,RESUELTO_MULTIPLE,True,False,,2,2,NICOLÁS STANGA,38.050.821,,embargado,NICOLÁS STANGA,3,3,15.49,False,False,0
+65,523990,Embargo - usuario,RESUELTO,True,False,,1,1,ALEJANDRO RODRIGO ALBORNOZ,20.583.561,,demandado | ejecutado,ALEJANDRO RODRIGO ALBORNOZ | Alejandro Rodrigo Albornoz,2,2,19.986,False,False,0
+66,513487,Embargo - usuario,RESUELTO,True,False,,1,1,AGUSTIN MARIANO PEROSIO,16.893.287,20-16893287-2,demandado | embargado,AGUSTIN MARIANO PEROSIO,4,4,50.438,False,False,0
+68,524013,Embargo - usuario,RESUELTO,True,False,,1,1,DIEGO CISTERNA,26034291,,demandado | ejecutado,CISTERNA DIEGO | DIEGO CISTERNA,2,2,19.916,False,False,0
+69,498352,Embargo - usuario,RESUELTO,True,False,,1,1,José Emiliano ALVAREZ,40.209.549,,titular,José Emiliano ALVAREZ,2,2,16.853,False,False,0
+70,526651,Embargo - usuario,RESUELTO,True,False,,1,1,PORCO MAIRA GABRIELA,31.370.360,27313703601,ejecutada,PORCO MAIRA GABRIELA,6,6,71.52,False,False,0
+71,531094,Embargo - usuario,RESUELTO,True,False,,1,1,RIO URUGUAY COOPERATIVA DE SEGUROS LIMITADA,,30500061711,embargado,RIO URUGUAY COOPERATIVA DE SEGUROS LIMITADA,1,1,11.983,False,False,0
+72,547369,Embargo - usuario,RESUELTO_MULTIPLE,True,False,,2,1,"Sr. GÓMEZ, CLAUDIO LEONARDO",33.627.258,,demandado,"CLAUDIO LEONARDO | Sr. GÓMEZ | Sr. GÓMEZ, CLAUDIO LEONARDO",4,5,38.415,False,False,0
+72,547369,Embargo - usuario,RESUELTO_MULTIPLE,True,False,,2,2,CLAUDIO LEONARDO,33.627.258,,demandado,CLAUDIO LEONARDO,2,2,18.743,False,False,0
+73,536715,Embargo - usuario,RESUELTO,True,False,,1,1,ALFREDO ISMAEL LOPEZ,27015232,,demandado,ALFREDO ISMAEL LOPEZ,1,1,9.996,False,False,0
+74,536707,Embargo - usuario,RESUELTO,True,False,,1,1,JUAN CARLOS SEQUERA,4.513.281,,demandado,JUAN CARLOS SEQUERA,1,1,9.98,False,False,0
+75,547372,Embargo - usuario,RESUELTO,True,False,,1,1,"Sr. LETTERUCCI, JOSE LUIS",29.312.586,,demandado,"JOSE LUIS | Sr. LETTERUCCI, JOSE LUIS",4,4,33.993,False,False,0
+76,538066,Embargo - usuario,RESUELTO,True,False,,1,1,Clara Evangeline Torres,23492823,,embargado | titular,Clara Evangeline Torres,2,2,18.3,False,False,0
+77,536739,Embargo - usuario,RESUELTO,True,False,,1,1,"PAULA ALEJANDRA
+
+PILARIA",21.594.889,,demandado,"PAULA ALEJANDRA
+
+PILARIA",1,1,9.975,False,False,0
+78,546238,Embargo - usuario,RESUELTO,True,False,,1,1,LOPEZ CARLOS PASCUAL,7.759.088,,demandado,LOPEZ CARLOS PASCUAL,1,1,9.994,False,False,0
+79,513482,Embargo - usuario,RESUELTO,True,False,,1,1,AGUSTIN MARIANO PEROSIO,16.893.287,20-16893287-2,demandado,AGUSTIN MARIANO PEROSIO,2,2,15.868,False,False,0

@@ -1,0 +1,2 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+,,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados | conflicto_identificador,0,,,,,,,0,0,0,False,True,6

@@ -1,19 +1,17 @@
-"""Exportacion CSV/JSON de resultados crudos y por documento."""
+"""Funciones de exportacion de resultados."""
 
 from __future__ import annotations
 
+from dataclasses import asdict, is_dataclass
 import csv
 import json
+import re
 
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
 import yaml
-
-from .postprocess import (
-    PostprocessedResult,
-)
 
 
 PROJECT_ROOT = (
@@ -27,718 +25,57 @@ OUTPUTS_DIR = (
     / "outputs"
 )
 
+RAW_DIR = (
+    OUTPUTS_DIR
+    / "raw"
+)
+
+DOCUMENT_DIR = (
+    OUTPUTS_DIR
+    / "por_documento"
+)
+
 CONSOLIDATION_DIR = (
     OUTPUTS_DIR
     / "consolidacion"
 )
 
-RAW_COLUMNS = [
-    # --------------------------------------------------------
-    # Metadata documento / fragmento
-    # --------------------------------------------------------
-    "numero_archivo",
-    "id",
-    "nombre",
-    "modo_entrada",
 
-    "contador_interno",
-    "palabra_clave",
-    "categoria",
+# ============================================================
+# HELPERS
+# ============================================================
 
-    "posicion_inicio",
-    "posicion_fin",
-    "inicio_fragmento",
-    "fin_fragmento",
+def _safe_name(
+    value: str,
+) -> str:
 
-    # --------------------------------------------------------
-    # Configuracion
-    # --------------------------------------------------------
-    "modelo",
-    "schema",
-    "threshold",
+    value = str(
+        value
+    ).strip()
 
-    "texto_usado",
-    "estado_postprocess",
-
-    # --------------------------------------------------------
-    # Entidad generica
-    # --------------------------------------------------------
-    "entidad_tipo",
-    "entidad_valor",
-    "confidence",
-    "span_inicio",
-    "span_fin",
-
-    # --------------------------------------------------------
-    # Persona embargada V7
-    # --------------------------------------------------------
-    "nombre_embargado",
-    "nombre_embargado_confidence",
-    "nombre_embargado_span_inicio",
-    "nombre_embargado_span_fin",
-
-    "dni_embargado",
-    "dni_embargado_confidence",
-    "dni_embargado_span_inicio",
-    "dni_embargado_span_fin",
-
-    "cuit_cuil_embargado",
-    "cuit_cuil_embargado_confidence",
-    "cuit_cuil_embargado_span_inicio",
-    "cuit_cuil_embargado_span_fin",
-
-    "rol_embargado",
-    "rol_embargado_confidence",
-
-    # --------------------------------------------------------
-    # Compatibilidad con V3/V6
-    # --------------------------------------------------------
-    "nombre_detectado",
-    "nombre_confidence",
-    "nombre_span_inicio",
-    "nombre_span_fin",
-
-    "dni_detectado",
-    "dni_confidence",
-    "dni_span_inicio",
-    "dni_span_fin",
-
-    "cuil_cuit_detectado",
-    "cuil_cuit_confidence",
-    "cuil_cuit_span_inicio",
-    "cuil_cuit_span_fin",
-
-    # --------------------------------------------------------
-    # Structured completo
-    # --------------------------------------------------------
-    "fields_json",
-
-    # --------------------------------------------------------
-    # Respuesta original
-    # --------------------------------------------------------
-    "raw_json",
-]
-
-
-def export_results(
-    postprocessed: list[
-        PostprocessedResult
-    ],
-    experiment_name: str,
-    used_config: dict[str, Any],
-    outputs_dir: str | Path = OUTPUTS_DIR,
-    now: datetime | None = None,
-) -> dict[str, Path]:
-
-    timestamp = (
-        now or datetime.now()
-    ).strftime(
-        "%Y%m%d_%H%M%S"
+    value = re.sub(
+        r"[^A-Za-z0-9_.-]+",
+        "_",
+        value,
     )
 
-    safe_name = _safe_name(
-        experiment_name
-    )
-
-    run_dir_name = (
-        f"{timestamp}_{safe_name}"
-    )
-
-    base_outputs = Path(
-        outputs_dir
-    )
-
-    raw_dir = (
-        base_outputs
-        / "raw"
-        / run_dir_name
-    )
-
-    document_dir = (
-        base_outputs
-        / "por_documento"
-        / run_dir_name
-    )
-
-    raw_dir.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    document_dir.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    raw_rows = build_raw_rows(
-        postprocessed
-    )
-
-    grouped = build_document_rows(
-        postprocessed
-    )
-
-    # --------------------------------------------------------
-    # RAW
-    # --------------------------------------------------------
-
-    _write_csv(
-        raw_dir
-        / "predicciones.csv",
-        raw_rows,
-        RAW_COLUMNS,
-    )
-
-    _write_json(
-        raw_dir
-        / "predicciones.json",
-        raw_rows,
-    )
-
-    _write_yaml(
-        raw_dir
-        / "config_usada.yaml",
-        used_config,
-    )
-
-    # --------------------------------------------------------
-    # POR DOCUMENTO
-    # --------------------------------------------------------
-
-    _write_json(
-        document_dir
-        / "predicciones_por_documento.json",
-        grouped,
-    )
-
-    _write_csv(
-        document_dir
-        / "predicciones_por_documento.csv",
-
-        _flatten_grouped_rows(
-            grouped
-        ),
-
-        [
-            "id",
-            "numero_archivo",
-            "nombre",
-            "cantidad_resultados",
-            "cantidad_candidatos",
-            "modo_entrada",
-        ],
-    )
-
-    _write_yaml(
-        document_dir
-        / "config_usada.yaml",
-        used_config,
-    )
-
-    return {
-        "raw_dir":
-            raw_dir,
-
-        "por_documento_dir":
-            document_dir,
-    }
-
-
-def build_raw_rows(
-    postprocessed: list[
-        PostprocessedResult
-    ],
-) -> list[
-    dict[str, Any]
-]:
-
-    rows: list[
-        dict[str, Any]
-    ] = []
-
-    for item in postprocessed:
-
-        prediction = (
-            item.prediction
+    return (
+        value.strip(
+            "_"
         )
-
-        record = (
-            prediction.record
-        )
-
-        candidates = (
-            item.candidates
-            if item.candidates
-            else [{}]
-        )
-
-        for candidate in candidates:
-
-            rows.append(
-                {
-                    # ----------------------------------------
-                    # Metadata
-                    # ----------------------------------------
-
-                    "numero_archivo":
-                        record.numero_archivo,
-
-                    "id":
-                        record.id,
-
-                    "nombre":
-                        record.nombre,
-
-                    "modo_entrada":
-                        record.modo_entrada,
-
-                    "contador_interno":
-                        record.contador_interno,
-
-                    "palabra_clave":
-                        record.palabra_clave,
-
-                    "categoria":
-                        record.categoria,
-
-                    "posicion_inicio":
-                        record.posicion_inicio,
-
-                    "posicion_fin":
-                        record.posicion_fin,
-
-                    "inicio_fragmento":
-                        record.inicio_fragmento,
-
-                    "fin_fragmento":
-                        record.fin_fragmento,
-
-                    # ----------------------------------------
-                    # Config
-                    # ----------------------------------------
-
-                    "modelo":
-                        prediction.model_id,
-
-                    "schema":
-                        prediction.schema_id,
-
-                    "threshold":
-                        prediction.threshold,
-
-                    "texto_usado":
-                        record.texto,
-
-                    "estado_postprocess":
-                        item.status,
-
-                    # ----------------------------------------
-                    # Generico
-                    # ----------------------------------------
-
-                    "entidad_tipo":
-                        candidate.get(
-                            "tipo"
-                        ),
-
-                    "entidad_valor":
-                        candidate.get(
-                            "valor"
-                        ),
-
-                    "confidence":
-                        candidate.get(
-                            "confidence"
-                        ),
-
-                    "span_inicio":
-                        candidate.get(
-                            "span_inicio"
-                        ),
-
-                    "span_fin":
-                        candidate.get(
-                            "span_fin"
-                        ),
-
-                    # ----------------------------------------
-                    # V7 nombre_embargado
-                    # ----------------------------------------
-
-                    "nombre_embargado":
-                        candidate.get(
-                            "nombre_embargado"
-                        ),
-
-                    "nombre_embargado_confidence":
-                        candidate.get(
-                            "nombre_embargado_confidence"
-                        ),
-
-                    "nombre_embargado_span_inicio":
-                        candidate.get(
-                            "nombre_embargado_span_inicio"
-                        ),
-
-                    "nombre_embargado_span_fin":
-                        candidate.get(
-                            "nombre_embargado_span_fin"
-                        ),
-
-                    # ----------------------------------------
-                    # V7 DNI
-                    # ----------------------------------------
-
-                    "dni_embargado":
-                        candidate.get(
-                            "dni_embargado"
-                        ),
-
-                    "dni_embargado_confidence":
-                        candidate.get(
-                            "dni_embargado_confidence"
-                        ),
-
-                    "dni_embargado_span_inicio":
-                        candidate.get(
-                            "dni_embargado_span_inicio"
-                        ),
-
-                    "dni_embargado_span_fin":
-                        candidate.get(
-                            "dni_embargado_span_fin"
-                        ),
-
-                    # ----------------------------------------
-                    # V7 CUIT/CUIL
-                    # ----------------------------------------
-
-                    "cuit_cuil_embargado":
-                        candidate.get(
-                            "cuit_cuil_embargado"
-                        ),
-
-                    "cuit_cuil_embargado_confidence":
-                        candidate.get(
-                            "cuit_cuil_embargado_confidence"
-                        ),
-
-                    "cuit_cuil_embargado_span_inicio":
-                        candidate.get(
-                            "cuit_cuil_embargado_span_inicio"
-                        ),
-
-                    "cuit_cuil_embargado_span_fin":
-                        candidate.get(
-                            "cuit_cuil_embargado_span_fin"
-                        ),
-
-                    # ----------------------------------------
-                    # Rol
-                    # ----------------------------------------
-
-                    "rol_embargado":
-                        candidate.get(
-                            "rol_embargado"
-                        ),
-
-                    "rol_embargado_confidence":
-                        candidate.get(
-                            "rol_embargado_confidence"
-                        ),
-
-                    # ----------------------------------------
-                    # Compatibilidad nombre
-                    # ----------------------------------------
-
-                    "nombre_detectado":
-                        candidate.get(
-                            "nombre"
-                        ),
-
-                    "nombre_confidence":
-                        candidate.get(
-                            "nombre_confidence"
-                        ),
-
-                    "nombre_span_inicio":
-                        candidate.get(
-                            "nombre_span_inicio"
-                        ),
-
-                    "nombre_span_fin":
-                        candidate.get(
-                            "nombre_span_fin"
-                        ),
-
-                    # ----------------------------------------
-                    # Compatibilidad DNI
-                    # ----------------------------------------
-
-                    "dni_detectado":
-                        candidate.get(
-                            "dni"
-                        ),
-
-                    "dni_confidence":
-                        candidate.get(
-                            "dni_confidence"
-                        ),
-
-                    "dni_span_inicio":
-                        candidate.get(
-                            "dni_span_inicio"
-                        ),
-
-                    "dni_span_fin":
-                        candidate.get(
-                            "dni_span_fin"
-                        ),
-
-                    # ----------------------------------------
-                    # Compatibilidad CUIT/CUIL
-                    # ----------------------------------------
-
-                    "cuil_cuit_detectado":
-                        candidate.get(
-                            "cuil_cuit"
-                        ),
-
-                    "cuil_cuit_confidence":
-                        candidate.get(
-                            "cuil_cuit_confidence"
-                        ),
-
-                    "cuil_cuit_span_inicio":
-                        candidate.get(
-                            "cuil_cuit_span_inicio"
-                        ),
-
-                    "cuil_cuit_span_fin":
-                        candidate.get(
-                            "cuil_cuit_span_fin"
-                        ),
-
-                    # ----------------------------------------
-                    # Structured completo
-                    # ----------------------------------------
-
-                    "fields_json":
-                        json.dumps(
-                            candidate.get(
-                                "fields",
-                                {},
-                            ),
-                            ensure_ascii=False,
-                            default=str,
-                        ),
-
-                    # ----------------------------------------
-                    # Raw
-                    # ----------------------------------------
-
-                    "raw_json":
-                        json.dumps(
-                            prediction.raw_response,
-                            ensure_ascii=False,
-                            default=str,
-                        ),
-                }
-            )
-
-    return rows
-
-
-def build_document_rows(
-    postprocessed: list[
-        PostprocessedResult
-    ],
-) -> list[
-    dict[str, Any]
-]:
-
-    grouped: dict[
-        str,
-        dict[str, Any],
-    ] = {}
-
-    for item in postprocessed:
-
-        prediction = (
-            item.prediction
-        )
-
-        record = (
-            prediction.record
-        )
-
-        bucket = grouped.setdefault(
-            record.id,
-            {
-                "id":
-                    record.id,
-
-                "numero_archivo":
-                    record.numero_archivo,
-
-                "nombre":
-                    record.nombre,
-
-                "modo_entrada":
-                    record.modo_entrada,
-
-                "resultados":
-                    [],
-            },
-        )
-
-        bucket[
-            "resultados"
-        ].append(
-            {
-                "contador_interno":
-                    record.contador_interno,
-
-                "palabra_clave":
-                    record.palabra_clave,
-
-                "categoria":
-                    record.categoria,
-
-                "fragmento":
-                    record.texto,
-
-                "posicion_inicio":
-                    record.posicion_inicio,
-
-                "posicion_fin":
-                    record.posicion_fin,
-
-                "inicio_fragmento":
-                    record.inicio_fragmento,
-
-                "fin_fragmento":
-                    record.fin_fragmento,
-
-                "status":
-                    item.status,
-
-                "candidates":
-                    item.candidates,
-
-                "modelo":
-                    prediction.model_id,
-
-                "schema":
-                    prediction.schema_id,
-
-                "threshold":
-                    prediction.threshold,
-
-                "raw_response":
-                    prediction.raw_response,
-            }
-        )
-
-    return list(
-        grouped.values()
+        or "run"
     )
-
-
-def _flatten_grouped_rows(
-    grouped: list[
-        dict[str, Any]
-    ],
-) -> list[
-    dict[str, Any]
-]:
-
-    rows: list[
-        dict[str, Any]
-    ] = []
-
-    for item in grouped:
-
-        results = item.get(
-            "resultados",
-            [],
-        )
-
-        rows.append(
-            {
-                "id":
-                    item.get(
-                        "id"
-                    ),
-
-                "numero_archivo":
-                    item.get(
-                        "numero_archivo"
-                    ),
-
-                "nombre":
-                    item.get(
-                        "nombre"
-                    ),
-
-                "cantidad_resultados":
-                    len(
-                        results
-                    ),
-
-                "cantidad_candidatos":
-                    sum(
-                        len(
-                            result.get(
-                                "candidates",
-                                [],
-                            )
-                        )
-                        for result
-                        in results
-                    ),
-
-                "modo_entrada":
-                    item.get(
-                        "modo_entrada"
-                    ),
-            }
-        )
-
-    return rows
-
-
-def _write_csv(
-    path: Path,
-    rows: list[
-        dict[str, Any]
-    ],
-    fieldnames: list[str],
-) -> None:
-
-    with path.open(
-        "w",
-        encoding="utf-8-sig",
-        newline="",
-    ) as fh:
-
-        writer = csv.DictWriter(
-            fh,
-            fieldnames=fieldnames,
-            extrasaction="ignore",
-        )
-
-        writer.writeheader()
-
-        writer.writerows(
-            rows
-        )
 
 
 def _write_json(
     path: Path,
     data: Any,
 ) -> None:
+
+    path.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
     with path.open(
         "w",
@@ -750,14 +87,18 @@ def _write_json(
             fh,
             ensure_ascii=False,
             indent=2,
-            default=str,
         )
 
 
 def _write_yaml(
     path: Path,
-    data: dict[str, Any],
+    data: Any,
 ) -> None:
+
+    path.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
     with path.open(
         "w",
@@ -767,74 +108,505 @@ def _write_yaml(
         yaml.safe_dump(
             data,
             fh,
-            sort_keys=False,
             allow_unicode=True,
+            sort_keys=False,
         )
 
 
-def _safe_name(
-    value: str,
-) -> str:
+def _write_csv(
+    path: Path,
+    rows: list[
+        dict[str, Any]
+    ],
+    columns: list[str],
+) -> None:
 
-    allowed: list[
-        str
-    ] = []
+    path.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
-    for char in (
-        value
-        .lower()
-        .strip()
+    with path.open(
+        "w",
+        encoding="utf-8-sig",
+        newline="",
+    ) as fh:
+
+        writer = csv.DictWriter(
+            fh,
+            fieldnames=columns,
+            extrasaction="ignore",
+        )
+
+        writer.writeheader()
+
+        for row in rows:
+
+            writer.writerow(
+                {
+                    column:
+                        row.get(
+                            column,
+                            "",
+                        )
+                    for column
+                    in columns
+                }
+            )
+
+
+# ============================================================
+# CONVERSION GENERICA
+# ============================================================
+
+def _to_dict(
+    value: Any,
+) -> dict[str, Any]:
+    """
+    Convierte distintos tipos de resultados internos
+    del pipeline a diccionarios.
+
+    Soporta:
+
+    - dict
+    - dataclasses
+    - objetos con to_dict()
+    - objetos con __dict__
+    """
+
+    # --------------------------------------------------------
+    # Ya es dict
+    # --------------------------------------------------------
+
+    if isinstance(
+        value,
+        dict,
     ):
+        return value
 
-        if (
-            char.isalnum()
-            or char in {
-                "_",
-                "-",
-            }
-        ):
-            allowed.append(
-                char
-            )
+    # --------------------------------------------------------
+    # Dataclass
+    #
+    # Ejemplo:
+    # PostprocessedResult
+    # --------------------------------------------------------
 
-        elif char.isspace():
-
-            allowed.append(
-                "_"
-            )
-
-    return (
-        "".join(
-            allowed
+    if is_dataclass(
+        value
+    ):
+        result = asdict(
+            value
         )
-        or "experimento"
+
+        if isinstance(
+            result,
+            dict,
+        ):
+            return result
+
+    # --------------------------------------------------------
+    # Objetos con to_dict()
+    # --------------------------------------------------------
+
+    if hasattr(
+        value,
+        "to_dict",
+    ):
+        result = value.to_dict()
+
+        if isinstance(
+            result,
+            dict,
+        ):
+            return result
+
+    # --------------------------------------------------------
+    # Objetos normales
+    # --------------------------------------------------------
+
+    if hasattr(
+        value,
+        "__dict__",
+    ):
+        return dict(
+            vars(
+                value
+            )
+        )
+
+    raise TypeError(
+        "No se puede convertir el resultado "
+        f"a dict: {type(value)!r}"
     )
 
 
-def export_consolidation(
-    resultados: list[dict[str, Any]],
-    resumen: dict[str, Any],
+# ============================================================
+# AGRUPACION POR DOCUMENTO
+# ============================================================
+
+def build_document_rows(
+    rows: list[Any],
+) -> list[
+    dict[str, Any]
+]:
+    """
+    Agrupa resultados por documento.
+
+    Soporta dos formatos:
+
+    1. Formato actual:
+       PostprocessedResult
+         -> prediction
+            -> record
+
+    2. Formato legacy/plano:
+       {
+           "id": ...,
+           "metadata": {...},
+           "candidates": [...]
+       }
+
+    Conserva texto_completo para el fallback posterior.
+    """
+
+    grouped: dict[
+        tuple[str, str],
+        dict[str, Any],
+    ] = {}
+
+    for raw_row in rows:
+
+        row = _to_dict(
+            raw_row
+        )
+
+        # ====================================================
+        # FORMATO ACTUAL
+        # ====================================================
+
+        prediction = (
+            row.get(
+                "prediction",
+                {},
+            )
+            or {}
+        )
+
+        if not isinstance(
+            prediction,
+            dict,
+        ):
+            prediction = {}
+
+        record = (
+            prediction.get(
+                "record",
+                {},
+            )
+            or {}
+        )
+
+        if not isinstance(
+            record,
+            dict,
+        ):
+            record = {}
+
+        # ====================================================
+        # FORMATO LEGACY
+        # ====================================================
+
+        legacy_metadata = (
+            row.get(
+                "metadata",
+                {},
+            )
+            or {}
+        )
+
+        if not isinstance(
+            legacy_metadata,
+            dict,
+        ):
+            legacy_metadata = {}
+
+        # ====================================================
+        # METADATA DEL INPUT RECORD
+        # ====================================================
+
+        record_metadata = (
+            record.get(
+                "metadata",
+                {},
+            )
+            or {}
+        )
+
+        if not isinstance(
+            record_metadata,
+            dict,
+        ):
+            record_metadata = {}
+
+        # ====================================================
+        # SELECCIONAR FUENTE
+        # ====================================================
+
+        tiene_record_real = bool(
+            record
+        )
+
+        if tiene_record_real:
+
+            source = record
+            metadata = record_metadata
+
+        else:
+
+            source = row
+            metadata = legacy_metadata
+
+        # ====================================================
+        # IDENTIFICACION DEL DOCUMENTO
+        # ====================================================
+
+        document_id = str(
+            source.get(
+                "id"
+            )
+            or metadata.get(
+                "id"
+            )
+            or ""
+        )
+
+        numero_archivo = str(
+            source.get(
+                "numero_archivo"
+            )
+            or metadata.get(
+                "numero_archivo"
+            )
+            or ""
+        )
+
+        key = (
+            numero_archivo,
+            document_id,
+        )
+
+        # ====================================================
+        # DOCUMENTO NUEVO
+        # ====================================================
+
+        if key not in grouped:
+
+            grouped[
+                key
+            ] = {
+                "id":
+                    document_id,
+
+                "numero_archivo":
+                    numero_archivo,
+
+                "nombre":
+                    source.get(
+                        "nombre"
+                    )
+                    or metadata.get(
+                        "nombre"
+                    )
+                    or "",
+
+                # --------------------------------------------
+                # TEXTO COMPLETO
+                #
+                # Normalmente llega como metadata adicional.
+                # --------------------------------------------
+
+                "texto_completo":
+                    source.get(
+                        "texto_completo"
+                    )
+                    or metadata.get(
+                        "texto_completo"
+                    )
+                    or "",
+
+                "resultados":
+                    [],
+            }
+
+        documento = grouped[
+            key
+        ]
+
+        # ----------------------------------------------------
+        # Si la primera fila no traia texto_completo,
+        # recuperarlo desde otra fila del mismo documento.
+        # ----------------------------------------------------
+
+        if not documento.get(
+            "texto_completo"
+        ):
+
+            texto_completo = (
+                source.get(
+                    "texto_completo"
+                )
+                or metadata.get(
+                    "texto_completo"
+                )
+                or ""
+            )
+
+            if texto_completo:
+
+                documento[
+                    "texto_completo"
+                ] = texto_completo
+
+        # ====================================================
+        # FRAGMENTO
+        # ====================================================
+
+        if tiene_record_real:
+
+            # InputRecord.texto contiene exactamente
+            # el texto enviado al modelo.
+            #
+            # En modo fragmentos:
+            #
+            # record["texto"] == fragmento
+            fragmento = (
+                source.get(
+                    "texto"
+                )
+                or ""
+            )
+
+        else:
+
+            fragmento = (
+                source.get(
+                    "fragmento"
+                )
+                or source.get(
+                    "text"
+                )
+                or metadata.get(
+                    "fragmento"
+                )
+                or ""
+            )
+
+        # ====================================================
+        # RESULTADO DEL FRAGMENTO
+        # ====================================================
+
+        resultado = {
+            "contador_interno":
+                source.get(
+                    "contador_interno"
+                )
+                or metadata.get(
+                    "contador_interno"
+                )
+                or "",
+
+            "palabra_clave":
+                source.get(
+                    "palabra_clave"
+                )
+                or metadata.get(
+                    "palabra_clave"
+                )
+                or "",
+
+            "categoria":
+                source.get(
+                    "categoria"
+                )
+                or metadata.get(
+                    "categoria"
+                )
+                or "",
+
+            "fragmento":
+                fragmento,
+
+            "posicion_inicio":
+                source.get(
+                    "posicion_inicio"
+                )
+                or metadata.get(
+                    "posicion_inicio"
+                ),
+
+            "posicion_fin":
+                source.get(
+                    "posicion_fin"
+                )
+                or metadata.get(
+                    "posicion_fin"
+                ),
+
+            "inicio_fragmento":
+                source.get(
+                    "inicio_fragmento"
+                )
+                or metadata.get(
+                    "inicio_fragmento"
+                ),
+
+            "fin_fragmento":
+                source.get(
+                    "fin_fragmento"
+                )
+                or metadata.get(
+                    "fin_fragmento"
+                ),
+
+            "status":
+                row.get(
+                    "status"
+                )
+                or "",
+
+            "candidates":
+                row.get(
+                    "candidates",
+                    [],
+                )
+                or [],
+        }
+
+        documento[
+            "resultados"
+        ].append(
+            resultado
+        )
+
+    return list(
+        grouped.values()
+    )
+
+
+# ============================================================
+# EXPORT RESULTADOS GLINER
+# ============================================================
+
+def export_results(
+    rows: list[Any],
     experiment_name: str,
     used_config: dict[str, Any],
-    outputs_dir: str | Path = CONSOLIDATION_DIR,
     now: datetime | None = None,
 ) -> dict[str, Path]:
-    """
-    Exporta los resultados de la etapa de consolidacion.
-
-    Esta salida se mantiene separada de las predicciones
-    directas de GLiNER.
-
-    Genera:
-
-        consolidacion.json
-        consolidacion.csv
-        resumen.json
-        config_usada.yaml
-    """
 
     timestamp = (
-        now or datetime.now()
+        now
+        or datetime.now()
     ).strftime(
         "%Y%m%d_%H%M%S"
     )
@@ -843,127 +615,111 @@ def export_consolidation(
         experiment_name
     )
 
-    run_dir = (
-        Path(outputs_dir)
+    raw_run_dir = (
+        RAW_DIR
         / f"{timestamp}_{safe_name}"
     )
 
-    run_dir.mkdir(
+    document_run_dir = (
+        DOCUMENT_DIR
+        / f"{timestamp}_{safe_name}"
+    )
+
+    raw_run_dir.mkdir(
         parents=True,
         exist_ok=True,
     )
 
+    document_run_dir.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    dict_rows = [
+        _to_dict(
+            row
+        )
+        for row
+        in rows
+    ]
+
     # --------------------------------------------------------
-    # JSON completo
+    # RAW JSON
     # --------------------------------------------------------
 
     _write_json(
-        run_dir
-        / "consolidacion.json",
-        resultados,
+        raw_run_dir
+        / "predicciones.json",
+        dict_rows,
     )
 
     # --------------------------------------------------------
-    # CSV simplificado
-    #
-    # Una fila por persona embargada.
-    #
-    # Si un documento tiene dos embargados,
-    # aparecen dos filas.
+    # POR DOCUMENTO
     # --------------------------------------------------------
 
-    csv_rows = (
-        _build_consolidation_csv_rows(
-            resultados
+    documents = (
+        build_document_rows(
+            rows
         )
     )
 
-    consolidation_columns = [
-        "numero_archivo",
-        "id",
-        "nombre_documento",
-        "estado",
-        "cantidad_embargados",
-
-        "indice_embargado",
-
-        "nombre_embargado",
-        "dni_embargado",
-        "cuit_cuil_embargado",
-
-        "roles_detectados",
-        "variantes_nombre",
-
-        "cantidad_fragmentos_soporte",
-        "cantidad_evidencias",
-
-        "score_total",
-    ]
-
-    _write_csv(
-        run_dir
-        / "consolidacion.csv",
-
-        csv_rows,
-
-        consolidation_columns,
+    document_json = (
+        document_run_dir
+        / "predicciones_por_documento.json"
     )
-
-    # --------------------------------------------------------
-    # Resumen
-    # --------------------------------------------------------
 
     _write_json(
-        run_dir
-        / "resumen.json",
-        resumen,
+        document_json,
+        documents,
     )
 
     # --------------------------------------------------------
-    # Configuracion utilizada
+    # CONFIG
     # --------------------------------------------------------
 
     _write_yaml(
-        run_dir
+        raw_run_dir
+        / "config_usada.yaml",
+        used_config,
+    )
+
+    _write_yaml(
+        document_run_dir
         / "config_usada.yaml",
         used_config,
     )
 
     return {
-        "consolidacion_dir":
-            run_dir,
+        "raw_dir":
+            raw_run_dir,
 
-        "consolidacion_json":
-            run_dir
-            / "consolidacion.json",
+        "document_dir":
+            document_run_dir,
 
-        "consolidacion_csv":
-            run_dir
-            / "consolidacion.csv",
+        "raw_json":
+            raw_run_dir
+            / "predicciones.json",
 
-        "resumen_json":
-            run_dir
-            / "resumen.json",
+        "document_json":
+            document_json,
     }
 
 
+# ============================================================
+# CONSOLIDACION CSV
+# ============================================================
+
 def _build_consolidation_csv_rows(
-    resultados: list[dict[str, Any]],
-) -> list[dict[str, Any]]:
-    """
-    Convierte el resultado consolidado a un CSV plano.
+    resultados: list[
+        dict[str, Any]
+    ],
+) -> list[
+    dict[str, Any]
+]:
 
-    Un documento puede generar:
-
-        0 filas de persona
-        1 fila
-        varias filas
-
-    Para documentos NO_RESUELTO se genera igualmente
-    una fila vacia para no perder el documento en el CSV.
-    """
-
-    rows: list[dict[str, Any]] = []
+    rows: list[
+        dict[str, Any]
+    ] = []
 
     for resultado in resultados:
 
@@ -975,39 +731,76 @@ def _build_consolidation_csv_rows(
             or []
         )
 
+        base = {
+            "numero_archivo":
+                resultado.get(
+                    "numero_archivo"
+                ),
+
+            "id":
+                resultado.get(
+                    "id"
+                ),
+
+            "nombre_documento":
+                resultado.get(
+                    "nombre_documento"
+                ),
+
+            "estado":
+                resultado.get(
+                    "estado"
+                ),
+
+            "suficiente":
+                resultado.get(
+                    "suficiente",
+                    False,
+                ),
+
+            "requiere_fallback_documento_completo":
+                resultado.get(
+                    "requiere_fallback_documento_completo",
+                    False,
+                ),
+
+            "motivos_insuficiencia":
+                " | ".join(
+                    resultado.get(
+                        "motivos_insuficiencia",
+                        [],
+                    )
+                    or []
+                ),
+
+            "cantidad_embargados":
+                resultado.get(
+                    "cantidad_embargados",
+                    0,
+                ),
+
+            "requiere_revision":
+                resultado.get(
+                    "requiere_revision",
+                    False,
+                ),
+
+            "cantidad_conflictos_identificador":
+                resultado.get(
+                    "cantidad_conflictos_identificador",
+                    0,
+                ),
+        }
+
         # ----------------------------------------------------
-        # Documento sin embargado resuelto
+        # DOCUMENTO SIN PERSONAS ACEPTADAS
         # ----------------------------------------------------
 
         if not personas:
 
             rows.append(
                 {
-                    "numero_archivo":
-                        resultado.get(
-                            "numero_archivo"
-                        ),
-
-                    "id":
-                        resultado.get(
-                            "id"
-                        ),
-
-                    "nombre_documento":
-                        resultado.get(
-                            "nombre_documento"
-                        ),
-
-                    "estado":
-                        resultado.get(
-                            "estado"
-                        ),
-
-                    "cantidad_embargados":
-                        resultado.get(
-                            "cantidad_embargados",
-                            0,
-                        ),
+                    **base,
 
                     "indice_embargado":
                         "",
@@ -1035,13 +828,16 @@ def _build_consolidation_csv_rows(
 
                     "score_total":
                         0,
+
+                    "identidad_inconsistente":
+                        False,
                 }
             )
 
             continue
 
         # ----------------------------------------------------
-        # Uno o varios embargados
+        # UNA FILA POR PERSONA CONSOLIDADA
         # ----------------------------------------------------
 
         for index, persona in enumerate(
@@ -1049,49 +845,9 @@ def _build_consolidation_csv_rows(
             start=1,
         ):
 
-            roles = (
-                persona.get(
-                    "roles_detectados",
-                    [],
-                )
-                or []
-            )
-
-            variantes = (
-                persona.get(
-                    "variantes_nombre",
-                    [],
-                )
-                or []
-            )
-
             rows.append(
                 {
-                    "numero_archivo":
-                        resultado.get(
-                            "numero_archivo"
-                        ),
-
-                    "id":
-                        resultado.get(
-                            "id"
-                        ),
-
-                    "nombre_documento":
-                        resultado.get(
-                            "nombre_documento"
-                        ),
-
-                    "estado":
-                        resultado.get(
-                            "estado"
-                        ),
-
-                    "cantidad_embargados":
-                        resultado.get(
-                            "cantidad_embargados",
-                            len(personas),
-                        ),
+                    **base,
 
                     "indice_embargado":
                         index,
@@ -1116,14 +872,20 @@ def _build_consolidation_csv_rows(
 
                     "roles_detectados":
                         " | ".join(
-                            str(role)
-                            for role in roles
+                            persona.get(
+                                "roles_detectados",
+                                [],
+                            )
+                            or []
                         ),
 
                     "variantes_nombre":
                         " | ".join(
-                            str(variante)
-                            for variante in variantes
+                            persona.get(
+                                "variantes_nombre",
+                                [],
+                            )
+                            or []
                         ),
 
                     "cantidad_fragmentos_soporte":
@@ -1143,7 +905,258 @@ def _build_consolidation_csv_rows(
                             "score_total",
                             0,
                         ),
+
+                    "identidad_inconsistente":
+                        persona.get(
+                            "identidad_inconsistente",
+                            False,
+                        ),
                 }
             )
 
     return rows
+
+
+# ============================================================
+# EXPORT CONSOLIDACION
+# ============================================================
+
+def export_consolidation(
+    resultados: list[
+        dict[str, Any]
+    ],
+    resumen: dict[str, Any],
+    experiment_name: str,
+    used_config: dict[str, Any],
+    outputs_dir: str | Path = CONSOLIDATION_DIR,
+    now: datetime | None = None,
+) -> dict[str, Path]:
+
+    timestamp = (
+        now
+        or datetime.now()
+    ).strftime(
+        "%Y%m%d_%H%M%S"
+    )
+
+    safe_name = _safe_name(
+        experiment_name
+    )
+
+    run_dir = (
+        Path(
+            outputs_dir
+        )
+        / f"{timestamp}_{safe_name}"
+    )
+
+    run_dir.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    # ========================================================
+    # SEPARACION SUFICIENTES / INSUFICIENTES
+    # ========================================================
+
+    suficientes = [
+        resultado
+        for resultado
+        in resultados
+        if resultado.get(
+            "suficiente",
+            False,
+        )
+    ]
+
+    insuficientes = [
+        resultado
+        for resultado
+        in resultados
+        if not resultado.get(
+            "suficiente",
+            False,
+        )
+    ]
+
+    # ========================================================
+    # JSON GENERAL
+    # ========================================================
+
+    consolidacion_json = (
+        run_dir
+        / "consolidacion.json"
+    )
+
+    _write_json(
+        consolidacion_json,
+        resultados,
+    )
+
+    # ========================================================
+    # JSON SUFICIENTES
+    # ========================================================
+
+    suficientes_json = (
+        run_dir
+        / "suficientes.json"
+    )
+
+    _write_json(
+        suficientes_json,
+        suficientes,
+    )
+
+    # ========================================================
+    # JSON INSUFICIENTES
+    #
+    # Entrada futura para extracción sobre texto_completo.
+    # ========================================================
+
+    insuficientes_json = (
+        run_dir
+        / "insuficientes.json"
+    )
+
+    _write_json(
+        insuficientes_json,
+        insuficientes,
+    )
+
+    # ========================================================
+    # COLUMNAS CSV
+    # ========================================================
+
+    columns = [
+        "numero_archivo",
+        "id",
+        "nombre_documento",
+
+        "estado",
+
+        "suficiente",
+        "requiere_fallback_documento_completo",
+        "motivos_insuficiencia",
+
+        "cantidad_embargados",
+
+        "indice_embargado",
+
+        "nombre_embargado",
+        "dni_embargado",
+        "cuit_cuil_embargado",
+
+        "roles_detectados",
+        "variantes_nombre",
+
+        "cantidad_fragmentos_soporte",
+        "cantidad_evidencias",
+
+        "score_total",
+
+        "identidad_inconsistente",
+
+        "requiere_revision",
+        "cantidad_conflictos_identificador",
+    ]
+
+    # ========================================================
+    # CSV GENERAL
+    # ========================================================
+
+    consolidacion_csv = (
+        run_dir
+        / "consolidacion.csv"
+    )
+
+    _write_csv(
+        consolidacion_csv,
+        _build_consolidation_csv_rows(
+            resultados
+        ),
+        columns,
+    )
+
+    # ========================================================
+    # CSV SUFICIENTES
+    # ========================================================
+
+    suficientes_csv = (
+        run_dir
+        / "suficientes.csv"
+    )
+
+    _write_csv(
+        suficientes_csv,
+        _build_consolidation_csv_rows(
+            suficientes
+        ),
+        columns,
+    )
+
+    # ========================================================
+    # CSV INSUFICIENTES
+    # ========================================================
+
+    insuficientes_csv = (
+        run_dir
+        / "insuficientes.csv"
+    )
+
+    _write_csv(
+        insuficientes_csv,
+        _build_consolidation_csv_rows(
+            insuficientes
+        ),
+        columns,
+    )
+
+    # ========================================================
+    # RESUMEN
+    # ========================================================
+
+    resumen_json = (
+        run_dir
+        / "resumen.json"
+    )
+
+    _write_json(
+        resumen_json,
+        resumen,
+    )
+
+    # ========================================================
+    # CONFIG
+    # ========================================================
+
+    _write_yaml(
+        run_dir
+        / "config_usada.yaml",
+        used_config,
+    )
+
+    return {
+        "consolidacion_dir":
+            run_dir,
+
+        "consolidacion_json":
+            consolidacion_json,
+
+        "consolidacion_csv":
+            consolidacion_csv,
+
+        "suficientes_json":
+            suficientes_json,
+
+        "suficientes_csv":
+            suficientes_csv,
+
+        "insuficientes_json":
+            insuficientes_json,
+
+        "insuficientes_csv":
+            insuficientes_csv,
+
+        "resumen_json":
+            resumen_json,
+    }

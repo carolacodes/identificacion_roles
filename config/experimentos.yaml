@@ -226,6 +226,7 @@ experiments:
       - posicion_fin
       - inicio_fragmento
       - fin_fragmento
+      - texto_completo
 
   # ============================================================
   # V7 - GLINER2 PII - THRESHOLD NOMBRE 0.55
@@ -263,6 +264,7 @@ experiments:
       - posicion_fin
       - inicio_fragmento
       - fin_fragmento
+      - texto_completo
 
   # ============================================================
   # V7 - GLINER2 PII - THRESHOLD NOMBRE 0.50
@@ -300,6 +302,7 @@ experiments:
       - posicion_fin
       - inicio_fragmento
       - fin_fragmento
+      - texto_completo
 
   # ============================================================
   # V7 - GLINER2 MULTI - THRESHOLD NOMBRE 0.55
@@ -337,6 +340,7 @@ experiments:
       - posicion_fin
       - inicio_fragmento
       - fin_fragmento
+      - texto_completo
 
   # ============================================================
   # V7 - GLINER2 MULTI - THRESHOLD NOMBRE 0.50
@@ -374,3 +378,4 @@ experiments:
       - posicion_fin
       - inicio_fragmento
       - fin_fragmento
+      - texto_completo

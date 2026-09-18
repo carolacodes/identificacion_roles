@@ -1,0 +1,3471 @@
+[
+  {
+    "id": "",
+    "numero_archivo": "",
+    "nombre_documento": "",
+    "texto_completo": "",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_embargada",
+      "solo_candidatos_descartados",
+      "conflicto_identificador"
+    ],
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 73,
+    "cantidad_grupos_descartados": 73,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "NAHUEL OSCAR MARQUEZ",
+        "dni_embargado": "33.470.065",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "NAHUEL OSCAR MARQUEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.79,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "NAHUEL OSCAR MARQUEZ",
+            "dni_detectado": "33.470.065",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7648125886917114,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "MAZA ARIAS MERCEDES FATIMA",
+        "dni_embargado": "32.630.518",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "MAZA ARIAS MERCEDES FATIMA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.105,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MAZA ARIAS MERCEDES FATIMA",
+            "dni_detectado": "32.630.518",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.5386322736740112,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "VINCI BRIAN EMMANUEL",
+        "dni_embargado": "34.436.998",
+        "cuit_cuil_embargado": "20-34436998-5",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "VINCI BRIAN EMMANUEL"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 18.354,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "VINCI BRIAN EMMANUEL",
+            "dni_detectado": "34.436.998",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6216092109680176,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "VINCI BRIAN EMMANUEL",
+            "dni_detectado": "34.436.998",
+            "cuit_cuil_detectado": "20-34436998-5",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6669379472732544,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "STIO MARIA AMELIA",
+        "dni_embargado": "6.551.699",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "STIO MARIA AMELIA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.075,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "STIO MARIA AMELIA",
+            "dni_detectado": "6.551.699",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.530022919178009,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "MIGUEL ANGEL SEGOVIA",
+        "dni_embargado": "36003333",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "MIGUEL ANGEL SEGOVIA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 3,
+        "score_total": 21.822,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIGUEL ANGEL SEGOVIA",
+            "dni_detectado": "36003333",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6320766806602478,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIGUEL ANGEL SEGOVIA",
+            "dni_detectado": "36003333",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5230035185813904,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIGUEL ANGEL SEGOVIA",
+            "dni_detectado": "36003333",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6200236678123474,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "ROBERTO CARLOS LOBO",
+        "dni_embargado": "21773000",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "ROBERTO CARLOS LOBO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.208,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "ROBERTO CARLOS LOBO",
+            "dni_detectado": "21773000",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9033471345901489,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "CLAUDIA ALEJANDRA MIRANDA",
+        "dni_embargado": "23.360.827",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada"
+        ],
+        "variantes_nombre": [
+          "CLAUDIA ALEJANDRA MIRANDA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.764,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "CLAUDIA ALEJANDRA MIRANDA",
+            "dni_detectado": "23.360.827",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.7587734460830688,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "MIGUEL MARCELO MEDINA",
+        "dni_embargado": "16289505",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "MIGUEL MARCELO MEDINA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 4,
+        "score_total": 28.682,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIGUEL MARCELO MEDINA",
+            "dni_detectado": "16289505",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5868191719055176,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIGUEL MARCELO MEDINA",
+            "dni_detectado": "16289505",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5405765771865845,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIGUEL MARCELO MEDINA",
+            "dni_detectado": "16289505",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5936295390129089,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIGUEL MARCELO MEDINA",
+            "dni_detectado": "16289505",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5084933638572693,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "LAURA ESTELA FERNANDEZ",
+        "dni_embargado": "20.371.813",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "LAURA ESTELA FERNANDEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.651,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "LAURA ESTELA FERNANDEZ",
+            "dni_detectado": "20.371.813",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.779082715511322,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "AURELIO RODOLFO MELGAREJO",
+        "dni_embargado": "13273828",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "AURELIO RODOLFO MELGAREJO",
+          "Aurelio Rodolfo Melgarejo"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 14.948,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "AURELIO RODOLFO MELGAREJO",
+            "dni_detectado": "13273828",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.774491012096405,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Aurelio Rodolfo Melgarejo",
+            "dni_detectado": "13.273.828",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.543718695640564,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "ESTEFANIA MIHANOVICH",
+        "dni_embargado": "44.398.455",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "ESTEFANIA MIHANOVICH",
+          "Estefanía MIHANOVICH"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 15.426,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "ESTEFANIA MIHANOVICH",
+            "dni_detectado": "44.398.455",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.898319661617279,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Estefanía MIHANOVICH",
+            "dni_detectado": "44.398.455",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.5843899846076965,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "SANTIAGO NICOLAS GONZALEZ",
+        "dni_embargado": "39.872.112",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "SANTIAGO NICOLAS GONZALEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.628,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "SANTIAGO NICOLAS GONZALEZ",
+            "dni_detectado": "39.872.112",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.7105301022529602,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "GONZALEZ",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada"
+        ],
+        "variantes_nombre": [
+          "GONZALEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 8.399,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "GONZALEZ",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.5609734058380127,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "GONZALEZ",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.5718708634376526,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "MIRTA EDITH BONACALZA",
+        "dni_embargado": "40797926",
+        "cuit_cuil_embargado": "20-26592524-4",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "MIRTA EDITH BONACALZA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 3,
+        "score_total": 27.844,
+        "identidad_inconsistente": true,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIRTA EDITH BONACALZA",
+            "dni_detectado": "40797926",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.8945728540420532,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIRTA EDITH BONACALZA",
+            "dni_detectado": "40797926",
+            "cuit_cuil_detectado": "20-26592524-4",
+            "rol_detectado": "",
+            "nombre_confidence": 0.8283604979515076,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIRTA EDITH BONACALZA",
+            "dni_detectado": "40797926",
+            "cuit_cuil_detectado": "23-24846229-9",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8928911685943604,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "MIRTA EDITH BONACALZA",
+        "dni_embargado": "24846229",
+        "cuit_cuil_embargado": "CUIT 20-26592524-4",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "MIRTA EDITH BONACALZA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 11.184,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIRTA EDITH BONACALZA",
+            "dni_detectado": "24846229",
+            "cuit_cuil_detectado": "CUIT 20-26592524-4",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7911209464073181,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "ELIAS CARBALLO",
+        "dni_embargado": "40797926",
+        "cuit_cuil_embargado": "CUIT 20-26592524-4",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "ELIAS CARBALLO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 17.037,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "ELIAS CARBALLO",
+            "dni_detectado": "40797926",
+            "cuit_cuil_detectado": "CUIT 20-26592524-4",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9727202653884888,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "ELIAS CARBALLO",
+            "dni_detectado": "40797926",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9883747100830078,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "GROSSO JUAN JOSE",
+        "dni_embargado": "14.748.434",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "GROSSO JUAN JOSE"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 14.764,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "GROSSO JUAN JOSE",
+            "dni_detectado": "14.748.434",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5050463676452637,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "GROSSO JUAN JOSE",
+            "dni_detectado": "14.748.434",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7528215646743774,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "ESTER JOAQUINA PRATS",
+        "dni_embargado": "10533729",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "ESTER JOAQUINA PRATS"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.25,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "ESTER JOAQUINA PRATS",
+            "dni_detectado": "10533729",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9171798825263977,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "Nancy Mariela Benedetti",
+        "dni_embargado": "25.688.264",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada"
+        ],
+        "variantes_nombre": [
+          "Nancy Mariela Benedetti"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 15.222,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Nancy Mariela Benedetti",
+            "dni_detectado": "25.688.264",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.6819266676902771,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Nancy Mariela Benedetti",
+            "dni_detectado": "25.688.264",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.7349546551704407,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "LEONARDO GABRIEL",
+        "dni_embargado": "28.731.512",
+        "cuit_cuil_embargado": "20-28731512-1",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "LEONARDO GABRIEL"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 4,
+        "score_total": 39.635,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "LEONARDO GABRIEL",
+            "dni_detectado": "28.731.512",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8813977837562561,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "LEONARDO GABRIEL",
+            "dni_detectado": "28.731.512",
+            "cuit_cuil_detectado": "20-28731512-1",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9065009355545044,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "LEONARDO GABRIEL",
+            "dni_detectado": "28.731.512",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8662594556808472,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "LEONARDO GABRIEL",
+            "dni_detectado": "28.731.512",
+            "cuit_cuil_detectado": "20-28731512-1",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8986825942993164,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "VILLALBA JOSE ALBERTO",
+        "dni_embargado": "31.095.679",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "VILLALBA JOSE ALBERTO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.239,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "VILLALBA JOSE ALBERTO",
+            "dni_detectado": "31.095.679",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9140202403068542,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "Fernando Martín González",
+        "dni_embargado": "27680733",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Fernando Martín González"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.723,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Fernando Martín González",
+            "dni_detectado": "27680733",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7424123883247375,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "NATALIA ANDREA OÑA",
+        "dni_embargado": "26.294.008",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada"
+        ],
+        "variantes_nombre": [
+          "NATALIA ANDREA OÑA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.958,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "NATALIA ANDREA OÑA",
+            "dni_detectado": "26.294.008",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.8210808634757996,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "JACQUET ROBERTO LUIS",
+        "dni_embargado": "20.258.157",
+        "cuit_cuil_embargado": "23-20258157-9",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "JACQUET ROBERTO LUIS"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 18.99,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "JACQUET ROBERTO LUIS",
+            "dni_detectado": "20.258.157",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7449390292167664,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "JACQUET ROBERTO LUIS",
+            "dni_detectado": "20.258.157",
+            "cuit_cuil_detectado": "23-20258157-9",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7558107972145081,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "FEDERICO MARIO",
+        "dni_embargado": "29.987.246",
+        "cuit_cuil_embargado": "20299872468",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "FEDERICO MARIO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 3,
+        "score_total": 31.451,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "FEDERICO MARIO",
+            "dni_detectado": "29.987.246",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9114288687705994,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "FEDERICO MARIO",
+            "dni_detectado": "29.987.246",
+            "cuit_cuil_detectado": "20299872468",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9141038656234741,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "FEDERICO MARIO",
+            "dni_detectado": "29.987.246",
+            "cuit_cuil_detectado": "20299872468",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.8925014734268188,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "MARCELA PATRICIA GARCIA PALACIOS",
+        "dni_embargado": "93757465",
+        "cuit_cuil_embargado": "27-93757465-2",
+        "roles_detectados": [
+          "demandada",
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "MARCELA PATRICIA GARCIA PALACIOS",
+          "PATRICIA GARCIA PALACIOS"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 5,
+        "score_total": 50.641,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MARCELA PATRICIA GARCIA PALACIOS",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "27-93757465-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6644623875617981,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MARCELA PATRICIA GARCIA PALACIOS",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.5411686897277832,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MARCELA PATRICIA GARCIA PALACIOS",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "27-93757465-2",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.5549665689468384,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MARCELA PATRICIA GARCIA PALACIOS",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "27-93757465-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7047417163848877,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "PATRICIA GARCIA PALACIOS",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "27-93757465-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6083939075469971,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "ROBERTO GABRIEL SZILAK",
+        "dni_embargado": "93757465",
+        "cuit_cuil_embargado": "27-93757465-2",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "ROBERTO GABRIEL SZILAK"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.968,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "ROBERTO GABRIEL SZILAK",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "27-93757465-2",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9320326447486877,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "ATRICIA GARCIA PALACIOS",
+        "dni_embargado": "93757465",
+        "cuit_cuil_embargado": "27-93757465-2",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "ATRICIA GARCIA PALACIOS"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 10.889,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "ATRICIA GARCIA PALACIOS",
+            "dni_detectado": "93757465",
+            "cuit_cuil_detectado": "27-93757465-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6367252469062805,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "ALFREDO ANTONIO ARIAS",
+        "dni_embargado": "10.700.496",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "ALFREDO ANTONIO ARIAS"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 14.15,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "ALFREDO ANTONIO ARIAS",
+            "dni_detectado": "10.700.496",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5388442873954773,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "ALFREDO ANTONIO ARIAS",
+            "dni_detectado": "10.700.496",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5203869342803955,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "BENITO CABRERA VASQUEZ",
+        "dni_embargado": "94.310.138",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "BENITO CABRERA VASQUEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 6,
+        "score_total": 32.113,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "BENITO CABRERA VASQUEZ",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7050774693489075,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "BENITO CABRERA VASQUEZ",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6936219334602356,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "BENITO CABRERA VASQUEZ",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5933053493499756,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "BENITO CABRERA VASQUEZ",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5926384925842285,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "BENITO CABRERA VASQUEZ",
+            "dni_detectado": "94.310.138",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5956549644470215,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "BENITO CABRERA VASQUEZ",
+            "dni_detectado": "94.310.138",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5831711888313293,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "tero",
+        "dni_embargado": "29.670.629",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "tero"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.877,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "tero",
+            "dni_detectado": "29.670.629",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8418472409248352,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "Brian Damián Galeppi",
+        "dni_embargado": "38.079.326",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Brian Damián Galeppi"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 14.058,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Brian Damián Galeppi",
+            "dni_detectado": "38.079.326",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5563540458679199,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Brian Damián Galeppi",
+            "dni_detectado": "38.079.326",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5082346200942993,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "PEDRAZA TEODORO ROVEL",
+        "dni_embargado": "20.276.462",
+        "cuit_cuil_embargado": "20-20276462-3",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "PEDRAZA TEODORO ROVEL"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 10.43,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "PEDRAZA TEODORO ROVEL",
+            "dni_detectado": "20.276.462",
+            "cuit_cuil_detectado": "20-20276462-3",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5221715569496155,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "DANIEL CARLOS PEREZ",
+        "dni_embargado": "24391072",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "DANIEL CARLOS PEREZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.549,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "DANIEL CARLOS PEREZ",
+            "dni_detectado": "24391072",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6835214495658875,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "Marcos Weisfeld",
+        "dni_embargado": "23.524.519",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Marcos Weisfeld"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.997,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Marcos Weisfeld",
+            "dni_detectado": "23.524.519",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8354060053825378,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "andro Giménez",
+        "dni_embargado": "32.092.512",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "andro Giménez"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.247,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "andro Giménez",
+            "dni_detectado": "32.092.512",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9221287369728088,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "JOSE LUIS VALENTINI",
+        "dni_embargado": "17.196.196",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "JOSE LUIS",
+          "JOSE LUIS VALENTINI"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 3,
+        "score_total": 16.728,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "JOSE LUIS VALENTINI",
+            "dni_detectado": "17.196.196",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8710059523582458,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "JOSE LUIS",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6033743023872375,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "JOSE LUIS",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.6033743023872375,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "JULIO",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "30-71412954-2",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "JULIO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 4,
+        "score_total": 32.895,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "JULIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "30-71412954-2",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8192372918128967,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "JULIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "30-71412954-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9093766808509827,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "JULIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "30-71412954-2",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6127617359161377,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "JULIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "30-71412954-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.681850254535675,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "IVAN ROBERTO SILVA",
+        "dni_embargado": "27.318.472",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "IVAN ROBERTO SILVA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 13.974,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "IVAN ROBERTO SILVA",
+            "dni_detectado": "27.318.472",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5001079440116882,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "IVAN ROBERTO SILVA",
+            "dni_detectado": "27.318.472",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5028657913208008,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "María Florencia Ortigoza",
+        "dni_embargado": "28.340.768",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "María Florencia Ortigoza"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 14.712,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "María Florencia Ortigoza",
+            "dni_detectado": "28.340.768",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6540794968605042,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "María Florencia Ortigoza",
+            "dni_detectado": "28.340.768",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6540794968605042,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "Donatella Mía Leveratto",
+        "dni_embargado": "46.876.857",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Donatella Mía Leveratto"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 4,
+        "score_total": 28.912,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Donatella Mía Leveratto",
+            "dni_detectado": "46.876.857",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5946018695831299,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Donatella Mía Leveratto",
+            "dni_detectado": "46.876.857",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5986703038215637,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Donatella Mía Leveratto",
+            "dni_detectado": "46.876.857",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5946018695831299,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Donatella Mía Leveratto",
+            "dni_detectado": "46.876.857",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5986703038215637,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "Miriam López Franco",
+        "dni_embargado": "94.542.024",
+        "cuit_cuil_embargado": "27-94542024-9",
+        "roles_detectados": [
+          "demandada",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "MIRIAM LOPEZ FRANCO",
+          "Miriam López Franco"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 3,
+        "score_total": 26.834,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIRIAM LOPEZ FRANCO",
+            "dni_detectado": "94.542.024",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6749036908149719,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIRIAM LOPEZ FRANCO",
+            "dni_detectado": "94.542.024",
+            "cuit_cuil_detectado": "27-94542024-9",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7003019452095032,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Miriam López Franco",
+            "dni_detectado": "94.542.024",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.952083945274353,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "HERRERA MAXIMILIANO FRANCISCO ALEXIS",
+        "dni_embargado": "36.301.174",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "HERRERA MAXIMILIANO FRANCISCO ALEXIS"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.205,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "HERRERA MAXIMILIANO FRANCISCO ALEXIS",
+            "dni_detectado": "36.301.174",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.5710895657539368,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "GRACIELA EDITH CANO",
+        "dni_embargado": "18.347.843",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "GRACIELA EDITH CANO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.056,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "GRACIELA EDITH CANO",
+            "dni_detectado": "18.347.843",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5442982316017151,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "GRISELDA BEATRIZ VALENZUELA",
+        "dni_embargado": "24.326.675",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "GRISELDA BEATRIZ VALENZUELA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.314,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "GRISELDA BEATRIZ VALENZUELA",
+            "dni_detectado": "24.326.675",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6072999238967896,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "Ruben Di Benedetto",
+        "dni_embargado": "14.048.834",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Ruben Di Benedetto"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 15.721,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Ruben Di Benedetto",
+            "dni_detectado": "14.048.834",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.7426656484603882,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Ruben Di Benedetto",
+            "dni_detectado": "14.048.834",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8711006045341492,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "ANGEL EZEQUIEL ALARCON",
+        "dni_embargado": "44.583.812",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada"
+        ],
+        "variantes_nombre": [
+          "ANGEL EZEQUIEL ALARCON"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.025,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "ANGEL EZEQUIEL ALARCON",
+            "dni_detectado": "44.583.812",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.5112517476081848,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "LIPSKER MATIAS ALEXIS",
+        "dni_embargado": "24.564.225",
+        "cuit_cuil_embargado": "20-24564225-4",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "LIPSKER MATIAS ALEXIS"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 19.059,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "LIPSKER MATIAS ALEXIS",
+            "dni_detectado": "24.564.225",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.738457202911377,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "LIPSKER MATIAS ALEXIS",
+            "dni_detectado": "24.564.225",
+            "cuit_cuil_detectado": "20-24564225-4",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7843198180198669,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "MIGUEL ÁNGEL",
+        "dni_embargado": "23087819",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "MIGUEL ÁNGEL"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.929,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MIGUEL ÁNGEL",
+            "dni_detectado": "23087819",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8108332753181458,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "Juan Cruz Millozzi",
+        "dni_embargado": "37.027.693",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "Juan Cruz Millozzi"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.109,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Juan Cruz Millozzi",
+            "dni_detectado": "37.027.693",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.5475836396217346,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "LUNA HORACIO EMANUEL",
+        "dni_embargado": "D.N.I. 35499690",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado",
+          "titular"
+        ],
+        "variantes_nombre": [
+          "LUNA HORACIO EMANUEL"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 3,
+        "score_total": 22.375,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "LUNA HORACIO EMANUEL",
+            "dni_detectado": "D.N.I. 35499690",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.6656466126441956,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "LUNA HORACIO EMANUEL",
+            "dni_detectado": "D.N.I. 35499690",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.713534414768219,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "LUNA HORACIO EMANUEL",
+            "dni_detectado": "35499690",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6590866446495056,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "HORACIO LUIS VACCHER",
+        "dni_embargado": "11.376.446",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "HORACIO LUIS VACCHER"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 14.379,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "HORACIO LUIS VACCHER",
+            "dni_detectado": "11.376.446",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5643613338470459,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "HORACIO LUIS VACCHER",
+            "dni_detectado": "11.376.446",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5643613338470459,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "MACIEL FERNANDO OSCAR",
+        "dni_embargado": "27.825.597",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "MACIEL FERNANDO OSCAR"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.187,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MACIEL FERNANDO OSCAR",
+            "dni_detectado": "27.825.597",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5661137104034424,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "SOTO JUAN RAMON",
+        "dni_embargado": "34.300.506",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "SOTO JUAN RAMON"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.406,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "SOTO JUAN RAMON",
+            "dni_detectado": "34.300.506",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.638347327709198,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "ROMERO GABRIEL GUSTAVO",
+        "dni_embargado": "25.925.481",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "ROMERO GABRIEL GUSTAVO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.371,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "ROMERO GABRIEL GUSTAVO",
+            "dni_detectado": "25.925.481",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6266531944274902,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "HORACIO OSCAR MONTENEGRO",
+        "dni_embargado": "23.420.002",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "HORACIO OSCAR MONTENEGRO",
+          "Horacio Oscar Montenegro"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 14.854,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "HORACIO OSCAR MONTENEGRO",
+            "dni_detectado": "23.420.002",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6742072701454163,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Horacio Oscar Montenegro",
+            "dni_detectado": "23.420.002",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6161678433418274,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "LUCINDO RAMÓN CORNEJO",
+        "dni_embargado": "12.848.992",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "LUCINDO RAMÓN CORNEJO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.86,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "LUCINDO RAMÓN CORNEJO",
+            "dni_detectado": "12.848.992",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.788357675075531,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "Daniel Ezequiel Romero",
+        "dni_embargado": "29.225.672",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "DANIEL EZEQUIEL ROMERO",
+          "Daniel Ezequiel Romero"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 15.899,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "DANIEL EZEQUIEL ROMERO",
+            "dni_detectado": "29.225.672",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8051364421844482,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Daniel Ezequiel Romero",
+            "dni_detectado": "29.225.672",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8303725719451904,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "CARLA STEFANIA",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "CARLA STEFANIA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 4.13,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "CARLA STEFANIA",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5432392954826355,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "RUBEN ALBERTO",
+        "dni_embargado": "5.612.521",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "RUBEN ALBERTO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 16.263,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "RUBEN ALBERTO",
+            "dni_detectado": "5.612.521",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9834756851196289,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "RUBEN ALBERTO",
+            "dni_detectado": "5.612.521",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7748113870620728,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "EDUARDO JAVIER FERNANDEZ",
+        "dni_embargado": "21.594.165",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "EDUARDO JAVIER FERNANDEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.645,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "EDUARDO JAVIER FERNANDEZ",
+            "dni_detectado": "21.594.165",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7161617279052734,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "GONZALEZ LEDESMA MAURICIO",
+        "dni_embargado": "35.646.104",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "GONZALEZ LEDESMA MAURICIO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.124,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "GONZALEZ LEDESMA MAURICIO",
+            "dni_detectado": "35.646.104",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5423896312713623,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "ALEJANDRO RODRIGO ALBORNOZ",
+        "dni_embargado": "20.583.561",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "ALEJANDRO RODRIGO ALBORNOZ",
+          "Alejandro Rodrigo Albornoz"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 15.659,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "ALEJANDRO RODRIGO ALBORNOZ",
+            "dni_detectado": "20.583.561",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8805411458015442,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Alejandro Rodrigo Albornoz",
+            "dni_detectado": "20.583.561",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6746142506599426,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "AGUSTIN MARIANO PEROSIO",
+        "dni_embargado": "16.893.287",
+        "cuit_cuil_embargado": "20-16893287-2",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "AGUSTIN MARIANO PEROSIO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 6,
+        "score_total": 50.226,
+        "identidad_inconsistente": true,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "AGUSTIN MARIANO PEROSIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "20-16893287-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5538995862007141,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "AGUSTIN MARIANO PEROSIO",
+            "dni_detectado": "16.893.287",
+            "cuit_cuil_detectado": "20-16893287-2",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.5359967350959778,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "AGUSTIN MARIANO PEROSIO",
+            "dni_detectado": "16.893.287",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5990182757377625,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "AGUSTIN MARIANO PEROSIO",
+            "dni_detectado": "16.893.287",
+            "cuit_cuil_detectado": "20-16893287-2",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5221336483955383,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "AGUSTIN MARIANO PEROSIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "23-14564727-4",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9374890327453613,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "AGUSTIN MARIANO PEROSIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "23-14564727-4",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9641178250312805,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "Favio Duarte Montania",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "20-94958329-6",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "Favio Duarte Montania"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.724,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Favio Duarte Montania",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "20-94958329-6",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.5906410813331604,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "DIEGO CISTERNA",
+        "dni_embargado": "26034291",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "CISTERNA DIEGO",
+          "DIEGO CISTERNA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 16.543,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "DIEGO CISTERNA",
+            "dni_detectado": "26034291",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9744133949279785,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "CISTERNA DIEGO",
+            "dni_detectado": "26.034.291",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8774753212928772,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "CLAUDIO LEONARDO",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "CLAUDIO LEONARDO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 2,
+        "score_total": 9.276,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "CLAUDIO LEONARDO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.715221643447876,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "CLAUDIO LEONARDO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7102766036987305,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "ALFREDO ISMAEL LOPEZ",
+        "dni_embargado": "27015232",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "ALFREDO ISMAEL LOPEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.887,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "ALFREDO ISMAEL LOPEZ",
+            "dni_detectado": "27015232",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7964606881141663,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "JUAN CARLOS SEQUERA",
+        "dni_embargado": "4.513.281",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "JUAN CARLOS SEQUERA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.146,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "JUAN CARLOS SEQUERA",
+            "dni_detectado": "4.513.281",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8828296065330505,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "Clara Evangeline Torres",
+        "dni_embargado": "23.492.823",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Clara Evangeline Torres"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.016,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "Clara Evangeline Torres",
+            "dni_detectado": "23.492.823",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5072511434555054,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "PAULA ALEJANDRA\n\nPILARIA",
+        "dni_embargado": "21.594.889",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "PAULA ALEJANDRA\n\nPILARIA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.015,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "PAULA ALEJANDRA\n\nPILARIA",
+            "dni_detectado": "21.594.889",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8395252227783203,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "LOPEZ CARLOS PASCUAL",
+        "dni_embargado": "7.759.088",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "LOPEZ CARLOS PASCUAL"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.131,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "LOPEZ CARLOS PASCUAL",
+            "dni_detectado": "7.759.088",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.8791688680648804,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      },
+      {
+        "nombre_embargado": "MONTIEL DARUEN RUBEN",
+        "dni_embargado": "21.525.457",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "MONTIEL DARUEN RUBEN"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.45,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "",
+            "palabra_clave": "",
+            "categoria": "",
+            "nombre_detectado": "MONTIEL DARUEN RUBEN",
+            "dni_detectado": "21.525.457",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6525831818580627,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "",
+            "contexto_local": ""
+          }
+        ]
+      }
+    ],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 6,
+    "conflictos_identificador": [
+      {
+        "tipo_identificador": "dni",
+        "valor_normalizado": "40797926",
+        "nombre_a": "MIRTA EDITH BONACALZA",
+        "nombre_b": "ELIAS CARBALLO",
+        "variantes_a": [
+          "MIRTA EDITH BONACALZA"
+        ],
+        "variantes_b": [
+          "ELIAS CARBALLO"
+        ]
+      },
+      {
+        "tipo_identificador": "cuit_cuil",
+        "valor_normalizado": "20265925244",
+        "nombre_a": "MIRTA EDITH BONACALZA",
+        "nombre_b": "ELIAS CARBALLO",
+        "variantes_a": [
+          "MIRTA EDITH BONACALZA"
+        ],
+        "variantes_b": [
+          "ELIAS CARBALLO"
+        ]
+      },
+      {
+        "tipo_identificador": "dni",
+        "valor_normalizado": "93757465",
+        "nombre_a": "MARCELA PATRICIA GARCIA PALACIOS",
+        "nombre_b": "ROBERTO GABRIEL SZILAK",
+        "variantes_a": [
+          "MARCELA PATRICIA GARCIA PALACIOS",
+          "PATRICIA GARCIA PALACIOS"
+        ],
+        "variantes_b": [
+          "ROBERTO GABRIEL SZILAK"
+        ]
+      },
+      {
+        "tipo_identificador": "cuit_cuil",
+        "valor_normalizado": "27937574652",
+        "nombre_a": "MARCELA PATRICIA GARCIA PALACIOS",
+        "nombre_b": "ROBERTO GABRIEL SZILAK",
+        "variantes_a": [
+          "MARCELA PATRICIA GARCIA PALACIOS",
+          "PATRICIA GARCIA PALACIOS"
+        ],
+        "variantes_b": [
+          "ROBERTO GABRIEL SZILAK"
+        ]
+      },
+      {
+        "tipo_identificador": "dni",
+        "valor_normalizado": "93757465",
+        "nombre_a": "ROBERTO GABRIEL SZILAK",
+        "nombre_b": "ATRICIA GARCIA PALACIOS",
+        "variantes_a": [
+          "ROBERTO GABRIEL SZILAK"
+        ],
+        "variantes_b": [
+          "ATRICIA GARCIA PALACIOS"
+        ]
+      },
+      {
+        "tipo_identificador": "cuit_cuil",
+        "valor_normalizado": "27937574652",
+        "nombre_a": "ROBERTO GABRIEL SZILAK",
+        "nombre_b": "ATRICIA GARCIA PALACIOS",
+        "variantes_a": [
+          "ROBERTO GABRIEL SZILAK"
+        ],
+        "variantes_b": [
+          "ATRICIA GARCIA PALACIOS"
+        ]
+      }
+    ]
+  }
+]

@@ -41,3 +41,17 @@
 2026-09-14 23:42:48,368 INFO __main__ - Inicio de experimento: multi_v7_fragmentos_thr50
 2026-09-14 23:42:48,430 INFO __main__ - Dataset cargado: experimento=multi_v7_fragmentos_thr50 modelo=gliner2_multi schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=316 filtros={'categoria': ['Datos_Embargado']}
 2026-09-14 23:48:49,963 INFO __main__ - Finalizacion de experimento: multi_v7_fragmentos_thr50 registros=316
+2026-09-17 23:39:14,959 INFO __main__ - Inicio de experimento: multi_v7_fragmentos_thr50
+2026-09-17 23:39:15,130 INFO __main__ - Dataset cargado: experimento=multi_v7_fragmentos_thr50 modelo=gliner2_multi schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=307 filtros={'categoria': ['Datos_Embargado']}
+2026-09-17 23:39:44,627 WARNING huggingface_hub.file_download - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-09-17 23:39:47,773 WARNING huggingface_hub.file_download - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-09-17 23:39:54,761 WARNING huggingface_hub.file_download - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-09-18 00:05:02,070 INFO __main__ - Inicio de experimento: multi_v7_fragmentos_thr50
+2026-09-18 00:05:02,162 INFO __main__ - Dataset cargado: experimento=multi_v7_fragmentos_thr50 modelo=gliner2_multi schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=307 filtros={'categoria': ['Datos_Embargado']}
+2026-09-18 00:10:44,124 INFO __main__ - Finalizacion de experimento: multi_v7_fragmentos_thr50 registros=307
+2026-09-18 00:24:50,566 INFO __main__ - Inicio de experimento: pii_v7_fragmentos_thr50
+2026-09-18 00:24:50,682 INFO __main__ - Dataset cargado: experimento=pii_v7_fragmentos_thr50 modelo=gliner2_pii schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=307 filtros={'categoria': ['Datos_Embargado']}
+2026-09-18 00:30:44,525 INFO __main__ - Finalizacion de experimento: pii_v7_fragmentos_thr50 registros=307
+2026-09-18 01:05:37,722 INFO __main__ - Inicio de experimento: multi_v7_fragmentos_thr50
+2026-09-18 01:05:37,836 INFO __main__ - Dataset cargado: experimento=multi_v7_fragmentos_thr50 modelo=gliner2_multi schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=307 filtros={'categoria': ['Datos_Embargado']}
+2026-09-18 01:11:22,901 INFO __main__ - Finalizacion de experimento: multi_v7_fragmentos_thr50 registros=307

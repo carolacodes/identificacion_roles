@@ -1,0 +1,61 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+19,501696,Embargo - usuario,RESUELTO,False,True,persona_1:nombre_incompleto,1,1,GONZALEZ,,,demandada,GONZALEZ,2,2,12.633,False,False,0
+21,535845,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador,3,1,HORACIO OSCAR NUÑEZ,26592524,20-26592524-4,demandada,HORACIO OSCAR NUÑEZ,4,4,47.424,False,True,1
+21,535845,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador,3,2,MIRTA EDITH BONACALZA,40797926,20-26592524-4,demandada | embargado,MIRTA EDITH BONACALZA,4,4,37.405,False,True,1
+21,535845,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador,3,3,ELIAS CARBALLO,24846229,23-24846229-9,embargado,ELIAS CARBALLO,2,2,19.701,False,True,1
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,12,1,BENITO CABRERA VASQUEZ,94.310.138,,demandado | embargado,BENITO CABRERA VASQUEZ,6,6,50.772,False,False,0
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,12,2,Juan Roberto Michel,20.855.852,,embargado,Juan Roberto Michel,4,4,33.843,False,False,0
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,12,3,Alejandro Carlos Zothner,25.999.634,,embargado,Alejandro Carlos Zothner,4,4,33.758,False,False,0
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,12,4,Javier Dasso Boullon,26.200.502,,embargado,Javier Dasso Boullon,4,4,33.496,False,False,0
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,12,5,Manuel Agustín González Sáez,37.917.536,,embargado,Manuel Agustín González Sáez,4,4,33.219,False,False,0
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,12,6,Agustín Ernesto Barrera,33.474.275,,embargado,Agustín Ernesto Barrera,3,3,25.372,False,False,0
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,12,7,Joaquín Nicolás Correa Leveratto,34.704.592,,embargado,Joaquín Nicolás Correa Leveratto,3,3,25.362,False,False,0
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,12,8,Valeria Gladys Leveratto,16.927.627,,embargado,Valeria Gladys Leveratto,3,3,24.695,False,False,0
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,12,9,ELVER BRUNO ESTRADA QUINTO,94.635.112,,embargado,ELVER BRUNO ESTRADA QUINTO,2,2,16.957,False,False,0
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,12,10,Brian Damián Galeppi,38.079.326,,embargado,Brian Damián Galeppi,2,2,16.862,False,False,0
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,12,11,Gonzalo Gastón Novo,28.507.191,,embargado,Gonzalo Gastón Novo,2,2,16.844,False,False,0
+35,525055,Embargo - usuario,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,12,12,María José Grande,37.754.365,,embargado,María José Grande,2,2,16.604,False,False,0
+39,546334,Embargo - usuario,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+40,547373,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_1:nombre_incompleto | persona_3:nombre_incompleto,3,1,JULIO,,30-71412954-2,embargado,JULIO,2,2,17.192,False,True,2
+40,547373,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_1:nombre_incompleto | persona_3:nombre_incompleto,3,2,OLARTE MALLQUI JULIO,,20-93916854-1,embargado,OLARTE MALLQUI JULIO,2,2,16.352,False,True,2
+40,547373,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_1:nombre_incompleto | persona_3:nombre_incompleto,3,3,OSCAR,,30-71412954-2,embargado,OSCAR,2,2,15.579,False,True,2
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,1,Juan Roberto Michel,20.855.852,,embargado,Juan Roberto Michel,8,8,67.607,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,2,Alejandro Carlos Zothner,25.999.634,,embargado,Alejandro Carlos Zothner,8,8,67.528,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,3,Patricia Carolina Jara,27.011.924,,embargado,Patricia Carolina Jara,4,4,33.767,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,4,Gonzalo Gastón Novo,28.507.191,,embargado,Gonzalo Gastón Novo,4,4,33.702,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,5,Pedro Luigi Leveratto,43.030.918,,embargado,Pedro Luigi Leveratto,4,4,33.629,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,6,Javier Dasso Boullon,26.200.502,,embargado,Javier Dasso Boullon,4,4,33.496,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,7,Donatella Mía Leveratto,46.876.857,,embargada | embargado,Donatella Mía Leveratto,4,4,33.303,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,8,Manuel Agustín González Sáez,37.917.536,,embargado,Manuel Agustín González Sáez,4,4,33.29,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,9,Agustín Ernesto Barrera,33.474.275,,embargado,Agustín Ernesto Barrera,3,3,25.372,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,10,Joaquín Nicolás Correa Leveratto,34.704.592,,embargado,Joaquín Nicolás Correa Leveratto,3,3,25.362,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,11,Victoria Brennan,43.038.233,,embargado,Victoria Brennan,3,3,23.757,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,12,IVAN ROBERTO SILVA,27.318.472,,embargado,IVAN ROBERTO SILVA,2,2,16.986,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,13,Delfina Guido,42.951.150,,embargado,Delfina Guido,2,2,16.871,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,14,Luis Enrique Correa,16.927.627,,embargado,Luis Enrique Correa,2,2,16.842,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,15,Beltran Diego Martín,27.949.539,,embargado,Beltran Diego Martín,2,2,16.802,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,16,Gonzalo Gastón Novo,14.010.264,,embargado,Gonzalo Gastón Novo,2,2,16.787,False,True,3
+41,507932,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,17,María José Grande,37.754.365,,embargado,María José Grande,2,2,16.717,False,True,3
+50,495014,Embargo - usuario,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+54,495686,Embargo - usuario,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+55,495690,Embargo - usuario,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+56,536730,Embargo - usuario,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,1,Juan Roberto Michel,20.855.852,,embargado,Juan Roberto Michel,8,8,67.607,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,2,Alejandro Carlos Zothner,25.999.634,,embargado,Alejandro Carlos Zothner,8,8,67.528,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,3,Patricia Carolina Jara,27.011.924,,embargado,Patricia Carolina Jara,4,4,33.771,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,4,Gonzalo Gastón Novo,28.507.191,,embargado,Gonzalo Gastón Novo,4,4,33.702,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,5,Pedro Luigi Leveratto,43.030.918,,embargado,Pedro Luigi Leveratto,4,4,33.629,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,6,Javier Dasso Boullon,26.200.502,,embargado,Javier Dasso Boullon,4,4,33.496,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,7,Donatella Mía Leveratto,46.876.857,,embargada | embargado,Donatella Mía Leveratto,4,4,33.303,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,8,Manuel Agustín González Sáez,37.917.536,,embargado,Manuel Agustín González Sáez,4,4,33.29,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,9,Agustín Ernesto Barrera,33.474.275,,embargado,Agustín Ernesto Barrera,3,3,25.372,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,10,Joaquín Nicolás Correa Leveratto,34.704.592,,embargado,Joaquín Nicolás Correa Leveratto,3,3,25.362,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,11,Victoria Brennan,43.038.233,,embargado,Victoria Brennan,3,3,23.751,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,12,NADIA VANESA BRUSATIN,31.478.712,,embargado,NADIA VANESA BRUSATIN,2,2,16.983,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,13,Delfina Guido,42.951.150,,embargado,Delfina Guido,2,2,16.871,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,14,Luis Enrique Correa,16.927.627,,embargado,Luis Enrique Correa,2,2,16.842,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,15,Beltran Diego Martin,27.949.539,,embargado,Beltran Diego Martin,2,2,16.82,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,16,Gonzalo Gastón Novo,14.010.264,,embargado,Gonzalo Gastón Novo,2,2,16.787,False,True,3
+57,507931,Embargo - usuario,RESUELTO_MULTIPLE,False,True,conflicto_identificador | cantidad_embargados_anormal,17,17,María José Grande,37.754.365,,embargado,María José Grande,2,2,16.717,False,True,3
+67,547376,Embargo - usuario,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+80,536728,Embargo - usuario,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
