@@ -1,0 +1,13 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+19,501696,,RESUELTO,False,True,persona_1:nombre_incompleto | persona_1:evidencia_unica_debil,1,1,GONZALEZ,,,demandada,GONZALEZ,1,1,7.882,False,False,0
+39,546334,,RESUELTO,False,True,persona_1:evidencia_unica_debil,1,1,RAVI DESARROLLOS S.A,,,embargado,RAVI DESARROLLOS S.A,1,1,6.984,False,False,0
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_3:nombre_incompleto,3,1,OLARTE MALLQUI JULIO,,20-93916854-1,embargado,OLARTE MALLQUI JULIO,2,2,18.812,False,True,1
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_3:nombre_incompleto,3,2,OSCAR S.R.L.,,20-93916854-1,embargado,OSCAR S.R.L.,2,2,17.615,False,True,1
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_3:nombre_incompleto,3,3,JULIO,,30-71412954-2,embargado,JULIO,2,2,16.275,False,True,1
+46,501201,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+50,495014,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+54,495686,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+67,547376,,RESUELTO,False,True,persona_1:nombre_incompleto | persona_1:evidencia_unica_debil,1,1,dato,,,demandado,dato,1,1,6.548,False,False,0
+69,498352,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+79,513482,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+80,536728,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0

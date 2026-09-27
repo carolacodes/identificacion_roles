@@ -1,0 +1,20 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+19,501696,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+39,546334,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_2:nombre_incompleto,3,1,OLARTE MALLQUI JULIO,,20-93916854-1,embargado,OLARTE MALLQUI JULIO,2,2,17.312,False,True,1
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_2:nombre_incompleto,3,2,JULIO,,30-71412954-2,embargado,JULIO,2,2,16.275,False,True,1
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_2:nombre_incompleto,3,3,OSCAR S.R.L.,,20-93916854-1,embargado,OSCAR S.R.L.,2,2,16.115,False,True,1
+41,507932,,RESUELTO_MULTIPLE,False,True,persona_1:sin_senal_juridica | persona_2:sin_senal_juridica | persona_3:sin_senal_juridica,3,1,Gonzalo Gastón Novo,28.507.191,,,Gonzalo Gastón Novo,2,2,13.796,False,False,0
+41,507932,,RESUELTO_MULTIPLE,False,True,persona_1:sin_senal_juridica | persona_2:sin_senal_juridica | persona_3:sin_senal_juridica,3,2,Alejandro Carlos Zothner,25.999.634,,,Alejandro Carlos Zothner,2,2,13.66,False,False,0
+41,507932,,RESUELTO_MULTIPLE,False,True,persona_1:sin_senal_juridica | persona_2:sin_senal_juridica | persona_3:sin_senal_juridica,3,3,Juan Roberto Michel,20.855.852,,,Juan Roberto Michel,2,2,10.453,False,False,0
+46,501201,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+50,495014,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+54,495686,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+55,495690,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+56,536730,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,persona_1:sin_senal_juridica | persona_2:sin_senal_juridica | persona_3:sin_senal_juridica,3,1,Gonzalo Gastón Novo,28.507.191,,,Gonzalo Gastón Novo,2,2,13.799,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,persona_1:sin_senal_juridica | persona_2:sin_senal_juridica | persona_3:sin_senal_juridica,3,2,Alejandro Carlos Zothner,25.999.634,,,Alejandro Carlos Zothner,2,2,13.655,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,persona_1:sin_senal_juridica | persona_2:sin_senal_juridica | persona_3:sin_senal_juridica,3,3,Juan Roberto Michel,20.855.852,,,Juan Roberto Michel,2,2,10.441,False,False,0
+67,547376,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+79,513482,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+80,536728,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0

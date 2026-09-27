@@ -264,6 +264,8 @@ experiments:
       - posicion_fin
       - inicio_fragmento
       - fin_fragmento
+      - contexto_embargado
+      - palabra_clave_contexto
       - texto_completo
 
   # ============================================================
@@ -302,6 +304,8 @@ experiments:
       - posicion_fin
       - inicio_fragmento
       - fin_fragmento
+      - contexto_embargado
+      - palabra_clave_contexto
       - texto_completo
 
   # ============================================================
@@ -340,6 +344,8 @@ experiments:
       - posicion_fin
       - inicio_fragmento
       - fin_fragmento
+      - contexto_embargado
+      - palabra_clave_contexto
       - texto_completo
 
   # ============================================================
@@ -378,4 +384,6 @@ experiments:
       - posicion_fin
       - inicio_fragmento
       - fin_fragmento
+      - contexto_embargado
+      - palabra_clave_contexto
       - texto_completo

@@ -80,10 +80,14 @@ MIN_SCORE_EVIDENCIA_UNICA = 8.0
 
 
 # ============================================================
-# ROLES POSITIVOS
+# ROLES JURIDICOS
 # ============================================================
 
-ROLES_POSITIVOS = {
+# Roles que, cuando GLiNER los detecta, constituyen una señal
+# semántica fuerte de que la persona puede ser sujeto de la
+# medida de embargo.
+
+ROLES_JURIDICOS_FUERTES = {
     "demandado",
     "demandada",
     "embargado",
@@ -92,8 +96,24 @@ ROLES_POSITIVOS = {
     "ejecutada",
     "deudor",
     "deudora",
+}
+
+# "titular" es una señal útil, pero no suficiente por sí sola:
+# una persona puede ser titular de una cuenta sin ser el
+# embargado. Se conserva como señal de apoyo.
+
+ROLES_JURIDICOS_APOYO = {
     "titular",
 }
+
+# Se mantiene este conjunto por compatibilidad con el score
+# histórico. El score_total continúa exportándose como dato de
+# diagnóstico, pero ya no será la señal principal de aceptación.
+
+ROLES_POSITIVOS = (
+    ROLES_JURIDICOS_FUERTES
+    | ROLES_JURIDICOS_APOYO
+)
 
 
 # ============================================================
@@ -133,34 +153,42 @@ EXPRESIONES_NO_NOMBRE = {
 # ============================================================
 
 PATRONES_CONTEXTO_POSITIVO = (
-    r"\bembargado\b\s*:?",
-    r"\bembargada\b\s*:?",
-
+    # Roles jurídicos explícitos cerca de la persona.
+    r"\bembargado\b\s*:?\s*",
+    r"\bembargada\b\s*:?\s*",
     r"\bdemandado\b",
     r"\bdemandada\b",
-
     r"\bejecutado\b",
     r"\bejecutada\b",
-
     r"\bdeudor\b",
     r"\bdeudora\b",
+    r"\bparte\s+demandada\b",
+    r"\bpartes\s+demandadas\b",
 
-    r"\bembargar\s+(?:las|los|sus)?\s*"
-    r"(?:cuentas|fondos|haberes)",
-
+    # Fórmulas habituales que ordenan o describen el embargo.
+    r"\bse\s+ha\s+decretado\s+el\s+embargo\b",
+    r"\bse\s+ha\s+decretado\s+embargo\b",
+    r"\bdecretad[oa]\s+el\s+embargo\b",
+    r"\bdecr[eé]t(?:a|e)se\s+embargo\b",
     r"\bembargo\s+sobre\b",
-
     r"\btr[aá]base\s+embargo\b",
     r"\btr[aá]bese\s+embargo\b",
+    r"\bproceda\s+a\s+embargar\b",
+    r"\bproceder\s+a\s+embargar\b",
+    r"\bembargar\s+(?:las|los|sus)?\s*(?:cuentas|fondos|haberes|sumas)\b",
 
-    r"\bretenci[oó]n\s+"
-    r"(?:directa\s+)?"
-    r"(?:de|del|de\s+la|de\s+los|de\s+las|sobre)\b",
+    # Frases frecuentes que vinculan los fondos/cuentas con el
+    # sujeto de la medida, aun cuando la palabra 'embargo' quede
+    # fuera del fragmento corto.
+    r"\b(?:fondos|sumas|cantidades|cuentas|haberes)\b.{0,90}\b(?:que\s+)?(?:posea|posean|tenga|tengan|perciba|perciban|pertenezca|pertenezcan)\b",
+    r"\b(?:cantidades|sumas|fondos)\s+presentes\s+(?:y|o|y/o)\s+futuras\b",
+    r"\bcuentas?\s+que\s+posea\b",
+    r"\bfondos\s+que\s+posea\b",
+    r"\bsumas\s+de\s+dinero\s+que\s+tenga\b",
 
-    r"\bretener\s+"
-    r"(?:el|la|los|las)?\s*"
-    r"(?:haberes|fondos|sumas|porcentaje)",
-
+    # Retenciones.
+    r"\bretenci[oó]n\s+(?:directa\s+)?(?:de|del|de\s+la|de\s+los|de\s+las|sobre)\b",
+    r"\bretener\s+(?:el|la|los|las)?\s*(?:haberes|fondos|sumas|porcentaje)\b",
     r"\bperciba\s+el\s+sr\b",
     r"\bperciba\s+la\s+sra\b",
 )
@@ -171,17 +199,16 @@ PATRONES_CONTEXTO_POSITIVO = (
 # ============================================================
 
 PATRONES_CONTEXTO_NEGATIVO = (
-    r"\bdepositarse\b",
-    r"\bdepositar(?:se)?\b",
+    # Se evitan palabras demasiado generales como "depositar" o
+    # "transferencia": aparecen también en el texto normal de un
+    # embargo y generaban falsos negativos.
 
+    # Estas expresiones sí suelen indicar que la persona es un
+    # beneficiario, autorizado o tercero distinto del embargado.
     r"\bcuenta\s+abierta\s+a\s+nombre\s+de\b",
-    r"\bcuenta\s+judicial\b",
-
-    r"\btransferir\b",
-    r"\btransferencia\b",
-
-    r"\bdestinatari[oa]s?\b",
     r"\ba\s+favor\s+de\b",
+    r"\bbeneficiari[oa]\b",
+    r"\bdestinatari[oa]s?\b",
 )
 
 
@@ -1655,6 +1682,51 @@ def _grupo_tiene_contexto_positivo(
     )
 
 
+def _roles_normalizados_grupo(
+    grupo: GrupoPersona,
+) -> set[str]:
+    """Devuelve los roles GLiNER normalizados del grupo."""
+
+    return {
+        _normalizar_texto(rol).lower()
+        for rol in grupo.roles_encontrados
+        if _normalizar_texto(rol)
+    }
+
+
+def _grupo_tiene_rol_juridico_fuerte(
+    grupo: GrupoPersona,
+) -> bool:
+    """
+    Señal semántica de GLiNER: embargado, demandado, ejecutado
+    o deudor (incluyendo variantes de género).
+    """
+
+    return bool(
+        _roles_normalizados_grupo(grupo)
+        & ROLES_JURIDICOS_FUERTES
+    )
+
+
+def _grupo_tiene_rol_juridico_apoyo(
+    grupo: GrupoPersona,
+) -> bool:
+    """Rol útil pero no concluyente, por ejemplo 'titular'."""
+
+    return bool(
+        _roles_normalizados_grupo(grupo)
+        & ROLES_JURIDICOS_APOYO
+    )
+
+
+def _grupo_tiene_repeticion(
+    grupo: GrupoPersona,
+) -> bool:
+    """La misma persona aparece en dos o más fragmentos."""
+
+    return len(grupo.fragmentos_soporte) >= 2
+
+
 def _grupo_tiene_tercero_fuerte(
     grupo: GrupoPersona,
 ) -> bool:
@@ -1701,10 +1773,39 @@ def _grupo_tiene_contexto_negativo_fuerte(
     )
 
 
-def _grupo_es_embargado(
+def _evaluar_grupo_embargado(
     grupo: GrupoPersona,
     total_grupos: int,
-) -> bool:
+) -> tuple[
+    bool,
+    list[str],
+    dict[str, Any],
+]:
+    """
+    Evalúa un grupo utilizando señales separadas y explicables.
+
+    Señales principales:
+
+    1. rol_juridico_fuerte:
+       GLiNER devolvió embargado/demandado/ejecutado/deudor.
+
+    2. identificador:
+       existe DNI o CUIT/CUIL consolidado.
+
+    3. contexto_juridico:
+       el texto cercano contiene una fórmula que vincula a la
+       persona con la medida de embargo.
+
+    4. repeticion:
+       la misma persona aparece en dos o más fragmentos.
+
+    La repetición funciona como refuerzo, no como sustituto del
+    contexto jurídico. De esta forma, una persona autorizada que
+    aparece varias veces con DNI no se acepta automáticamente.
+
+    score_total se conserva para auditoría y suficiencia, pero no
+    gobierna por sí solo la decisión de aceptación.
+    """
 
     cantidad_fragmentos = len(
         grupo.fragmentos_soporte
@@ -1720,72 +1821,256 @@ def _grupo_es_embargado(
         )
     )
 
-    if _grupo_tiene_tercero_fuerte(
-        grupo
-    ):
-        return False
+    tiene_rol_fuerte = (
+        _grupo_tiene_rol_juridico_fuerte(
+            grupo
+        )
+    )
 
-    if _grupo_tiene_contexto_negativo_fuerte(
-        grupo
-    ):
-        return False
+    tiene_rol_apoyo = (
+        _grupo_tiene_rol_juridico_apoyo(
+            grupo
+        )
+    )
 
+    tiene_repeticion = (
+        _grupo_tiene_repeticion(
+            grupo
+        )
+    )
+
+    tercero_fuerte = (
+        _grupo_tiene_tercero_fuerte(
+            grupo
+        )
+    )
+
+    contexto_negativo_fuerte = (
+        _grupo_tiene_contexto_negativo_fuerte(
+            grupo
+        )
+    )
+
+    roles_normalizados = sorted(
+        _roles_normalizados_grupo(
+            grupo
+        )
+    )
+
+    roles_fuertes_detectados = sorted(
+        set(roles_normalizados)
+        & ROLES_JURIDICOS_FUERTES
+    )
+
+    roles_apoyo_detectados = sorted(
+        set(roles_normalizados)
+        & ROLES_JURIDICOS_APOYO
+    )
+
+    senales = {
+        "rol_juridico_fuerte":
+            tiene_rol_fuerte,
+
+        "roles_fuertes_detectados":
+            roles_fuertes_detectados,
+
+        "rol_juridico_apoyo":
+            tiene_rol_apoyo,
+
+        "roles_apoyo_detectados":
+            roles_apoyo_detectados,
+
+        "tiene_identificador":
+            tiene_id,
+
+        "contexto_juridico_positivo":
+            tiene_contexto,
+
+        "repeticion":
+            tiene_repeticion,
+
+        "cantidad_fragmentos":
+            cantidad_fragmentos,
+    }
+
+    detalle = {
+        "score_total":
+            round(
+                grupo.score_total,
+                3,
+            ),
+
+        "total_grupos_documento":
+            total_grupos,
+
+        "senales_consolidacion":
+            senales,
+
+        "tercero_fuerte":
+            tercero_fuerte,
+
+        "contexto_negativo_fuerte":
+            contexto_negativo_fuerte,
+    }
+
+    # ========================================================
+    # DESCARTES FUERTES
+    # ========================================================
+
+    # Una persona claramente identificada como tercero no debe
+    # convertirse en embargado solo por repetición o por un error
+    # de rol del modelo.
+    if tercero_fuerte:
+        return (
+            False,
+            [
+                "tercero_fuerte"
+            ],
+            detalle,
+        )
+
+    # El contexto negativo ya no se dispara por palabras genéricas
+    # como "depositar" o "transferencia". Si aun así queda una
+    # señal negativa fuerte y no existe contexto jurídico positivo,
+    # se conserva como descarte preventivo.
     if (
-        grupo.score_total
-        < MIN_SCORE_EMBARGADO
+        contexto_negativo_fuerte
+        and not tiene_contexto
     ):
-        return False
+        return (
+            False,
+            [
+                "contexto_negativo_fuerte"
+            ],
+            detalle,
+        )
 
-    if total_grupos > 1:
+    # ========================================================
+    # REGLAS POSITIVAS
+    # ========================================================
 
-        if (
-            tiene_contexto
-            and tiene_id
-        ):
-            return True
-
-        if (
-            cantidad_fragmentos >= 2
-            and tiene_id
-            and grupo.score_total
-            >= MIN_SCORE_MULTIPLE_SIN_CONTEXTO
-        ):
-            return True
-
-        if (
-            cantidad_fragmentos >= 2
-            and tiene_contexto
-            and grupo.score_total
-            >= SCORE_EVIDENCIA_FUERTE
-        ):
-            return True
-
-        return False
-
+    # Regla A:
+    # El texto vincula jurídicamente a la persona con la medida y
+    # además contamos con una segunda señal independiente.
+    #
+    # Ejemplos:
+    #   contexto + rol fuerte
+    #   contexto + DNI/CUIT
     if (
-        cantidad_fragmentos >= 2
+        tiene_contexto
         and (
-            tiene_id
-            or tiene_contexto
+            tiene_rol_fuerte
+            or tiene_id
         )
     ):
-        return True
+        motivos = [
+            "contexto_juridico"
+        ]
 
+        if tiene_rol_fuerte:
+            motivos.append(
+                "rol_juridico_fuerte"
+            )
+
+        if tiene_id:
+            motivos.append(
+                "identificador"
+            )
+
+        if tiene_repeticion:
+            motivos.append(
+                "repeticion"
+            )
+
+        return (
+            True,
+            motivos,
+            detalle,
+        )
+
+    # Regla B:
+    # Si el contexto corto no capturó la fórmula jurídica, todavía
+    # puede aceptarse un candidato cuando GLiNER detectó un rol
+    # jurídico fuerte, existe identificador y la misma identidad
+    # aparece en más de un fragmento.
+    #
+    # La repetición sola + DNI NO alcanza. El rol fuerte es
+    # obligatorio en esta ruta.
     if (
-        cantidad_fragmentos == 1
+        tiene_rol_fuerte
         and tiene_id
-        and tiene_contexto
+        and tiene_repeticion
     ):
-        return True
+        return (
+            True,
+            [
+                "rol_juridico_fuerte",
+                "identificador",
+                "repeticion",
+            ],
+            detalle,
+        )
 
-    if (
-        grupo.score_total
-        >= SCORE_EVIDENCIA_FUERTE
-        and tiene_contexto
-    ):
-        return True
+    # ========================================================
+    # NO HAY COMBINACION SUFICIENTE DE SEÑALES
+    # ========================================================
 
-    return False
+    motivos: list[str] = [
+        "senales_insuficientes"
+    ]
+
+    if not tiene_rol_fuerte:
+        motivos.append(
+            "sin_rol_juridico_fuerte"
+        )
+
+    if not tiene_id:
+        motivos.append(
+            "sin_identificador"
+        )
+
+    if not tiene_contexto:
+        motivos.append(
+            "sin_contexto_juridico"
+        )
+
+    if not tiene_repeticion:
+        motivos.append(
+            "sin_repeticion"
+        )
+
+    if tiene_rol_apoyo:
+        motivos.append(
+            "solo_rol_juridico_apoyo"
+        )
+
+    return (
+        False,
+        motivos,
+        detalle,
+    )
+
+
+def _grupo_es_embargado(
+    grupo: GrupoPersona,
+    total_grupos: int,
+) -> bool:
+    """
+    Mantiene la interfaz anterior.
+
+    La decision real se realiza en
+    _evaluar_grupo_embargado(), que ahora tambien
+    genera informacion de diagnostico.
+    """
+
+    aceptado, _, _ = (
+        _evaluar_grupo_embargado(
+            grupo,
+            total_grupos,
+        )
+    )
+
+    return aceptado
 
 
 # ============================================================
@@ -2213,34 +2498,105 @@ def consolidar_documento(
         )
     )
 
-    grupos_validos = [
-        grupo
-        for grupo in grupos
-        if _grupo_es_embargado(
+    # --------------------------------------------------------
+    # EVALUACION + DIAGNOSTICO DE CADA GRUPO
+    #
+    # IMPORTANTE:
+    # no cambia las reglas de aceptacion actuales.
+    # Solo conserva el motivo por el que cada grupo fue
+    # aceptado o descartado.
+    # --------------------------------------------------------
+
+    evaluaciones_grupos: list[
+        dict[str, Any]
+    ] = []
+
+    for grupo in grupos:
+
+        (
+            aceptado,
+            motivos_decision,
+            detalle_decision,
+        ) = _evaluar_grupo_embargado(
             grupo,
             total_grupos=len(
                 grupos
             ),
         )
+
+        evaluaciones_grupos.append(
+            {
+                "grupo":
+                    grupo,
+
+                "aceptado":
+                    aceptado,
+
+                "motivos":
+                    motivos_decision,
+
+                "detalle":
+                    detalle_decision,
+            }
+        )
+
+    evaluaciones_validas = [
+        evaluacion
+        for evaluacion
+        in evaluaciones_grupos
+        if evaluacion[
+            "aceptado"
+        ]
     ]
 
-    grupos_validos.sort(
-        key=lambda grupo: (
-            grupo.score_total,
+    # Se conserva el mismo orden anterior para los grupos
+    # aceptados: score y cantidad de fragmentos, descendente.
+    evaluaciones_validas.sort(
+        key=lambda evaluacion: (
+            evaluacion[
+                "grupo"
+            ].score_total,
             len(
-                grupo.fragmentos_soporte
+                evaluacion[
+                    "grupo"
+                ].fragmentos_soporte
             ),
         ),
         reverse=True,
     )
 
-    personas_embargadas = [
-        _serializar_grupo(
-            grupo
+    personas_embargadas: list[
+        dict[str, Any]
+    ] = []
+
+    for evaluacion in evaluaciones_validas:
+
+        persona = _serializar_grupo(
+            evaluacion[
+                "grupo"
+            ]
         )
-        for grupo
-        in grupos_validos
-    ]
+
+        persona[
+            "decision_consolidacion"
+        ] = {
+            "aceptado":
+                True,
+
+            "motivos":
+                evaluacion[
+                    "motivos"
+                ],
+
+            "detalle":
+                evaluacion[
+                    "detalle"
+                ],
+        }
+
+        personas_embargadas.append(
+            persona
+        )
 
     if not personas_embargadas:
         estado = ESTADO_NO_RESUELTO
@@ -2253,14 +2609,45 @@ def consolidar_documento(
     else:
         estado = ESTADO_RESUELTO_MULTIPLE
 
-    grupos_descartados = [
-        _serializar_grupo(
-            grupo
+    grupos_descartados: list[
+        dict[str, Any]
+    ] = []
+
+    for evaluacion in evaluaciones_grupos:
+
+        if evaluacion[
+            "aceptado"
+        ]:
+            continue
+
+        grupo_descartado = (
+            _serializar_grupo(
+                evaluacion[
+                    "grupo"
+                ]
+            )
         )
-        for grupo
-        in grupos
-        if grupo not in grupos_validos
-    ]
+
+        grupo_descartado[
+            "decision_consolidacion"
+        ] = {
+            "aceptado":
+                False,
+
+            "motivos":
+                evaluacion[
+                    "motivos"
+                ],
+
+            "detalle":
+                evaluacion[
+                    "detalle"
+                ],
+        }
+
+        grupos_descartados.append(
+            grupo_descartado
+        )
 
     suficiente, motivos = (
         evaluar_suficiencia(
@@ -2307,7 +2694,7 @@ def consolidar_documento(
             estado,
 
         # ----------------------------------------------------
-        # NUEVO
+        # SUFICIENCIA
         # ----------------------------------------------------
 
         "suficiente":

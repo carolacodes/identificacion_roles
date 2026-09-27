@@ -319,3 +319,131 @@ Y después cambiamos modelo manteniendo exactamente los mismos schemas.
 Eso nos va a permitir responder algo mucho más útil que “qué modelo es mejor”:
 
 qué modelo + schema + tipo de entrada funciona mejor para cada dato.
+
+# CONSOLIDACION:
+
+### Quiero que la consolidación evalúe explícitamente estas cuatro señales:
+
+| Señal                 | Ejemplo                                              | Qué aporta                                                       |
+| --------------------- | ---------------------------------------------------- | ---------------------------------------------------------------- |
+| `rol_juridico_fuerte` | `embargado`, `demandado`, `ejecutado`, `deudor`      | GLiNER interpreta que la persona tiene un rol jurídico relevante |
+| `identificador`       | DNI / CUIT / CUIL                                    | Sabemos qué persona es                                           |
+| `contexto_juridico`   | “se decretó embargo sobre…”, “fondos del demandado…” | El propio texto relaciona a la persona con la medida             |
+| `repeticion`          | misma persona en 2+ fragmentos                       | Existe evidencia adicional independiente                         |
+
+# Criterio de aceptación
+
+`RESUELTO / RESUELTO_MULTIPLE` = la consolidación logró aceptar uno o más candidatos.
+`SUFICIENTE` = además, la evidencia es suficientemente sólida como para no mandar ese documento al fallback.
+
+## Tabla de criterios de aceptación
+
+| Situación                                          | Señales presentes                                                                 | Resultado típico                                             | Explicación                                                                                                                                     |
+| -------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Contexto jurídico + rol fuerte + identificador     | ✅ contexto + ✅ `embargado/demandado/ejecutado/deudor` + ✅ DNI/CUIT             | `RESUELTO` y normalmente `SUFICIENTE`                        | Es el caso más fuerte: el texto vincula a la persona con la medida, GLiNER le asigna un rol jurídico relevante y además conocemos su identidad. |
+| Contexto jurídico + identificador                  | ✅ contexto + ✅ DNI/CUIT, aunque el rol sea solo `titular`                       | `RESUELTO`                                                   | El contexto demuestra que la medida recae sobre esa persona y el identificador confirma quién es.                                               |
+| Contexto jurídico + rol fuerte                     | ✅ contexto + ✅ rol fuerte, aunque falte DNI/CUIT                                | `RESUELTO`                                                   | Se acepta porque ambas señales jurídicas coinciden. Puede seguir siendo `INSUFICIENTE` si la evidencia es única o incompleta.                   |
+| Contexto + rol fuerte + identificador + repetición | ✅ todas las señales                                                              | `RESUELTO` / `RESUELTO_MULTIPLE` y generalmente `SUFICIENTE` | Es la combinación de mayor evidencia: además de rol, identidad y contexto, la misma persona aparece en varios fragmentos.                       |
+| Rol fuerte + identificador + repetición            | ✅ rol + ✅ DNI/CUIT + ✅ varias apariciones                                      | Puede aceptarse aun sin contexto positivo explícito          | La repetición funciona como evidencia adicional, pero no se acepta por repetición + DNI solamente.                                              |
+| Varias personas cumplen las reglas                 | Dos o más candidatos con señales válidas                                          | `RESUELTO_MULTIPLE`                                          | La consolidación conserva más de un embargado cuando cada uno tiene evidencia suficiente.                                                       |
+| Candidato detectado como tercero                   | Puede tener rol e identificador, pero aparece en lista de autorizados/firmantes   | `DESCARTADO`                                                 | La señal de `tercero_fuerte` tiene prioridad y evita aceptar abogados, autorizados o funcionarios.                                              |
+| Solo repetición + identificador                    | ✅ DNI/CUIT + ✅ varias apariciones, pero ❌ contexto y ❌ rol jurídico confiable | `DESCARTADO`                                                 | Repetirse varias veces no convierte a una persona en embargado.                                                                                 |
+
+```text
+La consolidación acepta a una persona cuando existe una combinación coherente de señales jurídicas, identidad y evidencia textual. No depende de una sola regla ni de un único score.
+```
+
+```text
+ROL JURÍDICO
+        +
+IDENTIFICADOR
+        +
+CONTEXTO JURÍDICO
+        +
+REPETICIÓN
+        ↓
+DECISIÓN DE CONSOLIDACIÓN
+```
+
+#### No hace falta que estén presentes las cuatro señales siempre; se evalúan combinaciones válidas.
+
+### También es importante aclarar:
+
+`RESUELTO` no significa necesariamente `SUFICIENTE`.
+
+Por ejemplo, `RAVI` está `RESUELTO` porque encontramos un candidato válido, pero sigue `INSUFICIENTE` porque todavía conviene darle una `segunda oportunidad` con el `fallback`.
+
+### Caso sin identificador estructurado: RAVI DESARROLLOS S.A.
+
+Tiene:
+
+```
+rol = embargado
+contexto jurídico = sí
+identificador estructurado = no
+```
+
+## CASOS NO_RESUELTOS -> INSUFICIENTES
+
+Los `NO_RESUELTO` actuales no se deben todos a una sola causa, aunque varios comparten el mismo patrón.  
+Los casos restantes empiezan a mostrar otro tipo de problema:
+
+```
+fragmento demasiado corto
+GLiNER segmentó mal un nombre
+rol correcto pero contexto quedó fuera de la ventana
+nombre parcial vs nombre completo
+```
+
+Y justamente para eso diseñamos la segunda etapa:
+
+```
+fragmentos
+↓
+consolidación
+↓
+INSUFICIENTE
+↓
+GLiNER(contexto_embargado)
+```
+
+### En esta corrida quedaron 6 NO_RESUELTO. resumen
+
+Los motivos principales son estos:
+
+| Tipo de problema                                 | Qué pasa                                                                                                                             |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Fragmento demasiado corto                        | El candidato aparece, pero el fragmento no incluye suficiente texto jurídico alrededor. Entonces `contexto_juridico = false`.        |
+| Contexto jurídico quedó fuera de la ventana      | GLiNER encuentra bien nombre + DNI + rol, pero la frase que demuestra el embargo está un poco más lejos y la consolidación no la ve. |
+| Rol correcto pero sin señal adicional suficiente | Por ejemplo `embargado` + DNI, pero sin contexto positivo y sin repetición. Con la lógica actual eso puede seguir descartándose.     |
+| Segmentación / asociación imperfecta de GLiNER   | Nombre parcial, identificador asociado a otra persona, etc.                                                                          |
+| Nombre parcial vs nombre completo                | La consolidación puede aceptar un apellido o variante parcial y descartar el nombre completo, o mantenerlos separados.               |
+
+## Ejemplos claros
+
+```
+Claudia Marcela Ledo tiene:
+rol = embargada
+DNI = 24.535.698
+contexto_juridico = false
+repeticion = false
+```
+
+Entonces se descarta por `sin_contexto_juridico` y `sin_repeticion`, aunque el documento completo deja claro que es la `demandada`. Ahí el problema es que el `fragmento` usado quedó demasiado corto y la señal jurídica está fuera de la ventana.  
+Lo mismo ocurre con `GRACIELA MONICA ZARZA`: `GLiNER` detecta `nombre + DNI + rol embargado`, pero `score_contextual = 0`, por lo que la consolidación no encuentra contexto jurídico positivo y la descarta.
+`MACIEL FERNANDO OSCAR` muestra exactamente el mismo patrón: `nombre + DNI + rol embargado`, pero el `fragmento` empieza demasiado tarde y no incluye la parte anterior donde dice que se decretó el embargo.  
+Y el `documento 69` también es interesante: `José Emiliano ALVAREZ` `aparece dos veces` con `DNI y como titular`, pero los fragmentos no contienen la `frase jurídica` previa que conecta esas cuentas con el embargo, por eso queda sin contexto positivo.
+
+### Entonces la respuesta corta sería:
+
+Sí. Los `NO_RESUELTO` que quedan son, en su mayoría, casos donde `GLiNER` sí encuentra a la persona, `pero la evidencia disponible en el fragmento corto` no permite a la consolidación confirmar suficiente contexto jurídico.
+
+### Y por eso tiene tanto sentido el siguiente paso con:
+
+```
+INSUFICIENTE / NO_RESUELTO
+↓
+GLiNER(contexto_embargado)
+```
+
+porque justamente `contexto_embargado` fue creado para aportar el texto que hoy queda afuera del `fragmento corto.`

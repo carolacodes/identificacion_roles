@@ -1265,3 +1265,152 @@ def test_build_document_rows_no_mezcla_documentos():
         "doc-1",
         "doc-2",
     }
+
+def test_build_document_rows_conserva_contexto_embargado():
+    contexto_embargado = (
+        "Este es un contexto más amplio del documento "
+        "que contiene información adicional sobre el embargado."
+    )
+
+    rows = [
+        {
+            "prediction": {
+                "record": {
+                    "numero_archivo": "1",
+                    "id": "538118",
+                    "nombre": "Embargo - usuario",
+                    "texto": (
+                        "Embargado: JUAN CARLOS PEREZ "
+                        "DNI 30111222."
+                    ),
+                    "modo_entrada": "fragmentos",
+                    "contador_interno": "1",
+                    "palabra_clave": "dni",
+                    "metadata": {
+                        "categoria":
+                            "Datos_Embargado",
+
+                        "contexto_embargado":
+                            contexto_embargado,
+
+                        "palabra_clave_contexto":
+                            "embargado",
+
+                        "texto_completo":
+                            "Texto completo del documento.",
+                    },
+                }
+            },
+            "status": "candidato_unico",
+            "candidates": [
+                {
+                    "nombre_embargado":
+                        "JUAN CARLOS PEREZ",
+
+                    "dni_embargado":
+                        "30111222",
+                }
+            ],
+        }
+    ]
+
+    documentos = build_document_rows(
+        rows
+    )
+
+    assert len(
+        documentos
+    ) == 1
+
+    resultado = (
+        documentos[0][
+            "resultados"
+        ][0]
+    )
+
+    assert (
+        resultado[
+            "contexto_embargado"
+        ]
+        == contexto_embargado
+    )
+
+    assert (
+        resultado[
+            "palabra_clave_contexto"
+        ]
+        == "embargado"
+    )
+
+def test_build_document_rows_contexto_embargado_no_modifica_fragmento():
+    fragmento = (
+        "Embargado: JUAN CARLOS PEREZ "
+        "DNI 30111222."
+    )
+
+    contexto_embargado = (
+        "En los autos caratulados se ordena trabar embargo "
+        "sobre los fondos pertenecientes a JUAN CARLOS PEREZ "
+        "DNI 30111222, hasta cubrir las sumas reclamadas."
+    )
+
+    rows = [
+        {
+            "prediction": {
+                "record": {
+                    "numero_archivo": "1",
+                    "id": "doc-1",
+                    "nombre": "Embargo - usuario",
+                    "texto": fragmento,
+                    "modo_entrada": "fragmentos",
+                    "contador_interno": "1",
+                    "palabra_clave": "dni",
+                    "metadata": {
+                        "categoria":
+                            "Datos_Embargado",
+
+                        "contexto_embargado":
+                            contexto_embargado,
+
+                        "palabra_clave_contexto":
+                            "embargo",
+                    },
+                }
+            },
+            "status": "candidato_unico",
+            "candidates": [],
+        }
+    ]
+
+    documentos = build_document_rows(
+        rows
+    )
+
+    resultado = (
+        documentos[0][
+            "resultados"
+        ][0]
+    )
+
+    assert (
+        resultado[
+            "fragmento"
+        ]
+        == fragmento
+    )
+
+    assert (
+        resultado[
+            "contexto_embargado"
+        ]
+        == contexto_embargado
+    )
+
+    assert (
+        resultado[
+            "fragmento"
+        ]
+        != resultado[
+            "contexto_embargado"
+        ]
+    )

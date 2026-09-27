@@ -536,6 +536,30 @@ def build_document_rows(
             "fragmento":
                 fragmento,
 
+            # --------------------------------------------------------
+            # NUEVAS COLUMNAS
+            # --------------------------------------------------------
+
+            "contexto_embargado":
+                source.get(
+                    "contexto_embargado"
+                )
+                or metadata.get(
+                    "contexto_embargado"
+                )
+                or "",
+
+            "palabra_clave_contexto":
+                source.get(
+                    "palabra_clave_contexto"
+                )
+                or metadata.get(
+                    "palabra_clave_contexto"
+                )
+                or "",
+
+            # --------------------------------------------------------
+
             "posicion_inicio":
                 source.get(
                     "posicion_inicio"
