@@ -58,3 +58,6 @@
 2026-09-25 12:53:47,321 INFO __main__ - Inicio de experimento: multi_v7_fragmentos_thr50
 2026-09-25 12:53:47,428 INFO __main__ - Dataset cargado: experimento=multi_v7_fragmentos_thr50 modelo=gliner2_multi schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=163 filtros={'categoria': ['Datos_Embargado']}
 2026-09-25 12:57:16,267 INFO __main__ - Finalizacion de experimento: multi_v7_fragmentos_thr50 registros=163
+2026-09-27 18:15:20,173 INFO __main__ - Inicio de experimento: multi_v7_contexto_thr50
+2026-09-27 18:15:20,249 INFO __main__ - Dataset cargado: experimento=multi_v7_contexto_thr50 modelo=gliner2_multi schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=163 filtros={'categoria': ['Datos_Embargado']}
+2026-09-27 18:22:10,033 INFO __main__ - Finalizacion de experimento: multi_v7_contexto_thr50 registros=163

@@ -244,29 +244,131 @@ def _to_dict(
 # AGRUPACION POR DOCUMENTO
 # ============================================================
 
+def _get_value(
+    source: dict[str, Any],
+    metadata: dict[str, Any],
+    key: str,
+    default: Any = "",
+) -> Any:
+    """Obtiene un valor primero desde el record y luego desde metadata."""
+
+    value = source.get(key)
+
+    if value not in (None, ""):
+        return value
+
+    value = metadata.get(key)
+
+    if value not in (None, ""):
+        return value
+
+    return default
+
+
+def _infer_text_column(
+    source: dict[str, Any],
+    metadata: dict[str, Any],
+) -> str:
+    """
+    Intenta inferir qué columna fue enviada al modelo.
+
+    Esto se usa solamente como fallback cuando
+    build_document_rows() es llamado directamente
+    sin recibir text_column.
+
+    En las ejecuciones normales, export_results()
+    recibe text_column desde experimentos.yaml y
+    lo pasa explicitamente.
+    """
+
+    texto = str(
+        source.get("texto")
+        or source.get("text")
+        or ""
+    )
+
+    # ========================================================
+    # 1. Intentar detectar coincidencia exacta
+    # ========================================================
+
+    if texto:
+
+        for column in (
+            "fragmento",
+            "contexto_embargado",
+            "texto_completo",
+        ):
+
+            candidate = _get_value(
+                source,
+                metadata,
+                column,
+                "",
+            )
+
+            if (
+                candidate
+                and str(candidate) == texto
+            ):
+                return column
+
+    # ========================================================
+    # 2. Compatibilidad histórica
+    #
+    # Antes todos los registros con modo_entrada=fragmentos
+    # utilizaban fragmento como entrada del modelo.
+    #
+    # Esto permite que tests y resultados antiguos sigan
+    # funcionando aunque fragmento no estuviera duplicado
+    # dentro de metadata.
+    # ========================================================
+
+    modo_entrada = str(
+        source.get("modo_entrada")
+        or metadata.get("modo_entrada")
+        or ""
+    )
+
+    if modo_entrada == "fragmentos":
+        return "fragmento"
+
+    # ========================================================
+    # 3. Documentos completos históricos
+    # ========================================================
+
+    if modo_entrada == "documentos_completos":
+        return "texto_completo"
+
+    # ========================================================
+    # 4. No fue posible inferirlo
+    # ========================================================
+
+    return "texto"
+
 def build_document_rows(
     rows: list[Any],
+    text_column: str | None = None,
 ) -> list[
     dict[str, Any]
 ]:
-    """
-    Agrupa resultados por documento.
+    """Agrupa resultados de inferencia por documento.
 
-    Soporta dos formatos:
+    La función ya no asume que ``InputRecord.texto`` es siempre el
+    fragmento. ``InputRecord.texto`` representa exactamente el texto
+    enviado al modelo y puede provenir de ``fragmento``,
+    ``contexto_embargado`` u otra columna configurada en
+    ``experimentos.yaml``.
 
-    1. Formato actual:
-       PostprocessedResult
-         -> prediction
-            -> record
+    Además conserva por separado:
 
-    2. Formato legacy/plano:
-       {
-           "id": ...,
-           "metadata": {...},
-           "candidates": [...]
-       }
+    - ``texto_entrada_modelo``: texto realmente enviado a GLiNER;
+    - ``tipo_entrada_modelo``: columna de origen de ese texto;
+    - ``fragmento``: fragmento original, si existe;
+    - ``contexto_embargado``: contexto ampliado, si existe;
+    - ``texto_completo``: documento completo, si existe.
 
-    Conserva texto_completo para el fallback posterior.
+    Soporta tanto el formato actual ``PostprocessedResult`` como el
+    formato legacy/plano usado por algunos tests y scripts antiguos.
     """
 
     grouped: dict[
@@ -276,118 +378,65 @@ def build_document_rows(
 
     for raw_row in rows:
 
-        row = _to_dict(
-            raw_row
-        )
-
-        # ====================================================
-        # FORMATO ACTUAL
-        # ====================================================
+        row = _to_dict(raw_row)
 
         prediction = (
-            row.get(
-                "prediction",
-                {},
-            )
+            row.get("prediction", {})
             or {}
         )
 
-        if not isinstance(
-            prediction,
-            dict,
-        ):
+        if not isinstance(prediction, dict):
             prediction = {}
 
         record = (
-            prediction.get(
-                "record",
-                {},
-            )
+            prediction.get("record", {})
             or {}
         )
 
-        if not isinstance(
-            record,
-            dict,
-        ):
+        if not isinstance(record, dict):
             record = {}
 
-        # ====================================================
-        # FORMATO LEGACY
-        # ====================================================
-
         legacy_metadata = (
-            row.get(
-                "metadata",
-                {},
-            )
+            row.get("metadata", {})
             or {}
         )
 
-        if not isinstance(
-            legacy_metadata,
-            dict,
-        ):
+        if not isinstance(legacy_metadata, dict):
             legacy_metadata = {}
 
-        # ====================================================
-        # METADATA DEL INPUT RECORD
-        # ====================================================
-
         record_metadata = (
-            record.get(
-                "metadata",
-                {},
-            )
+            record.get("metadata", {})
             or {}
         )
 
-        if not isinstance(
-            record_metadata,
-            dict,
-        ):
+        if not isinstance(record_metadata, dict):
             record_metadata = {}
 
-        # ====================================================
-        # SELECCIONAR FUENTE
-        # ====================================================
-
-        tiene_record_real = bool(
-            record
-        )
+        tiene_record_real = bool(record)
 
         if tiene_record_real:
-
             source = record
             metadata = record_metadata
-
         else:
-
             source = row
             metadata = legacy_metadata
 
-        # ====================================================
-        # IDENTIFICACION DEL DOCUMENTO
-        # ====================================================
-
         document_id = str(
-            source.get(
-                "id"
+            _get_value(
+                source,
+                metadata,
+                "id",
+                "",
             )
-            or metadata.get(
-                "id"
-            )
-            or ""
         )
 
         numero_archivo = str(
-            source.get(
-                "numero_archivo"
+            _get_value(
+                source,
+                metadata,
+                "numero_archivo",
+                "",
             )
-            or metadata.get(
-                "numero_archivo"
-            )
-            or ""
         )
 
         key = (
@@ -395,226 +444,544 @@ def build_document_rows(
             document_id,
         )
 
-        # ====================================================
-        # DOCUMENTO NUEVO
-        # ====================================================
-
         if key not in grouped:
-
-            grouped[
-                key
-            ] = {
-                "id":
-                    document_id,
-
-                "numero_archivo":
-                    numero_archivo,
-
-                "nombre":
-                    source.get(
-                        "nombre"
-                    )
-                    or metadata.get(
-                        "nombre"
-                    )
-                    or "",
-
-                # --------------------------------------------
-                # TEXTO COMPLETO
-                #
-                # Normalmente llega como metadata adicional.
-                # --------------------------------------------
-
-                "texto_completo":
-                    source.get(
-                        "texto_completo"
-                    )
-                    or metadata.get(
-                        "texto_completo"
-                    )
-                    or "",
-
-                "resultados":
-                    [],
+            grouped[key] = {
+                "id": document_id,
+                "numero_archivo": numero_archivo,
+                "nombre": _get_value(
+                    source,
+                    metadata,
+                    "nombre",
+                    "",
+                ),
+                "texto_completo": _get_value(
+                    source,
+                    metadata,
+                    "texto_completo",
+                    "",
+                ),
+                "resultados": [],
             }
 
-        documento = grouped[
-            key
-        ]
+        documento = grouped[key]
 
-        # ----------------------------------------------------
-        # Si la primera fila no traia texto_completo,
-        # recuperarlo desde otra fila del mismo documento.
-        # ----------------------------------------------------
-
-        if not documento.get(
-            "texto_completo"
-        ):
-
-            texto_completo = (
-                source.get(
-                    "texto_completo"
-                )
-                or metadata.get(
-                    "texto_completo"
-                )
-                or ""
+        # Recuperar texto_completo desde otra fila del mismo documento
+        # si la primera no lo contenía.
+        if not documento.get("texto_completo"):
+            texto_completo = _get_value(
+                source,
+                metadata,
+                "texto_completo",
+                "",
             )
 
             if texto_completo:
+                documento["texto_completo"] = texto_completo
 
-                documento[
-                    "texto_completo"
-                ] = texto_completo
-
-        # ====================================================
-        # FRAGMENTO
-        # ====================================================
+        # ----------------------------------------------------
+        # Texto realmente enviado al modelo
+        # ----------------------------------------------------
 
         if tiene_record_real:
-
-            # InputRecord.texto contiene exactamente
-            # el texto enviado al modelo.
-            #
-            # En modo fragmentos:
-            #
-            # record["texto"] == fragmento
-            fragmento = (
-                source.get(
-                    "texto"
-                )
+            texto_entrada_modelo = str(
+                source.get("texto")
                 or ""
             )
-
         else:
-
-            fragmento = (
-                source.get(
-                    "fragmento"
-                )
-                or source.get(
-                    "text"
-                )
-                or metadata.get(
-                    "fragmento"
-                )
+            texto_entrada_modelo = str(
+                source.get("texto_entrada_modelo")
+                or source.get("text")
+                or source.get("fragmento")
                 or ""
             )
 
-        # ====================================================
-        # RESULTADO DEL FRAGMENTO
-        # ====================================================
-
-        resultado = {
-            "contador_interno":
-                source.get(
-                    "contador_interno"
-                )
-                or metadata.get(
-                    "contador_interno"
-                )
-                or "",
-
-            "palabra_clave":
-                source.get(
-                    "palabra_clave"
-                )
-                or metadata.get(
-                    "palabra_clave"
-                )
-                or "",
-
-            "categoria":
-                source.get(
-                    "categoria"
-                )
-                or metadata.get(
-                    "categoria"
-                )
-                or "",
-
-            "fragmento":
-                fragmento,
-
-            # --------------------------------------------------------
-            # NUEVAS COLUMNAS
-            # --------------------------------------------------------
-
-            "contexto_embargado":
-                source.get(
-                    "contexto_embargado"
-                )
-                or metadata.get(
-                    "contexto_embargado"
-                )
-                or "",
-
-            "palabra_clave_contexto":
-                source.get(
-                    "palabra_clave_contexto"
-                )
-                or metadata.get(
-                    "palabra_clave_contexto"
-                )
-                or "",
-
-            # --------------------------------------------------------
-
-            "posicion_inicio":
-                source.get(
-                    "posicion_inicio"
-                )
-                or metadata.get(
-                    "posicion_inicio"
-                ),
-
-            "posicion_fin":
-                source.get(
-                    "posicion_fin"
-                )
-                or metadata.get(
-                    "posicion_fin"
-                ),
-
-            "inicio_fragmento":
-                source.get(
-                    "inicio_fragmento"
-                )
-                or metadata.get(
-                    "inicio_fragmento"
-                ),
-
-            "fin_fragmento":
-                source.get(
-                    "fin_fragmento"
-                )
-                or metadata.get(
-                    "fin_fragmento"
-                ),
-
-            "status":
-                row.get(
-                    "status"
-                )
-                or "",
-
-            "candidates":
-                row.get(
-                    "candidates",
-                    [],
-                )
-                or [],
-        }
-
-        documento[
-            "resultados"
-        ].append(
-            resultado
+        tipo_entrada_modelo = (
+            str(text_column)
+            if text_column
+            else _infer_text_column(
+                source,
+                metadata,
+            )
         )
 
-    return list(
-        grouped.values()
+        # ----------------------------------------------------
+        # Mantener las fuentes originales separadas
+        # ----------------------------------------------------
+
+        fragmento = _get_value(
+            source,
+            metadata,
+            "fragmento",
+            "",
+        )
+
+        contexto_embargado = _get_value(
+            source,
+            metadata,
+            "contexto_embargado",
+            "",
+        )
+
+        # Compatibilidad con experimentos históricos donde fragmento era
+        # la columna enviada al modelo y por eso no estaba en metadata.
+        if (
+            not fragmento
+            and tipo_entrada_modelo == "fragmento"
+        ):
+            fragmento = texto_entrada_modelo
+
+        # Misma idea para contexto_embargado cuando se usa como entrada y
+        # no quedó duplicado en metadata.
+        if (
+            not contexto_embargado
+            and tipo_entrada_modelo == "contexto_embargado"
+        ):
+            contexto_embargado = texto_entrada_modelo
+
+        resultado = {
+            "contador_interno": _get_value(
+                source,
+                metadata,
+                "contador_interno",
+                "",
+            ),
+            "palabra_clave": _get_value(
+                source,
+                metadata,
+                "palabra_clave",
+                "",
+            ),
+            "categoria": _get_value(
+                source,
+                metadata,
+                "categoria",
+                "",
+            ),
+
+            # Entrada real usada por GLiNER.
+            "tipo_entrada_modelo":
+                tipo_entrada_modelo,
+            "texto_entrada_modelo":
+                texto_entrada_modelo,
+
+            # Fuentes originales conservadas de forma independiente.
+            "fragmento": fragmento,
+            "contexto_embargado": contexto_embargado,
+            "palabra_clave_contexto": _get_value(
+                source,
+                metadata,
+                "palabra_clave_contexto",
+                "",
+            ),
+
+            "posicion_inicio": _get_value(
+                source,
+                metadata,
+                "posicion_inicio",
+                None,
+            ),
+            "posicion_fin": _get_value(
+                source,
+                metadata,
+                "posicion_fin",
+                None,
+            ),
+            "inicio_fragmento": _get_value(
+                source,
+                metadata,
+                "inicio_fragmento",
+                None,
+            ),
+            "fin_fragmento": _get_value(
+                source,
+                metadata,
+                "fin_fragmento",
+                None,
+            ),
+            "status": row.get("status") or "",
+            "candidates": row.get("candidates", []) or [],
+        }
+
+        documento["resultados"].append(resultado)
+
+    return list(grouped.values())
+
+
+# ============================================================
+# CSV DE PREDICCIONES
+# ============================================================
+
+def _json_cell(value: Any) -> str:
+    """Serializa estructuras anidadas para guardarlas en una celda CSV."""
+
+    if value in (None, ""):
+        return ""
+
+    if isinstance(value, (str, int, float, bool)):
+        return str(value)
+
+    return json.dumps(
+        value,
+        ensure_ascii=False,
+        sort_keys=False,
     )
+
+
+def _prediction_source(
+    row: dict[str, Any],
+) -> tuple[
+    dict[str, Any],
+    dict[str, Any],
+    dict[str, Any],
+]:
+    """Devuelve prediction, record/source y metadata normalizados."""
+
+    prediction = row.get("prediction", {}) or {}
+
+    if not isinstance(prediction, dict):
+        prediction = {}
+
+    record = prediction.get("record", {}) or {}
+
+    if not isinstance(record, dict):
+        record = {}
+
+    if record:
+        metadata = record.get("metadata", {}) or {}
+
+        if not isinstance(metadata, dict):
+            metadata = {}
+
+        return prediction, record, metadata
+
+    metadata = row.get("metadata", {}) or {}
+
+    if not isinstance(metadata, dict):
+        metadata = {}
+
+    return prediction, row, metadata
+
+
+def _build_prediction_csv_rows(
+    rows: list[Any],
+    text_column: str | None = None,
+) -> list[dict[str, Any]]:
+    """Construye un CSV legible de las predicciones.
+
+    Genera una fila por candidato. Cuando un registro no tiene candidatos,
+    genera igualmente una fila para poder auditar los ``no_detectado``.
+    """
+
+    csv_rows: list[dict[str, Any]] = []
+
+    for raw_row in rows:
+        row = _to_dict(raw_row)
+        prediction, source, metadata = _prediction_source(row)
+
+        texto_entrada = str(
+            source.get("texto")
+            or source.get("texto_entrada_modelo")
+            or source.get("text")
+            or ""
+        )
+
+        tipo_entrada = (
+            str(text_column)
+            if text_column
+            else _infer_text_column(
+                source,
+                metadata,
+            )
+        )
+
+        fragmento = _get_value(
+            source,
+            metadata,
+            "fragmento",
+            "",
+        )
+
+        contexto = _get_value(
+            source,
+            metadata,
+            "contexto_embargado",
+            "",
+        )
+
+        if not fragmento and tipo_entrada == "fragmento":
+            fragmento = texto_entrada
+
+        if (
+            not contexto
+            and tipo_entrada == "contexto_embargado"
+        ):
+            contexto = texto_entrada
+
+        base = {
+            "numero_archivo": _get_value(
+                source,
+                metadata,
+                "numero_archivo",
+                "",
+            ),
+            "id": _get_value(
+                source,
+                metadata,
+                "id",
+                "",
+            ),
+            "nombre": _get_value(
+                source,
+                metadata,
+                "nombre",
+                "",
+            ),
+            "contador_interno": _get_value(
+                source,
+                metadata,
+                "contador_interno",
+                "",
+            ),
+            "palabra_clave": _get_value(
+                source,
+                metadata,
+                "palabra_clave",
+                "",
+            ),
+            "categoria": _get_value(
+                source,
+                metadata,
+                "categoria",
+                "",
+            ),
+            "tipo_entrada_modelo": tipo_entrada,
+            "texto_entrada_modelo": texto_entrada,
+            "fragmento": fragmento,
+            "contexto_embargado": contexto,
+            "palabra_clave_contexto": _get_value(
+                source,
+                metadata,
+                "palabra_clave_contexto",
+                "",
+            ),
+            "texto_completo": _get_value(
+                source,
+                metadata,
+                "texto_completo",
+                "",
+            ),
+            "status": row.get("status") or "",
+            "model_id": prediction.get("model_id", ""),
+            "schema_id": prediction.get("schema_id", ""),
+            "threshold": prediction.get("threshold", ""),
+            "schema_type": prediction.get("schema_type", ""),
+            "architecture": prediction.get("architecture", ""),
+        }
+
+        candidates = row.get("candidates", []) or []
+
+        if not candidates:
+            csv_rows.append(
+                {
+                    **base,
+                    "candidate_index": "",
+                    "tipo": "",
+                    "valor": "",
+                    "nombre_embargado": "",
+                    "dni_embargado": "",
+                    "cuit_cuil_embargado": "",
+                    "rol_embargado": "",
+                    "confidence": "",
+                    "span_inicio": "",
+                    "span_fin": "",
+                    "candidate_json": "",
+                    "raw_response_json": _json_cell(
+                        prediction.get("raw_response")
+                    ),
+                }
+            )
+            continue
+
+        for index, candidate in enumerate(
+            candidates,
+            start=1,
+        ):
+            if not isinstance(candidate, dict):
+                candidate = {
+                    "valor": candidate,
+                }
+
+            csv_rows.append(
+                {
+                    **base,
+                    "candidate_index": index,
+                    "tipo": candidate.get("tipo", ""),
+                    "valor": candidate.get("valor", ""),
+                    "nombre_embargado": candidate.get(
+                        "nombre_embargado",
+                        candidate.get("nombre", ""),
+                    ),
+                    "dni_embargado": candidate.get(
+                        "dni_embargado",
+                        candidate.get("dni", ""),
+                    ),
+                    "cuit_cuil_embargado": candidate.get(
+                        "cuit_cuil_embargado",
+                        candidate.get("cuil_cuit", ""),
+                    ),
+                    "rol_embargado": candidate.get(
+                        "rol_embargado",
+                        "",
+                    ),
+                    "confidence": candidate.get(
+                        "confidence",
+                        "",
+                    ),
+                    "span_inicio": candidate.get(
+                        "span_inicio",
+                        "",
+                    ),
+                    "span_fin": candidate.get(
+                        "span_fin",
+                        "",
+                    ),
+                    "candidate_json": _json_cell(candidate),
+                    "raw_response_json": _json_cell(
+                        prediction.get("raw_response")
+                    ),
+                }
+            )
+
+    return csv_rows
+
+
+def _build_document_prediction_csv_rows(
+    documents: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Aplana ``predicciones_por_documento.json`` para CSV."""
+
+    csv_rows: list[dict[str, Any]] = []
+
+    for document in documents:
+        document_base = {
+            "numero_archivo": document.get(
+                "numero_archivo",
+                "",
+            ),
+            "id": document.get("id", ""),
+            "nombre": document.get("nombre", ""),
+            "texto_completo": document.get(
+                "texto_completo",
+                "",
+            ),
+        }
+
+        resultados = document.get("resultados", []) or []
+
+        for resultado_index, resultado in enumerate(
+            resultados,
+            start=1,
+        ):
+            if not isinstance(resultado, dict):
+                continue
+
+            result_base = {
+                **document_base,
+                "resultado_index": resultado_index,
+                "contador_interno": resultado.get(
+                    "contador_interno",
+                    "",
+                ),
+                "palabra_clave": resultado.get(
+                    "palabra_clave",
+                    "",
+                ),
+                "categoria": resultado.get(
+                    "categoria",
+                    "",
+                ),
+                "tipo_entrada_modelo": resultado.get(
+                    "tipo_entrada_modelo",
+                    "",
+                ),
+                "texto_entrada_modelo": resultado.get(
+                    "texto_entrada_modelo",
+                    "",
+                ),
+                "fragmento": resultado.get(
+                    "fragmento",
+                    "",
+                ),
+                "contexto_embargado": resultado.get(
+                    "contexto_embargado",
+                    "",
+                ),
+                "palabra_clave_contexto": resultado.get(
+                    "palabra_clave_contexto",
+                    "",
+                ),
+                "status": resultado.get("status", ""),
+            }
+
+            candidates = resultado.get("candidates", []) or []
+
+            if not candidates:
+                csv_rows.append(
+                    {
+                        **result_base,
+                        "candidate_index": "",
+                        "tipo": "",
+                        "valor": "",
+                        "nombre_embargado": "",
+                        "dni_embargado": "",
+                        "cuit_cuil_embargado": "",
+                        "rol_embargado": "",
+                        "confidence": "",
+                        "candidate_json": "",
+                    }
+                )
+                continue
+
+            for candidate_index, candidate in enumerate(
+                candidates,
+                start=1,
+            ):
+                if not isinstance(candidate, dict):
+                    candidate = {
+                        "valor": candidate,
+                    }
+
+                csv_rows.append(
+                    {
+                        **result_base,
+                        "candidate_index": candidate_index,
+                        "tipo": candidate.get("tipo", ""),
+                        "valor": candidate.get("valor", ""),
+                        "nombre_embargado": candidate.get(
+                            "nombre_embargado",
+                            candidate.get("nombre", ""),
+                        ),
+                        "dni_embargado": candidate.get(
+                            "dni_embargado",
+                            candidate.get("dni", ""),
+                        ),
+                        "cuit_cuil_embargado": candidate.get(
+                            "cuit_cuil_embargado",
+                            candidate.get("cuil_cuit", ""),
+                        ),
+                        "rol_embargado": candidate.get(
+                            "rol_embargado",
+                            "",
+                        ),
+                        "confidence": candidate.get(
+                            "confidence",
+                            "",
+                        ),
+                        "candidate_json": _json_cell(candidate),
+                    }
+                )
+
+    return csv_rows
 
 
 # ============================================================
@@ -631,13 +998,9 @@ def export_results(
     timestamp = (
         now
         or datetime.now()
-    ).strftime(
-        "%Y%m%d_%H%M%S"
-    )
+    ).strftime("%Y%m%d_%H%M%S")
 
-    safe_name = _safe_name(
-        experiment_name
-    )
+    safe_name = _safe_name(experiment_name)
 
     raw_run_dir = (
         RAW_DIR
@@ -660,31 +1023,99 @@ def export_results(
     )
 
     dict_rows = [
-        _to_dict(
-            row
-        )
-        for row
-        in rows
+        _to_dict(row)
+        for row in rows
     ]
 
-    # --------------------------------------------------------
-    # RAW JSON
-    # --------------------------------------------------------
+    experiment_config = (
+        used_config.get("experiment", {})
+        if isinstance(used_config, dict)
+        else {}
+    )
 
-    _write_json(
-        raw_run_dir
-        / "predicciones.json",
-        dict_rows,
+    if not isinstance(experiment_config, dict):
+        experiment_config = {}
+
+    text_column_value = experiment_config.get(
+        "text_column"
+    )
+
+    text_column = (
+        str(text_column_value)
+        if text_column_value not in (None, "")
+        else None
     )
 
     # --------------------------------------------------------
-    # POR DOCUMENTO
+    # RAW JSON + CSV
     # --------------------------------------------------------
 
-    documents = (
-        build_document_rows(
-            rows
-        )
+    raw_json = (
+        raw_run_dir
+        / "predicciones.json"
+    )
+
+    raw_csv = (
+        raw_run_dir
+        / "predicciones.csv"
+    )
+
+    _write_json(
+        raw_json,
+        dict_rows,
+    )
+
+    raw_csv_rows = _build_prediction_csv_rows(
+        rows,
+        text_column=text_column,
+    )
+
+    raw_csv_columns = [
+        "numero_archivo",
+        "id",
+        "nombre",
+        "contador_interno",
+        "palabra_clave",
+        "categoria",
+        "tipo_entrada_modelo",
+        "texto_entrada_modelo",
+        "fragmento",
+        "contexto_embargado",
+        "palabra_clave_contexto",
+        "texto_completo",
+        "status",
+        "model_id",
+        "schema_id",
+        "threshold",
+        "schema_type",
+        "architecture",
+        "candidate_index",
+        "tipo",
+        "valor",
+        "nombre_embargado",
+        "dni_embargado",
+        "cuit_cuil_embargado",
+        "rol_embargado",
+        "confidence",
+        "span_inicio",
+        "span_fin",
+        "candidate_json",
+        "raw_response_json",
+    ]
+
+    _write_csv(
+        raw_csv,
+        raw_csv_rows,
+        raw_csv_columns,
+    )
+
+    # --------------------------------------------------------
+    # POR DOCUMENTO JSON + CSV
+    # --------------------------------------------------------
+
+    documents = build_document_rows(
+        rows,
+        text_column=text_column,
     )
 
     document_json = (
@@ -692,9 +1123,52 @@ def export_results(
         / "predicciones_por_documento.json"
     )
 
+    document_csv = (
+        document_run_dir
+        / "predicciones_por_documento.csv"
+    )
+
     _write_json(
         document_json,
         documents,
+    )
+
+    document_csv_rows = (
+        _build_document_prediction_csv_rows(
+            documents
+        )
+    )
+
+    document_csv_columns = [
+        "numero_archivo",
+        "id",
+        "nombre",
+        "resultado_index",
+        "contador_interno",
+        "palabra_clave",
+        "categoria",
+        "tipo_entrada_modelo",
+        "texto_entrada_modelo",
+        "fragmento",
+        "contexto_embargado",
+        "palabra_clave_contexto",
+        "texto_completo",
+        "status",
+        "candidate_index",
+        "tipo",
+        "valor",
+        "nombre_embargado",
+        "dni_embargado",
+        "cuit_cuil_embargado",
+        "rol_embargado",
+        "confidence",
+        "candidate_json",
+    ]
+
+    _write_csv(
+        document_csv,
+        document_csv_rows,
+        document_csv_columns,
     )
 
     # --------------------------------------------------------
@@ -714,18 +1188,12 @@ def export_results(
     )
 
     return {
-        "raw_dir":
-            raw_run_dir,
-
-        "document_dir":
-            document_run_dir,
-
-        "raw_json":
-            raw_run_dir
-            / "predicciones.json",
-
-        "document_json":
-            document_json,
+        "raw_dir": raw_run_dir,
+        "document_dir": document_run_dir,
+        "raw_json": raw_json,
+        "raw_csv": raw_csv,
+        "document_json": document_json,
+        "document_csv": document_csv,
     }
 
 
