@@ -1,0 +1,30 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+4,534526,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+6,538081,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+10,524053,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+12,529383,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+17,546332,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+19,501696,,RESUELTO,False,True,persona_1:nombre_incompleto,1,1,GONZALEZ,39.872.112,,demandada,GONZALEZ,1,1,10.243,False,False,0
+20,536705,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+21,535845,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,1,MIRTA EDITH BONACALZA,40797926,20-26592524-4,titular,MIRTA EDITH BONACALZA,1,2,23.737,False,True,1
+21,535845,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,2,HORACIO OSCAR NUÑEZ,26592524,20-26592524-4,demandado,HORACIO OSCAR NUÑEZ,1,1,16.218,False,True,1
+27,516903,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+29,532501,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+31,536750,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+33,494160,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,1,MARCELA PATRICIA GARCIA PALACIOS,93757465,27-93757465-2,demandada | demandado,MARCELA PATRICIA GARCIA PALACIOS,2,2,25.743,False,True,2
+33,494160,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,2,ROBERTO GABRIEL SZILAK,93757465,27-93757465-2,,ROBERTO GABRIEL SZILAK,2,2,23.51,False,True,2
+34,529783,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+39,546334,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+40,547373,,RESUELTO,False,True,persona_1:nombre_incompleto,1,1,JULIO,,30-71412954-2,demandado | embargado,JULIO,2,2,18.16,False,False,0
+43,531066,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+46,501201,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+50,495014,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+54,495686,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+67,547376,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+69,498352,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+71,531094,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+72,547369,,RESUELTO,False,True,persona_1:evidencia_unica_debil,1,1,CLAUDIO LEONARDO,,,demandado,CLAUDIO LEONARDO,1,1,6.213,False,False,0
+75,547372,,RESUELTO,False,True,persona_1:evidencia_unica_debil,1,1,JOSE LUIS,,,demandado,JOSE LUIS,1,1,5.875,False,False,0
+76,538066,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+79,513482,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,True,1
+80,536728,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0

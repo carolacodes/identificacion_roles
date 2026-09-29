@@ -61,3 +61,20 @@
 2026-09-27 18:15:20,173 INFO __main__ - Inicio de experimento: multi_v7_contexto_thr50
 2026-09-27 18:15:20,249 INFO __main__ - Dataset cargado: experimento=multi_v7_contexto_thr50 modelo=gliner2_multi schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=163 filtros={'categoria': ['Datos_Embargado']}
 2026-09-27 18:22:10,033 INFO __main__ - Finalizacion de experimento: multi_v7_contexto_thr50 registros=163
+2026-09-29 13:17:06,699 INFO __main__ - Inicio de experimento: multi_v7_fragmentos_thr50
+2026-09-29 13:17:06,828 INFO __main__ - Dataset cargado: experimento=multi_v7_fragmentos_thr50 modelo=gliner2_multi schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=230 filtros={'categoria': ['Datos_Embargado']}
+2026-09-29 13:21:45,827 INFO __main__ - Finalizacion de experimento: multi_v7_fragmentos_thr50 registros=230
+2026-09-29 13:30:03,052 INFO __main__ - Inicio de experimento: multi_v7_contexto_thr50
+2026-09-29 13:30:03,205 INFO __main__ - Dataset cargado: experimento=multi_v7_contexto_thr50 modelo=gliner2_multi schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=230 filtros={'categoria': ['Datos_Embargado']}
+2026-09-29 13:40:10,587 INFO __main__ - Finalizacion de experimento: multi_v7_contexto_thr50 registros=230
+2026-09-29 13:40:48,228 INFO __main__ - Inicio de experimento: pii_v7_fragmentos_thr50
+2026-09-29 13:40:48,315 INFO __main__ - Dataset cargado: experimento=pii_v7_fragmentos_thr50 modelo=gliner2_pii schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=230 filtros={'categoria': ['Datos_Embargado']}
+2026-09-29 13:40:55,704 WARNING huggingface_hub.file_download - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-09-29 13:41:05,390 WARNING huggingface_hub.file_download - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-09-29 13:45:47,510 INFO __main__ - Finalizacion de experimento: pii_v7_fragmentos_thr50 registros=230
+2026-09-29 13:46:49,667 INFO __main__ - Inicio de experimento: pii_v7_contexto_thr50
+2026-09-29 13:46:49,753 INFO __main__ - Dataset cargado: experimento=pii_v7_contexto_thr50 modelo=gliner2_pii schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=230 filtros={'categoria': ['Datos_Embargado']}
+2026-09-29 13:56:46,696 INFO __main__ - Finalizacion de experimento: pii_v7_contexto_thr50 registros=230
+2026-09-29 14:39:21,779 INFO __main__ - Inicio de experimento: multi_v7_fragmentos_dspy_thr50
+2026-09-29 14:39:21,871 INFO __main__ - Dataset cargado: experimento=multi_v7_fragmentos_dspy_thr50 modelo=gliner2_multi schema=schema_v7_persona_embargada_fragmentos_dspy modo=fragmentos registros=230 filtros={'categoria': ['Datos_Embargado']}
+2026-09-29 14:41:35,382 INFO __main__ - Finalizacion de experimento: multi_v7_fragmentos_dspy_thr50 registros=230

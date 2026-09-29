@@ -437,3 +437,85 @@ experiments:
       - contexto_embargado
       - palabra_clave_contexto
       - texto_completo
+
+  # ============================================================
+  # V7 - GLINER2 PII - CONTEXTO EMBARGADO - THRESHOLD 0.50
+  # Prueba experimental SIN consolidacion
+  # ============================================================
+  pii_v7_contexto_thr50:
+    run_name: pii_v7_contexto_thr50
+
+    model: gliner2_pii
+    schema: schema_v7_persona_embargada_fragmentos
+
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: contexto_embargado
+
+    threshold: 0.50
+
+    field_thresholds:
+      nombre_embargado: 0.50
+      dni_embargado: 0.50
+      cuit_cuil_embargado: 0.50
+      rol_embargado: 0.50
+
+    filters:
+      categoria:
+        - Datos_Embargado
+
+    metadata_columns:
+      - numero_archivo
+      - id
+      - nombre
+      - contador_interno
+      - palabra_clave
+      - categoria
+      - posicion_inicio
+      - posicion_fin
+      - inicio_fragmento
+      - fin_fragmento
+      - fragmento
+      - contexto_embargado
+      - palabra_clave_contexto
+      - texto_completo
+
+  # ============================================================
+  # V7 - GLINER2 MULTI - FRAGMENTOS - DSPY - THRESHOLD 0.50
+  # ============================================================
+  multi_v7_fragmentos_dspy_thr50:
+    run_name: multi_v7_fragmentos_dspy_thr50
+
+    model: gliner2_multi
+    schema: schema_v7_persona_embargada_fragmentos_dspy
+
+    input_mode: fragmentos
+    input_file: data/input_fragmentos/fragmentos.csv
+    text_column: fragmento
+
+    threshold: 0.50
+
+    field_thresholds:
+      nombre_embargado: 0.50
+      dni_embargado: 0.50
+      cuit_cuil_embargado: 0.50
+      rol_embargado: 0.50
+
+    filters:
+      categoria:
+        - Datos_Embargado
+
+    metadata_columns:
+      - numero_archivo
+      - id
+      - nombre
+      - contador_interno
+      - palabra_clave
+      - categoria
+      - posicion_inicio
+      - posicion_fin
+      - inicio_fragmento
+      - fin_fragmento
+      - contexto_embargado
+      - palabra_clave_contexto
+      - texto_completo
