@@ -447,3 +447,16 @@ GLiNER(contexto_embargado)
 ```
 
 porque justamente `contexto_embargado` fue creado para aportar el texto que hoy queda afuera del `fragmento corto.`
+
+## FRASES QUE DAN CONTEXTO JURIDICO, EJEMPLOS:
+
+```
+"se decretó embargo sobre..."
+"trábese embargo sobre..."
+"proceder a embargar los fondos que posea..."
+"cuentas que posea..."
+"fondos que tenga..."
+"parte demandada..."
+"fondos del demandado..."
+"retención directa de los haberes de..."
+```
