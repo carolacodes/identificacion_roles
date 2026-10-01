@@ -1,0 +1,87 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+1,538118,,RESUELTO,True,False,,1,1,NAHUEL OSCAR MARQUEZ,33.470.065,,embargado,NAHUEL OSCAR MARQUEZ,1,1,15.382,False,False,0
+2,538084,,RESUELTO,True,False,,1,1,MAZA ARIAS MERCEDES FATIMA,32.630.518,,titular,MAZA ARIAS MERCEDES FATIMA,1,1,13.055,False,False,0
+3,495011,,RESUELTO,True,False,,1,1,VINCI BRIAN EMMANUEL,34.436.998,20-34436998-5,embargado,VINCI BRIAN EMMANUEL,1,1,12.42,False,False,0
+4,534526,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+5,542996,,RESUELTO,True,False,,1,1,STIO MARIA AMELIA,6.551.699,,titular,STIO MARIA AMELIA,1,1,13.137,False,False,0
+6,538081,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+7,524057,,RESUELTO,True,False,,1,1,DIEGO FABIAN FRETES,29178884,,embargado,DIEGO FABIAN FRETES,1,1,10.226,False,False,0
+8,536725,,RESUELTO,True,False,,1,1,MIGUEL ANGEL SEGOVIA,36003333,,demandado,MIGUEL ANGEL SEGOVIA,1,1,9.063,False,False,0
+9,536741,,RESUELTO,True,False,,1,1,ROBERTO CARLOS LOBO,21773000,,demandado,ROBERTO CARLOS LOBO,1,1,9.561,False,False,0
+10,524053,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+11,546314,,RESUELTO,True,False,,1,1,SILVA HERMINIO ISAUL ANTONIO,31973182,,embargado,SILVA HERMINIO ISAUL ANTONIO,2,2,20.143,False,False,0
+12,529383,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+13,538122,,RESUELTO,True,False,,1,1,CLAUDIA ALEJANDRA MIRANDA,23.360.827,,demandada,CLAUDIA ALEJANDRA MIRANDA,1,1,16.764,False,False,0
+14,536721,,RESUELTO,True,False,,1,1,MIGUEL MARCELO MEDINA,16289505,,demandado,MIGUEL MARCELO MEDINA,2,2,18.047,False,False,0
+15,516904,,RESUELTO,True,False,,1,1,LAURA ESTELA FERNANDEZ,20.371.813,,demandado,LAURA ESTELA FERNANDEZ,1,1,8.942,False,False,0
+16,546236,,RESUELTO,True,False,,1,1,AURELIO RODOLFO MELGAREJO,13273828,,demandado | embargado,AURELIO RODOLFO MELGAREJO | Aurelio Rodolfo Melgarejo,2,2,19.452,False,False,0
+17,546332,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+18,538119,,RESUELTO,True,False,,1,1,ESTEFANIA MIHANOVICH,44.398.455,,demandada | embargado,ESTEFANIA MIHANOVICH | Estefanía MIHANOVICH,2,2,27.599,False,False,0
+19,501696,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+20,536705,,RESUELTO,True,False,,1,1,CARLOS ROBERTO SOLOHAGA,17.516.617,,embargado,CARLOS ROBERTO SOLOHAGA,1,1,8.586,False,False,0
+21,535845,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,1,MIRTA EDITH BONACALZA,40797926,20-26592524-4,titular,MIRTA EDITH BONACALZA,1,2,23.67,False,True,1
+21,535845,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,2,HORACIO OSCAR NUÑEZ,26592524,20-26592524-4,demandado,HORACIO OSCAR NUÑEZ,1,1,16.24,False,True,1
+22,536718,,RESUELTO,True,False,,1,1,GROSSO JUAN JOSE,14.748.434,,demandado,GROSSO JUAN JOSE,1,1,9.222,False,False,0
+23,536742,,RESUELTO,True,False,,1,1,ESTER JOAQUINA PRATS,10533729,,demandado,ESTER JOAQUINA PRATS,1,1,9.671,False,False,0
+24,535814,,RESUELTO,True,False,,1,1,Nancy Mariela Benedetti,25.688.264,,demandada,Nancy Mariela Benedetti,2,2,27.124,False,False,0
+25,518796,,RESUELTO,True,False,,1,1,LEONARDO GABRIEL,28.731.512,20-28731512-1,demandado,LEONARDO GABRIEL,2,2,37.008,False,False,0
+26,495683,,RESUELTO,True,False,,1,1,VILLALBA JOSE ALBERTO,31.095.679,,demandado,VILLALBA JOSE ALBERTO,1,1,9.798,False,False,0
+27,516903,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+28,538120,,RESUELTO,True,False,,1,1,NATALIA ANDREA OÑA,26.294.008,,demandada,NATALIA ANDREA OÑA,1,1,16.992,False,False,0
+29,532501,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+30,503824,,RESUELTO,True,False,,1,1,JACQUET ROBERTO LUIS,20.258.157,23-20258157-9,embargado,JACQUET ROBERTO LUIS,1,1,12.928,False,False,0
+31,536750,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+32,514558,,RESUELTO,True,False,,1,1,Gustavo Ezequiel Godoy,31.317.421,,demandado,Gustavo Ezequiel Godoy,1,1,10.009,False,False,0
+33,494160,,RESUELTO,False,True,conflicto_identificador,1,1,MARCELA PATRICIA GARCIA PALACIOS,93757465,27-93757465-2,demandada | demandado,MARCELA PATRICIA GARCIA PALACIOS,2,2,25.773,False,True,2
+34,529783,,RESUELTO,True,False,,1,1,ALFREDO ANTONIO ARIAS,10.700.496,,embargado,ALFREDO ANTONIO ARIAS,2,2,14.152,False,False,0
+35,525055,,RESUELTO,True,False,,1,1,BENITO CABRERA VASQUEZ,94.310.138,,demandado | embargado,BENITO CABRERA VASQUEZ,2,2,17.675,False,False,0
+36,501211,,RESUELTO,True,False,,1,1,PEDRAZA TEODORO ROVEL,20.276.462,20-20276462-3,demandado,PEDRAZA TEODORO ROVEL,1,1,12.13,False,False,0
+37,531075,,RESUELTO,True,False,,1,1,DANIEL CARLOS PEREZ,24391072,,demandado,DANIEL CARLOS PEREZ,1,1,10.557,False,False,0
+38,494151,,RESUELTO,True,False,,1,1,ST. JOSE LUIS VALENTINI,17.196.196,,demandado | deudor,JOSE LUIS VALENTINI | ST. JOSE LUIS VALENTINI,2,2,21.191,False,False,0
+39,546334,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+40,547373,,RESUELTO,False,True,persona_1:nombre_incompleto,1,1,JULIO,,30-71412954-2,demandado | embargado,JULIO,2,2,18.003,False,False,0
+41,507932,,RESUELTO,True,False,,1,1,IVAN ROBERTO SILVA,27.318.472,,embargado,IVAN ROBERTO SILVA,1,1,11.55,False,False,0
+42,538090,,RESUELTO,True,False,,1,1,Miriam López Franco,94.542.024,27-94542024-9,demandada | embargado,MIRIAM LOPEZ FRANCO | Miriam López Franco,2,2,23.877,False,False,0
+43,531066,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+44,513551,,RESUELTO,True,False,,1,1,HERRERA MAXIMILIANO FRANCISCO ALEXIS,36.301.174,,titular,HERRERA MAXIMILIANO FRANCISCO ALEXIS,1,1,13.211,False,False,0
+45,522290,,RESUELTO,True,False,,1,1,GRACIELA EDITH CANO,18.347.843,,embargado,GRACIELA EDITH CANO,1,1,8.587,False,False,0
+46,501201,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+47,538037,,RESUELTO,True,False,,1,1,GRISELDA BEATRIZ VALENZUELA,24.326.675,,embargado,GRISELDA BEATRIZ VALENZUELA,1,1,10.357,False,False,0
+48,538114,,RESUELTO,True,False,,1,1,ANGEL EZEQUIEL ALARCON,44.583.812,,demandada,ANGEL EZEQUIEL ALARCON,1,1,10.063,False,False,0
+49,529847,,RESUELTO,True,False,,1,1,LIPSKER MATIAS ALEXIS,24.564.225,20-24564225-4,demandado,LIPSKER MATIAS ALEXIS,1,1,12.844,False,False,0
+50,495014,,RESUELTO,True,False,,1,1,GRACIELA MONICA ZARZA,17711031,,embargado,GRACIELA MONICA ZARZA,1,1,13.162,False,False,0
+51,543609,,RESUELTO,True,False,,1,1,MIGUEL ÁNGEL,23087819,,embargado,MIGUEL ÁNGEL,1,1,9.53,False,False,0
+52,535837,,RESUELTO,True,False,,1,1,LUNA HORACIO EMANUEL,D.N.I. 35499690,,embargado | titular,LUNA HORACIO EMANUEL,2,2,19.644,False,False,0
+53,503810,,RESUELTO,True,False,,1,1,HORACIO LUIS VACCHER,11.376.446,,demandado,HORACIO LUIS VACCHER,2,2,17.696,False,False,0
+54,495686,,RESUELTO,True,False,,1,1,MACIEL FERNANDO OSCAR,27.825.597,,embargado,MACIEL FERNANDO OSCAR,1,1,11.814,False,False,0
+55,495690,,RESUELTO,True,False,,1,1,SOTO JUAN RAMON,34.300.506,,embargado,SOTO JUAN RAMON,1,1,11.951,False,False,0
+56,536730,,RESUELTO,True,False,,1,1,ROMERO GABRIEL GUSTAVO,25.925.481,,embargado,ROMERO GABRIEL GUSTAVO,1,1,10.459,False,False,0
+57,507931,,RESUELTO,True,False,,1,1,NADIA VANESA BRUSATIN,31.478.712,,embargado,NADIA VANESA BRUSATIN,1,1,11.638,False,False,0
+58,536724,,RESUELTO,True,False,,1,1,HORACIO OSCAR MONTENEGRO,23.420.002,,embargado,HORACIO OSCAR MONTENEGRO | Horacio Oscar Montenegro,2,2,19.357,False,False,0
+59,536738,,RESUELTO,True,False,,1,1,LUCINDO RAMÓN CORNEJO,12.848.992,,demandado | embargado,LUCINDO RAMÓN CORNEJO | Lucindo Ramón Cornejo,2,2,19.533,False,False,0
+60,516901,,RESUELTO,True,False,,1,1,DANIEL EZEQUIEL ROMERO,29.225.672,,demandado,DANIEL EZEQUIEL ROMERO | Daniel Ezequiel Romero,2,2,20.593,False,False,0
+61,547366,,RESUELTO,False,True,persona_1:evidencia_unica_debil,1,1,CARLA STEFANIA,,,demandado,CARLA STEFANIA,1,1,5.63,False,False,0
+62,523996,,RESUELTO,True,False,,1,1,RUBEN ALBERTO,5.612.521,,demandado,RUBEN ALBERTO,2,2,20.659,False,False,0
+63,523977,,RESUELTO,True,False,,1,1,EDUARDO JAVIER FERNANDEZ,21.594.165,,demandado,EDUARDO JAVIER FERNANDEZ,1,1,9.007,False,False,0
+64,543631,,RESUELTO,True,False,,1,1,GONZALEZ LEDESMA MAURICIO,35.646.104,,demandado,GONZALEZ LEDESMA MAURICIO,1,1,10.136,False,False,0
+65,523990,,RESUELTO,True,False,,1,1,ALEJANDRO RODRIGO ALBORNOZ,20.583.561,,demandado | embargado,ALEJANDRO RODRIGO ALBORNOZ | Alejandro Rodrigo Albornoz,2,2,18.605,False,False,0
+66,513487,,RESUELTO,True,False,,1,1,AGUSTIN MARIANO PEROSIO,16.893.287,20-16893287-2,demandado | embargado,AGUSTIN MARIANO PEROSIO,2,2,29.006,False,False,0
+67,547376,,RESUELTO,True,False,,1,1,Favio Duarte Montania,,20-94958329-6,titular,Favio Duarte Montania,1,1,9.182,False,False,0
+68,524013,,RESUELTO,True,False,,1,1,DIEGO CISTERNA,26034291,,demandado | embargado,CISTERNA DIEGO | DIEGO CISTERNA,2,2,19.619,False,False,0
+69,498352,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+70,526651,,RESUELTO,True,False,,1,1,PORCO MAIRA GABRIELA,31.370.360,27313703601,embargado,PORCO MAIRA GABRIELA,2,2,25.459,False,False,0
+71,531094,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+72,547369,,RESUELTO,False,True,persona_1:evidencia_unica_debil,1,1,CLAUDIO LEONARDO,,,demandado,CLAUDIO LEONARDO,1,1,6.089,False,False,0
+73,536715,,RESUELTO,True,False,,1,1,ALFREDO ISMAEL LOPEZ,27015232,,demandado,ALFREDO ISMAEL LOPEZ,1,1,9.496,False,False,0
+74,536707,,RESUELTO,True,False,,1,1,JUAN CARLOS SEQUERA,4.513.281,,demandado,JUAN CARLOS SEQUERA,1,1,9.602,False,False,0
+75,547372,,RESUELTO,False,True,persona_1:evidencia_unica_debil,1,1,JOSE LUIS,,,demandado,JOSE LUIS,1,1,5.688,False,False,0
+76,538066,,RESUELTO,True,False,,1,1,Clara Evangeline Torres,23.492.823,,embargado,Clara Evangeline Torres,1,1,8.561,False,False,0
+77,536739,,RESUELTO,True,False,,1,1,"PAULA ALEJANDRA
+
+PILARIA",21.594.889,,demandado,"PAULA ALEJANDRA
+
+PILARIA",1,1,9.261,False,False,0
+78,546238,,RESUELTO,True,False,,1,1,LOPEZ CARLOS PASCUAL,7.759.088,,demandado,LOPEZ CARLOS PASCUAL,1,1,12.595,False,False,0
+79,513482,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,1,Sonia Raquel Bobadilla,16.893.287,23-14564727-4,demandado,Sonia Raquel Bobadilla,1,1,12.145,False,True,1
+79,513482,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,2,AGUSTIN MARIANO PEROSIO,,23-14564727-4,,AGUSTIN MARIANO PEROSIO,1,1,8.775,False,True,1
+80,536728,,RESUELTO,True,False,,1,1,MONTIEL DARUEN RUBEN,21.525.457,,embargado,MONTIEL DARUEN RUBEN,1,1,12.12,False,False,0

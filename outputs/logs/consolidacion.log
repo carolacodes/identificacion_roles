@@ -78,3 +78,48 @@
 2026-09-29 14:44:33,586 INFO __main__ - Documentos cargados: 80
 2026-09-29 14:44:33,796 INFO __main__ - Consolidacion finalizada: documentos=80 resueltos=67 multiples=5 no_resueltos=8 personas=82
 2026-09-29 14:44:33,796 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20260929_144433_consolidacion_multi_fragmentos_dspy_thr50
+2026-09-29 16:17:42,523 INFO __main__ - Inicio de consolidacion
+2026-09-29 16:17:42,524 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20260929_144135_multi_v7_fragmentos_dspy_thr50\predicciones_por_documento.json
+2026-09-29 16:17:42,539 INFO __main__ - Documentos cargados: 80
+2026-09-29 16:17:42,726 INFO __main__ - Consolidacion finalizada: documentos=80 resueltos=68 multiples=5 no_resueltos=7 personas=83
+2026-09-29 16:17:42,726 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20260929_161742_consolidacion_multi_fragmentos_dspy_thr50_v2
+2026-09-29 16:27:44,225 INFO __main__ - Inicio de consolidacion
+2026-09-29 16:27:44,225 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20260929_144135_multi_v7_fragmentos_dspy_thr50\predicciones_por_documento.json
+2026-09-29 16:27:44,241 INFO __main__ - Documentos cargados: 80
+2026-09-29 16:27:44,445 INFO __main__ - Consolidacion finalizada: documentos=80 resueltos=71 multiples=6 no_resueltos=3 personas=92
+2026-09-29 16:27:44,446 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20260929_162744_consolidacion_multi_fragmentos_dspy_thr50_v2
+2026-09-30 13:47:49,658 INFO __main__ - Inicio de consolidacion
+2026-09-30 13:47:49,682 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20260930_133106_multi_v7_fragmentos_thr50\predicciones_por_documento.json
+2026-09-30 13:47:49,701 INFO __main__ - Documentos cargados: 80
+2026-09-30 13:47:50,039 INFO __main__ - Consolidacion finalizada: documentos=80 resueltos=68 multiples=8 no_resueltos=4 personas=84
+2026-09-30 13:47:50,040 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20260930_134749_consolidacion_multi_fragmentos_thr50_20260930
+2026-09-30 13:47:57,129 INFO __main__ - Inicio de consolidacion
+2026-09-30 13:47:57,129 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20260930_134333_pii_v7_fragmentos_thr50\predicciones_por_documento.json
+2026-09-30 13:47:57,144 INFO __main__ - Documentos cargados: 80
+2026-09-30 13:47:57,239 INFO __main__ - Consolidacion finalizada: documentos=80 resueltos=64 multiples=2 no_resueltos=14 personas=68
+2026-09-30 13:47:57,239 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20260930_134757_consolidacion_pii_fragmentos_thr50_20260930
+2026-09-30 14:40:50,802 INFO __main__ - Inicio de consolidacion
+2026-09-30 14:40:50,802 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20260930_133106_multi_v7_fragmentos_thr50\predicciones_por_documento.json
+2026-09-30 14:40:50,818 INFO __main__ - Documentos cargados: 80
+2026-09-30 14:40:51,020 INFO __main__ - Consolidacion finalizada: documentos=80 resueltos=66 multiples=13 no_resueltos=1 personas=132
+2026-09-30 14:40:51,020 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20260930_144050_consolidacion_multi_fragmentos_thr50_v2
+2026-09-30 14:42:04,961 INFO __main__ - Inicio de consolidacion
+2026-09-30 14:42:04,961 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20260930_134333_pii_v7_fragmentos_thr50\predicciones_por_documento.json
+2026-09-30 14:42:04,974 INFO __main__ - Documentos cargados: 80
+2026-09-30 14:42:05,097 INFO __main__ - Consolidacion finalizada: documentos=80 resueltos=64 multiples=7 no_resueltos=9 personas=78
+2026-09-30 14:42:05,097 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20260930_144205_consolidacion_pii_fragmentos_thr50_v2
+2026-09-30 14:53:43,328 INFO __main__ - Inicio de consolidacion
+2026-09-30 14:53:43,338 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20260930_133106_multi_v7_fragmentos_thr50\predicciones_por_documento.json
+2026-09-30 14:53:43,368 INFO __main__ - Documentos cargados: 80
+2026-09-30 14:53:43,738 INFO __main__ - Consolidacion finalizada: documentos=80 resueltos=66 multiples=13 no_resueltos=1 personas=108
+2026-09-30 14:53:43,738 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20260930_145343_consolidacion_multi_fragmentos_thr50_v3
+2026-09-30 15:03:54,783 INFO __main__ - Inicio de consolidacion
+2026-09-30 15:03:54,783 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20260930_133106_multi_v7_fragmentos_thr50\predicciones_por_documento.json
+2026-09-30 15:03:54,799 INFO __main__ - Documentos cargados: 80
+2026-09-30 15:03:54,990 INFO __main__ - Consolidacion finalizada: documentos=80 resueltos=69 multiples=8 no_resueltos=3 personas=85
+2026-09-30 15:03:54,990 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20260930_150354_consolidacion_multi_fragmentos_thr50_rollback_titular
+2026-09-30 15:04:44,120 INFO __main__ - Inicio de consolidacion
+2026-09-30 15:04:44,120 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20260930_134333_pii_v7_fragmentos_thr50\predicciones_por_documento.json
+2026-09-30 15:04:44,137 INFO __main__ - Documentos cargados: 80
+2026-09-30 15:04:44,229 INFO __main__ - Consolidacion finalizada: documentos=80 resueltos=64 multiples=2 no_resueltos=14 personas=68
+2026-09-30 15:04:44,229 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20260930_150444_consolidacion_pii_fragmentos_thr50_rollback_titular

@@ -1,0 +1,19 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_2:nombre_incompleto,3,1,OLARTE MALLQUI JULIO,,20-93916854-1,embargado,OLARTE MALLQUI JULIO,2,2,17.75,False,True,2
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_2:nombre_incompleto,3,2,JULIO,,30-71412954-2,embargada | embargado,JULIO,2,2,16.51,False,True,2
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_2:nombre_incompleto,3,3,OSCAR S.R.L.,,30-71412954-2,embargado,OSCAR S.R.L.,1,1,9.617,False,True,2
+41,507932,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,6,1,Luis Enrique Correa,14.010.264,,embargado,Luis Enrique Correa,2,2,16.963,False,False,0
+41,507932,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,6,2,Valeria Gladys Leveratto,16.927.627,,embargada,Valeria Gladys Leveratto,2,2,16.916,False,False,0
+41,507932,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,6,3,Gonzalo Gastón Novo,28.507.191,,embargado,Gonzalo Gastón Novo,2,2,16.885,False,False,0
+41,507932,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,6,4,Alejandro Carlos Zothner,25.999.634,,embargado,Alejandro Carlos Zothner,2,2,16.857,False,False,0
+41,507932,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,6,5,Juan Roberto Michel,20.855.852,,embargado,Juan Roberto Michel,2,2,16.676,False,False,0
+41,507932,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,6,6,IVAN ROBERTO SILVA,27.318.472,,embargado,IVAN ROBERTO SILVA,1,1,12.994,False,False,0
+43,531066,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+46,501201,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,6,1,Luis Enrique Correa,14.010.264,,embargado,Luis Enrique Correa,2,2,16.964,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,6,2,Valeria Gladys Leveratto,16.927.627,,embargada,Valeria Gladys Leveratto,2,2,16.916,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,6,3,Gonzalo Gastón Novo,28.507.191,,embargado,Gonzalo Gastón Novo,2,2,16.886,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,6,4,Alejandro Carlos Zothner,25.999.634,,embargado,Alejandro Carlos Zothner,2,2,16.855,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,6,5,Juan Roberto Michel,20.855.852,,embargado,Juan Roberto Michel,2,2,16.674,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal,6,6,NADIA VANESA BRUSATIN,31.478.712,,embargado,NADIA VANESA BRUSATIN,1,1,11.493,False,False,0
+69,498352,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0

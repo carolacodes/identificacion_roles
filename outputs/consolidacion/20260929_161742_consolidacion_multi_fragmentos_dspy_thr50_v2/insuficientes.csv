@@ -1,0 +1,11 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_2:nombre_incompleto,3,1,OLARTE MALLQUI JULIO,,20-93916854-1,embargado,OLARTE MALLQUI JULIO,2,2,17.75,False,True,2
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_2:nombre_incompleto,3,2,JULIO,,30-71412954-2,embargada | embargado,JULIO,2,2,16.51,False,True,2
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador | persona_2:nombre_incompleto,3,3,OSCAR S.R.L.,,30-71412954-2,embargado,OSCAR S.R.L.,1,1,9.617,False,True,2
+43,531066,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+46,501201,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+54,495686,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+67,547376,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+69,498352,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+79,513482,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+80,536728,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0

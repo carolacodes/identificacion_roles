@@ -96,15 +96,21 @@ ROLES_JURIDICOS_FUERTES = {
     "ejecutada",
     "deudor",
     "deudora",
-}
-
-# "titular" es una señal útil, pero no suficiente por sí sola:
-# una persona puede ser titular de una cuenta sin ser el
-# embargado. Se conserva como señal de apoyo.
-
-ROLES_JURIDICOS_APOYO = {
     "titular",
 }
+
+# Por ahora no hay roles de apoyo separados.
+#
+# "titular" pasa a considerarse rol fuerte porque en los oficios
+# analizados aparece de forma recurrente en expresiones como
+# "cuenta de titularidad de" o "fondos de titularidad de", donde
+# identifica directamente al sujeto sobre cuyos fondos recae la
+# medida.
+#
+# Se conserva el conjunto para mantener la estructura del
+# diagnóstico y permitir agregar roles de apoyo en el futuro.
+
+ROLES_JURIDICOS_APOYO: set[str] = set()
 
 # Se mantiene este conjunto por compatibilidad con el score
 # histórico. El score_total continúa exportándose como dato de
@@ -177,40 +183,75 @@ PATRONES_CONTEXTO_POSITIVO = (
     r"\bproceder\s+a\s+embargar\b",
     r"\bembargar\s+(?:las|los|sus)?\s*(?:cuentas|fondos|haberes|sumas)\b",
 
-    # Frases frecuentes que vinculan los fondos/cuentas con el
-    # sujeto de la medida, aun cuando la palabra 'embargo' quede
-    # fuera del fragmento corto.
-    r"\b(?:fondos|sumas|cantidades|cuentas|haberes)\b.{0,90}\b(?:que\s+)?(?:posea|posean|tenga|tengan|perciba|perciban|pertenezca|pertenezcan)\b",
-    r"\b(?:cantidades|sumas|fondos)\s+presentes\s+(?:y|o|y/o)\s+futuras\b",
+    # Embargo sobre dinero/cuentas a nombre de una persona.
+    r"\bembargo\s+de\s+dinero\s+depositado\s+en\s+"
+    r"cuenta(?:/s|s)?\s+a\s+nombre\s+de\b",
+
+    r"\bembargo\s+(?:de|sobre)\s+"
+    r"(?:dinero|fondos|sumas|cuentas?)\b",
+
+    r"\b(?:dinero|fondos|sumas)\s+"
+    r"(?:depositad[oa]s?|existentes?)\s+"
+    r"en\s+cuenta(?:/s|s)?\s+a\s+nombre\s+de\b",
+
+    # Frases frecuentes que vinculan fondos/cuentas con el sujeto
+    # aun cuando la palabra "embargo" quedó fuera del fragmento.
+    r"\b(?:fondos|sumas|cantidades|cuentas|haberes)\b"
+    r".{0,90}\b"
+    r"(?:que\s+)?"
+    r"(?:posea|posean|tenga|tengan|perciba|perciban|"
+    r"pertenezca|pertenezcan)\b",
+
+    r"\b(?:cantidades|sumas|fondos)\s+"
+    r"presentes\s+(?:y|o|y/o)\s+futuras\b",
+
     r"\bcuentas?\s+que\s+posea\b",
     r"\bfondos\s+que\s+posea\b",
     r"\bsumas\s+de\s+dinero\s+que\s+tenga\b",
 
+    # Fragmentos truncados que pueden haber perdido la palabra
+    # "cantidades" al inicio.
+    r"\bpresentes\s+o\s+futuras\s+"
+    r"que\s+(?:tenga|tengan)\s+depositad[oa]s?\b",
+
+    # Fondos explícitamente asociados a demandados/embargados.
+    r"\bfondos\s+que\s+"
+    r"(?:el|la|los|las)?\s*"
+    r"(?:demandad[oa]s?|embargad[oa]s?|ejecutad[oa]s?)\b",
+
+    # Fondos ya retenidos de cuentas de titularidad de la persona.
+    r"\bretenid[oa]s?\b.{0,120}"
+    r"\bcuentas?\s+de\s+titularidad\b",
+
+    # Vinculación de fondos/cuentas/sumas con "a nombre de".
+    r"\b(?:fondos|cuentas?|sumas|cantidades)\b"
+    r".{0,120}\ba\s+nombre\s+de\b",
+
     # Retenciones.
-    r"\bretenci[oó]n\s+(?:directa\s+)?(?:de|del|de\s+la|de\s+los|de\s+las|sobre)\b",
-    r"\bretener\s+(?:el|la|los|las)?\s*(?:haberes|fondos|sumas|porcentaje)\b",
+    r"\bretenci[oó]n\s+(?:directa\s+)?"
+    r"(?:de|del|de\s+la|de\s+los|de\s+las|sobre)\b",
+
+    r"\bretener\s+(?:el|la|los|las)?\s*"
+    r"(?:haberes|fondos|sumas|porcentaje)\b",
+
     r"\bperciba\s+el\s+sr\b",
     r"\bperciba\s+la\s+sra\b",
 )
-
 
 # ============================================================
 # CONTEXTO NEGATIVO
 # ============================================================
 
 PATRONES_CONTEXTO_NEGATIVO = (
-    # Se evitan palabras demasiado generales como "depositar" o
-    # "transferencia": aparecen también en el texto normal de un
-    # embargo y generaban falsos negativos.
+    # Evitamos expresiones demasiado generales como
+    # "depositar", "transferencia" o "a favor de", porque
+    # también aparecen en el texto normal de un embargo y pueden
+    # penalizar al verdadero embargado.
 
-    # Estas expresiones sí suelen indicar que la persona es un
-    # beneficiario, autorizado o tercero distinto del embargado.
     r"\bcuenta\s+abierta\s+a\s+nombre\s+de\b",
-    r"\ba\s+favor\s+de\b",
     r"\bbeneficiari[oa]\b",
     r"\bdestinatari[oa]s?\b",
 )
-
 
 # ============================================================
 # TERCEROS
@@ -1698,8 +1739,8 @@ def _grupo_tiene_rol_juridico_fuerte(
     grupo: GrupoPersona,
 ) -> bool:
     """
-    Señal semántica de GLiNER: embargado, demandado, ejecutado
-    o deudor (incluyendo variantes de género).
+    Señal semántica fuerte de GLiNER: embargado, demandado,
+    ejecutado, deudor o titular (incluyendo variantes de género).
     """
 
     return bool(
@@ -1711,7 +1752,7 @@ def _grupo_tiene_rol_juridico_fuerte(
 def _grupo_tiene_rol_juridico_apoyo(
     grupo: GrupoPersona,
 ) -> bool:
-    """Rol útil pero no concluyente, por ejemplo 'titular'."""
+    """Roles de apoyo configurados, si existieran."""
 
     return bool(
         _roles_normalizados_grupo(grupo)
@@ -1782,29 +1823,30 @@ def _evaluar_grupo_embargado(
     dict[str, Any],
 ]:
     """
-    Evalúa un grupo utilizando señales separadas y explicables.
+    Evalua un grupo utilizando señales separadas y explicables.
 
     Señales principales:
 
     1. rol_juridico_fuerte:
-       GLiNER devolvió embargado/demandado/ejecutado/deudor.
+       GLiNER devolvio embargado/demandado/ejecutado/deudor/titular.
 
     2. identificador:
        existe DNI o CUIT/CUIL consolidado.
 
     3. contexto_juridico:
-       el texto cercano contiene una fórmula que vincula a la
+       el texto cercano contiene una formula que vincula a la
        persona con la medida de embargo.
 
     4. repeticion:
-       la misma persona aparece en dos o más fragmentos.
+       la misma persona aparece en dos o mas fragmentos.
 
-    La repetición funciona como refuerzo, no como sustituto del
-    contexto jurídico. De esta forma, una persona autorizada que
-    aparece varias veces con DNI no se acepta automáticamente.
+    IMPORTANTE:
 
-    score_total se conserva para auditoría y suficiencia, pero no
-    gobierna por sí solo la decisión de aceptación.
+    - La repeticion funciona como refuerzo.
+    - rol fuerte + identificador, por si solos, NO alcanzan
+      cuando falta tanto contexto juridico como repeticion.
+    - score_total se conserva como dato de diagnostico,
+      pero no gobierna por si solo la decision.
     """
 
     cantidad_fragmentos = len(
@@ -1847,6 +1889,12 @@ def _evaluar_grupo_embargado(
 
     contexto_negativo_fuerte = (
         _grupo_tiene_contexto_negativo_fuerte(
+            grupo
+        )
+    )
+
+    identidad_inconsistente = (
+        _grupo_tiene_identidad_inconsistente(
             grupo
         )
     )
@@ -1911,15 +1959,15 @@ def _evaluar_grupo_embargado(
 
         "contexto_negativo_fuerte":
             contexto_negativo_fuerte,
+
+        "identidad_inconsistente":
+            identidad_inconsistente,
     }
 
     # ========================================================
     # DESCARTES FUERTES
     # ========================================================
 
-    # Una persona claramente identificada como tercero no debe
-    # convertirse en embargado solo por repetición o por un error
-    # de rol del modelo.
     if tercero_fuerte:
         return (
             False,
@@ -1929,14 +1977,16 @@ def _evaluar_grupo_embargado(
             detalle,
         )
 
-    # El contexto negativo ya no se dispara por palabras genéricas
-    # como "depositar" o "transferencia". Si aun así queda una
-    # señal negativa fuerte y no existe contexto jurídico positivo,
-    # se conserva como descarte preventivo.
-    if (
-        contexto_negativo_fuerte
-        and not tiene_contexto
-    ):
+    if identidad_inconsistente:
+        return (
+            False,
+            [
+                "identidad_inconsistente"
+            ],
+            detalle,
+        )
+
+    if contexto_negativo_fuerte:
         return (
             False,
             [
@@ -1949,28 +1999,15 @@ def _evaluar_grupo_embargado(
     # REGLAS POSITIVAS
     # ========================================================
 
-    # Regla A:
-    # El texto vincula jurídicamente a la persona con la medida y
-    # además contamos con una segunda señal independiente.
-    #
-    # Ejemplos:
-    #   contexto + rol fuerte
-    #   contexto + DNI/CUIT
+    # Contexto juridico + rol juridico fuerte.
     if (
         tiene_contexto
-        and (
-            tiene_rol_fuerte
-            or tiene_id
-        )
+        and tiene_rol_fuerte
     ):
         motivos = [
-            "contexto_juridico"
+            "contexto_juridico",
+            "rol_juridico_fuerte",
         ]
-
-        if tiene_rol_fuerte:
-            motivos.append(
-                "rol_juridico_fuerte"
-            )
 
         if tiene_id:
             motivos.append(
@@ -1988,14 +2025,30 @@ def _evaluar_grupo_embargado(
             detalle,
         )
 
-    # Regla B:
-    # Si el contexto corto no capturó la fórmula jurídica, todavía
-    # puede aceptarse un candidato cuando GLiNER detectó un rol
-    # jurídico fuerte, existe identificador y la misma identidad
-    # aparece en más de un fragmento.
-    #
-    # La repetición sola + DNI NO alcanza. El rol fuerte es
-    # obligatorio en esta ruta.
+    # Contexto juridico + identificador.
+    if (
+        tiene_contexto
+        and tiene_id
+    ):
+        motivos = [
+            "contexto_juridico",
+            "identificador",
+        ]
+
+        if tiene_repeticion:
+            motivos.append(
+                "repeticion"
+            )
+
+        return (
+            True,
+            motivos,
+            detalle,
+        )
+
+    # Rol fuerte + identificador solamente se acepta si existe
+    # repeticion. Esto evita aceptar una unica mencion aislada
+    # cuando GLiNER asigno un rol incorrecto.
     if (
         tiene_rol_fuerte
         and tiene_id
@@ -2012,10 +2065,10 @@ def _evaluar_grupo_embargado(
         )
 
     # ========================================================
-    # NO HAY COMBINACION SUFICIENTE DE SEÑALES
+    # INSUFICIENTE
     # ========================================================
 
-    motivos: list[str] = [
+    motivos = [
         "senales_insuficientes"
     ]
 
@@ -2037,11 +2090,6 @@ def _evaluar_grupo_embargado(
     if not tiene_repeticion:
         motivos.append(
             "sin_repeticion"
-        )
-
-    if tiene_rol_apoyo:
-        motivos.append(
-            "solo_rol_juridico_apoyo"
         )
 
     return (

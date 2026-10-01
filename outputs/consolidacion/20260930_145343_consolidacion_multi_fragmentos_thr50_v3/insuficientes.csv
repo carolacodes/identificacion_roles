@@ -1,0 +1,32 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+35,525055,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,1,BENITO CABRERA VASQUEZ,94.310.138,,demandado | embargado,BENITO CABRERA VASQUEZ,2,2,22.924,False,False,0
+35,525055,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,2,Joaquín Nicolás Correa Leveratto,34.704.592,,embargado,Joaquín Nicolás Correa Leveratto,1,1,8.253,False,False,0
+35,525055,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,3,Javier Dasso Boullon,26.200.502,,embargado,Javier Dasso Boullon,1,1,8.194,False,False,0
+35,525055,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,4,Manuel Agustín González Sáez,37.917.536,,embargado,Manuel Agustín González Sáez,1,1,8.122,False,False,0
+35,525055,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,5,María José Grande,37.754.365,,embargado,María José Grande,1,1,8.096,False,False,0
+35,525055,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,6,Agustín Ernesto Barrera,33.474.275,,embargado,Agustín Ernesto Barrera,1,1,7.287,False,False,0
+37,531075,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,4,1,Vanesa Chantal Rodríguez,32.092.512,,embargado,Vanesa Chantal Rodríguez,1,2,16.065,False,True,6
+37,531075,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,4,2,DANIEL CARLOS PEREZ,24391072,,demandado,DANIEL CARLOS PEREZ,1,1,11.497,False,True,6
+37,531075,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,4,3,Alejandro Giménez,32.092.512,,embargado,Alejandro Giménez,1,1,8.394,False,True,6
+37,531075,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,4,4,Javier Andrés Bulano,32.092.512,,embargado,Javier Andrés Bulano,1,1,8.164,False,True,6
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,1,OLARTE MALLQUI JULIO,,20-93916854-1,embargado,OLARTE MALLQUI JULIO,2,2,18.794,False,True,1
+40,547373,,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,2,OSCAR S.R.L.,,20-93916854-1,embargado,OSCAR S.R.L.,2,2,17.708,False,True,1
+41,507932,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,1,IVAN ROBERTO SILVA,27.318.472,,embargado,IVAN ROBERTO SILVA,1,1,12.995,False,False,0
+41,507932,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,2,Joaquín Nicolás Correa Leveratto,34.704.592,,embargado,Joaquín Nicolás Correa Leveratto,1,1,8.242,False,False,0
+41,507932,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,3,Javier Dasso Boullon,26.200.502,,embargado,Javier Dasso Boullon,1,1,8.182,False,False,0
+41,507932,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,4,Manuel Agustín González Sáez,37.917.536,,embargado,Manuel Agustín González Sáez,1,1,8.113,False,False,0
+41,507932,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,5,María José Grande,37.754.365,,embargado,María José Grande,1,1,8.088,False,False,0
+41,507932,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,6,Agustín Ernesto Barrera,33.474.275,,embargado,Agustín Ernesto Barrera,1,1,7.237,False,False,0
+43,531066,,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0
+47,538037,,RESUELTO_MULTIPLE,False,True,persona_4:nombre_incompleto,4,1,GRISELDA BEATRIZ VALENZUELA,24.326.675,,demandada | embargado,GRISELDA BEATRIZ VALENZUELA,2,2,22.745,False,False,0
+47,538037,,RESUELTO_MULTIPLE,False,True,persona_4:nombre_incompleto,4,2,Ruben Di Benedetto,14.048.834,,embargada,Ruben Di Benedetto,1,1,8.484,False,False,0
+47,538037,,RESUELTO_MULTIPLE,False,True,persona_4:nombre_incompleto,4,3,Graciela Carabino,14.257.989,,embargado,Graciela Carabino,1,1,8.481,False,False,0
+47,538037,,RESUELTO_MULTIPLE,False,True,persona_4:nombre_incompleto,4,4,CARBAGNA,14251789,,embargado,CARBAGNA,1,1,8.263,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,1,NADIA VANESA BRUSATIN,31.478.712,,embargado,NADIA VANESA BRUSATIN,1,1,12.994,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,2,Joaquín Nicolás Correa Leveratto,34.704.592,,embargado,Joaquín Nicolás Correa Leveratto,1,1,8.242,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,3,Javier Dasso Boullon,26.200.502,,embargado,Javier Dasso Boullon,1,1,8.182,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,4,Manuel Agustín González Sáez,37.917.536,,embargado,Manuel Agustín González Sáez,1,1,8.113,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,5,María José Grande,37.754.365,,embargado,María José Grande,1,1,8.088,False,False,0
+57,507931,,RESUELTO_MULTIPLE,False,True,cantidad_embargados_anormal | persona_6:evidencia_unica_debil,6,6,Agustín Ernesto Barrera,33.474.275,,embargado,Agustín Ernesto Barrera,1,1,7.237,False,False,0
+67,547376,,RESUELTO_MULTIPLE,False,True,persona_2:nombre_incompleto | persona_2:evidencia_unica_debil,2,1,Favio Duarte Montania,,20-94958329-6,titular,Favio Duarte Montania,1,1,10.431,False,False,0
+67,547376,,RESUELTO_MULTIPLE,False,True,persona_2:nombre_incompleto | persona_2:evidencia_unica_debil,2,2,dato,,,demandado,dato,1,1,6.548,False,False,0
