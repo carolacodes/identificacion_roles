@@ -1723,3 +1723,60 @@ def test_conflicto_que_afecta_aceptado_vuelve_insuficiente():
         "conflicto_identificador"
         in motivos
     )
+
+def test_nombre_generico_dato_se_descarta():
+    documento = _documento(
+        [
+            _resultado(
+                1,
+                (
+                    "Se decreta embargo sobre los fondos "
+                    "del demandado dato."
+                ),
+                [
+                    _candidate(
+                        "dato",
+                        rol="demandado",
+                    )
+                ],
+            )
+        ]
+    )
+
+    resultado = consolidar_documento(
+        documento
+    )
+
+    assert resultado["estado"] == ESTADO_NO_RESUELTO
+
+    assert (
+        resultado["grupos_descartados"][0]
+        ["decision_consolidacion"]["motivos"]
+        == ["nombre_no_valido"]
+    )
+
+
+def test_persona_juridica_srl_sigue_siendovalida():
+    documento = _documento(
+        [
+            _resultado(
+                1,
+                (
+                    "Se decreta embargo sobre los fondos "
+                    "de OSCAR S.R.L."
+                ),
+                [
+                    _candidate(
+                        "OSCAR S.R.L.",
+                        rol="embargado",
+                    )
+                ],
+            )
+        ]
+    )
+
+    resultado = consolidar_documento(
+        documento
+    )
+
+    assert resultado["estado"] == ESTADO_RESUELTO

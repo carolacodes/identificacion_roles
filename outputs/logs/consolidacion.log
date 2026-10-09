@@ -123,3 +123,8 @@
 2026-09-30 15:04:44,137 INFO __main__ - Documentos cargados: 80
 2026-09-30 15:04:44,229 INFO __main__ - Consolidacion finalizada: documentos=80 resueltos=64 multiples=2 no_resueltos=14 personas=68
 2026-09-30 15:04:44,229 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20260930_150444_consolidacion_pii_fragmentos_thr50_rollback_titular
+2026-10-08 22:41:19,392 INFO __main__ - Inicio de consolidacion
+2026-10-08 22:41:19,392 INFO __main__ - Archivo de entrada: /Users/carolacardozo/Documents/CAROLA PROGRAMACION/pasantia segem/identificacion_roles/outputs/por_documento/20260930_133106_multi_v7_fragmentos_thr50/predicciones_por_documento.json
+2026-10-08 22:41:19,402 INFO __main__ - Documentos cargados: 80
+2026-10-08 22:41:19,507 INFO __main__ - Consolidacion finalizada: documentos=80 resueltos=70 multiples=7 no_resueltos=3 personas=84
+2026-10-08 22:41:19,507 INFO __main__ - Salida: /Users/carolacardozo/Documents/CAROLA PROGRAMACION/pasantia segem/identificacion_roles/outputs/consolidacion/20261008_224119_consolidacion_multi_fragmentos_thr50_nombre_valido

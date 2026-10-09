@@ -154,6 +154,163 @@ EXPRESIONES_NO_NOMBRE = {
 }
 
 
+EXPRESIONES_NOMBRE_GENERICO = {
+    "dato",
+    "datos",
+    "persona",
+    "personas",
+    "nombre",
+    "titular",
+    "demandado",
+    "demandada",
+    "embargado",
+    "embargada",
+    "ejecutado",
+    "ejecutada",
+    "deudor",
+    "deudora",
+}
+
+
+
+# ============================================================
+# ESTRUCTURA VALIDA DE NOMBRE / RAZON SOCIAL
+# ============================================================
+
+# La validación se usa en la etapa de decisión de la consolidación,
+# no durante la extracción de evidencias. De esta manera un candidato
+# inválido sigue quedando visible en "grupos_descartados" para auditoría.
+
+PATRONES_PERSONA_JURIDICA = (
+    r"\bS\.?\s*A\.?\s*S\.?\b",                # S.A.S.
+    r"\bS\.?\s*R\.?\s*L\.?\b",                # S.R.L.
+    r"\bS\.?\s*A\.?\b",                       # S.A.
+    r"\bS\.?\s*C\.?\s*S\.?\b",                # S.C.S.
+    r"\bS\.?\s*C\.?\s*A\.?\b",                # S.C.A.
+    r"\bS\.?\s*C\.?\b",                       # S.C.
+    r"\bSOCIEDAD\s+ANONIMA\b",
+    r"\bSOCIEDAD\s+DE\s+RESPONSABILIDAD\s+LIMITADA\b",
+    r"\bSOCIEDAD\s+POR\s+ACCIONES\s+SIMPLIFICADA\b",
+)
+
+
+def _nombre_tiene_estructura_valida(
+    nombre: Any,
+) -> bool:
+    """
+    Valida que el candidato tenga estructura plausible de persona
+    física o jurídica.
+
+    Persona física:
+        requiere al menos dos tokens alfabéticos útiles.
+
+    Persona jurídica:
+        acepta razones sociales reconocibles, por ejemplo:
+        "OSCAR S.R.L." o "PLAN ROMBO S.A.".
+
+    Esta regla evita aceptar términos aislados y genéricos como:
+        "dato"
+    aun cuando GLiNER les haya asignado un rol jurídico.
+    """
+
+    text = _texto_seguro(
+        nombre
+    )
+
+    if not text:
+        return False
+
+    normalizado = _normalizar_texto(
+        text
+    )
+
+    if not normalizado:
+        return False
+
+    if (
+        normalizado.lower()
+        in EXPRESIONES_NOMBRE_GENERICO
+    ):
+        return False
+
+    # --------------------------------------------------------
+    # PERSONA JURIDICA
+    # --------------------------------------------------------
+
+    if any(
+        re.search(
+            pattern,
+            text,
+            flags=re.IGNORECASE,
+        )
+        is not None
+        for pattern
+        in PATRONES_PERSONA_JURIDICA
+    ):
+        # Debe existir al menos algún nombre antes/además de la
+        # forma societaria. Evita aceptar solamente "S.A.".
+        tokens_utiles = [
+            token
+            for token
+            in _tokens_nombre(
+                text
+            )
+            if len(token) >= 2
+            and token not in {
+                "SA",
+                "SAS",
+                "SRL",
+                "SC",
+                "SCS",
+                "SCA",
+                "SOCIEDAD",
+                "ANONIMA",
+                "RESPONSABILIDAD",
+                "LIMITADA",
+                "ACCIONES",
+                "SIMPLIFICADA",
+            }
+        ]
+
+        return bool(
+            tokens_utiles
+        )
+
+    # --------------------------------------------------------
+    # PERSONA FISICA
+    # --------------------------------------------------------
+
+    tokens = [
+        token
+        for token
+        in _tokens_nombre(
+            text
+        )
+        if re.search(
+            r"[A-ZÁÉÍÓÚÜÑ]",
+            token,
+            flags=re.IGNORECASE,
+        )
+    ]
+
+    # Para una persona física exigimos al menos dos componentes
+    # (por ejemplo nombre + apellido, o apellido + nombre).
+    if len(tokens) < 2:
+        return False
+
+    # Evita casos formados solamente por iniciales.
+    tokens_contenido = [
+        token
+        for token
+        in tokens
+        if len(token) >= 2
+    ]
+
+    return len(
+        tokens_contenido
+    ) >= 2
+
+
 # ============================================================
 # CONTEXTO POSITIVO
 # ============================================================
@@ -1899,6 +2056,16 @@ def _evaluar_grupo_embargado(
         )
     )
 
+    nombre_canonico = _nombre_canonico(
+        grupo
+    )
+
+    nombre_estructura_valida = (
+        _nombre_tiene_estructura_valida(
+            nombre_canonico
+        )
+    )
+
     roles_normalizados = sorted(
         _roles_normalizados_grupo(
             grupo
@@ -1962,11 +2129,26 @@ def _evaluar_grupo_embargado(
 
         "identidad_inconsistente":
             identidad_inconsistente,
+
+        "nombre_estructura_valida":
+            nombre_estructura_valida,
     }
 
     # ========================================================
     # DESCARTES FUERTES
     # ========================================================
+
+    # Un nombre que no tiene estructura plausible de persona
+    # física ni de razón social nunca debe resolverse como
+    # embargado, aunque tenga rol o contexto positivo.
+    if not nombre_estructura_valida:
+        return (
+            False,
+            [
+                "nombre_no_valido"
+            ],
+            detalle,
+        )
 
     if tercero_fuerte:
         return (
