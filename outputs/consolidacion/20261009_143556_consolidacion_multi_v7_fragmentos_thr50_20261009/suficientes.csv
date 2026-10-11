@@ -1,0 +1,6 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+1,494151,494151_1.pdf,RESUELTO,True,False,,1,1,MercadoLibre S.R.L.,,30-70308853-4,embargado,MercadoLibre S.R.L.,1,1,11.657,False,False,0
+14,507931,507931_1.pdf,RESUELTO,True,False,,1,1,Valeria Gladys Leveratto,16.927.627,,embargado,Valeria Gladys Leveratto,2,2,14.839,False,False,0
+15,507932,507932_1.pdf,RESUELTO,True,False,,1,1,Valeria Gladys Leveratto,16.927.627,,embargado,Valeria Gladys Leveratto,2,2,14.839,False,False,0
+37,531075,531075_1.pdf,RESUELTO,True,False,,1,1,Mercado Pago Asset Management S.A.,,33-71862856-9,demandado,Mercado Pago Asset Management S.A.,1,1,9.002,False,True,3
+70,543631,543631_1.pdf,RESUELTO,True,False,,1,1,MERCADO LIBRE SRL/ MERCADO PAGO,,30-70308853-4,embargado,MERCADO LIBRE SRL/ MERCADO PAGO,1,1,10.39,False,False,0

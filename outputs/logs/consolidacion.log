@@ -128,3 +128,13 @@
 2026-10-08 22:41:19,402 INFO __main__ - Documentos cargados: 80
 2026-10-08 22:41:19,507 INFO __main__ - Consolidacion finalizada: documentos=80 resueltos=70 multiples=7 no_resueltos=3 personas=84
 2026-10-08 22:41:19,507 INFO __main__ - Salida: /Users/carolacardozo/Documents/CAROLA PROGRAMACION/pasantia segem/identificacion_roles/outputs/consolidacion/20261008_224119_consolidacion_multi_fragmentos_thr50_nombre_valido
+2026-10-09 14:35:56,782 INFO __main__ - Inicio de consolidacion
+2026-10-09 14:35:56,782 INFO __main__ - Archivo de entrada: /Users/carolacardozo/Documents/CAROLA PROGRAMACION/pasantia segem/identificacion_roles/outputs/por_documento/20261009_141140_multi_v7_fragmentos_thr50/predicciones_por_documento.json
+2026-10-09 14:35:56,790 INFO __main__ - Documentos cargados: 73
+2026-10-09 14:35:56,919 INFO __main__ - Consolidacion finalizada: documentos=73 resueltos=6 multiples=0 no_resueltos=67 personas=6
+2026-10-09 14:35:56,919 INFO __main__ - Salida: /Users/carolacardozo/Documents/CAROLA PROGRAMACION/pasantia segem/identificacion_roles/outputs/consolidacion/20261009_143556_consolidacion_multi_v7_fragmentos_thr50_20261009
+2026-10-09 16:05:05,072 INFO __main__ - Inicio de consolidacion
+2026-10-09 16:05:05,074 INFO __main__ - Archivo de entrada: /Users/carolacardozo/Documents/CAROLA PROGRAMACION/pasantia segem/identificacion_roles/outputs/por_documento/20261009_160006_multi_v7_fragmentos_thr50/predicciones_por_documento.json
+2026-10-09 16:05:05,091 INFO __main__ - Documentos cargados: 79
+2026-10-09 16:05:05,627 INFO __main__ - Consolidacion finalizada: documentos=79 resueltos=71 multiples=5 no_resueltos=3 personas=81
+2026-10-09 16:05:05,627 INFO __main__ - Salida: /Users/carolacardozo/Documents/CAROLA PROGRAMACION/pasantia segem/identificacion_roles/outputs/consolidacion/20261009_160505_consolidacion_multi_v7_fragmentos_thr50_20261009_160006

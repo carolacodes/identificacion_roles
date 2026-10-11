@@ -1,0 +1,6 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+9,501201,501201_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+11,501696,501696_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+30,524057,524057.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+79,547373,547373_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,1,OLARTE MALLQUI JULIO,,20-93916854-1,embargado,OLARTE MALLQUI JULIO,2,2,18.842,False,True,1
+79,547373,547373_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,2,OSCAR S.R.L.,,20-93916854-1,embargado,OSCAR S.R.L.,2,2,17.896,False,True,1

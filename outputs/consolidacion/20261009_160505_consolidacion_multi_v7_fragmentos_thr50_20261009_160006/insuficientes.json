@@ -1,0 +1,764 @@
+[
+  {
+    "id": "501201",
+    "numero_archivo": "9",
+    "nombre_documento": "501201_1.pdf",
+    "texto_completo": "Poder Judicial de la Nación JUZGADO COMERCIAL 14 - SECRETARIA Nº 27 Oficio de embargo de cuentas Buenos Aires , de 2025. Al Señor Gerente de Mercado Pago Asset Management S.A. CUIT 33-71862856-9 (Mercado Fondos) S_/__D\nTengo el agrado de dirigirme a Usted en los autos caratulados: \"BBVA Banco Francés S.A. c/ Ledo Claudia Marcela s/ ejecutivo\" (Expte. Nº 11832/2011) , en trámite ante el Juzgado Nacional de 1º Instancia en lo Comercial Nº 14, Secretaría 27, con sede en Av.Callao 635 P:2, Capital Federal, a efectos de solicitarle que se sirva disponer lo necesario para trabajar embargo sobre las cuentas de las que es titular en esa entidad quién más abajo se individualiza como embargado y por el monto que también se indica.-\nDicha medida fue ordenada sobre los fondos presentes y futuros que tenga invertidos en cuotas partes del Fondo común de inversión Mercado Fondos administrado por Mercado Pago Asset Management S.A , el demandado en autos Claudia Marcela Ledo, con\nmercado libre 20 ENE 2026 RECEPCION\nPoder Judicial de la Nación\nJUZGADO COMERCIAL 14 - SECRETARIA Nº 27\nDNI 24.535.698 a su nombre y fueran susceptibles de ser embargadas. El embargo deberá trabarse hasta cubrir las sumas de $10.337,64, más la suma de $10.337,64 presupuestada para intereses y costas.-\nLas sumas retenidas, deberán ser depositadas en la cuenta judicial Libro 844 Folio 665 DV.9, con C.B.U. 0290075900229084406652, especialmente abierta al efecto en las actuaciones citadas y a la orden del Juez interviniente, en el Banco de la Ciudad de Buenos Aires, Sucursal Tribunales, CUIT Nº30 -99903208-3.-\nSe hace saber que deberá abstenerse de trabar la medida solicitada, en caso de que en la cuenta perteneciente al ejecutado se depositen los haberes (ley 27.320 modif. De la LCT 147). Ello sin perjuicio de proceder al embargo y transferencia de cualquier otra suma de dinero que ingrese a dicha cuenta por un concepto que no se corresponda con los haberes del ejecutado.-\nEl auto que ordena el presente dice: \"Buenos Aires, 28 de octubre de 2025...2.En consecuencia, trábase nuevo embargo hasta cubrir el monto $10.337,64, más la suma de $10.337,64 presupuestada para intereses y costas, sobre las sumas que por\nPoder Judicial de la Nación\nJUZGADO COMERCIAL 14 - SECRETARIA Nº 27\ncualquier motivo tenga depositados y /o invertidas por cuenta corriente, caja de ahorro, plazo fijo o que por cualquier causa fueran a ingresar en el futuro en Mercado Pago Asset Management S.A; a nombre de Claudia Marcela Ledo (D.N.I. Nº 24.535.698). Los fondos deberán ser depositados en la cuenta abierta a nombre de estas actuaciones y a la orden de este tribunal en el Banco de la Ciudad de Bs. As, Suc. Tribunales (Lº844 Fº665 DV9, CBU 02900759 00229084406652). Asimismo también debe dejarse constancia que la entidad oficiada deberá abstenerse de trabar la medida solicitada, en caso de que en la cuenta perteneciente al ejecutado se depositen los haberes (ley 27.320 modif. De la LCT 147). Ello sin perjuicio de proceder al embargo y transferencia de cualquier otra suma de dinero que ingrese a dicha cuenta por un concepto que no se corresponda con los haberes del ejecutado. Se hace saber al letrado interviniente que deberá acompañar el proyecto de oficio a la bandeja de entradas del sistema informático, el cual será confrontado y de corresponder se firmará en formato electrónico.\nFdo Dr. Pablo D. Frick.Juez\".\nSe encuentran autorizados a diligenciar el presente los\nDres. Leonardo Javier Ferreiro, Miguel Angel Moreno, Pedro Cruz\nmercado libre\n20 ENE 2026\nPoder Judicial de la Nación\nJUZGADO COMERCIAL 14 - SECRETARIA Nº 27\nSantos Fontanet; Federico G. Garcia Cabello, Sebastián Fernandez, Micaela Mighetti, Luis Agustín Bernardini, Pablo González, Marcelo Finvarb y/o el Sr. Ricardo Grosso, y/o el Sr. Lucas Rene Lee, y/o la Srta. Daniela Robasio , todos con facultades de sustituir.\nEl presente oficio deberá ser contestado en el expediente dentro del plazo de diez (10) días de recibido.-\nSaludo a Usted Atte.\nFirma válida Digitally signed by FERNANDA ANDREA GOMEZ Date: 2025.11.07 14:12:27 ART",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_embargada",
+      "solo_candidatos_descartados"
+    ],
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "Claudia Marcela Ledo",
+        "dni_embargado": "24.535.698",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargada"
+        ],
+        "variantes_nombre": [
+          "Claudia Marcela Ledo"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.494,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Claudia Marcela Ledo",
+            "dni_detectado": "24.535.698",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargada",
+            "nombre_confidence": 0.9990078806877136,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "fueran a ingresar en el futuro en Mercado Pago Asset Management S.A; a nombre de Claudia Marcela Ledo (D.N.I. Nº 24.535.698). Los",
+            "contexto_local": "fueran a ingresar en el futuro en Mercado Pago Asset Management S.A; a nombre de Claudia Marcela Ledo (D.N.I. Nº 24.535.698). Los"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 8.494,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargada"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "501696",
+    "numero_archivo": "11",
+    "nombre_documento": "501696_1.pdf",
+    "texto_completo": "mercado libre\n21 ENE 2026\nRECEPCION\nRosario, de Diciembre de 2025. 30 DIC 2025\nSres. Mercado Pago Servicio de Procesamiento S.R.L. y/o Mercado Libre S.R.L. AV. CASEROS 3039, Piso 2. CODIGO POSTAL: 1264, CABA. S / D\nE CU 960284777\nEn los autos caratulados \"WORK SAFE S.A. C/ GONZALEZ, SANTIAGO NICOLAS S/ JUICIO EJECUTIVO\" Expte Cuij 21-03002194-8, que tramitan ante los Tribunales Provinciales de Rosario, provincia de Santa Fe, ubicado en calle Balcarce 1651, por ante el Juzgado de 1ra. Inst. de Ejecución de Distrito - 1era. Nom., a cargo de la Dra. Dra. MARIANA MARTINEZ -Jueza - 1a. Inst. de Distrito de Ejecución Civil 1a. Nom. Rosario; Dra. SILVINA LOPEZ PEREYRA -Secretaria- (correo electrónico: \" civileje1ros@justiciasantafe.gov.ar \") se ha dispuesto dirigir a Ud. el presente y por su intermedio a quien corresponda, a fin de TRABAR EMBARGO:\n- sobre Fondos depositados y/o a depositarse en la cuenta en Billetera Virtual de titularidad de, SANTIAGO NICOLAS GONZALEZ, DNI 39.872.112, CVU N° 0000003100080897117481, abierta ante su Entidad, hasta cubrir la suma de la suma reclamada de pesos cuatro millones setecientos cuarenta y cuatro mil novecientos cuarenta pesos con ochenta y ocho centavos ($ 4.744.940,88) en concepto de capital.-, debiéndose depositarlas sumas resultantes en la Cuenta Judicial Sucursal: Sucursal 80 - Caja Abogados; Tipo de Cuenta: PESOS; Nro. de Cuenta: 53005370; CBU: 0650080103000530053704, abierta ante el Banco Municipal de Rosario a cuenta y orden de este juzgado.\nTodo ello conforme el decreto que a continuación se transcribe en su parte pertinente y que así lo ordena, confiriéndose facultades al suscripto conforme art. 25 CPCCSF para su diligenciamiento:\nA continuación, se transcribe el decreto que lo ordena en la parte pertinente: \"Rosario, 25 de septiembre de 2.025.- ...3-A la cautelar solicitada, trábase EMBARGO sobre los FONDOS depositados y/o a depositarse en la cuenta de\nA CU 960284777\nMERCADO PAGO/MERCADO LIBRE a nombre del demandado, por el monto total y los conceptos que a continuación del presente se detallan. Hágase saber que en caso de ser cuenta sueldo o de tratarse de una cuenta PREVISIONAL, NO se TRABARÁ. Previa REPOSICIÓN DE SELLADO de embargo, si corresponderie, líbrese el oficio respectivo. Los MONTOS EMBARGADOS deberán ser DEPOSITADOS en la cuenta judicial conforme los datos que surgen de la CONSTANCIA DE CUENTA JUDICIAL ADJUNTADA AL OFICIO. A los fines de posibilitar la transferencia bancaria, utilizar como asociado a la cuenta judicial respectiva el C.U.I.T. NRO. 33-99918181-9 perteneciente al Banco Municipal de Rosario. La ENTIDAD deberá COMUNICAR al Juzgado de la causa la realización de los depósitos respectivos o, en su caso, cualquier motivo que impidiera cumplimentar la medida ordenada en el plazo de treinta días bajo apercibimiento de astreintes. Asimismo, la INSTITUCIÓN DEBERÁ VERIFICAR, previo al depósito de las sumas embargadas, que el NÚMERO DE CUENTA BANCARIA y de C.B.U., que se ADJUNTA AL OFICIO corresponda con ESTOS AUTOS y se encuentre a nombre de ESTA DEPENDENCIA JUDICIAL abierta ante el BANCO MUNICIPAL DE ROSARIO, SUC. 80 -CAJA DE ABOGADOS DE ROSARIO. A tal fin podrá ADELANTAR la RESPUESTA o realizar CONSULTAS mediante correo electrónico dirigido a circuitoeje1ros@justiciasantafe.gov.ar . La PARTE ACTORA debe proceder a la apertura de cuenta judicial ante el Banco Municipal de Rosario, Suc. 80 -Caja de Abogados- y ADJUNTAR AL OFICIO la constancia del número de Cuenta Judicial y C.B.U., correspondiente a los presentes autos..------------. Parte Demandada: GONZALEZ, SANTIAGO NICOLÁS D.N.I. Nro.: 39.872.112 CVU: 0000003100080897117481 EL MONTO TOTAL por el que DEBE CUMPLIMENTARSE la PRESENTE MEDIDA ORDENADA y en relación a la PARTE DEMANDADA , en concepto de liquidación practicada en autos, SE DETERMINA EN LA SUMA DE: $4.744.940,88.- (PESOS CUATRO MILLONES SETECIENTOS CUARENTA Y CUATRO MIL NOVECIENTOS CUARENTA, CON 88/100 cent.). Se encuentran debidamente facultados para diligenciar el presente, el profesional que se indica a continuación y/o quien/es éste autorice Dres. Zuliani Casal Franco y Zuliani José María.” (Fdo. Dra. MARIANA MARTINEZ -Jueza -; Dra. SILVINA LOPEZ PEREYRA -Secretaria-; Dra. MARIELA BOLLINI -Prosecretaria). - El Dr. José Maria Zuliani Tº XIX – Fº 283 y/o Franco Zuliani, Tº XLVI – Fº 360, y/o la persona que cualquiera de ellos indistintamente indiquen se encuentra autorizado para intervenir en el diligenciamiento del presente, con facultades de ley. Tramitado que fuera, sírvase devolver a la brevedad, con constancia de todo lo actuado. Saludo a Ud. muy atentamente.- Sra. Silvina Lopez Pereyra SECRETARIA Juzgado de Distrito de Ejecución Civil de la 1era Nom Rosario\nDra. Martinez Mariana Paula JUEZA Juzgado de Distrito de Ejecucion Civil de la 1era Nom Rosario",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_embargada",
+      "solo_candidatos_descartados"
+    ],
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 2,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "SANTIAGO NICOLAS GONZALEZ",
+        "dni_embargado": "39.872.112",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "SANTIAGO NICOLAS GONZALEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.494,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "SANTIAGO NICOLAS GONZALEZ",
+            "dni_detectado": "39.872.112",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9982503056526184,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "depositados y/o a depositarse en la cuenta en Billetera Virtual de titularidad de, SANTIAGO NICOLAS GONZALEZ, DNI 39.872.112,",
+            "contexto_local": "depositados y/o a depositarse en la cuenta en Billetera Virtual de titularidad de, SANTIAGO NICOLAS GONZALEZ, DNI 39.872.112,"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 8.494,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "titular"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "GONZALEZ",
+        "dni_embargado": "39.872.112",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada"
+        ],
+        "variantes_nombre": [
+          "GONZALEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 10.074,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "7",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "GONZALEZ",
+            "dni_detectado": "39.872.112",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.537194550037384,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "correspondiente a los presentes autos..------------. Parte Demandada: GONZALEZ, SANTIAGO NICOLÁS D.N.I. Nro.: 39.872.112 CVU:",
+            "contexto_local": "correspondiente a los presentes autos..------------. Parte Demandada: GONZALEZ, SANTIAGO NICOLÁS D.N.I. Nro.: 39.872.112 CVU:"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "nombre_no_valido"
+          ],
+          "detalle": {
+            "score_total": 10.074,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "demandada"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": false
+          }
+        }
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "524057",
+    "numero_archivo": "30",
+    "nombre_documento": "524057.pdf",
+    "texto_completo": "6/2/26, 3:38 p.m. TEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS\nUsuario conectado: CABRERA FERNANDA MARISOL - 27382940771@notificaciones.scba.gov.ar Organismo: JUZGADO DE FAMILIA Nº 1 - CAMAPANA Carátula: CABRERA, FERNANDA MARISOL C/ FRETES DIEGO FABIAN S/ COBRO DE HONORARIOS Número de causa: 79057 Tipo de notificación: OFICIO ELECTRONICO Destinatarios: 27382940771@notificaciones.scba.gov.ar Fecha notificación: 6/2/2026 Alta o disponibilidad 5/2/2026 17:44:55 Firma digital: Firmado y Notificado por: COARASA Ana Cecilia. JUEZ — Certificado Correcto. Fecha de Firma: 05/02/2026 17:44:55 COARASA Ana Cecilia. JUEZ — Certificado Correcto. Fecha de Firma: 05/02/2026 17:44:54 GRILLO Graciela Miriam. — Certificado Correcto. Fecha de Firma: 05/02/2026 10:08:47 CABRERA Fernanda Marisol. — Certificado Correcto. Fecha de Firma: 22/01/2026 23:11:48\nOFICIO JUDICIAL LEY 22.172 REITERATORIO\nCampana, 2 de febrero de 2026.\nA MERCADO PAGO $ ___ / ___ D\nTengo el agrado de dirigirme a Uds. en los autos caratulados: “CABRERA, FERNANDA MARISOL C/ FRETES DIEGO FABIAN S/ COBRO DE HONORARIOS” - Expte. N° 79057, en trámite por ante el JUZGADO DE FAMILIA Nº 1 - CAMAPANA, sito en Colón Nro: 526 de la ciudad de Campana, a cargo del a cargo de la Dra. Ana Cecilia Coarasa, secretaria única a mi cargo, a fin de que proceda a embargar las cuentas del Sr. DIEGO FABIAN FRETES, DNI 29178884 sobre el monto de $ 700.000, y proceda a depositarlo en la cuenta judicial de autos N°7136 027 5376808, CBU 0140025027713653768085, CUIT DEL PODER JUDICIAL 30-99913926-0, BANCO PROVINCIA.\nSe deja constancia que deberá contestar el presente directamente al correo electrónico del Juzgado juzfam1-zc@jusbuenosaires.gov.ar.- El auto que ordena la presente medida es de fecha 30/06/2025 y en su parte pertinente reza: “Campana, en el día de la fecha de su firma digital.- De conformidad con lo solicitado y hasta cubrir de forma global y provisoria las sumas de $ 700.000.-, décrétase embargo -en el porcentual de ley- sobre la cuenta que tenga el demandado en MERCADO PAGO, debiendo dicha entidad depositar dichos montos en la cuenta N° 7136 027 5376808 CBU 0140025027713653768085 abierta en el Banco de la Provincia de Buenos Aires, sucursal Campana; a cuyo fin, líbrese oficio de estilo quedando la confección y diligenciamiento a cargo de la interesada.- Leandro M. Cappello. Juez.” y “Campana, 5 de octubre de 2025. De conformidad con lo solicitado, encontrándose diligenciado el oficio librado, según constancias de fecha 25/9/2025 y atento el tiempo transcurrido sin que haya sido contestado el mismo, líbrese oficio reiteratorio, con transcripción de los art. 396 y 397 del CPCC y bajo el apercibimiento dispuesto en los mismos.- Dra. Ana Coarasa. Juez.”\n“ARTÍCULO 396: Recaudos y plazos para la contestación. Las oficinas públicas no podrán establecer recaudos o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas. Deberán contestar el pedido de informes o remitir el expediente dentro de veinte (20) días hábiles y las entidades privadas dentro de diez (10) días hábiles, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales. En los procesos de alimentos, el plazo para las oficinas públicas será de siete (7) días hábiles y para las entidades privadas de cinco (5) días hábiles.”\nhttps://notificaciones.scba.gov.ar/InterfazBootstrap/textonotificacionimprimir.aspx?idnot=138402104&fecha=28.codNotif=\n1/2\n6/2/26, 3:39 p.m. TEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS\n\"ARTÍCULO 397: \"Retardo. Si por circunstancias atendibles el requerimiento nopudiere ser cumplido dentro del plazo, se deberá informar al Juzgado, antes delvencimiento de aquél, sobre las causas y la fecha en que se cumplirá. Si el Juez advirtiere que determinada repartición pública, sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno, a los efectos quecorrespondan, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas que sin causa justificada no contestaren oportunamente se les impondrá multa de un valor equivalente a dos (2) Jus por cada día de retardo. La apelación que se dedujere contra la respectiva resolución tramitará enexpediente por separado.\"\nQuedan autorizados para diligenciar el presente instrumento la Dra. Julieta Belén Cabrera T°XXII F°298 CASM, y/o el Sr. Gustavo Martín Jofre. El juzgado es competente en razón de monto, materia y territorio. Se le hace saber al destinatario que el presente oficio se encuentra suscripto en forma digital; a fin de verificar su autoría e integridad, deberá acceder al sitio web https://notificaciones.scba.gov.ar/verificar.aspx e ingresar el codífico alfanumérico que obra al pie del documento o bien escanear el código QR a través de un dispositivo móvil - conf. establece la Ac. 3997/20.-\nSin otro particular, saludo muy atentamente.-\nPara verificar la notificación, y las copias de traslado si las hubiere, ingrese a: https://notificaciones.scba.gov.ar/verificar.aspx Su código de verificación es: 2QE0QU9S\nhttps://notificaciones.scba.gov.ar/InterfazBootstrap/textonotificacionimprimir.aspx?idnot=138402104&fecha=28&codNotif=\n2/2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_embargada",
+      "solo_candidatos_descartados"
+    ],
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "DIEGO FABIAN FRETES",
+        "dni_embargado": "29178884",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "DIEGO FABIAN FRETES"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 5.458,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "DIEGO FABIAN FRETES",
+            "dni_detectado": "29178884",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9859232902526855,
+            "score_contextual": -3.0,
+            "tercero_fuerte": true,
+            "motivo_tercero": "funcionario_firmante_profesional",
+            "fragmento": "secretaria única a mi cargo, a fin de que proceda a embargar las cuentas del Sr. DIEGO FABIAN FRETES, DNI 29178884 sobre el monto",
+            "contexto_local": "secretaria única a mi cargo, a fin de que proceda a embargar las cuentas del Sr. DIEGO FABIAN FRETES, DNI 29178884 sobre el monto"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "tercero_fuerte"
+          ],
+          "detalle": {
+            "score_total": 5.458,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": true,
+            "contexto_negativo_fuerte": true,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "547373",
+    "numero_archivo": "79",
+    "nombre_documento": "547373_1.pdf",
+    "texto_completo": "OFICIO\nCapital Federal, Septiembre de 2025\nA MERCADO LIBRE SRL (MERCADO PAGO).\nS / D\nTengo el agrado de dirigirme a usted en los autos \"AYALA AGUSTINA IVONE C/ JULIO Y OSCAR S.R.L. y otro S/ DESPIDO (SENTENCIA)\" (Expte. N° 11540/2021) en trámite en el Juzgado Nacional de 1º Instancia del Trabajo Nº. 7, a cargo del Juez Subrogante Dr. Loguarro, Claudio Fabián, Secretaría única a cargo del Dr. Confalonieri, Edgardo, sito en Av. R. S. Peña 760 P:2°, Capital Federal, a fin de solicitarle se sirva a trabajar embargo de naturaleza ejecutoria sobre los fondos presentes y futuros que perciban en la entidad los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1), por la suma total de $14.498.702 (PESOS CATORCE MILLONES CUATROCIENTOS NOVENTA Y OCHO MIL SETECIENTOS DOS) en concepto de capital $10 734 304,88 ; más honorarios del Dr. Poisson $3.764.397,12 (Honorarios $ 3.111.072. + $ 653.325,12 (21% IVA) más la suma de $3.000.000 para responder a accesorios y costas de la medida -art 213 primera parte del CPCCN.\nEn cada caso por el 50% del monto total antes indicado a saber: la suma de $7.249.351 (PESOS SIETE MILLONES DOSCIENTOS CUARENTA Y NUEVE MIL TRESCIENTOS CINCUENTA Y UNO).- a embargar y la suma de $1.500.000 (PESOS DOS MILLONES QUINIENTOS MIL).- para cubrir intereses y costas..-Debiendo transferirse dichas sumas al Banco de la Ciudad de Buenos Aires - Sucursal N° 75-a la Cuenta Judicial 6 - 007 -- 1441 - 709 - 5 C.B.U. 02900759-00266144107092\nSE DEJA CONSTANCIA QUE POR TRATARSE DE UN PROCESO LABORAL EL ACTOR INTERVIENE CON EL BENEFICIO DE LITIGAR SIN GASTOS POR LO QUE EL\nmercado libre\n2 0 MAR 2026\nRECEPCION\nPRESENTSE SE ENCUENTRA LIBRE DE CUALQUIER GRAVAMEN. SE HACE SABER QUE EN LA PIEZA DEBERÁ CONSTAR QUE LA RESPUESTA DEBE DIRIGIRSE A LA DIRECCIÓN DE MAIL jntrabajo7@pjn.gov.ar\nA sus efectos, transcribo en la parte pertinente: \"ARTICULO 84. - Ley N°18.345... El plazo para contestar el informe será de VEINTE (20) días hábiles si se trata de oficinas públicas y de DIEZ (10) días hábiles cuando se solicitare a entidades privadas.\" \"Art. 398.del Código Procesal Civil y Comercial de la Nacion -... El juez deberá aplicar sanciones conminatorias progresivas en el supuesto de atraso injustificado en las contestaciones de informes. La apelación que se dedujera contra la resolución que impone sanciones conminatorias tramita en expediente separado...\" \"ARTICULO 239 del Código Penal.- Será reprimido con prisión de quince días a un año, el que resistiere o desobedeciere a un funcionario público en el ejercicio legítimo de sus funciones o a la persona que le prestare asistencia a requerimiento de aquél o en virtud de una obligación legal\".\nComo recaudo, transcribo a continuación la providencia que ordena la medida y autoriza el presente: \"Buenos Aires, 17 de julio de 2025 Atento el temperamento silente de los demandados respecto de las obligaciones pendientes y a su cargo sufragar, conforme auto de liquidación e intimación de pago de fs.164/167, - aprobada, firme e impaga -, y con basamento en lo prescripto en el art 730 inc. a y b del CCYCN; 136 primera parte de la ley 18345, admito el pedimento de la parte actora y por ello, decreto embargo de naturaleza ejecutoria sobre los bienes muebles de los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1), por la suma total de $14.498.702 (PESOS CATORCE MILLONES CUATROCIENTOS NOVENTA Y OCHO MIL SETECIENTOS DOS), en concepto de capital $10 734 304,88 ; más honorarios del Dr. Poisson $3.764.397,12 (Honorarios $ 3.111.072. + $ 653.325,12 (21% IVA), más la suma de $3.000.000 que presupuesto en forma provisoria, para responder a accesorios y costas de la medida -art 213 primera parte del CPCCN-. La medida antes dispuesta, se\nEDGARDO F.A.C. SECRET\nmaterializará sobre los fondos presentes y futuros que, en por cualquier concepto, deban percibir los demandados embargados, en la institución MERCADO LIBRE SRL (Mercado Pago), conforme lo solicitado, en el escrito bajo examen, en cada caso por el 50% del monto total antes indicado a saber: la suma de $7.249.351.- a embargar y la suma de $1.500.000.- para cubrir intereses y costas. Líbrese para su anoticiamiento y cumplimiento a la indicada entidad, oficio en los términos del art. 84, quinto apartado, de la Ley 18.345 y bajo aprecibimiento de lo establecido en el 398,segunda parte, del Código Procesal Civil y Comercial de la Nación y en el art.239 del Código Penal -normas que serán transcriptas íntegramente, en el requerimiento- haciéndole saber que deberá transferir las sumas antes indicadas, al Banco de la Ciudad de Buenos Aires -Sucursal Nº 75-a la cuenta abierta a mi orden, Cuenta Judicial 6 - 007 - - 1441 - 709 - 5 C.B.U. 02900759-00266144107092.- Comunicación “B” 10416 del B.C.R.A.- y, en caso de insuficiencia de fondos, mantener la medida hasta su total cumplimiento, con debida noticia en el proceso.-Tal requerimiento, estará exento de cualquier tipo de comisión o impuesto por parte de la entidad a ser oficiada, con sustento en lo establecido en el art.213,primera parte, del indicado Código. Facúltese a la requirente, a diligenciar el instrumento indicado. Obsérvese lo establecido, en el art.54 bis del Reglamento para la Jurisdicción. En el caso resulta inaplicable las prescripciones de la Acordada Nº 15/2020 de la Corte Federal, toda vez que la entidad destinataria de la manda antes adoptada, no forma parte del listado de entidades comprendidas en la indicada Acordada. Por tanto, la parte interesada procederá a incorporar en el sistema prescripto, en la Acordada Nº 14/2013 de la Corte Federal - S.G.J.- el condigno proyecto de oficio con apego a todo lo antes mandado, con su respectivo escrito, para su confronte por la infrascripta y ulterior citación a la peticionaria, a los fines de su retiro en forma personal. Decreto la reserva de estas actuaciones hasta el cumplimiento de la medida ordenada –art 197 final y 233 última parte del CPCCN-.. Se autoriza a su diligenciamiento a la Dra. Noelia Magali Poisson D.N.I. 33.118.187 y/o Dra. Norma Viviana Freyre D.N.I. 17.820.367 y/o Sra. Paula Beatriz Freyre D.N.I. 25.390.278; y/o Dra. Carolina Pratt DNI 29.500.818 y/o Sánchez Axel Damián D.N.I. 40.288.500, y/o Sra. María Fernanda Sabellico D.N.I. 28.042.264, y/o\nmercado libre\n20 MAR 2026\nRECEPCION\nDra. Yesica Carolina Sagamias DNI 36.024.191, y/o Poisson Freyre María Victoria DNI 44.160.037 y/o, Dra. Cruceño Barbara Gabriela DNI 39.506.784 y/o Srta. Aldana Elisabet Sanchez DNI 36.647.856, indistintamente. Sin otro particular, saludo a Ud. muy atte. L.T.: \"SEPTIEMBRE\" mo vale . E.L.: \"ocuusee\" Val. Crsta EDGARDO F.A. CONFALONIERI SECRETARIO",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO_MULTIPLE",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "conflicto_identificador"
+    ],
+    "cantidad_embargados": 2,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "OLARTE MALLQUI JULIO",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "20-93916854-1",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "OLARTE MALLQUI JULIO"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 18.842,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "OLARTE MALLQUI JULIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "20-93916854-1",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9180460572242737,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "sobre los fondos presentes y futuros que perciban en la entidad los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1),",
+            "contexto_local": "e los fondos presentes y futuros que perciban en la entidad los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1),"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "4",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "OLARTE MALLQUI JULIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "20-93916854-1",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8828976154327393,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "decreto embargo de naturaleza ejecutoria sobre los bienes muebles de los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1),",
+            "contexto_local": "mbargo de naturaleza ejecutoria sobre los bienes muebles de los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1),"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 18.842,
+            "total_grupos_documento": 6,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": true,
+              "cantidad_fragmentos": 2
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "OSCAR S.R.L.",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "20-93916854-1",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "OSCAR S.R.L."
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 17.896,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "OSCAR S.R.L.",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "20-93916854-1",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8782899379730225,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "sobre los fondos presentes y futuros que perciban en la entidad los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1),",
+            "contexto_local": "sobre los fondos presentes y futuros que perciban en la entidad los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1),"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "4",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "OSCAR S.R.L.",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "20-93916854-1",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6445350050926208,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "decreto embargo de naturaleza ejecutoria sobre los bienes muebles de los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1),",
+            "contexto_local": "decreto embargo de naturaleza ejecutoria sobre los bienes muebles de los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1),"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 17.896,
+            "total_grupos_documento": 6,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": true,
+              "cantidad_fragmentos": 2
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 6,
+    "cantidad_grupos_descartados": 4,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "JULIO",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "30-71412954-2",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "JULIO"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 14.886,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JULIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "30-71412954-2",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9264761805534363,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "sobre los fondos presentes y futuros que perciban en la entidad los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1),",
+            "contexto_local": "esentes y futuros que perciban en la entidad los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1),"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "4",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JULIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "30-71412954-2",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5507296323776245,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "decreto embargo de naturaleza ejecutoria sobre los bienes muebles de los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1),",
+            "contexto_local": "aleza ejecutoria sobre los bienes muebles de los condenados JULIO Y OSCAR S.R.L. (CUIT 30-71412954-2), y OLARTE MALLQUI JULIO (CUIT 20-93916854-1),"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "nombre_no_valido"
+          ],
+          "detalle": {
+            "score_total": 14.886,
+            "total_grupos_documento": 6,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": true,
+              "cantidad_fragmentos": 2
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": false
+          }
+        }
+      },
+      {
+        "nombre_embargado": "Carolina Pratt",
+        "dni_embargado": "29.500.818",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargada"
+        ],
+        "variantes_nombre": [
+          "Carolina Pratt"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.308,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "7",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Carolina Pratt",
+            "dni_detectado": "29.500.818",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargada",
+            "nombre_confidence": 0.9361623525619507,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Carolina Pratt DNI 29.500.818 y/o Sánchez Axel Damián D.N.I. 40.288.500, y/o Sra. María Fernanda Sabellico D.N.I. 28.042.264,",
+            "contexto_local": "Carolina Pratt DNI 29.500.818 y/o Sánchez Axel Damián D.N.I. 40.288.500, y/o Sra. María Fernanda Sabellico D.N.I. 28.042.264,"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 8.308,
+            "total_grupos_documento": 6,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargada"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "Sánchez Axel Damián",
+        "dni_embargado": "40.288.500",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Sánchez Axel Damián"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.253,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "7",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Sánchez Axel Damián",
+            "dni_detectado": "40.288.500",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9244413375854492,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Carolina Pratt DNI 29.500.818 y/o Sánchez Axel Damián D.N.I. 40.288.500, y/o Sra. María Fernanda Sabellico D.N.I. 28.042.264,",
+            "contexto_local": "Carolina Pratt DNI 29.500.818 y/o Sánchez Axel Damián D.N.I. 40.288.500, y/o Sra. María Fernanda Sabellico D.N.I. 28.042.264,"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 8.253,
+            "total_grupos_documento": 6,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "Sra. María Fernanda Sabellico",
+        "dni_embargado": "28.042.264",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Sra. María Fernanda Sabellico"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.459,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "7",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Sra. María Fernanda Sabellico",
+            "dni_detectado": "28.042.264",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.6623263359069824,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Carolina Pratt DNI 29.500.818 y/o Sánchez Axel Damián D.N.I. 40.288.500, y/o Sra. María Fernanda Sabellico D.N.I. 28.042.264,",
+            "contexto_local": "Carolina Pratt DNI 29.500.818 y/o Sánchez Axel Damián D.N.I. 40.288.500, y/o Sra. María Fernanda Sabellico D.N.I. 28.042.264,"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 7.459,
+            "total_grupos_documento": 6,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 1,
+    "conflictos_identificador": [
+      {
+        "tipo_identificador": "cuit_cuil",
+        "valor_normalizado": "20939168541",
+        "nombre_a": "OSCAR S.R.L.",
+        "nombre_b": "OLARTE MALLQUI JULIO",
+        "variantes_a": [
+          "OSCAR S.R.L."
+        ],
+        "variantes_b": [
+          "OLARTE MALLQUI JULIO"
+        ]
+      }
+    ]
+  }
+]
