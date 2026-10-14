@@ -1,0 +1,121 @@
+# Comparación de resultados: consolidación determinística vs. Jev simple
+
+**Experimento:** `20261009_160006_multi_v7_fragmentos_thr50`  
+**Ejecución Jev:** `20261013_143946_235997_simple_jev`  
+**Alcance:** 76 de 79 documentos procesados; 3 bloqueados por estimación de contexto (archivos 14, 15 y 31).
+
+## Resumen
+
+| Indicador | Resultado |
+|---|---:|
+| Documentos comparados | 76 |
+| Documentos con los mismos nombres en ambos métodos | 70 |
+| Documentos con nombres adicionales en Jev | 6 |
+| Documentos con nombres exclusivos de consolidación | 0 |
+| Documentos NO_RESUELTO en consolidación con candidatos en Jev | 3 |
+| Documentos con diferencias de identificadores en el CSV | 17 |
+
+**Estados reportados:** consolidación: 68 `RESUELTO`, 5 `RESUELTO_MULTIPLE`, 3 `NO_RESUELTO`. Jev simple: 31 `RESUELTO`, 45 `RESUELTO_MULTIPLE`, 0 `NO_RESUELTO`. Estos estados **no son directamente equivalentes**: Jev simple no deduplica candidatos.
+
+## Documentos con diferencias de nombres
+
+| Archivo | Ambos métodos | Solo Jev | Solo consolidación | Estado consolidación → Jev |
+|---:|---|---|---|---|
+| 9 | — | Claudia Marcela Ledo | — | `NO_RESUELTO` → `RESUELTO` |
+| 11 | — | GONZALEZ, SANTIAGO NICOLAS GONZALEZ | — | `NO_RESUELTO` → `RESUELTO_MULTIPLE` |
+| 30 | — | DIEGO FABIAN FRETES | — | `NO_RESUELTO` → `RESUELTO` |
+| 43 | HORACIO OSCAR NUÑEZ, MIRTA EDITH BONACALZA | ELIAS CARBALLO | — | `RESUELTO_MULTIPLE` → `RESUELTO_MULTIPLE` |
+| 59 | Clara Evangelina Torres | Clara Evangeline Torres | — | `RESUELTO` → `RESUELTO_MULTIPLE` |
+| 79 | OLARTE MALLQUI JULIO, OSCAR S.R.L. | JULIO | — | `RESUELTO_MULTIPLE` → `RESUELTO_MULTIPLE` |
+
+**Nota:** “Solo Jev” es una diferencia literal de nombres, no una identidad nueva verificada. En el archivo 59, `Clara Evangeline Torres` y `Clara Evangelina Torres` son variantes ortográficas.
+
+## Tabla completa (76 documentos)
+
+| Archivo | Consolidación (nombres) | Jev simple (nombres) | Estado consolidación | Estado Jev | Diferencia de identificadores |
+|---:|---|---|---|---|---|
+| 1 | JOSÉ LUIS VALENTINI, Sr. JOSÉ LUIS VALENTINI | JOSÉ LUIS VALENTINI, Sr. JOSÉ LUIS VALENTINI | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 2 | MARCELA PATRICIA GARCIA PALACIOS, ROBERTO GABRIEL SZILAK | MARCELA PATRICIA GARCIA PALACIOS, ROBERTO GABRIEL SZILAK | `RESUELTO_MULTIPLE` | `RESUELTO_MULTIPLE` | No |
+| 3 | VINCI BRIAN EMMANUEL | VINCI BRIAN EMMANUEL | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 4 | GRACIELA MONICA ZARZA | GRACIELA MONICA ZARZA | `RESUELTO` | `RESUELTO` | No |
+| 5 | VILLALBA JOSE ALBERTO | VILLALBA JOSE ALBERTO | `RESUELTO` | `RESUELTO` | No |
+| 6 | MACIEL FERNANDO OSCAR | MACIEL FERNANDO OSCAR | `RESUELTO` | `RESUELTO` | No |
+| 7 | SOTO JUAN RAMON | SOTO JUAN RAMON | `RESUELTO` | `RESUELTO` | No |
+| 8 | José Emiliano ALVAREZ | José Emiliano ALVAREZ | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 9 | — | Claudia Marcela Ledo | `NO_RESUELTO` | `RESUELTO` | Sí |
+| 10 | PEDRAZA TEODORO ROVEL | PEDRAZA TEODORO ROVEL | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 11 | — | GONZALEZ, SANTIAGO NICOLAS GONZALEZ | `NO_RESUELTO` | `RESUELTO_MULTIPLE` | Sí |
+| 12 | HORACIO LUIS VACCHER | HORACIO LUIS VACCHER | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 13 | JACQUET ROBERTO LUIS | JACQUET ROBERTO LUIS | `RESUELTO` | `RESUELTO` | No |
+| 16 | AGUSTIN MARIANO PEROSIO, Sonia Raquel Bobadilla | AGUSTIN MARIANO PEROSIO, Sonia Raquel Bobadilla | `RESUELTO_MULTIPLE` | `RESUELTO_MULTIPLE` | No |
+| 17 | AGUSTIN MARIANO PEROSIO | AGUSTIN MARIANO PEROSIO | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 18 | HERRERA MAXIMILIANO FRANCISCO ALEXIS | HERRERA MAXIMILIANO FRANCISCO ALEXIS | `RESUELTO` | `RESUELTO` | No |
+| 19 | Gustavo Ezequiel Godoy | Gustavo Ezequiel Godoy | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 20 | DANIEL EZEQUIEL ROMERO, Daniel Ezequiel Romero | DANIEL EZEQUIEL ROMERO, Daniel Ezequiel Romero | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 21 | FERNANDO MARTIN GONZALEZ, Fernando Martín González | FERNANDO MARTIN GONZALEZ, Fernando Martín González | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 22 | LAURA ESTELA FERNANDEZ | LAURA ESTELA FERNANDEZ | `RESUELTO` | `RESUELTO` | No |
+| 23 | LEONARDO GABRIEL | LEONARDO GABRIEL | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 24 | Sr.GRACIELA EDITH CANO | Sr.GRACIELA EDITH CANO | `RESUELTO` | `RESUELTO` | No |
+| 25 | EDUARDO JAVIER FERNANDEZ | EDUARDO JAVIER FERNANDEZ | `RESUELTO` | `RESUELTO` | No |
+| 26 | ALEJANDRO RODRIGO ALBORNOS, Alejandro Rodrigo Albornoz | ALEJANDRO RODRIGO ALBORNOS, Alejandro Rodrigo Albornoz | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 27 | RUBEN ALBERTO, Sr. PUJADAS RUBEN ALBERTO | RUBEN ALBERTO, Sr. PUJADAS RUBEN ALBERTO | `RESUELTO` | `RESUELTO_MULTIPLE` | Sí |
+| 28 | CISTERNA DIEGO, DIEGO CISTERNA | CISTERNA DIEGO, DIEGO CISTERNA | `RESUELTO` | `RESUELTO_MULTIPLE` | Sí |
+| 29 | ANDREA JAQUELINA HERRERA, HERRERA ANDREA JAQUELINA | ANDREA JAQUELINA HERRERA, HERRERA ANDREA JAQUELINA | `RESUELTO` | `RESUELTO_MULTIPLE` | Sí |
+| 30 | — | DIEGO FABIAN FRETES | `NO_RESUELTO` | `RESUELTO` | Sí |
+| 32 | PORCO MAIRA GABRIELA | PORCO MAIRA GABRIELA | `RESUELTO` | `RESUELTO_MULTIPLE` | Sí |
+| 33 | OROZCO ERNESTO ARIEL | OROZCO ERNESTO ARIEL | `RESUELTO` | `RESUELTO_MULTIPLE` | Sí |
+| 34 | ALFREDO ANTONIO ARIAS | ALFREDO ANTONIO ARIAS | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 35 | LIPSKER MATIAS ALEXIS | LIPSKER MATIAS ALEXIS | `RESUELTO` | `RESUELTO` | No |
+| 37 | DANIEL CARLOS PEREZ | DANIEL CARLOS PEREZ | `RESUELTO` | `RESUELTO` | No |
+| 38 | RIO URUGUAY COOPERATIVA DE SEGUROS LIMITADA | RIO URUGUAY COOPERATIVA DE SEGUROS LIMITADA | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 39 | ELIAS EZEQUIEL RODRIGUEZ | ELIAS EZEQUIEL RODRIGUEZ | `RESUELTO` | `RESUELTO` | No |
+| 40 | BRAVO LUIS ALBERTO | BRAVO LUIS ALBERTO | `RESUELTO` | `RESUELTO` | No |
+| 41 | Nancy Mariela Benedetti | Nancy Mariela Benedetti | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 42 | LUNA HORACIO EMANUEL | LUNA HORACIO EMANUEL | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 43 | HORACIO OSCAR NUÑEZ, MIRTA EDITH BONACALZA | HORACIO OSCAR NUÑEZ, MIRTA EDITH BONACALZA, ELIAS CARBALLO | `RESUELTO_MULTIPLE` | `RESUELTO_MULTIPLE` | Sí |
+| 44 | CARLOS ROBERTO SOLOHAGA | CARLOS ROBERTO SOLOHAGA | `RESUELTO` | `RESUELTO_MULTIPLE` | Sí |
+| 45 | JUAN CARLOS SEQUERA | JUAN CARLOS SEQUERA | `RESUELTO` | `RESUELTO` | No |
+| 46 | ALFREDO ISMAEL LOPEZ | ALFREDO ISMAEL LOPEZ | `RESUELTO` | `RESUELTO` | No |
+| 47 | GROSSO JUAN JOSE | GROSSO JUAN JOSE | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 48 | MIGUEL MARCELO MEDINA | MIGUEL MARCELO MEDINA | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 49 | HORACIO OSCAR MONTENEGRO, Horacio Oscar Montenegro | HORACIO OSCAR MONTENEGRO, Horacio Oscar Montenegro | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 50 | MIGUEL ANGEL SEGOVIA | MIGUEL ANGEL SEGOVIA | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 51 | MONTIEL DARIO RUBEN | MONTIEL DARIO RUBEN | `RESUELTO` | `RESUELTO` | No |
+| 52 | ROMERO GABRIEL GUSTAVO | ROMERO GABRIEL GUSTAVO | `RESUELTO` | `RESUELTO` | No |
+| 53 | LUCINDO RAMÓN CORNEJO, Lucindo Ramón Cornejo | LUCINDO RAMÓN CORNEJO, Lucindo Ramón Cornejo | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 54 | PAULA ALEJANDRA | PAULA ALEJANDRA | `RESUELTO` | `RESUELTO` | No |
+| 55 | ROBERTO CARLOS LOBO, Roberto Carlos Lobo | ROBERTO CARLOS LOBO, Roberto Carlos Lobo | `RESUELTO` | `RESUELTO_MULTIPLE` | Sí |
+| 56 | ESTER JOAQUINA PRATS | ESTER JOAQUINA PRATS | `RESUELTO` | `RESUELTO` | No |
+| 57 | FEDERICO MARIO, Sr. Federico Mario BOTTI | FEDERICO MARIO, Sr. Federico Mario BOTTI | `RESUELTO` | `RESUELTO_MULTIPLE` | Sí |
+| 58 | GRISIELDA BEATRIZ VALENZUELA | GRISIELDA BEATRIZ VALENZUELA | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 59 | Clara Evangelina Torres | Clara Evangelina Torres, Clara Evangeline Torres | `RESUELTO` | `RESUELTO_MULTIPLE` | Sí |
+| 60 | BIERNVERT CLAUDIA CARINA | BIERNVERT CLAUDIA CARINA | `RESUELTO` | `RESUELTO` | No |
+| 61 | MAZA ARIAS MERCEDES FATIMA | MAZA ARIAS MERCEDES FATIMA | `RESUELTO` | `RESUELTO` | No |
+| 62 | MIRIAM LOPEZ FRANCO, Miriam López Franco | MIRIAM LOPEZ FRANCO, Miriam López Franco | `RESUELTO` | `RESUELTO_MULTIPLE` | Sí |
+| 63 | ANGEL EZEQUIEL ALARCON | ANGEL EZEQUIEL ALARCON | `RESUELTO` | `RESUELTO` | No |
+| 64 | NAHUEL OSCAR MARQUEZ | NAHUEL OSCAR MARQUEZ | `RESUELTO` | `RESUELTO` | No |
+| 65 | ESTEFANIA MIHANOVICH, Norma Estefania MIHANOVICH | ESTEFANIA MIHANOVICH, Norma Estefania MIHANOVICH | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 66 | NATALIA ANDREA OÑA | NATALIA ANDREA OÑA | `RESUELTO` | `RESUELTO` | No |
+| 67 | CLAUDIA ALEJANDRA MIRANDA | CLAUDIA ALEJANDRA MIRANDA | `RESUELTO` | `RESUELTO` | No |
+| 68 | STIO MARIA AMELIA | STIO MARIA AMELIA | `RESUELTO` | `RESUELTO_MULTIPLE` | Sí |
+| 69 | CARDOSO MIGUEL ÁNGEL | CARDOSO MIGUEL ÁNGEL | `RESUELTO` | `RESUELTO` | No |
+| 70 | Mauricio Gonzalez Ledesma, Sr. GONZALEZ LEDESMA MAURICIO | Mauricio Gonzalez Ledesma, Sr. GONZALEZ LEDESMA MAURICIO | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 71 | AURELIO RODOLFO MELGAREJO, Aurelio Rodolfo Melgarejo | AURELIO RODOLFO MELGAREJO, Aurelio Rodolfo Melgarejo | `RESUELTO` | `RESUELTO_MULTIPLE` | Sí |
+| 72 | LOPEZ CARLOS PASCUAL | LOPEZ CARLOS PASCUAL | `RESUELTO` | `RESUELTO` | No |
+| 73 | SILVA HERMINIO ISAUL ANTONIO | SILVA HERMINIO ISAUL ANTONIO | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 74 | VALERIA ALEJANDRA JIMENEZ | VALERIA ALEJANDRA JIMENEZ | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 75 | RAVI DESARROLLOS S.A | RAVI DESARROLLOS S.A | `RESUELTO` | `RESUELTO` | No |
+| 76 | Sra. PAEZ, CARLA STEFANIA | Sra. PAEZ, CARLA STEFANIA | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 77 | CLAUDIO LEONARDO, Sr. GÓMEZ, Sr. GÓMEZ, CLAUDIO LEONARDO | CLAUDIO LEONARDO, Sr. GÓMEZ, Sr. GÓMEZ, CLAUDIO LEONARDO | `RESUELTO_MULTIPLE` | `RESUELTO_MULTIPLE` | No |
+| 78 | JOSE LUIS, Sr. LETTERUCCI, JOSE LUIS | JOSE LUIS, Sr. LETTERUCCI, JOSE LUIS | `RESUELTO` | `RESUELTO_MULTIPLE` | No |
+| 79 | OLARTE MALLQUI JULIO, OSCAR S.R.L. | OLARTE MALLQUI JULIO, OSCAR S.R.L., JULIO | `RESUELTO_MULTIPLE` | `RESUELTO_MULTIPLE` | Sí |
+| 80 | Favio Duarte Montania | Favio Duarte Montania | `RESUELTO` | `RESUELTO` | No |
+
+## Cómo interpretar la tabla
+
+- La columna “Consolidación (nombres)” reúne los nombres compartidos y los exclusivos de la consolidación según `comparacion.csv`. La columna “Jev simple (nombres)” reúne los compartidos y los exclusivos de Jev.
+- Un mismo nombre puede aparecer varias veces en la salida de Jev: esta tabla muestra **nombres distintos**, no la cantidad de candidatos ni las personas únicas.
+- `Diferencia de identificadores` indica una diferencia señalada por el CSV; puede ser simplemente el formato del DNI o CUIT, no necesariamente un error.
+- La comparación del CSV es literal, sin normalización: acuerdo o desacuerdo no prueba corrección.
+- La estrategia simple no evaluó equivalencias, roles, nombres completos ni conflictos de identificadores.
+- Los archivos 14, 15 y 31 no figuran porque quedaron sin procesar, no porque hayan sido `NO_RESUELTO`.

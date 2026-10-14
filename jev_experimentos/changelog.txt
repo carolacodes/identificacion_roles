@@ -1,0 +1,45 @@
+2026-10-12 — Segunda estrategia: simple
+
+- Nueva opción --estrategia simple|completa; completa sigue siendo el valor predeterminado.
+- Simple formula exactamente una pregunta Noul de aceptación por candidato original.
+- State idéntico entre estrategias; sin filtros ni modificaciones de la evidencia.
+- Sin preguntas de roles, nombres completos, contradicciones, equivalencias ni parejas en simple.
+- Reconstrucción de cada extracción aceptada por separado; deduplicación explícitamente NO_EVALUADA.
+- Umbral configurable y política de descarte/incertidumbre conservados; respuestas ausentes no se aceptan.
+- Registro de evaluaciones omitidas y revisión requerida; los conteos de simple son extracciones sin deduplicar.
+- Estrategia en metadata, resumen, planes, checkpoints, registros de decisiones y consola.
+- Carpetas automáticas identificadas por estrategia; reanudación cruzada rechazada antes de escribir outputs.
+- Compatibilidad con los checkpoints antiguos de completa y preguntas originales sin cambios.
+- 16 casos nuevos de test; suite completa: 151 aprobados (66 experimentales y 85 previos).
+- Dry-runs 9/11/30/79: mismos 4 documentos, 8 fragmentos y 15 candidatos en ambas estrategias.
+- Simple: 15 preguntas Noul, ninguna por pareja, 4 solicitudes previstas y 0 reales.
+- Completa: 144 preguntas originales, 5 solicitudes previstas y 0 reales.
+- Hash de fuente intacto: 420d8e2f2cedfffe4591de2876af8bdbdd46d7daf3c8671354900af4c6e9322d.
+- README actualizado con política de simple, límites de interpretación y comando Bash para macOS.
+- Ninguna llamada real a TypeSafe, ningún crédito consumido; GLiNER2 y consolidación determinística intactos.
+
+2026-10-11 — Implementación inicial JEV-V1
+
+- Inspección previa del pipeline, exportador, predicciones reales y consolidación de referencia.
+- Verificación de procedencia en outputs/logs/consolidacion.log: ejecución 20261009_160006.
+- Módulo independiente; sin cambios en GLiNER2, src/, tests existentes, requirements.txt raíz ni predicciones.
+- Integración oficial typesafe-sdk==0.7.4, TypeSafeClient.system_one, modelo fijado jev-1.13.0.
+- Preservación literal de todos los resultados/candidatos y metadatos; exclusión explícita del OCR completo.
+- Cuatro preguntas por candidato y dos por cada par; aceptación múltiple y equivalencia decididas por Jev.
+- Política configurable de probabilidades, grupos con equivalencia completa, conflictos e incertidumbre auditados.
+- Reconstrucción solo con valores originales; nombres parciales/null y alternativas de identificadores conservados.
+- CLI con selección, límite de documentos, dry-run sin cliente, autorización explícita y control global de intentos.
+- Timeouts y reintentos propios; host oficial fijado; SDK sin reintentos ocultos; ninguna clave en outputs.
+- Checkpoints incrementales atómicos, bloqueo de escritor, reanudación con contrato/hash y control de llamadas ambiguas.
+- Cinco outputs requeridos; comparación posterior descriptiva y sin datos de línea base en preguntas/state.
+- 50 pruebas nuevas y 85 previas aprobadas (135 total); SDK verificado con transporte HTTP simulado.
+- Comparación literal por nombre compartido para detectar identificadores intercambiados entre identidades.
+- Constructores públicos Noul/Choice validados contra las 2.784 preguntas reales, sin solicitudes.
+- Dry-run completo: 79 documentos, 163 fragmentos, 239 candidatos, 2.784 preguntas, 166 solicitudes previstas, 0 reales.
+- Dry-run 9/11/30/79: 4 documentos, 8 fragmentos, 15 candidatos, 144 preguntas, 5 solicitudes previstas, 0 reales.
+- Hash de fuente sin cambios: 420d8e2f2cedfffe4591de2876af8bdbdd46d7daf3c8671354900af4c6e9322d.
+- Limitación: sin tokenizer oficial confirmado. Proxy conservador por bytes señala archivos 14/15/31;
+  no se afirma que excedan tokens reales. Opción permitir-contexto-estimado conserva toda la evidencia
+  y deja a la API validar límites, siempre con autorización de envío separada.
+- Pendiente: acceso autorizado, primera ejecución real, validación de límites/tokenización, precisión en español
+  jurídico y contraste con ground truth independiente. No se evaluó aún la precisión de Jev.
