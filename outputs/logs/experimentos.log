@@ -95,3 +95,9 @@
 2026-10-09 15:58:30,778 INFO __main__ - Inicio de experimento: multi_v7_fragmentos_thr50
 2026-10-09 15:58:30,932 INFO __main__ - Dataset cargado: experimento=multi_v7_fragmentos_thr50 modelo=gliner2_multi schema=schema_v7_persona_embargada_fragmentos modo=fragmentos registros=163 filtros={'categoria': ['Datos_Embargado']}
 2026-10-09 16:00:06,753 INFO __main__ - Finalizacion de experimento: multi_v7_fragmentos_thr50 registros=163
+2026-10-16 14:53:45,729 INFO __main__ - Inicio de experimento: multi_v1_oficios_ocr_thr50
+2026-10-16 14:55:46,179 INFO __main__ - Inicio de experimento: multi_v1_oficios_ocr_thr50
+2026-10-16 14:58:33,322 INFO __main__ - Inicio de experimento: multi_v1_oficios_ocr_thr50
+2026-10-16 15:03:42,416 INFO __main__ - Inicio de experimento: multi_v1_oficios_ocr_thr50
+2026-10-16 15:09:30,516 INFO __main__ - Inicio de experimento: multi_v1_oficios_ocr_thr50
+2026-10-16 15:09:30,575 INFO __main__ - Dataset cargado: experimento=multi_v1_oficios_ocr_thr50 modelo=gliner2_multi schema=schema_v1_persona_objeto_oficio_texto_ocr modo=documentos registros=80 filtros=None

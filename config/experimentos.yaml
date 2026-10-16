@@ -519,3 +519,32 @@ experiments:
       - contexto_embargado
       - palabra_clave_contexto
       - texto_completo
+
+  # ============================================================
+  # V1 - GLINER2 MULTI - OFICIOS JUDICIALES - THRESHOLD 0.50
+  #
+  # Extraccion de personas objeto del requerimiento judicial.
+  # Fuente: texto OCR completo de los oficios.
+  # Prueba experimental SIN consolidacion.
+  # ============================================================
+  multi_v1_oficios_ocr_thr50:
+    run_name: multi_v1_oficios_ocr_thr50
+
+    model: gliner2_multi
+    schema: schema_v1_persona_objeto_oficio_texto_ocr
+
+    input_mode: documentos
+    input_file: data/input_oficios/qwen3_vl_4096_2000_limpio.csv
+    text_column: texto_ocr
+
+    threshold: 0.50
+
+    field_thresholds:
+      nombre_persona: 0.50
+      dni_persona: 0.50
+      cuit_cuil_persona: 0.50
+      rol_persona: 0.50
+
+    metadata_columns:
+      - id
+      - nombre_archivo

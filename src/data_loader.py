@@ -9,6 +9,7 @@ from typing import Any, Iterable, TextIO
 
 
 DOCUMENT_MODE = "documentos_completos"
+DOCUMENT_MODE_ALIAS = "documentos"
 FRAGMENT_MODE = "fragmentos"
 
 
@@ -352,7 +353,7 @@ def load_records(
             f"No existe el archivo de entrada: {path}"
         )
 
-    if input_mode == DOCUMENT_MODE:
+    if input_mode in (DOCUMENT_MODE, DOCUMENT_MODE_ALIAS):
 
         required = DOCUMENT_REQUIRED_COLUMNS
 
@@ -411,7 +412,7 @@ def load_records(
 
     records: list[InputRecord] = []
 
-    for row in rows:
+    for indice, row in enumerate(rows, start=1):
 
         texto = row.get(
             text_column,
@@ -427,9 +428,9 @@ def load_records(
 
         records.append(
             InputRecord(
-                numero_archivo=row.get(
-                    "numero_archivo",
-                    "",
+                numero_archivo=(
+                    row.get("numero_archivo")
+                    or (str(indice) if input_mode != FRAGMENT_MODE else "")
                 ),
 
                 id=row.get(
@@ -437,9 +438,9 @@ def load_records(
                     "",
                 ),
 
-                nombre=row.get(
-                    "nombre",
-                    "",
+                nombre=(
+                    row.get("nombre")
+                    or row.get("nombre_archivo", "")
                 ),
 
                 texto=texto,
