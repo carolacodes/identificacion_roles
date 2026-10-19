@@ -1,0 +1,151 @@
+experiment_name: multi_v1_oficios_texto_completo_thr50_prueba10
+experiment:
+  run_name: multi_v1_oficios_texto_completo_thr50_prueba10
+  model: gliner2_multi
+  schema: schema_v1_persona_objeto_oficio_texto_ocr
+  input_mode: documentos_completos
+  input_file: data/input_oficios/oficios_prueba_10.csv
+  text_column: texto_completo
+  threshold: 0.5
+  field_thresholds:
+    nombre_persona: 0.5
+    dni_persona: 0.5
+    cuit_cuil_persona: 0.5
+    rol_persona: 0.5
+  metadata_columns:
+  - numero_archivo
+  - id
+  - nombre
+  - fragmento
+model:
+  model_id: fastino/gliner2-multi-v1
+  display_name: GLiNER2 Multi v1
+  architecture: gliner2
+  enabled: true
+  device: cpu
+  default_threshold: 0.5
+schema:
+  type: structured
+  name: persona_objeto_oficio
+  description: 'Extraer exclusivamente los datos de las personas fisicas o juridicas
+    sobre las que recae directamente el requerimiento principal del oficio judicial
+    o administrativo contenido en este texto OCR completo.
+
+    Los oficios pueden solicitar informacion sobre titularidad o existencia de cuentas,
+    billeteras virtuales, movimientos, transferencias, saldos, fondos, bienes, domicilios,
+    actividad comercial o registros de usuarios; tambien pueden ordenar transferencias
+    u otras actuaciones relacionadas con fondos de personas determinadas.
+
+    Identificar al sujeto sobre el que se pide informacion o respecto del cual se
+    solicita una actuacion. No exigir que sea demandado o embargado: puede ser actor,
+    actora, demandado, demandada, causante, titular, beneficiario, tercero u otra
+    persona expresamente individualizada. Una persona puede ser objeto del oficio
+    aunque la medida no sea un embargo.
+
+    Buscar evidencia en el cuerpo de la solicitud y en el auto judicial transcripto,
+    considerando el documento completo. La caratula puede servir como contexto, pero
+    nunca basta por si sola para decidir que una persona es objeto del requerimiento.
+    En caso de contradiccion, priorizar la descripcion concreta de lo que se solicita
+    a la entidad destinataria.
+
+    Cuando el oficio enumere varias personas sobre las cuales se solicita informacion,
+    extraer cada persona como un sujeto independiente, si el mecanismo de extraccion
+    admite multiples registros.
+
+    Excluir nombres o identificadores de jueces, secretarios, abogados, letrados,
+    firmantes, usuarios de notificaciones, funcionarios, autorizados para diligenciar,
+    notificadores, remitentes y otras personas citadas solo por su intervencion procesal
+    o administrativa. Excluir a la empresa u organismo destinatario del oficio y los
+    CUIT del Poder Judicial, bancos y cuentas judiciales utilizadas solo para recibir
+    o depositar fondos. No excluir automaticamente a actores ni acreedores: incluirlos
+    unicamente cuando sean objeto directo del pedido.
+
+    El OCR puede contener errores, palabras cortadas, encabezados repetidos y transcripciones
+    duplicadas. No inventar, completar, corregir ni normalizar nombres o identificadores;
+    conservar el texto extraido. Si no se puede identificar un sujeto a partir del
+    requerimiento, dejar los campos sin extraer.
+
+    '
+  fields:
+    nombre_persona:
+      dtype: str
+      description: 'Nombre completo de la persona fisica o razon social de la entidad
+        sobre la que el oficio solicita informacion o alguna actuacion concreta. Extraer
+        el nombre que figure expresamente en el texto OCR, vinculado al pedido principal
+        (por ejemplo, "informe si X posee cuenta", "movimientos de X", "fondos a nombre
+        de X" o una lista de personas a verificar).
+
+        No confundir con nombres presentes solo en la caratula, firmas, datos de notificacion,
+        representacion procesal o transcripciones ajenas al requerimiento. No completar
+        nombres parciales ni modificar su grafia. Si no hay evidencia suficiente,
+        no extraer el campo.
+
+        '
+      required: false
+      threshold: 0.5
+    dni_persona:
+      dtype: str
+      description: 'DNI que pertenece a la misma persona identificada en nombre_persona
+        y que aparece expresamente asociado a ella en el texto OCR. Conservar puntos,
+        espacios y separadores tal como aparecen. No asignar DNI de un abogado, juez,
+        autorizado, firmante u otra persona, aunque aparezca cerca del nombre buscado.
+        Si la asociacion es dudosa, no extraer el DNI.
+
+        '
+      required: false
+      threshold: 0.5
+      validator:
+        type: regex
+        pattern: ^\s*(?:(?:D\.?\s*N\.?\s*I\.?|DOCUMENTO(?:\s+NACIONAL\s+DE\s+IDENTIDAD)?)\s*(?:(?:NRO|N[º°o])\.?\s*)?[:#-]?\s*)?\d{1,2}(?:[.\s-]?\d{3}){2}\s*$
+        flags:
+        - IGNORECASE
+    cuit_cuil_persona:
+      dtype: str
+      description: 'CUIT o CUIL correspondiente a la misma persona fisica o juridica
+        extraida en nombre_persona. Extraerlo solo cuando el oficio lo asocie claramente
+        con el sujeto del requerimiento. Conservar la grafia y los separadores originales,
+        incluso si el documento escribe los 11 digitos sin guiones.
+
+        No atribuir a esta persona los CUIT o CUIL de abogados, destinatarios (por
+        ejemplo Mercado Pago), organismos judiciales, terceros no consultados, ni
+        cuentas receptoras judiciales. Si la vinculacion es incierta, dejarlo sin
+        extraer.
+
+        '
+      required: false
+      threshold: 0.5
+      validator:
+        type: regex
+        pattern: ^\s*(?:(?:C\.?\s*U\.?\s*I\.?\s*L\.?|C\.?\s*U\.?\s*I\.?\s*T\.?|CUIL\s*/\s*CUIT|CUIT\s*/\s*CUIL)\s*(?:(?:NRO|N[º°o])\.?\s*)?[:#-]?\s*)?\d{2}(?:[-.\s]?\d){8}[-.\s]?\d\s*$
+        flags:
+        - IGNORECASE
+    rol_persona:
+      dtype: str
+      description: 'Rol o condicion explicita que el oficio atribuye al sujeto consultado
+        o afectado por el requerimiento. Seleccionar la categoria respaldada por el
+        texto OCR. Ser demandado, actor o causante no determina por si solo si es
+        objeto del oficio: primero verificar el requerimiento concreto. Utilizar otro
+        cuando la persona sea objeto del pedido pero su rol no encaje claramente en
+        las opciones disponibles. No atribuir roles de otras personas.
+
+        '
+      required: false
+      threshold: 0.5
+      choices:
+      - demandado
+      - demandada
+      - actor
+      - actora
+      - titular
+      - causante
+      - beneficiario
+      - beneficiaria
+      - embargado
+      - embargada
+      - ejecutado
+      - ejecutada
+      - deudor
+      - deudora
+      - tercero
+      - tercera
+      - otro

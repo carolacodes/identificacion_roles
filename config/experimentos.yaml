@@ -520,22 +520,23 @@ experiments:
       - palabra_clave_contexto
       - texto_completo
 
+  
   # ============================================================
-  # V1 - GLINER2 MULTI - OFICIOS JUDICIALES - THRESHOLD 0.50
+  # V1 - GLINER2 MULTI - OFICIOS - TEXTO COMPLETO - THR 0.50
   #
   # Extraccion de personas objeto del requerimiento judicial.
-  # Fuente: texto OCR completo de los oficios.
-  # Prueba experimental SIN consolidacion.
+  # Fuente: columna texto_completo.
+  # Un registro por oficio, sin consolidacion.
   # ============================================================
-  multi_v1_oficios_ocr_thr50:
-    run_name: multi_v1_oficios_ocr_thr50
+  multi_v1_oficios_texto_completo_thr50:
+    run_name: multi_v1_oficios_texto_completo_thr50
 
     model: gliner2_multi
     schema: schema_v1_persona_objeto_oficio_texto_ocr
 
-    input_mode: documentos
-    input_file: data/input_oficios/qwen3_vl_4096_2000_limpio.csv
-    text_column: texto_ocr
+    input_mode: documentos_completos
+    input_file: data/input_oficios/oficios_unicos.csv
+    text_column: texto_completo
 
     threshold: 0.50
 
@@ -546,5 +547,78 @@ experiments:
       rol_persona: 0.50
 
     metadata_columns:
+      - numero_archivo
       - id
-      - nombre_archivo
+      - nombre
+
+
+
+  
+  # ============================================================
+  # V1 - GLINER2 MULTI - OFICIOS - TEXTO COMPLETO - THRESHOLD 0.50
+  #
+  # Extraccion de personas objeto del requerimiento judicial.
+  # Fuente: texto_completo de cada oficio.
+  # Prueba experimental SIN consolidacion.
+  # ============================================================
+  multi_v1_oficios_texto_completo_thr50_prueba10:
+    run_name: multi_v1_oficios_texto_completo_thr50_prueba10
+
+    model: gliner2_multi
+    schema: schema_v1_persona_objeto_oficio_texto_ocr
+
+    input_mode: documentos_completos
+    input_file: data/input_oficios/oficios_prueba_10.csv
+
+    # GLiNER2 recibe el texto completo de cada oficio.
+    text_column: texto_completo
+
+    threshold: 0.50
+
+    field_thresholds:
+      nombre_persona: 0.50
+      dni_persona: 0.50
+      cuit_cuil_persona: 0.50
+      rol_persona: 0.50
+
+    metadata_columns:
+      - numero_archivo
+      - id
+      - nombre
+      - fragmento
+
+
+
+# ============================================================
+  # V1 - GLINER2 MULTI - OFICIOS - FRAGMENTOS - THRESHOLD 0.50
+  # Mismos 10 oficios que prueba de texto_completo; 14 fragmentos
+  # Categoria Datos_Embargado. SIN consolidacion.
+  # ============================================================
+  multi_v1_oficios_fragmentos_thr50_prueba10:
+    run_name: multi_v1_oficios_fragmentos_thr50_prueba10
+    model: gliner2_multi
+    schema: schema_v1_persona_objeto_oficio_fragmentos
+    input_mode: fragmentos
+    input_file: data/input_oficios/oficios_fragmentos_prueba_10.csv
+    text_column: fragmento
+    threshold: 0.50
+    field_thresholds:
+      nombre_persona: 0.50
+      dni_persona: 0.50
+      cuit_cuil_persona: 0.50
+      rol_persona: 0.50
+    filters:
+      categoria:
+        - Datos_Embargado
+    metadata_columns:
+      - numero_archivo
+      - id
+      - nombre
+      - contador_interno
+      - palabra_clave
+      - categoria
+      - posicion_inicio
+      - posicion_fin
+      - inicio_fragmento
+      - fin_fragmento
+      - texto_completo

@@ -1,0 +1,276 @@
+experiment_name: multi_v1_oficios_fragmentos_thr50_prueba10
+experiment:
+  run_name: multi_v1_oficios_fragmentos_thr50_prueba10
+  model: gliner2_multi
+  schema: schema_v1_persona_objeto_oficio_fragmentos
+  input_mode: fragmentos
+  input_file: data/input_oficios/oficios_fragmentos_prueba_10.csv
+  text_column: fragmento
+  threshold: 0.5
+  field_thresholds:
+    nombre_persona: 0.5
+    dni_persona: 0.5
+    cuit_cuil_persona: 0.5
+    rol_persona: 0.5
+  filters:
+    categoria:
+    - Datos_Embargado
+  metadata_columns:
+  - numero_archivo
+  - id
+  - nombre
+  - contador_interno
+  - palabra_clave
+  - categoria
+  - posicion_inicio
+  - posicion_fin
+  - inicio_fragmento
+  - fin_fragmento
+  - texto_completo
+model:
+  model_id: fastino/gliner2-multi-v1
+  display_name: GLiNER2 Multi v1
+  architecture: gliner2
+  enabled: true
+  device: cpu
+  default_threshold: 0.5
+schema:
+  type: structured
+  name: persona_objeto_oficio
+  description: 'Extraer exclusivamente los datos de las personas fisicas o juridicas
+    sobre las que recae directamente el requerimiento principal del oficio judicial
+    o administrativo al que pertenece este fragmento de texto.
+
+    Los oficios pueden solicitar informacion sobre titularidad o existencia de cuentas,
+    billeteras virtuales, movimientos, transferencias, saldos, fondos, bienes, domicilios,
+    actividad comercial o registros de usuarios; tambien pueden ordenar transferencias
+    u otras actuaciones relacionadas con fondos de personas determinadas.
+
+    Identificar al sujeto sobre el que se pide informacion o respecto del cual se
+    solicita una actuacion. No exigir que sea demandado o embargado: puede ser actor,
+    actora, demandado, demandada, causante, titular, beneficiario, tercero u otra
+    persona expresamente individualizada. Una persona puede ser objeto del oficio
+    aunque la medida no sea un embargo.
+
+    El fragmento proviene de un oficio judicial o administrativo y ha sido seleccionado
+    por contener informacion potencialmente relevante sobre las personas involucradas
+    en el requerimiento.
+
+    Buscar evidencia dentro del fragmento recibido, prestando especial atencion a
+    las expresiones que indiquen sobre quien se solicita informacion o respecto de
+    quien se ordena una actuacion. El fragmento puede contener partes del cuerpo de
+    la solicitud, del auto judicial transcripto o de la caratula del expediente. La
+    caratula puede servir como contexto, pero nunca basta por si sola para decidir
+    que una persona es objeto del requerimiento. Priorizar siempre la descripcion
+    concreta de lo que se solicita a la entidad destinataria.
+
+    Cuando el fragmento enumere varias personas sobre las cuales se solicita informacion,
+    extraer cada persona como un sujeto independiente, si el mecanismo de extraccion
+    admite multiples registros.
+
+    No asumir que el fragmento contiene toda la informacion del oficio. Es posible
+    que un fragmento individual no incluya el nombre, los identificadores o el rol
+    de la persona consultada. Extraer unicamente los datos que aparezcan expresamente
+    en el fragmento y que puedan vincularse con el sujeto del requerimiento. No asociar
+    nombres, DNI o CUIT/CUIL de personas diferentes.
+
+    Excluir nombres o identificadores de jueces, secretarios, abogados, letrados,
+    firmantes, usuarios de notificaciones, funcionarios, autorizados para diligenciar,
+    notificadores, remitentes y otras personas citadas solo por su intervencion procesal
+    o administrativa. Excluir a la empresa u organismo destinatario del oficio y los
+    CUIT del Poder Judicial, bancos y cuentas judiciales utilizadas solo para recibir
+    o depositar fondos. No excluir automaticamente a actores ni acreedores: incluirlos
+    unicamente cuando sean objeto directo del pedido.
+
+    El fragmento puede contener errores de OCR, palabras cortadas, encabezados repetidos,
+    nombres incompletos o transcripciones duplicadas. No inventar, completar, corregir
+    ni normalizar nombres o identificadores; conservar el texto extraido tal como
+    aparece en el fragmento.
+
+    Si no existe evidencia suficiente dentro del fragmento para identificar a una
+    persona como objeto del requerimiento, no extraerla. Si se identifica una persona
+    pero alguno de sus datos no aparece o no puede asociarse con certeza, dejar ese
+    campo sin extraer.
+
+    '
+  fields:
+    nombre_persona:
+      dtype: str
+      description: 'Nombre completo de la persona fisica o razon social de la entidad
+        sobre la que el oficio solicita informacion o alguna actuacion concreta. Extraer
+        el nombre que figure expresamente en el fragmento, vinculado al pedido principal
+        (por ejemplo, "informe si X posee cuenta", "movimientos de X", "fondos a nombre
+        de X" o una lista de personas a verificar).
+
+        El fragmento puede contener una parte del requerimiento judicial, una transcripcion
+        del auto que ordena la medida o una enumeracion de personas sobre las cuales
+        se solicita informacion. Identificar exclusivamente los nombres que puedan
+        vincularse con el objeto del requerimiento a partir de la evidencia presente
+        en el fragmento.
+
+        Cuando el fragmento mencione varias personas sobre las cuales se solicita
+        informacion o alguna actuacion, extraer cada nombre como una persona independiente,
+        si el mecanismo de extraccion admite multiples registros.
+
+        No confundir con nombres presentes solo en la caratula, firmas, datos de notificacion,
+        representacion procesal o transcripciones ajenas al requerimiento. No asumir
+        que una persona es objeto del oficio solamente porque aparezca mencionada
+        en el fragmento.
+
+        No completar nombres parciales, corregir errores de OCR ni modificar su grafia.
+        Conservar el nombre exactamente como aparece en el fragmento.
+
+        Si el fragmento no contiene el nombre de la persona consultada o no existe
+        evidencia suficiente para vincularlo con el requerimiento, no extraer el campo.
+        No inferir nombres a partir de otros datos o personas mencionadas.
+
+        '
+      required: false
+      threshold: 0.5
+    dni_persona:
+      dtype: str
+      description: 'DNI que pertenece a la misma persona identificada en nombre_persona
+        y que aparece expresamente asociado a ella en el fragmento recibido. Extraer
+        exclusivamente el DNI que pueda vincularse con la persona sobre la cual el
+        oficio solicita informacion o alguna actuacion concreta.
+
+        El fragmento puede contener nombres y documentos de varias personas, especialmente
+        cuando el requerimiento incluye una lista de sujetos sobre los cuales se solicita
+        informacion. En estos casos, asociar cada DNI exclusivamente con la persona
+        a la que pertenece, respetando la correspondencia indicada en el fragmento.
+
+        No asumir que un DNI pertenece a una persona solamente porque aparezca cerca
+        de su nombre. Verificar que exista una relacion clara entre el identificador
+        y la persona consultada, considerando expresiones como "titular del DNI",
+        "DNI N°", "documento de identidad" o enumeraciones de nombres acompañados
+        de sus respectivos DNI.
+
+        No asignar DNI de abogados, jueces, secretarios, funcionarios, autorizados
+        para diligenciar, firmantes, actores, demandados u otras personas mencionadas
+        que no sean objeto directo del requerimiento.
+
+        Conservar puntos, espacios y separadores tal como aparecen en el fragmento.
+        No corregir errores de OCR, completar digitos faltantes ni modificar el formato
+        original del identificador.
+
+        Si el fragmento no contiene un DNI asociado a la persona identificada en nombre_persona,
+        o si la vinculacion entre ambos es dudosa, no extraer el campo.
+
+        '
+      required: false
+      threshold: 0.5
+      validator:
+        type: regex
+        pattern: ^\s*(?:(?:D\.?\s*N\.?\s*I\.?|DOCUMENTO(?:\s+NACIONAL\s+DE\s+IDENTIDAD)?)\s*(?:(?:NRO|N[º°o])\.?\s*)?[:#-]?\s*)?\d{1,2}(?:[.\s-]?\d{3}){2}\s*$
+        flags:
+        - IGNORECASE
+    cuit_cuil_persona:
+      dtype: str
+      description: 'CUIT o CUIL correspondiente a la misma persona fisica o juridica
+        identificada en nombre_persona y que aparece expresamente asociado a ella
+        en el fragmento recibido. Extraer exclusivamente el CUIT o CUIL que pueda
+        vincularse con la persona sobre la cual el oficio solicita informacion o alguna
+        actuacion concreta.
+
+        El fragmento puede contener nombres e identificadores de varias personas o
+        entidades, especialmente cuando el requerimiento incluye una lista de sujetos,
+        cuentas bancarias, billeteras virtuales, transferencias o movimientos de fondos.
+        En estos casos, asociar cada CUIT o CUIL exclusivamente con la persona a la
+        que pertenece, respetando la correspondencia indicada en el fragmento.
+
+        No asumir que un CUIT o CUIL pertenece a una persona solamente porque aparezca
+        cerca de su nombre. Verificar que exista una relacion clara entre el identificador
+        y la persona consultada, considerando expresiones como "titular del CUIT",
+        "CUIL N°", "CUIT/CUIL", "correspondiente al CUIL" o enumeraciones de nombres
+        acompañados de sus respectivos identificadores.
+
+        No atribuir a la persona identificada en nombre_persona los CUIT o CUIL de
+        abogados, jueces, secretarios, funcionarios, firmantes, destinatarios del
+        oficio (por ejemplo Mercado Pago), organismos judiciales, bancos, terceros
+        no consultados ni titulares de cuentas utilizadas exclusivamente para recibir
+        fondos judiciales.
+
+        Cuando el fragmento mencione transferencias entre distintas personas o entidades,
+        distinguir los identificadores del emisor, del receptor y de los titulares
+        de las cuentas involucradas. No asignar el CUIT o CUIL de una persona a otra
+        por el solo hecho de participar en la misma operacion o requerimiento.
+
+        Conservar la grafia y los separadores originales, incluyendo guiones, puntos
+        y espacios, incluso cuando el identificador aparezca escrito como una secuencia
+        de 11 digitos sin guiones. No corregir errores de OCR, completar digitos faltantes
+        ni modificar el formato original.
+
+        Si el fragmento no contiene un CUIT o CUIL asociado a la persona identificada
+        en nombre_persona, o si la vinculacion entre ambos es dudosa, no extraer el
+        campo.
+
+        '
+      required: false
+      threshold: 0.5
+      validator:
+        type: regex
+        pattern: ^\s*(?:(?:C\.?\s*U\.?\s*I\.?\s*L\.?|C\.?\s*U\.?\s*I\.?\s*T\.?|CUIL\s*/\s*CUIT|CUIT\s*/\s*CUIL)\s*(?:(?:NRO|N[º°o])\.?\s*)?[:#-]?\s*)?\d{2}(?:[-.\s]?\d){8}[-.\s]?\d\s*$
+        flags:
+        - IGNORECASE
+    rol_persona:
+      dtype: str
+      description: 'Rol o condicion juridica explicita que el fragmento atribuye a
+        la misma persona identificada en nombre_persona y sobre la cual el oficio
+        solicita informacion o alguna actuacion concreta. Seleccionar exclusivamente
+        la categoria respaldada por la evidencia presente en el fragmento recibido.
+
+        El fragmento puede contener referencias a distintos sujetos procesales, como
+        actores, act ORAS, demandados, demandadas, embargados, embargadas, ejecutados,
+        ejecutadas, deudores, causantes, titulares, beneficiarios o terceros. Identificar
+        el rol que corresponde especificamente a la persona objeto del requerimiento,
+        sin confundirlo con el de otras personas mencionadas.
+
+        No asumir que una persona es objeto del oficio solamente porque aparezca identificada
+        como demandado, actor, causante o cualquier otro rol juridico. Primero verificar
+        que el fragmento contenga evidencia de que sobre esa persona se solicita informacion
+        o se ordena alguna actuacion concreta.
+
+        Cuando el fragmento mencione varias personas con roles diferentes, asociar
+        cada rol exclusivamente con la persona correspondiente. No atribuir el rol
+        de un actor a un demandado, ni el de un titular, beneficiario o tercero a
+        otra persona involucrada en el mismo requerimiento.
+
+        Considerar tanto las denominaciones juridicas explicitas como las expresiones
+        que indiquen la condicion de la persona respecto del requerimiento, por ejemplo
+        "parte actora", "parte demandada", "causante", "titular de la cuenta", "beneficiario"
+        o "persona embargada".
+
+        Utilizar la categoria "otro" cuando la persona sea objeto directo del requerimiento,
+        pero su rol o condicion explicita no encaje claramente en las opciones disponibles.
+        No asignar un rol por inferencia cuando el fragmento no proporcione evidencia
+        suficiente.
+
+        El fragmento puede contener informacion parcial del oficio, por lo que el
+        rol juridico puede no aparecer expresamente, aunque se identifique correctamente
+        a la persona consultada. No inventar ni deducir roles a partir de la caratula,
+        del tipo de juicio o de la sola presencia de un nombre.
+
+        Si el fragmento no contiene evidencia suficiente para determinar el rol de
+        la persona identificada en nombre_persona, no extraer el campo.
+
+        '
+      required: false
+      threshold: 0.5
+      choices:
+      - demandado
+      - demandada
+      - actor
+      - actora
+      - titular
+      - causante
+      - beneficiario
+      - beneficiaria
+      - embargado
+      - embargada
+      - ejecutado
+      - ejecutada
+      - deudor
+      - deudora
+      - tercero
+      - tercera
+      - otro

@@ -101,3 +101,9 @@
 2026-10-16 15:03:42,416 INFO __main__ - Inicio de experimento: multi_v1_oficios_ocr_thr50
 2026-10-16 15:09:30,516 INFO __main__ - Inicio de experimento: multi_v1_oficios_ocr_thr50
 2026-10-16 15:09:30,575 INFO __main__ - Dataset cargado: experimento=multi_v1_oficios_ocr_thr50 modelo=gliner2_multi schema=schema_v1_persona_objeto_oficio_texto_ocr modo=documentos registros=80 filtros=None
+2026-10-19 16:02:42,884 INFO __main__ - Inicio de experimento: multi_v1_oficios_texto_completo_thr50_prueba10
+2026-10-19 16:02:42,949 INFO __main__ - Dataset cargado: experimento=multi_v1_oficios_texto_completo_thr50_prueba10 modelo=gliner2_multi schema=schema_v1_persona_objeto_oficio_texto_ocr modo=documentos_completos registros=10 filtros=None
+2026-10-19 16:03:42,546 INFO __main__ - Finalizacion de experimento: multi_v1_oficios_texto_completo_thr50_prueba10 registros=10
+2026-10-19 17:32:13,790 INFO __main__ - Inicio de experimento: multi_v1_oficios_fragmentos_thr50_prueba10
+2026-10-19 17:32:13,836 INFO __main__ - Dataset cargado: experimento=multi_v1_oficios_fragmentos_thr50_prueba10 modelo=gliner2_multi schema=schema_v1_persona_objeto_oficio_fragmentos modo=fragmentos registros=14 filtros={'categoria': ['Datos_Embargado']}
+2026-10-19 17:33:13,578 INFO __main__ - Finalizacion de experimento: multi_v1_oficios_fragmentos_thr50_prueba10 registros=14
