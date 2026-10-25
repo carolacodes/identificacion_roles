@@ -138,3 +138,8 @@
 2026-10-09 16:05:05,091 INFO __main__ - Documentos cargados: 79
 2026-10-09 16:05:05,627 INFO __main__ - Consolidacion finalizada: documentos=79 resueltos=71 multiples=5 no_resueltos=3 personas=81
 2026-10-09 16:05:05,627 INFO __main__ - Salida: /Users/carolacardozo/Documents/CAROLA PROGRAMACION/pasantia segem/identificacion_roles/outputs/consolidacion/20261009_160505_consolidacion_multi_v7_fragmentos_thr50_20261009_160006
+2026-10-25 17:24:00,315 INFO __main__ - Inicio de consolidacion
+2026-10-25 17:24:00,329 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20261009_160006_multi_v7_fragmentos_thr50\predicciones_por_documento.json
+2026-10-25 17:24:00,377 INFO __main__ - Documentos cargados: 79
+2026-10-25 17:24:00,672 INFO __main__ - Consolidacion finalizada: documentos=79 resueltos=72 multiples=4 no_resueltos=3 personas=80
+2026-10-25 17:24:00,672 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20261025_172400_consolidacion_multi_v7_fragmentos_thr50_20261009_160006_fusion_transitiva

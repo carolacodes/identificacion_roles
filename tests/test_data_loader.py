@@ -89,7 +89,7 @@ def test_load_document_records_only_requires_id_and_text(
 
     assert (
         records[0].numero_archivo
-        == ""
+        == "1"
     )
 
     assert (
@@ -499,3 +499,32 @@ def test_missing_text_column_raises_clear_error(
             input_mode="documentos_completos",
             text_column="texto_ocr_limpio_Q8",
         )
+
+def test_load_document_records_usa_numero_archivo_si_viene_en_csv(
+    tmp_path: Path,
+):
+    csv_path = (
+        tmp_path
+        / "documentos_con_numero_archivo.csv"
+    )
+
+    csv_path.write_text(
+        (
+            "numero_archivo,id,texto_ocr_limpio_Q8\n"
+            '77,doc-1,"Embarguese a Juan Perez"\n'
+        ),
+        encoding="utf-8",
+    )
+
+    records = load_records(
+        csv_path,
+        input_mode="documentos_completos",
+        text_column="texto_ocr_limpio_Q8",
+    )
+
+    assert len(records) == 1
+
+    assert (
+        records[0].numero_archivo
+        == "77"
+    )

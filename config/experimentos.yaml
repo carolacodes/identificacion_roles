@@ -520,7 +520,6 @@ experiments:
       - palabra_clave_contexto
       - texto_completo
 
-  
   # ============================================================
   # V1 - GLINER2 MULTI - OFICIOS - TEXTO COMPLETO - THR 0.50
   #
@@ -551,9 +550,6 @@ experiments:
       - id
       - nombre
 
-
-
-  
   # ============================================================
   # V1 - GLINER2 MULTI - OFICIOS - TEXTO COMPLETO - THRESHOLD 0.50
   #
@@ -587,9 +583,7 @@ experiments:
       - nombre
       - fragmento
 
-
-
-# ============================================================
+  # ============================================================
   # V1 - GLINER2 MULTI - OFICIOS - FRAGMENTOS - THRESHOLD 0.50
   # Mismos 10 oficios que prueba de texto_completo; 14 fragmentos
   # Categoria Datos_Embargado. SIN consolidacion.
@@ -599,12 +593,14 @@ experiments:
     model: gliner2_multi
     schema: schema_v1_persona_objeto_oficio_fragmentos
     input_mode: fragmentos
-    input_file: data/input_oficios/oficios_fragmentos_prueba_10.csv
+    # input_file: data/input_oficios/oficios_fragmentos_prueba_10.csv
+    # input_file: data/input_oficios/oficios_fragmentos_prueba_10_doc9_dividido.csv
+    input_file: data/input_oficios/oficios_fragmentos_prueba_10_doc9_bloque2_3y2.csv
     text_column: fragmento
     threshold: 0.50
     field_thresholds:
       nombre_persona: 0.50
-      dni_persona: 0.50
+      dni_persona: 0.30
       cuit_cuil_persona: 0.50
       rol_persona: 0.50
     filters:

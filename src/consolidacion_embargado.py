@@ -1502,12 +1502,81 @@ def _grupo_coincide(
         in grupo.evidencias
     )
 
+def _grupos_coinciden(
+    grupo_a: GrupoPersona,
+    grupo_b: GrupoPersona,
+) -> bool:
+    """
+    Dos grupos representan potencialmente a la misma persona
+    cuando al menos una evidencia de un grupo es compatible
+    con alguna evidencia del otro.
+
+    Reutiliza exactamente la misma lógica existente de
+    _evidencias_misma_persona(), por lo que NO fusiona
+    automáticamente solo por compartir DNI/CUIT.
+    """
+
+    return any(
+        _evidencias_misma_persona(
+            evidencia_a,
+            evidencia_b,
+        )
+        for evidencia_a
+        in grupo_a.evidencias
+        for evidencia_b
+        in grupo_b.evidencias
+    )
+
+
+def _fusionar_grupos(
+    grupo_destino: GrupoPersona,
+    grupo_origen: GrupoPersona,
+) -> None:
+    """
+    Fusiona toda la información de grupo_origen dentro
+    de grupo_destino.
+    """
+
+    grupo_destino.evidencias.extend(
+        grupo_origen.evidencias
+    )
+
+    grupo_destino.variantes_nombre.update(
+        grupo_origen.variantes_nombre
+    )
+
+    grupo_destino.dni_encontrados.update(
+        grupo_origen.dni_encontrados
+    )
+
+    grupo_destino.cuit_cuil_encontrados.update(
+        grupo_origen.cuit_cuil_encontrados
+    )
+
+    grupo_destino.roles_encontrados.update(
+        grupo_origen.roles_encontrados
+    )
+
+    grupo_destino.fragmentos_soporte.update(
+        grupo_origen.fragmentos_soporte
+    )
+
+    grupo_destino.score_total += (
+        grupo_origen.score_total
+    )
 
 def _agrupar_evidencias(
     evidencias: list[Evidencia],
 ) -> list[GrupoPersona]:
 
     grupos: list[GrupoPersona] = []
+
+    # ========================================================
+    # PRIMERA PASADA
+    #
+    # Mantiene exactamente la lógica actual:
+    # cada evidencia entra en el primer grupo compatible.
+    # ========================================================
 
     for evidencia in evidencias:
 
@@ -1565,6 +1634,69 @@ def _agrupar_evidencias(
                 evidencia
             )
         )
+
+    # ========================================================
+    # SEGUNDA PASADA
+    #
+    # Fusion transitiva.
+    #
+    # Ejemplo:
+    #
+    #   Grupo A: Sr. GOMEZ
+    #   Grupo B: CLAUDIO LEONARDO
+    #
+    # Si Grupo A contiene tambien:
+    #
+    #   Sr. GOMEZ, CLAUDIO LEONARDO
+    #
+    # entonces A y B deben terminar siendo un solo grupo.
+    #
+    # Se repite hasta que ya no existan grupos fusionables.
+    # ========================================================
+
+    hubo_fusion = True
+
+    while hubo_fusion:
+
+        hubo_fusion = False
+
+        for indice_a in range(
+            len(grupos)
+        ):
+
+            if hubo_fusion:
+                break
+
+            for indice_b in range(
+                indice_a + 1,
+                len(grupos),
+            ):
+
+                grupo_a = grupos[
+                    indice_a
+                ]
+
+                grupo_b = grupos[
+                    indice_b
+                ]
+
+                if not _grupos_coinciden(
+                    grupo_a,
+                    grupo_b,
+                ):
+                    continue
+
+                _fusionar_grupos(
+                    grupo_a,
+                    grupo_b,
+                )
+
+                del grupos[
+                    indice_b
+                ]
+
+                hubo_fusion = True
+                break
 
     return grupos
 

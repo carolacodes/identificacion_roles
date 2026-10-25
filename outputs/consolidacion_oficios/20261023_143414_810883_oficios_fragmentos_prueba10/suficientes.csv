@@ -1,0 +1,8 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_personas_objeto_oficio,indice_persona,nombre_persona,dni_persona,cuit_cuil_persona,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+1,494149,494149_1.pdf,RESUELTO,True,False,,1,1,GONZÁLEZ REINALDO,92.883.503,,titular,GONZÁLEZ REINALDO,1,1,12.851,False,False,0
+2,494154,494154_1.pdf,RESUELTO,True,False,,1,1,Arias Rodrigo Maximiliano,34.085.295,,titular,Arias Rodrigo Maximiliano,2,2,24.096,False,False,0
+3,494158,494158_1.pdf,RESUELTO,True,False,,1,1,Martin Eduardo Hualde,29.959.152,,,Martin Eduardo Hualde,1,1,12.791,False,False,0
+4,494454,494454_1.pdf,RESUELTO,True,False,,1,1,LEVY VERONICA LILIANA,,27-22403438-0,actora,LEVY VERONICA LILIANA,1,1,11.941,False,False,0
+5,494455,494455_1.pdf,RESUELTO,True,False,,1,1,Daniel Hugo Sánchez,,20165581785,causante,Daniel Hugo Sánchez,2,2,26.899,False,False,0
+8,495018,495018_1.pdf,RESUELTO,True,False,,1,1,Sr. FLORENTINO ROMAN FERNANDO,37.367.958,,actor,Sr. FLORENTINO ROMAN FERNANDO,1,1,11.217,False,False,0
+10,496887,496887_1.pdf,RESUELTO,True,False,,1,1,ANGELA DEL BUONO,14124313,,titular,ANGELA DEL BUONO,1,1,9.995,False,False,0

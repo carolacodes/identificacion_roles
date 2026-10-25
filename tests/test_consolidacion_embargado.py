@@ -1780,3 +1780,211 @@ def test_persona_juridica_srl_sigue_siendovalida():
     )
 
     assert resultado["estado"] == ESTADO_RESUELTO
+
+def test_fusion_transitiva_variantes_mismo_dni():
+    documento = _documento(
+        [
+            _resultado(
+                1,
+                (
+                    "DEMANDADO: Sr. GÓMEZ, "
+                    "CLAUDIO LEONARDO, "
+                    "D.N.I. 33.627.258"
+                ),
+                [
+                    _candidate(
+                        "Sr. GÓMEZ",
+                        dni="33.627.258",
+                        rol="demandado",
+                    ),
+                    _candidate(
+                        "CLAUDIO LEONARDO",
+                        dni="33.627.258",
+                        rol="demandado",
+                    ),
+                    _candidate(
+                        "Sr. GÓMEZ, CLAUDIO LEONARDO",
+                        dni="33.627.258",
+                        rol="demandado",
+                    ),
+                ],
+            )
+        ]
+    )
+
+    resultado = consolidar_documento(
+        documento
+    )
+
+    assert (
+        resultado["cantidad_grupos_candidatos"]
+        == 1
+    )
+
+    assert (
+        resultado["cantidad_embargados"]
+        == 1
+    )
+
+    persona = resultado[
+        "personas_embargadas"
+    ][0]
+
+    assert (
+        persona["dni_embargado"]
+        == "33.627.258"
+    )
+
+    variantes = set(
+        persona["variantes_nombre"]
+    )
+
+    assert "Sr. GÓMEZ" in variantes
+
+    assert (
+        "CLAUDIO LEONARDO"
+        in variantes
+    )
+
+    assert (
+        "Sr. GÓMEZ, CLAUDIO LEONARDO"
+        in variantes
+    )
+
+def test_nombre_parcial_y_completo_mismo_dni_fusionan():
+    documento = _documento(
+        [
+            _resultado(
+                1,
+                (
+                    "Demandado JUAN CARLOS PEREZ "
+                    "DNI 30.111.222."
+                ),
+                [
+                    _candidate(
+                        "JUAN PEREZ",
+                        dni="30.111.222",
+                        rol="demandado",
+                    ),
+                    _candidate(
+                        "JUAN CARLOS PEREZ",
+                        dni="30.111.222",
+                        rol="demandado",
+                    ),
+                ],
+            )
+        ]
+    )
+
+    resultado = consolidar_documento(
+        documento
+    )
+
+    assert resultado["cantidad_embargados"] == 1
+
+    persona = resultado["personas_embargadas"][0]
+
+    assert persona["dni_embargado"] == "30.111.222"
+
+    variantes = set(
+        persona["variantes_nombre"]
+    )
+
+    assert "JUAN PEREZ" in variantes
+    assert "JUAN CARLOS PEREZ" in variantes
+
+
+def test_mismo_dni_nombres_incompatibles_no_fusionan():
+    documento = _documento(
+        [
+            _resultado(
+                1,
+                (
+                    "Demandados JUAN PEREZ "
+                    "y MARIA LOPEZ, "
+                    "DNI 30.111.222."
+                ),
+                [
+                    _candidate(
+                        "JUAN PEREZ",
+                        dni="30.111.222",
+                        rol="demandado",
+                    ),
+                    _candidate(
+                        "MARIA LOPEZ",
+                        dni="30.111.222",
+                        rol="demandado",
+                    ),
+                ],
+            )
+        ]
+    )
+
+    resultado = consolidar_documento(
+        documento
+    )
+
+    # La prueba es de AGRUPACION:
+    # aunque compartan DNI, los nombres incompatibles
+    # deben permanecer en grupos diferentes.
+    assert (
+        resultado["cantidad_conflictos_identificador"]
+        == 1
+    )
+
+def test_dnis_distintos_no_fusionan():
+    documento = _documento(
+        [
+            _resultado(
+                1,
+                (
+                    "Demandado JUAN PEREZ "
+                    "DNI 30.111.222."
+                ),
+                [
+                    _candidate(
+                        "JUAN PEREZ",
+                        dni="30.111.222",
+                        rol="demandado",
+                    )
+                ],
+            ),
+            _resultado(
+                2,
+                (
+                    "Demandada MARIA LOPEZ "
+                    "DNI 31.222.333."
+                ),
+                [
+                    _candidate(
+                        "MARIA LOPEZ",
+                        dni="31.222.333",
+                        rol="demandado",
+                    )
+                ],
+            ),
+        ]
+    )
+
+    resultado = consolidar_documento(
+        documento
+    )
+
+    assert resultado["cantidad_embargados"] == 2
+
+    personas_por_dni = {
+        persona["dni_embargado"]:
+            persona["nombre_embargado"]
+        for persona
+        in resultado["personas_embargadas"]
+    }
+
+    assert (
+        personas_por_dni["30.111.222"]
+        == "JUAN PEREZ"
+    )
+
+    assert (
+        personas_por_dni["31.222.333"]
+        == "MARIA LOPEZ"
+    )
