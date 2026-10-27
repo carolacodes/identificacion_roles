@@ -1,0 +1,65 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_personas_objeto_oficio,indice_persona,nombre_persona,dni_persona,cuit_cuil_persona,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,1,TAUZY CARLOS IGNACIO,29.240.482,,actor,TAUZY CARLOS IGNACIO,1,1,12.692,False,True,1
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,2,GONZALEZ SANDRA NOEMI,33.040.021,,,GONZALEZ SANDRA NOEMI,1,1,10.32,False,True,1
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,3,GONZALEZ SANDRA NOEMI,33.390.010,,,GONZALEZ SANDRA NOEMI,1,1,10.228,False,True,1
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,4,SOSA GISELA SOLANGE,33.342.980,,,SOSA GISELA SOLANGE,1,1,9.34,False,True,1
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,5,CASCO CARLOS ANTONIO,32.642.146,,,CASCO CARLOS ANTONIO,1,1,9.177,False,True,1
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,6,MOLINA LUCAS ADRIAN,41.208.023,,,MOLINA LUCAS ADRIAN,1,1,9.154,False,True,1
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,7,AMARILLO DEBORA ELISABET,35.425.357,,,AMARILLO DEBORA ELISABET,1,1,9.144,False,True,1
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,8,PAJON KAREN AGUSTINA,38.524.293,,,PAJON KAREN AGUSTINA,1,1,9.021,False,True,1
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,9,ROBLEDO FEDERICO ESTEBAN,36.953.294,,,ROBLEDO FEDERICO ESTEBAN,1,1,8.922,False,True,1
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,10,LOPEZ MIRTA BETIANA,38.081.993,,,LOPEZ MIRTA BETIANA,1,1,8.793,False,True,1
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,11,BOUCHARD GERARDO FEDERICO,30.001.707,,,BOUCHARD GERARDO FEDERICO,1,1,8.609,False,True,1
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,12,CEBALLOS BRAIAN DAMIAN,36.995.659,,,CEBALLOS BRAIAN DAMIAN,1,1,8.531,False,True,1
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,13,GOMEZ ALBERTO NICOLAS,32.342.118,,,GOMEZ ALBERTO NICOLAS,1,1,8.351,False,True,1
+9,495024,495024_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador | lista_personas_cobertura_incompleta,14,14,VELAZQUEZ MICHAELA TALIA,39.741.501,,,VELAZQUEZ MICHAELA TALIA,1,1,8.325,False,True,1
+22,501701,501701_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio | solo_candidatos_descartados,0,,,,,,,0,0,,,False,0
+26,503247,503247_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,1,EZEQUIEL MATÍAS KLANG,25.967.444,,,EZEQUIEL MATÍAS KLANG,1,1,8.061,False,True,1
+26,503247,503247_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,2,Sr. EZEQUIEL MATÍAS KLANG,5.967.444,,,Sr. EZEQUIEL MATÍAS KLANG,1,1,7.757,False,True,1
+27,503249,503249_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio | solo_candidatos_descartados,0,,,,,,,0,0,,,False,0
+37,503821,503821_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+42,504981,504981_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,1,Leandro Anibal Jesus Rubin,29.697.608,,causante,Leandro Anibal Jesus Rubin | Leandro Anibal Jesús Rubin,2,2,16.836,False,True,1
+42,504981,504981_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,2,Leandro Anibal Jesús Rubin,23.591.508,,titular,Leandro Anibal Jesús Rubin,1,1,9.931,False,True,1
+45,507161,507161_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+46,507163,507163_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+48,507219,507219_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio | solo_candidatos_descartados,0,,,,,,,0,0,,,False,0
+49,507226,507226_1.pdf,RESUELTO,False,True,persona_1:evidencia_unica_debil,1,1,Maximiliano Arnaldo GOMEZ,,,actor,Maximiliano Arnaldo GOMEZ,1,1,6.992,False,False,0
+52,507939,507939_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+58,510067,510067_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,3,1,Miguel Ángel MILLETARI,26.667.343,,titular,Miguel Ángel MILLETARI,1,1,12.915,False,True,1
+58,510067,510067_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,3,2,Miguel Ángel MILLETARI,4.552.968,,titular,Miguel Ángel MILLETARI,1,1,12.766,False,True,1
+58,510067,510067_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,3,3,Viviana Delia HERNÁNDEZ DE MILLETARI,5.472.510,,titular,Viviana Delia HERNÁNDEZ DE MILLETARI,1,1,9.831,False,True,1
+63,510996,510996_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,1,BARRIOS NESTOR HORACIO,27.412.854,,,BARRIOS NESTOR HORACIO,1,1,9.688,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,2,ESPINOLA RAMON ALBERTO,33.621.487,,,ESPINOLA RAMON ALBERTO,1,1,9.681,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,3,IBARRA PABLO DANIEL,30.258.963,,,IBARRA PABLO DANIEL,1,1,9.561,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,4,HERRERA NOELIA SOLEDAD,35.741.852,,,HERRERA NOELIA SOLEDAD,1,1,9.352,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,5,ROBLES JORGE LUIS,26.985.412,,,ROBLES JORGE LUIS,1,1,9.277,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,6,FARIAS LILIANA INES,29.845.210,,,FARIAS LILIANA INES,1,1,9.26,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,7,CORVALAN SILVINA BEATRIZ,31.954.120,,,CORVALAN SILVINA BEATRIZ,1,1,9.217,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,8,NAVARRO CLAUDIA MARCELA,37.896.541,,,NAVARRO CLAUDIA MARCELA,1,1,9.166,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,9,SANDOVAL PAOLA DANIELA,39.452.147,,,SANDOVAL PAOLA DANIELA,1,1,8.972,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,10,LEZCANO VALERIA ROMINA,36.412.785,,,LEZCANO VALERIA ROMINA,1,1,8.936,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,11,QUIROGA ANDREA FABIANA,32.145.896,,,QUIROGA ANDREA FABIANA,1,1,8.933,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,12,MAMANI GASTON ARIEL,28.654.123,,,MAMANI GASTON ARIEL,1,1,8.928,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,13,MAMANI GASTON ARIEL,40.125.874,,,MAMANI GASTON ARIEL,1,1,8.874,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,14,PAREDES CRISTIAN GONZALO,32.145.896,,,PAREDES CRISTIAN GONZALO,1,1,8.719,False,True,2
+72,513001,513001_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,15,15,GIMENEZ MATIAS EZEQUIEL,38.124.963,,,GIMENEZ MATIAS EZEQUIEL,1,1,8.5,False,True,2
+73,513002,513002_1.pdf,RESUELTO_MULTIPLE,False,True,lista_personas_cobertura_incompleta,12,1,"DUARTE, CYNTHIA LORENA",32.147.852,,,"DUARTE, CYNTHIA LORENA",1,1,9.602,False,False,0
+73,513002,513002_1.pdf,RESUELTO_MULTIPLE,False,True,lista_personas_cobertura_incompleta,12,2,"JUÁREZ, RODRIGO IVÁN",35.852.147,,,"JUÁREZ, RODRIGO IVÁN",1,1,9.54,False,False,0
+73,513002,513002_1.pdf,RESUELTO_MULTIPLE,False,True,lista_personas_cobertura_incompleta,12,3,"LEIVA, MARICEL ESTEFANÍA",33.963.258,,,"LEIVA, MARICEL ESTEFANÍA",1,1,9.528,False,False,0
+73,513002,513002_1.pdf,RESUELTO_MULTIPLE,False,True,lista_personas_cobertura_incompleta,12,4,"ORELLANA, FACUNDO NICOLÁS",40.369.852,,,"ORELLANA, FACUNDO NICOLÁS",1,1,9.402,False,False,0
+73,513002,513002_1.pdf,RESUELTO_MULTIPLE,False,True,lista_personas_cobertura_incompleta,12,5,"ENRÍQUEZ, LUCAS SEBASTIÁN",39.852.369,,,"ENRÍQUEZ, LUCAS SEBASTIÁN",1,1,9.346,False,False,0
+73,513002,513002_1.pdf,RESUELTO_MULTIPLE,False,True,lista_personas_cobertura_incompleta,12,6,"CASTRO, MARIANO FEDERICO",36.985.214,,,"CASTRO, MARIANO FEDERICO",1,1,9.331,False,False,0
+73,513002,513002_1.pdf,RESUELTO_MULTIPLE,False,True,lista_personas_cobertura_incompleta,12,7,"MONZÓN, AGUSTÍN EZEQUIEL",42.147.852,,,"MONZÓN, AGUSTÍN EZEQUIEL",1,1,9.222,False,False,0
+73,513002,513002_1.pdf,RESUELTO_MULTIPLE,False,True,lista_personas_cobertura_incompleta,12,8,"GALLARDO, BRENDA JAQUELINA",38.741.258,,,"GALLARDO, BRENDA JAQUELINA",1,1,9.185,False,False,0
+73,513002,513002_1.pdf,RESUELTO_MULTIPLE,False,True,lista_personas_cobertura_incompleta,12,9,"NÚÑEZ, VALERIA SOLEDAD",31.852.963,,,"NÚÑEZ, VALERIA SOLEDAD",1,1,9.101,False,False,0
+73,513002,513002_1.pdf,RESUELTO_MULTIPLE,False,True,lista_personas_cobertura_incompleta,12,10,"PONCE, TAMARA BELÉN",37.147.852,,,"PONCE, TAMARA BELÉN",1,1,8.802,False,False,0
+73,513002,513002_1.pdf,RESUELTO_MULTIPLE,False,True,lista_personas_cobertura_incompleta,12,11,"VERA, GABRIEL OSVALDO",33.456.789,,,"VERA, GABRIEL OSVALDO",1,1,8.743,False,False,0
+73,513002,513002_1.pdf,RESUELTO_MULTIPLE,False,True,lista_personas_cobertura_incompleta,12,12,"FERREYRA, MATÍAS NAHUEL",41.258.963,,,"FERREYRA, MATÍAS NAHUEL",1,1,8.714,False,False,0
+74,513003,513003_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio | solo_candidatos_descartados,0,,,,,,,0,0,,,False,0
+76,513005,513005_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+78,513007,513007_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+79,513008,513008_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+80,513009,513009_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,3,1,Roberto Carlos ÁLVAREZ,17.842.109,,demandado | titular,Roberto Carlos ÁLVAREZ,2,2,19.862,False,True,1
+80,513009,513009_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,3,2,Roberto Carlos ÁLVAREZ,40.125.684,,demandada | titular,Roberto Carlos ÁLVAREZ,2,2,19.264,False,True,1
+80,513009,513009_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,3,3,Marta Susana TISSERA DE ÁLVAREZ,18.234.901,,,Marta Susana TISSERA DE ÁLVAREZ,1,1,8.254,False,True,1

@@ -413,6 +413,108 @@ class GrupoPersona:
     score_total: float = 0.0
 
 
+
+# ------------------------------------------------------------
+# Evidencia vinculante: se comprueba cerca del nombre, no por una
+# frase positiva que casualmente aparezca en otro punto del fragmento.
+# ------------------------------------------------------------
+PATRONES_PEDIDO_EXPLICITO = (
+    r"\b(?:informe|informar|informen|informen\s+sobre|identifique|verificar|detalle|acreditaciones|compras|transferencias|movimientos)\b",
+    r"\b(?:cuentas?|billeteras?|fondos|saldos|cvu|cuit|cuil|dni|alimentante|demandad[oa]|actor[ao]|empleado)\b",
+)
+PATRONES_ENCABEZADO_LISTA = (
+    r"\bPERSONAL\s+(?:POLICIAL\s+A\s+VERIFICAR|SUJETO\s+A\s+RELEVAMIENTO)\s*:",
+    r"\b(?:PERSONAS|EFECTIVOS|USUARIOS|TITULARES)\s+A\s+(?:VERIFICAR|RELEVAR|CONSULTAR)\s*:",
+)
+
+
+def _posicion_nombre_texto(fragmento: str, nombre: str) -> tuple[int, int] | None:
+    match = re.search(re.escape(nombre), fragmento, re.I)
+    return (match.start(), match.end()) if match else None
+
+
+def _identificador_cerca_nombre(evidencia: Evidencia) -> bool:
+    """Comprueba identificadores de la misma cláusula, sin reescribirlos.
+
+    Si la posición no permite verificar un identificador, devuelve False;
+    la ausencia de verificación NO constituye por sí sola prueba de error.
+    """
+    ini, fin = _buscar_posicion_nombre(evidencia)
+    if ini is None or fin is None:
+        return False
+    ids = {_normalizar_identificador(v) for v in
+           (evidencia.dni, evidencia.cuit_cuil) if v}
+    if not ids:
+        return False
+    posterior = evidencia.fragmento[fin:fin + 145]
+    patron = (r"\b(?:D\.?N\.?I\.?|DOCUMENTO\s+NACIONAL\s+DE\s+IDENTIDAD|"
+              r"CUIT(?:/CUIL)?|CUIL(?:/CUIT)?)\s*(?:N[°ºo.]*(?:ro\.?)?|"
+              r"n[uú]mero)?\s*[:°º.]?\s*([0-9][0-9.\- ]{5,18}[0-9])")
+    encontrados = list(re.finditer(patron, posterior, re.I))
+    if not encontrados:
+        return False
+    # El primer identificador etiquetado posterior debe pertenecer
+    # a esta persona. Puede seguir un segundo ID de la misma persona.
+    primero = _normalizar_identificador(encontrados[0].group(1))
+    return primero in ids
+
+
+def _nombre_parcial_en_lista(evidencia: Evidencia) -> bool:
+    """Detecta apellidos ausentes en líneas tipo '1. BENITEZ, HUGO ORLANDO'."""
+    posicion = _buscar_posicion_nombre(evidencia)
+    if posicion[0] is None:
+        return False
+    ini = posicion[0]
+    linea_inicio = evidencia.fragmento.rfind("\n", 0, ini) + 1
+    prefijo = evidencia.fragmento[linea_inicio:ini]
+    # No tratar 'DNI' o el número ordinal como parte de un apellido.
+    prefijo = re.sub(r"^\s*\d+[.)]\s*", "", prefijo)
+    return bool(re.search(r"[A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ]+\s*,\s*$", prefijo))
+
+
+def _evidencia_lista_explicita(evidencia: Evidencia) -> bool:
+    fragmento = evidencia.fragmento
+    posicion = _buscar_posicion_nombre(evidencia)
+    if posicion[0] is None:
+        return False
+    ini = posicion[0]
+    if any(re.search(p, fragmento[:ini], re.I) for p in PATRONES_ENCABEZADO_LISTA):
+        return True
+    # Listados enumerados: encabezado sobre productos financieros y filas n. NOMBRE - DNI.
+    linea_inicio = fragmento.rfind("\n", 0, ini) + 1
+    prefijo = fragmento[linea_inicio:ini]
+    return bool(re.search(r"^\s*\d+[.)]\s*", prefijo) and
+                re.search(r"\b(?:inform|financiero|cuenta|mercado pago|plataforma)\b", fragmento[:ini], re.I))
+
+
+def _evidencia_pedido_explicito(evidencia: Evidencia) -> bool:
+    posicion = _buscar_posicion_nombre(evidencia)
+    if posicion[0] is None:
+        return False
+    ini, fin = posicion
+    assert ini is not None and fin is not None
+    antes = evidencia.fragmento[max(0, ini - 155):ini]
+    despues = evidencia.fragmento[fin:min(len(evidencia.fragmento), fin + 85)]
+    # Evitar nombres administrativos con el identificador de otra persona.
+    if re.search(r"\b(?:domicilio|sito en|autorizad[oa]|firmado por|letrado patrocinante)\b", antes[-75:], re.I):
+        return False
+    es_solicitud = bool(re.search(r"\b(?:inform|solicit|verific|identific|acreditacion|compras|cuentas?|transferencias|movimientos|demandad[oa]|actor[ao]|empleado|alimentante)\w*\b", antes, re.I))
+    es_objeto = bool(re.search(r"\b(?:dni|cuit|cuil|cuenta|cvu|movimiento|transferencia)\b", despues, re.I))
+    # Algunas frases llegan recortadas: 'por NOMBRE, CVU..., CUIT/CUIL...'.
+    # La combinación 'por' + identificador bancario explícito constituye
+    # una relación local suficiente, aunque el verbo esté fuera del recorte.
+    detalle_bancario = bool(re.search(r"\bpor\s+$", antes[-25:], re.I)
+                            and re.search(r"\bCVU\b", despues, re.I)
+                            and re.search(r"\b(?:CUIT|CUIL)\b", despues, re.I))
+    return (es_solicitud and es_objeto) or detalle_bancario
+
+
+def _grupo_evidencia_vinculante(grupo: GrupoPersona) -> bool:
+    return any((_evidencia_pedido_explicito(e) or _evidencia_lista_explicita(e))
+               and _identificador_cerca_nombre(e) and not _nombre_parcial_en_lista(e)
+               and not e.tercero_fuerte for e in grupo.evidencias)
+
+
 # ============================================================
 # NORMALIZACION
 # ============================================================
@@ -877,10 +979,12 @@ def _buscar_posicion_nombre(
         <= evidencia.nombre_span_inicio
         < len(evidencia.fragmento)
     ):
-        return (
-            evidencia.nombre_span_inicio,
-            evidencia.nombre_span_fin,
-        )
+        # Algunos spans del predictor están desplazados. Solo confiar
+        # en ellos si el texto en ese rango coincide realmente.
+        if (evidencia.fragmento[
+            evidencia.nombre_span_inicio:evidencia.nombre_span_fin
+        ].casefold() == evidencia.nombre.casefold()):
+            return (evidencia.nombre_span_inicio, evidencia.nombre_span_fin)
 
     match = re.search(
         re.escape(
@@ -1091,9 +1195,8 @@ def _score_contexto(
     # el encabezado quede fuera de la ventana local de 120 caracteres.
     # Solo usar la señal si el fragmento contiene un encabezado explícito
     # y el candidato figura en el fragmento de esa enumeración.
-    if (re.search(r"\b(?:PERSONAL POLICIAL|PERSONAS|EFECTIVOS)\s+A\s+VERIFICAR\b", evidencia.fragmento, re.I)
-            and re.search(re.escape(evidencia.nombre), evidencia.fragmento, re.I)):
-        score += 1.5
+    if _evidencia_lista_explicita(evidencia):
+        score += 3.0
 
     for pattern in PATRONES_CONTEXTO_POSITIVO:
         if re.search(
@@ -2055,6 +2158,9 @@ def _evaluar_grupo_oficio(
             detalle,
         )
 
+    if any(_nombre_parcial_en_lista(e) for e in grupo.evidencias):
+        return False, ["nombre_parcial_en_lista"], detalle
+
     if tercero_fuerte:
         return (
             False,
@@ -2063,6 +2169,39 @@ def _evaluar_grupo_oficio(
             ],
             detalle,
         )
+
+    # Una identidad puede tener DNI válido pero estar enlazada al nombre
+    # equivocado. No la aceptamos sin al menos una pareja local verificable.
+    pareja_local_verificada = any(
+        _identificador_cerca_nombre(e) for e in grupo.evidencias
+    )
+    evidencia_vinculante = _grupo_evidencia_vinculante(grupo)
+    senales["identificador_local_verificado"] = pareja_local_verificada
+    senales["requerimiento_explicito"] = evidencia_vinculante
+    # Solo descartar si el texto prueba que el nombre identificado es
+    # un tercero y existe otra persona expresamente consultada con su DNI.
+    contradiccion_nombre_id = any(
+        not _identificador_cerca_nombre(e)
+        and re.search(r"\b(?:a\s+los\s+fines\s+que|para\s+que|a\s+fin\s+de\s+que)\b", e.fragmento, re.I)
+        and re.search(r"\b(?:informe|informar)\s+si\s+(?:el\s+)?(?:alimentante|demandado|demandada|sr\.?)\b", e.fragmento, re.I)
+        and (_buscar_posicion_nombre(e)[0] or 0) <
+            (re.search(r"\b(?:informe|informar)\s+si\s+(?:el\s+)?(?:alimentante|demandado|demandada|sr\.?)\b",e.fragmento,re.I).start())
+        for e in grupo.evidencias if e.dni or e.cuit_cuil
+    )
+    # Evitar tomar el DNI del sujeto explícito del pedido cuando el
+    # nombre candidato se encuentra ANTES de la cláusula "informe si".
+    # Documento 48: "Tatiana Gulián, sito en ... informe si el
+    # alimentante PAVOLNI ... DNI ...".
+    if tiene_id and any(
+        (lambda pos: pos[0] is not None and
+         bool(re.search(r"\binforme\s+si\b", e.fragmento[pos[1]:], re.I)) and
+         bool(re.search(r"\b(?:alimentante|demandad[oa]|sr\.?)\b", e.fragmento[pos[1]:], re.I)))
+        (_buscar_posicion_nombre(e))
+        for e in grupo.evidencias
+    ):
+        return False, ["identificador_corresponde_a_otro_sujeto_del_pedido"], detalle
+    if contradiccion_nombre_id:
+        return False, ["identificador_asociado_a_otra_persona_en_requerimiento"], detalle
 
     if identidad_inconsistente:
         return (
@@ -2085,6 +2224,11 @@ def _evaluar_grupo_oficio(
     # ========================================================
     # REGLAS POSITIVAS
     # ========================================================
+
+    # Evidencia directa del requerimiento + nombre e ID localmente ligados.
+    # No depende de repeticion ni de un rol jurídico predicho.
+    if evidencia_vinculante:
+        return True, ["requerimiento_explicito", "identificador_local_verificado"], detalle
 
     # Contexto juridico + rol juridico fuerte.
     if (
@@ -2394,6 +2538,17 @@ def _conflicto_afecta_persona_aceptada(
 # SUFICIENCIA
 # ============================================================
 
+def _evidencia_pedido_explicito_obj_serializada(data: dict[str, Any]) -> bool:
+    evidencia = Evidencia(
+        numero_archivo="", id_documento="", contador_interno="",
+        palabra_clave="", categoria="", fragmento=data.get("fragmento", ""),
+        nombre=data.get("nombre_detectado", ""),
+        dni=data.get("dni_detectado", ""),
+        cuit_cuil=data.get("cuit_cuil_detectado", ""),
+    )
+    return _grupo_evidencia_vinculante(GrupoPersona(evidencias=[evidencia]))
+
+
 def evaluar_suficiencia(
     estado: str,
     personas_objeto_oficio: list[
@@ -2498,6 +2653,8 @@ def evaluar_suficiencia(
             _texto_seguro(grupo.get("cuit_cuil_persona")))
         and _nombre_tiene_estructura_valida(grupo.get("nombre_persona"))
         and not _normalizar_texto(grupo.get("nombre_persona", "")).startswith("ALIAS")
+        and any(_evidencia_pedido_explicito_obj_serializada(e)
+                for e in (grupo.get("evidencias") or []))
     ]
     if personas_objeto_oficio and pendientes_relevantes:
         motivos.append("candidatos_con_identificador_descartados")
@@ -2512,9 +2669,12 @@ def evaluar_suficiencia(
         if e.get("fragmento")
     }
     texto_fragmentos = "\n".join(f for _, f in fragmentos_unicos)
-    if re.search(r"\b(?:PERSONAL POLICIAL A VERIFICAR|PERSONAS A VERIFICAR)\b", texto_fragmentos, re.I):
+    hay_lista_enumerada = bool(re.search(r"(?m)^\s*1[.)]\s+.+?(?:DNI|CUIT)", texto_fragmentos, re.I)
+                               and re.search(r"(?m)^\s*3[.)]\s+", texto_fragmentos))
+    if re.search(r"\b(?:PERSONAL POLICIAL A VERIFICAR|PERSONAL SUJETO A RELEVAMIENTO|PERSONAS A VERIFICAR)\b", texto_fragmentos, re.I) or hay_lista_enumerada:
         dnis_en_lista = set(re.findall(r"\bDNI\s*(?:N[°ºo.]*)?\s*([0-9]{1,2}(?:\.[0-9]{3}){2})", texto_fragmentos, re.I))
-        if len(dnis_en_lista) > len(personas_objeto_oficio):
+        filas_enumeradas = len(re.findall(r"(?m)^\s*\d+[.)]\s+[A-ZÁÉÍÓÚÑ]", texto_fragmentos)) if hay_lista_enumerada else 0
+        if max(len(dnis_en_lista), filas_enumeradas) > len(personas_objeto_oficio):
             motivos.append("lista_personas_cobertura_incompleta")
 
     # --------------------------------------------------------
@@ -2591,8 +2751,8 @@ def evaluar_suficiencia(
 
         if (
             cantidad_evidencias <= 1
-            and score_total
-            < MIN_SCORE_EVIDENCIA_UNICA
+            and score_total < MIN_SCORE_EVIDENCIA_UNICA
+            and not any(_evidencia_pedido_explicito_obj_serializada(e) for e in evidencias)
         ):
             motivos.append(
                 f"persona_{index}:evidencia_unica_debil"
@@ -2617,7 +2777,9 @@ def evaluar_suficiencia(
                 in evidencias
             )
 
-            if not tiene_contexto_positivo:
+            if not tiene_contexto_positivo and not any(
+                _evidencia_pedido_explicito_obj_serializada(e) for e in evidencias
+            ):
 
                 motivos.append(
                     f"persona_{index}:sin_senal_juridica"

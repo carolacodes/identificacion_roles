@@ -618,3 +618,38 @@ experiments:
       - inicio_fragmento
       - fin_fragmento
       - texto_completo
+
+  # ============================================================
+  # V1 - GLINER2 MULTI - OFICIOS - TODOS LOS DOCUMENTOS
+  # 80 oficios, 116 fragmentos Datos_Embargado
+  # Mismo esquema y thresholds que prueba de 10
+  # SIN consolidacion
+  # ============================================================
+  multi_v1_oficios_fragmentos_thr50_todos:
+    run_name: multi_v1_oficios_fragmentos_thr50_todos
+    model: gliner2_multi
+    schema: schema_v1_persona_objeto_oficio_fragmentos
+    input_mode: fragmentos
+    input_file: data/input_oficios/qwen3_vl_2000_solicitud.csv
+    text_column: fragmento
+    threshold: 0.50
+    field_thresholds:
+      nombre_persona: 0.50
+      dni_persona: 0.30
+      cuit_cuil_persona: 0.50
+      rol_persona: 0.50
+    # filters:
+    #  categoria:
+    #    - Datos_Embargado
+    metadata_columns:
+      - numero_archivo
+      - id
+      - nombre
+      - contador_interno
+      - palabra_clave
+      - categoria
+      - posicion_inicio
+      - posicion_fin
+      - inicio_fragmento
+      - fin_fragmento
+      - texto_completo
