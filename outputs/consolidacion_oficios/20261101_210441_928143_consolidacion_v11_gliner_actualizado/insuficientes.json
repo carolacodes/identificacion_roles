@@ -1,0 +1,723 @@
+[
+  {
+    "id": "501701",
+    "numero_archivo": "22",
+    "nombre_documento": "501701_1.pdf",
+    "texto_completo": "Buenos Aires, enero de 2026.\nSRES MERCADO LIBRE Avda Caseros 3039, piso 2, Caba. PRESENTE\nMe dirijo a esa entidad en mi carácter de letrado apoderado de la parte demandada en los autos caratulados \" CAPRIA, ROBERTO ADRIAN C/ FAVEGA S.A. S/ DESPIDO \" expte. 45104/2025 que tramitan por ante el Juzgado Nacional d Primera Instancia del Trabajo Nro. 77 sito en Tte Gral J.D.Peron 990, piso 12, Caba, a efectos de solicitar se sirva informar al citado Juzgado y como pertenecientes a estos autos lo siguiente:\n1) Importes facturados a ROBERTO ADRIAN CAPRIA ,CUIT 20- 18.301.160-0 en concepto de cargos por uso de plataforma Mercado Libre.\n2) fechas de facturación.\nEl auto que ordena el presente dice :\" Buenos Aires, 30 de diciembre de 2025 Librense los oficios solicitados a ...Mercado Libre ...cuya tramitación deberá ser realizada de conformidad con lo dispuesto por los arts. 46 y 84 de la ley 18.345, modificados por la ley 24.635....Los oficios deberán ser diligenciados conforme lo dispone el art 400 CPCCN mediante el sistema DEOX...Las entidades oficiadas deberán remitir las respuestas a los oficios diligenciados en formato PDF mediante el sistema DEOX. En todos los casos las oficiadas podrán corroborar la autenticidad de la medida y/o evacuar sus dudas y/o remitir sus informes mediante correo dirigido a jntrabajo77@pjn.gov.ar ...\" Fdo Dra Patricia Andrea Alvarez, prosecretaria administrativa\nAtentamente.\nFERNANDO L. BARACCO ABOGADO CPACF Tº 27 - Fº 827 CASM Tº 6 - Fº 446\nmercado libre\n21 ENE 2026\nRECEPCION",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio",
+      "solo_candidatos_descartados"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_persona": "ROBERTO ADRIAN CAPRIA",
+        "dni_persona": "",
+        "cuit_cuil_persona": "20- 18.301.160-0",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "ROBERTO ADRIAN CAPRIA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.436,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ROBERTO ADRIAN CAPRIA",
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "20- 18.301.160-0",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9802455306053162,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "pertenecientes a estos autos lo siguiente:\n1) Importes facturados a ROBERTO ADRIAN CAPRIA ,CUIT 20- 18.301.160-0 en concepto de cargos por uso de plataforma Mercado Libre.",
+            "contexto_local": "pertenecientes a estos autos lo siguiente:\n1) Importes facturados a ROBERTO ADRIAN CAPRIA ,CUIT 20- 18.301.160-0 en concepto de cargos por uso de plataforma Mercado Libre."
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 7.436,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": false
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "503821",
+    "numero_archivo": "37",
+    "nombre_documento": "503821_1.pdf",
+    "texto_completo": "FRANQUEO A PAGAR CUENTA 11836\n27 ENE 2026 RECIBIDO\nARBA AGENCIA DE RECAUDACIÓN PROVINCIA DE BUENOS AIRES\nRequerimiento Nº 08 Olivos, 22 de Enero de 2026\nRequerimiento\nSres. / MERCADOLIBRE S.R.L. CASEROS AV. 3039 Piso:2 1264-CIUDAD AUTONOMA BUENOS AIRES\nDe mi mayor consideración:\nDirijo a Ud. el presente Requerimiento a efectos de solicitar vuestra valiosa colaboración con las tareas de fiscalización impositiva desarrolladas por esta dependencia, referente a la Contribuyente NATURA COSMETICOS SA, CUIT. 30-67775729-5, expediente Nº 2360-0142505-2024, con intervención del Cdor. ROBERTO PATRON.\nLa presente solicitud se efectúa en el marco de las facultades conferidas a esta Autoridad de Aplicación por el Código Fiscal de la Pcia. de Buenos Aires (T.O. 2011) en su Art. 50 ss y cc, con el fin de asegurar la verificación oportuna de la situación impositiva de los contribuyentes y demás responsables, pudiendo exigir \"el suministro de información relativa a terceros\" (art. 50 inc. e C.F. to 2011)\nAsimismo el art. 35 del Código Fiscal de la Provincia de Buenos Aires (T.O. 2011), Título VII \"DE LOS DEBERES FORMALES DEL CONTRIBUYENTE, RESPONSABLES Y TERCEROS\" establece: ...\"A requerimiento de la Autoridad de Aplicación, los terceros están obligados a suministrar a éstos todos los informes que se refieren a hechos imponibles que, en el ejercicio de sus actividades profesionales o comerciales, hayan contribuido a realizar o hayan debido conocer, salvo que tal información implique la violación de un secreto profesional impuesto por disposiciones legales...\"\nA tal efecto, será de inestimable utilidad la remisión de la información que a continuación se detalla, en soporte magnético, al inspector actuante Patrón, Roberto, vía postal o personalmente, en un plazo de 5 días de recibida la notificación, a las oficinas de ésta dependencia sita en Av. Maipú 2259 Piso 2 C.P. 1636 Olivos, Provincia de Buenos Aires.\n1) Informe con detalle de montos mensuales, operaciones concertadas con la Contribuyente NATURA COSMETICOS SA., (Facturas, Remitos, N. de Crédito y N. Débito) totalizadas mensualmente, indicando fecha, tipo y Nº de comprobante, importe, (neto, IVA y total), productos o servicios COMPRADOS/VENDIDOS, lugar de retiro/entrega de la mercadería o prestación de servicio y forma de pago/cobro, por el período Enero de 2021 a Diciembre de 2021.\n2) Aportar documentación relacionada con Acuerdos, Convenios y/o Contratos celebrados con la Contribuyente –en caso de corresponder-; 3) Informe jurisdicción de destino final de los productos comercializados, a su vez informe respecto de vuestra empresa: a) Si posee sucursales (detallar por jurisdicción) b) Domicilio donde desarrolla su actividad principal; c) Domicilio del depósito o centro de distribución que posee d) Domicilio de la sede administrativa. 4) Detalle y/o mayores de la cuenta de Percepciones/Retenciones, totalizadas mensualmente, por operaciones realizadas con la firma: \"NATURA COSMETICOS SA.\", durante los períodos Enero de 2021 a Diciembre de 2021.\nLa información solicitada es de vital importancia, por lo que se solicita se tramite con carácter de URGENTE, bajo apercibimiento de aplicar la sanción establecida en el Art. 60 del C.F. de la Pcia. de Buenos Aires (T.O. 2011), que impone una MULTA graduada entre la suma de PESOS CIENTO VEINTIUN MIL SETECIENTOS SETENTA ($ 121.770,00) y la de PESOS CUATRO MILLONES NOVECIENTOS CUARENTA Y CINCO MIL DOSCIENTOS QUINCE ($ 4.945.215,00), en caso de incumplimiento en tiempo y forma, injustificado.\nAgencia de Recaudación Provincia de Buenos Aires\nRoberto PATRÓN Vicente López\nAgradeciendo vuestra colaboración, saluda a Ud. con la más distinguida consideración. Luis FALOTICO Supervisor de Depto. Inspecciones Vicente López\nRemitir al Dpto. de Inspecciones Vicente López, refiriendo al inspector Patrón Roberto. Sito en Av Maipú 2259 - Piso 2 C.P. 1636 – Olivos – Provincia de Buenos Aires.(roberto.patron@arba.gov.ar)\nPARA USO DEL NOTIFICADOR - Original D.P.R. / Duplicado: Contribuyente\nEl ... del mes de ............... del 2026 a las ...... hs, me constitúí en el domicilio arriba indicado y :\n□ ENCONTRADO EL Interesado, procedí a entregarle copia a la presente. □ No realicé la entrega por motivo justificado.\nCerrado o ausente Insuficiente\nRechazado\nDesconocido\nMudase\nDirección\nFirma del interesado Aclaración de la firma Tipo y N° de documento en carácter de\nFirma del notificador\nA XU 06620001 6",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio",
+      "solo_candidatos_descartados"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_persona": "NATURA COSMETICOS SA",
+        "dni_persona": "",
+        "cuit_cuil_persona": "30-67775729-5",
+        "roles_detectados": [
+          "contribuyente"
+        ],
+        "variantes_nombre": [
+          "NATURA COSMETICOS SA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.578,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "NATURA COSMETICOS SA",
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "30-67775729-5",
+            "rol_detectado": "contribuyente",
+            "nombre_confidence": 0.6140362024307251,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "desarrolladas por esta dependencia, referente a la Contribuyente NATURA COSMETICOS SA, CUIT. 30-67775729-5, expediente Nº 2360-0142505-2024, con intervención del Cdor.",
+            "contexto_local": "desarrolladas por esta dependencia, referente a la Contribuyente NATURA COSMETICOS SA, CUIT. 30-67775729-5, expediente Nº 2360-0142505-2024, con intervención del Cdor."
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.578,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": false
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "504981",
+    "numero_archivo": "42",
+    "nombre_documento": "504981_1.pdf",
+    "texto_completo": "RECIBIDO\n29 ENE 2026\nOFICIO JUDICIAL Buenos Aires, de diciembre del 2025.\nAL SR GERENTE MERCADO PAGO SERVICIOS DE PROCESAMIENTO SRL Av Caseros 3039 (CABA)\nTengo el agrado de dirigirme a Ud. en mi carácter de letrado patrocinante de la coheredera Micaela Ailen RUBIN BAROSI, en uso de las facultades que me confiere el art 400 del Código Procesal Civil y Comercial de la Nación, en los autos caratulados \"RUBIN Leandro Anibal Jesús / SUCESION AB INTESTATO EXPTE no 44438/2023 interinamente a cargo del Dr. Jorge Ignacio Sobrino Rey (Juez subrogante), Secretaria Única a cargo de la Dra Soledad Calatayud, con asiento en Av de los Inmigrantes 1950 Planta Baja, a fin de que por intermedio de quien corresponda se sirvan informar lo siguiente a) Si el Sr Leandro Anibal Jesús Rubin (DNI 23.591.508 era titular de una cuenta en dicha entidad b) en caso afirmativo cuales fueron los movimientos de la cuenta, operados desde la fecha de su fallecimiento (ocurrida el 5 de junio del 2023) hasta el momento de recepción del presente oficio e) si existe saldo acreedor y en caso afirmativo a cuanto asciende su monto.-d) de existir fondos se los transfiera a la cuenta en pesos no 9982370517 CBU 0110025950099823705172 0 o cuenta en dólares No 9882370613 CBU 0110025951098823706131, ambas abiertas a la orden del Tribunal en el Banco de la Nación Argentina Sucursal Tribunales, todas suma te dinero correspondiente al causante Leandro Anibal Jesus Rubin (DNI 29.697.608 fallecido el 5-6-23).\nComo mejor recaudo se transcriben las resoluciones que ordenan la medida y dicen en su parte pertinente; \"Buenos Aires, 3 de abril del 2024. Líbrese el oficio solicitado...Fdo Soledad Calatayud Secretaria.\nBuenos Aires 30 de agosto del 2024.- .... líbrese oficio a Mercado Pago Servicios de Procesamientos Electrónicos SRL a fin de que brinde la\ninformación requerida y en su caso transfiera a la cuenta en pesos nro 9982370517 CBU 0110025950099823705172 o cuenta en dólares no 9882370613 CBU 011002595109823706131 según corresponda ambas abiertas al causante Leandro Anibal Jesús Rubin (DNI 29.697.608 fallecido el 5/6/23) Eximes de la colocación de sello medalla del Juzgado en el instrumento a librarse. Fdo Jorge Ignacio Sobrino. Juez. Se transcriben a sus efectos-y en su parte pertinente los siguientes artículos del Código Procesal Civil y Comercial de la Nación. Art.398 Las oficinas públicas y entidades privadas deberán contestar el pedido de informes dentro de los diez días hábiles. No podrán establecerse recaudos que no estuvieren autorizados por Ley. El Juez deberá aplicar sanciones conminatorias progresivas en el supuesto de atraso injustificado en la contestación otros plazos para la contestación de informes Art.400 Los pedidos de informes...ordenados en el juicio podrán ser requeridos por medio de oficios firmados, sellados y diligenciados por el letrado patrocinante con transcripción de la resolución que los ordena y fija el plazo en que deberá remitirse. -Se deja constancia que la Sra Micaela Ailen RUBIN BAROSI (DNI 40.737-434) y/o quien ella designe o delegue facultades se encuentra autorizada a correr con el diligenciamiento del presente oficio. Dr. Daniel H. C. Gómez Sandino ABOGADO C.R.A.C.F.T.XI E Xl",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO_MULTIPLE",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "conflicto_identificador"
+    ],
+    "cantidad_personas_objeto_oficio": 2,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "Leandro Anibal Jesus Rubin",
+        "dni_persona": "29.697.608",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [
+          "causante"
+        ],
+        "variantes_nombre": [
+          "Leandro Anibal Jesus Rubin",
+          "Leandro Anibal Jesús Rubin"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 16.786,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Leandro Anibal Jesus Rubin",
+            "dni_detectado": "29.697.608",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "causante",
+            "nombre_confidence": 0.9704440832138062,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Tribunales, todas suma te dinero correspondiente al causante Leandro Anibal Jesus Rubin (DNI 29.697.608 fallecido el 5-6-23).",
+            "contexto_local": "Tribunales, todas suma te dinero correspondiente al causante Leandro Anibal Jesus Rubin (DNI 29.697.608 fallecido el 5-6-23)."
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Leandro Anibal Jesús Rubin",
+            "dni_detectado": "29.697.608",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "causante",
+            "nombre_confidence": 0.9645097851753235,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "011002595109823706131 según corresponda ambas abiertas al causante Leandro Anibal Jesús Rubin (DNI 29.697.608 fallecido el 5/6/23)",
+            "contexto_local": "011002595109823706131 según corresponda ambas abiertas al causante Leandro Anibal Jesús Rubin (DNI 29.697.608 fallecido el 5/6/23)"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 16.786,
+            "total_grupos_documento": 3,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "causante"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": true,
+              "cantidad_fragmentos": 2,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": false
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_persona": "Leandro Anibal Jesús Rubin",
+        "dni_persona": "23.591.508",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "Leandro Anibal Jesús Rubin"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.903,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Leandro Anibal Jesús Rubin",
+            "dni_detectado": "23.591.508",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9682345390319824,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "corresponda se sirvan informar lo siguiente a) Si el Sr Leandro Anibal Jesús Rubin (DNI 23.591.508 era titular de una",
+            "contexto_local": "corresponda se sirvan informar lo siguiente a) Si el Sr Leandro Anibal Jesús Rubin (DNI 23.591.508 era titular de una"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "requerimiento_explicito",
+            "identificador_local_verificado"
+          ],
+          "detalle": {
+            "score_total": 9.903,
+            "total_grupos_documento": 3,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "titular"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": true
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 3,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_persona": "Micaela Ailen RUBIN BAROSI",
+        "dni_persona": "40.737-434",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Micaela Ailen RUBIN BAROSI"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.722,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Micaela Ailen RUBIN BAROSI",
+            "dni_detectado": "40.737-434",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.907735288143158,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "que deberá remitirse. -Se deja constancia que la Sra Micaela Ailen RUBIN BAROSI (DNI 40.737-434) y/o quien ella designe",
+            "contexto_local": "que deberá remitirse. -Se deja constancia que la Sra Micaela Ailen RUBIN BAROSI (DNI 40.737-434) y/o quien ella designe"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.722,
+            "total_grupos_documento": 3,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": false
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 1,
+    "conflictos_identificador": [
+      {
+        "conflicto_bloqueante": true,
+        "resolucion_conflicto": "pendiente",
+        "priorizacion_evidencia": {
+          "grupo_preferente_para_revision": "a",
+          "criterio": "pedido_explicito_con_identificador_local",
+          "grupo_a": {
+            "nivel": "pedido_explicito_identificado",
+            "prioridad": 2,
+            "fragmentos_explicitos": [
+              "1"
+            ],
+            "justificacion": "Nombre e identificador vinculados en solicitud explicita"
+          },
+          "grupo_b": {
+            "nivel": "evidencia_complementaria",
+            "prioridad": 1,
+            "fragmentos_explicitos": [],
+            "justificacion": "No se verifico solicitud explicita local; revisar fuentes"
+          },
+          "conflicto_pendiente": true,
+          "resolucion_automatica": false
+        },
+        "tipo_identificador": "dni",
+        "tipo_conflicto": "mismo_nombre_identificadores_distintos",
+        "valores_a": [
+          "23591508"
+        ],
+        "valores_b": [
+          "29697608"
+        ],
+        "nombre_a": "Leandro Anibal Jesús Rubin",
+        "nombre_b": "Leandro Anibal Jesus Rubin",
+        "variantes_a": [
+          "Leandro Anibal Jesús Rubin"
+        ],
+        "variantes_b": [
+          "Leandro Anibal Jesus Rubin",
+          "Leandro Anibal Jesús Rubin"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "507161",
+    "numero_archivo": "45",
+    "nombre_documento": "507161_1.pdf",
+    "texto_completo": "Zimbra: judiciales4a@policiaelaciudad.gob.ar\nSOLICITO COLABORACION Y ACUSE DE RECIBO - SUMARIO 52311/2026\nDe : JUDICIALES CV11B <judicialescomisariavecinal11b@gm ail.com> mié, 28 de ene de 2026 17:00 1 ficheros adjuntos\nAsunto : SOLICITO COLABORACION Y ACUSE DE RECIBO - SUMARIO 52311/2026\nPara : judiciales4a@policiaelaciudad.gob.a r\nPor medio de la presente solicito a Ud comisione personal a su cargo a fin de hacerle llegar la presente nota a la empresa Mercado Libre sita en Av. Caseros 3039 piso 2° de esta ciudad. Muchas gracias.\nAUXILIAR NIVEL G LP 33453 DEL REGNO JAVIER EMILIANO\nCOMUNA 11 - POLICIA DE LA CIUDAD DIVISIÓN COMISARÍA VECINAL 11B OFICINA DE JUDICIALES Poc: 11-4068-3665\n— Mercado_27012026155832.PDF 25 KB\n0 2 FEB 2028 RECIBIDO\nRECIBIDO\nPOLICIA DE LA CIUDAD DE BUENOS AIRES\nREPÚBLICA ARGENTINA GOBIERNO DE LA CIUDAD AUTÓNOMA DE BUENOS AIRES MINISTERIO DE JUSTICIA Y SEGURIDAD POLICÍA DE LA CIUDAD\nNOTA CRIA VECINAL 11-B N° _______/2026.- Buenos Aires 27 de ENERO de 2026.-\nPROPIETARIO O ENCARGADO EMPRESA MERCADO LIBRE SITA EN AV. CASEROS 3039 - PISO 2º CABA\nTengo el agrado de dirigirme a usted en actuaciones Sumariales 52311 caratuladas °- Artículo 89 - Lesiones leves° que se instruyen en esta CRIA VECINAL 11-B, con intervención de la Policía de la Ciudad, Ministerio Público de la Ciudad de Buenos Aires - Ministerio Público Fiscal - Fiscalía de Primera Instancia en lo Penal, Contravencional y de Faltas Nro. 20 - Secretaría Única, a/c: Fiscal A/c Dr. Juan ROZAS, secretaria a/c Dr. Rodrigo BRANCA, Secretaría Única. Donde resulta parte damnificada el sr. GARCIA, Sebastian Manuel, titular del Documento Nacional de Identidad (DNI): 40079972 y parte imputada un masculino.\nMotiva su libramiento solicitarle tenga a bien aportar datos filiatorios de una persona de sexo masculino, siendo este empleado (delivery) de la empresa Mercado Pago, el cual llevo abordo de un motovehículo un pedido por una docena de empanadas desde el local La Gran Esquina sito en calle Gral. Jose Gervasio Artigas 1602 de esta ciudad, hacia el domicilio sito en Av. Francisco Beiro 3347 de esta ciudad, por medio de la aplicación Mercado Pago, bajo el número de operación 142623458705, mas precisamente en el pasado día 24 de Enero del 2026, a las 23:11 horas.\nSin otro particular, saludo a Usted muy respetuosamente.\nCRIA VECINAL 11-B, POLICÍA DE LA CIUDAD José Cubas 4154, TELÉFONO 1140683665\nCORREO INSTITUCIONAL: JUDICIALESCOMISARIAVECINAL11B@GMAIL.COM\nJAVIER DEL REGNO Aut. Nhel G./ L.P. 33453 POLICÍA DE LA CIUDAD\n0 2° FEB 2026\nRECIBIDO\n[ILEGIBLE]",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "507163",
+    "numero_archivo": "46",
+    "nombre_documento": "507163_1.pdf",
+    "texto_completo": "OFICIO JUDICIAL\nCABA, 9 de Enero de 2026.-\nMERCADOLIBRE S.R.L. (MERCADOPAGO) A quien corresponda S / D\nDe mi mayor consideración:\nTengo el agrado de dirigirme a Ud. en mi carácter de letrado apoderado de la demandada en los autos caratulados “CARFAGNO, MARCOS CONTRA TELEFONIA MOVILES ARGENTINA S.A SOBRE CONTRATOS Y DAÑOS - RC - PUBLICIDAD” (Expediente N°53282/2024-0), en trámite por ante el Juzgado de Primera Instancia en lo Contencioso Administrativo, Tributario y de Relaciones de Consumo Nº25 - Juez: Dr. Carlos Eduardo Tambussi- Secretaría Única -a cargo de la Dra. María Eugenia D’archivo-, a fin de que informe si Telefónica Móviles Argentina S.A. (TMA), C.U.I.T. 30-67881435-7, el 03/02/2023 le transfirió en concepto de reembolso la suma de $ 223.999 por medio de la tarjeta VISA 40507 ****** 1660, cupón 4645. En caso afirmativo, dirán cuándo se efectivizó el reembolso al cliente. Se adjunta a continuación la guía respectiva para que la entidad pueda brindar respuesta con mayor facilidad.\nEl auto que ordena este oficio expresa en su parte pertinente: “28 de Agosto de 2025, Ciudad de Buenos Aires, FMS. AUTOS Y VISTOS: I. Atento el estado de autos y a la existencia de hechos controvertidos, ábrase la causa a prueba, a tal fin corresponde establecer en cuarenta (40) días (cfr. arts. 170 y 217 del CPJRC), el plazo del período\nRECIBIDO 0 2 FEB 2026\nprobatorio y proceder a determinar las pruebas admisibles para la continuación del proceso y las modalidades de su producción en los siguientes términos: 1. Proveyendo la prueba de la parte actora (actuación 923430/2024 y 1661061/2024): 1.1 A la prueba documental ofrecida en el punto VII apartado B, del escrito de demanda obrante en la actuación 923430/2024: Téngase presente la documentación acompañada en las actuaciones 923430/2024 y 1661061/2024. 1.2 A la prueba confesional ofrecida en el punto VII apartado A, del escrito de demanda obrante en la actuación 923430/2024: Estese al rechazo dispuesto en el punto II.5 de la actuación 1909031/2024. 1.3 A la prueba pericial informática ofrecida en el punto VII apartado C, del escrito de demanda obrante en la actuación 923430/2024: Corresponde ordenar su producción: En consecuencia, se procedió al sorteo de la perito ingeniería informática, resultando desinsaculada la experta Magalí Verónica Dos Santos, con domicilio en la calle AGÜERO 1843 piso 4 depto A teléfono 11-5936-3359 correo electrónico magali@estudiodossantos.com.ar, a los fines de cumplir con los puntos de pericia ofrecidos por la parte actora en la actuación 923430/2024. La experta, dentro del tercer día de notificada, deberá aceptar el cargo que en este acto se le confiere, bajo apercibimiento de dejar sin efecto su designación, haciéndole saber que en el plazo de diez (10) días (cfr. art. 203, segundo párrafo del CPJRC), deberá presentar el informe pericial -en soporte digital-, pudiéndose reducir sus honorarios si se ingresara vencido el término establecido (cfr. art. 203 del Código Procesal de la Justicia en Relaciones de Consumo). Se hace saber que deberá indicar la fechas en la que se realizará la pericia peticionada, con una antelación suficiente que permita diligenciar las notificaciones del caso a las partes (cfr. 206 del CPJRC). A fin de evitar inconvenientes al momento de la elaboración de la pericia, atento lo que por la presente se decide, deberá adjuntarse copia de la demanda, en la cédula a librarse (cfr. art. 203, primer párrafo, del citado cuerpo normativo). Notifíquese a la experta por Secretaría. 1.4 A la prueba informativa ofrecida en el punto VII apartado E del escrito de demanda obrante en la actuación 923430/2024: Líbrese el oficio solicitado a los fines indicados en el punto VII, apartado E del escrito de demanda, en los términos del artículo 182 del CPJRC haciendo saber que \"las entidades públicas o privadas no podrán exigir aranceles, sellados o timbrados de ninguna especie para la recepción y contestación de oficios ofrecidos por el consumidor, debiendo\nconsignarse esta prevision en los despachos que se libren\", dirigido al Banco Santander Rio. Hágase saber a la representación letrada que deberá presentar a través del portal del litigante el proyecto de oficio precedentemente ordenado para su confronte, con copia íntegra firmada de esta providencia donde se ordena su producción. Efectuado el confronte, una vez suscripto el oficio por V.S, se diligenciará por la vía pertinente, sin necesidad de contar con sello medalla del tribunal. El texto y la firma de tal documento podrá ser verificados en el Sistema de Consulta Pública de Expedientes en el sitio web https://eje.juscaba.gob.ar/. Por último, hágase saber al organismo oficiado que podrá enviar su respuesta a la casilla juzcatyrc25@jusbaire.s.gov.ar 2. Proveyendo la prueba de la parte demandada (actuación 537499/2025): 2.1 A la prueba documental ofrecida en el punto VII apartado (i), del escrito de contestación demanda obrante en la actuación 537499/2025: Téngase presente la documentación acompañada. 2.2 A la prueba confesional ofrecida en el punto VII apartado (ii), del escrito de contestación demanda obrante en la actuación 537499/2025: Estese al rechazo dispuesto en el punto V de la actuación 614317/2025. 2.3 A la prueba informativa ofrecida en el punto VII apartado (iii) del escrito de contestación demanda obrante en la actuación 537499/2025: Líbrense los oficios solicitados a los fines indicados en el punto VII apartado (iii) del escrito de contestación demanda obrante en la actuación 537499/2025, en los términos del artículo 182 del CPJRC, haciendo saber que \"las entidades públicas o privadas no podrán exigir aranceles, sellados o timbrados de ninguna especie para la recepción y contestación de oficios ofrecidos por el consumidor, debiendo consignarse esta prevision en los despachos que se libren\", dirigidos a: (i) Mercado Libre (Mercado Pago). (ii) Banco Santander. (iii) Prisma Medios de Pago SA. Hágase saber a la representación letrada que deberá presentar a través del portal del litigante el proyecto de oficio precedentemente ordenado para su confronte, con copia íntegra firmada de esta providencia donde se ordena su producción. Efectuado el confronte, una vez suscripto el oficio por V.S, se diligenciará por la vía pertinente, sin necesidad de contar con sello medalla del tribunal. El texto y la firma de tal documento podrá ser verificados en el Sistema de Consulta Pública de Expedientes en el sitio web https://eje.juscaba.gob.ar/. Por último, hágase saber al organismo oficiado que podrá enviar su respuesta a la casilla juzcatyrc25@jusbaire.s.gov.ar. II.\nAsimismo, se recuerda a las partes que en caso que arribasen a un acuerdo con anterioridad a la celebración de la audiencia de vista de causa, el tribunal podrá eximir de hasta el cincuenta por ciento (50%) del monto de la tasa de justicia de conformidad con lo previsto en el artículo 220 del código de rito. A su vez, se hace saber que la finalidad de la audiencia de vista de causa, además de lo previsto en el artículo 221 y cctes. del CPJRC, radica en dotar al proceso de inmediación y oralidad en la búsqueda de un cambio radical que incida notablemente y de modo beneficioso en los argumentos que luego se expresarán en la sentencia (args. Verdaguer, Alejandro C., Oralidad y argumentación en obra colectiva \"El camino hacia la oralidad en la justicia nacional civil\", Buenos Aires, ed. SAIJ, 2019, p.74). Así, el tribunal podrá evaluar tanto la posibilidad de que las partes, testigos y peritos se pronuncien con amplitud respecto de todos los hechos controvertidos de la causa, como requerir, en su caso, las explicaciones que se consideren pertinentes. Por lo tanto, si bien la totalidad de la prueba deberá producirse, y sustanciarse con sus respectivas impugnaciones, dentro del plazo de cuarenta (40) días establecido en la presente apertura a prueba, teniendo en cuenta que, según lo previsto en el artículo 221 del CPJRC, por razones de fuerza mayor, se podrá excepcionalmente posponer la audiencia de vista, ello claro está \"...siempre que la parte haya cumplido los actos necesarios para la realización de la prueba de manera continua y permanente\" (cfr. Falcon, Enrique M., Código Procesal Civil y Comercial de la Nación Comentado - Concordado - Anotado, ed. Abeledo - Perrot, Buenos Aires, 2009, tomo IV, p.808), se hace saber que, conforme al principio de celeridad y economía procesal que emerge del artículo 1º, inciso 1º, del citado código, se designará -a petición de parte- la audiencia respectiva cuando i. haya vencido el plazo aquí establecido o ii. Se haya producido antes de transcurrido- el plazo de cuarenta (40) días, la totalidad de la prueba ordenada (art. 16, inc. 5º, CPJRC). Lo que, ASÍ SE DECIDE. Protocolícese en el sistema EJE y notifiquese electrónicamente por Secretaría a las partes y a la Unidad Especializada en Relaciones de Consumo del Ministerio Público Fiscal (cfr. art. 84 del CJPRC). Fdo. TAMBUSSI Carlos Eduardo. Juez\" (Textual).\nSe deja constancia que el trámite reviste gratuidad conforme art. 66 del CPJRC, y que deberá enviar su respuesta a la casilla juzcatyrc25@jusbaires.gob.ar\nSin otro particular, saluda a Ud. Muy atentamente.-\nn 2 F-R 2026 RECIBIDO",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 1,
+    "candidatos_incompletos": [
+      {
+        "numero_archivo": "46",
+        "contador_interno": "1",
+        "indice_candidato": 1,
+        "nombre_persona": null,
+        "dni_persona": null,
+        "cuit_cuil_persona": "30-67881435-7",
+        "motivo": "sin_nombre_persona",
+        "origen": "gliner2",
+        "palabra_clave": "cuit",
+        "categoria": "Datos_Embargado",
+        "fragmento": "de que informe si Telefónica Móviles Argentina S.A. (TMA), C.U.I.T. 30-67881435-7, el 03/02/2023 ",
+        "nombre_confidence": null,
+        "dni_confidence": null,
+        "cuit_cuil_confidence": 0.7221522927284241
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "507226",
+    "numero_archivo": "49",
+    "nombre_documento": "507226_1.pdf",
+    "texto_completo": "División Comisaría Primera P.S.J. Policía de la Provincia de Santa Cruz Dir. Avenida San Martín Nro. 864 – Tel. 02962-452202\nDIVISIÓN COMISARÍA PRIMERA (PSJ): Diciembre 29 de 2.025.- AL SR. GERENTE MERCADO PAGO / DESPACHO. Oficio Nro. 277-S-1RA.PSJ/05/25.\nRef.: Solicitar.-\nEn Actuaciones Prevencionales que se instruyen en esta División Policial, caratuladas preventivamente \"OMAR CAUCAMAN S/ DENUNCIA ESTAFA\", amparadas mediante Radiograma Preventivo Nro. 277-S-1RA.PSJ/25; con conocimiento e intervención del Juzgado de Instrucción y Penal Juvenil Nro. Uno local, tengo el agrado de dirigirme a Ud., con la finalidad de solicitarle quiera tener a bien y por intermedio del área que corresponda, se evacue informe de acuerdo al siguiente cuestionario:\nSi la persona Maximiliano Arnaldo GOMEZ DNI-33.943.547, CVU: 00000310003428721770, es cliente adherido correspondiente a esa entidad Bancaria.- Caso afirmativo brindar datos filiatorios del mismo (numero de cuenta, alias, DNI y domicilio).- Si durante el trascurso del año, solicito préstamos, realizo movimientos o se efectuaron débitos automáticos hacia otras cuentas bancarias como así también registros de ingresos monetarios con particularidad en montos de un mismo usuario.- Caso afirmativo ítem interior, brindar datos de la cuenta que recepcionó dichas transferencias.- Por otro dato de interés.\nPor último, con el objetivo de agilizar las respuestas y lograr beneficios en las presentes investigaciones, las mismas sean adelantadas a esta División, a través del correo electrónico divcrial.sanjulian@policiaedsantacruz.gob.ar, a los fines de ser agregado a la presente causa \"Ut Supra\".-\nSin otro particular saludo a Ud., muy atentamente.-\n0 2 FEB 2026\nRECIBIDO\nMAMANI ENZO COMISARIO 2DO IEFE A/C DE DEPENDENCIA POLICÍA DE SANTA CRUZ",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "persona_1:evidencia_unica_debil"
+    ],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "Maximiliano Arnaldo GOMEZ",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [
+          "actor"
+        ],
+        "variantes_nombre": [
+          "Maximiliano Arnaldo GOMEZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.989,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Maximiliano Arnaldo GOMEZ",
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "actor",
+            "nombre_confidence": 0.9962319731712341,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "informe de acuerdo al siguiente cuestionario:\nSi la persona Maximiliano Arnaldo GOMEZ DNI-33.943.547, CVU: 00000310003428721770,",
+            "contexto_local": "informe de acuerdo al siguiente cuestionario:\nSi la persona Maximiliano Arnaldo GOMEZ DNI-33.943.547, CVU: 00000310003428721770,"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte"
+          ],
+          "detalle": {
+            "score_total": 6.989,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "actor"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": false,
+              "requerimiento_explicito": false
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "507939",
+    "numero_archivo": "52",
+    "nombre_documento": "507939_1.pdf",
+    "texto_completo": "OFICIO REITERATORIO\nBuenos Aires 22 de Diciembre de 2025\nMERCADO PAGO Servicios de Procesamiento S.R.L. notificaciones@mercado libre.com S / D\nRECIBIDO\nTengo el agrado de dirigirme a Ud. en los autos caratulados : “MANCINELLI, CLARA PAULA c/ MASTAKAS, ANIBAL ULISES s/ALIMENTOS ” , expediente número 092823/2024 en trámite ante a JUZGADO CIVIL 102 sito en la calle Lavalle 1212, Piso Séptimo (C1048AAF) Ciudad Autónoma de Buenos Aires teléfonos 4379-1408/1409/1406, dirección de email : jncivil102@pin.gov.ar a cargo del Dr. Montesano, Raul Augusto Juez Subrogante, secretario Dr. Visaggi, Javier Carlos , a fin que informe la procedencia nombre y cuit de la trasferencia 682505353ULISES6710 ANIBAL ULISES MASTAKAS 20215067107 2023-05-08 10.05:34 ( UTC -4 ) 2099520708MARIMPORT MSR IMPORT Dinero disp. Se inserta imagen para mejor oficiar .-\nEstos datos figuran en la respuesta de su oficio de fecha 09/05/2025 fojas 57 de estos autos.\nSe hace saber al organismo oficiado que el presente es solicitado en el marco de un expediente de alimentos por lo cual goza del beneficio de Gratuidad.\nEl auto que ordena el presente dice : Buenos Aires, de noviembre de 2024 //...III) Librense los oficios solicitados, con transcripción del artículo 398 del Código Procesal Civil y Comercial de la Nación, quedando facultada la actora a librar oficios reiteratorios, una vez vencido el plazo para su contestación previsto en dicha norma. Hágase saber que en deberá remitir el modelo de oficio en formato WORD a juz.civil102@gmail.com mediante el sistema DEOX. . En su caso, líbrense IV) Téngase presente la restante prueba ofrecida para ser considerada una vez conocido el resultado del comparendo señalado precedentemente. Fdo digitalmente: En fecha 04/12/2024 por el Dr. Montesano, Raul Augusto Juez Subrogante.- otro auto dice: Buenos Aires, 26 de noviembre de 2025 .- I) Librense los oficios reiteratorios solicitados....// Fdo por el Dr. Montesano, Raul Augusto Juez Subrogante\nQueda autorizada para su diligenciamiento la Dra, Casalaspro Elizabeth Lara DNI 22571674 , INSCRIPTA AL Tomo 64 Folio 17 CPCF y MANCINELLI, CLARA PAULA DNI: 25.940.760 y/o quien la letrada autorice en los términos del artículo 400 del CPCyCN .-\nRECIBIDO\nArt. 398.- Las oficinas públicas y las entidades privadas deberán contestar el pedido de informes o remitir el expediente dentro de los diez días hábiles, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o circunstancias especiales. No podrán establecer recaudos que no estuvieran autorizados por ley. Los oficios librados deberán ser recibidos obligatoriamente a su presentación.El juez deberá aplicar sanciones conminatorias progresivas en el supuesto de atraso injustificado en las contestaciones de informes. La apelación que se dedujera contra la resolución que impone sanciones conminatorias tramita en expediente separado.Cuando se tratare de la inscripción de la transferencia de dominio en el Registro de la Propiedad, los oficios que se libren a Obras Sanitarias de la Nación (e.l.) al ente prestador de ese servicio y al Gobierno de la Ciudad de Buenos Aires o Municipio de que se trate, contendrán el apercibimiento de que, si no fueran contestados dentro del plazo de diez días, el bien se inscribirá como si estuviese libre de deudas.(Artículo sustituido por art. 2° de la Ley N° 25.488 B.O. 22/11/2001)\nSin otro Particular saludo a Uds.muy atentamente\nELIZABETH LARA CASALASPRO ABOGADA Tº 64 Fº 17 C.P.A.C.F. Tº L Fº 45 C.A.S.I. Tº 133 Fº 560 MAT. FED.\nRECIBIDO\n0 3' FEB -2026\nCIBIDO\nRECIBIDO 03-128-456\nRECIBIDO\n682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 326935920 DEHEZASO DEHEZA SC Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 138886786 DONDON2 DON CORD Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 670433713 SERVICIOS SERVICIOS Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 145042941 LUISACG23JEVI KIOSO Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 390761480 TALTAVULLI taltavullmi Dinero disp 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 333567752 LOMA3744 Marcelino Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 582092695 GOBIERNO GOBIERNO Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 46122724 DRBERNAR Enrique Be Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 116287330 NUEVOGRINUEVO GR Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 15607300 SHEYLA ESI sheila espli Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 108603207 LACR32526 cristian lan Dinero disp 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 145042941 LUISACG23JEVI KIOSO Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 610026572 INCSOCIED INC SOCIET Dinero disp 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 418431986 DANIELORI DANIEL OR Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 390761480 TALTAVULLI taltavullmi Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 345837770 KAMA927C KATZ MAR Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 489429370 SICSORSA SICSOR SA Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 116433351 GG504129 G SA G SA Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 209952070 MARIMPOI MAR IMPO Dinero disp 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 333567752 LOMA3744 Marcelino Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 788135824 MERCADO! Mercado Li Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 145042941 LUISACG23JEVI KIOSO Dinero disp 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 93352215 PORVENIR' Emiliano Jr Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 661827653 FGC_MPSPFGC FUELS Dinero disp 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 5907992 ARG-GUS Gustavo M Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 149076517 IFILUMINA MAS ILUM Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 209952070 MARIMPOI MAR IMPO Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 184535015 MM2024OI METROGA! Dinero disp 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 467829079 SA7959325 SAMANTH. Dinero disp 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 345837770 KAMA927C KATZ MAR Dinero disp 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 395121765 LAREOAELI Mirta Aleja Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 325054974 ELPRINCISFEL PRINCI S Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 169981465 YZARRAVEI alex rene y Dinero disp 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 333567752 LOMA3744 Marcelino Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 108603207 LACR32526 cristian lan DEBIN 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 330127735 MAARKITT CARMONA Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 582092695 GOBIERNO Dinero disp 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 489429370 SICSORSA SICSOR SA Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 132020878 ESTACION Estacion de Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 110005502 UNJIANFAT Jianfang Li Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 169805815 PALMAROX Vanessa Pal Saldo no M 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 480015564 OJALS2049 Alberto Oj Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 137685665 DRAKOSDR DRAKOS IN Dinero en I 682505353 ULISES671(ANIBAL UL 202150671 2023-05-01 533086595 C3756843 C BAR C BA Saldo no M\nJURISDICCION DE LA INSTANCIA REPUBLICA ARGENTINA CAPITAL FEDERAL N° 102\nELIZABETH LABA CASALASPRO ABOGADA Tº 64 Fº 17 C.P.A.C.F. Tº L Fº 45 C.A.S.I. Tº 133 Fº 560 MAT. FED.\nRECIBIDO\n0 3° FEB 2026\nRECIBIDO",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "513005",
+    "numero_archivo": "76",
+    "nombre_documento": "513005_1.pdf",
+    "texto_completo": "ADMINISTRACIÓN FEDERAL DE INGRESOS PÚBLICOS - AFIP\nDIRECCIÓN GENERAL IMPOSITIVA - DIRECCIÓN REGIONAL NORTE\nDIVISIÓN FISCALIZACIÓN N° 3 - AGENCIA 53\nSan Martín 871 - San Isidro, Provincia de Buenos Aires\nREQUERIMIENTO N° 14/2026 (F. 8000/R)\nFecha: 25 de Enero de 2026\nA la firma: MERCADO LIBRE S.R.L. / MERCADO PAGO\nDomicilio fiscal: Caseros Av. 3039 Piso 2 - CABA - CUIT: 30-70308853-4\nDe nuestra mayor consideración:\nNos dirigimos a ustedes a fin de solicitarles formalmente su colaboración en el marco del procedimiento de fiscalización y determinación de oficio que esta Dirección General Impositiva lleva adelante respecto a la contribuyente ALIMENTOS Y BEBIDAS DEL SUR S.A., CUIT N° 30-70984125-8, con legajo de inspección O.I. N° 458721, con intervención de la Inspectora Actuante Cdra. Mariana Soler y el Supervisor Cdor. Gustavo Vignolo.\nEl presente requerimiento se formula al amparo de las facultades de verificación y fiscalización consagradas en los artículos 33, 35 y concordantes de la Ley N° 11.683 (t.o. en 1998 y sus modificaciones), encontrándose obligados los terceros a suministrar todos los informes y comprobantes relativos a hechos imponibles de terceros que hayan conocido por su intermediación.\nA tal efecto, se intima a que en el término perentorio de diez (10) días hábiles administrativos de recibida la presente, remita por escrito y en archivo digital formato XLS/CSV a la casilla fiscalizacion_norte@afip.gob.ar la siguiente información detallada:\n1) Informe mensual y discriminado de la totalidad de las operaciones de venta y cobro canalizadas por la contribuyente ALIMENTOS Y BEBIDAS DEL SUR S.A. a través de las plataformas Mercado Libre y Mercado Pago, abarcando el período fiscal Enero 2023 a Diciembre 2024, indicando fecha de venta, número de factura electrónica asociada, número de comprobante interno de liquidación, importe neto gravado, alícuotas e importe de IVA liquidado, importe total cobrado y tipo de medio de pago utilizado por los compradores.\n2) Aportar copia en PDF de los contratos, términos y condiciones especiales y convenios de adhesión suscriptos con la contribuyente para el uso de terminales físicas Point, cobros con código QR y pasarela de pago Checkout Pro.\n3) Informar los domicilios fiscales, depósitos y puntos de despacho declarados por la firma ante su sistema de logística de envíos (Mercado Envíos / Envíos Full) desde los cuales se remitió mercadería comercializada durante el lapso investigado.\n4) Indicar en forma detallada las cuentas bancarias destino (entidad bancaria, número de cuenta y CBU) o billeteras virtuales a las que fueron transferidos o retirados los saldos acumulados de la contribuyente en su cuenta de Mercado Pago.\n5) Detallar los importes mensuales que su entidad hubiere retenido y/o percibido a dicha firma en concepto de Impuesto al Valor Agregado e Impuesto a las Ganancias (Régimen General de Retención en Plataformas Digitales - RG AFIP 4622/2019), adjuntando número de certificados emitidos y comprobantes de ingreso al fisco.\nEl incumplimiento injustificado en tiempo y forma a este requerimiento configurará la infracción formal prevista y reprimida por el art. 39 de la Ley 11.683, dando lugar a la aplicación de las sanciones y multas pecuniarias pertinentes.\nSaludamos a ustedes muy atentamente.\nCdra. Mariana Soler - Inspectora de División Fiscalización\nCdor. Gustavo Vignolo - Jefe División Fiscalización N° 3\nAFIP - AGENCIA 53",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 1,
+    "candidatos_incompletos": [
+      {
+        "numero_archivo": "76",
+        "contador_interno": "1",
+        "indice_candidato": 1,
+        "nombre_persona": null,
+        "dni_persona": null,
+        "cuit_cuil_persona": "30-70984125-8",
+        "motivo": "sin_nombre_persona",
+        "origen": "gliner2",
+        "palabra_clave": "cuit",
+        "categoria": "Datos_Embargado",
+        "fragmento": "Impositiva lleva adelante respecto a la contribuyente ALIMENTOS Y BEBIDAS DEL SUR S.A., CUIT N° 30-70984125-8, con legajo de inspección O.I.",
+        "nombre_confidence": null,
+        "dni_confidence": null,
+        "cuit_cuil_confidence": 0.9843037724494934
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "513007",
+    "numero_archivo": "78",
+    "nombre_documento": "513007_1.pdf",
+    "texto_completo": "MINISTERIO PÚBLICO DE LA CIUDAD DE BUENOS AIRES\nFISCALÍA GENERAL - MINISTERIO PÚBLICO FISCAL\nFISCALÍA DE PRIMERA INSTANCIA EN LO PENAL, CONTRAVENCIONAL Y DE FALTAS N° 15\nCombate de los Pozos 155 - CABA\nNOTA FISCAL N° 208/2026 - SUMARIO POLICIAL N° 84120/2026\nBuenos Aires, 24 de Febrero de 2026.\nAL SEÑOR RESPONSABLE LEGAL DE MERCADO PAGO / MERCADO ENVÍOS / MERCADO LIBRE S.R.L.\nSITA EN AV. CASEROS 3039 - PISO 2° - CABA\nTengo el agrado de dirigirme a usted en el marco de las actuaciones sumariales seguidas bajo el N° 84120/2026, caratuladas \"NN S/ HURTO Y DEFRAUDACIÓN MEDIANTE MEDIOS INFORMÁTICOS\", con intervención de esta Fiscalía de Primera Instancia en lo Penal, Contravencional y de Faltas N° 15, a mi cargo, Secretaría Única a cargo de la Dra. Carolina Bianchi, donde resulta damnificado el comercio de telefonía \"TecnoStore Belgrano\".\nMotiva su libramiento solicitarle tenga a bien aportar en carácter de muy urgente todos los datos filiatorios completos (nombres y apellidos, número de Documento Nacional de Identidad, fecha de nacimiento, número de teléfono celular de contacto, domicilio real y fotografía de perfil) correspondientes a una persona de sexo masculino, chofer/repartidor registrado en su plataforma de envíos de Mercado Pago / Envíos Flex, quien encontrándose a bordo de un motovehículo tipo scooter color negro con baúl o caja térmica amarilla, se presentó a retirar un paquete conteniendo un equipo celular marca Apple iPhone 15 en el local comercial \"TecnoStore\", sito en Av. Cabildo 2450 de esta Ciudad Autónoma de Buenos Aires, con destino indicado de entrega en la calle Mendoza 1520 de la misma ciudad, pedido que fuera concertado y procesado a través de su plataforma de pagos y logística bajo el número de operación y envío N° 194852003417, hecho ocurrido el pasado día 18 de Febrero de 2026 a las 21:45 horas aproximadamente, sin que el producto fuera entregado a su comprador y bloqueándose la trazabilidad del recorrido.\nAsimismo, se solicita remita el informe técnico que contenga el registro de geolocalización por coordenadas GPS del dispositivo móvil del citado repartidor entre las 21:00 y las 23:30 horas de la fecha señalada.\nLa respuesta deberá ser remitida de forma perentoria dentro del plazo de 48 horas de recibida la presente a la casilla institucional fiscaliapcf15@mponline.gob.ar citando en el asunto el Sumario 84120/2026.\nSin otro particular, saludo a Usted con distinguida consideración.\nDr. Gonzalo M. Peralta - Fiscal a/c Fiscalía PCyF N° 15 CABA\nPOLICÍA DE LA CIUDAD - DIVISIÓN INVESTIGACIONES COMUNALES 13\nRECIBIDO 26 FEB 2026 OFICINA CENTRAL",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "513008",
+    "numero_archivo": "79",
+    "nombre_documento": "513008_1.pdf",
+    "texto_completo": "MINISTERIO PÚBLICO FISCAL - PROVINCIA DE BUENOS AIRES\nUNIDAD FUNCIONAL DE INSTRUCCIÓN N° 3 - DISTRITO SAN ISIDRO\nItuzaingó 340 - San Isidro\nIPP N° 14-01-008745-26/00\nSan Isidro, 16 de Marzo de 2026.\nOFICIO JUDICIAL\nA LA EMPRESA MERCADO LIBRE S.R.L. (MERCADO PAGO / MERCADO ENVÍOS)\nCASEROS 3039, PISO 2° - CABA\nTengo el agrado de dirigirme a Usted en el marco de la Investigación Penal Preparatoria citada al epígrafe, caratulada \"GÓMEZ, VALERIA S/ DENUNCIA DEFRAUDACIÓN MEDIANTE USO ILÍCITO DE TARJETA DE CRÉDITO\", en trámite por ante esta Unidad Funcional de Instrucción N° 3 de San Isidro, a cargo de la Agente Fiscal Dra. Patricia Ramos.\nA través del presente, se le requiere tenga a bien aportar los datos personales y de individualización de la persona de sexo femenino de contextura física mediana que retiró presencialmente del punto de entrega Pickit \"Agencia Envío Pack Martínez\", sito en calle Alvear 450 de la localidad de Martínez, Partido de San Isidro, una compra consistente en herramientas eléctricas profesionales adquirida mediante compra electrónica N° 20491823901 efectuada con fecha 12 de Marzo de 2026 a las 16:30 horas aproximadamente, la cual fuera abonada mediante la cuenta sustraída a la denunciante. A tal efecto, solicito informe el nombre, apellido y DNI que hubiere acreditado quien exhibió el código de retiro QR en el mostrador del local, como así también la dirección de Protocolo IP, datos del dispositivo, correo electrónico y número telefónico utilizados al momento de confirmar la recepción de la encomienda.\nAsimismo, en caso de haber utilizado la aplicación para validar identidad con biometría facial al habilitar dicho retiro, remítase copia de la imagen fotográfica archivada en los servidores de la compañía.\nEl informe deberá ser evacuado en el plazo improrrogable de cinco (5) días hábiles al correo electrónico institucional ufi3.si@mpba.gov.ar.\nSaludo a Usted con mi más alta consideración.\nDra. Patricia Ramos - Agente Fiscal\nUFI N° 3 SAN ISIDRO - MINISTERIO PÚBLICO FISCAL PCIA. BS. AS.",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  }
+]

@@ -128,3 +128,9 @@
 2026-10-27 13:26:08,034 INFO __main__ - Inicio de experimento: multi_v1_oficios_fragmentos_thr50_todos
 2026-10-27 13:26:08,201 INFO __main__ - Dataset cargado: experimento=multi_v1_oficios_fragmentos_thr50_todos modelo=gliner2_multi schema=schema_v1_persona_objeto_oficio_fragmentos modo=fragmentos registros=121 filtros=None
 2026-10-27 13:47:21,586 INFO __main__ - Finalizacion de experimento: multi_v1_oficios_fragmentos_thr50_todos registros=121
+2026-10-30 14:21:04,894 INFO __main__ - Inicio de experimento: multi_v1_oficios_fragmentos_thr50_todos
+2026-10-30 14:21:05,026 INFO __main__ - Dataset cargado: experimento=multi_v1_oficios_fragmentos_thr50_todos modelo=gliner2_multi schema=schema_v1_persona_objeto_oficio_fragmentos modo=fragmentos registros=119 filtros=None
+2026-10-30 14:42:35,685 INFO __main__ - Finalizacion de experimento: multi_v1_oficios_fragmentos_thr50_todos registros=119
+2026-11-01 20:22:31,860 INFO __main__ - Inicio de experimento: multi_v1_oficios_fragmentos_thr50_todos
+2026-11-01 20:22:31,978 INFO __main__ - Dataset cargado: experimento=multi_v1_oficios_fragmentos_thr50_todos modelo=gliner2_multi schema=schema_v1_persona_objeto_oficio_fragmentos modo=fragmentos registros=119 filtros=None
+2026-11-01 20:44:59,730 INFO __main__ - Finalizacion de experimento: multi_v1_oficios_fragmentos_thr50_todos registros=119

@@ -1,0 +1,12 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_personas_objeto_oficio,indice_persona,nombre_persona,dni_persona,cuit_cuil_persona,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+22,501701,501701_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio | solo_candidatos_descartados,0,,,,,,,0,0,,,False,0
+37,503821,503821_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio | solo_candidatos_descartados,0,,,,,,,0,0,,,False,0
+42,504981,504981_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,1,Leandro Anibal Jesus Rubin,29.697.608,,causante,Leandro Anibal Jesus Rubin | Leandro Anibal Jesús Rubin,2,2,16.786,False,True,1
+42,504981,504981_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,2,Leandro Anibal Jesús Rubin,23.591.508,,titular,Leandro Anibal Jesús Rubin,1,1,9.903,False,True,1
+45,507161,507161_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+46,507163,507163_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+49,507226,507226_1.pdf,RESUELTO,False,True,persona_1:evidencia_unica_debil,1,1,Maximiliano Arnaldo GOMEZ,,,actor,Maximiliano Arnaldo GOMEZ,1,1,6.989,False,False,0
+52,507939,507939_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+76,513005,513005_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+78,513007,513007_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+79,513008,513008_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0

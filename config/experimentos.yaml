@@ -636,17 +636,19 @@ experiments:
     field_thresholds:
       nombre_persona: 0.50
       dni_persona: 0.30
-      cuit_cuil_persona: 0.50
+      cuit_cuil_persona: 0.30
       rol_persona: 0.50
     # filters:
     #  categoria:
     #    - Datos_Embargado
+
     metadata_columns:
       - numero_archivo
       - id
       - nombre
       - contador_interno
       - palabra_clave
+      - cantidad_palabras_clave
       - categoria
       - posicion_inicio
       - posicion_fin

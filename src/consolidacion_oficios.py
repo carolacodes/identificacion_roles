@@ -92,7 +92,7 @@ MIN_SCORE_EVIDENCIA_UNICA = 8.0
 ROLES_JURIDICOS_FUERTES = {
     "actor", "actora", "demandado", "demandada", "embargado", "embargada",
     "ejecutado", "ejecutada", "deudor", "deudora", "titular", "causante",
-    "beneficiario", "beneficiaria", "tercero", "tercera", "otro",
+    "beneficiario", "beneficiaria", "tercero", "tercera", "otro", "contribuyente",
 }
 ROLES_JURIDICOS_APOYO: set[str] = set()
 ROLES_POSITIVOS = ROLES_JURIDICOS_FUERTES | ROLES_JURIDICOS_APOYO
@@ -362,7 +362,13 @@ class Evidencia:
     fragmento: str
 
     nombre: str
+    nombre_original_gliner: str = ""
+    origen_recuperacion_lista: str = ""
+    origen_recuperacion_v12: str = ""
     dni: str = ""
+    dni_original_ocr: str = ""
+    dni_original_gliner_lista: str = ""
+    motivo_correccion_lista: str = ""
     cuit_cuil: str = ""
     rol: str = ""
 
@@ -448,7 +454,7 @@ def _identificador_cerca_nombre(evidencia: Evidencia) -> bool:
         return False
     posterior = evidencia.fragmento[fin:fin + 145]
     patron = (r"\b(?:D\.?N\.?I\.?|DOCUMENTO\s+NACIONAL\s+DE\s+IDENTIDAD|"
-              r"CUIT(?:/CUIL)?|CUIL(?:/CUIT)?)\s*(?:N[°ºo.]*(?:ro\.?)?|"
+              r"C\.?U\.?I\.?T\.?(?:/CUIL)?|CUIL(?:/CUIT)?)\s*(?:N[°ºo.]*(?:ro\.?)?|"
               r"n[uú]mero)?\s*[:°º.]?\s*([0-9][0-9.\- ]{5,18}[0-9])")
     encontrados = list(re.finditer(patron, posterior, re.I))
     if not encontrados:
@@ -499,7 +505,7 @@ def _evidencia_pedido_explicito(evidencia: Evidencia) -> bool:
     if re.search(r"\b(?:domicilio|sito en|autorizad[oa]|firmado por|letrado patrocinante)\b", antes[-75:], re.I):
         return False
     es_solicitud = bool(re.search(r"\b(?:inform|solicit|verific|identific|acreditacion|compras|cuentas?|transferencias|movimientos|demandad[oa]|actor[ao]|empleado|alimentante)\w*\b", antes, re.I))
-    es_objeto = bool(re.search(r"\b(?:dni|cuit|cuil|cuenta|cvu|movimiento|transferencia)\b", despues, re.I))
+    es_objeto = bool(re.search(r"\b(?:dni|cuit|cuil|cuenta|cvu|movimiento|transferencia|documento\s+nacional\s+de\s+identidad)\b|C\.?U\.?I\.?T\.?", despues, re.I))
     # Algunas frases llegan recortadas: 'por NOMBRE, CVU..., CUIT/CUIL...'.
     # La combinación 'por' + identificador bancario explícito constituye
     # una relación local suficiente, aunque el verbo esté fuera del recorte.
@@ -509,8 +515,26 @@ def _evidencia_pedido_explicito(evidencia: Evidencia) -> bool:
     return (es_solicitud and es_objeto) or detalle_bancario
 
 
+def _pedido_comercial_fiscal_explicito(e: Evidencia) -> bool:
+    """Comprobar la relación local NOMBRE + ID dentro de pedido comercial/fiscal.
+
+    No usar el rol del modelo como única señal.
+    """
+    if not _identificador_cerca_nombre(e) or _nombre_parcial_en_lista(e):
+        return False
+    pos = _buscar_posicion_nombre(e)
+    if pos[0] is None:
+        return False
+    previo = e.fragmento[max(0, pos[0]-115):pos[0]]
+    posterior = e.fragmento[pos[1]:pos[1]+135]
+    comercial = bool(re.search(r"(?:\bimportes?\s+facturados?\s+a\s*$|\bfacturaci[oó]n\b|\boperaciones\s+(?:concertadas|realizadas)\s+con\s*$)", previo, re.I))
+    fiscal = bool(re.search(r"(?:\b(?:referente|respecto)\s+a\s+la\s+contribuyente\s*$|\bfiscalizaci[oó]n\b.{0,85}\bcontribuyente\s*$)", previo, re.I))
+    # Rol fiscal no basta si el texto no lo menciona en relación directa.
+    return bool((comercial or fiscal) and re.search(r"\b(?:CUIT|CUIL)\b", posterior, re.I))
+
+
 def _grupo_evidencia_vinculante(grupo: GrupoPersona) -> bool:
-    return any((_evidencia_pedido_explicito(e) or _evidencia_lista_explicita(e))
+    return any((_evidencia_pedido_explicito(e) or _evidencia_lista_explicita(e) or _pedido_comercial_fiscal_explicito(e))
                and _identificador_cerca_nombre(e) and not _nombre_parcial_en_lista(e)
                and not e.tercero_fuerte for e in grupo.evidencias)
 
@@ -1300,6 +1324,214 @@ def _score_evidencia(
 # EXTRAER EVIDENCIAS
 # ============================================================
 
+def _registrar_candidatos_incompletos(documento: dict[str, Any]) -> list[dict[str, Any]]:
+    """Auditoria de predicciones sin nombre util; NO modifica la aceptacion."""
+    incompletos: list[dict[str, Any]] = []
+    for resultado in documento.get("resultados", []) or []:
+        for indice, candidate in enumerate(resultado.get("candidates", []) or [], start=1):
+            nombre = _texto_seguro(candidate.get("nombre_persona") or candidate.get("nombre"))
+            if _nombre_es_util(nombre):
+                continue
+            dni = _texto_seguro(candidate.get("dni_persona") or candidate.get("dni"))
+            cuit = _texto_seguro(candidate.get("cuit_cuil_persona") or candidate.get("cuil_cuit"))
+            # Solo registrar predicciones con identificador; evitar ruido vacio.
+            if not (dni or cuit):
+                continue
+            incompletos.append({
+                "numero_archivo": documento.get("numero_archivo"),
+                "contador_interno": resultado.get("contador_interno"),
+                "indice_candidato": indice,
+                "nombre_persona": nombre or None,
+                "dni_persona": dni or None,
+                "cuit_cuil_persona": cuit or None,
+                "motivo": "sin_nombre_persona" if not nombre else "nombre_no_util",
+                "origen": "gliner2",
+                "palabra_clave": resultado.get("palabra_clave"),
+                "categoria": resultado.get("categoria"),
+                "fragmento": resultado.get("fragmento") or resultado.get("texto_entrada_modelo") or "",
+                "nombre_confidence": candidate.get("nombre_persona_confidence"),
+                "dni_confidence": candidate.get("dni_persona_confidence"),
+                "cuit_cuil_confidence": candidate.get("cuit_cuil_persona_confidence"),
+            })
+    return incompletos
+
+
+def _recuperar_apellido_antes_nombre(fragmento: str, nombre: str, dni: str) -> str | None:
+    """Recupera un apellido literal omitido solo en 'APELLIDO, Nombres, DNI'.
+
+    No infiere apellidos desde caratulas ni otros fragmentos. Exige una
+    coincidencia unica y un DNI etiquetado inmediatamente despues del nombre.
+    """
+    if not (fragmento and nombre and dni):
+        return None
+    dni_normalizado = _normalizar_identificador(dni)
+    if not (7 <= len(dni_normalizado) <= 8):
+        return None
+    patron = re.compile(
+        r"(?<![\w])([A-ZÁÉÍÓÚÜÑ]{2,})\s*,\s*(" + re.escape(nombre) +
+        r")\s*,?\s*D\.?\s*N\.?\s*I\.?\s*[:Nº°o.\s-]*\s*"
+        r"([0-9][0-9.\s-]{5,14}[0-9])(?!\d)",
+        re.IGNORECASE,
+    )
+    coincidencias = [m for m in patron.finditer(fragmento)
+                     if _normalizar_identificador(m.group(3)) == dni_normalizado]
+    if len(coincidencias) != 1:
+        return None
+    m = coincidencias[0]
+    # Evitar 'Sr.' y otras palabras de tratamiento como supuesto apellido.
+    if not m.group(1).isupper():
+        return None
+    if _normalizar_texto(m.group(1)) in {"SR", "SRA", "DNI", "DR", "DRA", "ACTOR", "ACTORA"}:
+        return None
+    return fragmento[m.start(1):m.end(2)]
+
+
+# Recuperacion estricta en listados multilinea: NOMBRE DNI VALOR.
+# No corrige nombres o DNI por cercania dentro de parrafos.
+def _parejas_lista_estructurada(fragmento: str) -> dict[str, tuple[str, str]]:
+    patron = re.compile(
+        r"^\s*([A-ZÁÉÍÓÚÜÑ]+(?:[ \t]+[A-ZÁÉÍÓÚÜÑ]+){1,6})"
+        r"[ \t]+D\.?[ \t]*N\.?[ \t]*I\.?\s*[:#º°Nnro.\-]*\s*"
+        r"(\d{1,2}(?:[.]?\d{3}){2})\s*$",
+        re.IGNORECASE,
+    )
+    lineas = fragmento.splitlines()
+    encontrados = []
+    for linea in lineas:
+        m = patron.fullmatch(linea.strip())
+        if m and m.group(1) == m.group(1).upper():
+            encontrados.append((m.group(1).strip(), m.group(2).strip()))
+    # Evitar aplicar reglas de lista a una unica mencion aislada.
+    if len(encontrados) < 3:
+        return {}
+    pares: dict[str, tuple[str, str]] = {}
+    ambiguos: set[str] = set()
+    for nombre, dni in encontrados:
+        clave = _normalizar_texto(nombre)
+        if clave in pares and _normalizar_identificador(pares[clave][1]) != _normalizar_identificador(dni):
+            ambiguos.add(clave)
+        else:
+            pares[clave] = (nombre, dni)
+    return {k: v for k, v in pares.items() if k not in ambiguos}
+
+
+# Lista numerada: recuperacion literal de filas omitidas o nombres parciales.
+def _filas_numeradas_verificadas(fragmento: str) -> list[dict[str, str]]:
+    patron = re.compile(
+        r"^\s*(\d{1,3})[.)]\s+"
+        r"([A-ZÁÉÍÓÚÜÑ][A-ZÁÉÍÓÚÜÑ' -]{1,70}),\s*"
+        r"([A-ZÁÉÍÓÚÜÑ][A-ZÁÉÍÓÚÜÑ' -]{2,75})"
+        r"\s+-\s*(?:(?:CUIT|CUIL)\s+([0-9.\- ]{10,18})\s*)?"
+        r"(?:\(\s*)?DNI\s*[:#º°Nnro.\- ]*"
+        r"(\d{1,2}(?:\.\d{3}){2}|\d{7,8})\s*\)?\s*$",
+        re.IGNORECASE,
+    )
+    filas = []
+    for linea in fragmento.splitlines():
+        m = patron.fullmatch(linea.strip())
+        if not m:
+            continue
+        apellido, nombres = m.group(2).strip(), m.group(3).strip()
+        if apellido != apellido.upper() or nombres != nombres.upper():
+            continue
+        filas.append({"numero": int(m.group(1)), "nombre": f"{apellido}, {nombres}",
+                      "dni": m.group(5), "cuit_cuil": (m.group(4) or "").strip(),
+                      "linea": linea.strip()})
+    # Exigir una lista real y numeraciones consecutivas; evitar lecturas aisladas.
+    if len(filas) < 3 or len({f['numero'] for f in filas}) != len(filas):
+        return []
+    if any(b['numero'] != a['numero'] + 1 for a, b in zip(filas, filas[1:])):
+        return []
+    nombres = [_normalizar_texto(f['nombre']) for f in filas]
+    dnis = [_normalizar_identificador(f['dni']) for f in filas]
+    if len(nombres) != len(set(nombres)) or len(dnis) != len(set(dnis)):
+        return []
+    return filas
+
+
+def _parejas_lista_extensa_en_linea(fragmento: str) -> list[dict[str, str]]:
+    """Parejas literales en listas de 8+ entradas: NOMBRE DNI, aun sin saltos.
+
+    No busca en texto_completo ni interpreta proximidad libre. Exige que cada
+    segmento entre DNIs sea exactamente un nombre en mayusculas y que haya
+    correspondencias univocas en toda la secuencia.
+    """
+    if not fragmento or "DNI" not in fragmento.upper():
+        return []
+    patron_dni = re.compile(
+        r"(?<![\w])D\.?\s*N\.?\s*I\.?\s*[:#Nº°o.\s-]*"
+        r"(\d{1,2}(?:\.\d{3}){2}|\d{7,8})(?!\d)", re.I,
+    )
+    hallazgos = list(patron_dni.finditer(fragmento))
+    if len(hallazgos) < 8:
+        return []
+    inicio = fragmento.upper().find("PERSONAL POLICIAL A VERIFICAR:")
+    if inicio >= 0:
+        inicio += len("PERSONAL POLICIAL A VERIFICAR:")
+    else:
+        # No activar sobre parrafos o listados sin encabezado verificable.
+        return []
+    if hallazgos[0].start() <= inicio:
+        return []
+    filas = []
+    pos = inicio
+    patron_nombre = re.compile(r"[A-ZÁÉÍÓÚÜÑ]+(?:[ \t\n]+[A-ZÁÉÍÓÚÜÑ]+){1,6}")
+    for match in hallazgos:
+        tramo = fragmento[pos:match.start()].strip(" \t\n.:-;,")
+        if not patron_nombre.fullmatch(tramo):
+            return []
+        filas.append({"nombre": tramo, "dni": match.group(1),
+                      "origen": "lista_extensa_pareja_literal"})
+        pos = match.end()
+    claves = [_normalizar_texto(f["nombre"]) for f in filas]
+    dnis = [_normalizar_identificador(f["dni"]) for f in filas]
+    if len(set(claves)) != len(filas) or len(set(dnis)) != len(filas):
+        return []
+    return filas
+
+
+def _v12_recuperar_campos_locales(candidatos: list[dict[str, Any]], fragmento: str) -> list[dict[str, Any]]:
+    """Recuperar solo parejas inequívocas y literalmente presentes en fragmento.
+
+    Nunca inventar nombres a partir de CUIT ni cruzar listas de personas.
+    """
+    recuperados = []
+    patron_sociedad = re.compile(
+        r"(?:\b(?:informe\s+si|contribuyente|firma|empresa)\s+)"
+        r"([A-ZÁÉÍÓÚÑ][A-Za-zÁÉÍÓÚÑáéíóúñ. ]{3,75}?\s+"
+        r"(?:S\.?\s*A\.?|S\.?\s*R\.?\s*L\.?|S\.?\s*A\.?\s*S\.?))"
+        r"(?:\s*\([A-Z]{2,8}\))?\s*,?\s*"
+        r"C\.?\s*U\.?\s*I\.?\s*T\.?\s*(?:N[°ºo]\.?\s*)?[:.]?\s*"
+        r"([0-9][0-9. -]{9,17}[0-9])", re.I)
+    for c in candidatos:
+        c = dict(c)
+        nombre = _texto_seguro(c.get('nombre_persona'))
+        dni = _texto_seguro(c.get('dni_persona'))
+        cuit = _texto_seguro(c.get('cuit_cuil_persona'))
+        if not nombre and cuit:
+            coincidencias = [m for m in patron_sociedad.finditer(fragmento) if _normalizar_identificador(m.group(2)) == _normalizar_identificador(cuit)]
+            if len(coincidencias)==1:
+                m=coincidencias[0]
+                candidato_nombre=m.group(1).strip()
+                candidato_nombre=re.sub(r"^(?:la\s+)?(?:contribuyente|empresa|firma)\s+", '', candidato_nombre, flags=re.I)
+                # No extrapolar el nombre desde oraciones largas/antecedentes.
+                if 2 <= len(candidato_nombre.split()) <= 8 and _nombre_tiene_estructura_valida(candidato_nombre):
+                    c['nombre_persona']=candidato_nombre
+                    c['nombre_persona_confidence']=None
+                    c['origen_recuperacion_v12']='razon_social_cuit_local'
+        if nombre and not dni:
+            # Sólo DNI inmediatamente posterior al nombre, no otro sujeto.
+            p=_posicion_nombre_texto(fragmento,nombre)
+            if p:
+                tramo=fragmento[p[1]:p[1]+55]
+                m=re.match(r"\s*[,;:]?\s*\(?\s*D\.?\s*N\.?\s*I\.?\s*[-: ]\s*(\d{1,2}(?:[. -]?\d{3}){2})\b", tramo, re.I)
+                if m and len(re.sub(r'\D','',m.group(1))) in (7,8):
+                    c['dni_persona']=m.group(1)
+                    c['origen_recuperacion_v12']='dni_local_adyacente'
+        recuperados.append(c)
+    return recuperados
+
+
 def _extraer_evidencias_documento(
     documento: dict[str, Any],
 ) -> list[Evidencia]:
@@ -1320,13 +1552,89 @@ def _extraer_evidencias_documento(
             ) or resultado.get("texto_entrada_modelo")
         )
 
-        for candidate in (
-            resultado.get(
-                "candidates",
-                [],
-            )
-            or []
-        ):
+        candidatos_originales = resultado.get("candidates", []) or []
+        candidatos_procesados = _v12_recuperar_campos_locales([dict(c) for c in candidatos_originales], fragmento)
+        filas_numeradas = _filas_numeradas_verificadas(fragmento)
+        filas_extensas = _parejas_lista_extensa_en_linea(fragmento)
+        # Exigir al menos cinco nombres originales coincidentes con la lista,
+        # para no fabricar identidades desde un solo candidato aislado.
+        nombres_originales = {
+            _normalizar_texto(_texto_seguro(c.get("nombre_persona") or c.get("nombre")))
+            for c in candidatos_originales
+        }
+        nombres_lista = {_normalizar_texto(f["nombre"]) for f in filas_extensas}
+        if filas_extensas and len(nombres_originales & nombres_lista) >= 5:
+            por_nombre = {_normalizar_texto(f["nombre"]): f for f in filas_extensas}
+            # Reusar los candidatos validos, corrigiendo solo identidades
+            # cuyos nombres aparecen univocamente en la lista literal.
+            nombres_vistos = set()
+            candidatos_lista = []
+            for c in candidatos_procesados:
+                nombre_c = _texto_seguro(c.get("nombre_persona") or c.get("nombre"))
+                clave = _normalizar_texto(nombre_c)
+                if clave not in por_nombre:
+                    # Los candidatos sin nombre se conservan en el reporte
+                    # de incompletos, pero no forman una identidad.
+                    if nombre_c:
+                        candidatos_lista.append(c)
+                    continue
+                fila = por_nombre[clave]
+                if clave in nombres_vistos:
+                    # Duplicado espurio del mismo nombre con DNI desplazado.
+                    continue
+                nombres_vistos.add(clave)
+                c2 = dict(c)
+                dni_viejo = _texto_seguro(c.get("dni_persona") or c.get("dni"))
+                if _normalizar_identificador(dni_viejo) != _normalizar_identificador(fila["dni"]):
+                    c2["dni_original_gliner_recuperacion"] = dni_viejo
+                    c2["dni_persona"] = fila["dni"]
+                    c2["motivo_correccion_lista_extensa"] = "dni_reasociado_lista_extensa"
+                candidatos_lista.append(c2)
+            for fila in filas_extensas:
+                clave = _normalizar_texto(fila["nombre"])
+                if clave not in nombres_vistos:
+                    candidatos_lista.append({
+                        "nombre_persona": fila["nombre"], "dni_persona": fila["dni"],
+                        "cuit_cuil_persona": None, "rol_persona": None,
+                        "origen_recuperacion_lista": "lista_extensa_pareja_literal",
+                        "nombre_persona_confidence": None,
+                    })
+            candidatos_procesados = candidatos_lista
+        # Solo ampliar una lista si hay algun candidato de GLiNER vinculado
+        # a la misma lista; no ejecutar una extraccion regex independiente.
+        if filas_numeradas and candidatos_originales:
+            for fila in filas_numeradas:
+                clave = _normalizar_texto(fila["nombre"])
+                coincidencias = []
+                for i, c in enumerate(candidatos_procesados):
+                    nom = _texto_seguro(c.get("nombre_persona") or c.get("nombre"))
+                    dni_c = _normalizar_identificador(_texto_seguro(c.get("dni_persona") or c.get("dni")))
+                    if not nom or dni_c != _normalizar_identificador(fila["dni"]):
+                        continue
+                    # Nombre completo o sufijo exacto de nombres, no proximidad.
+                    if _normalizar_texto(nom) in {clave, _normalizar_texto(fila["nombre"].split(",", 1)[1])}:
+                        coincidencias.append(i)
+                if len(coincidencias) == 1:
+                    c = candidatos_procesados[coincidencias[0]]
+                    if _normalizar_texto(_texto_seguro(c.get("nombre_persona"))) != clave:
+                        c["nombre_original_gliner_recuperacion"] = c.get("nombre_persona")
+                        c["nombre_persona"] = fila["nombre"]
+                    continue
+                if coincidencias:
+                    continue
+                # No fabricar parejas si hay un candidato existente para
+                # ese mismo nombre con otro DNI: requiere investigacion.
+                if any(_normalizar_texto(_texto_seguro(c.get("nombre_persona"))) == clave
+                       for c in candidatos_procesados):
+                    continue
+                candidatos_procesados.append({
+                    "nombre_persona": fila["nombre"], "dni_persona": fila["dni"],
+                    "cuit_cuil_persona": fila["cuit_cuil"], "rol_persona": None,
+                    "nombre_persona_confidence": None,
+                    "origen_recuperacion_lista": "fila_numerada_literal_verificada",
+                })
+
+        for candidate in candidatos_procesados:
 
             nombre = _texto_seguro(
                 candidate.get(
@@ -1341,6 +1649,30 @@ def _extraer_evidencias_documento(
                 nombre
             ):
                 continue
+
+            nombre_original_gliner = _texto_seguro(candidate.get("nombre_original_gliner_recuperacion"))
+            origen_recuperacion_lista = _texto_seguro(candidate.get("origen_recuperacion_lista"))
+            dni_candidato = _texto_seguro(candidate.get("dni_persona") or candidate.get("dni"))
+            recuperado = _recuperar_apellido_antes_nombre(fragmento, nombre, dni_candidato)
+            if recuperado and _normalizar_texto(recuperado) != _normalizar_texto(nombre):
+                nombre_original_gliner = nombre
+                nombre = recuperado
+
+            dni_original_gliner_lista = _texto_seguro(candidate.get("dni_original_gliner_recuperacion"))
+            motivo_correccion_lista = _texto_seguro(candidate.get("motivo_correccion_lista_extensa"))
+            parejas_lista = _parejas_lista_estructurada(fragmento)
+            pareja = parejas_lista.get(_normalizar_texto(nombre))
+            if pareja and dni_candidato:
+                nombre_lista, dni_lista = pareja
+                if _normalizar_identificador(dni_candidato) != _normalizar_identificador(dni_lista):
+                    # Solo corregir si el DNI original tambien aparece en el
+                    # fragmento: documenta el desplazamiento entre filas.
+                    digitos_originales = _normalizar_identificador(dni_candidato)
+                    dnis_en_lista = {_normalizar_identificador(d) for _, d in parejas_lista.values()}
+                    if digitos_originales in dnis_en_lista:
+                        dni_original_gliner_lista = dni_original_gliner_lista or dni_candidato
+                        dni_candidato = dni_lista
+                        motivo_correccion_lista = "dni_reasociado_por_linea_de_lista"
 
             start = candidate.get(
                 "nombre_persona_span_inicio"
@@ -1359,6 +1691,9 @@ def _extraer_evidencias_documento(
                 end = candidate.get(
                     "nombre_span_fin"
                 )
+
+            if nombre_original_gliner:
+                start, end = None, None
 
             evidencia = Evidencia(
                 numero_archivo=_texto_seguro(
@@ -1394,15 +1729,13 @@ def _extraer_evidencias_documento(
                 fragmento=fragmento,
 
                 nombre=nombre,
+                nombre_original_gliner=nombre_original_gliner,
+                origen_recuperacion_lista=origen_recuperacion_lista,
+                origen_recuperacion_v12=_texto_seguro(candidate.get("origen_recuperacion_v12")),
 
-                dni=_texto_seguro(
-                    candidate.get(
-                        "dni_persona"
-                    )
-                    or candidate.get(
-                        "dni"
-                    )
-                ),
+                dni=dni_candidato,
+                dni_original_gliner_lista=dni_original_gliner_lista,
+                motivo_correccion_lista=motivo_correccion_lista,
 
                 cuit_cuil=_texto_seguro(
                     candidate.get(
@@ -1469,6 +1802,55 @@ def _extraer_evidencias_documento(
             )
 
     return evidencias
+
+
+# ============================================================
+# EXCEPCION OCR: DNI con un unico digito inicial omitido
+# Solo para el consolidador de OFICIOS; se conserva el DNI original.
+# ============================================================
+
+def _corregir_dni_ocr_inicial(evidencias: list[Evidencia]) -> None:
+    """Corrige una variante OCR únicamente si hay corroboración local inequívoca.
+
+    Exige mismo nombre completo normalizado, un DNI de ocho cifras y
+    otro de siete cuyo sufijo coincida exactamente; ambas parejas deben
+    estar localmente verificadas en sus respectivos fragmentos. Si hay
+    otros DNI o CUIT contradictorios para ese nombre, no modifica nada.
+    Nunca completa DNIs de siete cifras sin un homólogo explícito.
+    """
+    por_nombre: dict[str, list[Evidencia]] = defaultdict(list)
+    for evidencia in evidencias:
+        nombre = _normalizar_texto(evidencia.nombre)
+        dni = _normalizar_identificador(evidencia.dni)
+        if nombre and len(nombre.split()) >= 2 and dni:
+            por_nombre[nombre].append(evidencia)
+
+    for grupo in por_nombre.values():
+        dnis = {_normalizar_identificador(e.dni) for e in grupo}
+        if len(dnis) != 2:
+            continue
+        largos = [dni for dni in dnis if len(dni) == 8]
+        cortos = [dni for dni in dnis if len(dni) == 7]
+        if len(largos) != 1 or len(cortos) != 1:
+            continue
+        largo, corto = largos[0], cortos[0]
+        if largo[1:] != corto:
+            continue
+        if any(e.cuit_cuil for e in grupo):
+            # Una identidad con CUIT/CUIL adicionales necesita revisión aparte.
+            continue
+        if not all(_identificador_cerca_nombre(e) for e in grupo):
+            continue
+        if not all(_evidencia_pedido_explicito(e) or _evidencia_lista_explicita(e)
+                   for e in grupo):
+            continue
+        if any(e.tercero_fuerte for e in grupo):
+            continue
+        fuente = next(e.dni for e in grupo if _normalizar_identificador(e.dni) == largo)
+        for evidencia in grupo:
+            if _normalizar_identificador(evidencia.dni) == corto:
+                evidencia.dni_original_ocr = evidencia.dni
+                evidencia.dni = fuente
 
 
 # ============================================================
@@ -1651,6 +2033,74 @@ def _identificadores_grupo(
     }
 
 
+def _prioridad_pedido_principal(grupo: GrupoPersona) -> dict[str, Any]:
+    """Prioriza evidencias expresas, solo para diagnóstico, sin resolver conflictos.
+
+    No premia la repetición en autos transcritos: un requerimiento explícito
+    vinculado a un identificador prevalece en el orden de revisión.
+    """
+    vinculantes = [e for e in grupo.evidencias if
+                   _evidencia_pedido_explicito(e)
+                   and _identificador_cerca_nombre(e)
+                   and not e.tercero_fuerte]
+    return {
+        "nivel": "pedido_explicito_identificado" if vinculantes else "evidencia_complementaria",
+        "prioridad": 2 if vinculantes else 1,
+        "fragmentos_explicitos": sorted({str(e.contador_interno) for e in vinculantes}),
+        "justificacion": ("Nombre e identificador vinculados en solicitud explicita"
+                          if vinculantes else "No se verifico solicitud explicita local; revisar fuentes"),
+    }
+
+
+def _homonimos_enumerados_explicitamente(
+    grupo_a: GrupoPersona,
+    grupo_b: GrupoPersona,
+    tipo: str,
+) -> bool:
+    """Dos identidades distintas si el MISMO fragmento enumera nombre+DNI
+    independientemente para ambos, dentro de un pedido directo.
+
+    No basta con que coincidan nombres y difieran DNI en secciones distintas.
+    Tampoco presupone parentesco entre las personas.
+    """
+    if tipo != "dni":
+        return False
+    nombre_a = _normalizar_texto(_nombre_canonico(grupo_a))
+    nombre_b = _normalizar_texto(_nombre_canonico(grupo_b))
+    if not nombre_a or nombre_a != nombre_b:
+        return False
+    ids_a = _identificadores_grupo(grupo_a)["dni"]
+    ids_b = _identificadores_grupo(grupo_b)["dni"]
+    if len(ids_a) != 1 or len(ids_b) != 1 or ids_a == ids_b:
+        return False
+    dni_a, dni_b = next(iter(ids_a)), next(iter(ids_b))
+    # Evitar resolver aqui una omision del primer digito: lo trata la
+    # correccion OCR existente, que exige evidencia independiente.
+    if dni_a.endswith(dni_b) or dni_b.endswith(dni_a):
+        return False
+
+    fragmentos_a = {e.fragmento for e in grupo_a.evidencias if e.fragmento}
+    fragmentos_b = {e.fragmento for e in grupo_b.evidencias if e.fragmento}
+    for fragmento in fragmentos_a & fragmentos_b:
+        texto = _normalizar_texto(fragmento)
+        # Requisito de contexto: consulta plural con sujetos enumerados.
+        if not re.search(r"\b(?:INFORMAR|INFORME|INFORMEN|CONSULTAR|VERIFICAR)\b", texto):
+            continue
+        if not re.search(r"\b(?:SRES|SEN ORES|PERSONAS|TITULARES)\b", texto):
+            continue
+        nombre_patron = r"\b" + r"\s+".join(map(re.escape, nombre_a.split())) + r"\b"
+        # Las puntuaciones del DNI desaparecen al normalizar el texto.
+        expresion = re.compile(
+            nombre_patron +
+            r"\s+TITULAR\s+DEL?\s+DNI\s+(?:NRO?\s+)?(?:N\s+)?"
+            r"(\d{1,2})\s+(\d{3})\s+(\d{3})\b"
+        )
+        encontrados = {"".join(m.groups()) for m in expresion.finditer(texto)}
+        if dni_a in encontrados and dni_b in encontrados:
+            return True
+    return False
+
+
 def _detectar_conflictos_identificadores(
     grupos: list[GrupoPersona],
 ) -> list[dict[str, Any]]:
@@ -1702,7 +2152,30 @@ def _detectar_conflictos_identificadores(
                         key_conflicto = (tipo, "identificadores_distintos", nombre_a, nombre_b)
                         if key_conflicto not in vistos:
                             vistos.add(key_conflicto)
+                            prioridad_a = _prioridad_pedido_principal(grupo_a)
+                            prioridad_b = _prioridad_pedido_principal(grupo_b)
+                            # Es solo una sugerencia para revisar; nunca elimina
+                            # conflictos ni cambia el estado/suficiencia.
+                            preferida = ("a" if prioridad_a["prioridad"] > prioridad_b["prioridad"]
+                                         else "b" if prioridad_b["prioridad"] > prioridad_a["prioridad"]
+                                         else None)
+                            homonimos_confirmados = _homonimos_enumerados_explicitamente(
+                                grupo_a, grupo_b, tipo,
+                            )
                             conflictos.append({
+                                "conflicto_bloqueante": not homonimos_confirmados,
+                                "resolucion_conflicto": (
+                                    "homonimos_enumerados_explicitamente"
+                                    if homonimos_confirmados else "pendiente"
+                                ),
+                                "priorizacion_evidencia": {
+                                    "grupo_preferente_para_revision": preferida,
+                                    "criterio": "pedido_explicito_con_identificador_local",
+                                    "grupo_a": prioridad_a,
+                                    "grupo_b": prioridad_b,
+                                    "conflicto_pendiente": not homonimos_confirmados,
+                                    "resolucion_automatica": homonimos_confirmados,
+                                },
                                 "tipo_identificador": tipo,
                                 "tipo_conflicto": "mismo_nombre_identificadores_distintos",
                                 "valores_a": sorted(ids_a[tipo]),
@@ -2221,6 +2694,10 @@ def _evaluar_grupo_oficio(
             detalle,
         )
 
+    # V12: nombre sin DNI/CUIT no satisface una identidad individualizada.
+    if not tiene_id:
+        return False, ["sin_identificador_verificable"], detalle
+
     # ========================================================
     # REGLAS POSITIVAS
     # ========================================================
@@ -2375,9 +2852,27 @@ def _serializar_evidencia(
 
         "nombre_detectado":
             evidencia.nombre,
+        **({
+            "nombre_original_gliner": evidencia.nombre_original_gliner,
+            "motivo_recuperacion_nombre": "apellido_literal_recuperado_del_fragmento",
+        } if evidencia.nombre_original_gliner else {}),
 
+        **({"origen_recuperacion_lista": evidencia.origen_recuperacion_lista}
+           if evidencia.origen_recuperacion_lista else {}),
+        "origen_recuperacion_v12": evidencia.origen_recuperacion_v12 or None,
         "dni_detectado":
-            evidencia.dni,
+            evidencia.dni_original_ocr or evidencia.dni,
+        **({
+            "dni_original_gliner": evidencia.dni_original_gliner_lista,
+            "dni_corregido_lista": evidencia.dni,
+            "motivo_correccion_lista": evidencia.motivo_correccion_lista,
+        } if evidencia.dni_original_gliner_lista else {}),
+
+        "dni_corregido_ocr":
+            evidencia.dni if evidencia.dni_original_ocr else None,
+
+        "motivo_correccion_ocr":
+            "omision_digito_inicial_verificada" if evidencia.dni_original_ocr else None,
 
         "cuit_cuil_detectado":
             evidencia.cuit_cuil,
@@ -2510,6 +3005,9 @@ def _conflicto_afecta_persona_aceptada(
         return False
 
     for conflicto in conflictos_identificador:
+
+        if conflicto.get("conflicto_bloqueante") is False:
+            continue
 
         nombre_a = _normalizar_texto(
             conflicto.get(
@@ -2809,9 +3307,13 @@ def consolidar_documento(
     documento: dict[str, Any],
 ) -> dict[str, Any]:
 
+    candidatos_incompletos = _registrar_candidatos_incompletos(documento)
+
     evidencias = _extraer_evidencias_documento(
         documento
     )
+
+    _corregir_dni_ocr_inicial(evidencias)
 
     grupos = _agrupar_evidencias(
         evidencias
@@ -2864,6 +3366,36 @@ def consolidar_documento(
                     detalle_decision,
             }
         )
+
+    # V12: conflicto del mismo nombre entre pedido explícito y evidencia
+    # complementaria. No aplica a homónimos explícitos: esos conflictos
+    # ya están marcados como no bloqueantes.
+    for conflicto in conflictos:
+        if (conflicto.get("tipo_conflicto") != "mismo_nombre_identificadores_distintos"
+                or conflicto.get("conflicto_bloqueante") is False):
+            continue
+        prioridad = conflicto.get("priorizacion_evidencia", {})
+        preferido = prioridad.get("grupo_preferente_para_revision")
+        if preferido not in ("a", "b"):
+            continue
+        preferente = prioridad.get("grupo_" + preferido, {})
+        otro = prioridad.get("grupo_" + ("b" if preferido == "a" else "a"), {})
+        if not (preferente.get("prioridad", 0) >= 2 and otro.get("prioridad", 0) < 2):
+            continue
+        # No resolver si hay otras evidencias explícitas para el ID secundario.
+        tipo = conflicto["tipo_identificador"]
+        ids_descartar = set(conflicto["valores_b" if preferido == "a" else "valores_a"])
+        posibles = [ev for ev in evaluaciones_grupos if
+                    _identificadores_grupo(ev["grupo"])[tipo] == ids_descartar and
+                    _nombres_equivalentes(_nombre_canonico(ev["grupo"]), conflicto["nombre_a"])]
+        if len(posibles) != 1:
+            continue
+        posibles[0]["aceptado"] = False
+        posibles[0]["motivos"] = ["identificador_contradictorio_evidencia_complementaria"]
+        conflicto["conflicto_bloqueante"] = False
+        conflicto["resolucion_conflicto"] = "prioridad_pedido_principal_con_alerta"
+        prioridad["conflicto_pendiente"] = False
+        prioridad["resolucion_automatica"] = True
 
     evaluaciones_validas = [
         evaluacion
@@ -3054,10 +3586,15 @@ def consolidar_documento(
         "grupos_descartados":
             grupos_descartados,
 
+        # Predicciones con identificador que no llegaron a agruparse
+        # por no contar con un nombre util. Solo auditoria.
+        "cantidad_candidatos_incompletos": len(candidatos_incompletos),
+        "candidatos_incompletos": candidatos_incompletos,
+
         "requiere_revision":
-            bool(
-                conflictos
-            ),
+            any(c.get("conflicto_bloqueante", True) or
+                c.get("resolucion_conflicto") == "prioridad_pedido_principal_con_alerta"
+                for c in conflictos),
 
         "cantidad_conflictos_identificador":
             len(

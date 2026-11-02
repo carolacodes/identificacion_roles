@@ -826,6 +826,11 @@ schemas:
           y sus componentes pueden estar separados por espacios, comas
           u otros signos de puntuacion.
 
+          Para personas juridicas, extraer la razon social completa,
+          incluyendo denominaciones como SA, S.A., SRL, S.R.L. o SAS,
+          cuando la entidad sea objeto directo del requerimiento.
+          No confundirla con la empresa destinataria del oficio.
+
           No extraer solamente el primer nombre, un apellido aislado,
           iniciales, apodos, diminutivos o fragmentos incompletos
           del nombre de una persona.
@@ -951,9 +956,10 @@ schemas:
         threshold: null
         validator:
           type: regex
-          pattern: '^\s*(?:(?:C\.?\s*U\.?\s*I\.?\s*L\.?|C\.?\s*U\.?\s*I\.?\s*T\.?|CUIL\s*/\s*CUIT|CUIT\s*/\s*CUIL)\s*(?:(?:NRO|N[º°o])\.?\s*)?[:#-]?\s*)?\d{2}(?:[-.\s]?\d){8}[-.\s]?\d\s*$'
+          pattern: '^\s*(?:(?:C\.?\s*U\.?\s*I\.?\s*[TL]\.?)(?:\s*/\s*(?:C\.?\s*U\.?\s*I\.?\s*[TL]\.?))?\s*(?:(?:NRO\.?|N[ÚU]MERO|N[º°o]\.?)\s*)?[:#-]?\s*)?\d{2}\s*[-.]?\s*\d{2}(?:[.\s]?\d{3}){2}\s*[-.]?\s*\d\s*$'
           flags:
             - IGNORECASE
+
       rol_persona:
         dtype: str
         description: >
@@ -1001,6 +1007,9 @@ schemas:
           No inventar ni deducir roles a partir de la caratula,
           del tipo de juicio o de la sola presencia de un nombre.
 
+          Incluir el rol "contribuyente" cuando el fragmento identifique
+          expresamente a una persona fisica o juridica como tal.
+
           Si el fragmento no contiene evidencia suficiente para
           determinar el rol de la persona identificada en nombre_persona,
           no extraer el campo.
@@ -1023,4 +1032,5 @@ schemas:
           - deudora
           - tercero
           - tercera
+          - contribuyente
           - otro
