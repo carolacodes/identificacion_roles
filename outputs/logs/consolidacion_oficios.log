@@ -30,3 +30,6 @@
 2026-11-01 21:44:14,486 INFO __main__ - Inicio consolidacion oficios. Archivo: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20261101_204459_multi_v1_oficios_fragmentos_thr50_todos\predicciones_por_documento.json
 2026-11-01 21:44:14,762 INFO __main__ - Finalizado: documentos=80 resueltos=69 multiples=7 no_resueltos=4 personas=146 suficientes=76 insuficientes=4
 2026-11-01 21:44:14,763 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion_oficios\20261101_214414_692193_consolidacion_v12_recuperacion_local
+2026-11-03 12:41:36,431 INFO __main__ - Inicio consolidacion oficios. Archivo: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20261101_204459_multi_v1_oficios_fragmentos_thr50_todos\predicciones_por_documento.json
+2026-11-03 12:41:36,975 INFO __main__ - Finalizado: documentos=80 resueltos=68 multiples=8 no_resueltos=4 personas=148 suficientes=76 insuficientes=4
+2026-11-03 12:41:36,976 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion_oficios\20261103_124136_890690_consolidacion_v13_codemandados

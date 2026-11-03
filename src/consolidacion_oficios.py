@@ -504,7 +504,7 @@ def _evidencia_pedido_explicito(evidencia: Evidencia) -> bool:
     # Evitar nombres administrativos con el identificador de otra persona.
     if re.search(r"\b(?:domicilio|sito en|autorizad[oa]|firmado por|letrado patrocinante)\b", antes[-75:], re.I):
         return False
-    es_solicitud = bool(re.search(r"\b(?:inform|solicit|verific|identific|acreditacion|compras|cuentas?|transferencias|movimientos|demandad[oa]|actor[ao]|empleado|alimentante)\w*\b", antes, re.I))
+    es_solicitud = bool(re.search(r"\b(?:inform|solicit|verific|identific|acreditacion|compras|cuentas?|transferencias|movimientos|(?:co)?demandad[oa]|actor[ao]|empleado|alimentante)\w*\b", antes, re.I))
     es_objeto = bool(re.search(r"\b(?:dni|cuit|cuil|cuenta|cvu|movimiento|transferencia|documento\s+nacional\s+de\s+identidad)\b|C\.?U\.?I\.?T\.?", despues, re.I))
     # Algunas frases llegan recortadas: 'por NOMBRE, CVU..., CUIT/CUIL...'.
     # La combinación 'por' + identificador bancario explícito constituye
@@ -1497,7 +1497,7 @@ def _v12_recuperar_campos_locales(candidatos: list[dict[str, Any]], fragmento: s
     """
     recuperados = []
     patron_sociedad = re.compile(
-        r"(?:\b(?:informe\s+si|contribuyente|firma|empresa)\s+)"
+        r"(?:\b(?:informe\s+si|contribuyente|firma|empresa|(?:la\s+|el\s+)?codemandad[oa])\s+)"
         r"([A-ZÁÉÍÓÚÑ][A-Za-zÁÉÍÓÚÑáéíóúñ. ]{3,75}?\s+"
         r"(?:S\.?\s*A\.?|S\.?\s*R\.?\s*L\.?|S\.?\s*A\.?\s*S\.?))"
         r"(?:\s*\([A-Z]{2,8}\))?\s*,?\s*"

@@ -1,0 +1,5 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_personas_objeto_oficio,indice_persona,nombre_persona,dni_persona,cuit_cuil_persona,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+45,507161,507161_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+52,507939,507939_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+78,513007,513007_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
+79,513008,513008_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,False,0
