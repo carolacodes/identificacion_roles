@@ -455,7 +455,7 @@ def _identificador_cerca_nombre(evidencia: Evidencia) -> bool:
     posterior = evidencia.fragmento[fin:fin + 145]
     patron = (r"\b(?:D\.?N\.?I\.?|DOCUMENTO\s+NACIONAL\s+DE\s+IDENTIDAD|"
               r"C\.?U\.?I\.?T\.?(?:/CUIL)?|CUIL(?:/CUIT)?)\s*(?:N[°ºo.]*(?:ro\.?)?|"
-              r"n[uú]mero)?\s*[:°º.]?\s*([0-9][0-9.\- ]{5,18}[0-9])")
+              r"n[uú]mero)?\s*(?:argentino|argentina)?\s*[:°º.]?\s*([0-9][0-9.\- ]{5,18}[0-9])")
     encontrados = list(re.finditer(patron, posterior, re.I))
     if not encontrados:
         return False
@@ -512,7 +512,25 @@ def _evidencia_pedido_explicito(evidencia: Evidencia) -> bool:
     detalle_bancario = bool(re.search(r"\bpor\s+$", antes[-25:], re.I)
                             and re.search(r"\bCVU\b", despues, re.I)
                             and re.search(r"\b(?:CUIT|CUIL)\b", despues, re.I))
-    return (es_solicitud and es_objeto) or detalle_bancario
+    # Solicitudes policiales donde el verbo queda fuera del fragmento:
+    # "información ... acerca del ciudadano NOMBRE, DNI ..."
+    pedido_datos_ciudadano = bool(
+        re.search(r"\b(?:informaci[oó]n|datos)\b.{0,110}\b(?:acerca\s+del\s+ciudadano|sobre\s+el\s+ciudadano)\s*$", antes, re.I)
+        and re.search(r"^\s*[,;]?\s*D\.?\s*N\.?\s*I\.?\b", despues, re.I)
+    )
+    # Petición con sintaxis truncada: "a la mayor brevedad posible, NOMBRE DNI ..."
+    # Exigir ventana específica y DNI literal, no solo una mención incidental.
+    pedido_plataforma = bool(
+        re.search(r"\ba\s+la\s+mayor\s+brevedad\s+posible\s*,?\s*$", antes, re.I)
+        and re.search(r"^\s*DNI\s+nro\.?\s*\d", despues, re.I)
+    )
+    pedido_plataforma_persona = bool(
+        re.search(r"\b(?:Mercado\s+Pago|Mercado\s+Libre)\s*:\s*$", antes, re.I)
+        and re.search(r"^\s*[,;]?\s*D\.?\s*N\.?\s*I\.?\s*argentino\s+\d", despues, re.I)
+        and re.search(r"\busuarios?\b", evidencia.fragmento[:ini], re.I)
+    )
+    return ((es_solicitud and es_objeto) or detalle_bancario or pedido_datos_ciudadano
+            or pedido_plataforma or pedido_plataforma_persona)
 
 
 def _pedido_comercial_fiscal_explicito(e: Evidencia) -> bool:
@@ -1176,6 +1194,18 @@ def _evaluar_tercero(
     evidencia: Evidencia,
 ) -> tuple[bool, str]:
 
+    # Abogados individualizados como comparecientes en un acta; el CUIT
+    # profesional NO convierte a esa persona en sujeto del requerimiento.
+    posicion = _buscar_posicion_nombre(evidencia)
+    if posicion[0] is not None:
+        ini, fin = posicion
+        previo = evidencia.fragmento[max(0, ini - 85):ini]
+        posterior = evidencia.fragmento[fin:fin + 100]
+        if (re.search(r"\b(?:las?\s+dras?\.?|los?\s+dres?\.?|abogad[oa]s?\s+|letrad[oa]s?\s+)", previo, re.I)
+                and (re.search(r"\bM\.?\s*P\.?\s*\d+", posterior, re.I)
+                     or re.search(r"\bM\.?\s*P\.?\s*\d+", evidencia.nombre, re.I))):
+            return True, "profesional_interviniente_no_objeto_oficio"
+
     if _esta_en_lista_de_terceros(
         evidencia
     ):
@@ -1524,7 +1554,7 @@ def _v12_recuperar_campos_locales(candidatos: list[dict[str, Any]], fragmento: s
             p=_posicion_nombre_texto(fragmento,nombre)
             if p:
                 tramo=fragmento[p[1]:p[1]+55]
-                m=re.match(r"\s*[,;:]?\s*\(?\s*D\.?\s*N\.?\s*I\.?\s*[-: ]\s*(\d{1,2}(?:[. -]?\d{3}){2})\b", tramo, re.I)
+                m=re.match(r"\s*[,;:]?\s*\(?\s*D\.?\s*N\.?\s*I\.?\s*(?:argentino|argentina)?\s*[-: ]\s*(\d{1,2}(?:[. -]?\d{3}){2})\b", tramo, re.I)
                 if m and len(re.sub(r'\D','',m.group(1))) in (7,8):
                     c['dni_persona']=m.group(1)
                     c['origen_recuperacion_v12']='dni_local_adyacente'
@@ -2452,6 +2482,21 @@ def _grupo_tiene_contexto_negativo_fuerte(
     )
 
 
+def _dni_ocr_malformado_en_grupo(grupo: GrupoPersona) -> str | None:
+    """Detecta DNI literal de 9 dígitos local al nombre, sin transformarlo."""
+    for e in grupo.evidencias:
+        pos = _buscar_posicion_nombre(e)
+        if not pos:
+            continue
+        tramo = e.fragmento[pos[1]:pos[1] + 65]
+        m = re.match(r"\s*[,;:]?\s*D\.?N\.?I\.?\s*:?\s*([0-9][0-9. ]{6,14})", tramo, re.I)
+        if m:
+            raw = m.group(1).strip().rstrip('.')
+            if len(re.sub(r"\D", "", raw)) == 9:
+                return raw
+    return None
+
+
 def _evaluar_grupo_oficio(
     grupo: GrupoPersona,
     total_grupos: int,
@@ -2696,6 +2741,14 @@ def _evaluar_grupo_oficio(
 
     # V12: nombre sin DNI/CUIT no satisface una identidad individualizada.
     if not tiene_id:
+        dni_malformado = _dni_ocr_malformado_en_grupo(grupo)
+        if dni_malformado and not tercero_fuerte and (
+            tiene_contexto or any(re.search(r"\b(?:solicito|informar|informe)\b", e.fragmento, re.I)
+                                  for e in grupo.evidencias)
+        ):
+            detalle["dni_ocr_original_no_validado"] = dni_malformado
+            detalle["requiere_revision_manual"] = True
+            return True, ["aceptacion_provisional_dni_ocr_malformado"], detalle
         return False, ["sin_identificador_verificable"], detalle
 
     # ========================================================
@@ -3151,6 +3204,11 @@ def evaluar_suficiencia(
             _texto_seguro(grupo.get("cuit_cuil_persona")))
         and _nombre_tiene_estructura_valida(grupo.get("nombre_persona"))
         and not _normalizar_texto(grupo.get("nombre_persona", "")).startswith("ALIAS")
+        # Un profesional descartado con evidencia contextual firme no es
+        # una identidad pendiente. Otros descartes sí siguen bloqueando.
+        and not ("tercero_fuerte" in (grupo.get("decision_consolidacion", {}).get("motivos") or [])
+                 and any(e.get("motivo_tercero") == "profesional_interviniente_no_objeto_oficio"
+                         for e in (grupo.get("evidencias") or [])))
         and any(_evidencia_pedido_explicito_obj_serializada(e)
                 for e in (grupo.get("evidencias") or []))
     ]
@@ -3521,7 +3579,39 @@ def consolidar_documento(
         )
     )
 
+    # Diagnóstico legible separado de la clasificación histórica de suficiencia.
+    fragmentos_utiles = [r for r in (documento.get("resultados") or [])
+                        if _texto_seguro(r.get("fragmento") or r.get("texto_entrada_modelo"))]
+    revision_motivos = []
+    if not fragmentos_utiles:
+        revision_motivos.append(("sin_fragmentos_para_gliner",
+           "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."))
+    for persona in personas_objeto_oficio:
+        d = persona.get("decision_consolidacion", {}).get("detalle", {})
+        if d.get("requiere_revision_manual"):
+            persona["identificador_pendiente_validacion"] = d.get("dni_ocr_original_no_validado")
+            persona["estado_validacion_identidad"] = "PROVISIONAL_REQUIERE_REVISION_MANUAL"
+            revision_motivos.append(("dni_ocr_malformado",
+               "Se detectó la persona objeto del oficio, pero el DNI textual tiene 9 dígitos. Identidad provisional: comprobar el DNI contra el documento original; no enviar el identificador a producción sin validación."))
+    if not personas_objeto_oficio and fragmentos_utiles and not grupos_descartados:
+        revision_motivos.append(("sin_candidatos_en_fragmentos",
+          "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido."))
+    if not personas_objeto_oficio and grupos_descartados and fragmentos_utiles:
+        revision_motivos.append(("candidatos_descartados",
+           "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte."))
+    if not personas_objeto_oficio and not fragmentos_utiles:
+        revision_motivos.append(("verificar_objeto_del_pedido",
+           "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."))
+    if any(p.get("estado_validacion_identidad") == "PROVISIONAL_REQUIERE_REVISION_MANUAL" for p in personas_objeto_oficio):
+        suficiente = False
+        motivos = list(dict.fromkeys(motivos + ["dni_ocr_malformado_revision_manual"]))
+    # Una aceptación provisional no equivale a identidad verificada.
+    revision_manual = bool(revision_motivos) or any(
+        c.get("conflicto_bloqueante", True) or c.get("resolucion_conflicto") == "prioridad_pedido_principal_con_alerta"
+        for c in conflictos)
     return {
+        "revision_manual_motivos": [{"codigo": k, "descripcion": v} for k,v in revision_motivos],
+        "revision_manual_descripcion": " ".join(v for _,v in revision_motivos),
         "id":
             documento.get(
                 "id"
@@ -3591,10 +3681,7 @@ def consolidar_documento(
         "cantidad_candidatos_incompletos": len(candidatos_incompletos),
         "candidatos_incompletos": candidatos_incompletos,
 
-        "requiere_revision":
-            any(c.get("conflicto_bloqueante", True) or
-                c.get("resolucion_conflicto") == "prioridad_pedido_principal_con_alerta"
-                for c in conflictos),
+        "requiere_revision": revision_manual,
 
         "cantidad_conflictos_identificador":
             len(

@@ -1,0 +1,17 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_personas_objeto_oficio,indice_persona,nombre_persona,dni_persona,cuit_cuil_persona,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+1,780381,780381_1.pdf,RESUELTO,True,False,,1,1,Gabriela Karina Ledesma,,27417562260,,Gabriela Karina Ledesma,1,1,8.975,False,False,0
+3,780618,780618_1.pdf,RESUELTO,True,False,,1,1,Muñoz Marcos Damián,32.981.114,,demandado,Muñoz Marcos Damián,2,2,21.76,False,False,0
+4,780740,780740_1.pdf,RESUELTO,True,False,,1,1,LEANDRO ERAUSQUIN,34.753.007,,actor,LEANDRO ERAUSQUIN,1,1,7.917,False,False,0
+6,784519,784519_1.pdf,RESUELTO,True,False,,1,1,JUAN BELMAR SERRI,33.507.686,,,JUAN BELMAR SERRI,2,2,13.86,False,False,0
+7,784524,784524_1.pdf,RESUELTO,True,False,,1,1,Adrian Delgado,43.922.338,,titular,Adrian Delgado,1,1,9.854,False,False,0
+8,784528,784528_1.pdf,RESUELTO,True,False,,1,1,MUÑOZ JOAQUIN DANIEL,40.948.975,20-40948975-4,titular,MUÑOZ JOAQUIN DANIEL,1,1,16.291,False,False,0
+9,784530,784530_1.pdf,RESUELTO,True,False,,1,1,Rodrigo Exequiel Diaz,34.087.361,20-34087361-1,,Rodrigo Exequiel Diaz,1,1,13.42,False,False,0
+10,784536,784536_1.pdf,RESUELTO,True,False,,1,1,Tiago Alexander Méndez Mourelle,44.939.190,,,Tiago Alexander Méndez Mourelle,1,1,6.846,False,False,0
+13,784558,784558_1.pdf,RESUELTO,True,False,,1,1,SANDRA DEL CARMEN CORDOBA,18.593.084,,,SANDRA DEL CARMEN CORDOBA,1,1,8.197,False,False,0
+14,784560,784560_1.pdf,RESUELTO,True,False,,1,1,Nancy Edith Difabio,18.516.749,,titular,Nancy Edith Difabio,1,1,9.732,False,False,0
+15,784570,784570_1.pdf,RESUELTO,True,False,,1,1,Federico Martin Durbas,31.637.995,,demandada,FEDERICO MARTIN DURBAS | Federico Martin Durbas,2,2,17.799,False,False,0
+16,784585,784585_1.pdf,RESUELTO,True,False,,1,1,Carlos José MENDOZA HERNÁNDEZ,94.478.301,,,Carlos José MENDOZA HERNÁNDEZ,1,1,6.072,False,False,0
+17,784598,784598_1.pdf,RESUELTO,True,False,,1,1,Alejandro Bruno PINTO APARICIO,16.759.558,20-16759558-9,actor,Alejandro Bruno PINTO APARICIO,1,1,14.788,False,False,0
+18,784617,784617_1.pdf,RESUELTO,True,False,,1,1,LAGOMARCINO ZORRILLA ALEJANDRO LIONEL,40736446,,,LAGOMARCINO ZORRILLA ALEJANDRO LIONEL,1,1,8.062,False,False,0
+19,784627,784627_1.pdf,RESUELTO,True,False,,1,1,AGUSTIN FERREYRA,39261503,,causante,AGUSTIN FERREYRA,2,2,19.904,False,False,0
+20,784633,784633_1.pdf,RESUELTO,True,False,,1,1,Silvina Soledad Carita,27.694.948,,actora,SILVINA SOLEDAD CARITA | Silvina Soledad Carita,2,2,17.849,False,False,0

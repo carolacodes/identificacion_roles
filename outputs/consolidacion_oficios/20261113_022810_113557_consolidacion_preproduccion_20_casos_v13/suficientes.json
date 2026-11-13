@@ -1,0 +1,1337 @@
+[
+  {
+    "id": "780381",
+    "numero_archivo": "1",
+    "nombre_documento": "780381_1.pdf",
+    "texto_completo": "E15000012205036\nPROVINCIA DE BUENOS AIRES PODER JUDICIAL MINISTERIO PÚBLICO\nOficio\nPP-15-00-051127-26/00 s/Presunto robo de celular\nSan Martin, 06 de noviembre de 2026\nAl Sr. representante legal de Mercado Pago S/D\nTengo el agrado de dirigirme a Ud. en mi carácter de Agente Fiscal de la Unidad Funcional de Instrucción y Juicio nro. 5 del departamento judicial de General San Martín, sita en Avenida Ricardo Balbin 1753, segundo piso, de la localidad y partido de Gral. San Martín, en el marco de la IPP 15-00-051127-26, a fin de solicitarle en carácter de URGENTE se bloquee parcialmente la cuenta a nombre de Gabriela Karina Ledesma, CVU: 0000003100071969112187, CUIL: 27417562260, por el monto de $58.446 (cincuenta y ocho mil cuatrocientos cuarenta y seis pesos argentinos), por el plazo de 180 días a partir del día de la fecha.\nAsimismo, solicito se informe si en la cuenta mencionada hubo cambios en sus formas de acceso, ya sea modificaciones de contraseña o formas biométricas de ingreso.\nSin otro particular, saludo a Ud. atentamente.\nPALADINO Mariela Anahí Agente Fiscal UNIDADES FUNCIONALES DE INSTRUCCIÓN Y JUICIO - UNIDAD FUNCIONAL DE INSTRUCCIÓN Y JUICIO Nº 5 mapaladino@mpba.gov.ar - Fecha:06-11-2026 09:02:25\nPag. 1 de 1",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "Gabriela Karina Ledesma",
+        "dni_persona": "",
+        "cuit_cuil_persona": "27417562260",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Gabriela Karina Ledesma"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.975,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cuil",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Gabriela Karina Ledesma",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "27417562260",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9954197406768799,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "parcialmente la cuenta a nombre de Gabriela Karina Ledesma, CVU: 0000003100071969112187, CUIL: 27417562260, por el monto de",
+            "contexto_local": "parcialmente la cuenta a nombre de Gabriela Karina Ledesma, CVU: 0000003100071969112187, CUIL: 27417562260, por el monto de"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "requerimiento_explicito",
+            "identificador_local_verificado"
+          ],
+          "detalle": {
+            "score_total": 8.975,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": true
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "780618",
+    "numero_archivo": "3",
+    "nombre_documento": "780618_1.pdf",
+    "texto_completo": "6/11/26, 10:15 TEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS\nTEXT O Y DATOS DE LA NOTIFICACIÓN\nUsuario conectado: GOMEZ Micaela Soledad - 27357743570@notificaciones.scba.gov.ar\nOrganismo: JUZGADO DE FAMILIA N° 1 - TANDIL\nCarátula: MARCOVICH KOPP, MICAEA SOFIA C/ MUÑOZ, MARCOS DAMIAN S/ ALIMENTOS\nNúmero de causa: 36036\nTipo de notificación: OFICIO ELECTRONICO\nDestinatarios: 27357743570@notificaciones.scba.gov.ar\nFecha notificación: 05/11/2026 12:37:15\nAlta o disponibilidad 5/11/2026 12:37:16\nFirma digital: Firma válida\nFirmado y Notificado por: BRAZZOLA Pablo Sebastian. SECRETARIO --- Certificado Correcto. Fecha de Firma: 05/11/2026 12:37:15\nFirmado por: GOMEZ Micaela Soledad. --- Certificado Correcto. Fecha de Firma: 05/11/2026 11:01:13\nOFICIO\nEXENTO DE SELLADO Tandil, de noviembre del 2026.-\nAl Sr. director/a MERCADO PAGO Presente\nMe dirijo a Ud., en la causa caratulada: “MARCOVICH KOPP, MICAEA SOFIA C/ MUÑOZ, MARCOS DAMIAN S/ ALIMENTOS” Expte N°36036, que tramitan por ante el Juzgado de Familia Nº 1 del Departamento Judicial de Azul, a cargo de la Jueza, Monserat Silvia Ines, sito en la calle Yrigoyen N°857 de la Ciudad de Tandil, Secretaría única, correo electrónico juzfam1- tn@jusbuenosaires.gov.ar, a los fines de que informen si el demandado Sr. Muñoz Marcos Damián DNI: 32.981.114 posee cuentas en dichas entidades - caja de ahorro, cuentas corrientes, caja de seguridad o fondos de inversión y/o plazos fijos-, y si poseen tarjeta de crédito y/o débito emitidas por el Banco, y en caso afirmativo, remita a autos resúmenes de cuenta mensuales completos de los últimos cinco (5) años a la fecha de contestación del informe. Asimismo, informe si el demandado ha contratado un crédito o préstamo. En caso afirmativo informen monto, plazo, forma de pago, cantidad de cuotas, intereses del mismo y acompañe la declaración de bienes y ganancias presentada para su otorgamiento. A su vez, informe las transferencias que el demandado ha realizado, indicando fecha y monto. Y en su caso, si ha contratado plazos fijos en moneda local y/o en moneda extranjera. En caso afirmativo informe monto, plazo y acompañe la documentación de las constituciones del mismo. En el caso de entidades que trabajen con criptomonedas, informe con la cartera de criptomonedas que operan el demandado, detalladamente en valores en moneda local y extranjera, con las transferencias que realizan a través de su entidad, indicando fecha y monto; como así también todo lo demás que pueda informar respecto a dicha persona que consten en sus registros. Como también, informe si ha comprado moneda extranjera, indicando cantidad, monto por el que adquirió la misma, remitiendo el total acumulado de compras/ventas de dicha moneda realizadas desde la apertura de la cuenta en vuestra entidad hasta la actualidad. Por último, informe si el demandado ha realizado un Fondo Común de Inversión (FCI). En caso afirmativo informe montos, plazos de los mismos y acompañe la documentación de las constituciones respectivas;\nEl auto que ordena el presente dice: “Tandil, (...) En cuanto a la PRUEBA se provee la ofrecida por la PARTE ACTORA:3.1.) DOCUMENTAL: Téngase presente. 3.2.) INFORMATIVA: Ofícese como se solicita A A Mercado pago a los fines de que informen si el demandado Sr. Muñoz Marcos Damián DNI: 32.981.114 posee cuentas en dichas entidades - caja de ahorro, cuentas corrientes, caja de seguridad o fondos de inversión y/o plazos fijos-, y si poseen tarjeta de crédito y/o débito emitidas por el Banco, y en caso afirmativo, remita a autos resúmenes de cuenta mensuales completos de los últimos cinco (5) años a la fecha de contestación del informe. Asimismo, informe si el demandado ha contratado un crédito o préstamo. En caso afirmativo informen monto, plazo, forma de pago, cantidad de cuotas, intereses del mismo y acompañe la declaración de bienes y ganancias presentada para su otorgamiento. A su vez, informe las transferencias que el demandado ha realizado, indicando fecha y monto. Y en su caso, si ha contratado plazos fijos en moneda local y/o en moneda extranjera. En caso afirmativo informe\nhttps://notificaciones.scba.gov.ar/InterfazBootstrap/textonotificacionimprimir.aspx?idnot=164352055&fecha=2&codNotif= 1/2\nmonto, plazo y acompañe la documentación de las constituciones del mismo. En el caso de entidades que trabajen con criptomonedas, informe con la cartera de criptomoneda que operan el demandado, detalladamente en valores en moneda local y extranjera, con las transferencias que realizan a través de su entidad, indicando fecha y monto; como así también todo lo demás que pueda informar respecto a dicha persona que consten en sus registros. Como también, informe si ha comprado moneda extranjera, indicando cantidad, monto por el que adquirió la misma, remitiendo el total acumulado de compras/ventas de dicha moneda realizadas desde la apertura de la cuenta en vuestra entidad hasta la actualidad. Por último, informe si el demandado ha realizado un Fondo Común de Inversión (FCI). En caso afirmativo informe montos, plazos de los mismos y acompañe la documentación de las constituciones respectivas; (...) Fdo. Electrónicamente por Saralegui Ramiro, Juez.\nArt. 396 CPCC.- RECAUDOS Y PLAZOS PARA LA CONTESTACIÓN.- Las oficinas públicas no podrán establecer recaudos o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas.\nDeberán contestar el pedido de informes o remitir el expediente dentro de 20 días hábiles y las entidades privadas dentro de 10, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales.\nArt. 397 RETARDO.- Si por circunstancias atendibles el requerimiento no pudiere ser cumplido dentro del plazo, se deberá informar al Juzgado, antes del vencimiento de aquél, sobre las causas y la fecha en que se cumplirá. Si el Juez advirtiere que determinada repartición pública, sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno, a los efectos que correspondan, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas que sin causa justificada no contestaren oportunamente se les impondrá multa de un valor equivalente a dos (2) Jus por cada día de retardo. La apelación que se dedujere contra la respectiva resolución tramitará en expediente por separado.\nSe hace saber que el valor del jus asciende a la suma de $56.426\nSe encuentran autorizados para diligenciar este oficio la Dra. Micaela Soledad Gómez T°XI F°13 del CAA y la Dra. Lucía Mabel Lorusso Dierickx, T° VI F° 16 del CAA y/o el Sr. Juan Saúl Duhalde, DNI 22.577.094, y/o a quienes indistintamente designen.\nSaludo a Ud. muy atentamente\nPara verificar la notificación, y las copias de traslado si las hubiere, ingrese a:\nhttps://notificaciones.scba.gov.ar/verificar.aspx\nSu código de verificación es: H2EM364M",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "Muñoz Marcos Damián",
+        "dni_persona": "32.981.114",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "Muñoz Marcos Damián"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 21.76,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Muñoz Marcos Damián",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "32.981.114",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7938735485076904,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "de que informen si el demandado Sr. Muñoz Marcos Damián DNI: 32.981.114 posee cuentas en",
+            "contexto_local": "de que informen si el demandado Sr. Muñoz Marcos Damián DNI: 32.981.114 posee cuentas en"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Muñoz Marcos Damián",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "32.981.114",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7938735485076904,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "de que informen si el demandado Sr. Muñoz Marcos Damián DNI: 32.981.114 posee cuentas en",
+            "contexto_local": "de que informen si el demandado Sr. Muñoz Marcos Damián DNI: 32.981.114 posee cuentas en"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "requerimiento_explicito",
+            "identificador_local_verificado"
+          ],
+          "detalle": {
+            "score_total": 21.76,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "demandado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": true,
+              "cantidad_fragmentos": 2,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": true
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_persona": "Tandil",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [
+          "actora"
+        ],
+        "variantes_nombre": [
+          "Tandil"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 4.931,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "doc",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Tandil",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "actora",
+            "nombre_confidence": 0.8101957440376282,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "El auto que ordena el presente dice: “Tandil, (...) En cuanto a la PRUEBA se provee la ofrecida por la PARTE ACTORA:3.1.) DOCUMENTAL: Téngase presente. 3.2.)",
+            "contexto_local": "El auto que ordena el presente dice: “Tandil, (...) En cuanto a la PRUEBA se provee la ofrecida por la PARTE ACTORA:3.1.) DOCUMENTAL: Téngase presente. 3.2.)"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "nombre_no_valido"
+          ],
+          "detalle": {
+            "score_total": 4.931,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "actora"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": false
+          }
+        }
+      }
+    ],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "784519",
+    "numero_archivo": "6",
+    "nombre_documento": "784519_1.pdf",
+    "texto_completo": "PODER JUDICIAL PROVINCIA DE RIO NEGRO\nJUZGADO DE PAZ 2DA CIRC. GRAL. ROCA - G. ROCA\nFirmado digitalmente por BENITEZ Rodrigo Fecha y hora: 10.11.2026 19:28:43\nOFICIO LEY 22172\nGeneral Roca, 10 de noviembre de 2026.\nMERCADO PAGO S / D\nMe dirijo a usted en autos caratulados: \"SERRI JUAN BELMAR C/ MIRANDA ANABELA BEATRIZ S/ BENEFICIO DE LITIGAR SIN GASTOS\", Expte. N° RO-01923-JP-2026, en trámite por ante el Juzgado de Paz a cargo del Abg. Rodrigo Benitez, juez de Paz, Secretaría Única a cargo del Abg. Henoch Romero Boue, con asiento de funciones en calle San Martín 867 de la ciudad de General Roca, perteneciente a la Segunda Circunscripción Judicial de la provincia de Río Negro, e mail: juzpazroca@jusrionegro.gov.ar, a los efectos de que proceda a informar respecto a los datos bancarios referidos a los saldos en cuenta y movimientos realizados vinculados a JUAN BELMAR SERRI, DNI N° 33.507.686, desde el día 10/08/2026 hasta la actualidad.\nLa resolución que ordena la presente en su parte pertinente dice: “General Roca, 21 de octubre de 2026. … Atento el estado de autos, corresponde requerir información a las entidades activas mencionadas por el B.C.R.A. (... MERCADO PAGO, ...). Por ello, líbranse oficios u oficios Ley 22.172, según el caso, con confronte del Tribunal, haciéndoles saber que deberán informar respecto a los datos bancarios referidos a los saldos en cuenta y movimientos realizados vinculados a JUAN BELMAR SERRI, DNI N° 33.507.686, desde el día 10/08/2026 hasta la actualidad, con transcripción de los arts. 369 y 370 del CPCyC RN. A tales fines hágase saber a la entidad oficiada que se lo libera del secreto bancario. Asimismo hágase saber en todos los casos a los organismos oficiados que podrán remitir sus contestaciones al mail juzpazroca@jusrionegro.gov.ar, en un único archivo en formato PDF. Fdo. Henoch Romero Boue. Juez de Paz Suplente”.\nSe hace saber a los organismos oficiados que podrán remitir sus\n1/3\nPODER JUDICIAL PROVINCIA DE RIO NEGRO JUZGADO DE PAZ 2DA CIRC. GRAL. ROCA - G. ROCA\ncontestaciones al mail juzpazroca@jusrionegro.gov.ar, en un único archivo en formato PDF.\nA continuación, se transcriben los arts. 369 y 370 del Código Procesal Civil y Comercial: \"Artículo 369.- Las oficinas públicas, no pueden establecer recaudos o requisitos para los oficios, ni otros aranceles que lo que determinen las leyes, decretos y ordenanzas. Deben contestar las oficinas públicas y las entidades privadas el pedido de informes o remitir el expediente, dentro de los veinte (20) días hábiles, salvo que la providencia que lo ordene fije otro plazo en razón de la naturaleza del juicio o circunstancias especiales. Cuando se trate de la inscripción de la transferencia de dominio en el Registro de la Propiedad, los oficios que se libren al Departamento Provincial de Aguas, a la Municipalidad, a la Agencia de Recaudación Tributaria y/o a cualquier otra repartición pública, deben contener el apercibimiento de que, si no son contestados dentro del plazo de veinte (20) días, el bien se inscribirá como si estuviere libre de deuda. El Juez o Jueza puede aplicar sanciones conminatorias progresivas en el supuesto de atrasos injustificados en las contestaciones de informes. La apelación que se deduzca tramita en expediente separado. La sanción puede ser aplicada al jefe o director de la repartición u organismo, en cuyo caso se lo debe notificar personalmente.\". \"Artículo 370.- Si por circunstancias atendibles el requerimiento no puede ser cumplido dentro del plazo, se debe informar al organismo, antes del vencimiento de aquel, sobre las causas y fecha en que se cumplirá. Si el Juez o Jueza advierte que determinada repartición pública sin causa justificada no cumple reiteradamente el deber de contestar oportunamente los informes, debe poner el hecho en conocimiento del Ministerio de Gobierno, a los efectos que correspondan, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas o personas físicas que sin causa justificada no contesten oportunamente, se les impondrá multa de hasta dos (2) veces el monto del jornal mínimo, vital y móvil por cada día de retardo, sin perjuicio de lo dispuesto en el artículo 369. La apelación que se deduzca contra la respectiva resolución tramita por expediente separado.\".\nComo recaudo legal se consigna lo siguiente:\n2/3\nPODER JUDICIAL PROVINCIA DE RIO NEGRO\nJUZGADO DE PAZ 2DA CIRC. GRAL. ROCA - G. ROCA\nI. Tribunal oficiante: JUZGADO DE PAZ DE GENERAL ROCA. II. Competencia: La competencia del Tribunal no ha sido cuestionada en autos. III. Partes: Actora: JUAN BELMAR SERRI.- Demandada: MIRANDA ANABELA BEATRIZ. IV. Monto del Juicio: SIN MONTO.\nSe deja constancia que el presente se encuentra EXENTO de todo pago y/o arancel atento tratarse de un Beneficio de litigar sin Gastos.\nEl Dr. Ariel Alberto Balladini y/o quienes este designe se encuentran autorizados para el diligenciamiento del presente oficio.\nSin más, saludo atentamente.\nRodrigo Benitez Juez de Paz\nPara comprobar que esta notificación es verdadera y poder ver su contenido y la documentación que se agregó, ingrese a la siguiente página de internet: \"https://puma.jusrionegro.gov.ar/expjud/validar-documento\", y donde está “identificador del documento” escriba el número RO-01923-JP-2026 y a continuación el código JKRG-QUZH, o bien escaneé el código QR situado en el margen superior derecho.\n3/3",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "JUAN BELMAR SERRI",
+        "dni_persona": "33.507.686",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "JUAN BELMAR SERRI"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 13.86,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JUAN BELMAR SERRI",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "33.507.686",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.97966068983078,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "a los saldos en cuenta y movimientos realizados vinculados a JUAN BELMAR SERRI, DNI N° 33.507.686, desde el día 10/08/2026 hasta la actualidad.",
+            "contexto_local": "a los saldos en cuenta y movimientos realizados vinculados a JUAN BELMAR SERRI, DNI N° 33.507.686, desde el día 10/08/2026 hasta la actualidad."
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JUAN BELMAR SERRI",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "33.507.686",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9810081720352173,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "a los saldos en cuenta y movimientos realizados vinculados a JUAN BELMAR SERRI, DNI N° 33.507.686, desde el día 10/08/2026",
+            "contexto_local": "a los saldos en cuenta y movimientos realizados vinculados a JUAN BELMAR SERRI, DNI N° 33.507.686, desde el día 10/08/2026"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "requerimiento_explicito",
+            "identificador_local_verificado"
+          ],
+          "detalle": {
+            "score_total": 13.86,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": true,
+              "cantidad_fragmentos": 2,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": true
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "784524",
+    "numero_archivo": "7",
+    "nombre_documento": "784524_1.pdf",
+    "texto_completo": "Ministerio Público de la Nación\nBuenos Aires, 11 de noviembre de 2026.\nAl Sr. Apoderado Legal de Mercado Pago. -\nS / D\nAndrea Costa, en mi carácter de Auxiliar Fiscal de la Fiscalía Nacional en lo Criminal y Correccional Nro. 57, sita en Lavalle 1171 Piso 9°, CABA, (tel/fax 7092-6187/6188; email: fiscricor57-nac@mpf.gov.ar), tiene el agrado de dirigirse a Ud. en relación al Caso Coiron nro. 177312/2026, caratulada: “N.N. s/ESTAFA DENUNCIANTE: CROSETTO, JUAN PABLO Y OTRO”, a fin de que, dentro de los tres días de notificado, remita por correo electrónico (fiscricor57- nac@mpf.gov.ar) el listado de operaciones registradas en la cuenta titularidad de Adrian Delgado, DNI 43.922.338, con fecha 09/07/2026.\nSin otro particular, saludo a Ud. atte.\nCOSTA Andrea Paola\nFirmado digitalmente por COSTA Andrea Paola Fecha: 2026.11.11 11:25:56 -03'00'",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "Adrian Delgado",
+        "dni_persona": "43.922.338",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "Adrian Delgado"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.854,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Adrian Delgado",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "43.922.338",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9520890116691589,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "listado de operaciones registradas en la cuenta titularidad de Adrian Delgado, DNI 43.922.338, con fecha 09/07/2026.",
+            "contexto_local": "listado de operaciones registradas en la cuenta titularidad de Adrian Delgado, DNI 43.922.338, con fecha 09/07/2026."
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "requerimiento_explicito",
+            "identificador_local_verificado"
+          ],
+          "detalle": {
+            "score_total": 9.854,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "titular"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": true
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "784528",
+    "numero_archivo": "8",
+    "nombre_documento": "784528_1.pdf",
+    "texto_completo": "11/11/26, 11:46 TEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS\nTEXT OY DATOS DE LA NOTIFICACIÓN\nUsuario conectado: VALLI YANINA ALEJANDRA - 23329775224@notificaciones.scba.gov.ar Organismo: JUZGADO DE FAMILIA N° 1 - SAN MIGUEL Carátula: ZAJAMA MICAE LA LISETTE C/ MUÑOZ JOAQUIN DANIEL S/ ALIMENTOS Número de causa: 36310 Tipo de notificación: OFICIO - ACOMPAÑA Destinatarios: 23329775224@notificaciones.scba.gov.ar Fecha notificación: 10/11/2026 00:00:00 Alta o disponibilidad 6/11/2026 08:11:10 Firma digital: Firma válida Firmado y Notificado por: PAOLINI Sebastian Matias. SECRETARIO --- Certificado Correcto. Fecha de Firma: 06/11/2026 08:11:10 Firmado por: VALLI Yanina Alejandra. --- Certificado Correcto. Fecha de Firma: 05/11/2026 16:38:45\nOFICIO\nSan Miguel, Noviembre de 2026.-\nA MERCADO LIBRE SRL (MERCADOPAGO) S_______ / _______D\nTengo el agrado de dirigirme a Ud. en autos caratulados “ZAJAMA MICAE LA LISETTE C/ MUÑOZ JOAQUIN DANIEL S/ ALIMENTOS” Exp. 36310 que tramitan ante el Juzgado de Familia N°1 de San Miguel, del Departamento Judicial de San Martín, a cargo de la Dra. Silvana Elina Tristán, Secretaría a cargo del Dr.Dr. Pablo Nicolás Tagliavini y Dr. Sebastián Matías Paolini; sito en la calle Av. Ricardo Balbín Nro: 3100, Provincia de Buenos Aires, con el objeto de solicitarle, tenga a bien informar si el Sr. MUÑOZ JOAQUIN DANIEL, titular del DNI N° 40.948.975, CUIL N° 20-40948975-4, posee o tuvo cuenta a su nombre y en caso afirmativo envíe historial de actividad / extracto de la cuenta mencionada desde los últimos doce meses al día de la fecha.\nEl auto que lo ordena dice: “San Miguel, 02 de Noviembre de 2026. (...) INFORMATIVA: Líbrense los oficios requeridos a: 1°) ARCA, 2°) ANSES, 3°) BCRA, 4) VISA ARGENTINA S.A., 5) MASTERCARD S.A. 6) AMERICAN EXPRESS, 7) TARJETA NARANJA 8) MERCADO LIBRE SRL (MERCADOPAGO), 9) UALA, 10) MODO, 11) BRUBANK, 12) BINANCE, 13) REGISTRO NACIONAL DE LA PROPIEDAD AUTOMOTOR, los que deberán realizarse en la forma prevista por la norma de los arts. 396, 397, 398 y cdts. del CPCC\". FDO. DRA. SILVANA ELINA TRISTAN JUEZ\nSe halla autorizada para diligenciar el presente la Dra. Yanina Alejandra Valli, T° XVIII F°252 CASM, y/ o quien ella designe.\nComo recaudo, seguidamente se transcriben parte pertinente de los artículos 396, 397 y 398 del C.P.C.C. de la Provincia de Buenos Aires:\nArtículo 396. Recaudos y plazos para la contestación. Las oficinas públicas no podrán establecer recaudos o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas. Deberán contestar el pedido de informes o remitir el expediente dentro de veinte (20) días hábiles y las entidades privadas dentro de diez (10) días hábiles, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales. En los procesos de alimentos, el plazo para las oficinas públicas será de siete (7) días hábiles y para las entidades privadas de cinco (5) días hábiles; Artículo 397: Artículo 397.- RETARDO. Si por circunstancias atendibles el requerimiento no pudiere ser cumplido dentro del plazo, se deberá informar al Juzgado, antes del vencimiento de aquel, sobre las causas y la fecha en que se cumplirá. Si el Juez advirtiere que determinada repartición pública sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno y Justicia, a los efectos que correspondan, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas que sin causa justificada no\nhttps://notificaciones.scba.gov.ar/InterfazBootstrap/textonotificacionimprimir.aspx?idnot=164430693&fecha=2&codNotif= 1/2\n11/11/26, 11:46 TEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS contestaren oportunamente, se les impondrá multa de veinticinco pesos ($25) por cada día de retardo.La apelación que se dedujere contra la respectiva resolución tramitará en expediente por separado.” Artículo 398: ... Deberá otorgarse recibo del pedido de informes y remitirse las contestaciones directamente a la secretaría con transcripción o copia del oficio...”. Saludo a Usted muy atentamente.- Para verificar la notificación, y las copias de traslado si las hubiere, ingrese a: https://notificaciones.scba.gov.ar/verificar.aspx Su código de verificación es: YD5DW43X\n230502180034140048\nhttps://notificaciones.scba.gov.ar/InterfazBootstrap/textonotificacionimprimir.aspx?idnot=164430693&fecha=2&codNotif= 2/2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "MUÑOZ JOAQUIN DANIEL",
+        "dni_persona": "40.948.975",
+        "cuit_cuil_persona": "20-40948975-4",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "MUÑOZ JOAQUIN DANIEL"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 16.291,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni | cuil",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MUÑOZ JOAQUIN DANIEL",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "40.948.975",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "20-40948975-4",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9541262984275818,
+            "score_contextual": 4.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "solicitarle, tenga a bien informar si el Sr. MUÑOZ JOAQUIN DANIEL, titular del DNI N° 40.948.975, CUIL N° 20-40948975-4, posee o tuvo",
+            "contexto_local": "solicitarle, tenga a bien informar si el Sr. MUÑOZ JOAQUIN DANIEL, titular del DNI N° 40.948.975, CUIL N° 20-40948975-4, posee o tuvo"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "requerimiento_explicito",
+            "identificador_local_verificado"
+          ],
+          "detalle": {
+            "score_total": 16.291,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "titular"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": true
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "784530",
+    "numero_archivo": "9",
+    "nombre_documento": "784530_1.pdf",
+    "texto_completo": "PODER JUDICIAL DE LA PROVINCIA DEL CHUBUT OFICINA DE GESTION UNIFICADA DEL FUERO CIVIL Y COMERCIAL – CR\nOFICIO ART. 404\nComodoro Rivadavia, 10 Noviembre 2026.-\nSeñores:\nMERCADO PAGO\nTengo el agrado de dirigirme a Ud. en los autos caratulados: “DIAZ Rodrigo Exequiel c/ VIRGILIO Rubén Elías y Otros - Beneficio de litigar sin gastos”, Expte. N° 325/2026, que tramita por ante Oficina de Gestión Unificada del fuero Civil y Comercial de la Circunscripción Judicial con asiento en la ciudad de Comodoro Rivadavia, sito en sitio en Figueroa Alcorta 90, 2do piso, a cargo de la Dra. NATALIA VENTER - JUEZ, Secretaría N° 1, a los fines de solicitarle se sirva INFORMAR si Rodrigo Exequiel Diaz (DNI 34.087.361, CUIT 20-34087361-1) registra cuenta y/o usuario a su nombre, y en su caso remita detalle de montos y flujos operados desde el año 2025 a la fecha de contestación del oficio.-\nSe hace saber que la respuesta al presente oficio podrá ser enviada a la casilla de correo electrónico: ofijudcivilcr_mesa@juschubut.gov.ar, asunto: “Secretaría N° 1 - Expte. N° 325/2026.\nEl auto que ordena el presente, dice así en su parte pertinente: “Comodoro Rivadavia, 04 noviembre 2026.- ... Atento a lo resuelto precedentemente, a los fines pedidos librar oficio, de conformidad con lo establecido por el art. 404 del CPCC y con transcripción de lo dispuesto en los arts. 402 y 403 del CPCC al Registro de la Propiedad Inmueble de la provincia de Chubut, a la Dirección Nacional del Registro de la Propiedad Automotor, al Banco Central de la República Argentina, al Banco Patagonia S.A., A Mercado Pago, a la Agencia de Recaudación y Control Aduanero (ARCA), a la Universidad Nacional de la Patagonia San Juan Bosco, a la Administración Nacional de la Seguridad Social (ANSES), y a Informar Argentina S.A. Hago saber que el requerimiento ordenado podrá ser respondido a la casilla de electrónico\nofjjudcivilcr_mesa@juschubut.gov.ar ... Firmado electrónicamente mediante sistema informático Libra: Natalia Venter, Jueza Subrogante.”\nEstarán autorizados a intervenir en el diligenciamiento del presente oficio los Dres. Nélida Leon de Escribano, Facundo Llorens Guitarte y/o quienes designen.\nCÓDIGO PROCESAL CIVIL Y COMERCIAL DE LA PROVINCIA DEL CHUBUT:\nArtículo 402. RECAUDOS Y PLAZOS PARA LA CONTESTACIÓN.-\nLas oficinas públicas no podrán establecer recaudos o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas.\nDeberán contestar el pedido de informes o remitir el expediente dentro de VEINTE (20) días hábiles y las entidades privadas dentro de DIEZ (10) salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales. (...)\nArtículo 403. RETARDO.-\nSi por circunstancias atendibles el requerimiento no pudiere ser cumplido dentro del plazo, se deberá informar al juzgado, antes del vencimiento de aquél, sobre las causas y la fecha en que se cumplirá.\nCuando el juez advirtiere que determinada repartición pública, sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno y Justicia, a los efectos que corresponda, sin perjuicio de las otras medidas a que hubiere lugar.\nA las entidades privadas que sin causa justificada no contestaren oportunamente, se les impondrá multa de hasta PESOS DOS ($ 2) a PESOS CINCUENTA ($ 50) por cada día de retardo.\nLa apelación que se dedujere contra la respectiva resolución tramitará en expediente separado.\nSaludo a Ud., muy atentamente.-\nFACUNDO LLORENS GUITARTE MAT.C 217 T° II Pº I° MAT.FED.T° 57 F° 683 P 50 T°V TS.J.S.C.",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "Rodrigo Exequiel Diaz",
+        "dni_persona": "34.087.361",
+        "cuit_cuil_persona": "20-34087361-1",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Rodrigo Exequiel Diaz"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 13.42,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni | cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Rodrigo Exequiel Diaz",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "34.087.361",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "20-34087361-1",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9744665026664734,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "de solicitarle se sirva INFORMAR si Rodrigo Exequiel Diaz (DNI 34.087.361, CUIT 20-34087361-1) registra cuenta",
+            "contexto_local": "de solicitarle se sirva INFORMAR si Rodrigo Exequiel Diaz (DNI 34.087.361, CUIT 20-34087361-1) registra cuenta"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "requerimiento_explicito",
+            "identificador_local_verificado"
+          ],
+          "detalle": {
+            "score_total": 13.42,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": true
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "784558",
+    "numero_archivo": "13",
+    "nombre_documento": "784558_1.pdf",
+    "texto_completo": "MINISTERIO PÚBLICO RÍO NEGRO\nOficina de Investigación en Telecomunicaciones\nOITEL NOTA NRO. 08577/26-VC\nViedma, 11 de noviembre de 2026\nSEÑORA RESPONSABLE AREA DE LEGALES Y RELACIONES GUBERNAMENTALES MERCADO LIBRE S.R.L. S/D\nEn relación a los autos caratulados \"FISCALIA 3 S/ HURTO\" (Legajo Nro. MPF-VI-03347-2026) que se tramita en 1RA CJ - FISCALIA Nº 3 VIEDMA, se ha resuelto librar el presente a fin de solicitarle:\n1. Todo dato que obre en sus registros (datos de titularidad, domicilio, nro. de teléfono, etc) la cuenta perteneciente a la Sra. SANDRA DEL CARMEN CORDOBA, DNI. Nº 18.593.084.\n2. Listado de operaciones bancarias realizadas (generación de claves, solicitud de créditos/préstamos, transferencias (informando detalle cuentas destino), extracción/depósito de dinero, compras, etc. desde homebanking con IP de conexión, cajeros automáticos o por caja con detalle de montos, horas y ubicación de comercio/sucursal de entidad bancaria) el día 24/08/2026 al día 26/08/2026.\nAsimismo, solicito se remita lo requerido a la siguiente dirección de correo electrónico: oitel@jusrionegro.gov.ar citando Legajo. MPF-VI-03347-2026 y/o nota de encabezamiento 08577/26-VC.\nSaludo a usted atentamente.\nFirmado digitalmente por BAFFONI David Andres Fecha y hora: 11.11.2026 11:28:07",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "SANDRA DEL CARMEN CORDOBA",
+        "dni_persona": "18.593.084",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "SANDRA DEL CARMEN CORDOBA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.197,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "SANDRA DEL CARMEN CORDOBA",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "18.593.084",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9000177383422852,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "de teléfono, etc) la cuenta perteneciente a la Sra. SANDRA DEL CARMEN CORDOBA, DNI. Nº 18.593.084.",
+            "contexto_local": "de teléfono, etc) la cuenta perteneciente a la Sra. SANDRA DEL CARMEN CORDOBA, DNI. Nº 18.593.084."
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "requerimiento_explicito",
+            "identificador_local_verificado"
+          ],
+          "detalle": {
+            "score_total": 8.197,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": true
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "784560",
+    "numero_archivo": "14",
+    "nombre_documento": "784560_1.pdf",
+    "texto_completo": "MINISTERIO PÚBLICO RÍO NEGRO\nOficina de Investigación en Telecomunicaciones\nOITEL NOTA NRO. 08582/26-VC\nViedma, 11 de noviembre de 2026\nRESPONSABLE AREA DE LEGALES Y RELACIONES GUBERNAMENTALES MERCADO LIBRE S.R.L. S/D\nEn relación a los autos caratulados \"FISCALIA 8 VIEDMA C NN S ESTAFA (AC)\" (Legajo Nro. MPF-VI- 03315-2026) que se tramita en 1RA CJ - FISCALIA Nº 8 VIEDMA, se ha resuelto librar el presente a fin de solicitarle:\n1. Todo dato que obre en sus registros (datos de titularidad, domicilio, nro. de teléfono, etc) de la Cuenta vinculada al CVU 000000310078300997043 titularidad de Nancy Edith Difabio D.N.I.: 18.516.749.\n2. Asimismo de todas las operaciones se averigüe la dirección IP de conexión con su geolocalización.\n3. Listado de operaciones bancarias realizadas (generación de claves, solicitud de créditos/préstamos, transferencias (informando detalle cuentas destino), extracción/depósito de dinero, compras, etc. desde homebanking con IP de conexión, cajeros automáticos o por caja con detalle de montos, horas y ubicación de comercio/sucursal de entidad bancaria) el día 04-09 al 05-09-2026, en particular las transferencias efectuadas por los montos de $300.000, $800.000, y $200.000.\nAsimismo, solicito se remita lo requerido a la siguiente dirección de correo electrónico: oitel@jusrionegro.gov.ar citando Legajo. MPF-VI-03315-2026 y/o nota de encabezamiento 08582/26-VC.\nSaludo a usted atentamente.\nFirmado digitalmente por BAFFONI David Andres Fecha y hora: 11.11.2026 11:28:06",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "Nancy Edith Difabio",
+        "dni_persona": "18.516.749",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "Nancy Edith Difabio"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.732,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Nancy Edith Difabio",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "18.516.749",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9212998151779175,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "de teléfono, etc) de la Cuenta vinculada al CVU 000000310078300997043 titularidad de Nancy Edith Difabio D.N.I.: 18.516.749.",
+            "contexto_local": "de teléfono, etc) de la Cuenta vinculada al CVU 000000310078300997043 titularidad de Nancy Edith Difabio D.N.I.: 18.516.749."
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador"
+          ],
+          "detalle": {
+            "score_total": 9.732,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "titular"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": false
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "784570",
+    "numero_archivo": "15",
+    "nombre_documento": "784570_1.pdf",
+    "texto_completo": "OFICIO N°548/2026\nRio gallegos, firmado electrónicamente en fecha que figura a pie de página.\nMercado Libre S.R.L. CASEROS AV. 3039 Piso:2 - CP. (1264) CIUDAD AUTONOMA BUENOS AIRES PRESENTE.\nTengo el agrado de dirigirme a Usted en los autos caratulados \"BANCO DE LA NACION ARGENTINA C/ DURBAS FEDERICO MARTIN S/ COBR0 DE PESOS/SUMAS DE DINERO\" Expte 15466/2026, que tramita por ante este Juzgado Federal de Primera Instancia de Río Gallegos a cargo del Dr. Claudio Marcelo Vázquez, Secretaria Ejecución Fiscal a cargo de la Dra. Sandra Marozzi, sito en calle Avenida San Martín N° 709 de la ciudad de Rio Gallegos, Provincia de Santa Cruz, a los fines de solicitarle tenga a bien disponer lo necesario para informar sobre último domicilio de la parte demandada Sr/a. FEDERICO MARTIN DURBAS, DNI 31.637.995.\nEl auto que ordena la medida en su parte pertinente dice: \"Río Gallegos, firmado electrónicamente en la fecha que obra a pie de página. Como se pide, autorízase el libramiento de oficio a Mercado Libre y/o a cualquier otro organismo que la parte actora estime pertinente, a fin de obtener datos relativos al domicilio del demandado, en los términos del art. 400 del Cód. Proc. Hágase saber que el diligenciamiento, reiteración y eventual libramiento de nuevos pedidos de informes vinculados con la presente autorización quedarán a exclusivo cargo y cuenta de la parte actora, sin necesidad de requerir nuevas autorizaciones judiciales, siempre que persigan la misma finalidad.... Fdo. CLAUDIO MARCELO VÁZQUEZ, JUEZ FEDERAL\".\nA los fines de que cumplida que sea la diligencia aquí solicitada, se detalla a continuación el mail institucional de esté Juzgado y Secretaria se envíe por ese media la correspondiente constancia de lo actuado: jfriogallegos.secejefisc@pjn.gov.ar.\nSe encuentran autorizados para diligenciar este oficio indistintamente los Dr. Pablo Omar Kairuz, el Dr. Emilio Matías Gutiérrez y/o la Susana Steffensen y/o Dres. Veronica Daniela Sosa – T° 118 F° 70 CPACF y GABRIEL MAGUNA - T°145 F°497 CPACF y/o quien ellos designen, para diligenciar el oficio solicitado, con facultades de ley.\nEl Juzgado es competente en razón del lugar, la persona y la materia, Juicio: Ejecutivo, Parte Actora: Banco de la Nación Argentina, Apoderado de la parte actora: Dr. Pablo Omar Kairuz, Letrado patrocinante: Dr. Emilio Matías Gutierrez, Domicilio Constituido: Avda. Presidente Dr. Néstor C. Kirchner Nº 799 de la ciudad de Rio gallegos, Santa Cruz, Parte demandada: Federico Martin Durbas, DNI 31.637.995.- Monto: $29.640.251,72.\nEl presente oficio es firmado electrónicamente por la actuaría, la firma referida posee validez legal conforme las Acs. 4/20 y 12/20, pudiendo constatar la validez de la firma y lo actuado en el sitio http://scw.pjn.gov.ar.\nSaludos a Ud. muy atentamente. –\nSANDRA M. MAROZZI SECRETARIA FEDERAL\n#41918299#525748535#20261030111412944\nPODER INDICIAL DE LA NACION RIO GALLEGOS FECHA SANTA CRUZ JUEGADO FEDERAL\nSignature Not Verified Digitally signed by SANDRA MARIA MÁROZZI Date: 2026.11.06 13:36:31 ART\n#41918299#525748535#20261030111412944",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "Federico Martin Durbas",
+        "dni_persona": "31.637.995",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [
+          "demandada"
+        ],
+        "variantes_nombre": [
+          "FEDERICO MARTIN DURBAS",
+          "Federico Martin Durbas"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 17.799,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "FEDERICO MARTIN DURBAS",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "31.637.995",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.7920027375221252,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "informar sobre último domicilio de la parte demandada Sr/a. FEDERICO MARTIN DURBAS, DNI 31.637.995.",
+            "contexto_local": "informar sobre último domicilio de la parte demandada Sr/a. FEDERICO MARTIN DURBAS, DNI 31.637.995."
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Federico Martin Durbas",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "31.637.995",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.9770771861076355,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Kirchner Nº 799 de la ciudad de Rio gallegos, Santa Cruz, Parte demandada: Federico Martin Durbas, DNI 31.637.995.- Monto: $29.640.251,72.",
+            "contexto_local": "Kirchner Nº 799 de la ciudad de Rio gallegos, Santa Cruz, Parte demandada: Federico Martin Durbas, DNI 31.637.995.- Monto: $29.640.251,72."
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "requerimiento_explicito",
+            "identificador_local_verificado"
+          ],
+          "detalle": {
+            "score_total": 17.799,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "demandada"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": true,
+              "cantidad_fragmentos": 2,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": true
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "784598",
+    "numero_archivo": "17",
+    "nombre_documento": "784598_1.pdf",
+    "texto_completo": "PODER JUDICIAL PROVINCIA DE RIO NEGRO JUZGADO DE PAZ 4TA CIRC. CIPOLLETTI\nOFICIO\nCipolletti, a los 11 días del mes de noviembre del año 2026\nMERCADO LIBRE S.R.L.\nMe dirijo a Ud. en los autos caratulados: “PINTO APARICIO, ALEJANDRO BRUNO S/ BENEFICIO DE LITIGAR SIN GASTOS - BENEFICIO DE LITIGAR SIN GASTOS\"(Expte. N° CI-00169-JP-2026), en trámite ante el Juzgado de Paz de la IV Circunscripción de la provincia de Río Negro, a cargo de la Dra. GABRIELA S. MONTORFANO -JUEZA, Secretaría Única a cargo de la Dra. LUCIANA N. SANCHEZ, sito en calle Sarmiento 360 de la ciudad de Cipolletti, Provincia de Río Negro, donde se ha dispuesto librar el presente a fin de que se sirva informar si el actor en autos, Alejandro Bruno PINTO APARICIO DNI N° 16.759.558, C.U.I.T. N°20-16759558-9 con domicilio en calle Los Pinos 1.150 de Cipolletti, posee cuentas de su titularidad en dicha billetera virtual he indique en detalle las operaciones (movimientos y saldos), correspondientes a los productos y/o servicios contratados por el/la actor/a en los últimos tres (3) meses. A tal fines tenga a bien de remitir su contestación vía correo electrónico a la casilla oficial: juzpazcipo@jusrionegro.gov.ar\nLa providencia que ordena el presente en su parte pertinente dice:” Cipolletti, 29 de Septiembre de 2026 ; (...)PROVEYENDO LA PRUEBA OFRECIDA POR LA PARTE ACTORA (...):INFORMATIVA: líbrese oficio a las entidades financieras y/o billeteras virtuales informadas, a fin de que indiquen en detalle las operaciones (movimientos y saldos), correspondientes a los productos y/o servicios contratados por el/la actor/a en los últimos tres (3) meses. A los fines de su tramitación, transcríbanse los arts. 369 y 370 del CPCyC (...). Fdo. Dra. GABRIELA S. MONTORFANO –JUEZA.-\nRecaudos y plazos para la contestación Artículo 369.- Las oficinas públicas, no pueden establecer recaudos o requisitos para los oficios, ni otros aranceles que\n1/3\nlo que determinen las leyes, decretos y ordenanzas. Deben contestar las oficinas públicas y las entidades privadas el pedido de informes o remitir el expediente, dentro de los veinte (20) días hábiles, salvo que la providencia que lo ordene fije otro plazo en razón de la naturaleza del juicio o circunstancias especiales. Cuando se trate de la inscripción de la transferencia de dominio en el Registro de la Propiedad, los oficios que se libren al Departamento Provincial de Aguas, a la Municipalidad, a la Agencia de Recaudación Tributaria y/o a cualquier otra repartición pública, deben contener el apercibimiento de que, si no son contestados dentro del plazo de veinte (20) días, el bien se inscribirá como si estuviere libre de deuda. El Juez o Jueza puede aplicar sanciones conminatorias progresivas en el supuesto de atrasos injustificados en las contestaciones de informes. La apelación que se deduzca tramita en expediente separado. La sanción puede ser aplicada al jefe o director de la repartición u organismo, en cuyo caso se lo debe notificar personalmente.\nRetardo Artículo 370.- Si por circunstancias atendibles el requerimiento no puede ser cumplido dentro del plazo, se debe informar al organismo, antes del vencimiento de aquel, sobre las causas y fecha en que se cumplirá. Si el Juez o Jueza advierte que determinada repartición pública sin causa justificada no cumple reiteradamente el deber de contestar oportunamente los informes, debe poner el hecho en conocimiento del Ministerio de Gobierno, a los efectos que correspondan, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas o personas físicas que sin causa justificada no contesten oportunamente, se les impondrá multa de hasta dos (2) veces el monto del jornal mínimo, vital y móvil por cada día de retardo, sin perjuicio de lo dispuesto en el artículo 369. La apelación que se deduzca contra la respectiva resolución tramita por expediente separado.\nSe deja constancia que se encuentra autorizada para diligenciar el presente, el Dr. Rubens Hiza Vila y/o el Sr. Diaz Cristian Daniel DNI 32.989.336.-\nPODER JUDICIAL PROVINCIA DE RIO NEGRO JUZGADO DE PAZ 4TA CIRC. CIPOLLETTI\nSaludo a Ud. atte.\nFirmado digitalmente por VILA Rubens Hiza Fecha: 2026.11.11 12:07:21 -03'00'\nVILA Ruben s Hiza\n3/3",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "Alejandro Bruno PINTO APARICIO",
+        "dni_persona": "16.759.558",
+        "cuit_cuil_persona": "20-16759558-9",
+        "roles_detectados": [
+          "actor"
+        ],
+        "variantes_nombre": [
+          "Alejandro Bruno PINTO APARICIO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 14.788,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni | cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Alejandro Bruno PINTO APARICIO",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "16.759.558",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "20-16759558-9",
+            "rol_detectado": "actor",
+            "nombre_confidence": 0.9540042281150818,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "fin de que se sirva informar si el actor en autos, Alejandro Bruno PINTO APARICIO DNI N° 16.759.558, C.U.I.T. N°20-16759558-9 con domicilio",
+            "contexto_local": "fin de que se sirva informar si el actor en autos, Alejandro Bruno PINTO APARICIO DNI N° 16.759.558, C.U.I.T. N°20-16759558-9 con domicilio"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "requerimiento_explicito",
+            "identificador_local_verificado"
+          ],
+          "detalle": {
+            "score_total": 14.788,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "actor"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": true
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "784617",
+    "numero_archivo": "18",
+    "nombre_documento": "784617_1.pdf",
+    "texto_completo": "EXP N°289636/26 Juzgado Civil y Comercial Nº12. Secretaria n°24\nOFICIO\nCorrientes, 10 de noviembre del 2026.-\nMERCADOLIBRE S.R.L CUIT: 30-70308853-4 Domicilio: CASEROS AV. 3039 Piso:2 1264 CABA, República Argentina S / D :\nTengo el agrado de dirigirme a Ud. a fin de hacerle saber que en los autos caratulados “LAGOMARCINO WALTER ADOLFO C/ LAGOMARCINO ZORRILLA ALEJANDRO LIONEL Y/O Q.R.R. S/ DAÑOS Y PERJUICIOS MÁS DE 50 JUS” EXP N° 289636/26 que tramita ante Juzgado Civil y Comercial Nº12. 1ª Circunscripción judicial a cargo del Juez Dr. Pablo Martin Teler Reyes sito en calle 9 de Julio N° 1099, 6° piso de la Ciudad de Corrientes, provincia de Corrientes se ha dispuesto librar el presente oficio a fin de que informen si el Sr LAGOMARCINO ZORRILLA ALEJANDRO LIONEL DNI N°40736446 posee alguna cuenta activa y remita los movimientos económicos desde el año 2021 a la fecha\nPara su conocimiento a continuación se transcriben las providencias que así lo ordenan: “ ACTA DE AUDIENCIA PRELIMINAR: En la ciudad de Corrientes, capital de la provincia del mismo nombre, el día 4 del mes de Noviembre de 2026, siendo las 11 horas, a los fines de celebrarse la audiencia preliminar del art 457 del CPCC, la que además será registrada por videofilmación con los elementos técnicos proporcionados por la Dirección de Informática del Poder Judicial y posteriormente resguardada en los servidores pertinentes, todo ello en los términos de los arts 103, 457 y 463 del CPCC. Se encuentran presentes: LAGOMARCINO WALTER ADOLFO, DNI 18,561,217, nacido el 8/12/1967, con el Dr. RICARDO ARIEL GONZALEZ ZUND. Por la parte accionante. Por la parte demandada: las dras. LOURDES SOSA MANTENBERG M.P 9730, CUIT 27-33481177-3, celular 3794-912110, correo electrónico lourdes.mantenberg@gmail.com, CUIF 839 y MARIELA ALEJANDRA VALDEZ, M.P 5848.\nEscaneado con CamScanner\nEXP N°289636/26 Juzgado Civil y Comercial Nº12. Secretaria n°24\nPreside el Juez Pablo Teler....Se ordena la producción de las siguientes pruebas: PRUEBAS DE LA ACTORA...3) INFORMATIVA: Se opone la demandada, la accionante pide su producción. Oidas, se admite la prueba. COSTAS A LA DEMANDADA. Líbrese oficio como se pide: A) Registro propiedad inmueble; B) MERCADO PAGO, C) PERSONAL PAY, D) UALA, E) NARANJA X, F) BRUBANK; G) BCRA ; DEBIENDO INFORMAR en el plazo de diez días hábiles, todo ello de conformidad a lo dispuesto en los arts 250 y 252 del CCPC, que deberán transcribirse. Los oficios deberán ser confeccionados y diligenciados por los letrados oferentes de las pruebas (250 CPCC, art 78 de la LOAJ (Dto Ley 26/00) y art 8 del Dto Ley 119/01.) Para el caso de que el oficio no se conteste en tiempo y forma, en este acto queda ordenado que se libren -de corresponder- los oficios reiteratorios pertinentes, que deberán ser contestados en el plazo de 5 días, bajo apercibimiento de lo dispuesto en el art 239 del Código Penal (que deberá transcribirse) y de hacer efectivos los apercibimientos previstos en el art 252 del CPCC, todo ello sin perjuicio de ordenar además las multas accesorias en concepto de astreintes, que serán aplicadas personalmente al titular de la dependencia por cada día de retardo (art 59CPCC).... FIRMADO ELECTRÓNICAMENTE POR PABLO MARTÍN TELER REYES JUEZ JUZGADO CIVIL Y COMERCIAL Nº 12 A CIRCUNSCRIPCIÓN JUDICIAL CORRIENTES.\nTenga a bien remitir respuesta al correo institucional del juzgado interviniente jcivilycom12-capital@juscorrientes.gov.ar como así también remitir las pruebas documentales en su poder por correo postal de ser necesario al domicilio del juzgado: 9 de Julio N° 1099 - 6º piso-Código Postal: 3400, Corrientes Capital.\nPara su conocimiento se transcribe el siguiente artículo del Código Procesal Civil y Comercial de la Provincia de Corrientes: ARTÍCULO 250 CPCC: Atribuciones de los abogados. Los pedidos de informes, testimonios y certificados, así como los de remisión de actuaciones ordenados en el proceso, serán requeridos por medio de oficios diligenciados por el abogado con transcripción de la resolución que los ordena y fija el plazo en que deberán remitirse. Debe asimismo, consignarse el objeto del informe según el artículo 249. Los oficios dirigidos a bancos, oficinas públicas, o entidades privadas que tuvieren por único objeto acreditar el haber del proceso sucesorio, serán presentados\ndel 2026.-\nEscaneado con CamScanner\nEXP N°289636/26 Juzgado Civil y Comercial N°12. Secretaria n°24\ndirectamente por el abogado, sin necesidad de previa petición judicial. Las partes deben acreditar el diligenciamiento de los pedidos de informes y las contestaciones serán remitidas directamente al tribunal con transcripción o copia del oficio. Cuando en la redacción de los oficios los profesionales se aparten de lo establecido en la providencia que los ordena, o de las formas legales, su responsabilidad disciplinaria se hará efectiva de oficio o a petición de parte. Artículo 252 CPCC: Plazos para la contestación. Recaudos. Las oficinas públicas y las entidades privadas deberán contestar el pedido de informes o remitir el expediente dentro de los diez (10) días hábiles, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del proceso o de circunstancias especiales. No podrán establecer recaudos que no estuvieran autorizados por ley. Los oficios deberán ser recibidos obligatoriamente a su presentación. El juez debe aplicar sanciones conminatorias progresivas al responsable funcional o al representante legal de las personas jurídicas requeridas, en el supuesto de atraso injustificado en las contestaciones de los informes de acuerdo con lo establecido en el inciso b) del artículo 59. La apelación interpuesta contra la resolución que impone sanciones conminatorias tramita en actuaciones separadas, se concede con efecto suspensivo y trámite inmediato. LEY ORGÁNICA DE LA ADMINISTRACIÓN DE JUSTICIA (Dto. Ley 26/00): ARTÍCULO 78: Los Abogados podrán recabar directamente de las oficinas públicas y bancos oficiales y particulares antecedentes, informes o certificados sobre hechos concretos atinentes al proceso civil o laboral en que actúen. En la solicitud se hará constar su nombre y domicilio, el nombre de las partes, carátula y número del expediente, auto que así lo disponga y nombre del Juez y Secretario. Las oficinas requeridas deberán expedirse remitiendo sus informes directamente al Juez de la causa dentro del plazo máximo de cinco días. DTO LEY 119/01 ARTÍCULO 8: Sin perjuicio de los derechos que se les acuerden en esta ley y en la legislación vigente, es atribución de los abogados en el ejercicio de su función, recabar directamente de la Administración pública, informes, antecedentes y certificaciones sobre hechos concretos atinentes a las causas en que intervengan. Estos pedidos deberán ser evacuados por la Administración dentro del término de quince días. En las solicitudes que formulen, los abogados harán constar su nombre, domicilio, carátula, proceso o causa en que actúen, tribunal y secretaría o dependencia administrativa correspondiente. Las contestaciones podrán ser entregadas personalmente\nEscaneado con CamScanner\nEXP N°289636/26 Juzgado Civil y Comercial N°12. Secretaria n°24\na los abogados o a quienes éstos designen o bien remitirlas a sus domicilios cuando así lo requieran. De no mediar petición en tal sentido, las respuestas se enviarán al tribunal o repartición interviniente\".\nCONSTE QUE EL DR. RICARDO ARIEL GONZALEZ ZUND MP- 2604- CUIF 2369 Y/O PERSONA QUE EL MISMO INDIQUE SE ENCUENTRAN FACULTADOS A INTERVENIR EN EL DILIGENCIAMIENTO DEL PRESENTE.-\nSALUDO A UD. ATENTAMENTE.\nDr. RICARDO ARIEL GONZALEZ ZUND ABOGADO S.T.J.Chaco Mat. 1354 - Fº 270 - T° V S.T.J.Ctes. Mat. 2604 - Fº 181 - Lº XII Corte Sup. Just. Nación - Tº 83 - Fº 443 CUIT: 20-14496034-4 Conv. Multilateral: 906-395611-2\nEscaneado con CamScanner",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO_MULTIPLE",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 2,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "LAGOMARCINO ZORRILLA ALEJANDRO LIONEL",
+        "dni_persona": "40736446",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "LAGOMARCINO ZORRILLA ALEJANDRO LIONEL"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.062,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LAGOMARCINO ZORRILLA ALEJANDRO LIONEL",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "40736446",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.8545023798942566,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "de que informen si el Sr LAGOMARCINO ZORRILLA ALEJANDRO LIONEL DNI N°40736446 posee alguna cuenta",
+            "contexto_local": "de que informen si el Sr LAGOMARCINO ZORRILLA ALEJANDRO LIONEL DNI N°40736446 posee alguna cuenta"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "requerimiento_explicito",
+            "identificador_local_verificado"
+          ],
+          "detalle": {
+            "score_total": 8.062,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": true
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_persona": "LOURDES SOSA MANTENBERG M.P 9730",
+        "dni_persona": "",
+        "cuit_cuil_persona": "27-33481177-3",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "LOURDES SOSA MANTENBERG M.P 9730"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.799,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "LOURDES SOSA MANTENBERG M.P 9730",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "27-33481177-3",
+            "rol_detectado": "",
+            "nombre_confidence": 0.773671567440033,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Por la parte accionante. Por la parte demandada: las dras. LOURDES SOSA MANTENBERG M.P 9730, CUIT 27-33481177-3, celular 3794-912110,",
+            "contexto_local": "Por la parte accionante. Por la parte demandada: las dras. LOURDES SOSA MANTENBERG M.P 9730, CUIT 27-33481177-3, celular 3794-912110,"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "requerimiento_explicito",
+            "identificador_local_verificado"
+          ],
+          "detalle": {
+            "score_total": 6.799,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": true
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "784627",
+    "numero_archivo": "19",
+    "nombre_documento": "784627_1.pdf",
+    "texto_completo": "Firmado digitalmente por GORDILLO Celia Enriqueta M... Fecha: 11.11.2026 09:21\nJuzgado en lo Civil y Comercial N° 3 Secretaria N° 3 Paraná - Entre Ríos\nOFICIO DIGITAL\nPARANA, 11 de noviembre de 2026.\nAL SR. PRESIDENTE MERCADO LIBRE SU DESPACHO\nHago saber a Ud. que en los autos caratulados \"FERREYRA, AGUSTIN S/ SUcesORIO SIN TESTAMENTAR\", Expte. N° DA1177, que tramitan por ante el Juzgado de 1ª Instancia en lo Civil y Comercial N° 3 de Paraná, a cargo de la Dra. DANIELA N. PRADO Jueza 1ra.Inst.Civ.y Com.nº3 -Sup-,Secretaría de la suscripta, se ha ordenado librar el presente a fin de que tenga a bien informar la existencia de fondos depositados en dichas entidades, a nombre del causante, AGUSTIN FERREYRA, D.N.I. N°39261503, fallecido el 31/07/2026, y en caso de encontrarse disponibles, los transfieran a la cuenta judicial perteneciente a estos autos y a la orden de la suscripta, a saber: Cuenta: 62- 123325/9, CBU de la Cuenta: 3860062103000012332592 .\nA continuación se transcribe la resolución que ordena el presente y que a continuación se transcribe: \"PARANÁ, 11 de noviembre de 2026.- (...) Conforme lo peticionado, hágase saber al interesado que se procedió a la apertura de una cuenta judicial vinculada a estos autos, a saber: Cuenta: 62-123325/9, CBU de la Cuenta: 3860062103000012332592 . Atento lo solicitado en el escrito precedente y constancias de autos, líbrense oficios al BANCO BBVA ARGENTINA S.A., BANCO SANTANDER ARGENTINA S.A. y MERCADO PAGO, respectivamente, a fin de que informen la existencia de fondos depositados en dichas entidades, a nombre del causante, AGUSTIN FERREYRA, D.N.I. N°39261503, fallecido el 31/07/2026, y en caso de encontrarse disponibles, los transfieran a la cuenta judicial perteneciente a estos autos y a la orden de la suscripta. Para la comunicación de la presente, líbrense oficio a la referida entidad banaria, quedando la confección y diligenciamiento a cargo de este organismo a las casillas de correo electrónico: recepcionoficios-arg@bbva.com; notificaciones@mercadolibre.com y deberá diligenciarse por el letrado al Buzón Web de la entidad bancaria. https://www.santander.com.ar/forms/buzon-oficios/\"\nFdo.: ELENA BEATRIZ ALBORNOZ Juez 1ra.Inst.Civ.y Com.n°4 a/c\nSe hace saber que la contestación del presente debe ser enviada al e-mail del Juzgado CIVIL Y COMERCIAL N° 3 - jdocyc3- pna@jusentrerios.gov.ar-\nSaludo a Ud. atentamente.\nCELIA ENRIQUETA GORDILLO Abogada - Secretaria\nEl presente documento se encuentra firmado digitalmente, con certificados emitidos por ONTI. La verificación se efectúa en www.firmar.gob.ar, mediante Acrobat Reader o aplicación similar.-",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "AGUSTIN FERREYRA",
+        "dni_persona": "39261503",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [
+          "causante"
+        ],
+        "variantes_nombre": [
+          "AGUSTIN FERREYRA"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 19.904,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "AGUSTIN FERREYRA",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "39261503",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "causante",
+            "nombre_confidence": 0.9882838726043701,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "fondos depositados en dichas entidades, a nombre del causante, AGUSTIN FERREYRA, D.N.I. N°39261503, fallecido el 31/07/2026,",
+            "contexto_local": "fondos depositados en dichas entidades, a nombre del causante, AGUSTIN FERREYRA, D.N.I. N°39261503, fallecido el 31/07/2026,"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "AGUSTIN FERREYRA",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "39261503",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "causante",
+            "nombre_confidence": 0.9882838726043701,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "fondos depositados en dichas entidades, a nombre del causante, AGUSTIN FERREYRA, D.N.I. N°39261503, fallecido el 31/07/2026,",
+            "contexto_local": "fondos depositados en dichas entidades, a nombre del causante, AGUSTIN FERREYRA, D.N.I. N°39261503, fallecido el 31/07/2026,"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 19.904,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "causante"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": true,
+              "cantidad_fragmentos": 2,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": false
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "784633",
+    "numero_archivo": "20",
+    "nombre_documento": "784633_1.pdf",
+    "texto_completo": "OFICIO JUDICIAL\nCABA, de Noviembre del 2026.\nMERCADO LIBRE S.R.L / MERCADO PAGO SERVICIOS DE PROCESAMIENTO S.R.L\nS / D\nTengo el agrado de dirigirme a Usted en mi carácter de letrado patrocinante de la parte demandada, en los autos caratulados: \"CARITA, SILVINA SOLEDAD c/ RISSO, CARLOS LEONARDO s/ALIMENTOS: MODIFICACION\". (Expte n° 32840/2026), en trámite por ante el Juzgado Nacional de Primera Instancia en lo Civil N° 9, a cargo (subrogante) de la Dra. Califano, Lucila, Secretaría Única a cargo del Dr. Romero, Francisco, con sede en la calle Lavalle 1220, cuarto piso de la Capital Federal, con el objeto que informe si la actora Sra. SILVINA SOLEDAD CARITA, DNI N° 27.694.948, posee cuenta a su nombre y en caso de ser positivo, se informe el monto de dinero depositado en la actualidad, como así también los últimos movimientos desde el 01/10/2025 a la fecha de contestación del oficio. Ello, autorizando el levantamiento del secreto bancario en los términos del artículo 39 de la Ley de Entidades Financieras. Dejando constancia que por tratarse de un pedido de informe efectuado en un proceso de familia de naturaleza alimentaria no rige el secreto bancario y/o fiscal. Hágase saber que el correo electrónico institucional del juzgado que consta en la guía judicial (https://www.pjn.gov.ar/guia ) es incivil9@pjn.gov.ar debiendo efectuarse al mismo las contestaciones a los pedidos de informe. Como recaudo se transcribe el auto que ordena la medida: \"Buenos Aires, 14 de octubre de 2026. (...) Prueba ofrecida por el demandado a fs. 72/83: INFORMATIVA:. Mediante la presentación de fs. 123/135 punto IV se opuso la parte actora parcialmente a la producción de la prueba informativa ofrecida por el demandado a la Superintendencia de Administración de la Policía Federal Argentina –División Remuneraciones-, y por otro lado, a la Caja de Jubilaciones, Retiros y Pensiones de la Policía Federal Argentina, a fin de que informe situación de revista, jerarquía, destino, remuneración bruta y neta, descuentos obligatorios y remita los últimos doce (12) recibos de haberes. En la especie, considero que asiste razón a la actora debiendo en consecuencia liberarse los oficios solicitados a la Superintendencia de Administración de la Policía Federal Argentina –División Remuneraciones-, y por otro lado, a la Caja de Jubilaciones, Retiros y Pensiones de la Policía Federal Argentina, en los términos del art. 400 del Código Procesal,\norganismos que refieran sus ingresos mensuales sin necesidad de informar las tareas que la actora efectúa en las reparticiones. Requíérase en forma electrónica y por secretaría un informe al SIN TyS en el que conste toda la información económica referida a la Sra. Silvina Soledad Carita (DNI N° 27.694.948). Líbrese los restantes oficios solicitados en el punto 16 b., debiendo tramitarlo la dirección letrada del demandado en orden a las facultades que otorga el art 400 del CPCCN., en su caso en los términos de la Ley 22.172. En el caso del ordenado al BCRA dejando constancia que deberá circularizar el pedido mediante formulario \"D\" entre las entidades controladas, y a las instituciones bancarias haciéndole saber que no resulta oponible a la manda judicial de informe el secreto bancario ni fiscal, al ser ordenada en un proceso de familia reservado únicamente a las partes y de naturaleza alimentaria. Fdo. Lucila Califano.- Buenos Aires 3 de noviembre de 2026. Atento lo informado por el BCRA (fs. 317), líbrese oficio como se solicita al BANCO DE LA NACION ARGENTINA, al BANCO BBVA ARGENTINA S.A., a BRUBANK S.A.U., a las billeteras virtuales MERCADO PAGO y MICRO SISTEMAS S.A.U (Personal Pay) en los términos del art. 400 del Código Procesal Civil y Comercial de la Nación, dejando constancia que por tratarse de un pedido de informe efectuado en un proceso de familia de naturaleza alimentaria no rige el secreto bancario y/o fiscal. Se transcribe asimismo lo dispuesto en los siguientes artículos del CPCC: Artículo 398 .-Las oficinas públicas y las entidades privadas deberán contestar el pedido de informes o remitir el expediente dentro de los diez días hábiles, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales. No podrán establecer recaudos que no estuvieran autorizados por ley. Los oficios librados deberán ser recibidos obligatoriamente a su presentación. El juez deberá aplicar sanciones conminatorias progresivas en el supuesto de atraso injustificado en las contestaciones de informes. La apelación que se dedujera contra la resolución que impone sanciones conminatorias tramita en expediente separado Cuando se tratare de la inscripción de la transferencia de dominio en el Registro de la Propiedad, los oficios que se libren a Obras Sanitarias de la Nación (e.l.) al ente prestador de ese servicio y al Gobierno de la Ciudad de Buenos Aires o Municipio de que se trate, contendrán el apercibimiento de que, si no fueran contestados dentro del plazo de diez días, el bien se inscribirá como si estuviese libre de deudas. Artículo 400.-Los pedidos de informes, testimonios y certificados, así como los de remisión de expedientes ordenados en el juicio, serán requeridos por medio de oficios firmados, sellados y diligenciados por el letrado patrocinante con transcripción de la resolución que los ordena y que fija el plazo en que deberán remitirse. Deberá, asimismo, consignarse la prevención que corresponda según el artículo anterior. Los oficios dirigidos a bancos, oficinas públicas, o entidades privadas que tuvieren por único objeto acreditar el haber del juicio sucesorio, serán presentados directamente por el abogado patrocinante, sin\nnecesidad de previa petición judicial. Deberá otorgarse recibo del pedido de informes y remitirse las contestaciones directamente a la secretaría con transcripción o copia del oficio. Cuando en la redacción de los oficios los profesionales se apartaren de lo establecido en la providencia que los ordena, o de las formas legales, su responsabilidad disciplinaria se hará efectiva de oficio o a petición de parte.-----\nSin otro particular, saludo a Ud. muy atte...\nROBERTO V. DE FINO ABOGADO T*130 F 811 CACF T*XXII F*56 CASM T*124 F 374 CFASM",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "Silvina Soledad Carita",
+        "dni_persona": "27.694.948",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [
+          "actora"
+        ],
+        "variantes_nombre": [
+          "SILVINA SOLEDAD CARITA",
+          "Silvina Soledad Carita"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 17.849,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "SILVINA SOLEDAD CARITA",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "27.694.948",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "actora",
+            "nombre_confidence": 0.8763026595115662,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Capital Federal, con el objeto que informe si la actora Sra. SILVINA SOLEDAD CARITA, DNI N° 27.694.948, posee cuenta a",
+            "contexto_local": "Capital Federal, con el objeto que informe si la actora Sra. SILVINA SOLEDAD CARITA, DNI N° 27.694.948, posee cuenta a"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Silvina Soledad Carita",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "27.694.948",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9264095425605774,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "conste toda la información económica referida a la Sra. Silvina Soledad Carita (DNI N° 27.694.948). Líbrese los restantes",
+            "contexto_local": "conste toda la información económica referida a la Sra. Silvina Soledad Carita (DNI N° 27.694.948). Líbrese los restantes"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "requerimiento_explicito",
+            "identificador_local_verificado"
+          ],
+          "detalle": {
+            "score_total": 17.849,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "actora"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": true,
+              "cantidad_fragmentos": 2,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": true
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  }
+]
