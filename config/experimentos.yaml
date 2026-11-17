@@ -694,3 +694,42 @@ experiments:
       - inicio_fragmento
       - fin_fragmento
       - texto_completo
+
+  # ============================================================
+  # V1 - GLINER2 MULTI - OFICIOS INTERNACIONALES
+  # Prueba experimental con fragmentos complementarios
+  # Mismo modelo, esquema y thresholds que los 80 oficios
+  # SIN consolidación
+  # ============================================================
+  multi_v1_oficios_fragmentos_thr50_internacional:
+    run_name: multi_v1_oficios_fragmentos_thr50_internacional
+    model: gliner2_multi
+    schema: schema_v1_persona_objeto_oficio_fragmentos
+    input_mode: fragmentos
+    input_file: data/input_oficios/fragmentos_internacional.csv
+    text_column: fragmento
+    threshold: 0.50
+
+    field_thresholds:
+      nombre_persona: 0.50
+      dni_persona: 0.30
+      cuit_cuil_persona: 0.30
+      rol_persona: 0.50
+
+    # filters:
+    #   categoria:
+    #     - Datos_Embargado
+
+    metadata_columns:
+      - numero_archivo
+      - id
+      - nombre
+      - contador_interno
+      - palabra_clave
+      - cantidad_palabras_clave
+      - categoria
+      - posicion_inicio
+      - posicion_fin
+      - inicio_fragmento
+      - fin_fragmento
+      - texto_completo

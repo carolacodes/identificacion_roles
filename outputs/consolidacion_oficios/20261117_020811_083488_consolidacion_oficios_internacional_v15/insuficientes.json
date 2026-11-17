@@ -1,0 +1,604 @@
+[
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "780381",
+    "numero_archivo": "1",
+    "nombre_documento": "780381_1.pdf",
+    "texto_completo": "E15000012205036\nPROVINCIA DE BUENOS AIRES PODER JUDICIAL MINISTERIO PÚBLICO\nOficio\nPP-15-00-051127-26/00 s/Presunto robo de celular\nSan Martin, 06 de noviembre de 2026\nAl Sr. representante legal de Mercado Pago S/D\nTengo el agrado de dirigirme a Ud. en mi carácter de Agente Fiscal de la Unidad Funcional de Instrucción y Juicio nro. 5 del departamento judicial de General San Martín, sita en Avenida Ricardo Balbin 1753, segundo piso, de la localidad y partido de Gral. San Martín, en el marco de la IPP 15-00-051127-26, a fin de solicitarle en carácter de URGENTE se bloquee parcialmente la cuenta a nombre de Gabriela Karina Ledesma, CVU: 0000003100071969112187, CUIL: 27417562260, por el monto de $58.446 (cincuenta y ocho mil cuatrocientos cuarenta y seis pesos argentinos), por el plazo de 180 días a partir del día de la fecha.\nAsimismo, solicito se informe si en la cuenta mencionada hubo cambios en sus formas de acceso, ya sea modificaciones de contraseña o formas biométricas de ingreso.\nSin otro particular, saludo a Ud. atentamente.\nPALADINO Mariela Anahí Agente Fiscal UNIDADES FUNCIONALES DE INSTRUCCIÓN Y JUICIO - UNIDAD FUNCIONAL DE INSTRUCCIÓN Y JUICIO Nº 5 mapaladino@mpba.gov.ar - Fecha:06-11-2026 09:02:25\nPag. 1 de 1",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_candidatos_en_fragmentos",
+        "descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido.",
+    "id": "780618",
+    "numero_archivo": "3",
+    "nombre_documento": "780618_1.pdf",
+    "texto_completo": "6/11/26, 10:15 TEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS\nTEXT O Y DATOS DE LA NOTIFICACIÓN\nUsuario conectado: GOMEZ Micaela Soledad - 27357743570@notificaciones.scba.gov.ar\nOrganismo: JUZGADO DE FAMILIA N° 1 - TANDIL\nCarátula: MARCOVICH KOPP, MICAEA SOFIA C/ MUÑOZ, MARCOS DAMIAN S/ ALIMENTOS\nNúmero de causa: 36036\nTipo de notificación: OFICIO ELECTRONICO\nDestinatarios: 27357743570@notificaciones.scba.gov.ar\nFecha notificación: 05/11/2026 12:37:15\nAlta o disponibilidad 5/11/2026 12:37:16\nFirma digital: Firma válida\nFirmado y Notificado por: BRAZZOLA Pablo Sebastian. SECRETARIO --- Certificado Correcto. Fecha de Firma: 05/11/2026 12:37:15\nFirmado por: GOMEZ Micaela Soledad. --- Certificado Correcto. Fecha de Firma: 05/11/2026 11:01:13\nOFICIO\nEXENTO DE SELLADO Tandil, de noviembre del 2026.-\nAl Sr. director/a MERCADO PAGO Presente\nMe dirijo a Ud., en la causa caratulada: “MARCOVICH KOPP, MICAEA SOFIA C/ MUÑOZ, MARCOS DAMIAN S/ ALIMENTOS” Expte N°36036, que tramitan por ante el Juzgado de Familia Nº 1 del Departamento Judicial de Azul, a cargo de la Jueza, Monserat Silvia Ines, sito en la calle Yrigoyen N°857 de la Ciudad de Tandil, Secretaría única, correo electrónico juzfam1- tn@jusbuenosaires.gov.ar, a los fines de que informen si el demandado Sr. Muñoz Marcos Damián DNI: 32.981.114 posee cuentas en dichas entidades - caja de ahorro, cuentas corrientes, caja de seguridad o fondos de inversión y/o plazos fijos-, y si poseen tarjeta de crédito y/o débito emitidas por el Banco, y en caso afirmativo, remita a autos resúmenes de cuenta mensuales completos de los últimos cinco (5) años a la fecha de contestación del informe. Asimismo, informe si el demandado ha contratado un crédito o préstamo. En caso afirmativo informen monto, plazo, forma de pago, cantidad de cuotas, intereses del mismo y acompañe la declaración de bienes y ganancias presentada para su otorgamiento. A su vez, informe las transferencias que el demandado ha realizado, indicando fecha y monto. Y en su caso, si ha contratado plazos fijos en moneda local y/o en moneda extranjera. En caso afirmativo informe monto, plazo y acompañe la documentación de las constituciones del mismo. En el caso de entidades que trabajen con criptomonedas, informe con la cartera de criptomonedas que operan el demandado, detalladamente en valores en moneda local y extranjera, con las transferencias que realizan a través de su entidad, indicando fecha y monto; como así también todo lo demás que pueda informar respecto a dicha persona que consten en sus registros. Como también, informe si ha comprado moneda extranjera, indicando cantidad, monto por el que adquirió la misma, remitiendo el total acumulado de compras/ventas de dicha moneda realizadas desde la apertura de la cuenta en vuestra entidad hasta la actualidad. Por último, informe si el demandado ha realizado un Fondo Común de Inversión (FCI). En caso afirmativo informe montos, plazos de los mismos y acompañe la documentación de las constituciones respectivas;\nEl auto que ordena el presente dice: “Tandil, (...) En cuanto a la PRUEBA se provee la ofrecida por la PARTE ACTORA:3.1.) DOCUMENTAL: Téngase presente. 3.2.) INFORMATIVA: Ofícese como se solicita A A Mercado pago a los fines de que informen si el demandado Sr. Muñoz Marcos Damián DNI: 32.981.114 posee cuentas en dichas entidades - caja de ahorro, cuentas corrientes, caja de seguridad o fondos de inversión y/o plazos fijos-, y si poseen tarjeta de crédito y/o débito emitidas por el Banco, y en caso afirmativo, remita a autos resúmenes de cuenta mensuales completos de los últimos cinco (5) años a la fecha de contestación del informe. Asimismo, informe si el demandado ha contratado un crédito o préstamo. En caso afirmativo informen monto, plazo, forma de pago, cantidad de cuotas, intereses del mismo y acompañe la declaración de bienes y ganancias presentada para su otorgamiento. A su vez, informe las transferencias que el demandado ha realizado, indicando fecha y monto. Y en su caso, si ha contratado plazos fijos en moneda local y/o en moneda extranjera. En caso afirmativo informe\nhttps://notificaciones.scba.gov.ar/InterfazBootstrap/textonotificacionimprimir.aspx?idnot=164352055&fecha=2&codNotif= 1/2\nmonto, plazo y acompañe la documentación de las constituciones del mismo. En el caso de entidades que trabajen con criptomonedas, informe con la cartera de criptomoneda que operan el demandado, detalladamente en valores en moneda local y extranjera, con las transferencias que realizan a través de su entidad, indicando fecha y monto; como así también todo lo demás que pueda informar respecto a dicha persona que consten en sus registros. Como también, informe si ha comprado moneda extranjera, indicando cantidad, monto por el que adquirió la misma, remitiendo el total acumulado de compras/ventas de dicha moneda realizadas desde la apertura de la cuenta en vuestra entidad hasta la actualidad. Por último, informe si el demandado ha realizado un Fondo Común de Inversión (FCI). En caso afirmativo informe montos, plazos de los mismos y acompañe la documentación de las constituciones respectivas; (...) Fdo. Electrónicamente por Saralegui Ramiro, Juez.\nArt. 396 CPCC.- RECAUDOS Y PLAZOS PARA LA CONTESTACIÓN.- Las oficinas públicas no podrán establecer recaudos o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas.\nDeberán contestar el pedido de informes o remitir el expediente dentro de 20 días hábiles y las entidades privadas dentro de 10, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales.\nArt. 397 RETARDO.- Si por circunstancias atendibles el requerimiento no pudiere ser cumplido dentro del plazo, se deberá informar al Juzgado, antes del vencimiento de aquél, sobre las causas y la fecha en que se cumplirá. Si el Juez advirtiere que determinada repartición pública, sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno, a los efectos que correspondan, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas que sin causa justificada no contestaren oportunamente se les impondrá multa de un valor equivalente a dos (2) Jus por cada día de retardo. La apelación que se dedujere contra la respectiva resolución tramitará en expediente por separado.\nSe hace saber que el valor del jus asciende a la suma de $56.426\nSe encuentran autorizados para diligenciar este oficio la Dra. Micaela Soledad Gómez T°XI F°13 del CAA y la Dra. Lucía Mabel Lorusso Dierickx, T° VI F° 16 del CAA y/o el Sr. Juan Saúl Duhalde, DNI 22.577.094, y/o a quienes indistintamente designen.\nSaludo a Ud. muy atentamente\nPara verificar la notificación, y las copias de traslado si las hubiere, ingrese a:\nhttps://notificaciones.scba.gov.ar/verificar.aspx\nSu código de verificación es: H2EM364M",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "780740",
+    "numero_archivo": "4",
+    "nombre_documento": "780740_1.pdf",
+    "texto_completo": "REPUBLICA ARGENTINA\nDILICÍA FEDERAL ARGENTINA\nREPÚBLICA ARGENTINA POLICIA FEDERAL ARGENTINA DIVISIÓN DELITOS CONTRA LA SALUD PUBLICA\n“2026 – AÑO DE LA GRANDEZA ARGENTINA”.- 1329-71-000.0 ___/2026”.- J.C.C.-\nBuenos Aires, de noviembre del año 2026.-\nSR. REPRESENTANTE LEGAL:\nTengo el agrado de dirigirme a Usted, en relación a actuaciones sumariales que se labradas en el local en esta División DELITOS CONTRA LA SALUD PUBLICA, de esta POLICIA FEDERAL ARGENTINA; las cuales llevan número de registro interno bajo N° 1329-71-000.395/2.026, en el marco de la \"CAUSA NºCFP 5089/2026, (COIRÓN CASO 187838/2026) CARATULADA \"ERAUSQUIN, LEANDRO CONTRA LA ADMINISTRACION PUBLICA Y ESTAFA\" la cual tiene intervención de la FISCALÍA NACIONAL EN LO CRIMINAL Y CORRECCIONAL FEDERAL NRO. 12 A CARGO DE LA DRA. MARÍA ALEJANDRA MANGANO.-\nEn el marco de las actuaciones de marras y por así haberlo solicitado la Sra. Fiscal; que se informe CARÁCTER DE MUY URGENTEMENTE: toda información que se registre en sus bases de datos acerca del ciudadano LEANDRO ERAUSQUIN, D.N.I. 34.753.007.-\nEn cuanto a ello, se solicita se indique, números de teléfonos, domicilios registrados, última identificación FACE ID y servicios los cuales se encuentren registrados con sus datos patronímicos (entiéndase a servicios pagos como Telecom, Edenor, Edesur, Personal, Movistar, Claro, Seguros, etc.).\nDicha información deberá ser remitida a esta División DELITOS CONTRA LA SALUD PUBLICA, sito en la calle Madariaga 6976 de esta ciudad, teléfono 1131546412 y/o el correo electrónico oficial div_dcsp@policiafederal.gov.ar\nSin otro particular, saludo a Usted muy Atte.-\nComisario Salicetan Alberto PEDUZZI Jefe División DELITOS CONTRA LA SALUD PÚBLICA\n-///-DE MERCADO LIBRE S.R.L.(notificaciones@mercadolibre.com). S _________________ / __________________ D\n[ILEGIBLE]",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "784519",
+    "numero_archivo": "6",
+    "nombre_documento": "784519_1.pdf",
+    "texto_completo": "PODER JUDICIAL PROVINCIA DE RIO NEGRO\nJUZGADO DE PAZ 2DA CIRC. GRAL. ROCA - G. ROCA\nFirmado digitalmente por BENITEZ Rodrigo Fecha y hora: 10.11.2026 19:28:43\nOFICIO LEY 22172\nGeneral Roca, 10 de noviembre de 2026.\nMERCADO PAGO S / D\nMe dirijo a usted en autos caratulados: \"SERRI JUAN BELMAR C/ MIRANDA ANABELA BEATRIZ S/ BENEFICIO DE LITIGAR SIN GASTOS\", Expte. N° RO-01923-JP-2026, en trámite por ante el Juzgado de Paz a cargo del Abg. Rodrigo Benitez, juez de Paz, Secretaría Única a cargo del Abg. Henoch Romero Boue, con asiento de funciones en calle San Martín 867 de la ciudad de General Roca, perteneciente a la Segunda Circunscripción Judicial de la provincia de Río Negro, e mail: juzpazroca@jusrionegro.gov.ar, a los efectos de que proceda a informar respecto a los datos bancarios referidos a los saldos en cuenta y movimientos realizados vinculados a JUAN BELMAR SERRI, DNI N° 33.507.686, desde el día 10/08/2026 hasta la actualidad.\nLa resolución que ordena la presente en su parte pertinente dice: “General Roca, 21 de octubre de 2026. … Atento el estado de autos, corresponde requerir información a las entidades activas mencionadas por el B.C.R.A. (... MERCADO PAGO, ...). Por ello, líbranse oficios u oficios Ley 22.172, según el caso, con confronte del Tribunal, haciéndoles saber que deberán informar respecto a los datos bancarios referidos a los saldos en cuenta y movimientos realizados vinculados a JUAN BELMAR SERRI, DNI N° 33.507.686, desde el día 10/08/2026 hasta la actualidad, con transcripción de los arts. 369 y 370 del CPCyC RN. A tales fines hágase saber a la entidad oficiada que se lo libera del secreto bancario. Asimismo hágase saber en todos los casos a los organismos oficiados que podrán remitir sus contestaciones al mail juzpazroca@jusrionegro.gov.ar, en un único archivo en formato PDF. Fdo. Henoch Romero Boue. Juez de Paz Suplente”.\nSe hace saber a los organismos oficiados que podrán remitir sus\n1/3\nPODER JUDICIAL PROVINCIA DE RIO NEGRO JUZGADO DE PAZ 2DA CIRC. GRAL. ROCA - G. ROCA\ncontestaciones al mail juzpazroca@jusrionegro.gov.ar, en un único archivo en formato PDF.\nA continuación, se transcriben los arts. 369 y 370 del Código Procesal Civil y Comercial: \"Artículo 369.- Las oficinas públicas, no pueden establecer recaudos o requisitos para los oficios, ni otros aranceles que lo que determinen las leyes, decretos y ordenanzas. Deben contestar las oficinas públicas y las entidades privadas el pedido de informes o remitir el expediente, dentro de los veinte (20) días hábiles, salvo que la providencia que lo ordene fije otro plazo en razón de la naturaleza del juicio o circunstancias especiales. Cuando se trate de la inscripción de la transferencia de dominio en el Registro de la Propiedad, los oficios que se libren al Departamento Provincial de Aguas, a la Municipalidad, a la Agencia de Recaudación Tributaria y/o a cualquier otra repartición pública, deben contener el apercibimiento de que, si no son contestados dentro del plazo de veinte (20) días, el bien se inscribirá como si estuviere libre de deuda. El Juez o Jueza puede aplicar sanciones conminatorias progresivas en el supuesto de atrasos injustificados en las contestaciones de informes. La apelación que se deduzca tramita en expediente separado. La sanción puede ser aplicada al jefe o director de la repartición u organismo, en cuyo caso se lo debe notificar personalmente.\". \"Artículo 370.- Si por circunstancias atendibles el requerimiento no puede ser cumplido dentro del plazo, se debe informar al organismo, antes del vencimiento de aquel, sobre las causas y fecha en que se cumplirá. Si el Juez o Jueza advierte que determinada repartición pública sin causa justificada no cumple reiteradamente el deber de contestar oportunamente los informes, debe poner el hecho en conocimiento del Ministerio de Gobierno, a los efectos que correspondan, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas o personas físicas que sin causa justificada no contesten oportunamente, se les impondrá multa de hasta dos (2) veces el monto del jornal mínimo, vital y móvil por cada día de retardo, sin perjuicio de lo dispuesto en el artículo 369. La apelación que se deduzca contra la respectiva resolución tramita por expediente separado.\".\nComo recaudo legal se consigna lo siguiente:\n2/3\nPODER JUDICIAL PROVINCIA DE RIO NEGRO\nJUZGADO DE PAZ 2DA CIRC. GRAL. ROCA - G. ROCA\nI. Tribunal oficiante: JUZGADO DE PAZ DE GENERAL ROCA. II. Competencia: La competencia del Tribunal no ha sido cuestionada en autos. III. Partes: Actora: JUAN BELMAR SERRI.- Demandada: MIRANDA ANABELA BEATRIZ. IV. Monto del Juicio: SIN MONTO.\nSe deja constancia que el presente se encuentra EXENTO de todo pago y/o arancel atento tratarse de un Beneficio de litigar sin Gastos.\nEl Dr. Ariel Alberto Balladini y/o quienes este designe se encuentran autorizados para el diligenciamiento del presente oficio.\nSin más, saludo atentamente.\nRodrigo Benitez Juez de Paz\nPara comprobar que esta notificación es verdadera y poder ver su contenido y la documentación que se agregó, ingrese a la siguiente página de internet: \"https://puma.jusrionegro.gov.ar/expjud/validar-documento\", y donde está “identificador del documento” escriba el número RO-01923-JP-2026 y a continuación el código JKRG-QUZH, o bien escaneé el código QR situado en el margen superior derecho.\n3/3",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "784524",
+    "numero_archivo": "7",
+    "nombre_documento": "784524_1.pdf",
+    "texto_completo": "Ministerio Público de la Nación\nBuenos Aires, 11 de noviembre de 2026.\nAl Sr. Apoderado Legal de Mercado Pago. -\nS / D\nAndrea Costa, en mi carácter de Auxiliar Fiscal de la Fiscalía Nacional en lo Criminal y Correccional Nro. 57, sita en Lavalle 1171 Piso 9°, CABA, (tel/fax 7092-6187/6188; email: fiscricor57-nac@mpf.gov.ar), tiene el agrado de dirigirse a Ud. en relación al Caso Coiron nro. 177312/2026, caratulada: “N.N. s/ESTAFA DENUNCIANTE: CROSETTO, JUAN PABLO Y OTRO”, a fin de que, dentro de los tres días de notificado, remita por correo electrónico (fiscricor57- nac@mpf.gov.ar) el listado de operaciones registradas en la cuenta titularidad de Adrian Delgado, DNI 43.922.338, con fecha 09/07/2026.\nSin otro particular, saludo a Ud. atte.\nCOSTA Andrea Paola\nFirmado digitalmente por COSTA Andrea Paola Fecha: 2026.11.11 11:25:56 -03'00'",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_candidatos_en_fragmentos",
+        "descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido.",
+    "id": "784528",
+    "numero_archivo": "8",
+    "nombre_documento": "784528_1.pdf",
+    "texto_completo": "11/11/26, 11:46 TEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS\nTEXT OY DATOS DE LA NOTIFICACIÓN\nUsuario conectado: VALLI YANINA ALEJANDRA - 23329775224@notificaciones.scba.gov.ar Organismo: JUZGADO DE FAMILIA N° 1 - SAN MIGUEL Carátula: ZAJAMA MICAE LA LISETTE C/ MUÑOZ JOAQUIN DANIEL S/ ALIMENTOS Número de causa: 36310 Tipo de notificación: OFICIO - ACOMPAÑA Destinatarios: 23329775224@notificaciones.scba.gov.ar Fecha notificación: 10/11/2026 00:00:00 Alta o disponibilidad 6/11/2026 08:11:10 Firma digital: Firma válida Firmado y Notificado por: PAOLINI Sebastian Matias. SECRETARIO --- Certificado Correcto. Fecha de Firma: 06/11/2026 08:11:10 Firmado por: VALLI Yanina Alejandra. --- Certificado Correcto. Fecha de Firma: 05/11/2026 16:38:45\nOFICIO\nSan Miguel, Noviembre de 2026.-\nA MERCADO LIBRE SRL (MERCADOPAGO) S_______ / _______D\nTengo el agrado de dirigirme a Ud. en autos caratulados “ZAJAMA MICAE LA LISETTE C/ MUÑOZ JOAQUIN DANIEL S/ ALIMENTOS” Exp. 36310 que tramitan ante el Juzgado de Familia N°1 de San Miguel, del Departamento Judicial de San Martín, a cargo de la Dra. Silvana Elina Tristán, Secretaría a cargo del Dr.Dr. Pablo Nicolás Tagliavini y Dr. Sebastián Matías Paolini; sito en la calle Av. Ricardo Balbín Nro: 3100, Provincia de Buenos Aires, con el objeto de solicitarle, tenga a bien informar si el Sr. MUÑOZ JOAQUIN DANIEL, titular del DNI N° 40.948.975, CUIL N° 20-40948975-4, posee o tuvo cuenta a su nombre y en caso afirmativo envíe historial de actividad / extracto de la cuenta mencionada desde los últimos doce meses al día de la fecha.\nEl auto que lo ordena dice: “San Miguel, 02 de Noviembre de 2026. (...) INFORMATIVA: Líbrense los oficios requeridos a: 1°) ARCA, 2°) ANSES, 3°) BCRA, 4) VISA ARGENTINA S.A., 5) MASTERCARD S.A. 6) AMERICAN EXPRESS, 7) TARJETA NARANJA 8) MERCADO LIBRE SRL (MERCADOPAGO), 9) UALA, 10) MODO, 11) BRUBANK, 12) BINANCE, 13) REGISTRO NACIONAL DE LA PROPIEDAD AUTOMOTOR, los que deberán realizarse en la forma prevista por la norma de los arts. 396, 397, 398 y cdts. del CPCC\". FDO. DRA. SILVANA ELINA TRISTAN JUEZ\nSe halla autorizada para diligenciar el presente la Dra. Yanina Alejandra Valli, T° XVIII F°252 CASM, y/ o quien ella designe.\nComo recaudo, seguidamente se transcriben parte pertinente de los artículos 396, 397 y 398 del C.P.C.C. de la Provincia de Buenos Aires:\nArtículo 396. Recaudos y plazos para la contestación. Las oficinas públicas no podrán establecer recaudos o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas. Deberán contestar el pedido de informes o remitir el expediente dentro de veinte (20) días hábiles y las entidades privadas dentro de diez (10) días hábiles, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales. En los procesos de alimentos, el plazo para las oficinas públicas será de siete (7) días hábiles y para las entidades privadas de cinco (5) días hábiles; Artículo 397: Artículo 397.- RETARDO. Si por circunstancias atendibles el requerimiento no pudiere ser cumplido dentro del plazo, se deberá informar al Juzgado, antes del vencimiento de aquel, sobre las causas y la fecha en que se cumplirá. Si el Juez advirtiere que determinada repartición pública sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno y Justicia, a los efectos que correspondan, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas que sin causa justificada no\nhttps://notificaciones.scba.gov.ar/InterfazBootstrap/textonotificacionimprimir.aspx?idnot=164430693&fecha=2&codNotif= 1/2\n11/11/26, 11:46 TEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS contestaren oportunamente, se les impondrá multa de veinticinco pesos ($25) por cada día de retardo.La apelación que se dedujere contra la respectiva resolución tramitará en expediente por separado.” Artículo 398: ... Deberá otorgarse recibo del pedido de informes y remitirse las contestaciones directamente a la secretaría con transcripción o copia del oficio...”. Saludo a Usted muy atentamente.- Para verificar la notificación, y las copias de traslado si las hubiere, ingrese a: https://notificaciones.scba.gov.ar/verificar.aspx Su código de verificación es: YD5DW43X\n230502180034140048\nhttps://notificaciones.scba.gov.ar/InterfazBootstrap/textonotificacionimprimir.aspx?idnot=164430693&fecha=2&codNotif= 2/2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "784530",
+    "numero_archivo": "9",
+    "nombre_documento": "784530_1.pdf",
+    "texto_completo": "PODER JUDICIAL DE LA PROVINCIA DEL CHUBUT OFICINA DE GESTION UNIFICADA DEL FUERO CIVIL Y COMERCIAL – CR\nOFICIO ART. 404\nComodoro Rivadavia, 10 Noviembre 2026.-\nSeñores:\nMERCADO PAGO\nTengo el agrado de dirigirme a Ud. en los autos caratulados: “DIAZ Rodrigo Exequiel c/ VIRGILIO Rubén Elías y Otros - Beneficio de litigar sin gastos”, Expte. N° 325/2026, que tramita por ante Oficina de Gestión Unificada del fuero Civil y Comercial de la Circunscripción Judicial con asiento en la ciudad de Comodoro Rivadavia, sito en sitio en Figueroa Alcorta 90, 2do piso, a cargo de la Dra. NATALIA VENTER - JUEZ, Secretaría N° 1, a los fines de solicitarle se sirva INFORMAR si Rodrigo Exequiel Diaz (DNI 34.087.361, CUIT 20-34087361-1) registra cuenta y/o usuario a su nombre, y en su caso remita detalle de montos y flujos operados desde el año 2025 a la fecha de contestación del oficio.-\nSe hace saber que la respuesta al presente oficio podrá ser enviada a la casilla de correo electrónico: ofijudcivilcr_mesa@juschubut.gov.ar, asunto: “Secretaría N° 1 - Expte. N° 325/2026.\nEl auto que ordena el presente, dice así en su parte pertinente: “Comodoro Rivadavia, 04 noviembre 2026.- ... Atento a lo resuelto precedentemente, a los fines pedidos librar oficio, de conformidad con lo establecido por el art. 404 del CPCC y con transcripción de lo dispuesto en los arts. 402 y 403 del CPCC al Registro de la Propiedad Inmueble de la provincia de Chubut, a la Dirección Nacional del Registro de la Propiedad Automotor, al Banco Central de la República Argentina, al Banco Patagonia S.A., A Mercado Pago, a la Agencia de Recaudación y Control Aduanero (ARCA), a la Universidad Nacional de la Patagonia San Juan Bosco, a la Administración Nacional de la Seguridad Social (ANSES), y a Informar Argentina S.A. Hago saber que el requerimiento ordenado podrá ser respondido a la casilla de electrónico\nofjjudcivilcr_mesa@juschubut.gov.ar ... Firmado electrónicamente mediante sistema informático Libra: Natalia Venter, Jueza Subrogante.”\nEstarán autorizados a intervenir en el diligenciamiento del presente oficio los Dres. Nélida Leon de Escribano, Facundo Llorens Guitarte y/o quienes designen.\nCÓDIGO PROCESAL CIVIL Y COMERCIAL DE LA PROVINCIA DEL CHUBUT:\nArtículo 402. RECAUDOS Y PLAZOS PARA LA CONTESTACIÓN.-\nLas oficinas públicas no podrán establecer recaudos o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas.\nDeberán contestar el pedido de informes o remitir el expediente dentro de VEINTE (20) días hábiles y las entidades privadas dentro de DIEZ (10) salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales. (...)\nArtículo 403. RETARDO.-\nSi por circunstancias atendibles el requerimiento no pudiere ser cumplido dentro del plazo, se deberá informar al juzgado, antes del vencimiento de aquél, sobre las causas y la fecha en que se cumplirá.\nCuando el juez advirtiere que determinada repartición pública, sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno y Justicia, a los efectos que corresponda, sin perjuicio de las otras medidas a que hubiere lugar.\nA las entidades privadas que sin causa justificada no contestaren oportunamente, se les impondrá multa de hasta PESOS DOS ($ 2) a PESOS CINCUENTA ($ 50) por cada día de retardo.\nLa apelación que se dedujere contra la respectiva resolución tramitará en expediente separado.\nSaludo a Ud., muy atentamente.-\nFACUNDO LLORENS GUITARTE MAT.C 217 T° II Pº I° MAT.FED.T° 57 F° 683 P 50 T°V TS.J.S.C.",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_candidatos_en_fragmentos",
+        "descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido.",
+    "id": "784536",
+    "numero_archivo": "10",
+    "nombre_documento": "784536_1.pdf",
+    "texto_completo": "AC\nMINISTERIO PÚBLICO FISCAL PROCURACIÓN GENERAL DE LA NACIÓN REPÚBLICA ARGENTINA\nUnidad Fiscal Especializada en Investigación Criminal Compleja\nBuenos Aires, 11 de noviembre de 2026.\nAL REPRESENTANTE LEGAL DE LA FIRMA MERCADO LIBRE S / D Arias nro. 37551, piso 7° (C1430CRG), Ciudad Autónoma de Buenos Aires notificaciones@mercadolibre.com\nPor orden del Señor Fiscal Dr. José María CAMPAGNOLI, a cargo de la Unidad Fiscal Especializada en Investigación Criminal Compleja, por resolución PGN 32/18 y 88/20, me dirijo a Ud. en relación al legajo de búsqueda nro. 6392 con el objeto de requerirle que tenga a bien poner en conocimiento de esta Unidad, a la mayor brevedad posible, Tiago Alexander Méndez Mourelle DNI nro. 44.939.190, está o ha estado registrado en vuestra plataforma, debiendo en caso afirmativo, remitir toda la información que obre en su poder respecto del nombrado, puntualmente:\n1. Nombre de usuario; 2. Correo electrónico y/o teléfono registrado; 3. Numero de ID de las publicaciones efectuadas (detallado en el link de la publicación); 4. Compras y ventas realizadas; 5. Domicilio de facturación; 6. Domicilio de recepción y entrega de mercadería; 7. Modo de pago (si fuera con tarjeta de crédito y/o débito, sírvase aportar los datos respectivos).\nDe igual manera, le solicito que tenga bien remitir toda información que obre en sus registros de la aplicación MERCADOPAGO, sobre el nombrado.\nLe hago saber que esta información deberá ser adelantada a las casillas de correo electrónico acasaurang@mpf.gov.ar\nSaludo a Ud. muy atentamente.\nTucumán 966 “PB” - Ciudad Autónoma de Buenos Aires. (Tel. 7092-6471/72/72)",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "784537",
+    "numero_archivo": "11",
+    "nombre_documento": "784537_1.pdf",
+    "texto_completo": "MPA MINISTERIO PÚBLICO DE LA >ACUSACIÓN\nOFICIO\nEsperanza, 05 de Octubre 2026\nDEPTO. LEGALES\nMERCADO LIBRE.\nOBJETO: Informar respecto cuenta virtual que recibió el dinero de la victima, cliente de esa entidad financiera.\nQuien suscribe, Dr. BENITEZ, Alejandro, Fiscal de la Unidad Fiscal Esperanza – Ministerio Público de la Acusación de la Provincia de Santa Fe, dirige a Ud. El presente, Oficio en el marco de las actuaciones registradas como CUIJ Nº 21-09758331-2, “...S/DENUNCIA P/ESTAFA...”, del cual resultara Denunciante: Bertotti Delia Marta DNI: 4.275.847 a fin de solicitarle tenga a bien informar por su intermedio y a través de la sucursal correspondiente, lo siguiente, relacionado a cuenta:\nSolicito a Ud. tenga a bien Informar datos de movimientos de la cuenta de Pedro Pablo Sangoy DNI:26.556.6320, CLIENTE DE ESA ENTIDAD.\nLo solicitado es en virtud de los términos del artículo que a continuación se transcribe: ARTÍCULO 4. Ley 13.013 - Potestades. El Ministerio Público de la Acusación, en ejercicio de sus funciones, podrá pedir la colaboración de cualquier funcionario y autoridad administrativa del Estado y de las personas privadas físicas o jurídicas, estando éstos obligados a prestarla sin demora y a proporcionar los documentos e informes que le sean requeridos, dentro de los límites legales.-\nA los fines de establecer el autor del hecho, se solicita a Ud. remita a esta instancia la siguiente:\n• Remitir e informar Movimientos registrados en la Cuenta del involucrado, a nombre de Pedro Pablo Sangoy, más precisamente dos transferencias una por un monto de $534.950 y la otra por un monto de $1.069.900, movimiento que tuvo lugar en fecha 04- 06-2026.-\n• Informe DEBITOS - TRANSFERENCIAS y/o TRANSACTIONS que registra la Cuenta bancaria de la Victima, informando datos de titularidad (Nombre y Apellido, DNI, Do- micilio, Teléfono y otros) de las Entidades Bancarias, Financieras y/o Comerciales, de destino.-\nMinisterio Público de la Acusación Provincia de Santa Fe Firmado por: Benitez, Alejandro Franco 06/10/2026 11:15\nFiscalía Regional 1 Unidad Fiscal Moreno 1987 fr1lascolonias@mpa.santafe.gov.ar Esperanza +54 3496 426185 mpa.santafe.gov.ar\nMPA MINISTERIO PÚBLICO DE LA >ACUSACIÓN\n• Sistema utilizado para realizar dichos movimientos, ya sea mediante Pagina Web, Aplicación, Internet, etc. –\n• Sistema utilizado para retirar el dinero, en caso de que fuera por ATM, informar ubicación del cajero automático, como así remitir registros filmicos de dichas extracciones.-\n• Situación actual de la cuenta a la fecha del presente hecho (04/06/26) informada (ACTIVA- BAJA) y motivos de la misma. -\nEl presente pedido obedece a I.P.P, en relación a CUIJ 21-09758331-2 por tareas investigativas realizadas por personal de PDI a mi cargo. -\nSe ruega a usted tenga a bien otorgarle a la presente carácter de muy urgente despacho, adelantando las respuestas a los correos electrónicos: abenitez@mpa.santafe.gov.ar y pdilascolonias@santafe.gov.ar y por correo postal a calle Moreno N° 1987 de la ciudad de Esperanza (C.P 3080) provincia de Santa Fe.-\nSin otro particular, saluda a Ud. Muy atentamente.-\nFiscalía Regional 1 Unidad Fiscal Moreno 1987 fr1lascolonias@mpa.santafe.gov.ar Esperanza +54 3496 426185 mpa.santafe.gov.ar\n2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_candidatos_en_fragmentos",
+        "descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido.",
+    "id": "784549",
+    "numero_archivo": "12",
+    "nombre_documento": "784549_1.pdf",
+    "texto_completo": "TEXTO Y DATOS DE LA NOTIFICACIÓN\nUsuario conectado: FEDERICO Franco - 20413871795@notificaciones.scba.gov.ar Organismo: TRIBUNAL DEL TRABAJO N° 4 - QUILMES Carátula: VANEGAS ADRIAN HERNAN C/ MATTERA CHRISTIAN DAVID y otros S/ DESPIDO Número de causa: 24023 Tipo de notificación: OFICIO REQUIRIENDO Destinatarios: 20413871795@notificaciones.scba.gov.ar Fecha notificación: 06/11/2026 00:00:00 Alta o disponibilidad 4/11/2026 08:03:38 Firma digital: Firma válida Firmado y Notificado por: BORAGINA Laura Lorena. SECRETARIA --- Certificado Correcto. Fecha de Firma: 04/11/2026 08:03:37 Firmado por: FEDERICO Franco. --- Certificado Correcto. Fecha de Firma: 03/11/2026 15:57:38\nOFICIO JUDICIAL.\nQuilmes, de Noviembre de 2026.\nExpte. QL - 4684 - 2026. AUTOS: “VANEGAS ADRIAN HERNAN C/ MATTERA CHRISTIAN DAVID y otros S/ DESPIDO”. A MERCADOLIBRE S.R.L.\nDirijo a Ud. el presente en los autos indicados ut-supra, que tramitan ante el Tribunal del Trabajo Nro. 4 de Quilmes, Departamento Judicial Quilmes, cuya Presidencia es a cargo de Dra. Luisina Ortiz, Secretaría Única a cargo de Dra. Laura Lorena Boragina y Dr. Gustavo De La Fuente, sito en Calle Garibaldi Nro. 430, Quilmes, Prov. de Buenos Aires, a fin de que por la vía que corresponda SE SIRVA INFORMAR si los comprobantes de transferencia que se agregan en archivo adjunto respecto a su entidad son auténticos.\nEl auto que dispone la medida expresa lo siguiente:\n“Quilmes, 28-10-2026. [...] Oído todo lo cual, en atención al estado de autos, la Sra. Jueza del Tribunal RESUELVE: Abrir la presente causa a prueba por el plazo de sesenta (60) días y disponer la producción de las siguientes medidas probatorias ofrecidas: [...] 2) INFORMATIVA: 2.a) A los fines de la prueba informativa, líbrese los oficios solicitados por la parte actora al CORREO OFICIAL DE LA REPUBLICA ARGENTINA S.A.; a la AGENCIA DE REGULACIÓN Y CONTROL ADUANERO (ARCA, ex AFIP); MERCADO LIBRE SRL, MERCADO PAGO DE SERVICIOS DE PROCESAMIENTO SRL, MUNICIPALIDAD DE BERAZATEGUI, REGISTRO DE LA PROPIEDAD INMUEBLE DE LA PROVINCIA DE BUENOS AIRES; por la demandada Maria Rosa DI MATTEO FUENTES a ARCA y JUZ. CIVIL Y COMERCIAL NRO 1 DE QUILMES; por las codemandadas Viviana Noemi CONTRERAS y Christian David MATTERA a CORREO OFICIAL DE LA REPUBLICA ARGENTINA SA , ARCA, JUZ. CIV. Y COM. NRO 1 DE QUILMES, ESCRIBANIA VALERIA PIERROT Y METROGAS (arts. 50 y 89 63 ley 15.057; 396, 397 y 398 CPC). Hágase saber que los oficios dirigidos a las entidades u organismos con domicilio electrónico registrado en el RDE del Poder Judicial de la Provincia de Buenos Aires o que estén incorporados al Bus Federal de Justicia, deberán ser confeccionados por las partes desde el Portal de Presentaciones Electrónicas, con asignación del domicilio electrónico que corresponda a la entidad u organismo, para ser notificados por ese medio desde Secretaría. (Ac. SCBA 3975/20; Ac. SCBA 3989 y modificatorios; art. 15 del Anexo I Ac. SCBA 4013, texto según Ac. 4039). Para los casos de oficio dirigidos a las entidades u organismos que aún NO cuenten con un domicilio electrónico registrado en el RDE del Poder Judicial de la Provincia de Buenos Aires o que NO estén incorporados al Bus Federal de Justicia, deberán ser confeccionados desde el Portal de Presentaciones Electrónicas, con asignación del domicilio electrónico propio de la parte constituido en autos, para ser notificados en sus propias casillas una vez confrontados, de modo que desde el mismo Portal de Notificaciones pueda ser descargado o impreso para su diligenciamiento por la vía que corresponda (Ac. SCBA 3975/20; art. 15 del Anexo I Ac. SCBA 4013, texto según Ac. 4039). A tales efectos, déjese expresa constancias en el cuerpo de los oficios que se encuentran suscriptos con firma digital y que el destinatario podrá verificar su autenticidad introduciendo el código verificador alfanumérico en la web: https://notificaciones.scba.gov.ar/verificar.aspx, escaneando el QR con un dispositivo smart o consultando la causa desde la Mesa de Entradas Virtual (https://mev.scba.gov.ar/loguin.asp), y que ello sustituye cualquier sello y firma ológrafa. También hágase constar que las contestaciones o consultas al respecto podrán ser enviadas en forma electrónica a través del Portal de\nPresentaciones Electrónicas de la SCBA si el destinatario cuenta con un certificado de firma digital/electrónica propia o de un letrado, o en su defecto al correo electrónico institucional del Tribunal: tribtrab4-ql@jusbuenosaires.gov.ar (en archivo/s adjunto en formato .PDF). Si los pedidos de informe requirieran que el destinatario se expida sobre documentación ofrecida como prueba, las partes deberán insertar los documentos en cuestión como archivo/s adjunto/s en formato .PDF al momento de general el oficio. 2.b) Hágase saber a las partes deberán diligenciar y acreditar en autos, toda la prueba informativa ordenada en el plazo legal, bajo apercibimiento de darles por decaído el derecho a producirla (arts 50 y 89, ley 15.057; 155 y 375 del CCPC). 2.c) Para el caso que los sujetos oficiados requieran mayor información o datos adicionales para cumplimentar su respuesta, queda ordenado -sin petición previa- el libramiento de oficio AMPLIATORIO, cuyo diligenciamiento deberá ser acreditado en autos, bajo apercibimiento de darle por desistida dicha prueba (art. 50 y 89 ley 15.057 y art. 400 CPCC). Igualmente, queda ordenado -sin petición previa- el libramiento de oficio REITERATORIO si vencido el plazo legal la entidad oficiada, sea pública o privada, no hubiere contestado el pedido de informe. A cuyo efecto, la parte interesada deberá confeccionar el respectivo oficio, dejando constancia en el mismo de la fecha de recepción del anterior, y acreditar su debido diligenciamiento, bajo apercibimiento de darle por desistida dicha prueba (art. 50 y 89 ley 15.057 y art. 400 CPCC. [...]) Con lo que se terminó el acto, prestando conformidad los comparecientes, de lo resuelto por S.S., por ante mí que doy fe.- Firmado por: Boragina Laura Lorena. Secretaria\".\n\"ARTÍCULO 396 CPCC de la Pcia. de Bs. As.: Recaudos y plazos para la contestación. Las oficinas públicas no podrán establecer recaudos o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas. Deberán contestar el pedido de informes o remitir el expediente dentro de veinte (20) días hábiles y las entidades privadas dentro de diez (10) días hábiles, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales. En los procesos de alimentos, el plazo para las oficinas públicas será de siete (7) días hábiles y para las entidades privadas de cinco (5) días hábiles\".\n\"ARTÍCULO 397 CPCC de la Pcia. de Bs. As. Retardo. Si por circunstancias atendibles el requerimiento no pudiere ser cumplido dentro del plazo, se deberá informar al Juzgado, antes del vencimiento de aquél, sobre las causas y la fecha en que se cumplirá. Si el Juez advirtiere que determinada repartición pública, sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno, a los efectos que correspondan, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas que sin causa justificada no contestaren oportunamente, se les impondrá multa de un valor equivalente a dos (2) Jus por cada día de retardo. La apelación que se dedujere contra la respectiva resolución tramitará en expediente por separado\".\n\"ARTÍCULO 398 CPCC de la Pcia. de Bs. As.: Atribuciones de los letrados patrocinantes. Cuando interviniere letrado patrocinante, los pedidos de informes, expedientes, testimonios y certificados ordenados en el juicio serán requeridos por medio de oficios firmados, sellados y diligenciados por aquél, con transcripción de la resolución que los ordena y fija el plazo en que deberán expedirse. Deberá, asimismo, consignarse la prevención que establece el último párrafo del artículo anterior. Los oficios dirigidos a bancos, oficinas públicas, o entidades privadas que tuvieran por único objeto acreditar el haber del juicio sucesorio, serán presentados directamente por el abogado patrocinante, sin necesidad de previa petición judicial. Deberá otorgarse recibo del pedido de informes y remitirse las contestaciones directamente a la secretaría con transcripción o copia del oficio. Cuando en la redacción de los oficios los profesionales se apartaren de lo establecido en la providencia que los ordena, o de las formas legales, su responsabilidad disciplinaria se hará efectiva de oficio o a petición de partes\"\nSaludo a usted muy atentamente.\nArchivos Adjuntos de la notificación electrónica\n06- comprobantes transferencias.pdf\nPara verificar la notificación, y las copias de traslado si las hubiere, ingrese a:\nhttps://notificaciones.scba.gov.ar/verificar.aspx\nSu código de verificación es: 8E76RV9Y\n244501051008073478",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "784558",
+    "numero_archivo": "13",
+    "nombre_documento": "784558_1.pdf",
+    "texto_completo": "MINISTERIO PÚBLICO RÍO NEGRO\nOficina de Investigación en Telecomunicaciones\nOITEL NOTA NRO. 08577/26-VC\nViedma, 11 de noviembre de 2026\nSEÑORA RESPONSABLE AREA DE LEGALES Y RELACIONES GUBERNAMENTALES MERCADO LIBRE S.R.L. S/D\nEn relación a los autos caratulados \"FISCALIA 3 S/ HURTO\" (Legajo Nro. MPF-VI-03347-2026) que se tramita en 1RA CJ - FISCALIA Nº 3 VIEDMA, se ha resuelto librar el presente a fin de solicitarle:\n1. Todo dato que obre en sus registros (datos de titularidad, domicilio, nro. de teléfono, etc) la cuenta perteneciente a la Sra. SANDRA DEL CARMEN CORDOBA, DNI. Nº 18.593.084.\n2. Listado de operaciones bancarias realizadas (generación de claves, solicitud de créditos/préstamos, transferencias (informando detalle cuentas destino), extracción/depósito de dinero, compras, etc. desde homebanking con IP de conexión, cajeros automáticos o por caja con detalle de montos, horas y ubicación de comercio/sucursal de entidad bancaria) el día 24/08/2026 al día 26/08/2026.\nAsimismo, solicito se remita lo requerido a la siguiente dirección de correo electrónico: oitel@jusrionegro.gov.ar citando Legajo. MPF-VI-03347-2026 y/o nota de encabezamiento 08577/26-VC.\nSaludo a usted atentamente.\nFirmado digitalmente por BAFFONI David Andres Fecha y hora: 11.11.2026 11:28:07",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_candidatos_en_fragmentos",
+        "descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido.",
+    "id": "784560",
+    "numero_archivo": "14",
+    "nombre_documento": "784560_1.pdf",
+    "texto_completo": "MINISTERIO PÚBLICO RÍO NEGRO\nOficina de Investigación en Telecomunicaciones\nOITEL NOTA NRO. 08582/26-VC\nViedma, 11 de noviembre de 2026\nRESPONSABLE AREA DE LEGALES Y RELACIONES GUBERNAMENTALES MERCADO LIBRE S.R.L. S/D\nEn relación a los autos caratulados \"FISCALIA 8 VIEDMA C NN S ESTAFA (AC)\" (Legajo Nro. MPF-VI- 03315-2026) que se tramita en 1RA CJ - FISCALIA Nº 8 VIEDMA, se ha resuelto librar el presente a fin de solicitarle:\n1. Todo dato que obre en sus registros (datos de titularidad, domicilio, nro. de teléfono, etc) de la Cuenta vinculada al CVU 000000310078300997043 titularidad de Nancy Edith Difabio D.N.I.: 18.516.749.\n2. Asimismo de todas las operaciones se averigüe la dirección IP de conexión con su geolocalización.\n3. Listado de operaciones bancarias realizadas (generación de claves, solicitud de créditos/préstamos, transferencias (informando detalle cuentas destino), extracción/depósito de dinero, compras, etc. desde homebanking con IP de conexión, cajeros automáticos o por caja con detalle de montos, horas y ubicación de comercio/sucursal de entidad bancaria) el día 04-09 al 05-09-2026, en particular las transferencias efectuadas por los montos de $300.000, $800.000, y $200.000.\nAsimismo, solicito se remita lo requerido a la siguiente dirección de correo electrónico: oitel@jusrionegro.gov.ar citando Legajo. MPF-VI-03315-2026 y/o nota de encabezamiento 08582/26-VC.\nSaludo a usted atentamente.\nFirmado digitalmente por BAFFONI David Andres Fecha y hora: 11.11.2026 11:28:06",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_candidatos_en_fragmentos",
+        "descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido.",
+    "id": "784570",
+    "numero_archivo": "15",
+    "nombre_documento": "784570_1.pdf",
+    "texto_completo": "OFICIO N°548/2026\nRio gallegos, firmado electrónicamente en fecha que figura a pie de página.\nMercado Libre S.R.L. CASEROS AV. 3039 Piso:2 - CP. (1264) CIUDAD AUTONOMA BUENOS AIRES PRESENTE.\nTengo el agrado de dirigirme a Usted en los autos caratulados \"BANCO DE LA NACION ARGENTINA C/ DURBAS FEDERICO MARTIN S/ COBR0 DE PESOS/SUMAS DE DINERO\" Expte 15466/2026, que tramita por ante este Juzgado Federal de Primera Instancia de Río Gallegos a cargo del Dr. Claudio Marcelo Vázquez, Secretaria Ejecución Fiscal a cargo de la Dra. Sandra Marozzi, sito en calle Avenida San Martín N° 709 de la ciudad de Rio Gallegos, Provincia de Santa Cruz, a los fines de solicitarle tenga a bien disponer lo necesario para informar sobre último domicilio de la parte demandada Sr/a. FEDERICO MARTIN DURBAS, DNI 31.637.995.\nEl auto que ordena la medida en su parte pertinente dice: \"Río Gallegos, firmado electrónicamente en la fecha que obra a pie de página. Como se pide, autorízase el libramiento de oficio a Mercado Libre y/o a cualquier otro organismo que la parte actora estime pertinente, a fin de obtener datos relativos al domicilio del demandado, en los términos del art. 400 del Cód. Proc. Hágase saber que el diligenciamiento, reiteración y eventual libramiento de nuevos pedidos de informes vinculados con la presente autorización quedarán a exclusivo cargo y cuenta de la parte actora, sin necesidad de requerir nuevas autorizaciones judiciales, siempre que persigan la misma finalidad.... Fdo. CLAUDIO MARCELO VÁZQUEZ, JUEZ FEDERAL\".\nA los fines de que cumplida que sea la diligencia aquí solicitada, se detalla a continuación el mail institucional de esté Juzgado y Secretaria se envíe por ese media la correspondiente constancia de lo actuado: jfriogallegos.secejefisc@pjn.gov.ar.\nSe encuentran autorizados para diligenciar este oficio indistintamente los Dr. Pablo Omar Kairuz, el Dr. Emilio Matías Gutiérrez y/o la Susana Steffensen y/o Dres. Veronica Daniela Sosa – T° 118 F° 70 CPACF y GABRIEL MAGUNA - T°145 F°497 CPACF y/o quien ellos designen, para diligenciar el oficio solicitado, con facultades de ley.\nEl Juzgado es competente en razón del lugar, la persona y la materia, Juicio: Ejecutivo, Parte Actora: Banco de la Nación Argentina, Apoderado de la parte actora: Dr. Pablo Omar Kairuz, Letrado patrocinante: Dr. Emilio Matías Gutierrez, Domicilio Constituido: Avda. Presidente Dr. Néstor C. Kirchner Nº 799 de la ciudad de Rio gallegos, Santa Cruz, Parte demandada: Federico Martin Durbas, DNI 31.637.995.- Monto: $29.640.251,72.\nEl presente oficio es firmado electrónicamente por la actuaría, la firma referida posee validez legal conforme las Acs. 4/20 y 12/20, pudiendo constatar la validez de la firma y lo actuado en el sitio http://scw.pjn.gov.ar.\nSaludos a Ud. muy atentamente. –\nSANDRA M. MAROZZI SECRETARIA FEDERAL\n#41918299#525748535#20261030111412944\nPODER INDICIAL DE LA NACION RIO GALLEGOS FECHA SANTA CRUZ JUEGADO FEDERAL\nSignature Not Verified Digitally signed by SANDRA MARIA MÁROZZI Date: 2026.11.06 13:36:31 ART\n#41918299#525748535#20261030111412944",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "784585",
+    "numero_archivo": "16",
+    "nombre_documento": "784585_1.pdf",
+    "texto_completo": "GOBIERNO DE LA CIUDAD AUTÓNOMA DE BUENOS AIRES MINISTERIO DE JUSTICIA Y SEGURIDAD POLICÍA DE LA CIUDAD AUTÓNOMA DE BUENOS AIRES\nNOTA N° 1588/2026.-\nBuenos Aires, 11 de Noviembre de 2026.-\nSR. GERENTE\nTengo el agrado de dirigirme a Usted, en el marco de Actuaciones Sumariales Nº 665084/2026, Diligencia Judicial, Establecer Captura en relación a la causa nro. 1057/2019/PL S/INFRACCIÓN LEY 25.891, con intervención del Juzgado Nacional en lo Criminal y Correccional Federal nro. 7, a cargo del Dr. Sebastián N. CASANELLO.-\nAl respecto y con el objeto de cumplimentar las medidas ordenadas por el Magistrado interventor se solicita en carácter de URGENTE, informe si las siguientes personas se encuentran registradas o resultan usuario de Mercado Libre como también de Mercado Pago: Carlos José MENDOZA HERNÁNDEZ, D.N.I. argentino 94.478.301, C.I. peruana 4176277, de nacionalidad Peruana, fecha de nacimiento 18/08/1991.\nEn caso de arrojar resultado favorable, también se solicita que aporte nombre de usuario con su fecha de alta, teléfonos de contacto, correos electrónicos registrados, todos los movimientos realizados, desde 01/08/2026 hasta el día de la fecha (como ser ventas, compras, extracciones e ingresos de dinero, transferencias, medios de pago, etc) todo este de ser posible con su correspondiente IP de conexión, reconocimiento facial y demás información que se encuentre en su base de datos.-\nSe solicita la elevación de lo requerido vía correo electrónico a la casilla oficial de esta Dependencia capturasyprofugos@policiaelaciudad.gob.ar sergio.noguera@policiaelaciudad.gob.ar.-\nSin otro particular, saludo a Usted muy respetuosamente.-\nRomina G. Baviera Auxiliar G Policía de la Ciudad\n-///- de MERCADO LIBRE.- S / D División Capturas y Prófugos, POLICÍA DE LA CIUDAD DE BUENOS AIRES Catamarca Nro. 1345, Piso 1, CABA. CORREO INSTITUCIONAL: capturasyprofugos@policiaelaciudad.gob.ar",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "784598",
+    "numero_archivo": "17",
+    "nombre_documento": "784598_1.pdf",
+    "texto_completo": "PODER JUDICIAL PROVINCIA DE RIO NEGRO JUZGADO DE PAZ 4TA CIRC. CIPOLLETTI\nOFICIO\nCipolletti, a los 11 días del mes de noviembre del año 2026\nMERCADO LIBRE S.R.L.\nMe dirijo a Ud. en los autos caratulados: “PINTO APARICIO, ALEJANDRO BRUNO S/ BENEFICIO DE LITIGAR SIN GASTOS - BENEFICIO DE LITIGAR SIN GASTOS\"(Expte. N° CI-00169-JP-2026), en trámite ante el Juzgado de Paz de la IV Circunscripción de la provincia de Río Negro, a cargo de la Dra. GABRIELA S. MONTORFANO -JUEZA, Secretaría Única a cargo de la Dra. LUCIANA N. SANCHEZ, sito en calle Sarmiento 360 de la ciudad de Cipolletti, Provincia de Río Negro, donde se ha dispuesto librar el presente a fin de que se sirva informar si el actor en autos, Alejandro Bruno PINTO APARICIO DNI N° 16.759.558, C.U.I.T. N°20-16759558-9 con domicilio en calle Los Pinos 1.150 de Cipolletti, posee cuentas de su titularidad en dicha billetera virtual he indique en detalle las operaciones (movimientos y saldos), correspondientes a los productos y/o servicios contratados por el/la actor/a en los últimos tres (3) meses. A tal fines tenga a bien de remitir su contestación vía correo electrónico a la casilla oficial: juzpazcipo@jusrionegro.gov.ar\nLa providencia que ordena el presente en su parte pertinente dice:” Cipolletti, 29 de Septiembre de 2026 ; (...)PROVEYENDO LA PRUEBA OFRECIDA POR LA PARTE ACTORA (...):INFORMATIVA: líbrese oficio a las entidades financieras y/o billeteras virtuales informadas, a fin de que indiquen en detalle las operaciones (movimientos y saldos), correspondientes a los productos y/o servicios contratados por el/la actor/a en los últimos tres (3) meses. A los fines de su tramitación, transcríbanse los arts. 369 y 370 del CPCyC (...). Fdo. Dra. GABRIELA S. MONTORFANO –JUEZA.-\nRecaudos y plazos para la contestación Artículo 369.- Las oficinas públicas, no pueden establecer recaudos o requisitos para los oficios, ni otros aranceles que\n1/3\nlo que determinen las leyes, decretos y ordenanzas. Deben contestar las oficinas públicas y las entidades privadas el pedido de informes o remitir el expediente, dentro de los veinte (20) días hábiles, salvo que la providencia que lo ordene fije otro plazo en razón de la naturaleza del juicio o circunstancias especiales. Cuando se trate de la inscripción de la transferencia de dominio en el Registro de la Propiedad, los oficios que se libren al Departamento Provincial de Aguas, a la Municipalidad, a la Agencia de Recaudación Tributaria y/o a cualquier otra repartición pública, deben contener el apercibimiento de que, si no son contestados dentro del plazo de veinte (20) días, el bien se inscribirá como si estuviere libre de deuda. El Juez o Jueza puede aplicar sanciones conminatorias progresivas en el supuesto de atrasos injustificados en las contestaciones de informes. La apelación que se deduzca tramita en expediente separado. La sanción puede ser aplicada al jefe o director de la repartición u organismo, en cuyo caso se lo debe notificar personalmente.\nRetardo Artículo 370.- Si por circunstancias atendibles el requerimiento no puede ser cumplido dentro del plazo, se debe informar al organismo, antes del vencimiento de aquel, sobre las causas y fecha en que se cumplirá. Si el Juez o Jueza advierte que determinada repartición pública sin causa justificada no cumple reiteradamente el deber de contestar oportunamente los informes, debe poner el hecho en conocimiento del Ministerio de Gobierno, a los efectos que correspondan, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas o personas físicas que sin causa justificada no contesten oportunamente, se les impondrá multa de hasta dos (2) veces el monto del jornal mínimo, vital y móvil por cada día de retardo, sin perjuicio de lo dispuesto en el artículo 369. La apelación que se deduzca contra la respectiva resolución tramita por expediente separado.\nSe deja constancia que se encuentra autorizada para diligenciar el presente, el Dr. Rubens Hiza Vila y/o el Sr. Diaz Cristian Daniel DNI 32.989.336.-\nPODER JUDICIAL PROVINCIA DE RIO NEGRO JUZGADO DE PAZ 4TA CIRC. CIPOLLETTI\nSaludo a Ud. atte.\nFirmado digitalmente por VILA Rubens Hiza Fecha: 2026.11.11 12:07:21 -03'00'\nVILA Ruben s Hiza\n3/3",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "784617",
+    "numero_archivo": "18",
+    "nombre_documento": "784617_1.pdf",
+    "texto_completo": "EXP N°289636/26 Juzgado Civil y Comercial Nº12. Secretaria n°24\nOFICIO\nCorrientes, 10 de noviembre del 2026.-\nMERCADOLIBRE S.R.L CUIT: 30-70308853-4 Domicilio: CASEROS AV. 3039 Piso:2 1264 CABA, República Argentina S / D :\nTengo el agrado de dirigirme a Ud. a fin de hacerle saber que en los autos caratulados “LAGOMARCINO WALTER ADOLFO C/ LAGOMARCINO ZORRILLA ALEJANDRO LIONEL Y/O Q.R.R. S/ DAÑOS Y PERJUICIOS MÁS DE 50 JUS” EXP N° 289636/26 que tramita ante Juzgado Civil y Comercial Nº12. 1ª Circunscripción judicial a cargo del Juez Dr. Pablo Martin Teler Reyes sito en calle 9 de Julio N° 1099, 6° piso de la Ciudad de Corrientes, provincia de Corrientes se ha dispuesto librar el presente oficio a fin de que informen si el Sr LAGOMARCINO ZORRILLA ALEJANDRO LIONEL DNI N°40736446 posee alguna cuenta activa y remita los movimientos económicos desde el año 2021 a la fecha\nPara su conocimiento a continuación se transcriben las providencias que así lo ordenan: “ ACTA DE AUDIENCIA PRELIMINAR: En la ciudad de Corrientes, capital de la provincia del mismo nombre, el día 4 del mes de Noviembre de 2026, siendo las 11 horas, a los fines de celebrarse la audiencia preliminar del art 457 del CPCC, la que además será registrada por videofilmación con los elementos técnicos proporcionados por la Dirección de Informática del Poder Judicial y posteriormente resguardada en los servidores pertinentes, todo ello en los términos de los arts 103, 457 y 463 del CPCC. Se encuentran presentes: LAGOMARCINO WALTER ADOLFO, DNI 18,561,217, nacido el 8/12/1967, con el Dr. RICARDO ARIEL GONZALEZ ZUND. Por la parte accionante. Por la parte demandada: las dras. LOURDES SOSA MANTENBERG M.P 9730, CUIT 27-33481177-3, celular 3794-912110, correo electrónico lourdes.mantenberg@gmail.com, CUIF 839 y MARIELA ALEJANDRA VALDEZ, M.P 5848.\nEscaneado con CamScanner\nEXP N°289636/26 Juzgado Civil y Comercial Nº12. Secretaria n°24\nPreside el Juez Pablo Teler....Se ordena la producción de las siguientes pruebas: PRUEBAS DE LA ACTORA...3) INFORMATIVA: Se opone la demandada, la accionante pide su producción. Oidas, se admite la prueba. COSTAS A LA DEMANDADA. Líbrese oficio como se pide: A) Registro propiedad inmueble; B) MERCADO PAGO, C) PERSONAL PAY, D) UALA, E) NARANJA X, F) BRUBANK; G) BCRA ; DEBIENDO INFORMAR en el plazo de diez días hábiles, todo ello de conformidad a lo dispuesto en los arts 250 y 252 del CCPC, que deberán transcribirse. Los oficios deberán ser confeccionados y diligenciados por los letrados oferentes de las pruebas (250 CPCC, art 78 de la LOAJ (Dto Ley 26/00) y art 8 del Dto Ley 119/01.) Para el caso de que el oficio no se conteste en tiempo y forma, en este acto queda ordenado que se libren -de corresponder- los oficios reiteratorios pertinentes, que deberán ser contestados en el plazo de 5 días, bajo apercibimiento de lo dispuesto en el art 239 del Código Penal (que deberá transcribirse) y de hacer efectivos los apercibimientos previstos en el art 252 del CPCC, todo ello sin perjuicio de ordenar además las multas accesorias en concepto de astreintes, que serán aplicadas personalmente al titular de la dependencia por cada día de retardo (art 59CPCC).... FIRMADO ELECTRÓNICAMENTE POR PABLO MARTÍN TELER REYES JUEZ JUZGADO CIVIL Y COMERCIAL Nº 12 A CIRCUNSCRIPCIÓN JUDICIAL CORRIENTES.\nTenga a bien remitir respuesta al correo institucional del juzgado interviniente jcivilycom12-capital@juscorrientes.gov.ar como así también remitir las pruebas documentales en su poder por correo postal de ser necesario al domicilio del juzgado: 9 de Julio N° 1099 - 6º piso-Código Postal: 3400, Corrientes Capital.\nPara su conocimiento se transcribe el siguiente artículo del Código Procesal Civil y Comercial de la Provincia de Corrientes: ARTÍCULO 250 CPCC: Atribuciones de los abogados. Los pedidos de informes, testimonios y certificados, así como los de remisión de actuaciones ordenados en el proceso, serán requeridos por medio de oficios diligenciados por el abogado con transcripción de la resolución que los ordena y fija el plazo en que deberán remitirse. Debe asimismo, consignarse el objeto del informe según el artículo 249. Los oficios dirigidos a bancos, oficinas públicas, o entidades privadas que tuvieren por único objeto acreditar el haber del proceso sucesorio, serán presentados\ndel 2026.-\nEscaneado con CamScanner\nEXP N°289636/26 Juzgado Civil y Comercial N°12. Secretaria n°24\ndirectamente por el abogado, sin necesidad de previa petición judicial. Las partes deben acreditar el diligenciamiento de los pedidos de informes y las contestaciones serán remitidas directamente al tribunal con transcripción o copia del oficio. Cuando en la redacción de los oficios los profesionales se aparten de lo establecido en la providencia que los ordena, o de las formas legales, su responsabilidad disciplinaria se hará efectiva de oficio o a petición de parte. Artículo 252 CPCC: Plazos para la contestación. Recaudos. Las oficinas públicas y las entidades privadas deberán contestar el pedido de informes o remitir el expediente dentro de los diez (10) días hábiles, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del proceso o de circunstancias especiales. No podrán establecer recaudos que no estuvieran autorizados por ley. Los oficios deberán ser recibidos obligatoriamente a su presentación. El juez debe aplicar sanciones conminatorias progresivas al responsable funcional o al representante legal de las personas jurídicas requeridas, en el supuesto de atraso injustificado en las contestaciones de los informes de acuerdo con lo establecido en el inciso b) del artículo 59. La apelación interpuesta contra la resolución que impone sanciones conminatorias tramita en actuaciones separadas, se concede con efecto suspensivo y trámite inmediato. LEY ORGÁNICA DE LA ADMINISTRACIÓN DE JUSTICIA (Dto. Ley 26/00): ARTÍCULO 78: Los Abogados podrán recabar directamente de las oficinas públicas y bancos oficiales y particulares antecedentes, informes o certificados sobre hechos concretos atinentes al proceso civil o laboral en que actúen. En la solicitud se hará constar su nombre y domicilio, el nombre de las partes, carátula y número del expediente, auto que así lo disponga y nombre del Juez y Secretario. Las oficinas requeridas deberán expedirse remitiendo sus informes directamente al Juez de la causa dentro del plazo máximo de cinco días. DTO LEY 119/01 ARTÍCULO 8: Sin perjuicio de los derechos que se les acuerden en esta ley y en la legislación vigente, es atribución de los abogados en el ejercicio de su función, recabar directamente de la Administración pública, informes, antecedentes y certificaciones sobre hechos concretos atinentes a las causas en que intervengan. Estos pedidos deberán ser evacuados por la Administración dentro del término de quince días. En las solicitudes que formulen, los abogados harán constar su nombre, domicilio, carátula, proceso o causa en que actúen, tribunal y secretaría o dependencia administrativa correspondiente. Las contestaciones podrán ser entregadas personalmente\nEscaneado con CamScanner\nEXP N°289636/26 Juzgado Civil y Comercial N°12. Secretaria n°24\na los abogados o a quienes éstos designen o bien remitirlas a sus domicilios cuando así lo requieran. De no mediar petición en tal sentido, las respuestas se enviarán al tribunal o repartición interviniente\".\nCONSTE QUE EL DR. RICARDO ARIEL GONZALEZ ZUND MP- 2604- CUIF 2369 Y/O PERSONA QUE EL MISMO INDIQUE SE ENCUENTRAN FACULTADOS A INTERVENIR EN EL DILIGENCIAMIENTO DEL PRESENTE.-\nSALUDO A UD. ATENTAMENTE.\nDr. RICARDO ARIEL GONZALEZ ZUND ABOGADO S.T.J.Chaco Mat. 1354 - Fº 270 - T° V S.T.J.Ctes. Mat. 2604 - Fº 181 - Lº XII Corte Sup. Just. Nación - Tº 83 - Fº 443 CUIT: 20-14496034-4 Conv. Multilateral: 906-395611-2\nEscaneado con CamScanner",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "784627",
+    "numero_archivo": "19",
+    "nombre_documento": "784627_1.pdf",
+    "texto_completo": "Firmado digitalmente por GORDILLO Celia Enriqueta M... Fecha: 11.11.2026 09:21\nJuzgado en lo Civil y Comercial N° 3 Secretaria N° 3 Paraná - Entre Ríos\nOFICIO DIGITAL\nPARANA, 11 de noviembre de 2026.\nAL SR. PRESIDENTE MERCADO LIBRE SU DESPACHO\nHago saber a Ud. que en los autos caratulados \"FERREYRA, AGUSTIN S/ SUcesORIO SIN TESTAMENTAR\", Expte. N° DA1177, que tramitan por ante el Juzgado de 1ª Instancia en lo Civil y Comercial N° 3 de Paraná, a cargo de la Dra. DANIELA N. PRADO Jueza 1ra.Inst.Civ.y Com.nº3 -Sup-,Secretaría de la suscripta, se ha ordenado librar el presente a fin de que tenga a bien informar la existencia de fondos depositados en dichas entidades, a nombre del causante, AGUSTIN FERREYRA, D.N.I. N°39261503, fallecido el 31/07/2026, y en caso de encontrarse disponibles, los transfieran a la cuenta judicial perteneciente a estos autos y a la orden de la suscripta, a saber: Cuenta: 62- 123325/9, CBU de la Cuenta: 3860062103000012332592 .\nA continuación se transcribe la resolución que ordena el presente y que a continuación se transcribe: \"PARANÁ, 11 de noviembre de 2026.- (...) Conforme lo peticionado, hágase saber al interesado que se procedió a la apertura de una cuenta judicial vinculada a estos autos, a saber: Cuenta: 62-123325/9, CBU de la Cuenta: 3860062103000012332592 . Atento lo solicitado en el escrito precedente y constancias de autos, líbrense oficios al BANCO BBVA ARGENTINA S.A., BANCO SANTANDER ARGENTINA S.A. y MERCADO PAGO, respectivamente, a fin de que informen la existencia de fondos depositados en dichas entidades, a nombre del causante, AGUSTIN FERREYRA, D.N.I. N°39261503, fallecido el 31/07/2026, y en caso de encontrarse disponibles, los transfieran a la cuenta judicial perteneciente a estos autos y a la orden de la suscripta. Para la comunicación de la presente, líbrense oficio a la referida entidad banaria, quedando la confección y diligenciamiento a cargo de este organismo a las casillas de correo electrónico: recepcionoficios-arg@bbva.com; notificaciones@mercadolibre.com y deberá diligenciarse por el letrado al Buzón Web de la entidad bancaria. https://www.santander.com.ar/forms/buzon-oficios/\"\nFdo.: ELENA BEATRIZ ALBORNOZ Juez 1ra.Inst.Civ.y Com.n°4 a/c\nSe hace saber que la contestación del presente debe ser enviada al e-mail del Juzgado CIVIL Y COMERCIAL N° 3 - jdocyc3- pna@jusentrerios.gov.ar-\nSaludo a Ud. atentamente.\nCELIA ENRIQUETA GORDILLO Abogada - Secretaria\nEl presente documento se encuentra firmado digitalmente, con certificados emitidos por ONTI. La verificación se efectúa en www.firmar.gob.ar, mediante Acrobat Reader o aplicación similar.-",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_candidatos_en_fragmentos",
+        "descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido.",
+    "id": "784633",
+    "numero_archivo": "20",
+    "nombre_documento": "784633_1.pdf",
+    "texto_completo": "OFICIO JUDICIAL\nCABA, de Noviembre del 2026.\nMERCADO LIBRE S.R.L / MERCADO PAGO SERVICIOS DE PROCESAMIENTO S.R.L\nS / D\nTengo el agrado de dirigirme a Usted en mi carácter de letrado patrocinante de la parte demandada, en los autos caratulados: \"CARITA, SILVINA SOLEDAD c/ RISSO, CARLOS LEONARDO s/ALIMENTOS: MODIFICACION\". (Expte n° 32840/2026), en trámite por ante el Juzgado Nacional de Primera Instancia en lo Civil N° 9, a cargo (subrogante) de la Dra. Califano, Lucila, Secretaría Única a cargo del Dr. Romero, Francisco, con sede en la calle Lavalle 1220, cuarto piso de la Capital Federal, con el objeto que informe si la actora Sra. SILVINA SOLEDAD CARITA, DNI N° 27.694.948, posee cuenta a su nombre y en caso de ser positivo, se informe el monto de dinero depositado en la actualidad, como así también los últimos movimientos desde el 01/10/2025 a la fecha de contestación del oficio. Ello, autorizando el levantamiento del secreto bancario en los términos del artículo 39 de la Ley de Entidades Financieras. Dejando constancia que por tratarse de un pedido de informe efectuado en un proceso de familia de naturaleza alimentaria no rige el secreto bancario y/o fiscal. Hágase saber que el correo electrónico institucional del juzgado que consta en la guía judicial (https://www.pjn.gov.ar/guia ) es incivil9@pjn.gov.ar debiendo efectuarse al mismo las contestaciones a los pedidos de informe. Como recaudo se transcribe el auto que ordena la medida: \"Buenos Aires, 14 de octubre de 2026. (...) Prueba ofrecida por el demandado a fs. 72/83: INFORMATIVA:. Mediante la presentación de fs. 123/135 punto IV se opuso la parte actora parcialmente a la producción de la prueba informativa ofrecida por el demandado a la Superintendencia de Administración de la Policía Federal Argentina –División Remuneraciones-, y por otro lado, a la Caja de Jubilaciones, Retiros y Pensiones de la Policía Federal Argentina, a fin de que informe situación de revista, jerarquía, destino, remuneración bruta y neta, descuentos obligatorios y remita los últimos doce (12) recibos de haberes. En la especie, considero que asiste razón a la actora debiendo en consecuencia liberarse los oficios solicitados a la Superintendencia de Administración de la Policía Federal Argentina –División Remuneraciones-, y por otro lado, a la Caja de Jubilaciones, Retiros y Pensiones de la Policía Federal Argentina, en los términos del art. 400 del Código Procesal,\norganismos que refieran sus ingresos mensuales sin necesidad de informar las tareas que la actora efectúa en las reparticiones. Requíérase en forma electrónica y por secretaría un informe al SIN TyS en el que conste toda la información económica referida a la Sra. Silvina Soledad Carita (DNI N° 27.694.948). Líbrese los restantes oficios solicitados en el punto 16 b., debiendo tramitarlo la dirección letrada del demandado en orden a las facultades que otorga el art 400 del CPCCN., en su caso en los términos de la Ley 22.172. En el caso del ordenado al BCRA dejando constancia que deberá circularizar el pedido mediante formulario \"D\" entre las entidades controladas, y a las instituciones bancarias haciéndole saber que no resulta oponible a la manda judicial de informe el secreto bancario ni fiscal, al ser ordenada en un proceso de familia reservado únicamente a las partes y de naturaleza alimentaria. Fdo. Lucila Califano.- Buenos Aires 3 de noviembre de 2026. Atento lo informado por el BCRA (fs. 317), líbrese oficio como se solicita al BANCO DE LA NACION ARGENTINA, al BANCO BBVA ARGENTINA S.A., a BRUBANK S.A.U., a las billeteras virtuales MERCADO PAGO y MICRO SISTEMAS S.A.U (Personal Pay) en los términos del art. 400 del Código Procesal Civil y Comercial de la Nación, dejando constancia que por tratarse de un pedido de informe efectuado en un proceso de familia de naturaleza alimentaria no rige el secreto bancario y/o fiscal. Se transcribe asimismo lo dispuesto en los siguientes artículos del CPCC: Artículo 398 .-Las oficinas públicas y las entidades privadas deberán contestar el pedido de informes o remitir el expediente dentro de los diez días hábiles, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales. No podrán establecer recaudos que no estuvieran autorizados por ley. Los oficios librados deberán ser recibidos obligatoriamente a su presentación. El juez deberá aplicar sanciones conminatorias progresivas en el supuesto de atraso injustificado en las contestaciones de informes. La apelación que se dedujera contra la resolución que impone sanciones conminatorias tramita en expediente separado Cuando se tratare de la inscripción de la transferencia de dominio en el Registro de la Propiedad, los oficios que se libren a Obras Sanitarias de la Nación (e.l.) al ente prestador de ese servicio y al Gobierno de la Ciudad de Buenos Aires o Municipio de que se trate, contendrán el apercibimiento de que, si no fueran contestados dentro del plazo de diez días, el bien se inscribirá como si estuviese libre de deudas. Artículo 400.-Los pedidos de informes, testimonios y certificados, así como los de remisión de expedientes ordenados en el juicio, serán requeridos por medio de oficios firmados, sellados y diligenciados por el letrado patrocinante con transcripción de la resolución que los ordena y que fija el plazo en que deberán remitirse. Deberá, asimismo, consignarse la prevención que corresponda según el artículo anterior. Los oficios dirigidos a bancos, oficinas públicas, o entidades privadas que tuvieren por único objeto acreditar el haber del juicio sucesorio, serán presentados directamente por el abogado patrocinante, sin\nnecesidad de previa petición judicial. Deberá otorgarse recibo del pedido de informes y remitirse las contestaciones directamente a la secretaría con transcripción o copia del oficio. Cuando en la redacción de los oficios los profesionales se apartaren de lo establecido en la providencia que los ordena, o de las formas legales, su responsabilidad disciplinaria se hará efectiva de oficio o a petición de parte.-----\nSin otro particular, saludo a Ud. muy atte...\nROBERTO V. DE FINO ABOGADO T*130 F 811 CACF T*XXII F*56 CASM T*124 F 374 CFASM",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  }
+]

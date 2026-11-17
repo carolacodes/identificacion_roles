@@ -1,0 +1,8 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_personas_objeto_oficio,indice_persona,nombre_persona,dni_persona,cuit_cuil_persona,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+5,780763,780763_1.pdf,RESUELTO_MULTIPLE,True,False,,7,1,YANET GISELA SUAREZ LEDESMA,,,,YANET GISELA SUAREZ LEDESMA,1,1,,False,False,0
+5,780763,780763_1.pdf,RESUELTO_MULTIPLE,True,False,,7,2,WILLIAM RAFAEL SUAREZ LEDESMA,,,,WILLIAM RAFAEL SUAREZ LEDESMA,1,1,,False,False,0
+5,780763,780763_1.pdf,RESUELTO_MULTIPLE,True,False,,7,3,AMADEO ALVES COSTA,,,,AMADEO ALVES COSTA,1,1,,False,False,0
+5,780763,780763_1.pdf,RESUELTO_MULTIPLE,True,False,,7,4,ANTHONY BARRETO SUAREZ,,,,ANTHONY BARRETO SUAREZ,1,1,,False,False,0
+5,780763,780763_1.pdf,RESUELTO_MULTIPLE,True,False,,7,5,PATRICIA ANABEL DEMICCE CARRERA,,,,PATRICIA ANABEL DEMICCE CARRERA,1,1,,False,False,0
+5,780763,780763_1.pdf,RESUELTO_MULTIPLE,True,False,,7,6,DANIEL MARTÍN OLIVERA CASCO,,,,DANIEL MARTÍN OLIVERA CASCO,1,1,,False,False,0
+5,780763,780763_1.pdf,RESUELTO_MULTIPLE,True,False,,7,7,MICHAEL BELLORA CANEVA,,,,MICHAEL BELLORA CANEVA,1,1,,False,False,0

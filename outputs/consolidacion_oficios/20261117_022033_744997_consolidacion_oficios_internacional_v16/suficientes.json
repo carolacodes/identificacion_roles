@@ -1,0 +1,314 @@
+[
+  {
+    "revision_manual_motivos": [],
+    "revision_manual_descripcion": "",
+    "id": "780763",
+    "numero_archivo": "5",
+    "nombre_documento": "780763_1.pdf",
+    "texto_completo": "Validado por el PODER JUDICIAL 28/10/2026\nJUZGADO LETRADO DE PRIMERA INSTANCIA PENAL ESPECIALIZADO EN CRIMEN ORGANIZADO DE 2º T Juan Carlos Gómez 1236 - Montevideo Tel. 1907 Int. 8406 - 8402 y 8404\nREPÚBLICA ORIENTAL DEL URUGUAY PODER JUDICIAL\nOFICIO\nMontevideo, 27 de Octubre de 2026\nOficio Nº 1500/2026\nMERCADO PAGO URUGUAY S.R.L.\nPRESENTE\nEn autos caratulados “PRUEBA ANTICIPADA Y/O DILIGENCIA PREPARATORIA.”, IUE 2- 116173/2024, en cumplimiento de los Decretos N°1863/2026 de 21/9/2026 y N°2114/2026 de fecha 23/10/2026, se dispuso el Levantamiento del SECRETO BANCARIO y SECRETO TRIBUTARIO, en el marco de lo dispuesto en los art. 211 y 212 del Código del Proceso Penal, art. 25 del Decreto Ley N°15.322, y lo dispuesto en el artículo 5 literal B de la Ley N.o 18.930, en la redacción dada por la Ley No 20.018 a fin de que brinde la siguiente información:\nPor el periodo comprendido de enero 2025 a la fecha sobre cuentas bancarias, instrumentos de dinero electrónico, giros y transferencias de dinero, tarjeta de crédito, prestamos de administración de créditos de las personas:\n- YANET GISELA SUAREZ LEDESMA, CI: 5.442.723-8 - WILLIAM RAFAEL SUAREZ LEDESMA, C.I.: 5.323.763-4 - AMADEO ALVES COSTA, CI: 3.078.846-8 - ANTHONY BARRETO SUAREZ, CI: 5.429.679-2 - PATRICIA ANABEL DEMICCE CARRERA, CI: 4.585.306-6 - DANIEL MARTÍN OLIVERA CASCO, CI: 4.846.236-1 - MICHAEL BELLORA CANEVA C.I . 5.382.147-9\nhttps://validaciones.poderjudicial.gub.uy CVE: 003013186941160BF3FA Página 1 de 2\nAsimismo, informe respecto a los dispositivos electrónicos vinculados a dichas cuentas.\nSe solicita que la información sea enviada a las direcciones de correo electrónico que se indican: pablo.carballo.escobar@minterior.gub.uy;ximena.olivera@fiscalia.gub.uy;adriana.e delman@fiscalia.gub.uy; alana.eccher@fiscalia.gub.uy; tania.rey@fiscalia.gub.uy.\nSin otro particular, saluda a Ud atte.\nhttps://validaciones.poderjudicial.gub.uy CVE: 003013186941160BF3FA Página 2 de 2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO_MULTIPLE",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_personas_objeto_oficio": 7,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "YANET GISELA SUAREZ LEDESMA",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "pais_identificador": "UY",
+        "tipo_identificador": "CI",
+        "identificador_extranjero": "5.442.723-8",
+        "identificador_validado": true,
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "YANET GISELA SUAREZ LEDESMA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": null,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento_internacional",
+            "contador_interno": "2",
+            "palabra_clave": "CI",
+            "nombre_detectado": "YANET GISELA SUAREZ LEDESMA",
+            "nombre_confidence": 0.9590599536895752,
+            "identificador_extranjero_detectado": "5.442.723-8",
+            "fragmento": "prestamos de administración de créditos de las personas:\n- YANET GISELA SUAREZ LEDESMA, CI: 5.442.723-8 - WILLIAM RAFAEL SUAREZ LEDESMA, C.I.: 5.323.763-4 - AMADEO ALVES COSTA, CI: 3.078.846-8 - ANTHONY BARRETO SUAREZ, CI: 5.429.679-2 - PATRICIA ANABEL DEMICCE CARRERA, CI: 4.585.306-6 - DANIEL MARTÍN OLIVERA CASCO, CI: 4.846.236-1 - MICHAEL BELLORA CANEVA C.I . 5.382.147-9\nhttps://validaciones.poderjudicial.gub.uy",
+            "origen_recuperacion": "identificador_extranjero_local"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "identificador_extranjero_validado",
+            "requerimiento_explicito_en_fragmento"
+          ],
+          "detalle": {
+            "metodo": "recuperacion_internacional_aislada",
+            "pais": "UY"
+          }
+        }
+      },
+      {
+        "nombre_persona": "WILLIAM RAFAEL SUAREZ LEDESMA",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "pais_identificador": "UY",
+        "tipo_identificador": "CI",
+        "identificador_extranjero": "5.323.763-4",
+        "identificador_validado": true,
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "WILLIAM RAFAEL SUAREZ LEDESMA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": null,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento_internacional",
+            "contador_interno": "2",
+            "palabra_clave": "CI",
+            "nombre_detectado": "WILLIAM RAFAEL SUAREZ LEDESMA",
+            "nombre_confidence": 0.9660929441452026,
+            "identificador_extranjero_detectado": "5.323.763-4",
+            "fragmento": "prestamos de administración de créditos de las personas:\n- YANET GISELA SUAREZ LEDESMA, CI: 5.442.723-8 - WILLIAM RAFAEL SUAREZ LEDESMA, C.I.: 5.323.763-4 - AMADEO ALVES COSTA, CI: 3.078.846-8 - ANTHONY BARRETO SUAREZ, CI: 5.429.679-2 - PATRICIA ANABEL DEMICCE CARRERA, CI: 4.585.306-6 - DANIEL MARTÍN OLIVERA CASCO, CI: 4.846.236-1 - MICHAEL BELLORA CANEVA C.I . 5.382.147-9\nhttps://validaciones.poderjudicial.gub.uy",
+            "origen_recuperacion": "identificador_extranjero_local"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "identificador_extranjero_validado",
+            "requerimiento_explicito_en_fragmento"
+          ],
+          "detalle": {
+            "metodo": "recuperacion_internacional_aislada",
+            "pais": "UY"
+          }
+        }
+      },
+      {
+        "nombre_persona": "AMADEO ALVES COSTA",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "pais_identificador": "UY",
+        "tipo_identificador": "CI",
+        "identificador_extranjero": "3.078.846-8",
+        "identificador_validado": true,
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "AMADEO ALVES COSTA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": null,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento_internacional",
+            "contador_interno": "2",
+            "palabra_clave": "CI",
+            "nombre_detectado": "AMADEO ALVES COSTA",
+            "nombre_confidence": 0.9817284941673279,
+            "identificador_extranjero_detectado": "3.078.846-8",
+            "fragmento": "prestamos de administración de créditos de las personas:\n- YANET GISELA SUAREZ LEDESMA, CI: 5.442.723-8 - WILLIAM RAFAEL SUAREZ LEDESMA, C.I.: 5.323.763-4 - AMADEO ALVES COSTA, CI: 3.078.846-8 - ANTHONY BARRETO SUAREZ, CI: 5.429.679-2 - PATRICIA ANABEL DEMICCE CARRERA, CI: 4.585.306-6 - DANIEL MARTÍN OLIVERA CASCO, CI: 4.846.236-1 - MICHAEL BELLORA CANEVA C.I . 5.382.147-9\nhttps://validaciones.poderjudicial.gub.uy",
+            "origen_recuperacion": "identificador_extranjero_local"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "identificador_extranjero_validado",
+            "requerimiento_explicito_en_fragmento"
+          ],
+          "detalle": {
+            "metodo": "recuperacion_internacional_aislada",
+            "pais": "UY"
+          }
+        }
+      },
+      {
+        "nombre_persona": "ANTHONY BARRETO SUAREZ",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "pais_identificador": "UY",
+        "tipo_identificador": "CI",
+        "identificador_extranjero": "5.429.679-2",
+        "identificador_validado": true,
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "ANTHONY BARRETO SUAREZ"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": null,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento_internacional",
+            "contador_interno": "2",
+            "palabra_clave": "CI",
+            "nombre_detectado": "ANTHONY BARRETO SUAREZ",
+            "nombre_confidence": 0.988289475440979,
+            "identificador_extranjero_detectado": "5.429.679-2",
+            "fragmento": "prestamos de administración de créditos de las personas:\n- YANET GISELA SUAREZ LEDESMA, CI: 5.442.723-8 - WILLIAM RAFAEL SUAREZ LEDESMA, C.I.: 5.323.763-4 - AMADEO ALVES COSTA, CI: 3.078.846-8 - ANTHONY BARRETO SUAREZ, CI: 5.429.679-2 - PATRICIA ANABEL DEMICCE CARRERA, CI: 4.585.306-6 - DANIEL MARTÍN OLIVERA CASCO, CI: 4.846.236-1 - MICHAEL BELLORA CANEVA C.I . 5.382.147-9\nhttps://validaciones.poderjudicial.gub.uy",
+            "origen_recuperacion": "identificador_extranjero_local"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "identificador_extranjero_validado",
+            "requerimiento_explicito_en_fragmento"
+          ],
+          "detalle": {
+            "metodo": "recuperacion_internacional_aislada",
+            "pais": "UY"
+          }
+        }
+      },
+      {
+        "nombre_persona": "PATRICIA ANABEL DEMICCE CARRERA",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "pais_identificador": "UY",
+        "tipo_identificador": "CI",
+        "identificador_extranjero": "4.585.306-6",
+        "identificador_validado": true,
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "PATRICIA ANABEL DEMICCE CARRERA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": null,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento_internacional",
+            "contador_interno": "2",
+            "palabra_clave": "CI",
+            "nombre_detectado": "PATRICIA ANABEL DEMICCE CARRERA",
+            "nombre_confidence": 0.9953994154930115,
+            "identificador_extranjero_detectado": "4.585.306-6",
+            "fragmento": "prestamos de administración de créditos de las personas:\n- YANET GISELA SUAREZ LEDESMA, CI: 5.442.723-8 - WILLIAM RAFAEL SUAREZ LEDESMA, C.I.: 5.323.763-4 - AMADEO ALVES COSTA, CI: 3.078.846-8 - ANTHONY BARRETO SUAREZ, CI: 5.429.679-2 - PATRICIA ANABEL DEMICCE CARRERA, CI: 4.585.306-6 - DANIEL MARTÍN OLIVERA CASCO, CI: 4.846.236-1 - MICHAEL BELLORA CANEVA C.I . 5.382.147-9\nhttps://validaciones.poderjudicial.gub.uy",
+            "origen_recuperacion": "identificador_extranjero_local"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "identificador_extranjero_validado",
+            "requerimiento_explicito_en_fragmento"
+          ],
+          "detalle": {
+            "metodo": "recuperacion_internacional_aislada",
+            "pais": "UY"
+          }
+        }
+      },
+      {
+        "nombre_persona": "DANIEL MARTÍN OLIVERA CASCO",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "pais_identificador": "UY",
+        "tipo_identificador": "CI",
+        "identificador_extranjero": "4.846.236-1",
+        "identificador_validado": true,
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "DANIEL MARTÍN OLIVERA CASCO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": null,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento_internacional",
+            "contador_interno": "2",
+            "palabra_clave": "CI",
+            "nombre_detectado": "DANIEL MARTÍN OLIVERA CASCO",
+            "nombre_confidence": 0.991669774055481,
+            "identificador_extranjero_detectado": "4.846.236-1",
+            "fragmento": "prestamos de administración de créditos de las personas:\n- YANET GISELA SUAREZ LEDESMA, CI: 5.442.723-8 - WILLIAM RAFAEL SUAREZ LEDESMA, C.I.: 5.323.763-4 - AMADEO ALVES COSTA, CI: 3.078.846-8 - ANTHONY BARRETO SUAREZ, CI: 5.429.679-2 - PATRICIA ANABEL DEMICCE CARRERA, CI: 4.585.306-6 - DANIEL MARTÍN OLIVERA CASCO, CI: 4.846.236-1 - MICHAEL BELLORA CANEVA C.I . 5.382.147-9\nhttps://validaciones.poderjudicial.gub.uy",
+            "origen_recuperacion": "identificador_extranjero_local"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "identificador_extranjero_validado",
+            "requerimiento_explicito_en_fragmento"
+          ],
+          "detalle": {
+            "metodo": "recuperacion_internacional_aislada",
+            "pais": "UY"
+          }
+        }
+      },
+      {
+        "nombre_persona": "MICHAEL BELLORA CANEVA",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "pais_identificador": "UY",
+        "tipo_identificador": "CI",
+        "identificador_extranjero": "5.382.147-9",
+        "identificador_validado": true,
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "MICHAEL BELLORA CANEVA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": null,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento_internacional",
+            "contador_interno": "2",
+            "palabra_clave": "CI",
+            "nombre_detectado": "MICHAEL BELLORA CANEVA",
+            "nombre_confidence": 0.9334911108016968,
+            "identificador_extranjero_detectado": "5.382.147-9",
+            "fragmento": "prestamos de administración de créditos de las personas:\n- YANET GISELA SUAREZ LEDESMA, CI: 5.442.723-8 - WILLIAM RAFAEL SUAREZ LEDESMA, C.I.: 5.323.763-4 - AMADEO ALVES COSTA, CI: 3.078.846-8 - ANTHONY BARRETO SUAREZ, CI: 5.429.679-2 - PATRICIA ANABEL DEMICCE CARRERA, CI: 4.585.306-6 - DANIEL MARTÍN OLIVERA CASCO, CI: 4.846.236-1 - MICHAEL BELLORA CANEVA C.I . 5.382.147-9\nhttps://validaciones.poderjudicial.gub.uy",
+            "origen_recuperacion": "identificador_extranjero_local"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "identificador_extranjero_validado",
+            "requerimiento_explicito_en_fragmento"
+          ],
+          "detalle": {
+            "metodo": "recuperacion_internacional_aislada",
+            "pais": "UY"
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 7,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": [],
+    "recuperacion_internacional": {
+      "pais": "UY",
+      "origen": "exclusivamente_fragmentos_gliner2",
+      "uso_texto_completo": false,
+      "cantidad_recuperadas": 7,
+      "cantidad_terceros_o_no_solicitados": 0,
+      "alertas": []
+    }
+  }
+]

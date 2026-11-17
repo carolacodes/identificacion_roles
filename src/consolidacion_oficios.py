@@ -3806,3 +3806,347 @@ def resumir_consolidacion(
             ] += 1
 
     return resumen
+
+# ============================================================
+# EXTENSION INTERNACIONAL V15 (CHILE Y URUGUAY)
+# Métodos nuevos; las reglas anteriores permanecen intactas.
+# La fuente complementaria es opcional; también acepta un único JSON.
+# ============================================================
+
+import copy
+
+# Guardar la consolidacion historica SIN MODIFICAR su implementacion.
+_consolidar_documentos_argentinos = consolidar_documentos
+
+_int_RUT = re.compile(r'\b(?:RUT|RUN)\s*[:Nº°\.]*\s*(\d{1,2}[. ]?\d{3}[. ]?\d{3}\s*[-–]\s*[\dKk])\b', re.I)
+# C.I., C.I:, CI:, C.I .; exige marcador explícito seguido de número.
+_int_CI = re.compile(r'(?<![A-Za-z])C\s*\.?\s*I\s*\.?\s*[:.]?\s*(\d[. ]?\d{3}[. ]?\d{3}\s*[-–]\s*\d)\b', re.I)
+
+
+def _int_normalizar(s: str) -> str:
+    s = ''.join(c for c in unicodedata.normalize('NFD', str(s or '')) if unicodedata.category(c) != 'Mn')
+    return re.sub(r'\s+', ' ', s).strip().upper()
+
+
+def _int_nombre(s: str) -> str:
+    return re.sub(r'^(?:DON|DOÑA|DONA|SR\.?|SRA\.?)\s+', '', _int_normalizar(s))
+
+
+def _int_nombre_visible(s: str) -> str:
+    return re.sub(r'^(?:don|doña|sr\.?|sra\.?)\s+', '', str(s).strip(), flags=re.I)
+
+
+def _int_rut_valido(s: str) -> bool:
+    s = re.sub(r'[^0-9K]', '', s.upper())
+    if not re.fullmatch(r'\d{7,8}[0-9K]', s):
+        return False
+    total = sum(int(d) * [2, 3, 4, 5, 6, 7][i % 6] for i, d in enumerate(s[-2::-1]))
+    resto = 11 - total % 11
+    esperado = '0' if resto == 11 else 'K' if resto == 10 else str(resto)
+    return s[-1] == esperado
+
+
+def _int_ci_uy_valida(s: str) -> bool:
+    s = re.sub(r'\D', '', s)
+    if len(s) not in (7, 8):
+        return False
+    s = s.zfill(8)
+    total = sum(int(d) * w for d, w in zip(s[:7], [2, 9, 8, 7, 6, 3, 4]))
+    return (10 - total % 10) % 10 == int(s[-1])
+
+
+def _int_candidatos_gliner(documento: dict[str, Any]) -> list[dict[str, Any]]:
+    candidatos = []
+    for res in documento.get('resultados', []):
+        frag = res.get('fragmento') or res.get('texto_entrada_modelo') or ''
+        for can in res.get('candidates', []):
+            nombre = can.get('nombre_persona') or (can.get('fields', {}).get('nombre_persona') or {}).get('text')
+            if nombre and len(_int_nombre(nombre).split()) >= 2:
+                candidatos.append({'nombre': nombre, 'fragmento': frag,
+                    'palabra_clave': res.get('palabra_clave', ''),
+                    'contador_interno': res.get('contador_interno', ''),
+                    'confianza': can.get('nombre_persona_confidence')})
+    return candidatos
+
+
+def _int_buscar_identificador_local(nombre: str, fragmento: str, patron: re.Pattern) -> str | None:
+    """Solo asociar un ID explícitamente junto a ese nombre, nunca al siguiente."""
+    # Nombres detectados están literalmente en fragmento (quitamos DON/SR para matching).
+    n = _int_nombre(nombre)
+    frag_norm = _int_normalizar(fragmento)
+    inicio = frag_norm.find(n)
+    if inicio < 0:
+        return None
+    # Ignora ID antecedente de otra persona, sólo próximos 35 caracteres.
+    siguiente = frag_norm[inicio + len(n):inicio + len(n) + 65]
+    m = patron.search(siguiente)
+    if not m or m.start() > 30:
+        return None
+    return m.group(1).replace(' ', '').replace('–', '-')
+
+
+def _int_contexto_chile_fragmento(fragmento: str, nombre: str) -> tuple[bool, bool, str]:
+    """Analiza EXCLUSIVAMENTE el fragmento del candidato.
+
+    Retorna (objeto_potencial, pedido_mercadopago_confirmado, motivo).
+    Una parte demandada no demuestra por sí sola el destinatario del oficio.
+    """
+    t = _int_normalizar(fragmento)
+    n = _int_nombre(nombre)
+    pos = t.find(n)
+    if pos < 0:
+        return False, False, 'nombre_fuera_del_fragmento'
+    previo = t[max(0, pos - 180):pos]
+    # Confirmación acotada al fragmento y a la cláusula pertinente.
+    mp = bool(re.search(r'MERCADO\s*PAGO', previo))
+    pedido = bool(re.search(r'\b(?:INFORME|INFORMAR|INFORMEN|SOLICIT|OFICIO)\w*\b', previo))
+    if mp and pedido:
+        return True, True, 'requerimiento_mercadopago_en_fragmento'
+    # Información inequívoca de la parte investigada, pero no del destinatario.
+    if re.search(r'PARTE\s+DEMANDADA\s+COMPARECIENTE\s*$', previo):
+        return True, False, 'parte_demandada_sin_destinatario_verificado'
+    return False, False, 'sin_requerimiento_mercadopago_en_fragmento'
+
+
+def _int_pedidos_uruguay(fragmento: str) -> bool:
+    n = _int_normalizar(fragmento)
+    return 'DE LAS PERSONAS:' in n and any(w in n for w in ('CREDITOS', 'CUENTAS', 'TRANSFERENCIAS'))
+
+
+def _int_es_perito(fragmento: str, nombre: str) -> bool:
+    n = _int_nombre(nombre)
+    t = _int_normalizar(fragmento)
+    ix = t.find(n)
+    return ix >= 0 and bool(re.search(r'\bPERITA?\b|TRABAJADORA SOCIAL', t[max(0, ix-90):ix]))
+
+
+def _int_nueva_persona(nombre: str, identificador: str, pais: str, tipo: str,
+                   soportes: list[dict[str, Any]]) -> dict[str, Any]:
+    return {
+        'nombre_persona': nombre, 'dni_persona': '', 'cuit_cuil_persona': '',
+        'pais_identificador': pais, 'tipo_identificador': tipo,
+        'identificador_extranjero': identificador,
+        'identificador_validado': True, 'roles_detectados': [],
+        'variantes_nombre': [nombre],
+        'cantidad_fragmentos_soporte': len(set(s['contador_interno'] for s in soportes)),
+        'cantidad_evidencias': len(soportes), 'score_total': None,
+        'identidad_inconsistente': False,
+        'evidencias': [{
+            'tipo_entrada': 'fragmento_internacional',
+            'contador_interno': s['contador_interno'], 'palabra_clave': s['palabra_clave'],
+            'nombre_detectado': nombre, 'nombre_confidence': s['confianza'],
+            'identificador_extranjero_detectado': identificador,
+            'fragmento': s['fragmento'], 'origen_recuperacion': 'identificador_extranjero_local',
+        } for s in soportes],
+        'decision_consolidacion': {
+            'aceptado': True,
+            'motivos': ['identificador_extranjero_validado', 'requerimiento_explicito_verificado'],
+            'detalle': {'metodo': 'recuperacion_internacional_aislada', 'pais': pais}
+        }
+    }
+
+
+def _int_recuperar_personas_internacionales(documento: dict[str, Any]) -> dict[str, Any]:
+    """Solo fragmentos y candidatos GLiNER; nunca consulta texto_completo."""
+    resultados = documento.get('resultados') or []
+    cands = _int_candidatos_gliner(documento)
+    # País sustentado por los fragmentos, nunca por el documento completo.
+    hay_rut = any((str(r.get('palabra_clave') or '').upper() in ('RUT', 'RUN'))
+                  and _int_RUT.search(str(r.get('fragmento') or r.get('texto_entrada_modelo') or ''))
+                  for r in resultados)
+    hay_ci_lista = any((str(r.get('palabra_clave') or '').upper() == 'CI')
+                       and _int_CI.search(str(r.get('fragmento') or r.get('texto_entrada_modelo') or ''))
+                       and _int_pedidos_uruguay(str(r.get('fragmento') or r.get('texto_entrada_modelo') or ''))
+                       for r in resultados)
+    # No inferir Uruguay solo de una aparición de CI; no mezclar con RUT.
+    chile = bool(hay_rut)
+    uruguay = bool(hay_ci_lista) and not chile
+    agrupados: dict[tuple[str, str, str], list] = defaultdict(list)
+    motivos_por_clave: dict[tuple[str, str, str], dict[str, Any]] = {}
+    rechazados: dict[tuple[str, str, str], dict] = {}
+    observaciones: list[str] = []
+
+    for c in cands:
+        clave = (c['palabra_clave'] or '').upper()
+        frag = c['fragmento']
+        nombre = _int_nombre(c['nombre'])
+        if chile and clave in {'RUT', 'RUN'}:
+            ident = _int_buscar_identificador_local(c['nombre'], frag, _int_RUT)
+            if not ident:
+                continue
+            pais, tipo = 'CL', 'RUT'
+            valido = _int_rut_valido(ident)
+            objeto, pedido_confirmado, motivo = _int_contexto_chile_fragmento(frag, c['nombre'])
+            if _int_es_perito(frag, c['nombre']):
+                objeto, pedido_confirmado, motivo = False, False, 'perito_no_objeto_oficio'
+        elif uruguay and clave == 'CI':
+            ident = _int_buscar_identificador_local(c['nombre'], frag, _int_CI)
+            if not ident:
+                continue
+            pais, tipo = 'UY', 'CI'
+            valido = _int_ci_uy_valida(ident)
+            pedido_confirmado = _int_pedidos_uruguay(frag)
+            objeto = pedido_confirmado
+            motivo = 'requerimiento_lista_personas_en_fragmento' if objeto else 'sin_contexto_pedido_explicito'
+        else:
+            continue
+
+        key = (nombre, ident, pais)
+        if not valido:
+            objeto = False
+            motivo = 'identificador_extranjero_digito_verificador_invalido'
+            observaciones.append(f'{nombre}: identificador {tipo} {ident} no supera validación')
+        if not objeto:
+            rechazados[key] = {
+                'nombre_persona': nombre, 'tipo_identificador': tipo,
+                'pais_identificador': pais, 'identificador_extranjero': ident,
+                'decision_consolidacion': {'aceptado': False, 'motivos': [motivo]},
+            }
+            continue
+        agrupados[key].append(c)
+        motivos_por_clave[key] = {'pedido_confirmado': pedido_confirmado, 'motivo': motivo}
+
+    aceptadas = []
+    for (nombre, ident, pais), soportes in agrupados.items():
+        p = _int_nueva_persona(_int_nombre_visible(soportes[0]['nombre']).upper(), ident,
+                              pais, 'RUT' if pais == 'CL' else 'CI', soportes)
+        info = motivos_por_clave[(nombre, ident, pais)]
+        if info['pedido_confirmado']:
+            p['decision_consolidacion']['motivos'] = [
+                'identificador_extranjero_validado', 'requerimiento_explicito_en_fragmento']
+        else:
+            p['decision_consolidacion']['motivos'] = [
+                'identificador_extranjero_validado', 'objeto_potencial_sin_destinatario_confirmado']
+            p['estado_validacion_identidad'] = 'PENDIENTE_VERIFICACION_PEDIDO'
+            p['requiere_revision'] = True
+        aceptadas.append(p)
+
+    por_nombre: dict[str, set] = defaultdict(set)
+    for p in aceptadas:
+        por_nombre[_int_nombre(p['nombre_persona'])].add(p['identificador_extranjero'])
+    conflictos = {n for n, ids in por_nombre.items() if len(ids) > 1}
+    if conflictos:
+        aceptadas = [p for p in aceptadas if _int_nombre(p['nombre_persona']) not in conflictos]
+        observaciones.extend(f'{n}: identificadores extranjeros contradictorios' for n in sorted(conflictos))
+    return {'personas': aceptadas, 'descartados': list(rechazados.values()),
+            'alertas': observaciones, 'pais': 'CL' if chile else 'UY' if uruguay else None}
+
+
+def _int_unificar_resultado(resultado: dict[str, Any], recuperacion: dict[str, Any]) -> dict[str, Any]:
+    """Unifica una sola vez cada identidad, sin alterar las reglas V14."""
+    nuevo = copy.deepcopy(resultado)
+    personas = list(nuevo['personas_objeto_oficio'])
+    descartados = list(nuevo['grupos_descartados'])
+    extranjeras = recuperacion['personas']
+    rechazadas = recuperacion['descartados']
+    claves_int = {_int_nombre(p['nombre_persona']) for p in extranjeras + rechazadas}
+
+    # Remover el diagnóstico argentino anterior SOLAMENTE para identidades
+    # que el módulo internacional volvió a evaluar con identificador propio.
+    descartados = [p for p in descartados if _int_nombre(p.get('nombre_persona', '')) not in claves_int]
+    aceptados_norm = {_int_nombre(p.get('nombre_persona', '')) for p in personas}
+    for p in extranjeras:
+        clave = _int_nombre(p['nombre_persona'])
+        if clave not in aceptados_norm:
+            personas.append(p)
+            aceptados_norm.add(clave)
+    descartados.extend(p for p in rechazadas
+                       if _int_nombre(p['nombre_persona']) not in aceptados_norm)
+
+    nuevo['personas_objeto_oficio'] = personas
+    nuevo['grupos_descartados'] = descartados
+    nuevo['cantidad_personas_objeto_oficio'] = len(personas)
+    nuevo['cantidad_grupos_descartados'] = len(descartados)
+    nuevo['cantidad_grupos_candidatos'] = len(personas) + len(descartados)
+    nuevo['estado'] = (ESTADO_NO_RESUELTO if not personas else
+                      ESTADO_RESUELTO if len(personas) == 1 else ESTADO_RESUELTO_MULTIPLE)
+    pendientes = [p for p in extranjeras if p.get('requiere_revision')]
+    alertas = recuperacion['alertas']
+    nuevo['recuperacion_internacional'] = {
+        'pais': recuperacion['pais'],
+        'origen': 'exclusivamente_fragmentos_gliner2',
+        'uso_texto_completo': False,
+        'cantidad_recuperadas': len(extranjeras),
+        'cantidad_terceros_o_no_solicitados': len(rechazadas),
+        'alertas': alertas,
+    }
+    if pendientes or alertas:
+        # Si el fragmento no incluye el pedido a Mercado Pago, no afirmar
+        # suficiencia. El proceso posterior podrá decidir la revisión.
+        nuevo['suficiente'] = False
+        nuevo['requiere_fallback_documento_completo'] = True
+        motivo = ('destinatario_no_verificado_en_fragmentos' if pendientes else
+                  'identificador_extranjero_requiere_revision')
+        nuevo['motivos_insuficiencia'] = list(dict.fromkeys(nuevo['motivos_insuficiencia'] + [motivo]))
+        nuevo['requiere_revision'] = True
+        descripcion = ('Se recuperó nombre y RUT desde un fragmento, pero el fragmento no contiene el pedido específico a Mercado Pago. Revisar el destinatario antes de dar por suficiente el resultado.'
+                       if pendientes else 'Se detectaron identificadores extranjeros inválidos o contradictorios; revisar.')
+        anteriores = [m for m in nuevo.get('revision_manual_motivos', [])
+                      if m.get('codigo') not in {'sin_fragmentos_para_gliner', 'verificar_objeto_del_pedido', 'candidatos_descartados', 'sin_candidatos_en_fragmentos'}]
+        nuevo['revision_manual_motivos'] = anteriores + [{'codigo': motivo, 'descripcion': descripcion}]
+        nuevo['revision_manual_descripcion'] = ' '.join(m['descripcion'] for m in nuevo['revision_manual_motivos'])
+    elif personas and not nuevo.get('conflictos_identificador'):
+        nuevo['suficiente'] = True
+        nuevo['requiere_fallback_documento_completo'] = False
+        nuevo['motivos_insuficiencia'] = []
+        nuevo['requiere_revision'] = False
+        nuevo['revision_manual_motivos'] = []
+        nuevo['revision_manual_descripcion'] = ''
+    return nuevo
+
+
+def _consolidar_documentos_con_fuente_internacional(documentos_originales: list[dict[str, Any]],
+                            documentos_internacionales: list[dict[str, Any]] | None = None
+                           ) -> list[dict[str, Any]]:
+    """V14 intacta en los documentos sin evidencia internacional."""
+    resultados = _consolidar_documentos_argentinos(documentos_originales)
+    if not documentos_internacionales:
+        return resultados
+    extra_por_id = {str(d.get('id')): d for d in documentos_internacionales}
+    for i, resultado in enumerate(resultados):
+        internacional = extra_por_id.get(str(resultado.get('id')))
+        if internacional is None:
+            continue
+        recuperacion = _int_recuperar_personas_internacionales(internacional)
+        if not recuperacion['personas'] and not recuperacion['descartados'] and not recuperacion['alertas']:
+            continue
+        resultados[i] = _int_unificar_resultado(resultado, recuperacion)
+    return resultados
+
+
+
+def consolidar_documentos(
+    documentos: list[dict[str, Any]],
+    documentos_internacionales: list[dict[str, Any]] | None = None,
+) -> list[dict[str, Any]]:
+    """Consolida oficios; detección internacional solo desde fragmentos.
+
+    Se puede pasar un JSON internacional único o la fuente complementaria.
+    Nunca inspecciona texto_completo para decisiones internacionales.
+    """
+    if documentos_internacionales is not None:
+        # Modalidad complementaria existente: JSON original + JSON internacional.
+        return _consolidar_documentos_con_fuente_internacional(
+            documentos, documentos_internacionales
+        )
+
+    # Modalidad de prueba con UN SOLO JSON de predicciones internacionales.
+    # El despachador solo reconoce fragmentos realmente etiquetados con
+    # identificadores internacionales. Una coincidencia de 'CI' dentro de
+    # palabras comunes NO activa la rama internacional.
+    hay_fragmentos_internacionales = any(
+        (
+            (str(r.get('palabra_clave') or '').upper() in {'RUT', 'RUN'}
+             and _int_RUT.search(str(r.get('fragmento') or r.get('texto_entrada_modelo') or '')))
+            or
+            (str(r.get('palabra_clave') or '').upper() == 'CI'
+             and _int_CI.search(str(r.get('fragmento') or r.get('texto_entrada_modelo') or '')))
+        )
+        for doc in documentos
+        for r in (doc.get('resultados') or [])
+    )
+    if hay_fragmentos_internacionales:
+        # El mismo JSON alimenta las reglas existentes y la recuperación
+        # especializada: no requiere cambiar el ejecutor de consola.
+        return _consolidar_documentos_con_fuente_internacional(documentos, documentos)
+    return _consolidar_documentos_argentinos(documentos)
