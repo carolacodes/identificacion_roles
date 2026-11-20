@@ -1,0 +1,8 @@
+{
+  "tipo": "oficios",
+  "input_file": "E:\\CAROLA\\CAROLA TRABAJO\\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\\identificacion_roles\\outputs\\por_documento\\20261120_013152_multi_v1_oficios_fragmentos_thr50_20_casos\\predicciones_por_documento.json",
+  "run_name": "consolidacion_20_casos_nuevos_v16",
+  "total_documentos": 20,
+  "modulo": "src.consolidacion_oficios",
+  "exportador": "src.run_consolidacion_oficios"
+}

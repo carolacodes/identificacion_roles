@@ -143,3 +143,8 @@
 2026-10-25 17:24:00,377 INFO __main__ - Documentos cargados: 79
 2026-10-25 17:24:00,672 INFO __main__ - Consolidacion finalizada: documentos=79 resueltos=72 multiples=4 no_resueltos=3 personas=80
 2026-10-25 17:24:00,672 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20261025_172400_consolidacion_multi_v7_fragmentos_thr50_20261009_160006_fusion_transitiva
+2026-11-20 14:29:12,399 INFO __main__ - Inicio de consolidacion
+2026-11-20 14:29:12,404 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20261120_141722_multi_v7_fragmentos_thr50\predicciones_por_documento.json
+2026-11-20 14:29:12,414 INFO __main__ - Documentos cargados: 20
+2026-11-20 14:29:12,498 INFO __main__ - Consolidacion finalizada: documentos=20 resueltos=14 multiples=3 no_resueltos=3 personas=20
+2026-11-20 14:29:12,499 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20261120_142912_consolidacion_multi_20_embargos_20261120

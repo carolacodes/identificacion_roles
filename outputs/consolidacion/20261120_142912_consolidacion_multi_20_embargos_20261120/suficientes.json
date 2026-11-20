@@ -1,0 +1,2179 @@
+[
+  {
+    "id": "789784",
+    "numero_archivo": "2",
+    "nombre_documento": "789784_1.pdf",
+    "texto_completo": "OFICIO DE EMBARGO\nBuenos Aires, 30 de octubre de 2026\nMERCADO LIBRE S.R.L.- S / D\nTengo el agrado de dirigirme a Ud. en los autos caratulados: “ALBENQUE WALTER OSCAR c/ WHITE SHIP S.R.L. s/EJECUCION DE CREDITOS LAB.” (Expte. Nº 6709/2025), que tramitan por ante el JUZGADO NACIONAL DE 1RA INSTANCIA DEL TRABAJO NRO. 10, a cargo del Dr. Sergio Raúl Micheloud, Secretaría única a mi cargo, sito en Diagonal Roque Sáenz Peña 760, 8° piso, C.A.B.A., a fin de que se sirva de los medios necesarios para trabajar embargo sobre los fondos de titularidad de WHITE SHIP S.R.L. (CUIT 30-71606996-2) que posea en MERCADO LIBRE S.R.L. ÚNICAMENTE EN PESOS, hasta cubrir la suma de $726.000 en concepto de capital, con más la de $217.800 que se presupuesta provisoriamente para responder a intereses y costas. Hágase saber a la entidad oficiada que las sumas embargadas deberán ser transferidas al Banco Ciudad, Sucursal Tribunales, a la orden de este Juzgado y como pertenecientes a estos autos, dentro del plazo de tres días, debiendo informar el resultado de la medida.\nEn virtud de ello, se denuncian los datos pertenecientes a la cuenta bancaria de autos: Juzgado Nacional del Trabajo N° 10, Libro 1546 Folio 419 DV. 3, Actor: ALBENQUE WALTER OSCAR, Demandado: WHITE SHIP SRL, Causa: EJEC DE CRED LAB 6709/2025, Expediente: CNT-000006709-2025-0000, Moneda: Pesos, C.B.U. 02900759-00269154604191, CUIT Bco. Ciudad 30-99903208-3, Clave 0006- 010- -1546-0419-3.-\nSaludo a Ud. muy atte.\nSERGIO RAUL MICHELOUD JUEZ NACIONAL\nmercado libre 16 NOV 2026 RECEPCION\nSignature Not Verified Digitally signed by WALTER OSCAR ALBENQUE Date: 2026.10.22 15:57:59 ART\nSERGIO RAUL MICHELOD T.U.E. [ILEGIBLE]",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "WHITE SHIP S.R.L.",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "30-71606996-2",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "WHITE SHIP S.R.L."
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 11.906,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "WHITE SHIP S.R.L.",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "30-71606996-2",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9690479040145874,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "necesarios para trabajar embargo sobre los fondos de titularidad de WHITE SHIP S.R.L. (CUIT 30-71606996-2) que posea en MERCADO LIBRE S.R.L.",
+            "contexto_local": "necesarios para trabajar embargo sobre los fondos de titularidad de WHITE SHIP S.R.L. (CUIT 30-71606996-2) que posea en MERCADO LIBRE S.R.L."
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador"
+          ],
+          "detalle": {
+            "score_total": 11.906,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "titular"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "789892",
+    "numero_archivo": "3",
+    "nombre_documento": "789892_1.pdf",
+    "texto_completo": "TEXT O Y DATOS DE LA NOTIFICACIÓN\nUsuario conectado: GENCARELLI Federico Andrés - 20240955033@notificaciones.scba.gov.ar Organismo: JUZGADO EN LO CIVIL Y COMERCIAL N° 4 - BAHIA BLANCA Carátula: PATRIGNANI HECTOR A. C/ SOPLANES BRAULIO M. Y OTRO S/ CUMPLIMIENTO DE CONTRATOS CIVILES Y COMER CIALES Número de causa: 40122 Tipo de notificación: OFICIO ELECTRONICO Destinatarios: 20240955033@notificaciones.scba.gov.ar Fecha notificación: 17/11/2026 00:00:00 Alta o disponibilidad 13/11/2026 11:23:41 Firma digital: Firma válida Firmado y Notificado por: SANCHEZ Javier Alejandro. SECRETARIO --- Certificado Correcto. Fecha de Firma: 13/11/2026 11:23:40 Firmado por: SANCHEZ Javier Alejandro. SECRETARIO --- Certificado Correcto. Fecha de Firma: 13/11/2026 11:23:29 GENCARELLI Federico Andrés. --- Certificado Correcto. Fecha de Firma: 11/11/2026 13:12:54\nOFICIO Punta Alta, 11 de noviembre de 2026\nMERCADO PAGO SA Se le dirige a Ud. el presente en los autos caratulados: \"PATRIGNANI, HECTOR ADRIAN c/ SOPLANES, BRAULIO y OTRO S/ Cobro Ejecutivo\" que tramitan por ante el Juzgado Civil y Comercial N° 4, a cargo del Dr. Orlando Mattii, Magistrado Suplente y Secretaría Única a cargo del Dr. Javier Alejandro Sanchez, del Departamento Judicial Bahía Blanca, a fin de que, por donde corresponda, decrete embargo sobre los fondos que el Sr BRAULIO MAXIMILIANO SOPLANES DNI N° 29.784.922 y el Sr. JULIO ALBERTO SOPLANES, DNI: 13.080.347 tengan depositados en la cuenta digital existente de su titularidad hasta cubrir la suma de PESOS UN MIL CIENTO CUARENTA ($1.140), importe del capital reclamado mas la suma de PESOS SEISCIENTOS ($600), fijados provisionalmente para responder a intereses, gastos y costas de la ejecución. Hágase saber que las retenciones a practicarse deberán depositarse del uno al diez de cada mes en el Banco de la Provincia de Buenos Aires, Sucursal Tribunales de esta ciudad de Bahía Blanca, y a la orden del infrascripto y como pertenecientes a estos autos \"PATRIGNANI HECTOR A. C/ SOPLANES BRAULIO M. Y OTRO S/ CUMPLIMIENTO DE CONTRATOS CIVILES Y COMER CIALES\", CUIT 30-70721665-0, cuenta judicial en pesos N° 595140/5, CBU 0140437527620659514052 La resolución que ordena la medida, transcripta en su parte pertinente, dice: \"Bahia Blanca, 9 de abril de 2026. Y VISTOS: Atento lo solicitado, décrétase embargo sobre los fondos que tuvieran depositados los demandados SOPLANES BRAULIO M. y SOPLANES JULIO en las cuentas digitales de su titularidad: CUENTA DNI, MOD O, MERCADO PAGO, PERSONAL PAY, NORANJA DIGITAL, hasta cubrir las sumas de PESOS UN MIL CIENTO CUARENTA ($1.140), importe del capital reclamado mas la suma de PESOS SEISCIENTOS ($600), fijados provisionalmente para responder a intereses, gastos y costas de la ejecución, debiendo proceder a la transferencia de los fondos a cuenta de autos en el Banco de la Provincia de Buenos Aires, Sucursal Tribunales de esta ciudad de Bahía Blanca, y a la orden del infrascripto. A ese fin, líbrese oficio a las billete ras indicadas, dejándose constancia que únicamente deben remitir respuesta a estos autos las entidades que hagan efectiva la medida por existir fondos de titularidad de los demandados.\" FDO MATTII Orlando Daniel. MAGISTRADO SUPLENTE.-\nSe autoriza a diligenciar el presente al Dr. Federico Andres Gencarelli y/o a quien él designe.\nLo saludo atte.\nPara verificar la notificación, y las copias de traslado si las hubiere, ingrese a: https://notificaciones.scba.gov.ar/verificar.aspx Su código de verificación es: ZM9N4E2N\n222500052010109123",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO_MULTIPLE",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 2,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "JULIO ALBERTO SOPLANES",
+        "dni_embargado": "13.080.347",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "JULIO ALBERTO SOPLANES"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.989,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JULIO ALBERTO SOPLANES",
+            "dni_detectado": "13.080.347",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9963656663894653,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "corresponda, decrete embargo sobre los fondos que el Sr BRAULIO MAXIMILIANO SOPLANES DNI N° 29.784.922 y el Sr. JULIO ALBERTO SOPLANES, DNI: 13.080.347 tengan depositados",
+            "contexto_local": "corresponda, decrete embargo sobre los fondos que el Sr BRAULIO MAXIMILIANO SOPLANES DNI N° 29.784.922 y el Sr. JULIO ALBERTO SOPLANES, DNI: 13.080.347 tengan depositados"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador"
+          ],
+          "detalle": {
+            "score_total": 9.989,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "BRAULIO MAXIMILIANO SOPLANES",
+        "dni_embargado": "29.784.922",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "BRAULIO MAXIMILIANO SOPLANES"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.981,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "BRAULIO MAXIMILIANO SOPLANES",
+            "dni_detectado": "29.784.922",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9937787652015686,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "corresponda, decrete embargo sobre los fondos que el Sr BRAULIO MAXIMILIANO SOPLANES DNI N° 29.784.922 y el Sr. JULIO ALBERTO SOPLANES, DNI: 13.080.347 tengan depositados",
+            "contexto_local": "corresponda, decrete embargo sobre los fondos que el Sr BRAULIO MAXIMILIANO SOPLANES DNI N° 29.784.922 y el Sr. JULIO ALBERTO SOPLANES, DNI: 13.080.347 tengan depositados"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador"
+          ],
+          "detalle": {
+            "score_total": 9.981,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790065",
+    "numero_archivo": "4",
+    "nombre_documento": "790065_1.pdf",
+    "texto_completo": "Poder Judicial de la Nación JUZGADO CIVIL 19\nOFICIO\nCiudad Autónoma de Buenos Aires, de octubre de 2026.\nSr. Representante Legal de\nMERCADO LIBRE SRL (MERCADO PAGO)\nTengo el agrado de dirigirme a Ud. en los autos caratulados \"ESTEBAN SANCHEZ, LILIANA ESTELA c/GIMENEZ, JACINTA Y OTROS s/EJECUCION DE ALQUILERES” (Expte.N°3211/2023) en trámite por ante el Juzgado Nacional de Primera Instancia en lo Civil N° 19, a cargo del Dr. Santiago Villagrán, Secretaría única a mi cargo, sito en Tucumán 348, 3er piso, de esta Ciudad Autónoma de Buenos Aires, a fin de que se trabe embargo hasta cubrir la suma de PESOS DOS MILLONES TRESCIENTOS VEINTIUN MIL CIENTO NOVENTA Y CUATRO CON 56/100 ($ 2.321.194,56), con más la suma de PESOS CUATRO MILLONES SEISCIENTOS MIL CON 00/100 ($4.600.000) presupuestado para responder provisoriamente a intereses y costas sobre las sumas que se encuentren depositadas y/o en el futuro se depositen y cuya titularidad corresponda a JACINTA GIMENEZ CUIT (27-05243718-6) e ISA SEBASTIAN YAIR CUIT (20-29304863-1), en vuestra entidad.\nLos importes retenidos deberán ser transferidas a la cuenta 9984732002, CBU 0110025950099847320029, abierta en el Banco de la Nación Argentina, sucursal Tribunales, a nombre de autos y a cargo del tribunal, deberá informar a este juzgado el cumplimiento de lo aquí ordenado y mantener la medida hasta cubrir los importes consignados en el presente.\nPara el caso que se tratare de una cuenta sueldo la medida no deberá llevarse a cabo y, en su lugar, deberá informar a este tribunal nombre y domicilio del empleador depositante.\nEl auto que ordena la medida dice: \"Buenos Aires 13 de octubre de 2026. ... I. En atención a lo solicitado, sentencia dictada en los términos del art. 551 del CPCC el 30/10/2023, lo proveído el 14/05/2026, y demás constancias de autos,\n#37449785#524639402#20261026080506658\nPoder Judicial de la Nación\nJUZGADO CIVIL 19\nhasta cubrirla suma de $ 2.321.194,56 en concepto de capital remanente de condena, con más la suma de $ 4.600.000 que se presupuestanprovisoriamente para responder a intereses y costas, trábese embargo sobre las sumas que se encuentren depositadas y/o en el futuro se depositen y cuya titularidad corresponda a Jacinta Giménez (C.U.I.T. N° 27-05243718-6) e Isa Sebastián Yair (C.U.I.T. N° 20-29304863-1) en Mercado Libre S.R.L. (Mercado Pago). Con este objetivo, líbrese oficio haciendo constar en la pieza el CUIT/CUIL de los afectados. Hágase saber a la entidad oficiada que se deberá proceder a la transferencia y al depósito de los fondos retenidos al Banco Nación Argentina, Sucursal Tribunales, a la cuenta abierta (Nro. 9984732002 con CBU: 0110025950099847320029), a nombre de autos a nombre de estos autos y a la orden de este juzgado, y que se tendrá que comunicar a esta Secretaría el cumplimiento de lo aquí ordenado, como así también que la medida deberá mantenerse hasta cubrir los importes consignados en la presente. En dicha pieza se dejará establecido que si se tratase de una “cuenta sueldo” la medida no deberá llevarse a cabo, ya que, en su lugar, deberá informar al tribunal el nombre y el domicilio del empleador depositante… (Fdo.) Dr. Santiago Villagrán. Juez.\nSe informa a las entidades destinatarios que podrán constatar su autenticidad en el sistema informático del Poder Judicial de la Nación ( www.pin.gov.ar ) ingresando el correspondiente número de expediente y año en la solapa de consulta de expedientes.\nAsimismo, se deja constancia que el presente documento digital se suscribe electrónicamente y/o digitalmente se encuentra eximido de colocación de sello medalla.\nSe encuentran autorizados a diligenciar el presente el Dr. Cirillo Fabián Marcelo T° 96 F° 567 CPACF y/o Agustín Serventi T°115 F° 631 CPACF indistintamente y con facultad de sustituir la presente autorización.\nSaludo a Ud. atentamente.\nSignature Not Verified Digitally signed by JUAN LUIS JAVIER CUNEO LIBARONA Date: 2026.10.26 08:05:10 ART\n#37449785#524639402#20261026080506658",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO_MULTIPLE",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 2,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "Jacinta Giménez",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "27-05243718-6",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "JACINTA GIMENEZ",
+          "Jacinta Giménez"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 17.641,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JACINTA GIMENEZ",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "27-05243718-6",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9205825924873352,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "y/o en el futuro se depositen y cuya titularidad corresponda a JACINTA GIMENEZ CUIT (27-05243718-6) e ISA SEBASTIAN YAIR CUIT (20-29304863-1), en vuestra entidad.",
+            "contexto_local": "y/o en el futuro se depositen y cuya titularidad corresponda a JACINTA GIMENEZ CUIT (27-05243718-6) e ISA SEBASTIAN YAIR CUIT (20-29304863-1), en vuestra entidad."
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "6",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Jacinta Giménez",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "27-05243718-6",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9967530369758606,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "y/o en el futuro se depositen y cuya titularidad corresponda a Jacinta Giménez (C.U.I.T. N° 27-05243718-6) e Isa Sebastián Yair (C.U.I.T. N° 20-29304863-1) en Mercado Libre S.R.L.",
+            "contexto_local": "y/o en el futuro se depositen y cuya titularidad corresponda a Jacinta Giménez (C.U.I.T. N° 27-05243718-6) e Isa Sebastián Yair (C.U.I.T. N° 20-29304863-1) en Mercado Libre S.R.L."
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 17.641,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "titular"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": true,
+              "cantidad_fragmentos": 2
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "ISA SEBASTIAN YAIR CUIT",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "20-29304863-1",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "ISA SEBASTIAN YAIR CUIT",
+          "Isa Sebastián Yair"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 13.775,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ISA SEBASTIAN YAIR CUIT",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.8207720518112183,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "y/o en el futuro se depositen y cuya titularidad corresponda a JACINTA GIMENEZ CUIT (27-05243718-6) e ISA SEBASTIAN YAIR CUIT (20-29304863-1), en vuestra entidad.",
+            "contexto_local": "y/o en el futuro se depositen y cuya titularidad corresponda a JACINTA GIMENEZ CUIT (27-05243718-6) e ISA SEBASTIAN YAIR CUIT (20-29304863-1), en vuestra entidad."
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "6",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Isa Sebastián Yair",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "20-29304863-1",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9980213642120361,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "y/o en el futuro se depositen y cuya titularidad corresponda a Jacinta Giménez (C.U.I.T. N° 27-05243718-6) e Isa Sebastián Yair (C.U.I.T. N° 20-29304863-1) en Mercado Libre S.R.L.",
+            "contexto_local": "y/o en el futuro se depositen y cuya titularidad corresponda a Jacinta Giménez (C.U.I.T. N° 27-05243718-6) e Isa Sebastián Yair (C.U.I.T. N° 20-29304863-1) en Mercado Libre S.R.L."
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 13.775,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "titular"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": true,
+              "cantidad_fragmentos": 2
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790073",
+    "numero_archivo": "5",
+    "nombre_documento": "790073_1.pdf",
+    "texto_completo": "OFICIO\nE\nNEUQUEN\nJuzgado Ejecutivo Numero 1\nDESTINATARIO: MERCADO PAGO Vinculo:\nOFICIO DIGITAL PARA DILIGENCIAR POR ABOGADOS REGLAMENTACIÓN SISCOM -EXPEDIENTE DIGITAL\nOFICIO DE LEVANTAMIENTO DE EMBARGO NEUQUEN, de octubre de 2026.- A QUIEN CORRESPONDA Su Despacho.- Me dirijo a Ud., en autos caratulados: \"PROVINCIA DEL NEUQUEN C/ NIETO DE LA PUENTE ROXANA S/ Apremio (SENTENCIA)\", Expte.: EXD230517/25, que tramitan por ante el Juzgado de Juicios Ejecutivos N° 1, a cargo de Dr. JAVIER H. GHISINI, SECRETARIA Unica A CARGO DE LA Dra. MARIANA DE LOURDES ARIAS , sito en Leloir N °686 - Ciudad Judicial - Edificio Sur - 2° piso de Neuquén Capital, a fin de hacerle saber que SE HA DECRETADO EL LEVANTAMIENTO DE EMBARGO Y DEBERÁ PONER A DISPOSICIÓN DEL DEMANDADO LOS FONDOS RETENIDOS sobre las sumas que el demandado en autos NIETO DE LA PUENTE ROXANA, CUIT 27-29138049-8 , tenga depositadas o que ingresen en el futuro en cajas de ahorro y/o cuentas corrientes y/o cuenta de valores al cobro y/o cuenta título y/o depósitos a plazo fijo y/o cualquier otra modalidad bancaria, registradas en vuestra entidad bancaria y cualquier sucursal del país.- La resolución de autos que la ordena, en su parte pertinente dice: \"NEUQUEN 11 de Noviembre de 2026. Atento lo expresamente solicitado por la actora, el estado y constancias de autos, décrétese el levantamiento de las medidas cautelares cumplidas en las presentes, sobre los bienes del demandado NIETO DE LA PUENTE ROXANA, CUIT 27-29138049-8 , a tal fin líbrese los oficios de estilo. Para el caso de haberse cumplido ante entidades bancarias y/o billeteras virtuales, hágaseles saber que de haberse retenido fondos, deberán ser puesto a disposición de su titular.\" ... FDO. Dr. JAVIER H. GHISINI.- Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio el Dr. Ramiro Rodriguez Gomez y/o Maria Virginia Raffo y/o Diego Oberholzer y/o Agustina Montenegro y/o Pereira Lucas y/o Nicolás Diaz y/o Rocío Rohr y/o Augusto Camporesi y/o Agustina Bravo y/o Rocio Vena quienes estos designen.- Atte.- Deberá coordinar con el citado profesional la respuesta a este oficio. A sus efectos, el correo de contacto es: ejecucionesapremiosnqn@gmail.com Se deja constancia que el presente OFICIO DIGITAL se libra conforme a la modalidad\nOFICIO N°: 1339587\nJNQJE1-EXD-230517/2025\nFecha de Ingreso: 28/10/2026 | Fecha del Cargo: 29/10/2026 | Firmado por Erwin Bohnet\n“OFICIOS DIGITALES” aprobada por Decreto de Presidencia del TSJ, Nro. 206/20 de fecha\nSe deja constancia que el presente OFICIO DIGITAL se libra conforme lo dispuesto en la \"Reglamentación del Sistema de Seguimiento de Cédulas, Oficios (SISCOM)\" aprobado por el Tribunal Superior de Justicia mediante Ac. 5831, pto. 23 y sus modificatorias como así por el Dc.529/22 de la Presidencia del TSJ y conforme surge del art. 3 inciso 2 del reglamento aludido, puede verificar su autenticidad a través del mecanismo establecido al pie del presente.\nSaludo a Ud. muy atentamente.-\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código 1mHrm5AP8 para verificar la autenticidad del oficio, y acceder a las copias de traslado que se hubieran adjuntado a la diligencia.\nTambién puede validar escaneando el QR de la derecha o haciendo clic en el mismo.\nhash: 86c7a493d4b89a250d29ba43832d1073d41281ed3426a663a31d33554814d365\npagina: 2 de 2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "NIETO DE LA PUENTE ROXANA",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "27-29138049-8",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "NIETO DE LA PUENTE ROXANA"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 21.628,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "NIETO DE LA PUENTE ROXANA",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "27-29138049-8",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.7509810924530029,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "RETENIDOS sobre las sumas que el demandado en autos NIETO DE LA PUENTE ROXANA, CUIT 27-29138049-8 , tenga depositadas",
+            "contexto_local": "RETENIDOS sobre las sumas que el demandado en autos NIETO DE LA PUENTE ROXANA, CUIT 27-29138049-8 , tenga depositadas"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "NIETO DE LA PUENTE ROXANA",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "27-29138049-8",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9594461917877197,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "cumplidas en las presentes, sobre los bienes del demandado NIETO DE LA PUENTE ROXANA, CUIT 27-29138049-8 , a tal fin líbrese los oficios de estilo.",
+            "contexto_local": "cumplidas en las presentes, sobre los bienes del demandado NIETO DE LA PUENTE ROXANA, CUIT 27-29138049-8 , a tal fin líbrese los oficios de estilo."
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 21.628,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "demandado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": true,
+              "cantidad_fragmentos": 2
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "1mHrm5AP8",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "1mHrm5AP8"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 4.282,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "3",
+            "palabra_clave": "doc",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "1mHrm5AP8",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5938562154769897,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Saludo a Ud. muy atentamente.-\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código 1mHrm5AP8",
+            "contexto_local": "Saludo a Ud. muy atentamente.-\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código 1mHrm5AP8"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "nombre_no_valido"
+          ],
+          "detalle": {
+            "score_total": 4.282,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": false
+          }
+        }
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790119",
+    "numero_archivo": "8",
+    "nombre_documento": "790119_1.pdf",
+    "texto_completo": "PODER JUDICIAL PROVINCIA DEL CHUBUT\nJuzgado de Ejecución N°3 (CR)\nCHUBUT\nPODER JUDICIAL DE LA PROVINCIA DEL CHUBUT JUZGADO DE EJECUCIÓN N° 3 SECRETARIA N° 6\nOFICIO N° 2206/2026.\nComodoro Rivadavia, noviembre de 2026.\nA MERCADO LIBRE S.R.L.\nTengo el agrado de dirigirme a Ud. en los autos caratulados: “MUNICIPALIDAD DE COMODORO RIVADAVIA C/ GALLARDO, Mario Alberto S/ Ejecución fiscal”, Expte. 000692/2026, que tramitan por ante este Juzgado de Ejecución N° 3, sito en Avda. Figueroa Alcorta Nº 90, 2do. piso - Ciudad Judicial -, Circunscripción Judicial con asiento en Comodoro Rivadavia, Provincia del Chubut, a cargo del Dr. Alejo TRILLO QUIROGA, Secretaría N° 6 a los efectos de que se sirva tomar razón del EMBARGO EJECUTIVO sobre las sumas depositadas y/o a depositar en el futuro que el Sr. Mario Alberto GALLARDO DNI 26.996.352, tenga en vuestra entidades, hasta cubrir la suma de PESOS TREINTA MIL TRESCIENTOS SESENTA Y DOS CON TRENTA Y OCHO CENTAVOS ($ 30.362,38), en concepto de liquidación aprobada con más la suma de PESOS NUEVE MIL CIENTO OCHO CON SETENTA Y UN CENTAVOS ($ 9.108,71) presupuestados provisoriamente para responder a intereses y costas del juicio. Asimismo, hago saber que en caso de tratarse de cuenta sueldos, deberá abstenerse de cumplir la medida e informar tal circunstancia al Juzgado.\nDichas sumas deberán ser depositadas en el Banco del Chubut S.A.- sucursal centro- a la orden de éste Juzgado y como pertenecientes a estos autos, en N° de cuenta 6-50-000831049, CBU Nº 0830006511008310490014, CUIT del STJ 33-67046683-9.\nEl auto que ordena el libramiento del presente, en su parte pertinente dice: “Comodoro Rivadavia, noviembre 12 de 2026... Atento\nCVS: xqpEdBY79 https://validar.juschubut.gov.ar/ Poder Judicial del Chubut Firmado digitalmente\nlo peticionado, trábase embargo ejecutivo sobre las sumas tenga el demandado Mario Alberto GALLARDO DNI 26.996.352 depositada y/o a depositar en el futuro en la entidad bancaria indicada: MERCADOLIBRE S.R.L. hasta cubrir la suma de PESOS TREINTA MIL TRESCIENTOS.SESENTA Y DOS CON TREINTA Y OCHO CENTAVOS ($ 30.362,38), en concepto de liquidación aprobada con más la suma de PESOS NUEVE MIL CIENTO OCHO CON SETENTA Y UN CENTAVOS ($ 9,108,71) que se presupuestan para responder a intereses y costas del juicio. A tal fin líbrense oficios...- Fdo. Alejo TRILLO QUIROGA JUEZ.\" Artículo 402 CPR. \"RECAUDOS Y PLAZOS PARA LA CONTESTACION. Las oficinas públicas no podrán establecer recaudos o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas. Deberán contestar el pedido de informes o remitir el expediente dentro de VEINTE (20) días hábiles y las entidades privadas dentro de DIEZ (10) salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales. Cuando se tratare de la inscripción de la transferencia de dominio en el Registro de la Propiedad, los oficios que se libren a las Corporaciones Municipales y demás organismos públicos o privados que corresponda, contendrán el apercibimiento de que, si no fueren contestados dentro del plazo de VEINTE (20) días el bien se inscribirá como si estuviere libre de deuda.\" Artículo 403 CPR. \"RETARDO. Si por circunstancias atendibles el requerimiento no pudiere ser cumplido dentro del plazo, se deberá informar al juzgado, antes del vencimiento de aquél, sobre las causas y la fecha en que se cumplirá. Cuando el juez advirtiere que determinada repartición pública, sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno y Justicia, a los efectos que corresponda, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas que sin causa justificada no contestaren oportunamente, se les impondrá multa de hasta PESOS DOS ($2) a PESOS CINCUENTA ($50) por cada día de retardo. La apelación que se dedujere contra la respectiva resolución tramitará en expediente separado.\" Hágase saber a la oficiada que la contestación del presente oficio deberá ser presentada digitalmente en formato PDF y CVS: xgpEdBY79 https://validar.juschubut.gov.ar/ Poder Judicial del Chubut Firmado digitalmente\nPODER JUDICIAL PROVINCIA DEL CHUBUT\nJuzgado de Ejecución N°3 (CR)\nremitida a la casilla de correo de este juzgado: juzejecucion3cr_mesa@juschubut.gov.ar.\nSe encuentran autorizados a diligenciar el presente al Dr. Martín Sebastián SIVILA y/o la persona que la misma indique, con amplias facultades de ley.\nSaludo a Ud. muy atentamente.\nCVS: xgpEdBY79 https://validar.juschubut.gov.ar/ Poder Judicial del Chubut Firmado digitalmente\nFirmado digitalmente el 13/11/2026 12:30 por MEDINA Vanina Andrea Secretaria",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "Mario Alberto GALLARDO",
+        "dni_embargado": "26.996.352",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Mario Alberto GALLARDO"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 21.459,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Mario Alberto GALLARDO",
+            "dni_detectado": "26.996.352",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.987758457660675,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "sumas depositadas y/o a depositar en el futuro que el Sr. Mario Alberto GALLARDO DNI 26.996.352, tenga en vuestra",
+            "contexto_local": "sumas depositadas y/o a depositar en el futuro que el Sr. Mario Alberto GALLARDO DNI 26.996.352, tenga en vuestra"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "5",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Mario Alberto GALLARDO",
+            "dni_detectado": "26.996.352",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9986594915390015,
+            "score_contextual": 4.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "lo peticionado, trábase embargo ejecutivo sobre las sumas tenga el demandado Mario Alberto GALLARDO DNI 26.996.352 depositada y/o a depositar",
+            "contexto_local": "lo peticionado, trábase embargo ejecutivo sobre las sumas tenga el demandado Mario Alberto GALLARDO DNI 26.996.352 depositada y/o a depositar"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 21.459,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "demandado",
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": true,
+              "cantidad_fragmentos": 2
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790120",
+    "numero_archivo": "9",
+    "nombre_documento": "790120_1.pdf",
+    "texto_completo": "PODER JUDICIAL PROVINCIA DEL CHUBUT\nJuzgado de Ejecución N°3 (CR)\nCHUBUT\nPODER JUDICIAL DE LA PROVINCIA DEL CHUBUT JUZGADO DE EJECUCIÓN N° 3 SECRETARIA N° 6\nOFICIO N° 2201 /2026.\nComodoro Rivadavia, noviembre de 2026.\nA MERCADO LIBRE SRL\nTengo el agrado de dirigirme a Ud. en los autos caratulados: “MUNICIPALIDAD DE COMODORO RIVADAVIA C/ CARDENAS, Noelia Soledad S/ Ejecución fiscal”, Expte. 000086/2026, que tramitan por ante este Juzgado de Ejecución N° 3, sito en Avda. Figueroa Alcorta Nº 90, 2do. piso - Ciudad Judicial -, Circunscripción Judicial con asiento en Comodoro Rivadavia, Provincia del Chubut, a cargo del Dr. Alejo TRILLO QUIROGA, Secretaría N° 6 a los efectos de que se sirva tomar razón del EMBARGO PREVENTIVO sobre las sumas depositadas y/o a depositar en el futuro que la Sra. Noelia Soledad CARDENAS DNI 36.307.261, tenga en vuestra entidades, hasta cubrir la suma de PESOS QUINIENTOS DIEZ MIL ($ 510.000,00), con más la suma de PESOS CIENTO CINCUENTA Y TRES MIL ($ 153.000,00) presupuestados provisoriamente para responder a intereses y costas del juicio. Asimismo, hago saber que en caso de tratarse de cuenta sueldos, deberá abstenerse de cumplir la medida e informar tal circunstancia al juzgado.\nDichas sumas deberán ser depositadas en el Banco del Chubut S. A. -sucursal centro- a la orden de éste Juzgado y como pertenecientes a estos autos, en N° de cuenta 6-50-000819597, CBU Nº 0830006511008195970014, CUIT del STJ 33-67046683-9.\nEl auto que ordena el libramiento del presente, en su parte pertinente dice: “Comodoro Rivadavia, marzo 3 de 2026... trábase EMBARGO PREVENTIVO sobre las sumas depositadas y/o a depositar en el futuro que la Sra. Noelia Soledad CARDENAS DNI 36.307.261,\nCVS: R0nEGqQ76 https://validar.juschubut.gov.ar/ Poder Judicial del Chubut Firmado digitalmente\ntenga en las entidades bancarias indicadas a cuyo fin, líbrese oficios a MERCADO LIBRE SRL y por Secretaría, mediante la plataforma de Comunicaciones INODI, de conformidad con la Acordada 9501/2020, al BANCO DEL CHUBUT S.A hasta cubrir la suma de PESOS QUINIENTOS DIEZ MIL ($ 510.000,00), en concepto de capital con más la suma de PESOS CIENTO CINCUENTA Y TRES MIL ($ 153.000,00), que se presupuestan para responder a intereses y costas del juicio...- Fdo. Alejo TRILLO QUIROGA JUEZ.\" Artículo 402 CPR. \"RECAUDOS Y PLAZOS PARA LA CONTESTACION. Las oficinas públicas no podrán establecer recaudos o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas. Deberán contestar el pedido de informes o remitir el expediente dentro de VEINTE (20) días hábiles y las entidades privadas dentro de DIEZ (10) salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales. Cuando se tratare de la inscripción de la transferencia de dominio en el Registro de la Propiedad, los oficios que se libren a la Corporaciones Municipales y demás organismos públicos o privados que corresponda, contendrán el apercibimiento de que, si no fueren contestados dentro del plazo de VEINTE (20) días el bien se inscribirá como si estuviere libre de deuda.\" Artículo 403 CPR. \"RETARDO. Si por circunstancias atendibles el requerimiento no pudiese ser cumplido dentro del plazo, se deberá informar al juzgado, antes del vencimiento de aquél, sobre las causas y la fecha en que se cumplirá. Cuando el juez advirtiere que determinada repartición pública, sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno y Justicia, a los efectos que corresponda, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas que sin causa justificada no contestaren oportunamente, se les impondrá multa de hasta PESOS DOS ($2) a PESOS CINCUENTA ($50) por cada día de retardo. La apelación que se dedujere contra la respectiva resolución tramitará en expediente separado.\" Hágase saber a la oficiada que la contestación del presente oficio deberá ser presentada digitalmente en formato PDF y remitida a la casilla de correo de este juzgado: juzejecucion3cr_mesa@juschubut.gov.ar. CVS: R0nEGQ76 https://validar.juschubut.gov.ar/ Poder Judicial del Chubut Firmado digitalmente\nPODER JUDICIAL PROVINCIA DEL CHUBUT\nJuzgado de Ejecución N°3 (CR)\nSe encuentran autorizados a diligenciar el presente a la Dra. DEBORA SABRINA AGOSTINELLI y/o la persona que la misma indique, con amplias facultades de ley. Saludo a Ud. muy atentamente.\nCVS: R0nEGqQ76 https://validar.juschubut.gov.ar/ Poder Judicial del Chubut Firmado digitalmente\nFirmado digitalmente el 13/11/2026 12:30 por MEDINA Vanina Andrea Secretaria",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "Noelia Soledad CARDENAS",
+        "dni_embargado": "36.307.261",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Noelia Soledad CARDENAS"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 18.409,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Noelia Soledad CARDENAS",
+            "dni_detectado": "36.307.261",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9863112568855286,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "sumas depositadas y/o a depositar en el futuro que la Sra. Noelia Soledad CARDENAS DNI 36.307.261, tenga en vuestra",
+            "contexto_local": "sumas depositadas y/o a depositar en el futuro que la Sra. Noelia Soledad CARDENAS DNI 36.307.261, tenga en vuestra"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "5",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Noelia Soledad CARDENAS",
+            "dni_detectado": "36.307.261",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.983913004398346,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "trábase EMBARGO PREVENTIVO sobre las sumas depositadas y/o a depositar en el futuro que la Sra. Noelia Soledad CARDENAS DNI 36.307.261,\nCVS: R0nEGqQ76 https://validar.juschubut.gov.ar/",
+            "contexto_local": "trábase EMBARGO PREVENTIVO sobre las sumas depositadas y/o a depositar en el futuro que la Sra. Noelia Soledad CARDENAS DNI 36.307.261,\nCVS: R0nEGqQ76 https://validar.juschubut.gov.ar/"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 18.409,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": true,
+              "cantidad_fragmentos": 2
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790126",
+    "numero_archivo": "10",
+    "nombre_documento": "790126_1.pdf",
+    "texto_completo": "TEXTO Y DATOS DE LA NOTIFICACIÓN\nUsuario conectado: CUETO RUA Joaquin - 23312561409@notificaciones.scba.gov.ar Organismo: JUZGADO EN LO CIVIL Y COMERCIAL N° 7 - LA PLATA Carátula: ROLON PAOLA MODESTA C/ LA NUEVA COOPERATIVA DE SEGUROS LIMITADA Y OTRO/A S/ DAÑOS Y PERJ.AUTOM. C/LES. O MUERTE (EXC.ESTADO) Número de causa: 907271 Tipo de notificación: OFICIO ELECTRONICO Destinatarios: 23312561409@NOTIFICACIONES.SCBA.GOV.AR Fecha notificación: 20/11/2026 00:00:00 Alta o disponibilidad 17/11/2026 08:10:07 Firma digital: Firma válida Firmado y Notificado por: CORTES Valeria Martina. SECRETARIO --- Certificado Correcto. Fecha de Firma: 17/11/2026 08:10:06 Firmado por: CUETO RUA Joaquin. --- Certificado Correcto. Fecha de Firma: 10/11/2026 10:07:33\nOFICIO\nFecha de la firma digital.\nA MERCADOLIBRE S.R.L. notificaciones@mercadolibre.com S / D\nTengo el honor de dirigirme a Ud. por medio del presente, en los autos caratulados: \"ROLON PAOLA MODESTA C/ LA NUEVA COOPERATIVA DE SEGUROS LIMITADA y otro/a S/ DAÑOS Y PERJ.AUTOM. C/LES. O MUERTE (EXC.ESTADO)\" - 907271, que tramitan por ante el Juzgado Civil y Comercial N° 7 del Departamento Judicial de La Plata, sito en calle 13 entre calles 47 y 48 de dicha ciudad, correo electrónico: juzciv7- lp@jusbuenosaires.gov.ar, a cargo del Juez Dr. FEDERICO MARTÍNEZ, secretaria única a mi cargo, a los fines de hacer efectivo el embargo sobre los fondos a nombre del condenado CARLOS GARDEL MORALES MARTÍNEZ, DNI 92.726.724 hasta cubrir la suma de PESOS SESENTA Y CUATRO MILLONES SEISCIENTOS CINCUENTA Y UN MIL DOSCIENTOS SETENTA Y NUEVE CON CINCUENTA Y TRES CENTAVOS ($64.651.279,53).\nComo recaudo se transcribe la parte pertinente del auto que ordena la medida: \"La Plata 26/10/2026 Proveyendo la presentación enviada el 21/10/2026 09:15:58 Firmado por: CUETO RUA Joaquin (23312561409)\nAtento lo peticionado, bajo responsabilidad de la parte actora, a los fines de hacer efectivo el embargo decretado el 22/9/2026 y por las sumas allí indicadas, líbrese oficio a las entidades bancarias Banco De Galicia Y Buenos Aires S.A., Mercadolibre S.R.L. Y Naranja Digital Compañía Financiera S.A.U., dejando constancia que la medida recae sobre las cuentas corrientes y cajas de ahorro que posea el demandado CARLOS GARDEL MORALES MARTÍNEZ, DNI 92.726.724 debiendo depositarse los mismos en una cuenta a nombre de autos y a la orden del éste Juzgado, en el Banco de la Provincia de Buenos Aires, Sucursal Tribunales de La Plata CBU 0140114727205015522904 Cuenta 2050-1552290 (art. 536 CPCC).\nHágase saber que la medida cautelar no podrá afectar sumas destinadas a pago de haberes de personal, tributos fiscales y aportes previsionales y sociales, dejándose constancia en el oficio a diligenciar.\nDesestimándose la medida en relación al acceso a cajas de seguridad, disponibilidad de acuerdos para girar al descubierto, límites de compra y financiación de tarjetas de crédito.\nA dichos fines, y con transcripción íntegra de la presente, líbrese los respectivos oficios (art. 536 CPCC).-\nLibrese el oficio solicitado el cual deberá ser enviado a través del portal de presentaciones electrónicas para su debido confronte, haciéndole saber que una vez rubricado digitalmente por el funcionario de la Secretaria a cargo de este Juzgado, será notificado a su domicilio electrónico para su impresión con visualización del código QR - siempre y cuando al enviar el oficio el letrado actuante se haya consignado como destinatario con su domicilio electrónico- y oportuno diligenciamiento.\nEl mismo debe ser presentado en una sola oportunidad (unica vez). En caso que se requiera un nuevo diligenciamiento deberá solicitarlo el interesado al Juzgado. El plazo para su diligenciamiento es de diez días contando desde la fecha de firma del mismo por parte del funcionario/a, transcurrido el cual la pieza CARECERA DE VALIDEZ. (art. 1..3 Resolc. Presid. SCBA n° 10/20, art. 34 y 36 CPCC) Trabado que sea el mismo, notifiquese conforme lo dispuesto en el art. 198 CPCC.- Federico Martinez Juez.\nAsimismo, se hace saber que las sumas que eventualmente sean retenidas deberán ser depositadas en la Cuenta Judicial con CBU: 0140114727205015522904, Cuenta 2050-1552290, abierta a nombre de estos autos y a la orden del Juzgado interviniente.\nComo recaudo se transcriben los arts. correspondientes del C.P.C.C. \"ARTICULO 396: Recaudos y plazos para la contestación. Las oficinas públicas no podrán establecer recaudos o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas. Deberán contestar el pedido de informes o remitir el expediente dentro de 20 días hábiles y las entidades privadas dentro de 10, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales. ARTÍCULO 397: \"Retardo. Si por circunstancias atendibles el requerimiento nopudiere ser cumplido dentro del plazo, se deberá informar al Juzgado, antes del vencimiento de aquél, sobre las causas y la fecha en que se cumplirá. Si el Juez advirtiere que determinada repartición pública, sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno, a los efectos que correspondan, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas que sin causa justificada no contestaren oportunamente se les impondrá multa de un valor equivalente a dos (2) Jus por cada día de retardo. La apelación que se dedujere contra la respectiva resolución tramitará en expediente por separado.\"\nSin otro particular saludo a Ud. muy cordialmente.\nSin otro particular, saludo a Ud muy atte.\nPara verificar la notificación, y las copias de traslado si las hubiere, ingrese a: https://notificaciones.scba.gov.ar/verificar.aspx Su código de verificación es: ZC41ZA3Z",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "CARLOS GARDEL MORALES MARTÍNEZ",
+        "dni_embargado": "92.726.724",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado",
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "CARLOS GARDEL MORALES MARTÍNEZ"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 19.984,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "CARLOS GARDEL MORALES MARTÍNEZ",
+            "dni_detectado": "92.726.724",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9984917640686035,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "embargo sobre los fondos a nombre del condenado CARLOS GARDEL MORALES MARTÍNEZ, DNI 92.726.724 hasta cubrir la suma",
+            "contexto_local": "embargo sobre los fondos a nombre del condenado CARLOS GARDEL MORALES MARTÍNEZ, DNI 92.726.724 hasta cubrir la suma"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "4",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "CARLOS GARDEL MORALES MARTÍNEZ",
+            "dni_detectado": "92.726.724",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9961889386177063,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "corrientes y cajas de ahorro que posea el demandado CARLOS GARDEL MORALES MARTÍNEZ, DNI 92.726.724 debiendo depositarse",
+            "contexto_local": "corrientes y cajas de ahorro que posea el demandado CARLOS GARDEL MORALES MARTÍNEZ, DNI 92.726.724 debiendo depositarse"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 19.984,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "demandado",
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": true,
+              "cantidad_fragmentos": 2
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790128",
+    "numero_archivo": "11",
+    "nombre_documento": "790128_1.pdf",
+    "texto_completo": "TRIBUNAL DE GESTION ASOCIADA DE PAZ-PRIMERO PODER JUDICIAL MENDOZA\nfoja: 27 Mendoza, 05 de Noviembre de 2026.\nExpediente N°: 27.670\nCarátula: \"QUIROGA OSVALDO ADRIAN C/ HERRERA ALEJANDRO MATIAS P/ CAMBIARIA\"\nAL SR. GERENTE MERCADO LIBRE S.R.L. S_______/_D\nDe conformidad con lo ordenado en los autos referidos, tengo el agrado de dirigirme a UD. y por su intermedio a quien corresponda, a los fines tenga a bien proceder a la anotación del EMBARGO sobre los fondos que el demandado HERRERA, ALEJANDRO MATÍAS, DNI 32.377.252 tenga depositados en Cajas de Ahorro, Cuentas Corrientes, Plazos Fijos, Cuentas de Inversión, Cuentas en Dólares Estadounidenses, y/o que por cualquier otro concepto hasta cubrir la suma de PESOS UN MILLON QUINIENTOS MIL ($1.500.000).-\nDicha retención deberá ser transferida al Banco Nación Argentina, Sucursal Tribunales, cuenta de este expediente el cual se procede a informar: BANCO NACIÓN, SUCURSAL TRIBUNALES, CUENTA: 70330418050, CBU: 0110606650099429305594. Se informa que el Dr. Lucas A. J. Estelrich, matrícula 13.400 es personas autorizadas para su diligenciamiento; de conformidad con la resolución que en su parte pertinente dice:\n\"Mendoza, 07 de Octubre de 2026. Sustitúyase la medida ordenada a fs. 7 y en su lugar, RIJA EMBARGO sobre los ACTIVOS DIGITALES PRESENTES Y FUTUROS, inversiones, rendimientos y derechos a cobrar, existentes en la cuenta digital con clave virtual uniforme (C.V.U.) de titularidad del demandado HERRERA, ALEJANDRO MATÍAS, DNI 32.377.252, que provee la plataforma de gestión electrónica o digital de MERCADO LIBRE S.R.L. (BILLETERA\nTRIBUNAL DE GESTION ASOCIADA DE PAZ-PRIMERO PODER JUDICIAL MENDOZA\nDIGITAL DE MERCADO PAGO), hasta cubrir la suma actualizada de PESOS UN MILLÓN QUINIENTOS MIL ($ 1.500.000), presupuestada provisoriamente para cubrir capital, intereses y costas. Las retenciones, deberán depositarse en el Banco Nación, Sucursal Tribunales de la Ciudad de Mendoza, a la orden de este Juzgado, y como pertenecientes a los presentes autos. En caso de no acatar la medida ordenada, la entidad deberá informar sobre los motivos legales que le asisten para incumplir con la manda judicial en las direcciones web: https://iol.jus.mendoza.gov.ar/iol-ui/p/inicio (Portal de Causas Digitales del PJM). OFÍCIESE para su toma de razón informando el número de CBU de la cuenta judicial de autos, que se encuentra abierta, todo ello a fin de obtener una pronta y efectiva transferencia y/o depósito de los fondos embargados....”\nSin otro particular, saludo a Ud. muy atentamente.-\nDC\nGUASTAVINO Maria Marta\n2026.11.10 10:04:43 ART",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "ALEJANDRO MATÍAS",
+        "dni_embargado": "32.377.252",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "ALEJANDRO MATÍAS"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 24.247,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ALEJANDRO MATÍAS",
+            "dni_detectado": "32.377.252",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9375061392784119,
+            "score_contextual": 6.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "anotación del EMBARGO sobre los fondos que el demandado HERRERA, ALEJANDRO MATÍAS, DNI 32.377.252 tenga depositados",
+            "contexto_local": "anotación del EMBARGO sobre los fondos que el demandado HERRERA, ALEJANDRO MATÍAS, DNI 32.377.252 tenga depositados"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "3",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ALEJANDRO MATÍAS",
+            "dni_detectado": "32.377.252",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9788758754730225,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "virtual uniforme (C.V.U.) de titularidad del demandado HERRERA, ALEJANDRO MATÍAS, DNI 32.377.252, que provee la plataforma",
+            "contexto_local": "virtual uniforme (C.V.U.) de titularidad del demandado HERRERA, ALEJANDRO MATÍAS, DNI 32.377.252, que provee la plataforma"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 24.247,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "demandado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": true,
+              "cantidad_fragmentos": 2
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790130",
+    "numero_archivo": "12",
+    "nombre_documento": "790130_1.pdf",
+    "texto_completo": "OFICIO\nAOFICIO E\nNEUQUEN\nJuzgado Ejecutivo Numero 1\nDESTINATARIO: MERCADO PAGO Vínculo:\nOFICIO DIGITAL PARA DILIGENCIAR POR ABOGADOS REGLAMENTACIÓN SISCOM -EXPEDIENTE DIGITAL\nOFICIO NEUQUEN, de octubre de 2026.- A QUIEN CORRESPONDA S/D\nTengo el agrado de dirigirme a Uds. en relación a lo dispuesto en autos caratulados: \"PROVINCIA DEL NEUQUEN C/ JARA MIRIAM LILIANA ANTONIA S/ Apremio (SENTENCIA)\" Expte.: EXD234730 que tramita por ante el Juzgado de Juicios Ejecutivos N° 1 de la ciudad de Neuquén, con domicilio en LELOIR 686, 2do PISO, EDIFICIO SUR DE LA CIUDAD JUDICIAL, Neuquén Capital, a cargo del Juez Dr. JAVIER H. GHISINI, SECRETARIA Unica A CARGO DE LA Dra. MARIANA DE LOURDES ARIAS , con motivo de solicitarles procedan a tomar razón del embargo decretado sobre los montos que por cualquier concepto y/o divisas tenga depositados presentes y/o futuros el demandado JARA, MIRIAM LILIANA ANTONIA, 27-16284693-6 , en Caja de Ahorro y/o Cuenta Corriente y/o Cuenta de Valores al Cobro y/o Cuenta Títulos y/o Depósitos a plazo fijo en el sistema financiero de la República Argentina, hasta cubrir las sumas de PESOS NOVECIENTOS SIETE MIL OCHOCIENTOS SETENTA Y CUATRO CON CUARENTA Y TRES CENTAVOS ($ 907.874,43) en concepto de capital con mas la suma de 16 IUS PESOS UN MILLON SEISCIENTOS DIECISEIS MIL NOVENTA Y DOS CON DIECISEIS CENTAVOS ($1.616.092,16) presupuestados para responder a intereses y costas del juicio.-\nLa providencia que así lo establece en su parte pertinente dice: \"NEUQUÉN, 28 de octubre de 2026. De conformidad con lo solicitado, trábase embargo sobre el bien denunciado bajo responsabilidad de quien lo solicita, de titularidad del demandado JARA MIRIAM LILIANA ANTONIA, DNI 16.284.693, hasta alcanzar las sumas de $907.874,43 que se reclaman en concepto de capital. Ello con más 16 IUS, presupuestados provisionalmente para responder a intereses y costas del juicio, en caso de superar el importe demandado 32 IUS, el monto de las costas queda fijado en el 50 % del capital reclamado. Para su toma de razón, líbrese oficio -SISCOM- a las 3 entidades bancarias denunciadas y en su caso Billeteras Virtuales (BBVA BANCO FRANCES S.A., MERCADO PAGO; NARANJA DIGITAL COMPAÑÍA FINANCIERA S.A.U), dejándose constancia que en atención a haberse decretado la medida sobre fondos que eventualmente tenga la demandada en otras instituciones financieras -pudiendo superarse con creces el importe por el cual se ordena la medida- deberá comunicar\nOFICIO N°: 1340624 JNQJE1-EXD-234730/2025\ncon la mayor diligencia y a la brevedad posible sobre la efectivización de la medida dispuesta o sobre cualquier causa que obste al cumplimiento de lo ordenado, sin efectuar la transferencia hasta tanto sea expresamente comunicado. Asimismo y teniendo en cuenta que en la actualidad resulta una modalidad habitual, el pago de haberes mediante la acreditación de los respectivos importes en caja de ahorro o cuenta similar, se le hará saber a la entidad bancaria que deberá abstenerse de realizar la retención debiendo informar a la brevedad tal circunstancia.\" ... FDO. Dr. JAVIER H. GHISINI. JUEZ\nSe deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio el Dr. Ramiro Rodriguez Gomez y/o Maria Virginia Raffo y/o Diego Oberholzer y/o Agustina Montenegro y/o Pereira Lucas y/o Nicolás Diaz y/o Rocío Rohr y/o Augusto Camporesi y/o Agustina Bravo y/o Rocío Vena quienes estos designen.- Atte.-\nDeberá coordinar con el citado profesional la respuesta a este oficio. A sus efectos, el correo de contacto es: ejecucionesapremiosnqn@gmail.com\nSe deja constancia que el presente OFICIO DIGITAL se libra conforme lo dispuesto en la \"Reglamentación del Sistema de Seguimiento de Cédulas, Oficios (SISCOM)\" aprobado por el Tribunal Superior de Justicia mediante Ac. 5831, pto. 23 y sus modificatorias como así por el Dc.529/22 de la Presidencia del TSJ y conforme surge del art. 3 inciso 2 del reglamento aludido, puede verificar su autenticidad a través del mecanismo establecido al pie del presente.\nSaludo a Ud. muy atentamente.-\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código _QiD_QCNm2 para verificar la autenticidad del oficio, y acceder a las copias de traslado que se hubieran adjuntado a la diligencia.\nTambién puede validar escaneando el QR de la derecha o haciendo clic en el mismo.\nhash: f433502cab0ebb67f5b25e1966edc4628d48e6a478903283b06284d373eb26fa\npagina: 2 de 2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "JARA MIRIAM LILIANA ANTONIA",
+        "dni_embargado": "16.284.693",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "JARA MIRIAM LILIANA ANTONIA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.984,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JARA MIRIAM LILIANA ANTONIA",
+            "dni_detectado": "16.284.693",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9946479201316833,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "de quien lo solicita, de titularidad del demandado JARA MIRIAM LILIANA ANTONIA, DNI 16.284.693, hasta alcanzar las",
+            "contexto_local": "de quien lo solicita, de titularidad del demandado JARA MIRIAM LILIANA ANTONIA, DNI 16.284.693, hasta alcanzar las"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador"
+          ],
+          "detalle": {
+            "score_total": 9.984,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "demandado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790137",
+    "numero_archivo": "15",
+    "nombre_documento": "790137_1.pdf",
+    "texto_completo": "OFICIO\nPODER JUDICIAL PROVINCIA DE NEUQUÉN\nAOFCIO E\nNEUQUEN\nJuzgado Ejecutivo Numero 1\nDESTINATARIO: MERCADO PAGO\nOFICIO DIGITAL PARA DILIGENCIAR POR ABOGADOS REGLAMENTACIÓN SISCOM -EXPEDIENTE DIGITAL\nNEUQUEN, JUEVES 29 DE OCTUBRE DE 2026.-\nSr/a. ***** (****Institución a la que va dirigido)\nSU DESPACHO\nMe dirijo a Ud. en los autos caratulados: \"MUNICIPALIDAD DE NEUQUEN C/ ROLDAN GUSTAVO ALEJANDRO S/ Apremio\"(Expte/Exd N° 215393/2025), en trámite por ante el/la Juzgado Ejecutivo Numero 1, a cargo del/la Dra./Dr. Dr. Javier Hernán Ghisini, SECRETARÍA ÚNICA, sito en LELOIR 686 , de la ciudad de NEUQUEN, con el objeto de: TRABAR EMBARGO sobre las cuentas de ROLDAN, GUSTAVO ALEJANDRO, - DNI/CUIT 20-18521291-3 - hasta alcanzar la suma de PESOS CUATROCIENTOS DOCE MIL QUINIENTOS CINCuenta con CUARENTA y CINCO CENTAVOS ($412.550,45) en concepto de capital con más la suma de PESOS OCHOCIENTOS OCHO MIL CUARENTA Y SEIS CON 08/100 CENTAVOS ($808.046,08), al día de la fecha presupuestados provisoriamente para responder a intereses y costas del juicio. La providencia que ordena el libramiento del presente en su parte pertinente dice: NEUQUEN 24/04/2025 \"(...) librese mandamiento de intimación de pago (común o directo) u oficio, según corresponda, en virtud del domicilio denunciado, a través del sistema SISCOM, contra ROLDAN GUSTAVO ALEJANDRO, por la suma de $412550.45, que se reclaman en concepto de capital, con más con más 8 IUS para responder a intereses y costas del juicio atendiendo a las razones invocadas por la actora Atento lo dispuesto por el art. 200 inc. 1 y en caso de que así lo solicite y denuncie, décrétase embargo por las sumas consignadas, bajo responsabilidad de quien lo solicita (Art. 208 del CPCC, a cuyo fin líbrese los despachos correspondientes concediendo las autorizaciones necesarias. Para el caso que se denuncien depósitos en entidades bancarias y financieras -billeteras virtuales- se deberá dejar constancia que en atención a haberse decretado la medida sobre fondos que eventualmente tenga la demandada en otras instituciones bancarias -pudiendo superarse con creces el importe por el cual se ordena la medida- deberá comunicar con la mayor diligencia y a la brevedad posible sobre la efectivización de la\nOFICIO N°: 1340167\nJNQJE1-EXD-215393/2025\nFecha de Ingreso: 29/10/2026 | Fecha del Cargo: 29/10/2026 | Firmado por Erwin Bohnet\nmedida dispuesta o sobre cualquier causa que obste al cumplimiento de lo ordenado, sin efectuar la transferencia hasta tanto sea expresamente comunicado. Asimismo y teniendo en cuenta que en la actualidad resulta una modalidad habitual, el pago de haberes mediante la acreditación de los respectivos importe en caja de ahorro o cuenta similar, se le hará saber a la entidad bancaria que deberá abstenerse de realizar la retención debiendo informar a la brevedad tal circunstancia.- FDO Dr. Javier Hernán Ghisini \". A sus efectos se deja constancia que se encuentra facultado para diligenciar el presente oficio digital, el Dr./Dra. CECILIA LONGHI y/o Juan Ignacio Andrian y/o Franco Nelson Larrondo y/o Jose Luis Elgueta y/o Tomas Agustín Diez Ruiz y/o Ariane Nicole Molia Falcilgio y/o Facundo Hernán Moreno y/o Juan Manuel Pardo y/o Lucia Carolina Estevez y/o Paula Aldana Angulo y/o María Ángeles Quiroga y/o Fiorella Iara Carmiglio y/o Donoso Protti Maria Fernanda y/o Maria Julia Quintana y/o Daiana Alejandra Herman y/o Martina Vicotria Toledo, Camila Lucia Trifilio, Agustina Rocío Herrera alvarez y/o Rainier Alfredo Cornuz Navarrete y/o Gutierrez Cinthya Ailen y/o Barrera Agustina y/o Alexandra Yazmin Muñoz y/o Julieta Campos Polanco y/o Ayelen Claribel Vilca y/o Gabriela Elizabeth Suarez y/o Miranda Dana Rocio. Deberá coordinar con el citado profesional la respuesta a este oficio. A sus efectos, el correo de contacto es: OFICIOSDATOSMUNINQN@GMAIL.COM\nSe deja constancia que el presente OFICIO DIGITAL se libra conforme lo dispuesto en la \"Reglamentación del Sistema de Seguimiento de Cédulas, Oficios (SISCOM)\" aprobado por el Tribunal Superior de Justicia mediante Ac. 5831, pto. 23 y sus modificatorias como así por el Dc.529/22 de la Presidencia del TSJ y conforme surge del art. 3 inciso 2 del reglamento aludido, puede verificar su autenticidad a través del mecanismo establecido al pie del presente.\nSaludo a Ud. muy atentamente.-\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código M0YYVW5ZX9 para verificar la autenticidad del oficio, y acceder a las copias de traslado que se hubieran adjuntado a la diligencia.\nTambién puede validar escaneando el QR de la derecha o haciendo clic en el mismo. hash: 376ee0f14a1bffbee6373a25d0ced6b7cfeea9e005a273974d446c2fd6f1fe02 pagina: 2 de 2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "ROLDAN, GUSTAVO ALEJANDRO",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "20-18521291-3",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "ROLDAN, GUSTAVO ALEJANDRO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 10.281,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni | cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ROLDAN, GUSTAVO ALEJANDRO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "20-18521291-3",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9304672479629517,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "el objeto de: TRABAR EMBARGO sobre las cuentas de ROLDAN, GUSTAVO ALEJANDRO, - DNI/CUIT 20-18521291-3 - hasta alcanzar",
+            "contexto_local": "el objeto de: TRABAR EMBARGO sobre las cuentas de ROLDAN, GUSTAVO ALEJANDRO, - DNI/CUIT 20-18521291-3 - hasta alcanzar"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador"
+          ],
+          "detalle": {
+            "score_total": 10.281,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790140",
+    "numero_archivo": "16",
+    "nombre_documento": "790140_1.pdf",
+    "texto_completo": "OFICIO\nAOFICIO E\nRINCON DE LOS SAUCES Con copia Documental digitalizada\nJuzgado Civil\nDESTINATARIO: MERCADO PAGO\nOFICIO DIGITAL PARA DILIGENCIAR POR ABOGADOS REGLAMENTACIÓN SISCOM -EXPEDIENTE DIGITAL\nRINCON DE LOS SAUCES, MIÉRCOLES 4 DE NOVIEMBRE DE 2026.-\nAl Señor Gerente de MERCADO PAGO S_____/________D\nTengo el agrado de dirigirme a Ud. en relación a lo dispuesto en autos caratulados: \"PROVINCIA DEL NEUQUEN C/ FERNANDEZ AUGUSTO ELIO S/ APREMIO\", (Expte. Nº 29876/2025), que tramita por ante el Juzgado de Primera Instancia en lo Civil, Comercial, Laboral y Minería de la ciudad de Rincón de los Sauces, Provincia del Neuquén, sito en calle Mendoza Nro. 273, Primer Piso, de la Ciudad de Rincón de los Sauces, a cargo del. Dr. AGUSTIN LOMBARDO Juez , Secretaría Civil a cargo del Dr. ANGEL BERNARDO REYNOSO; con motivo de solicitarle que proceda a tomar razón del embargo decretado sobre las sumas que por cualquier concepto el demandado FERNANDEZ AUGUSTO ELIO DNI. 20-21927954-0, tenga depositadas en Caja de Ahorros y/ o Cuentas Corrientes y/o Depósitos a Plazo Fijo y/o Cuenta de Valores al cobro, así como las que en un futuro puedan depositarse en dichas cuentas, hasta cubrir la suma de PESOS NOVENTA MIL QUINIENTOS SESENTA Y SEIS CON OCHENTA Y CUATRO CENTAVOS ($ 90.566,84) en concepto de capital, con mas la suma de 16 IUS ($ 1.616.092,16) presupuestado provisoriamente para intereses y costas del juicio, depositando las sumas embargadas en el BANCO PROVINCIA DEL NEUQUEN en la cuenta judicial Nº 1189553/1 CBU 09700437-53011895530019 , abierta a la orden de este juzgado, cuyos datos se adjuntan al presente oficio.\nPara mayor recaudo transcribo el auto que ordena la pertinente medida: \" \"PROVINCIA DEL NEUQUEN AUGUSTO ELIO S/ APREMIO\", 1PROAP, 255121/2026.Rincón de los Sauces, 30 de Diciembre del año 2025.(...) III.-Atento lo dispuesto por el Art. 200 Inc. 1 y en caso de que así lo solicite y denuncie, décrase embargo por las sumas consignadas, bajo responsabilidad de quien lo solicita, a cuyo fin librense los despachos correspondientes concediendo las autorizaciones necesarias...Para el caso que se denunciencen depósitos en entidades bancarias se deberá dejar constancia que en atención a haberse decretado la medida sobre fondos\nOFICIO N°: 1343703\nJRSCI1-EXD-29876/2025\nFecha de Ingreso: 04/11/2026 | Fecha del Cargo: 04/11/2026 | Firmado por Angel Bernardo Reynoso\nque eventualmente tenga la demandada en otras instituciones bancarias pudiendo superarse con creces el importe por el cual se ordena la medida- deberá comunicara on la mayor diligencia y a la brevedad posible sobre la efectivización de la medida dispuesta o sobre cualquier causa que obste al cumplimiento de lo ordenado. Asimismo y teniendo en cuenta que en la actualidad resulta una modalidad habitual, el pago de haberes mediante la acreditación de los respectivos importe en caja de ahorro o cuenta similar, se le hará saber a la entidad bancaria que deberá abstenerse de realizar la retención debiendo informar a la brevedad tal circunstancia...\" FDO: Dr. AGUSTIN LOMBARDO JUEZ Asimismo, se le hace saber que se debe remitir dicha respuesta al mail: fiscalia.de.estadonq.interior@gmail.com quedando desde ya a su disposición por cualquier eventualidad derivada del presente, haciéndole saber que podrá comunicarse al teléfono 299-449 5092, correspondiente al Sector. Las sumas embargadas deberán ser depositadas en el Banco Provincia del Neuquén, Sucursal Rincón de los Sauces, a la orden del Juzgado y como pertenecientes a los autos mencionados.- Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio a Francisco Zalazar y/o Javier Mauri y/o Rodrigo Gelvez y/o Juan Martin Rebaque y/o De la Parra Leandro y/o quienes estos designen.- Se deja constancia que el presente OFICIO DIGITAL se libra conforme lo dispuesto en la \"Reglamentación del Sistema de Seguimiento de Cédulas, Oficios (SISCOM)\" aprobado por el Tribunal Superior de Justicia mediante Ac. 5831, pto. 23 y sus modificatorias como así por el Dc.529/22 de la Presidencia del TSJ y conforme surge del art. 3 inciso 2 del reglamento aludido, puede verificar su autenticidad a través del mecanismo establecido al pie del presente.\nSaludo a Ud. muy atentamente.-\nArtículo 316 Recaudos y plazos para la contestación CPCA. Todo pedido de informes o requerimiento, incluso los diligenciados de acuerdo con el artículo 18, deberá cumplirse dentro de los 10 (diez) días hábiles en todos los casos, salvo que este Código o las leyes dispongan uno distinto, o que la providencia que lo haya ordenado establezca otro en razón de la naturaleza del procedimiento o de circunstancias especiales. Las solicitudes deberán ser recibidas a su presentación; los destinatarios no podrán establecer recaudos, ni tasas, ni aranceles, ni costo, ni tarifa alguna que no estén fijados previa y expresamente por una ley nacional o provincial como condición para su recepción y contestación. A pedido de parte, se podrán establecer sanciones conminatorias progresivas a favor de quien ofreció la prueba en el supuesto de atraso injustificado en las contestaciones. La apelación que se deduzca contra la resolución que impone sanciones conminatorias tramitará por incidente separado.\nPODER JUDICIAL Sistema de Ingreso y Seguimiento de Celdas, Oficinas, y Mantenimientos. PROVINCIA DE NEUQUÉN\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código nAAJ40Rwib para verificar la autenticidad del oficio, y acceder a las copias de traslado que se hubieran adjuntado a la diligencia.\nTambién puede validar escaneando el QR de la derecha o haciendo clic en el mismo. hash: 7d2a7a41d6a6f60ec3c4f713046ab545aae3bbffc60c052023979c7d4ade5793 pagina: 3 de 3\nFecha de Ingreso: 04/11/2026 | Fecha del Cargo: 04/11/2026 | Firmado por Angel Bernardo Reynoso",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "FERNANDEZ AUGUSTO ELIO",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandado"
+        ],
+        "variantes_nombre": [
+          "FERNANDEZ AUGUSTO ELIO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.494,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "FERNANDEZ AUGUSTO ELIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandado",
+            "nombre_confidence": 0.9981473684310913,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "sobre las sumas que por cualquier concepto el demandado FERNANDEZ AUGUSTO ELIO DNI. 20-21927954-0, tenga depositadas",
+            "contexto_local": "sobre las sumas que por cualquier concepto el demandado FERNANDEZ AUGUSTO ELIO DNI. 20-21927954-0, tenga depositadas"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte"
+          ],
+          "detalle": {
+            "score_total": 8.494,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "demandado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790142",
+    "numero_archivo": "17",
+    "nombre_documento": "790142_1.pdf",
+    "texto_completo": "OFICIO\nAOFICIO E\nNEUQUEN\nJuzgado Ejecutivo Numero 1\nDESTINATARIO: MERCADO PAGO\nNEUQUEN, 29 de octubre de 2026 Sr/a. SU DESPACHO Me dirijo a Ud. en los autos caratulados: \"MUNICIPALIDAD DE NEUQUEN C/ ARANDA ELIDA MAGDALENA S/ Apremio\"(Expte/Exd N° 175871/2023), en trámite por ante el/la Juzgado Ejecutivo Numero 1, a cargo del/la Dra./Dr. Dr. Javier Hernán Ghisini, SECRETARÍA ÚNICA, sito en LELOIR 686 , de la ciudad de NEUQUEN, con el objeto de: TRABAR EMBARGO sobre las cuentas de ARANDA, ELIDA MAGDALENA, - DNI/CUIT 23-13340228-4 - hasta alcanzar la suma de PESOS CIENTO TREINTA y CUATRO MIL CUATROCIENTOS OCHENTA Y DOS CON CINCUENTA CENTAVOS ($134.482,50) en concepto de capital con más la suma de PESOS OCHOCIENTOS OCHO MIL CUARENTA Y SEIS CON 08/100 CENTAVOS ($808.046,08), al día de la fecha presupuestados provisionalmente para responder a intereses y costas del juicio. La providencia que ordena el libramiento del presente en su parte pertinente dice: \"(NEUQUEN, 21/12/2023.-librese mandamiento de intimación de pago y embargo (común o directo) u oficio, según corresponda, en virtud del domicilio denunciado a través del sistema SISCOM, contra ARANDA, ELIDA MAGDALENA,, por la suma de $ 134482,50, que se reclaman en concepto de capital, con más 8 IUS, atendiendo las razones invocadas por la actora para responder a intereses y costas del juicio. - III.- Atento lo dispuesto por el art. 200 inc. 1 y en caso de que así lo solicite y denuncie, décrétase embargo por las sumas consignadas, bajo responsabilidad de quien lo solicita, a cuyo fin líbrense los despachos correspondientes concediendo las autorizaciones necesarias.-Para el caso que se denunzien depósitos en entidades bancarias y/o billeteras virtuales se deberá dejar constancia que en atención a haberse decretado la medida sobre fondos que eventualmente tenga la demandada en otras instituciones bancarias -pudiendo superarse con creces el importe por el cual se ordena la medida- deberá comunicara con la mayor diligencia y a la brevedad posible sobre la efectivización de la medida dispuesta o sobre cualquier causa que obste al cumplimiento de lo ordenado, sin efectuar la transferencia de los fondos hasta tanto sea expresamente comunicado. Asimismo y teniendo en cuenta que en la actualidad resulta una modalidad habitual, el pago de haberes mediante la acreditación de los respectivos importe en caja de ahorro o cuenta similar, se le hará saber a la entidad bancaria que deberá abstenerse de realizar la retención debiendo informar a la brevedad tal circunstancia.- FDO Dr. Javier Hernán Ghisini)\". A sus efectos se deja constancia que se encuentra facultado para diligenciar el presente oficio digital, el Dr./Dra. CECILIA LONGHI y/o Juan Ignacio Andrian y/o\nOFICIO N°: 1340287 JNQJE1-EXD-175871/2023\nFecha de Ingreso: 29/10/2026 | Fecha del Cargo: 29/10/2026 | Firmado por Erwin Bohnet\nPODER JUDICIAL Sistema de Ingreso y Seguimiento de Cédulas, Oficios y Mandamientos. PROVINCIA DE NEUQUÉN\nFranco Nelson Larrondo y/o Jose Luis Elgueta y/o Tomas Agustín Diez Ruiz y/o Arianne Nicole Molia Falcilgio y/o Facundo Hernán Moreno y/o Juan Manuel Pardo y/o Lucia Carolina Estevez y/o Paula Aldana Angulo y/o María Ángeles Quiroga y/o Fiorella Iara Carmiglio y/o Donoso Protti Maria Fernanda y/o Maria Julia Quintana y/o Daiana Alejandra Herman y/o Martina Vicotria Toledo, Camila Lucia Trifilio, Agustina Rocío Herrera alvarez y/o Rainier Alfredo Cornuz Navarrete y/o Gutierrez Cinthya Ailen y/o Barrera Agustina y/o Alexandra Yazmin Muñoz y/o Julieta Campos Polanco y/o Ayelen Claribel Vilca y/o Gabriela Elizabeth Suarez y/o Miranda Dana Rocio.\nDeberá coordinar con el citado profesional la respuesta a este oficio. A sus efectos, el correo de contacto es: OFICIOSDATOSMUNINQN@GMAIL.COM\nSe deja constancia que el presente OFICIO DIGITAL se libra conforme lo dispuesto en la \"Reglamentación del Sistema de Seguimiento de Cédulas, Oficios (SISCOM)\" aprobado por el Tribunal Superior de Justicia mediante Ac. 5831, pto. 23 y sus modificatorias como así por el Dc.529/22 de la Presidencia del TSJ y conforme surge del art. 3 inciso 2 del reglamento aludido, puede verificar su autenticidad a través del mecanismo establecido al pie del presente.\nSaludo a Ud. muy atentamente.-\nFecha de Ingreso: 29/10/2026 | Fecha del Cargo: 29/10/2026 | Firmado por Erwin Bohnet\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código eaGOWN6rD para verificar la autenticidad del oficio, y acceder a las copias de traslado que se hubieran adjuntado a la diligencia.\nTambién puede validar escaneando el QR de la derecha o haciendo clic en el mismo. eaGOWN6rD\nhash: 7663e8f0bdb7b7f22dd383c3d53bf0c33010efbaf5970d42fa43d6a2bddafc6\npagina: 2 de 2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "ELIDA MAGDALENA",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "23-13340228-4",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "ELIDA MAGDALENA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 10.187,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni | cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ELIDA MAGDALENA",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "23-13340228-4",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.8986384868621826,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "con el objeto de: TRABAR EMBARGO sobre las cuentas de ARANDA, ELIDA MAGDALENA, - DNI/CUIT 23-13340228-4 - hasta alcanzar",
+            "contexto_local": "con el objeto de: TRABAR EMBARGO sobre las cuentas de ARANDA, ELIDA MAGDALENA, - DNI/CUIT 23-13340228-4 - hasta alcanzar"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador"
+          ],
+          "detalle": {
+            "score_total": 10.187,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "Erwin Bohnet",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Erwin Bohnet"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": -0.518,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "6",
+            "palabra_clave": "doc",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Erwin Bohnet",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9940860271453857,
+            "score_contextual": -6.0,
+            "tercero_fuerte": true,
+            "motivo_tercero": "funcionario_firmante_profesional",
+            "fragmento": "29/10/2026 | Firmado por Erwin Bohnet\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código eaGOWN6rD",
+            "contexto_local": "29/10/2026 | Firmado por Erwin Bohnet\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código eaGOWN6rD"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "tercero_fuerte"
+          ],
+          "detalle": {
+            "score_total": -0.518,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": true,
+            "contexto_negativo_fuerte": true,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790329",
+    "numero_archivo": "18",
+    "nombre_documento": "790329_1.pdf",
+    "texto_completo": "OFICIO\nAOFICIO E\nNEUQUEN\nJuzgado Ejecutivo Numero 2\nDESTINATARIO: MERCADO PAGO SRL\nNEUQUEN, 13 de noviembre de 2026 Sr/a. SU DESPACHO Me dirijo a Ud. en los autos caratulados: \"MUNICIPALIDAD DE NEUQUEN C/ CUAL JORGE LUIS S/ Apremio\"(Expte/Exd N° 255722/2025), en trámite por ante el/la Juzgado Ejecutivo Numero 2, a cargo del/la Dra./Dr. Dra. María Victoria Bacci, SECRETARÍA ÚNICA, sito en LELOIR 686 , de la ciudad de NEUQUEN, con el objeto de: TRABAR EMBARGO sobre las cuentas de CUAL JORGE LUIS, - DNI/CUIT 34.084.389 - hasta alcanzar la suma de PESOS NOVENTA y CUATRO MIL NOVECIENTOS DIECISEIS ($94.916,00) en concepto de capital con más la suma de PESOS OCHOCIENTOS OCHO MIL CUARENTA Y SEIS CON 08/100 CENTAVOS ($808.046,08), al día de la fecha presupuestados provisorialmente para responder a intereses y costas del juicio. La providencia que ordena el libramiento del presente en su parte pertinente dice: NEUQUEN, NEUQUEN - 02/03/2026 : \"(...) líbrese mandamiento de intimación de pago (común o directo) u oficio, según corresponda, en virtud del domicilio denunciado, a través del sistema SISCOM, contra CUAL, JORGE LUIS, por la suma de $ 94.916,00, que se reclaman en concepto de capital. Ello con más 16 IUS presupuestados provisorialmente para responder a costas, gastos e intereses del juicio. En caso de que el monto demandado sea inferior a 8 (ocho) IUS, y el demandado sea persona física, atento lo expresamente solicitado por la parte, fíjase el monto en 8 (ocho) IUS. Atento lo dispuesto por el art. 200 inc. 1 y en caso de que así lo solicite y denuncie, décrétase embargo por las sumas consignadas, bajo responsabilidad de quien lo solicita (Art. 208 del CPCC, a cuyo fin líbrese los despachos correspondientes concediendo las autorizaciones necesarias.- Para el caso que se denuncien depósitos en entidades bancarias y financieras -billeteras virtuales- se deberá dejar constancia que en atención a haberse decretado la medida sobre fondos que eventualmente tenga la demandada en otras instituciones bancarias -pudiendo superarse con creces el importe por el cual se ordena la medida- deberá comunicar con la mayor diligencia y a la brevedad posible sobre la efectivización de la medida dispuesta o sobre cualquier causa que obste al cumplimiento de lo ordenado, sin efectuar la transferencia hasta tanto sea expresamente comunicado. Asimismo y teniendo en cuenta que en la actualidad resulta una modalidad habitual, el pago de haberes mediante la acreditación de los respectivos importe en caja de ahorro o cuenta similar, se le hará saber a la entidad bancaria que deberá abstenerse de realizar la retención debiendo informar a la brevedad tal circunstancia (...)”Dra. María Victoria Bacci. A sus efectos se deja constancia que se encuentra facultado para diligenciar el\nOFICIO N°: 1348792 JNQJE2-EXD-255722/2025\nFecha de Ingreso: 13/11/2026 | Fecha del Cargo: 13/11/2026 | Firmado por Susana Isla\npresente oficio digital, el Dr./Dra. CECILIA LONGHI y/o Juan Ignacio Andrian y/o Franco Nelson Larrondo y/o Jose Luis Elgueta y/o Tomas Agustín Diez Ruiz y/o Arianne Nicole Molia Falcilgio y/o Facundo Hernán Moreno y/o Juan Manuel Pardo y/o Lucia Carolina Estevez y/o Paula Aldana Angulo y/o María Ángeles Quiroga y/o Fiorella Iara Carmiglio y/o Donoso Protti Maria Fernanda y/o Maria Julia Quintana y/o Daiana Alejandra Herman y/o Martina Vicotria Toledo, Camila Lucia Trifilio, Agustina Rocío Herrera alvarez y/o Rainier Alfredo Cornuz Navarrete y/o Gutierrez Cinthya Ailen y/o Barrera Agustina y/o Alexandra Yazmin Muñoz y/o Julieta Campos Polanco y/o Ayelen Claribel Vilca y/o Gabriela Elizabeth Suarez y/o Miranda Dana Rocio.\nDeberá coordinar con el citado profesional la respuesta a este oficio. A sus efectos, el correo de contacto es: apremiosmuninqn@gmail.com\nSe deja constancia que el presente OFICIO DIGITAL se libra conforme lo dispuesto en la \"Reglamentación del Sistema de Seguimiento de Cédulas, Oficios (SISCOM)\" aprobado por el Tribunal Superior de Justicia mediante Ac. 5831, pto. 23 y sus modificatorias como así por el Dc.529/22 de la Presidencia del TSJ y conforme surge del art. 3 inciso 2 del reglamento aludido, puede verificar su autenticidad a través del mecanismo establecido al pie del presente.\nSaludo a Ud. muy atentamente.-\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código NEE2j1YH3 para verificar la autenticidad del oficio, y acceder a las copias de traslado que se hubieran adjuntado a la diligencia.\nTambién puede validar escaneando el QR de la derecha o haciendo clic en el mismo.\nhash: 31ba6c007e814b856fa23c8efe0d637eee072cab7ba7b2c9b2a8375e33eea541\npagina: 2 de 2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "JORGE LUIS",
+        "dni_embargado": "34.084.389",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "JORGE LUIS"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.848,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni | cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "JORGE LUIS",
+            "dni_detectado": "34.084.389",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9993543028831482,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "NEUQUEN, con el objeto de: TRABAR EMBARGO sobre las cuentas de CUAL JORGE LUIS, - DNI/CUIT 34.084.389 - hasta alcanzar la",
+            "contexto_local": "NEUQUEN, con el objeto de: TRABAR EMBARGO sobre las cuentas de CUAL JORGE LUIS, - DNI/CUIT 34.084.389 - hasta alcanzar la"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador"
+          ],
+          "detalle": {
+            "score_total": 9.848,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790334",
+    "numero_archivo": "19",
+    "nombre_documento": "790334_1.pdf",
+    "texto_completo": "CERTIFICA que la presente es copia fiel cuyo original ha sido firmado digitalmente por: BAEZ, Angeles Maria - PROSECRETARIO/A LETRADO; CAFFERATA, Juan Manuel - JUEZ/A DE 1RA. INSTANCIA, y obra en el sistema SAC Exped. Nro 14694136 VIOLA, ARTURO ERASMO C/ ROFFE, BARBARA - JUZGADO 1A INST CIV COM 50A NOM. CORDOBA. 17/11/2026\nPODER JUDICIAL DE CÓRDOBA\nEXPEDIENTE SAC: 14694136 - VIOLA, ARTURO ERASMO C/ ROFFE, BARBARA - EJECUTIVO - COBRO DE HONORARIOS\nAL SR. DIRECTOR DE MERCADO PAGO S.A. S / D\nEn los autos caratulados “VIOLA, ARTURO ERASMO C/ ROFFE, BARBARA - EJECUTIVO - COBRO DE HONORARIOS (Expte. 14694136)”, que se tramitan por ante JUZGADO 1A INST CIV COM 50A NOM de la ciudad de Córdoba, se ha resuelto librar a Ud. el presente, a fin de que tan luego de recibido y previo a las formalidades de ley, se sirva TRABAR EMBARGO sobre fondos existentes en Mercado Pago S.A., en cuentas de titularidad exclusiva de la demandada ROFFE BARBARA D.N.I. 24.089.292 y con excepción de las cuentas destinadas a la acreditación de sueldos hasta alcanzar la suma de PESOS UN MILLON CIENTO NOVENTA MIL ($1.190.000).\nLas sumas retenidas deberán ser depositadas en el Banco de la Provincia de Córdoba Sucursal Tribunales en la cuenta abierta para los presentes: Nº Cuenta 922 / 24231406 - CBU: 0200922751000024231466.\nPara mayor abundamiento, se transcribe el proveído que ordena la medida: “CORDOBA, 14/10/2026... Bajo la responsabilidad de la fianza ofrecida y previa ratificación, trábase el embargo peticiónado sobre fondos existentes en Mercado Pago S.A., en cuentas de titularidad exclusiva de la demandada y con excepción de las cuentas destinadas a la acreditación de sueldos, a cuyo fin: líbrese oficio. hágase saber a la peticionante que deberá acompañar proyecto de oficio en formato editable para su libramiento, atento lo normado por el art. 32 del Acuerdo Reglamentario N° 1582 Serie “A” de fecha 21/08/2019 (Reglamento General del Expediente Electrónico.)” fdo: BAEZ Angeles Maria (PROSECRETARIO/A LETRADO) CAFFERATA Juan Manuel (JUEZ/A DE 1RA. INSTANCIA)\nQueda autorizado para el diligenciamiento del presente oficio el Dr. Martin Ignacio Mas Casariego, MP 1-37400 y/o la Dra. Julieta Pivotto Baron MP 1-42704 y/o la persona que éstos designen para ello, con las más amplias\nExpediente SAC 14694136 - Pág. 1 / 2\nfacultades de ley.\nEn virtud de lo dispuesto por el art 111 de la ley 9.459 el presente oficio No abonará al inicio del trámite impuestos o tasas en virtud de encontrarse en ejecución un crédito por honorarios profesionales con carácter alimentario.-\nDiligenciado que sea el presente se servirá devolverlo al Tribunal por la misma vía de recepción. A tales efectos deberá labrar acta circunstanciada, cumplimentando el A.R. N° 5, Serie “B”, Año 1986, del T.S.J.-\nSaludo a Ud. atentamente.\nTexto Firmado digitalmente por:\nBAEZ Angeles Maria PROSECRETARIO/A LETRADO Fecha: 2026.11.02\nCAFFERATA Juan Manuel JUEZ/A DE 1RA. INSTANCIA Fecha: 2026.11.02\nExpediente SAC 14694136 - Pág. 2 / 2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "ROFFE BARBARA",
+        "dni_embargado": "24.089.292",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "demandada"
+        ],
+        "variantes_nombre": [
+          "ROFFE BARBARA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 9.501,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ROFFE BARBARA",
+            "dni_detectado": "24.089.292",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "demandada",
+            "nombre_confidence": 0.887590765953064,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Mercado Pago S.A., en cuentas de titularidad exclusiva de la demandada ROFFE BARBARA D.N.I. 24.089.292 y con excepción de",
+            "contexto_local": "Mercado Pago S.A., en cuentas de titularidad exclusiva de la demandada ROFFE BARBARA D.N.I. 24.089.292 y con excepción de"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte",
+            "identificador"
+          ],
+          "detalle": {
+            "score_total": 9.501,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "demandada"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790338",
+    "numero_archivo": "20",
+    "nombre_documento": "790338_1.pdf",
+    "texto_completo": "OFICIO\nAOFICIO E\nJUNIN DE LOS ANDES Con copia Documental digitalizada\nJuzgado Civil Numero 1 JJUCI1-EXD-65941/2022\nDESTINATARIO: MERCADO PAGO\nOFICIO DIGITAL PARA DILIGENCIAR POR ABOGADOS REGLAMENTACIÓN SISCOM -EXPEDIENTE DIGITAL\nAl Sr. Gerente de MERCADO PAGO S_____________/___________D\nTengo el agrado de dirigirme a Uds. en relación a lo dispuesto en autos caratulados: \"PROVINCIA DEL NEUQUEN C/ CARRIZO ANDREA LILIANA S/ APREMIo (65941/22)\", que tramita por ante el Juzgado Civil, Comercial, Laboral y de Minería N° 1, a cargo del Dr. Luciano Zani, Juez, Secretaria a cargo de la Dra. Natalia Carolina Quiñones , sito en calle Félix San Martin esquina Lamadrid de la ciudad de Junín de los Andes, con motivo de solicitarles procedan a tomar razón del embargo decretado sobre las sumas presentes y futuras que por cualquier concepto tenga depositados el Sr. CARRIZO ANDREA LILIANA con DNI n°24.075.107, hasta cubrir las sumas de PESOS TREINTA Y DOS MIL DOSCIENTOS NUEVE CON NOVENTA Y CINCO CENTAVOS ($32.209,95) en concepto de capital, con mas la suma de 16 IUS ($1.616.092,16), que se presupuestan provisionalmente para responder a intereses y costas del juicio y que a cualquier titulo estén bajo disponibilidad de MERCADO PAGO, depositando las sumas embargadas en el BANCO PROVINCIA DEL NEUQUEN en la cuenta judicial N°1190400/1 - CBU: 09700437-53011904000016, abierta a la orden de este juzgado, cuyos datos se adjuntan al presente oficio.\nLa providencia que así lo establece en su parte pertinente dice: \"Junín de los Andes, 07 de septiembre de 2026.- Atento que el 01/08/2026 ha entrado en vigencia la Ley 3551 \"Código Procesal Civil Adversarial de la Provincia de Neuquén\", hágase saber a las partes que, sin perjuicio del estado de autos, las situaciones planteadas serán resueltas considerando lo dispuesto por el art. 619 del CPC A, debiendo estarse por la interpretación que resulte más favorable a la subsistencia o vigencia del derecho, acto o trámite. VISTOS: Éstos autos caratulados \"PROVINCIA DE NEUQUEN C/ CARRIZO ANDREA LILIANA S/ APREMIo\" (Expte. 65941/2022), y\nOFICIO N°: 1348540\nFecha de Ingreso: 12/11/2026 | Fecha del Cargo: 13/11/2026 | Firmado por Natalia Carolina Quiñones\nPODER JUDICIAL Sistema de Ingreso y Seguimiento de Cédulas, Oficios y Mandamientos PROVINCIA DE NEUQUÉN\nCONSIDERANDO: 1) Que habiéndose citado a la parte ejecutada conforme a lo normado por los artículos 106, 107, 111, 126 y concordantes del Código Fiscal y los artículos 433, 436 y 443 del CPCA y, estando vencido el plazo otorgado a tal fin, no opuso excepciones. Por ello, FALLO: I.- Mandando llevar adelante la ejecución contra CARRIZO, ANDREA LILIANA hasta hacerse íntegro pago a la actora de la suma de PESOS TREINTA y DOS MIL DOSCIENTOS NUEVE CON NOVENTA y CINCO CENTAVOS ($32.209,95), más los intereses reclamados que serán calculados desde la fecha hasta la cual se liquidaron los intereses de la boleta de deuda y hasta el efectivo pago de la tasa correspondiente, prevista por el art. 84 del Código Fiscal y las costas del juicio (arts. 57 del CPCA). II. Atento que la parte ejecutada no constituyó domicilio procesal (art. 443 del CPCA), las sucesivas notificaciones se practicarán conforme lo dispuesto por los arts. 19 y 150 del CPCA. III. Atento lo solicitado en el escrito a despacho y de conformidad con lo dispuesto por el artículo 461 del CPCA, por la suma de PESOS TREINTA y DOS MIL DOSCIENTOS NUEVE CON NOVENTA y CINCO CENTAVOS ($32.209,95), que se reclaman en concepto de capital, con más 16 JUS, presupuestados provisoriamente para responder a intereses, costas y gastos del juicio, trábase embargo ejecutorio sobre las cuentas bancarias abiertas y/o depósitos a plazo fijo que figuran a nombre de CARRIZO, ANDREA LILIANA, DNI N.° 24.075.107. A tal fin, líbranse los oficios solicitados a cada una de las entidades bancarias denunciadas en el escrito que se provee, haciéndole saber a la entidad oficiada que en caso de tratarse de cuentas bancarias abiertas para depósito de haberes, no deberá trabarse embargo sino informar el nombre y domicilio del empleador depositante; como así también que las sumas embargadas deberán ser depositadas en una cuenta judicial en el Banco de la Provincia de Neuquén a nombre de estos autos y a la orden de este Juzgado. Hágase constar las personas autorizadas para correr con su diligenciamiento. En caso de superar el importe demandado el equivalente a 32 JUS, el monto de las costas queda fijado en el 50% del capital reclamado. Deberá tomarse el valor del JUS al momento del libramiento del oficio, consignando expresamente su importe en pesos ($) en el oficio a librarse. Asimismo, hágase saber al peticionante, que en caso de alcanzarse el monto total del embargo dispuesto precedentemente deberá detenerse el diligenciamiento de las restantes medidas, bajo apercibimiento de responsabilizarla por los daños y perjuicios que la retención de las sumas adicionales ocasionare, ya que la forma de efectivización de la medida que se propone no permite mantener un razonable control sobre su cumplimiento. Es evidente que el embargo de todas las cuentas bancarias en forma conjunta y simultánea, podría generar la indisponibilidad de una cantidad de dinero muchas veces mayor a la adeudada, lo que es claramente irrazonable, por lo que a fin de evitar perjuicios o gravámenes innecesarios al embargo, se ordena el embargo sobre las cuentas abiertas y depósitos en la forma antes indicada.\". FDO: Dr. Luciano Zani, Juez\nSe deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas que ellos indiquen indistintamente, se encuentran autorizados para intervenir en el diligenciamiento del presente.\nAsimismo, se le hace saber que se debe remitir dicha respuesta al mail: fiscaliacuartacircunscripcion@neuquen.gov.ar quedando desde ya a su disposición por cualquier eventualidad derivada del presente, haciéndole saber que podrá\nFecha de Ingreso: 12/11/2026 | Fecha del Cargo: 13/11/2026 | Firmado por Natalia Carolina Quiñones\ncomunicarse al teléfono 299-4495092 o al wpp 2995170058, correspondiente al Sector.\nSe deja constancia que la Provincia del Neuquén se encuentra exenta del pago de cualquier gravamen del que pueda ser objeto el presente oficio, de conformidad con lo dispuesto por la Acordada N° 34/2015 de la Corte Suprema de la Nación la que dispone en su punto 1°) \"Modificar la Acordada 29/95 y en consecuencia arancelar en las sumas que se determinan para cada caso (...) con excepción de las provenientes de los Poderes del Estado Nacional, Provincial o Municipal...\".\n\"Conforme lo prescripto por la Acordada 29/95 emanada de la Corte Suprema de Justicia de la Nación en su Art. 1°, el Estado Provincial -Provincia del Neuquén- se encuentra exenta del pago de cualquier gravamen del que pueda ser objeto el presente oficio\".\nSe deja constancia que el presente OFICIO DIGITAL se libra conforme lo dispuesto en la \"Reglamentación del Sistema de Seguimiento de Cédulas, Oficios (SISCOM)\" aprobado por el Tribunal Superior de Justicia mediante Ac. 5831, pto. 23 y sus modificatorias como así por el Dc.529/22 de la Presidencia del TSJ y conforme surge del art. 3 inciso 2 del reglamento aludido, puede verificar su autenticidad a través del mecanismo establecido al pie del presente.\nArtículo 316 Recaudos y plazos para la contestación CPC A. Todo pedido de informes o requerimiento, incluso los diligenciados de acuerdo con el artículo 18, deberá cumplirse dentro de los 10 (diez) días hábiles en todos los casos, salvo que este Código o las leyes dispongan uno distinto, o que la providencia que lo haya ordenado establezca otro en razón de la naturaleza del procedimiento o de circunstancias especiales. Las solicitudes deberán ser recibidas a su presentación; los destinatarios no podrán establecer recaudos, ni tasas, ni aranceles, ni costo, ni tarifa alguna que no estén fijados previa y expresamente por una ley nacional o provincial como condición para su recepción y contestación. A pedido de parte, se podrán establecer sanciones conminatorias progresivas a favor de quien ofreció la prueba en el supuesto de atraso injustificado en las contestaciones. La apelación que se deduzca contra la resolución que impone sanciones conminatorias tramitará por incidente separado.\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código IKKenoθAP para verificar la autenticidad del oficio, y acceder a las copias de traslado que se hubieran adjuntado a la diligencia.\nTambién puede validar escaneando el QR de la derecha o haciendo clic en el mismo. hash: 968c83f2f8fb3c754a99a220b9be5a33e06ee5d22878b8120bc54829d8289952 pagina: 3 de 3",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": true,
+    "requiere_fallback_documento_completo": false,
+    "motivos_insuficiencia": [],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "CARRIZO ANDREA LILIANA",
+        "dni_embargado": "24.075.107",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargada"
+        ],
+        "variantes_nombre": [
+          "CARRIZO ANDREA LILIANA",
+          "CARRIZO, ANDREA LILIANA"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 16.108,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "CARRIZO ANDREA LILIANA",
+            "dni_detectado": "24.075.107",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargada",
+            "nombre_confidence": 0.904349148273468,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "que por cualquier concepto tenga depositados el Sr. CARRIZO ANDREA LILIANA con DNI n°24.075.107, hasta cubrir las",
+            "contexto_local": "que por cualquier concepto tenga depositados el Sr. CARRIZO ANDREA LILIANA con DNI n°24.075.107, hasta cubrir las"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "6",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "CARRIZO, ANDREA LILIANA",
+            "dni_detectado": "24.075.107",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargada",
+            "nombre_confidence": 0.8189843893051147,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "abiertas y/o depósitos a plazo fijo que figuran a nombre de CARRIZO, ANDREA LILIANA, DNI N.° 24.075.107. A tal fin, líbranse",
+            "contexto_local": "abiertas y/o depósitos a plazo fijo que figuran a nombre de CARRIZO, ANDREA LILIANA, DNI N.° 24.075.107. A tal fin, líbranse"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 16.108,
+            "total_grupos_documento": 11,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargada"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": true,
+              "cantidad_fragmentos": 2
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 11,
+    "cantidad_grupos_descartados": 10,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "Ignacio Martinez",
+        "dni_embargado": "29.388.285",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Ignacio Martinez"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.964,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "9",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Ignacio Martinez",
+            "dni_detectado": "29.388.285",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9881137013435364,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas",
+            "contexto_local": "Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Ju"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.964,
+            "total_grupos_documento": 11,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "Javier Martin Mauri",
+        "dni_embargado": "39.683.071",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Javier Martin Mauri"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.989,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "9",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Javier Martin Mauri",
+            "dni_detectado": "39.683.071",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9968544840812683,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas",
+            "contexto_local": "tancia que se encuentran facultados para el diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Mic"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.989,
+            "total_grupos_documento": 11,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "Rodrigo Antonio Gelvez",
+        "dni_embargado": "35.310.663",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Rodrigo Antonio Gelvez"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.992,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "9",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Rodrigo Antonio Gelvez",
+            "dni_detectado": "35.310.663",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9978741407394409,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas",
+            "contexto_local": "l diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.992,
+            "total_grupos_documento": 11,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "Leandro Julian De la Parra",
+        "dni_embargado": "38.548.185",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Leandro Julian De la Parra"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.968,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "9",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Leandro Julian De la Parra",
+            "dni_detectado": "38.548.185",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9940748810768127,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas",
+            "contexto_local": "o Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila "
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.968,
+            "total_grupos_documento": 11,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "Micaela Ailin Mengual",
+        "dni_embargado": "38.149.901",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Micaela Ailin Mengual"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.962,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "9",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Micaela Ailin Mengual",
+            "dni_detectado": "38.149.901",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9929015040397644,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas",
+            "contexto_local": "uri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Mart"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.962,
+            "total_grupos_documento": 11,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "Camila Florencia Alabarse",
+        "dni_embargado": "42.449.021",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Camila Florencia Alabarse"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.803,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "9",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Camila Florencia Alabarse",
+            "dni_detectado": "42.449.021",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9682324528694153,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas",
+            "contexto_local": "Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sa"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.803,
+            "total_grupos_documento": 11,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "Camila Agustina Fuentes",
+        "dni_embargado": "42.447.587",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Camila Agustina Fuentes"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.904,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "9",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Camila Agustina Fuentes",
+            "dni_detectado": "42.447.587",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9704793691635132,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas",
+            "contexto_local": "a Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.43"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.904,
+            "total_grupos_documento": 11,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "Martina Milano",
+        "dni_embargado": "44.909.657",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Martina Milano"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.114,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "9",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Martina Milano",
+            "dni_detectado": "44.909.657",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.708486795425415,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas",
+            "contexto_local": "gual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.114,
+            "total_grupos_documento": 11,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "Martina Milano",
+        "dni_embargado": "41.911.116",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Martina Milano"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.248,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "9",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Martina Milano",
+            "dni_detectado": "41.911.116",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.7494056224822998,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas",
+            "contexto_local": "gual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.248,
+            "total_grupos_documento": 11,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "Sebastián Sayago",
+        "dni_embargado": "41.437.978",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Sebastián Sayago"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.902,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "9",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Sebastián Sayago",
+            "dni_detectado": "41.437.978",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.967376708984375,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio Ignacio Martinez DNI N° 29.388.285 y/o Javier Martin Mauri DNI n° 39.683.071 y/o Rodrigo Antonio Gelvez DNI N° 35.310.663 y/o Leandro Julian De la Parra DNI N° 38.548.185 y/o Micaela Ailin Mengual DNI° 38.149.901 y/o Camila Florencia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas",
+            "contexto_local": "cia Alabarse DNI N° 42.449.021 y/o Camila Agustina Fuentes DNI N° 42.447.587 y/ o Martina Milano DNI N° 44.909.657 y/ o Sebastián Sayago DNI 41.911.116 y/o Emilia Terán DNI 41.437.978 y/o a las personas"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.902,
+            "total_grupos_documento": 11,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  }
+]

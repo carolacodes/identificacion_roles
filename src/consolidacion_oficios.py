@@ -417,6 +417,7 @@ class GrupoPersona:
     )
 
     score_total: float = 0.0
+    evidencias_independientes: int = 0
 
 
 
@@ -551,8 +552,39 @@ def _pedido_comercial_fiscal_explicito(e: Evidencia) -> bool:
     return bool((comercial or fiscal) and re.search(r"\b(?:CUIT|CUIL)\b", posterior, re.I))
 
 
+def _evidencia_relacion_directa(e: Evidencia) -> bool:
+    """V17.2: vínculo semántico LOCAL con la persona, no palabras sueltas.
+
+    Se exige nombre y documento asociados en el fragmento; se reconocen
+    estructuras generales que describen al sujeto de una operación/pedido.
+    """
+    if not _identificador_cerca_nombre(e) or _nombre_parcial_en_lista(e):
+        return False
+    pos = _buscar_posicion_nombre(e)
+    if pos[0] is None:
+        return False
+    ini, fin = pos
+    antes = _normalizar_texto(e.fragmento[max(0, ini-180):ini])
+    despues = _normalizar_texto(e.fragmento[fin:fin+115])
+    # Filtros contra menciones administrativas, incluso si tienen DNI.
+    if re.search(r"\b(?:FIRMADO POR|AUTORIZAD[OA]S? (?:PARA|AL)|LETRADO PATROCINANTE)\b", antes[-100:]):
+        return False
+    relaciones = (
+        # Operaciones realizadas POR la persona identificada; sujeto, no receptor.
+        bool(re.search(r"\bPOR (?:EL |LA )?CIUDADAN[OA]\s*$", antes) and re.search(r"\bCVU\b", despues) and re.search(r"\bD N I\b|\bDNI\b", despues)),
+        # Encabezado del requerimiento identificando al sujeto y sus datos.
+        bool(re.search(r"\bRESPECTO (?:DE|DEL|A) (?:LA |EL )?(?:SENORA|SENOR|SRA|SR|PERSONA|CIUDADANO|CIUDADANA)\s*$", antes)
+             and re.search(r"\b(?:DNI|D N I|CUIT|C U I T|CUIL|C U I L)\b", despues)
+             and re.search(r"\b(?:LO SIGUIENTE|SE SOLICITA|INFORME|CUENTA|CUENTAS)\b", despues)),
+        # Individualización del responsable de intereses/costas del proceso.
+        bool(re.search(r"\b(?:INTERESES Y COSTAS|COSTAS E INTERESES) DEL JUICIO (?:AL|A LA) (?:SR|SRA|SENOR|SENORA)\s*$", antes)
+             and re.search(r"\b(?:CUIT|CUIL|DNI)\b", despues)),
+    )
+    return any(relaciones) and not e.tercero_fuerte
+
+
 def _grupo_evidencia_vinculante(grupo: GrupoPersona) -> bool:
-    return any((_evidencia_pedido_explicito(e) or _evidencia_lista_explicita(e) or _pedido_comercial_fiscal_explicito(e))
+    return any((_evidencia_pedido_explicito(e) or _evidencia_lista_explicita(e) or _pedido_comercial_fiscal_explicito(e) or _evidencia_relacion_directa(e))
                and _identificador_cerca_nombre(e) and not _nombre_parcial_en_lista(e)
                and not e.tercero_fuerte for e in grupo.evidencias)
 
@@ -1386,33 +1418,36 @@ def _registrar_candidatos_incompletos(documento: dict[str, Any]) -> list[dict[st
     return incompletos
 
 
-def _recuperar_apellido_antes_nombre(fragmento: str, nombre: str, dni: str) -> str | None:
-    """Recupera un apellido literal omitido solo en 'APELLIDO, Nombres, DNI'.
+def _recuperar_apellido_antes_nombre(fragmento: str, nombre: str, dni: str, cuit: str = "") -> str | None:
+    """Recuperación literal de APELLIDO, NOMBRE ligada a DNI/CUIT/CUIL.
 
-    No infiere apellidos desde caratulas ni otros fragmentos. Exige una
-    coincidencia unica y un DNI etiquetado inmediatamente despues del nombre.
+    Dos tokens son un nombre perfectamente válido: SOLO se amplía ante un
+    apellido anterior explícito y un identificador inequívoco. No infiere.
     """
-    if not (fragmento and nombre and dni):
+    if not fragmento or not nombre or not (dni or cuit):
         return None
-    dni_normalizado = _normalizar_identificador(dni)
-    if not (7 <= len(dni_normalizado) <= 8):
+    tokens = _tokens_nombre(nombre)
+    if len(tokens) < 1:
         return None
+    # El nombre debe corresponder exactamente a la porción posterior a la coma.
     patron = re.compile(
         r"(?<![\w])([A-ZÁÉÍÓÚÜÑ]{2,})\s*,\s*(" + re.escape(nombre) +
-        r")\s*,?\s*D\.?\s*N\.?\s*I\.?\s*[:Nº°o.\s-]*\s*"
-        r"([0-9][0-9.\s-]{5,14}[0-9])(?!\d)",
-        re.IGNORECASE,
-    )
-    coincidencias = [m for m in patron.finditer(fragmento)
-                     if _normalizar_identificador(m.group(3)) == dni_normalizado]
+        r")\s*[,;:]?\s*\(?\s*(D\.?\s*N\.?\s*I\.?|C\.?\s*U\.?\s*I\.?\s*T\.?|C\.?\s*U\.?\s*I\.?\s*L\.?)"
+        r"\s*(?:N[°ºo.]*(?:ro\.?)?|número)?\s*[:°º.\-]*\s*"
+        r"([0-9][0-9.\- ]{5,18}[0-9])(?!\d)", re.I)
+    coincidencias = []
+    for m in patron.finditer(fragmento):
+        tipo = _normalizar_texto(m.group(3))
+        esperado = dni if tipo == 'D N I' or tipo == 'DNI' else cuit
+        if not esperado or _normalizar_identificador(m.group(4)) != _normalizar_identificador(esperado):
+            continue
+        apellido = m.group(1)
+        if not apellido.isupper() or _normalizar_texto(apellido) in {"SR", "SRA", "DNI", "DR", "DRA", "ACTOR", "ACTORA"}:
+            continue
+        coincidencias.append(m)
     if len(coincidencias) != 1:
         return None
     m = coincidencias[0]
-    # Evitar 'Sr.' y otras palabras de tratamiento como supuesto apellido.
-    if not m.group(1).isupper():
-        return None
-    if _normalizar_texto(m.group(1)) in {"SR", "SRA", "DNI", "DR", "DRA", "ACTOR", "ACTORA"}:
-        return None
     return fragmento[m.start(1):m.end(2)]
 
 
@@ -1520,6 +1555,33 @@ def _parejas_lista_extensa_en_linea(fragmento: str) -> list[dict[str, str]]:
     return filas
 
 
+def _v17_razon_social_local(fragmento: str, cuit: str) -> str | None:
+    """Recupera razón social solo de una cláusula de pedido explícito.
+
+    No confunde enumeraciones de destinatarios ('líbrense oficios a...')
+    con personas jurídicas objeto de la consulta.
+    """
+    if not fragmento or not cuit:
+        return None
+    patron = re.compile(
+        r"\b(?:CON|RESPECTO\s+DE|SOBRE|DE\s+LA\s+EMPRESA|DE\s+LA\s+FIRMA)\s+"
+        r"([A-ZÁÉÍÓÚÑ][A-Za-zÁÉÍÓÚÑáéíóúñ0-9. &'\-]{3,90}?\s+"
+        r"(?:S\.?\s*A\.?\s*S\.?|S\.?\s*R\.?\s*L\.?|S\.?\s*A\.?))"
+        r"\s*[,;:]?\s*\(?\s*C\.?\s*U\.?\s*I\.?\s*T\.?"
+        r"\s*[:N°ºo.\- ]*\s*([0-9][0-9.\- ]{9,17}[0-9])", re.I)
+    hallazgos = []
+    for m in patron.finditer(fragmento):
+        if _normalizar_identificador(m.group(2)) != _normalizar_identificador(cuit):
+            continue
+        prev = _normalizar_texto(fragmento[max(0,m.start()-140):m.start()])
+        if not re.search(r"\b(?:INFORME|INFORMAR|SOLICITA|SOLICITAR|REQUIERE)\b", prev):
+            continue
+        nom = m.group(1).strip()
+        if _nombre_tiene_estructura_valida(nom):
+            hallazgos.append(nom)
+    return hallazgos[0] if len(hallazgos) == 1 else None
+
+
 def _v12_recuperar_campos_locales(candidatos: list[dict[str, Any]], fragmento: str) -> list[dict[str, Any]]:
     """Recuperar solo parejas inequívocas y literalmente presentes en fragmento.
 
@@ -1539,6 +1601,12 @@ def _v12_recuperar_campos_locales(candidatos: list[dict[str, Any]], fragmento: s
         dni = _texto_seguro(c.get('dni_persona'))
         cuit = _texto_seguro(c.get('cuit_cuil_persona'))
         if not nombre and cuit:
+            recuperacion_general = _v17_razon_social_local(fragmento, cuit)
+            if recuperacion_general:
+                c['nombre_persona'] = recuperacion_general
+                c['nombre_persona_confidence'] = None
+                c['origen_recuperacion_v12'] = 'razon_social_cuit_pedido_local_v17'
+                nombre = recuperacion_general
             coincidencias = [m for m in patron_sociedad.finditer(fragmento) if _normalizar_identificador(m.group(2)) == _normalizar_identificador(cuit)]
             if len(coincidencias)==1:
                 m=coincidencias[0]
@@ -1683,7 +1751,7 @@ def _extraer_evidencias_documento(
             nombre_original_gliner = _texto_seguro(candidate.get("nombre_original_gliner_recuperacion"))
             origen_recuperacion_lista = _texto_seguro(candidate.get("origen_recuperacion_lista"))
             dni_candidato = _texto_seguro(candidate.get("dni_persona") or candidate.get("dni"))
-            recuperado = _recuperar_apellido_antes_nombre(fragmento, nombre, dni_candidato)
+            recuperado = _recuperar_apellido_antes_nombre(fragmento, nombre, dni_candidato, _texto_seguro(candidate.get("cuit_cuil_persona") or candidate.get("cuil_cuit")))
             if recuperado and _normalizar_texto(recuperado) != _normalizar_texto(nombre):
                 nombre_original_gliner = nombre
                 nombre = recuperado
@@ -1959,12 +2027,17 @@ def _agrupar_evidencias(
             or evidencia.fragmento
         )
 
-        grupo_encontrado.score_total += (
-            _score_evidencia(
-                evidencia
-            )
-        )
+        # Se puntuan todas las predicciones para conservar diagnostico,
+        # pero el score se agrega por fragmento/identidad SOLO una vez.
+        _score_evidencia(evidencia)
 
+    for grupo in grupos:
+        por_fragmento: dict[tuple[str, str], list[Evidencia]] = defaultdict(list)
+        for e in grupo.evidencias:
+            por_fragmento[(str(e.contador_interno), e.fragmento)].append(e)
+        grupo.evidencias_independientes = len(por_fragmento)
+        grupo.score_total = sum(max(_score_evidencia(e) for e in items)
+                                for items in por_fragmento.values())
     return grupos
 
 
@@ -2956,6 +3029,37 @@ def _serializar_evidencia(
     }
 
 
+def _auditar_roles_contextuales(grupo: GrupoPersona) -> dict[str, Any]:
+    """V17.4: conserva el rol de GLiNER y evidencia discrepancias textuales.
+
+    No sobreescribe el rol original ni inventa uno en ausencia de frase
+    inequívoca junto al nombre. Auditoría separada de la decisión de sujeto.
+    """
+    roles = set()
+    for e in grupo.evidencias:
+        pos = _buscar_posicion_nombre(e)
+        if pos[0] is None:
+            continue
+        previo = _normalizar_texto(e.fragmento[max(0, pos[0]-65):pos[0]])
+        m = re.search(r"\b(?:EL|LA|LOS|LAS|SR|SRA|SENOR|SENORA)?\s*"
+                      r"(ACCIONAD[OA]|DEMANDAD[OA]|ACTOR|ACTORA|EMBARGAD[OA]|"
+                      r"CAUSANTE|EJECUTAD[OA]|IMPUTAD[OA])\s*(?:SR|SRA|SENOR|SENORA)?\s*$", previo)
+        if m:
+            r = m.group(1).lower()
+            if r in ('accionado','accionada'):
+                r = 'demandado' if r == 'accionado' else 'demandada'
+            roles.add(r)
+    modelo = _roles_normalizados_grupo(grupo)
+    pares_opuestos = ({'actor','actora'}, {'demandado','demandada'})
+    contradiccion = bool(roles and any(
+        ((r in pares_opuestos[0] and modelo & pares_opuestos[1]) or
+         (r in pares_opuestos[1] and modelo & pares_opuestos[0]))
+        for r in roles))
+    return {'roles_validados_fragmento': sorted(roles),
+            'roles_originales_gliner': sorted(modelo),
+            'contradiccion_rol_gliner': contradiccion}
+
+
 def _serializar_grupo(
     grupo: GrupoPersona,
 ) -> dict[str, Any]:
@@ -2988,6 +3092,7 @@ def _serializar_grupo(
             sorted(
                 grupo.roles_encontrados
             ),
+        **_auditar_roles_contextuales(grupo),
 
         "variantes_nombre":
             sorted(
@@ -3003,6 +3108,7 @@ def _serializar_grupo(
             len(
                 grupo.evidencias
             ),
+        "cantidad_evidencias_independientes": grupo.evidencias_independientes,
 
         "score_total":
             round(
@@ -3249,10 +3355,8 @@ def evaluar_suficiencia(
         )
 
         cantidad_evidencias = int(
-            persona.get(
-                "cantidad_evidencias",
-                0,
-            )
+            persona.get("cantidad_evidencias_independientes",
+                        persona.get("cantidad_evidencias", 0))
         )
 
         score_total = float(
@@ -3358,6 +3462,59 @@ def evaluar_suficiencia(
 
 
 # ============================================================
+# V17.6: recuperación provisional de campos de identidad estructurados
+# Solo se buscan campos literales en fragmentos que GLiNER procesó.
+# No confundir datos útiles con sujeto del oficio confirmado.
+# ============================================================
+
+def _recuperar_identidades_estructuradas_revision(documento: dict[str, Any]) -> list[dict[str, Any]]:
+    """Recupera Nombre/Apellido/ID del mismo registro, sin inferencias externas.
+
+    Solo acepta registros delimitados y con campos explícitos en orden;
+    no convierte estas identidades en personas aceptadas automáticamente.
+    """
+    patron = re.compile(
+        r"\bNombre\s*:\s*(?P<nombre>[^\r\n]{1,100}?)"
+        r"\s+-\s+Apellido\s*:\s*(?P<apellido>[^\r\n]{1,100}?)"
+        r"\s+-\s+Tipo\s+de\s+Documento\s*:\s*(?P<tipo>DNI|CUIT|CUIL)"
+        r"\s+-\s+(?:N[uú]mero\s+de\s+documento|Nro\.?\s+de\s+documento)\s*:\s*(?P<id>[0-9.\- ]{7,18})(?=\s+-\s+|\s*$)",
+        re.I,
+    )
+    encontrados = {}
+    for resultado in documento.get('resultados', []) or []:
+        fragmento = _texto_seguro(resultado.get('fragmento') or resultado.get('texto_entrada_modelo'))
+        if not fragmento:
+            continue
+        for m in patron.finditer(fragmento):
+            nombre, apellido = m.group('nombre').strip(), m.group('apellido').strip()
+            tipo, identificador = m.group('tipo').upper(), m.group('id').strip()
+            if not nombre or not apellido or not re.fullmatch(r"[\wÁÉÍÓÚÜÑáéíóúüñ .'-]{2,100}", nombre + ' ' + apellido):
+                continue
+            digits = _normalizar_identificador(identificador)
+            if (tipo == 'DNI' and len(digits) not in (7, 8)) or (tipo in ('CUIT','CUIL') and len(digits) != 11):
+                continue
+            denominacion = f'{nombre} {apellido}'
+            if not _nombre_tiene_estructura_valida(denominacion):
+                continue
+            clave = (_normalizar_texto(denominacion), tipo, digits)
+            if clave not in encontrados:
+                encontrados[clave] = {
+                    'nombre_persona': denominacion,
+                    'dni_persona': identificador if tipo == 'DNI' else '',
+                    'cuit_cuil_persona': identificador if tipo in ('CUIT','CUIL') else '',
+                    'tipo_identificador': tipo,
+                    'tipo_identidad': 'NO_DETERMINADO',
+                    'estado_validacion_identidad': 'REQUIERE_REVISION_MANUAL',
+                    'origen_recuperacion': 'campos_estructurados_en_fragmento',
+                    'motivo_revision': 'Registro de identidad recuperado; falta verificar el alcance del pedido y la naturaleza de la identidad',
+                    'fragmentos_soporte': [{'contador_interno': resultado.get('contador_interno'), 'fragmento': fragmento}],
+                }
+            else:
+                encontrados[clave]['fragmentos_soporte'].append({'contador_interno': resultado.get('contador_interno'), 'fragmento': fragmento})
+    return list(encontrados.values())
+
+
+# ============================================================
 # CONSOLIDAR DOCUMENTO
 # ============================================================
 
@@ -3366,6 +3523,7 @@ def consolidar_documento(
 ) -> dict[str, Any]:
 
     candidatos_incompletos = _registrar_candidatos_incompletos(documento)
+    identidades_estructuradas = _recuperar_identidades_estructuradas_revision(documento)
 
     evidencias = _extraer_evidencias_documento(
         documento
@@ -3605,6 +3763,13 @@ def consolidar_documento(
     if any(p.get("estado_validacion_identidad") == "PROVISIONAL_REQUIERE_REVISION_MANUAL" for p in personas_objeto_oficio):
         suficiente = False
         motivos = list(dict.fromkeys(motivos + ["dni_ocr_malformado_revision_manual"]))
+    # Los registros estructurados pueden aportar información útil sin demostrar
+    # que sus titulares sean los sujetos consultados por el oficio.
+    if identidades_estructuradas:
+        revision_motivos.append(("identidades_estructuradas_pendientes",
+          "Se recuperaron campos identificatorios desde fragmentos estructurados; comprobar identidad y alcance del requerimiento."))
+        suficiente = False
+        motivos = list(dict.fromkeys(motivos + ["identidades_estructuradas_requieren_revision_manual"]))
     # Una aceptación provisional no equivale a identidad verificada.
     revision_manual = bool(revision_motivos) or any(
         c.get("conflicto_bloqueante", True) or c.get("resolucion_conflicto") == "prioridad_pedido_principal_con_alerta"
@@ -3680,6 +3845,8 @@ def consolidar_documento(
         # por no contar con un nombre util. Solo auditoria.
         "cantidad_candidatos_incompletos": len(candidatos_incompletos),
         "candidatos_incompletos": candidatos_incompletos,
+        "identidades_recuperadas_revision_manual": identidades_estructuradas,
+        "cantidad_identidades_recuperadas_revision_manual": len(identidades_estructuradas),
 
         "requiere_revision": revision_manual,
 
@@ -3885,6 +4052,26 @@ def _int_buscar_identificador_local(nombre: str, fragmento: str, patron: re.Patt
     return m.group(1).replace(' ', '').replace('–', '-')
 
 
+def _int_pedido_general_fragmento(fragmento: str, nombre: str) -> bool:
+    """Pedido internacional genérico; no infiere país, banco ni identidad.
+
+    Evita nombres administrativos y solo reconoce cláusulas próximas que
+    introducen solicitud relacionada directamente con el sujeto nombrado.
+    """
+    t = _int_normalizar(fragmento)
+    n = _int_nombre(nombre)
+    pos = t.find(n)
+    if pos < 0:
+        return False
+    antes = t[max(0,pos-135):pos]
+    despues = t[pos+len(n):pos+len(n)+110]
+    if re.search(r"(?:FIRMADO POR|AUTORIZADO PARA|AUTORIZADA PARA|PERITO|PERITA)\s*$", antes):
+        return False
+    # Solicitud dirigida a la persona consultada (no a una marca específica).
+    return bool(re.search(r"(?:INFORME|INFORMAR|INFORMEN|SOLICITAR|REQUIERE)\b.{0,110}(?:RESPECTO DE|SOBRE|ACERCA DE|DE LAS CUENTAS DE)\s*$", antes)
+                and re.search(r"\b(?:RUT|RUN|C\.?I\.?)\b", despues))
+
+
 def _int_contexto_chile_fragmento(fragmento: str, nombre: str) -> tuple[bool, bool, str]:
     """Analiza EXCLUSIVAMENTE el fragmento del candidato.
 
@@ -3977,6 +4164,8 @@ def _int_recuperar_personas_internacionales(documento: dict[str, Any]) -> dict[s
             pais, tipo = 'CL', 'RUT'
             valido = _int_rut_valido(ident)
             objeto, pedido_confirmado, motivo = _int_contexto_chile_fragmento(frag, c['nombre'])
+            if not objeto and _int_pedido_general_fragmento(frag, c['nombre']):
+                objeto, pedido_confirmado, motivo = True, True, 'requerimiento_general_en_fragmento'
             if _int_es_perito(frag, c['nombre']):
                 objeto, pedido_confirmado, motivo = False, False, 'perito_no_objeto_oficio'
         elif uruguay and clave == 'CI':

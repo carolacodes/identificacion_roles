@@ -1,0 +1,232 @@
+[
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "candidatos_descartados",
+        "descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte."
+      },
+      {
+        "codigo": "identidades_estructuradas_pendientes",
+        "descripcion": "Se recuperaron campos identificatorios desde fragmentos estructurados; comprobar identidad y alcance del requerimiento."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte. Se recuperaron campos identificatorios desde fragmentos estructurados; comprobar identidad y alcance del requerimiento.",
+    "id": "790081",
+    "numero_archivo": "5",
+    "nombre_documento": "790081_1.pdf",
+    "texto_completo": "N° Issue: 619403\nANEXO DATOS PERSONALES - ID USUARIO - 316608679\nResultado 1:\n- Nombre: PIZZERIA - Apellido: NAPOLES - Tipo de Documento: CUIT - Número de documento: 20288024554 - Id: 316608679 - País: AR - Sitio: MLA - Apodo: NAPI399566220250728105840 - E-mail: pizzerianapolescongreso@gmail.com20250728105840 - CVU: None - Dirección: Av Rivadavia 1765 AR-C Zona Congreso ZIP.1033 - Ciudad: Zona Congreso - Provincia: AR-C - Teléfono principal: () 1143730279 - Teléfono alternativo: () - Cuenta de Mercado Pago: 1 - IP de creación: N/A - Código Postal: 1033 - Estado de la cuenta: deactivate - Fecha de registro: 2018-04-23 - Nombre empresa: Martin Ezequiel Farias - Calle: - Ciudad: - Provincia: Capital Federal - Zona: None - País: Argentina - Dirección de ventas: True - Dirección de envíos: True - Dirección de facturación: True - Dirección fiscal: True - Dirección de devolución de venta: True - Latitud: None - Longitud: None - Estado de la dirección: active\n1 de 2\n- Fecha de creación: 2023-10-26 13:43:53.797000 - Fecha de modificación: 2024-11-03 13:54:58.261000 - Saldo actual: 0.0 - Id empresa:\nFrancisco Javier Muñoz\n2 de 2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio",
+      "solo_candidatos_descartados",
+      "identidades_estructuradas_requieren_revision_manual"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_persona": "PIZZERIA",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [],
+        "roles_validados_fragmento": [],
+        "roles_originales_gliner": [],
+        "contradiccion_rol_gliner": false,
+        "variantes_nombre": [
+          "PIZZERIA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "cantidad_evidencias_independientes": 1,
+        "score_total": 3.982,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cuit | doc",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "PIZZERIA",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9939688444137573,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "ANEXO DATOS PERSONALES - ID USUARIO - 316608679\nResultado 1:\n- Nombre: PIZZERIA - Apellido: NAPOLES - Tipo de Documento: CUIT - Número de documento: 20288024554 - Id: 316608679",
+            "contexto_local": "ANEXO DATOS PERSONALES - ID USUARIO - 316608679\nResultado 1:\n- Nombre: PIZZERIA - Apellido: NAPOLES - Tipo de Documento: CUIT - Número de documento: 20288024554 - Id: 316608679"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "nombre_no_valido"
+          ],
+          "detalle": {
+            "score_total": 3.982,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": false
+          }
+        }
+      }
+    ],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "identidades_recuperadas_revision_manual": [
+      {
+        "nombre_persona": "PIZZERIA NAPOLES",
+        "dni_persona": "",
+        "cuit_cuil_persona": "20288024554",
+        "tipo_identificador": "CUIT",
+        "tipo_identidad": "NO_DETERMINADO",
+        "estado_validacion_identidad": "REQUIERE_REVISION_MANUAL",
+        "origen_recuperacion": "campos_estructurados_en_fragmento",
+        "motivo_revision": "Registro de identidad recuperado; falta verificar el alcance del pedido y la naturaleza de la identidad",
+        "fragmentos_soporte": [
+          {
+            "contador_interno": "1",
+            "fragmento": "ANEXO DATOS PERSONALES - ID USUARIO - 316608679\nResultado 1:\n- Nombre: PIZZERIA - Apellido: NAPOLES - Tipo de Documento: CUIT - Número de documento: 20288024554 - Id: 316608679"
+          }
+        ]
+      }
+    ],
+    "cantidad_identidades_recuperadas_revision_manual": 1,
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "790115",
+    "numero_archivo": "16",
+    "nombre_documento": "790115_1.pdf",
+    "texto_completo": "MINISTERIO PÚBLICO RÍO NEGRO\nOficina de Investigación en Telecomunicaciones\nOITEL NOTA NRO. 08293/26-GS\nViedma, 3 de noviembre de 2026\nSEÑORA RESPONSABLE AREA DE LEGALES Y RELACIONES GUBERNAMENTALES MERCADO LIBRE S.R.L. S/D\nEn relación a los autos caratulados \"NN S/ ESTAFA\" (Legajo Nro. MPF-BA-04849-2026) que se tramita en 3RA CJ - FISCALIA Nº 1 BARILOCHE, se ha resuelto librar el presente a fin de solicitarle:\n1. Remita todos los datos de registro y resumen de movimientos de la cuenta asociada al ID SELLLER: 2608655560, APODO SELLER: TXOUSDBIGSELLER50432, NOMBRE SELLER: Treasury IT Collector LatamPix XO USD Big Seller, siendo el período de interés el día 11/09/2026.\nAsimismo, solicito se remita lo requerido a la siguiente dirección de correo electrónico: oitel@jusrionegro.gov.ar citando Legajo. MPF-BA-04849-2026 y/o nota de encabezamiento 08293/26-GS.\nSaludo a usted atentamente.\nFirmado digitalmente por BAFFONI David Andres Fecha y hora: 03.11.2026 11:00:56",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "identidades_recuperadas_revision_manual": [],
+    "cantidad_identidades_recuperadas_revision_manual": 0,
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "790122",
+    "numero_archivo": "17",
+    "nombre_documento": "790122_1.pdf",
+    "texto_completo": "MINISTERIO PÚBLICO FISCAL PROCURACIÓN GENERAL DE LA NACIÓN REPÚBLICA ARGENTINA\nBuenos Aires, 12 de noviembre de 2026.\nAL REPRESENTANTE LEGAL DE MERCADO LIBRE SRL S / D\nEn mi carácter de Auxiliar Fiscal de la Fiscalía Nacional en lo Criminal y Correccional N° 6 –sita en Cerrito 268 5° piso (C.P. 1010 – Tel. 4356-6332/33, correo electrónico fiscr6-nac@mpf.gov.ar)-, me dirijo a Ud. en el marco del caso Coirón 189093/2026 caratulado “N.N. s/ESTAFA DENUNCIANTE: RODRIGUEZ, MAXIMILIANO”, a fin de requerirle que aporte todos los datos de titularidad que posea acerca de la cuenta a nombre de su cliente Mariano Fabián Ferro, CVU 00000310049970799080, alias “mariano.okk”.\nAsimismo, que informe la totalidad de los movimientos que la cuenta registre el día 15 de octubre de 2026, con acabado detalle, incluyendo fecha y hora de las transacciones, IP, logs de conexión y cuentas de destino.\nAdemás, se estima de utilidad que indique qué información y documentación fue solicitada para la apertura de la misma y que remita copias de todo ello y de las fotografías enviadas para la verificación antropométrica.\nFinalmente, deberá indicar si el cliente realizó desconocimientos de movimientos correspondientes a esa fecha y aportar todas las actuaciones labradas al respecto, indicando la respuesta que se les brindó, junto con las investigaciones internas que se hayan instruido.\nSin más, saluda a usted muy atte.\nUSTARRO Z Cecilia\nFirmado digitalmente por USTARROZ Cecilia Fecha: 2026.11.13 13:31:11 -03'00'",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "identidades_recuperadas_revision_manual": [],
+    "cantidad_identidades_recuperadas_revision_manual": 0,
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "790138",
+    "numero_archivo": "20",
+    "nombre_documento": "790138_1.pdf",
+    "texto_completo": "16/10/26, 15:33 TEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS scba.gov.ar\nPresentaciones y Notificaciones Electrónicas SUPREMA Corte de Justicia PROVINCIA DE BUENOS AIRES\nUsuario Conectado:RICCIONI Julieta - Acceso anterior: 16/10/2026 12:43- Accesos anterior sólo lectura: 14/10/2026 10:53 Cerrar Sesión\nTEXTO Y DATOS DE LA NOTIFICACIÓN\nDatos de la Notificación Electrónica\nUsuario conectado: RICCIONI Julieta - 27384015706@notificaciones.scba.gov.ar\nOrganismo: JUZGADO DE PAZ - NUEVE DE JULIO\nCarátula: BASUALDO LORENA NATALIA C/ CESARIO JUAN JOSE S/ INCIDENTE DE AUMENTO DE CUOTA ALIMENTARIA\nNúmero de causa: 66089\nTipo de notificación: OFICIO DEL PROFESIONAL\nDestinatarios: 27384015706@notificaciones.scba.gov.ar\nFecha notificación: 16/10/2026 14:00:59\nAlta o disponibilidad 16/10/2026 14:01:01\nFirma digital: Firma válida\nFirmado y Notificado por: MARTINEZ DREESSEN Nadia Yanina. SECRETARIO --- Certificado Correcto. Fecha de Firma: 16/10/2026 14:01:01\nFirmado por: MARTINEZ DREESSEN Nadia Yanina. SECRETARIO --- Certificado Correcto. Fecha de Firma: 16/10/2026 14:01:00 Descargar Certificado\nRICCIONI Julieta. --- Certificado Correcto. Fecha de Firma: 14/10/2026 14:08:19 Descargar Certificado\nTexto de la Notificación Electrónica\nOFICIO JUDICIAL 9 de Julio, de Octubre del 2026.-\nA Mercado Pago (Mercado Libre S.R.L) S_____/_____D\nTengo el agrado de dirigirme a Ud. en mi carácter de letrada patrocinante de la parte actora, en los autos caratulados: \"BASUALDO LORENA NATALIA C/ CESARIO JUAN JOSE S/ INCIDENTE DE AUMENTO DE CUOTA ALIMENTARIA\" Expte. N° 66089, en trámite ante el Juzgado de Paz Letrado 9 de Julio sito en la calle Hipólito Irigoyen Nº 854, a cargo del Dr. Salaverri Hernan Jose, Juez Subrogante, a fin de que informe si el Sr. JUAN JOSE CESARIO, DNI N° 33.660.482, tiene una cuenta en dicha entidad. En su caso, indique movimientos y productos adquiridos.-\n16/10/26, 15:33\nTEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS\nEl auto que ordena la medida reza lo siguiente: \"Nueve de Julio, 13 de Octubre de 2026. (...)\nAdmitase la prueba ofrecida por la parte actora, a saber: a) DOCUMENTAL: Que la parte demanda desconoce la documental; haciéndole saber a la misma que se trata de la certificado de nacimiento, copia del DNI y Codem, documentos públicos que se presumen auténticos, debiendo ocurrir por la vía de redargución de falsedad en caso de continuar con su posición. b) INFORMATIVA: Líbrense los oficios pedidos al Registro de la Propiedad Automotor, Registro de la Propiedad Inmueble (hágase saber que para su diligenciamiento deberá acompañar timbrado en formato pdf.), Agencia de Recaudación y Control Aduanero (ARCA), delegación Junin Administración Nacional de la Seguridad Social (ANSES), Agencia de Recaudación de la Provincia de Buenos Aires (ARBA), Transporte OMP S.A., Banco de la Provincia de Buenos Aires (Sucursal 9 de Julio), Banco de la Nación Argentina, Banco Galicia, Banco Credicoop Ltda.., BBVA Francés, Mercado Pago S.A., Mercado Libre S.A. c) INFORMATIVA SUPELETORIA: NO ha lugar por no estar acompañada. D) TESTIMONIAL: Se admiten los testigos ofrecidos, a saber: Davalos Ayelen y Scoponi María Agustina. Quedando a cargo de la parte proponente la notificación de los testigos, fíjase la audiencia del día 22 de Diciembre de 2026 a las 10:00 hs., la que se celebrará en forma presencial en la sede de éste Juzgado de Paz Letrado. Como supletoria fíjase la audiencia del día 29 de Diciembre de 2026 a las 10:00 hs. Se establece que la audiencia supletoria sólo se llevará a cabo siempre que se justifique y acredite la incomparecencia, debiendo comunicarlo con la mayor antelación posible. (Arts. 429 y 431 del C.P.C.C.). Fdo. SALAVERRI Hernan Jose. JUEZ SUBROGANTE\".-\nA continuación y como recaudo legal se transcribe el art. 396 y 397 del C.P.C.C.:\n\"ARTICULO 396\": Recaudos y plazos para la contestación. Las oficinas públicas no podrán establecer recados o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas. Deberán contestar el pedido de informes o remitir el expediente dentro de 20 días hábiles y las entidades privadas dentro de 10, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales.\"\n\"ARTICULO 397°: Retardo. Si por circunstancias atendibles el requerimiento no pudiere ser cumplido dentro del plazo, se deberá informar al Juzgado, antes del vencimiento de aquél, sobre las causas y la fecha en que se cumplirá. Si el Juez advirtiere que determinada repartición pública, sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno, a los efectos que correspondan, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas que sin causa justificada no contestaren oportunamente se les impondrá multa de un valor equivalente a dos (2) Jus por cada día de retardo. La apelación que se dedujere contra la respectiva resolución tramitará en expediente por separado.\"\nSaludo a Ud. atentamente.-\nPara verificar la notificación, y las copias de traslado si las hubiere, ingrese a:\nhttps://notificaciones.scba.gov.ar/verificar.aspx\nSu código de verificación es: YA7LF560\n16/10/26, 15:33 TEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS ↑ Volver ✉️ Contestar 📁 Ver Causa ☐ Imprimir ⬇️ Descargar Texto Firmac\nhttps://notificaciones.scba.gov.ar/InterfazBootstrap/textonotificacion.aspx?idnot=162234280&fecha=2 3/3",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "identidades_recuperadas_revision_manual": [],
+    "cantidad_identidades_recuperadas_revision_manual": 0,
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  }
+]

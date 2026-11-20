@@ -1,0 +1,736 @@
+[
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_candidatos_en_fragmentos",
+        "descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 no produjo identidades útiles en los fragmentos disponibles; revisar el texto completo y el alcance del pedido.",
+    "id": "788347",
+    "numero_archivo": "1",
+    "nombre_documento": "788347_1.pdf",
+    "texto_completo": "Poder Judicial de la Nación JUZGADO COMERCIAL 14 OFICIO JUDICIAL\nSeptiembre de 2026\nAl Señor Gerente de Mercado Pago Servicios de Procesamiento SRL Av. Caseros 3039- Piso 2do., CABA. S____/_____D\nTengo el agrado de dirigirme a Usted en los autos caratulados: \"Caledonia Argentina Compañía De Seguros SA s/liquidación Judicial De Aseguradoras - Incidente nro° 15 s/incidente de Investigación\" expte 12081/2024/15 en trámite por ante el Juzgado Nacional de Primera Instancia en lo Comercial nro° 14 a cargo del Pablo D. Frick, secretaría nro° 28 a cargo del Martín Sarmiento Laspiur, sito en la calle Avenida Callao 635 piso 2° de CABA. Ello a los efectos de solicitarle tenga bien informar si celebró con Caledonia Argentina Compañía de Seguros SA (CUIT: 3050003967-8) convenio/contrato y en caso afirmativo acompañe los acuerdos celebrados; el/los beneficiarios, cuenta abierta a nombre de la aseguradora, si existe cesión de los mismos; acompañe detalle de los movimientos de la cuenta recaudadora desde el año 2022 en adelante.\nEl auto que ordena el libramiento del presente dice textualmente en su parte pertinente: \"Buenos Aires,\nPoder Judicial de la Nación JUZGADO COMERCIAL 14\n21.09.2026... líbrense los oficios solicitados a Tarjeta Naranja SAU; Mastercard Mercosur Inc. Visa SA; Rapipago (Gire SA); Cobro Express; Pago Fácil (Servicio Electrónico de Pago SA-SEPSA); Bapro medios de Pagos SA; Mercado Pago Servicios de Procesamiento SRL, Banco Santander Argentina S.A; Banco Superville S.A; Banco Credicoop Cooperativo Limitado, y Banco Patagonia S.A, cuya confección y diligenciamiento se encomienda a los Delegados Liquidadores, debiendo acompañar los proyectos a confronte en formato digital pdf. La confección y diligenciamiento del oficio también se encomienda a los Delegados Liquidadores...Firmado. Pablo D. Frick\" (Juez).\nLa respuesta al presente oficio deberá ser dirigida al mail del Juzgado: jncomercial14.sec28@pjn.gov.ar.\nSe le hace saber que el art 398 del Cód Procesal Civil y Comercial dispone: \"Las oficinas públicas y entidades privadas deberán contestar el pedido de informes o remitir el expediente dentro de los diez días hábiles, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales...\" Asimismo, se le informa que la presente solicitud se efectúa de acuerdo a lo dispuesto art 273 inc 8 el cual consagra:\"... Todas las transcripciones y anotaciones registrales y de otro carácter que resulten imprescindibles para la protección de la integridad del patrimonio del deudor; deben ser efectuadas sin necesidad del previo pago de aranceles, tasas y otros gastos, sin perjuicio de su oportuna\nPoder Judicial de la Nación JUZGADO COMERCIAL 14\nconsideración dentro de los créditos a que se refiere el artículo 240. Igual norma se aplica a los informes necesarios para la determinación del activo o el pasivo. ...\"\nSe encuentran autorizados a diligenciar el presente los Dres. María Alejandra Spagnolo, y/o Héctor Jorge García y/o Roberto Falvo y/o quienes estos designen indistintamente.\nSaludo a Ud. atentamente.\nmercadolibre 13 NOV 2026 RECEPCION\nFirma válida Digitally signed by MARTIN SARMIENTO LAVIUR Date: 2026.10.02 15:58:29 ART\n[ILEGIBLE]",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 1,
+    "candidatos_incompletos": [
+      {
+        "numero_archivo": "1",
+        "contador_interno": "1",
+        "indice_candidato": 1,
+        "nombre_persona": null,
+        "dni_persona": null,
+        "cuit_cuil_persona": "3050003967-8",
+        "motivo": "sin_nombre_persona",
+        "origen": "gliner2",
+        "palabra_clave": "cuit",
+        "categoria": "Datos_Embargado",
+        "fragmento": "Ello a los efectos de solicitarle tenga bien informar si celebró con Caledonia Argentina Compañía de Seguros SA (CUIT: 3050003967-8) convenio/contrato",
+        "nombre_confidence": null,
+        "dni_confidence": null,
+        "cuit_cuil_confidence": 0.9768705368041992
+      }
+    ],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "candidatos_descartados",
+        "descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte.",
+    "id": "789454",
+    "numero_archivo": "2",
+    "nombre_documento": "789454_1.pdf",
+    "texto_completo": "OFICIO ART.400 Solo habilitado para pedido de informes\nE\nNEUQUEN\nCon copia Documental digitalizada\nJuzgado Ejecutivo Numero 3\nJNQJE3-EXD-110428/2019\nDESTINATARIO: MERCADO LIBRE\nOFICIO PARA DILIGENCIAR POR ABOGADOS POR ART. 400 DEL CPCC (OFICIO NO HABILITADO PARA LA TRABA DE EMBARGO) ÚNICAMENTE VALIDO PARA SOLICITUD DE INFORMES, EXPEDIENTES, TESTIMONIOS y/O CERTIFICADOS\nNEUQUEN, LUNES 1 DE DICIEMBRE DE 2025.-\nA QUIEN CORRESPONDA S/D Tengo el agrado de dirigirme a Uds. en relación a lo dispuesto en autos caratulados: \"PROVINCIA DE NEUQUEN C/ UNGAR NORBERTO HORACIO S/ Apremio\", (Expte.: EXD110428/19) que tramita por ante el Juzgado de Juicios Ejecutivos N° 3 de la Ciudad de Neuquén, con domicilio en LELOIR 686, 2do PISO, EDIFICIO SUR DE LA CIUDAD JUDICIAL, a cargo del Juez Dra. MARIA ANDREA PEREZ, SECRETARIA Unica A CARGO DE LA Dra. MARGARITA LUCIA RUIZ , con motivo de solicitarles se sirvan INFORME en estos autos , en detalle los datos de las transferencias realizadas, consignando los datos completos del transfiriendo/depositante, a fin de corroborar si el saldo disponible se condice con las medidas cautelares ordenadas en autos en el que se ordena trabajar embargo por la suma de PESOS QUINIENTOS OCHENTA y OCHO MIL OCHOCIENTOS VEINTINUEVE CON UN CENTAVO ($ 588.829,01) con mas la suma de PESOS DOSCIENTOS NOVENTA Y CUATRO MIL CUATROCIENTOS CATORCE CON CINCUENTA CENTAVOS ($294.414,50), presupuestados para responder a intereses y costas del juicio al Sr. UNGAR, NORBERTO HORACIO, CUIT: 20-10041809-7 .. Para el caso de imposibilidad de dar cumplimiento con lo ordenado en el mencionado oficio, deberá informar los motivos de dicho impedimento.- La providencia que así lo establece en su parte pertinente dice: \"NEUQUEN, ______. ...VI.- De resultar necesario conocer el domicilio del demandado - en cualquier estado del proceso - como así también cualquier otro tipo de informe, queda autorizado el profesional a librar los oficios necesarios, con las facultades que le confiere el art. 400 del C. P. C. C.\". Fdo. DRA. MARIA VICTORIA BACCI. JUEZ.- Se deja expresa constancia que se encuentran facultados para el diligenciamiento del presente oficio y para el retiro de la correspondiente certificación de saldo el Dr. Alejo R. Bolan Reina y/o Maria Virginia Raffo y/o Diego Oberholzer y/o\nOFICIO N°: 1133617\nFecha de Ingreso: 01/12/2025 | Fecha del Cargo: 02/12/2025 | Firmado por MARIA VIRGINIA RAFFO\nPODER JUDICIAL Sistema de Ingreso y Seguimiento de Celdas, Oficinas y Mantenimientos PROVINCIA DE NEUQUÉN\nPaula Peral y/o Marlene Blok y/o Agustina Montenegro y/o Ramiro Rodriguez Gomez y/ Emilia Pereyra y/o Laura Olate y/o Gustavo Alfredo Tome y/o Andreoni Celeste y/o Soledad Perez y/o Micaela Arriagada y/o Cassandra Castelar y/o Lucas Moreno y/o Lucas Pereira y/o Luciana Martinez y/o quienes estos designen.-\nPara mayor recaudo se transcriben los siguientes .Artículo 400: Atribuciones de los letrados patrocinantes. Cuando interviniere letrado patrocinante, los pedidos de informes, expedientes, testimonios y certificados ordenados en el juicio serán requeridos por medio de oficios firmados, sellados y diligenciados por aquél, con transcripción de la resolución que se ordena y que fija el plazo en que deberán expedirse. Deberá, asimismo, consignarse la prevención que establece el último párrafo del artículo anterior.Los oficios dirigidos a bancos, oficinas públicas o entidades privadas, podrán ser presentados directamente por el letrado patrocinante, sin necesidad de previa petición judicial, siempre que el juicio a que correspondan sea sucesorio, ejecutivo o de ejecución de sentencia, posesorio, de desalojo o voluntario.Deberá otorgarse recibo del pedido de informes y remitirse las contestaciones directamente a la secretaría con transcripción o copia del oficio.El abajo firmante se hace responsable del tramite y diligenciamiento del presente como así también de la veracidad de su contenido. Atte.- -\nFecha de Ingreso: 01/12/2025 | Fecha del Cargo: 02/12/2025 | Firmado por MARIA VIRGINIA RAFFO\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código vlVKretY5 para verificar la autenticidad del oficio, y acceder a las copias de traslado que se hubieran adjuntado a la diligencia.\nTambién puede validar escaneando el QR de la derecha o haciendo clic en el mismo. hash: 69f8559b8211014b8f57010c61fe fa6b236ee489d9f692849c2b9ff b89cf23e9 pagina: 2 de 2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio",
+      "solo_candidatos_descartados"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 2,
+    "grupos_descartados": [
+      {
+        "nombre_persona": "NORBERTO HORACIO",
+        "dni_persona": "",
+        "cuit_cuil_persona": "20-10041809-7",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "NORBERTO HORACIO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.259,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "NORBERTO HORACIO",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "20-10041809-7",
+            "rol_detectado": "",
+            "nombre_confidence": 0.5900244116783142,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "para responder a intereses y costas del juicio al Sr. UNGAR, NORBERTO HORACIO, CUIT: 20-10041809-7 .. Para el caso",
+            "contexto_local": "para responder a intereses y costas del juicio al Sr. UNGAR, NORBERTO HORACIO, CUIT: 20-10041809-7 .. Para el caso"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "nombre_parcial_en_lista"
+          ],
+          "detalle": {
+            "score_total": 6.259,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_persona": "MARIA VIRGINIA RAFFO",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "MARIA VIRGINIA RAFFO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": -2.495,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "3",
+            "palabra_clave": "doc",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MARIA VIRGINIA RAFFO",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.8351176977157593,
+            "score_contextual": -6.0,
+            "tercero_fuerte": true,
+            "motivo_tercero": "funcionario_firmante_profesional",
+            "fragmento": "Firmado por MARIA VIRGINIA RAFFO\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código vlVKretY5",
+            "contexto_local": "Firmado por MARIA VIRGINIA RAFFO\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código vlVKretY5"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "tercero_fuerte"
+          ],
+          "detalle": {
+            "score_total": -2.495,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": true,
+            "contexto_negativo_fuerte": true,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "candidatos_descartados",
+        "descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte.",
+    "id": "790081",
+    "numero_archivo": "5",
+    "nombre_documento": "790081_1.pdf",
+    "texto_completo": "N° Issue: 619403\nANEXO DATOS PERSONALES - ID USUARIO - 316608679\nResultado 1:\n- Nombre: PIZZERIA - Apellido: NAPOLES - Tipo de Documento: CUIT - Número de documento: 20288024554 - Id: 316608679 - País: AR - Sitio: MLA - Apodo: NAPI399566220250728105840 - E-mail: pizzerianapolescongreso@gmail.com20250728105840 - CVU: None - Dirección: Av Rivadavia 1765 AR-C Zona Congreso ZIP.1033 - Ciudad: Zona Congreso - Provincia: AR-C - Teléfono principal: () 1143730279 - Teléfono alternativo: () - Cuenta de Mercado Pago: 1 - IP de creación: N/A - Código Postal: 1033 - Estado de la cuenta: deactivate - Fecha de registro: 2018-04-23 - Nombre empresa: Martin Ezequiel Farias - Calle: - Ciudad: - Provincia: Capital Federal - Zona: None - País: Argentina - Dirección de ventas: True - Dirección de envíos: True - Dirección de facturación: True - Dirección fiscal: True - Dirección de devolución de venta: True - Latitud: None - Longitud: None - Estado de la dirección: active\n1 de 2\n- Fecha de creación: 2023-10-26 13:43:53.797000 - Fecha de modificación: 2024-11-03 13:54:58.261000 - Saldo actual: 0.0 - Id empresa:\nFrancisco Javier Muñoz\n2 de 2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio",
+      "solo_candidatos_descartados"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_persona": "PIZZERIA",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "PIZZERIA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 3.982,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cuit | doc",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "PIZZERIA",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9939688444137573,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "ANEXO DATOS PERSONALES - ID USUARIO - 316608679\nResultado 1:\n- Nombre: PIZZERIA - Apellido: NAPOLES - Tipo de Documento: CUIT - Número de documento: 20288024554 - Id: 316608679",
+            "contexto_local": "ANEXO DATOS PERSONALES - ID USUARIO - 316608679\nResultado 1:\n- Nombre: PIZZERIA - Apellido: NAPOLES - Tipo de Documento: CUIT - Número de documento: 20288024554 - Id: 316608679"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "nombre_no_valido"
+          ],
+          "detalle": {
+            "score_total": 3.982,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": false
+          }
+        }
+      }
+    ],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "candidatos_descartados",
+        "descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte.",
+    "id": "790085",
+    "numero_archivo": "6",
+    "nombre_documento": "790085_1.pdf",
+    "texto_completo": "UNIDAD FISCAL DE USURPACIONES, ESTAFAS Y CIBERCriminalidad N° 1 Centro Judicial Capital - Ministerio Público Fiscal Responder a: ued1@mpftucuman.gob.ar TELEFONO: 381-155991371\nOFICIO GESTION Nº156593306\nSan Miguel de Tucumán, 16 de Octubre de 2026.\nAL SR. GERENTE DE MERCADO PAGO S / D\nLEGajo S-069563/2026 \"SORIA MARIA FERNANDA S/ ESTAFA - ART. 172 VICT: MENDEZ ANGELA MARIA CECILIA\"\nDR. ROGELIO RODRIGUEZ DEL BUSTO, Auxiliar Fiscal de la Unidad Fiscal de Usurpaciones, Estafas y Cibercriminalidad 1 de este Ministerio Público Fiscal, Centro Judicial Capital, a cargo del Sr. Fiscal Dr. Diego Alejo López Ávila, en el marco de la causa de epígrafe se oficia a Ud. a los fines de que se ponga en su conocimiento que en fecha 15 de octubre de 2026, la Dra. Isabel de los Ángeles Méndez resolvió hacer lugar al Requerimiento Fiscal y, en consecuencia, ordenó el LEVANTAMIENTO DEL SECRETO BANCARIO Y FINANCIERO, autorizando a esta Unidad Fiscal a oficiar a su representada.\nEn virtud de ello, se le requiere que, respecto de las cuentas pertenecientes a SORIA, MARÍA FERNANDA (CUIT N.° 27-34953534-9), remita la siguiente información:\n1.- Informe detalladamente las transferencias e ingresos de fondos recibidos en dichas cuentas en las fechas 22/07/2026, 06/08/2026, 13/08/2026 y 03/09/2026 (así como en días inmediatos posteriores) que se correspondan con las operaciones objeto de las denuncias formuladas en la presente investigación, indicando fecha y hora exacta de acreditación, monto, cuenta de origen, CBU/CVU, entidad remitente y titular ordenante.\n2.- Informe el destino posterior de los fondos recibidos a raíz de las maniobras investigadas, indicando las operaciones mediante las cuales fueron transferidos, extraídos por cajero/comprobante o dispuestos durante las 72 horas posteriores a cada acreditación. En caso de transferencias hacia otras cuentas bancarias y/o billeteras virtuales, deberá informar entidad receptora, CBU/CVU, titular y DNI/CUIL/CIUT del destinatario.\n3.- Informe el detalle de todos los consumos y/o débitos efectuados con tarjeta de débito o medios de pago vinculados a dichas cuentas en las fechas citadas, especificando nombre comercial del establecimiento, identificador de comercio (ej. MERPAGO, MOSTAZA, MC DONALD'S, etc.), fecha, hora y monto de cada operación.\n4.- Informe si respecto de las transferencias e ingresos investigados se recibieron reclamos, alertas de seguridad, denuncias por fraude, solicitudes de reversión, desacreditación, bloqueo, retención o congelamiento de fondos, indicando las medidas adoptadas por la entidad y el resultado de las mismas.\n5.- Informe si alguna suma vinculada con las operaciones investigadas fue efectivamente retenida, bloqueada, congelada, recuperada o reintegrada, indicando el monto correspondiente, fecha de la medida y estado actual de dichos fondos; conforme lo considerado (art. 39 inc. a y cctes. de la Ley Nacional n° 21.526, y arts. 5, 143, 159, 196, 199 y cctes. del CPPT).\nSaludo atte.-\nDR. ROGELIO RODRIGUEZ DEL BUSTO - Auxiliar Fiscal Firmado digitalmente Unidad Fiscal de Investigaciones Especializada en Usurpaciones, Estafas y Cibercriminalidad 1",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio",
+      "solo_candidatos_descartados"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_persona": "MARÍA FERNANDA",
+        "dni_persona": "",
+        "cuit_cuil_persona": "27-34953534-9",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "MARÍA FERNANDA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 7.419,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MARÍA FERNANDA",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "27-34953534-9",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9806520938873291,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "En virtud de ello, se le requiere que, respecto de las cuentas pertenecientes a SORIA, MARÍA FERNANDA (CUIT N.° 27-34953534-9), remita la siguiente información:",
+            "contexto_local": "En virtud de ello, se le requiere que, respecto de las cuentas pertenecientes a SORIA, MARÍA FERNANDA (CUIT N.° 27-34953534-9), remita la siguiente información:"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "nombre_parcial_en_lista"
+          ],
+          "detalle": {
+            "score_total": 7.419,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "candidatos_descartados",
+        "descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte.",
+    "id": "790094",
+    "numero_archivo": "10",
+    "nombre_documento": "790094_1.pdf",
+    "texto_completo": "MINISTERIO PÚBLICO RÍO NEGRO\nOficina de Investigación en Telecomunicaciones\nOITEL NOTA NRO. 08663/26-APM\nViedma, 13 de noviembre de 2026\nRESPONSABLE AREA DE LEGALES Y RELACIONES GUBERNAMENTALES MERCADO LIBRE S.R.L. S/D\nEn relación a los autos caratulados \"FISCALIA N° 2 S/ HURTO\" (Legajo Nro. MPF-VI-04092-2026) que se tramita en 1RA CJ - FISCALIA N° 2 VIEDMA, se ha resuelto librar el presente a fin de solicitarle:\n1. Todas aquellas operaciones bancarias realizadas (compras o extracción/depósito de dinero desde cajeros automáticos o por caja con detalle de montos, horas y ubicación de comercio/sucursal de entidad bancaria) por el ciudadano Arcadio Samuel Hamil García con DNI N°37433769 y CVU 0000003100009657425538, durante el período 08/11/2026 al 09/11/2026.\n2. Asimismo informe todo detalle que tenga sobre la cuenta, indicando fecha de apertura, como se solicitó el alta de la misma, como se validó la identidad del cliente (selfie, video selfie, documentación adicional), datos de contacto, y cualquier otra información que pudiera resultar de utilidad para la investigación.\nAsimismo, solicito se remita lo requerido a la siguiente dirección de correo electrónico: oitel@jusrionegro.gov.ar citando Legajo. MPF-VI-04092-2026 y/o nota de encabezamiento 08663/26-APM.\nSaludo a usted atentamente.\nFirmado digitalmente por BAFFONI David Andres Fecha y hora: 13.11.2026 15:22:24",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio",
+      "solo_candidatos_descartados"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_persona": "Arcadio Samuel Hamil García",
+        "dni_persona": "37433769",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "Arcadio Samuel Hamil García"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.918,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Arcadio Samuel Hamil García",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "37433769",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9770213961601257,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "comercio/sucursal de entidad bancaria) por el ciudadano Arcadio Samuel Hamil García con DNI N°37433769 y CVU 0000003100009657425538,",
+            "contexto_local": "comercio/sucursal de entidad bancaria) por el ciudadano Arcadio Samuel Hamil García con DNI N°37433769 y CVU 0000003100009657425538,"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.918,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": false
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "candidatos_descartados",
+        "descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte.",
+    "id": "790106",
+    "numero_archivo": "13",
+    "nombre_documento": "790106_1.pdf",
+    "texto_completo": "OFICIO JUDICIAL\nBuenos Aires, 16 de noviembre de 2026.\nAl Señor Representante Legal de Mercado Pago S_____/_____D\nTengo el agrado de dirigirme a Ud. en mi carácter de letrada patrocinante de la parte demandada en los autos caratulados \"GRACIANO, NANCY SILVANA c/ MELITO, MATIAS PABLO s/ALIMENTOS\" (Expte. Nº 60177/2026), en trámite ante el Juzgado Nacional de Primera Instancia en lo Civil Nº 25, a cargo del Dr. Santos Enrique Cifuentes, Secretaría N°49, sito en Lavalle 1212, 6º PISO (C1048AAF), Ciudad Autónoma de Buenos Aires. Teléfono 4379-1460, e-mail: jncivil25@pjn.gov.ar, respecto de la señora NANCY SILVANA GRACIANO, D.N.I. 27017871, C.U.I.T. 27-27017871-0, lo siguiente:\n1. Informe los ingresos acreditados en la cuenta de Mercado Pago de la nombrada durante los últimos doce (12) meses, discriminando las transferencias recibidas y los cobros efectuados mediante códigos QR, links de pago y dispositivos Point.\n2. Informe los egresos y pagos realizados desde dicha cuenta durante el período indicado.\n3. Informe los saldos registrados y las inversiones efectuadas, incluyendo fondos comunes de inversión y los rendimientos generados durante el mismo período.\nEl auto que ordena el presente, en su parte pertinente, dice: \"Buenos Aires, 15 de octubre de 2026... (...).INFORMATIVA: Líbrense con los recaudos de estilo y en su caso en los términos de la ley 22.172, los oficios solicitados (INSTITUTO HOGAR SAN BENITO, NORTHFIELD SCHOOL - SEDE NORDelta, MERCADO PAGO, METAPOL S.A.C.I.F, MEDICUS S.A., AFIP/ARCA y ANSES, PRISMA MEDIOS DE PAGO S.A. (Visa), MASTERCARD ARGENTINA S.A. y AMERICAN EXPRESS, EDENOR y CORREO ARGENTINO S.A.) autorizándose en su caso a diligenciarlos mediante Deox en caso de que las oficiadas cuenten con dicho Sistema.\" FDO.: Santos Enrique Cifuentes.\nEn cumplimiento de la normativa vigente, se transcriben los arts. 398 y 400 del CPCCN:\nArt. 398 del CPCCN: _\"Las oficinas públicas y las entidades privadas deberán contestar el pedido de informes o remitir el expediente dentro de los diez días hábiles, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales. No podrán establecer recaudos que no estuvieran autorizados por ley. Los oficios librados deberán ser recibidos obligatoriamente a su presentación. El juez deberá aplicar sanciones conminatorias progresivas en el supuesto de atraso injustificado en las contestaciones de informes. La apelación que se dedujera contra la resolución que impone sanciones conminatorias tramita en expediente separado. Cuando se trate de la inscripción de la transferencia de dominio en el Registro de la Propiedad, los oficios que se libren a Obras Sanitarias de la Nación (e.l.) al ente prestador de ese servicio y al Gobierno de la Ciudad de Buenos Aires o Municipio de que se trate, contendrán el\napercibimiento de que, si no fueran contestados dentro del plazo de diez días, el bien se inscribirá como si estuviese libre de deudas.”_ y;\nArt. 400 del CPCCN: _“Los pedidos de informes, testimonios y certificados, así como los de remisión de expedientes ordenados en el juicio, serán requeridos por medio de oficios firmados, sellados y diligenciados por el letrado patrocinante con transcripción de la resolución que los ordena y que fija el plazo en que deberán remitirse. Deberá, asimismo, consignarse la prevención que corresponda según el artículo anterior. Los oficios dirigidos a bancos, oficinas públicas, o entidades privadas que tuvieran por único objeto acreditar el haber del juicio sucesorio, serán presentados directamente por el abogado patrocinante, sin necesidad de previa petición judicial. Deberá otorgarse recibo del pedido de informes y remitirse las contestaciones directamente a la secretaría con transcripción o copia del oficio. Cuando en la redacción de los oficios los profesionales se apartaren de lo establecido en la providencia que los ordena, o de las formas legales, su responsabilidad disciplinaria se hará efectiva de oficio o a petición de parte\nSe deja expresa constancia de que se encuentra autorizada para diligenciar el presente oficio VALERIA HUERTAS KOSINSKY, DNI N.º 42.838.584, quedando facultada para realizar las gestiones necesarias para su presentación, tramitación y retiro de la correspondiente respuesta.\nSin otro particular, saludo a Ud. atentamente. MICAE LA GAVILAN ABOGADA Tº 135 F° 301 C.P.A.C.F.",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio",
+      "solo_candidatos_descartados"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 2,
+    "grupos_descartados": [
+      {
+        "nombre_persona": "NANCY SILVANA GRACIANO",
+        "dni_persona": "27017871",
+        "cuit_cuil_persona": "27-27017871-0",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "NANCY SILVANA GRACIANO"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 10.45,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni | cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "NANCY SILVANA GRACIANO",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "27017871",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "27-27017871-0",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9891160130500793,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Teléfono 4379-1460, e-mail: jncivil25@pjn.gov.ar, respecto de la señora NANCY SILVANA GRACIANO, D.N.I. 27017871, C.U.I.T. 27-27017871-0, lo siguiente:",
+            "contexto_local": "Teléfono 4379-1460, e-mail: jncivil25@pjn.gov.ar, respecto de la señora NANCY SILVANA GRACIANO, D.N.I. 27017871, C.U.I.T. 27-27017871-0, lo siguiente:"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 10.45,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": true,
+              "requerimiento_explicito": false
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_persona": "nombrada",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "nombrada"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 4.681,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "doc",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "nombrada",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.7268709540367126,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Informe los ingresos acreditados en la cuenta de Mercado Pago de la nombrada durante los últimos doce (12) meses, discriminando las",
+            "contexto_local": "Informe los ingresos acreditados en la cuenta de Mercado Pago de la nombrada durante los últimos doce (12) meses, discriminando las"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "nombre_no_valido"
+          ],
+          "detalle": {
+            "score_total": 4.681,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": false
+          }
+        }
+      }
+    ],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "790115",
+    "numero_archivo": "16",
+    "nombre_documento": "790115_1.pdf",
+    "texto_completo": "MINISTERIO PÚBLICO RÍO NEGRO\nOficina de Investigación en Telecomunicaciones\nOITEL NOTA NRO. 08293/26-GS\nViedma, 3 de noviembre de 2026\nSEÑORA RESPONSABLE AREA DE LEGALES Y RELACIONES GUBERNAMENTALES MERCADO LIBRE S.R.L. S/D\nEn relación a los autos caratulados \"NN S/ ESTAFA\" (Legajo Nro. MPF-BA-04849-2026) que se tramita en 3RA CJ - FISCALIA Nº 1 BARILOCHE, se ha resuelto librar el presente a fin de solicitarle:\n1. Remita todos los datos de registro y resumen de movimientos de la cuenta asociada al ID SELLLER: 2608655560, APODO SELLER: TXOUSDBIGSELLER50432, NOMBRE SELLER: Treasury IT Collector LatamPix XO USD Big Seller, siendo el período de interés el día 11/09/2026.\nAsimismo, solicito se remita lo requerido a la siguiente dirección de correo electrónico: oitel@jusrionegro.gov.ar citando Legajo. MPF-BA-04849-2026 y/o nota de encabezamiento 08293/26-GS.\nSaludo a usted atentamente.\nFirmado digitalmente por BAFFONI David Andres Fecha y hora: 03.11.2026 11:00:56",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "790122",
+    "numero_archivo": "17",
+    "nombre_documento": "790122_1.pdf",
+    "texto_completo": "MINISTERIO PÚBLICO FISCAL PROCURACIÓN GENERAL DE LA NACIÓN REPÚBLICA ARGENTINA\nBuenos Aires, 12 de noviembre de 2026.\nAL REPRESENTANTE LEGAL DE MERCADO LIBRE SRL S / D\nEn mi carácter de Auxiliar Fiscal de la Fiscalía Nacional en lo Criminal y Correccional N° 6 –sita en Cerrito 268 5° piso (C.P. 1010 – Tel. 4356-6332/33, correo electrónico fiscr6-nac@mpf.gov.ar)-, me dirijo a Ud. en el marco del caso Coirón 189093/2026 caratulado “N.N. s/ESTAFA DENUNCIANTE: RODRIGUEZ, MAXIMILIANO”, a fin de requerirle que aporte todos los datos de titularidad que posea acerca de la cuenta a nombre de su cliente Mariano Fabián Ferro, CVU 00000310049970799080, alias “mariano.okk”.\nAsimismo, que informe la totalidad de los movimientos que la cuenta registre el día 15 de octubre de 2026, con acabado detalle, incluyendo fecha y hora de las transacciones, IP, logs de conexión y cuentas de destino.\nAdemás, se estima de utilidad que indique qué información y documentación fue solicitada para la apertura de la misma y que remita copias de todo ello y de las fotografías enviadas para la verificación antropométrica.\nFinalmente, deberá indicar si el cliente realizó desconocimientos de movimientos correspondientes a esa fecha y aportar todas las actuaciones labradas al respecto, indicando la respuesta que se les brindó, junto con las investigaciones internas que se hayan instruido.\nSin más, saluda a usted muy atte.\nUSTARRO Z Cecilia\nFirmado digitalmente por USTARROZ Cecilia Fecha: 2026.11.13 13:31:11 -03'00'",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "790138",
+    "numero_archivo": "20",
+    "nombre_documento": "790138_1.pdf",
+    "texto_completo": "16/10/26, 15:33 TEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS scba.gov.ar\nPresentaciones y Notificaciones Electrónicas SUPREMA Corte de Justicia PROVINCIA DE BUENOS AIRES\nUsuario Conectado:RICCIONI Julieta - Acceso anterior: 16/10/2026 12:43- Accesos anterior sólo lectura: 14/10/2026 10:53 Cerrar Sesión\nTEXTO Y DATOS DE LA NOTIFICACIÓN\nDatos de la Notificación Electrónica\nUsuario conectado: RICCIONI Julieta - 27384015706@notificaciones.scba.gov.ar\nOrganismo: JUZGADO DE PAZ - NUEVE DE JULIO\nCarátula: BASUALDO LORENA NATALIA C/ CESARIO JUAN JOSE S/ INCIDENTE DE AUMENTO DE CUOTA ALIMENTARIA\nNúmero de causa: 66089\nTipo de notificación: OFICIO DEL PROFESIONAL\nDestinatarios: 27384015706@notificaciones.scba.gov.ar\nFecha notificación: 16/10/2026 14:00:59\nAlta o disponibilidad 16/10/2026 14:01:01\nFirma digital: Firma válida\nFirmado y Notificado por: MARTINEZ DREESSEN Nadia Yanina. SECRETARIO --- Certificado Correcto. Fecha de Firma: 16/10/2026 14:01:01\nFirmado por: MARTINEZ DREESSEN Nadia Yanina. SECRETARIO --- Certificado Correcto. Fecha de Firma: 16/10/2026 14:01:00 Descargar Certificado\nRICCIONI Julieta. --- Certificado Correcto. Fecha de Firma: 14/10/2026 14:08:19 Descargar Certificado\nTexto de la Notificación Electrónica\nOFICIO JUDICIAL 9 de Julio, de Octubre del 2026.-\nA Mercado Pago (Mercado Libre S.R.L) S_____/_____D\nTengo el agrado de dirigirme a Ud. en mi carácter de letrada patrocinante de la parte actora, en los autos caratulados: \"BASUALDO LORENA NATALIA C/ CESARIO JUAN JOSE S/ INCIDENTE DE AUMENTO DE CUOTA ALIMENTARIA\" Expte. N° 66089, en trámite ante el Juzgado de Paz Letrado 9 de Julio sito en la calle Hipólito Irigoyen Nº 854, a cargo del Dr. Salaverri Hernan Jose, Juez Subrogante, a fin de que informe si el Sr. JUAN JOSE CESARIO, DNI N° 33.660.482, tiene una cuenta en dicha entidad. En su caso, indique movimientos y productos adquiridos.-\n16/10/26, 15:33\nTEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS\nEl auto que ordena la medida reza lo siguiente: \"Nueve de Julio, 13 de Octubre de 2026. (...)\nAdmitase la prueba ofrecida por la parte actora, a saber: a) DOCUMENTAL: Que la parte demanda desconoce la documental; haciéndole saber a la misma que se trata de la certificado de nacimiento, copia del DNI y Codem, documentos públicos que se presumen auténticos, debiendo ocurrir por la vía de redargución de falsedad en caso de continuar con su posición. b) INFORMATIVA: Líbrense los oficios pedidos al Registro de la Propiedad Automotor, Registro de la Propiedad Inmueble (hágase saber que para su diligenciamiento deberá acompañar timbrado en formato pdf.), Agencia de Recaudación y Control Aduanero (ARCA), delegación Junin Administración Nacional de la Seguridad Social (ANSES), Agencia de Recaudación de la Provincia de Buenos Aires (ARBA), Transporte OMP S.A., Banco de la Provincia de Buenos Aires (Sucursal 9 de Julio), Banco de la Nación Argentina, Banco Galicia, Banco Credicoop Ltda.., BBVA Francés, Mercado Pago S.A., Mercado Libre S.A. c) INFORMATIVA SUPELETORIA: NO ha lugar por no estar acompañada. D) TESTIMONIAL: Se admiten los testigos ofrecidos, a saber: Davalos Ayelen y Scoponi María Agustina. Quedando a cargo de la parte proponente la notificación de los testigos, fíjase la audiencia del día 22 de Diciembre de 2026 a las 10:00 hs., la que se celebrará en forma presencial en la sede de éste Juzgado de Paz Letrado. Como supletoria fíjase la audiencia del día 29 de Diciembre de 2026 a las 10:00 hs. Se establece que la audiencia supletoria sólo se llevará a cabo siempre que se justifique y acredite la incomparecencia, debiendo comunicarlo con la mayor antelación posible. (Arts. 429 y 431 del C.P.C.C.). Fdo. SALAVERRI Hernan Jose. JUEZ SUBROGANTE\".-\nA continuación y como recaudo legal se transcribe el art. 396 y 397 del C.P.C.C.:\n\"ARTICULO 396\": Recaudos y plazos para la contestación. Las oficinas públicas no podrán establecer recados o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas. Deberán contestar el pedido de informes o remitir el expediente dentro de 20 días hábiles y las entidades privadas dentro de 10, salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales.\"\n\"ARTICULO 397°: Retardo. Si por circunstancias atendibles el requerimiento no pudiere ser cumplido dentro del plazo, se deberá informar al Juzgado, antes del vencimiento de aquél, sobre las causas y la fecha en que se cumplirá. Si el Juez advirtiere que determinada repartición pública, sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno, a los efectos que correspondan, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas que sin causa justificada no contestaren oportunamente se les impondrá multa de un valor equivalente a dos (2) Jus por cada día de retardo. La apelación que se dedujere contra la respectiva resolución tramitará en expediente por separado.\"\nSaludo a Ud. atentamente.-\nPara verificar la notificación, y las copias de traslado si las hubiere, ingrese a:\nhttps://notificaciones.scba.gov.ar/verificar.aspx\nSu código de verificación es: YA7LF560\n16/10/26, 15:33 TEXTO Y DATOS DE LA NOTIFICACIÓN - SUPREMA CORTE DE JUSTICIA - NOTIFICACIONES ELECTRÓNICAS ↑ Volver ✉️ Contestar 📁 Ver Causa ☐ Imprimir ⬇️ Descargar Texto Firmac\nhttps://notificaciones.scba.gov.ar/InterfazBootstrap/textonotificacion.aspx?idnot=162234280&fecha=2 3/3",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  }
+]

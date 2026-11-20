@@ -1,0 +1,598 @@
+[
+  {
+    "id": "789511",
+    "numero_archivo": "1",
+    "nombre_documento": "789511_1.pdf",
+    "texto_completo": "OFICIO\nAOFICIO P\nZAPALA Con copia Documental digitalizada\nOficina Procesal Administrativo OPAZA1-EXP-30101/2021\nDESTINATARIO: Mercado Pago Asset Management S.A. Vínculo: Entidad Financiera\nOFICIO DIGITAL PARA DILIGENCIAR POR ABOGADOS REGLAMENTACIÓN SISCOM - EXPEDIENTE DIGITAL\nZAPALA, MIÉRCOLES 4 DE NOVIEMBRE DE 2026.-\nMercado Pago Asset Management S.A. S/D.-\nMe dirijo a Usted en autos caratulados: \"PROVINCIA DE NEUQUEN C/ ROMERO FERNANDO SALUSTIANO S/ EMPLEO PUBLICO\" (Expte. N° 30101/2021) en trámite por ante la Oficina Judicial Procesal Administrativo del Interior, a cargo del JUEZ Dr. Ezequiel Nicolas SIGNORILE, Director Dr. Alejo FERNANDEZ MENTA, con asiento de funciones en Chaneton N° 643, Ciudad de Zapala, en los que se ha ordenado librar el presente a los fines de solicitarle TRANSFIERA las sumas retenidas conforme embargo ordenado en autos, a cuenta judicial de autos, cuenta n° 1007463/1, CBU: 09700437-53010074630016, conforme constancia adjunta; cuyo CUIT asociado es el 30-99906887-8 correspondiente al Tribunal Superior de Justicia de Neuquén.\nLa providencia que ordena el presente en su parte pertinente dice: \"Librese oficio a Mercado Pago S.A como se pide.-\" Firmado digitalmente en 03/11/2026 por Dra. Florencia Sardini.\nA sus efectos se deja constancia que se encuentran facultadas para intervenir en el diligenciamiento del presente la Dra. Ana Lía RAMÍREZ y/o la Sra. Karina SANTARELLI y/o a quien las mismas designen indistintamente.\nDeberá coordinar con el citado profesional la respuesta a este oficio ya que de acuerdo a la reglamentación vigente, el profesional debe cargar la respuesta dentro del sistema SISCOM. A sus efectos, el correo de contacto del mismo es: ramirez.ana393@gmail.com.\nSe deja constancia que el presente OFICIO DIGITAL se libra conforme lo dispuesto\nOFICIO N°: 1344064\nFirmado por Alejo Maximiliano Fernandez Menta Fecha de Ingreso: 04/11/2026 | Fecha del Cargo: 04/11/2026\nen la \"Reglamentación del Sistema de Seguimiento de Cédulas, Oficios (SISCOM)\" aprobado por el Tribunal Superior de Justicia mediante Ac. 5831, pto. 23 y sus modificatorias como así por el Dc.529/22 de la Presidencia del TSJ y conforme surge del art. 3 inciso 2 del reglamento aludido, puede verificar su autenticidad a través del mecanismo establecido al pie del presente.\nSaludo a Ud. muy atentamente.-\nArtículo 316 Recaudos y plazos para la contestación CPC A. Todo pedido de informes o requerimiento, incluso los diligenciados de acuerdo con el artículo 18, deberá cumplirse dentro de los 10 (diez) días hábiles en todos los casos, salvo que este Código o las leyes dispongan uno distinto, o que la providencia que lo haya ordenado establezca otro en razón de la naturaleza del procedimiento o de circunstancias especiales. Las solicitudes deberán ser recibidas a su presentación; los destinatarios no podrán establecer recaudos, ni tasas, ni aranceles, ni costo, ni tarifa alguna que no estén fijados previa y expresamente por una ley nacional o provincial como condición para su recepción y contestación. A pedido de parte, se podrán establecer sanciones conminatorias progresivas a favor de quien ofreció la prueba en el supuesto de atraso injustificado en las contestaciones. La apelación que se deduzca contra la resolución que impone sanciones conminatorias tramitará por incidente separado.\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código s6fRMNN0z para verificar la autenticidad del oficio, y acceder a las copias de traslado que se hubieran adjuntado a la diligencia.\nTambién puede validar escaneando el QR de la derecha o haciendo clic en el mismo. hash: c34c44d623cb1cc829319fa3d4e5f2fd75481ef675f65db96cadbb1c98a9ca86 pagina: 2 de 2\nFecha de Ingreso: 04/11/2026 | Fecha del Cargo: 04/11/2026 | Firmado por Alejo Maximiliano Fernandez Menta",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_embargada",
+      "solo_candidatos_descartados"
+    ],
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "s6fRMNN0z",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "s6fRMNN0z"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 4.223,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "4",
+            "palabra_clave": "doc",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "s6fRMNN0z",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.5742217302322388,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Acceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código s6fRMNN0z",
+            "contexto_local": "Acceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código s6fRMNN0z"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "nombre_no_valido"
+          ],
+          "detalle": {
+            "score_total": 4.223,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": false
+          }
+        }
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790090",
+    "numero_archivo": "6",
+    "nombre_documento": "790090_1.pdf",
+    "texto_completo": "PODER JUDICIAL PROVINCIA DEL CHUBUT\nJuzgado de Ejecución N°3 (CR)\nCHUBUT\nPODER JUDICIAL DE LA PROVINCIA DEL CHUBUT JUZGADO DE EJECUCIÓN N° 3 SECRETARÍA N° 6\nOFICIO N° 2159/2026.\nComodoro Rivadavia, noviembre de 2026.\nA Mercado Libre SRL (mercado pago), Naranja Digital Compañía Financiera SAU. CIUDAD\nTengo el agrado de dirigirme a Ud. en los autos caratulados: “MUNICIPALIDAD DE COMODORO RIVADAVIA c/ ROSSI, Orlando Argentino s/ Ejecución fiscal”, Expte. 001016/2026, que tramitan por ante este Juzgado de Ejecución N° 3, sito en Avda. Figueroa Alcorta Nº 90, 2do. piso - Ciudad Judicial -, Circunscripción Judicial con asiento en Comodoro Rivadavia, Provincia del Chubut, a cargo del Dr. Alejo TRILLO QUIROGA, Secretaría N° 6 a los efectos de que se sirva tomar razón del EMBARGO PREVENTIVO sobre las sumas depositadas y/o a depositar en el futuro que el Sr. Orlando Argentino ROSSI DNI 11.438.646, tenga en vuestra entidades, hasta cubrir la suma de PESOS DOSCIENTOS CUATRO MIL ($ 204.000,00), con más la suma de PESOS SESENTA Y UNO MIL DOSCIENTOS ($ 61.200,00) presupuestados provisionalmente para responder a intereses y costas del juicio. Asimismo, hago saber que en caso de tratarse de cuenta sueldos, deberá abstenerse de cumplir la medida e informar tal circunstancia al juzgado.\nDichas sumas deberán ser depositadas en el Banco del Chubut S.A.-sucursal centro- a la orden de éste Juzgado y como pertenecientes a estos autos, en N° de cuenta 6-50-000837562, CBU Nº 0830006511008375620014, CUIT del STJ 33-67046683-9.\nEl auto que ordena el libramiento del presente, en su parte pertinente dice: “Comodoro Rivadavia, noviembre 6 de 2026.... Trábese\nCVS: B0Dz1aOg1 https://validar.juschubut.gov.ar/ Poder Judicial del Chubut Firmado digitalmente\nembargo sobre las sumas que bajo todo concepto tenga la demandada depositada y/o que deposite en el futuro en Mercado Libre SRL (mercado pago), Naranja Digital Compañía Financiera SAU., y plataforma de comunicaciones INODI al BANCO DEL CHUBUT, hasta cubrir las sumas de PESOS DOSCIENTOS CUATRO MIL ($ 204.000,00), en concepto de capital con más la suma de PESOS SESENTA Y UNO MIL DOSCIENTOS ($ 61.200,00) presupuestadas provisionalmente para responder a intereses y costas del proceso, a cuyo fin líbrese el correspondiente oficio...- Fdo. Alejo TRILLO QUIROGA JUEZ.\" Artículo 402 CPR. \"RECAUDOS Y PLAZOS PARA LA CONTESTACION. Las oficinas públicas no podrán establecer recaudos o requisitos para los oficios sin previa aprobación por el Poder Ejecutivo, ni otros aranceles que los que determinen las leyes, decretos u ordenanzas. Deberán contestar el pedido de informes o remitir el expediente dentro de VEINTE (20) días hábiles y las entidades privadas dentro de DIEZ (10) salvo que la providencia que lo haya ordenado hubiere fijado otro plazo en razón de la naturaleza del juicio o de circunstancias especiales. Cuando se tratare de la inscripción de la transferencia de dominio en el Registro de la Propiedad, los oficios que se libren a las Corporaciones Municipales y demás organismos públicos o privados que corresponda, contendrán el apercibimiento de que, si no fueren contestados dentro del plazo de VEINTE (20) días el bien se inscribirá como si estuviere libre de deuda.\" Artículo 403 CPR. \"RETARDO. Si por circunstancias atendibles el requerimiento no pudiere ser cumplido dentro del plazo, se deberá informar al juzgado, antes del vencimiento de aquél, sobre las causas y la fecha en que se cumplirá. Cuando el juez advirtiere que determinada repartición pública, sin causa justificada, no cumple reiteradamente el deber de contestar oportunamente los informes, deberá poner el hecho en conocimiento del Ministerio de Gobierno y Justicia, a los efectos que corresponda, sin perjuicio de las otras medidas a que hubiere lugar. A las entidades privadas que sin causa justificada no contestaren oportunamente, se les impondrá multa de hasta PESOS DOS ($2) a PESOS CINCUENTA ($50) por cada día de retardo. La apelación que se dedujere contra la respectiva resolución tramitará en expediente separado.\" Hágase saber a la oficiada que la contestación del presente oficio deberá ser presentada digitalmente en formato PDF y remitida a la casilla de correo de este juzgado: juzejecucion3cr_mesa@juschubut.gov.ar. CVS: B0Dz1aOg1 https://validar.juschubut.gov.ar/ Poder Judicial del Chubut Firmado digitalmente\nPODER JUDICIAL PROVINCIA DEL CHUBUT\nJuzgado de Ejecución N°3 (CR)\nSe encuentran autorizados a diligenciar el presente a la Dra. DEBORA SABRINA AGOSTINELLI y/o la persona que la misma indique, con amplias facultades de ley. Saludo a Ud. muy atentamente.\nCVS: B0Dz1aOg1 https://validar.juschubut.gov.ar/ Poder Judicial del Chubut Firmado digitalmente\nFirmado digitalmente el 12/11/2026 11:25 por MEDINA Vanina Andrea Secretaria",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_embargada",
+      "solo_candidatos_descartados"
+    ],
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "Orlando Argentino ROSSI",
+        "dni_embargado": "11.438.646",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "Orlando Argentino ROSSI"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 8.332,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Orlando Argentino ROSSI",
+            "dni_detectado": "11.438.646",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.944398045539856,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "sumas depositadas y/o a depositar en el futuro que el Sr. Orlando Argentino ROSSI DNI 11.438.646, tenga en vuestra",
+            "contexto_local": "sumas depositadas y/o a depositar en el futuro que el Sr. Orlando Argentino ROSSI DNI 11.438.646, tenga en vuestra"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 8.332,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790107",
+    "numero_archivo": "7",
+    "nombre_documento": "790107_1.pdf",
+    "texto_completo": "Mendoza, 06 de noviembre de 2026.-\nAL SR. RESPONSABLE Y/O ENCARGADO LEGAL MERCADO PAGO.- S_________________________/_______________________D.-\nDe conformidad a lo ordenado en autos N° 202605/2026 caratulados “TARRES RAMIREZ, ROCIO BELEN Y RODRIGUEZ CONSTANTINO, MARIA XIMENA C/ BRIZUELA, NELSON DARÍO P/ EJECUCIÓN DE HONORARIOS” que tramitan por ante este TRIBUNAL de Gestión Judicial Asociada de Familia de Luján de Cuyo (GEJUAF LUJÁN) de la Primera Circunscripción Judicial de la Provincia de Mendoza, sito en Boedo 385, Ed. 4, Carrodilla, Luján de Cuyo; mail: gejuaf_lujan@jus.mendoza.gov.ar tel: 4415916; tengo el agrado de dirigirme a Ud. a efectos de solicitarle que, por intermedio de quien corresponda se proceda a TRABAR EMBARGO EJECUTORIO sobre los fondos existentes o que se depositen en el futuro en las cuentas corrientes, cajas de ahorro, plazos fijos, o cualquier otro tipo de cuenta de titularidad del Sr. NELSON DARÍO BRIZUELA, D.N.I. Nº 34.063.787, que tenga en MERCADO PAGO (MERCADO LIBRE S.R.L.), por el porcentaje de ley y hasta cubrir la suma de PESOS TRES MILLONES DOSCIENTOS OCHENTA Y CUATRO MIL NOVECIENTOS CINCUENTA Y SEIS con 17/100 ($3.284.956,17). Dichos fondos, deberán ser depositados cada mes en la cuenta de Banco de la Nación Argentina, a saber:\nNro. de cuenta: 9900693686 Denominación: 202605/2026 TARRES RAMIREZ ROCIO BELEN Y RODRIGUEZ CONSTANTINO MARIA XIMENA C/ BRIZUELA NELSON DARIO P/EJECUCION DE HONORARIOS CUIT de la cuenta: 70330426959 Nro. CBU: 0110342550099006936861\nLa resolución que ordena dicha medida transcripta en su parte pertinente dice: “Luján de Cuyo; 22 de Setiembre de 2026.- AUTOS Y VISTOS: (...); RESUELVO: I.- Téngase presente la demanda por ejecución de honorarios interpuesta por las Dras. MARIA XIMENA RODRIGUEZ COSTANTINO y ROCIO BELEN TARRES, pudiendo ser descargada la demanda y documentación, a través del siguiente Link de acceso: https://s.pjm.gob.ar/dd/cpl/RKKTU22113. II.- Ordenar llevar adelante la ejecución del pago de honorarios adeudados a favor de las Dras. MARIA XIMENA RODRIGUEZ COSTANTINO y ROCIO BELEN TARRES y en contra del Sr. NELSON DARÍO BRIZUELA, D.N.I. Nº 34.063.787, conforme regulación efectuada en los autos principales N° 148546/2025, caratulados: “IBACETA, BRUNELA FABIANA C/ BRIZUELA, NELSON DARÍO P/Modificación alimentos”, por la suma de capital reclamado de PESOS DOS MILLONES SETECIENTOS TREINTA Y SIETE MIL CUATROCIENTOS SESENTA Y TRES CON 48/100 ($2.737.463,48), con más la suma de PESOS QUINIENTOS CUARENTA Y SIETE MIL CUATROCIENTOS NOVENTA Y DOS CON 69/100 ($547.492,69) que se fija provisionalmente para intereses y costas del juicio que correspondan. III.- TRABAR EMBARGO EJECUTORIO sobre los fondos existentes o que se depositen en el futuro en las cuentas corrientes, cajas de ahorro, plazos fijos, o cualquier otro tipo de cuenta de titularidad del Sr. NELSON DARÍO BRIZUELA, D.N.I. Nº 34.063.787, que tenga en MERCADO PAGO (MERCADO LIBRE S.R.L.), por el porcentaje de ley y hasta cubrir la suma de PESOS TRES MILLONES DOSCIENTOS OCHENTA Y CUATRO MIL NOVECIENTOS CINCUENTA Y SEIS con 17/100 ($3.284.956,17). Las sumas embargadas deberán ser depositadas en la cuenta que a tal efecto se ordena abrir como perteneciente\na estos autos, y a la orden de esta GestiÃ³n Judicial Asociada de Familia de Luján de Cuyo, en el Banco de la Nación Argentina, sucursal Luján de Cuyo. A los fines de cumplir con lo ordenado precedentemente, REQUIÉRASE LA APERTURA DE CUENTA JUDICIAL a la ORDEN DEL TRIBUNAL, EN EL BANCO DE LA NACIÓN ARGENTINA, SUCURSAL LUJÁN DE CUYO, mediante Sistema Sinej. CÚMPLASE POR SECRETARIA. Una vez abierta la cuenta judicial dispuesta en el párrafo anterior, OFÍCIESE a MERCADO PAGO (MERCADO LIBRE S.R.L.), a cargo de parte interesada, debiendo remitir el oficio confeccionado en formato editable a través del portal de escritos de IOL, a efectos que pueda ser revisado y corregido por el Tribunal en caso de corresponder, y posteriormente firmado digitalmente. Asimismo, deberá denunciar una casilla de correo electrónico a los fines que sea remitido el oficio firmado para su diligenciamiento, o en su caso, expedirse respecto la forma particular en que se diligenciará el oficio respectivo. CÚMPLASE por parte interesada, en su oportunidad. IV.- Citar a la demandada para defensa por el término de TRES (3) DÍAS, bajo apercibimiento de ley. (arts. 310 ap. II y IV, y 302 del C.P.C.yT.). V.- NOTIFÍQUESE la presente a la ejecutante en su domicilio procesal electrónico. PASE A RECEPTOR. VI.- NOTIFÍQUESE al ejecutado en su domicilio REAL. NOTIFÍQUESE, a instancia de parte interesada. Hágase saber a la parte actora que, a fin de cumplir con la notificación ordenada deberá confeccionarse cédula digital, debiendo presentarse a través del portal de escritos de IOL en formato editable, a fin de ser revisada por el receptor del Tribunal. Posteriormente, deberá concurrir a fin de abonar la movilidad, de corresponder. CÓPIESE. REGÍSTRESE. CÚMPLASE. OFÍCIESE. NOTIFÍQUESE. OMÍTASE LA APARICIÓN EN LISTA. Dra. María Daniela Alma Sánchez Juez de Familia y Violencia Familiar\".-\nSaludo a Ud. muy atte.-\nOFICIO FIRMADO DIGITALMENTE POR LA DRA. MARÍA DANIELA ALMA SÁNCHEZ - JUEZ DE FAMILIA Y VIOLENCIA FAMILIAR – GEJUAF LUJÁN DE CUYO\nSe informa a los usuarios que se encuentra disponible la herramienta oficial “Validador de Firmas Digitales”, la cual permite verificar la validez y autenticidad de documentos firmados digitalmente de manera simple y segura, desde cualquier computadora con acceso a internet. A través de este sistema es posible analizar documentos firmados digitalmente y comprobar: a) La validez de la firma digital. b) La identidad del firmante. c) La integridad del documento, verificando que no haya sido modificado luego de su firma. Para utilizar la herramienta, únicamente debe ingresarse al sitio oficial https://validadordefirmas.gob.ar y cargar el documento firmado digitalmente que se desea validar.",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO_MULTIPLE",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "conflicto_identificador"
+    ],
+    "cantidad_embargados": 2,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "NELSON DARÍO BRIZUELA",
+        "dni_embargado": "34.063.787",
+        "cuit_cuil_embargado": "70330426959",
+        "roles_detectados": [
+          "titular"
+        ],
+        "variantes_nombre": [
+          "NELSON DARIO",
+          "NELSON DARÍO BRIZUELA"
+        ],
+        "cantidad_fragmentos_soporte": 4,
+        "cantidad_evidencias": 4,
+        "score_total": 29.004,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "NELSON DARÍO BRIZUELA",
+            "dni_detectado": "34.063.787",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9202260971069336,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "fijos, o cualquier otro tipo de cuenta de titularidad del Sr. NELSON DARÍO BRIZUELA, D.N.I. Nº 34.063.787, que tenga en MERCADO",
+            "contexto_local": "fijos, o cualquier otro tipo de cuenta de titularidad del Sr. NELSON DARÍO BRIZUELA, D.N.I. Nº 34.063.787, que tenga en MERCADO"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "4",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "NELSON DARIO",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "70330426959",
+            "rol_detectado": "",
+            "nombre_confidence": 0.7225701808929443,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "RODRIGUEZ CONSTANTINO MARIA XIMENA C/ BRIZUELA NELSON DARIO P/EJECUCION DE HONORARIOS CUIT de la cuenta: 70330426959 Nro.",
+            "contexto_local": "RODRIGUEZ CONSTANTINO MARIA XIMENA C/ BRIZUELA NELSON DARIO P/EJECUCION DE HONORARIOS CUIT de la cuenta: 70330426959 Nro."
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "5",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "NELSON DARÍO BRIZUELA",
+            "dni_detectado": "34.063.787",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.6477136611938477,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "MARIA XIMENA RODRIGUEZ COSTANTINO y ROCIO BELEN TARRES y en contra del Sr. NELSON DARÍO BRIZUELA, D.N.I. Nº 34.063.787, conforme regulación",
+            "contexto_local": "MARIA XIMENA RODRIGUEZ COSTANTINO y ROCIO BELEN TARRES y en contra del Sr. NELSON DARÍO BRIZUELA, D.N.I. Nº 34.063.787, conforme regulación"
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "7",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "NELSON DARÍO BRIZUELA",
+            "dni_detectado": "34.063.787",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9202260971069336,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "fijos, o cualquier otro tipo de cuenta de titularidad del Sr. NELSON DARÍO BRIZUELA, D.N.I. Nº 34.063.787, que tenga en MERCADO",
+            "contexto_local": "fijos, o cualquier otro tipo de cuenta de titularidad del Sr. NELSON DARÍO BRIZUELA, D.N.I. Nº 34.063.787, que tenga en MERCADO"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 29.004,
+            "total_grupos_documento": 3,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "titular"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": true,
+              "cantidad_fragmentos": 4
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      },
+      {
+        "nombre_embargado": "MARIA XIMENA RODRIGUEZ COSTANTINO",
+        "dni_embargado": "34.063.787",
+        "cuit_cuil_embargado": "70330426959",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "MARIA XIMENA RODRIGUEZ COSTANTINO",
+          "RODRIGUEZ CONSTANTINO MARIA XIMENA"
+        ],
+        "cantidad_fragmentos_soporte": 2,
+        "cantidad_evidencias": 2,
+        "score_total": 15.354,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "4",
+            "palabra_clave": "cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "RODRIGUEZ CONSTANTINO MARIA XIMENA",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "70330426959",
+            "rol_detectado": "",
+            "nombre_confidence": 0.8231093883514404,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "RODRIGUEZ CONSTANTINO MARIA XIMENA C/ BRIZUELA NELSON DARIO P/EJECUCION DE HONORARIOS CUIT de la cuenta: 70330426959 Nro.",
+            "contexto_local": "RODRIGUEZ CONSTANTINO MARIA XIMENA C/ BRIZUELA NELSON DARIO P/EJECUCION DE HONORARIOS CUIT de la cuenta: 70330426959 Nro."
+          },
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "5",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "MARIA XIMENA RODRIGUEZ COSTANTINO",
+            "dni_detectado": "34.063.787",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9796090722084045,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "MARIA XIMENA RODRIGUEZ COSTANTINO y ROCIO BELEN TARRES y en contra del Sr. NELSON DARÍO BRIZUELA, D.N.I. Nº 34.063.787, conforme regulación",
+            "contexto_local": "MARIA XIMENA RODRIGUEZ COSTANTINO y ROCIO BELEN TARRES y en contra del Sr. NELSON DARÍO BRIZUELA, D.N.I. Nº 34.063.787, conforme regulación"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "rol_juridico_fuerte",
+            "identificador",
+            "repeticion"
+          ],
+          "detalle": {
+            "score_total": 15.354,
+            "total_grupos_documento": 3,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": true,
+              "cantidad_fragmentos": 2
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 3,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_embargado": "ROCIO BELEN TARRES",
+        "dni_embargado": "34.063.787",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [],
+        "variantes_nombre": [
+          "ROCIO BELEN TARRES"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.507,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "5",
+            "palabra_clave": "dni",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "ROCIO BELEN TARRES",
+            "dni_detectado": "34.063.787",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.8497501015663147,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "MARIA XIMENA RODRIGUEZ COSTANTINO y ROCIO BELEN TARRES y en contra del Sr. NELSON DARÍO BRIZUELA, D.N.I. Nº 34.063.787, conforme regulación",
+            "contexto_local": "MARIA XIMENA RODRIGUEZ COSTANTINO y ROCIO BELEN TARRES y en contra del Sr. NELSON DARÍO BRIZUELA, D.N.I. Nº 34.063.787, conforme regulación"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "senales_insuficientes",
+            "sin_rol_juridico_fuerte",
+            "sin_contexto_juridico",
+            "sin_repeticion"
+          ],
+          "detalle": {
+            "score_total": 6.507,
+            "total_grupos_documento": 3,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": true,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 4,
+    "conflictos_identificador": [
+      {
+        "tipo_identificador": "dni",
+        "valor_normalizado": "34063787",
+        "nombre_a": "NELSON DARÍO BRIZUELA",
+        "nombre_b": "MARIA XIMENA RODRIGUEZ COSTANTINO",
+        "variantes_a": [
+          "NELSON DARIO",
+          "NELSON DARÍO BRIZUELA"
+        ],
+        "variantes_b": [
+          "MARIA XIMENA RODRIGUEZ COSTANTINO",
+          "RODRIGUEZ CONSTANTINO MARIA XIMENA"
+        ]
+      },
+      {
+        "tipo_identificador": "cuit_cuil",
+        "valor_normalizado": "70330426959",
+        "nombre_a": "NELSON DARÍO BRIZUELA",
+        "nombre_b": "MARIA XIMENA RODRIGUEZ COSTANTINO",
+        "variantes_a": [
+          "NELSON DARIO",
+          "NELSON DARÍO BRIZUELA"
+        ],
+        "variantes_b": [
+          "MARIA XIMENA RODRIGUEZ COSTANTINO",
+          "RODRIGUEZ CONSTANTINO MARIA XIMENA"
+        ]
+      },
+      {
+        "tipo_identificador": "dni",
+        "valor_normalizado": "34063787",
+        "nombre_a": "NELSON DARÍO BRIZUELA",
+        "nombre_b": "ROCIO BELEN TARRES",
+        "variantes_a": [
+          "NELSON DARIO",
+          "NELSON DARÍO BRIZUELA"
+        ],
+        "variantes_b": [
+          "ROCIO BELEN TARRES"
+        ]
+      },
+      {
+        "tipo_identificador": "dni",
+        "valor_normalizado": "34063787",
+        "nombre_a": "MARIA XIMENA RODRIGUEZ COSTANTINO",
+        "nombre_b": "ROCIO BELEN TARRES",
+        "variantes_a": [
+          "MARIA XIMENA RODRIGUEZ COSTANTINO",
+          "RODRIGUEZ CONSTANTINO MARIA XIMENA"
+        ],
+        "variantes_b": [
+          "ROCIO BELEN TARRES"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "790131",
+    "numero_archivo": "13",
+    "nombre_documento": "790131_1.pdf",
+    "texto_completo": "'2026: Año del cien aniversario de la sanción de la Ley de Derechos civiles de la mujer-Ley 11357-Ley 4202-A\"\nPaz 1\nOFICIO Nro._________/\nRESISTENCIA, DE DE 2026.-\nMERCADO PAGO\nSU DESPACHO: Tengo el agrado de dirigirme a Ud. en autos caratulados:\n\"MUNICIPALIDAD DE LA CIUDAD DE RESISTENCIA C/ ALBARIÑO, JIMENA CECILIA S/ EJECUCION FISCAL\" Expte. N° 1975/26, que se tramita ante el Juzgado de Paz Letrado Nº 1 – Secretaria Nº 2 a cargo de la Dra. Analía Guardia - sito en Brown Nº 249 1er. Piso, de esta Ciudad, a cargo del Dr. Oscar Lotero – JUEZ, con el fin de dar cumplimiento con el embargo ordenado, Sr/Sra. ALBARIÑO, JIMENA CECILIA – DNI N° 37796425 / CBU DE LA CUENTA JUDICIAL: 3110030211900180386939.\nA continuación se transcribe el recaudo judicial que ordena la medida:\n|||||||/sistencia, 15 de Octubre de 2026.- Atento lo solicitado en presentación que antecede, yloinformado en fecha 21/09/2026, LIBRESE oficio a MERCADOPAGO(MERCADOLIBRE S.R.L), para que dentro del término de CINCO(5) díasdécumplimiento con el embargo dispuesto por Oficio N° 1332/26 de fecha02/09/2026 y deposité y/o transfiera los montos ordenados, en la cuentaNº 90018038693 - C.B.U. Nº 3110030211900180386939 - C.U.I.T. N° 33-99917645-9 del Nuevo Banco del Chaco S.A., bajo apercibimiento contenidoen el art. 532 2do. párrafo del C.P.C.C. (2559 M). Sin perjuicio de ello, en relación al recaudo ordenado, hágasesaber al profesional que deberá adjuntar el recaudo a librar via INDI, y luego desu libramiento, retirarlo y enviarlo escaneado el profesional bajosuresponsabilidad, a la dirección de correo electrónico correspondiente. Se agrega reporte de saldo online ($0,00). Not.- Dra. ANALIA M.I. GUARDIA Secretaria N° 2 Juzgado de Paz Letrado Nº 1 Dr. OSCAR R. LOTERO Juez de Paz Letrado N° N° 1.\nSe autoriza al diligenciamiento del presente oficio, a la Dra. TANIA ALEGRE RAHN y/o quien se designe..\nSin otro particular, saludo A Ud. muy atentamente.\n'2026: Año del cien aniversario de la sanción de la Ley de Derechos civiles de la mujer-Ley 11357-Ley 4202-A\"",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_embargada"
+    ],
+    "cantidad_embargados": 0,
+    "personas_embargadas": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "id": "790135",
+    "numero_archivo": "14",
+    "nombre_documento": "790135_1.pdf",
+    "texto_completo": "OFICIO\nAOFICIO E\nNEUQUEN\nJuzgado Ejecutivo Numero 2\nDESTINATARIO: MERCADO PAGO\nNEUQUEN, 12 de noviembre de 2026 Sr/a. SU DESPACHO Me dirijo a Ud. en los autos caratulados: \"MUNICIPALIDAD DE NEUQUEN C/ ÑANCÚ GABRIEL ARNALDO RAFAEL S/ Apremio\"(Expte/Exd N° 685896/2022), en trámite por ante el/la Juzgado Ejecutivo Numero 2, a cargo del/la Dra./Dr. Dra. María Victoria Bacci, SECRETARÍA ÚNICA, sito en LELOIR 686 , de la ciudad de NEUQUEN, con el objeto de: TRABAR EMBARGO sobre las cuentas de ÑANCÚ, GABRIEL ARNALDO RAFAEL, - DNI/CUIT 32148218 - hasta alcanzar la suma de PESOS CINCUENTA y CUATRO MIL OCHENTA Y CINCO CON CINCUENTA CENTAVOS ($54.085,50) en concepto de capital con más la suma de PESOS OCHOCIENTOS OCHO MIL CUARENTA Y SEIS CON 08/100 CENTAVOS ($808.046,08), al día de la fecha presupuestados provisoriamente para responder a intereses y costas del juicio. La providencia que ordena el libramiento del presente en su parte pertinente dice: NEUQUEN 29/06/2026\"(...) De conformidad con lo solicitado, trábase embargo sobre el bien denunciado bajo responsabilidad de quien lo solicita, de titularidad del demandado ÑANCÚ, GABRIEL ARNALDO RAFAEL, hasta alcanzar las sumas de $54.085,50 que se reclaman en concepto de capital. Ello con más 8 IUS para responder a intereses y costas del juicio atendiendo a las razones invocadas por la actora. En caso de variaciones, deberá tomarse el valor del IUS al momento del libramiento, consignando expresamente su importe. Para su toma de razón, líbrese oficio a las entidades bancarias denunciadas y en su caso Billeteras Virtuales, dejándose constancia que en atención a haberse decretado la medida sobre fondos que eventualmente tenga la demandada en otras instituciones bancarias -pudiendo superarse con creces el importe por el cual se ordena la medida- deberá comunicar con la mayor diligencia y a la brevedad posible sobre la efectivización de la medida dispuesta o sobre cualquier causa que obste al cumplimiento de lo ordenado, sin efectuar la transferencia hasta tanto sea expresamente comunicado. Asimismo y teniendo en cuenta que en la actualidad resulta una modalidad habitual, el pago de haberes mediante la acreditación de los respectivos importes en caja de ahorro o cuenta similar, se le hará saber a la entidad bancaria que deberá abstenerse de realizar la retención debiendo informar a la brevedad tal circunstancia, comunicando nombre de la empleadora y su respectivo CUIT. FDO Dra. María Victoria Bacci \". A sus efectos se deja constancia que se encuentra facultado para diligenciar el presente oficio digital, el Dr./Dra. CECILIA LONGHI y/o Juan Ignacio Andrian y/o Franco Nelson Larrondo y/o Jose Luis Elgueta y/o Tomas Agustín Diez Ruiz y/o\nOFICIO N°: 1348593 JNQJE2-EXD-685896/2022\nFecha de Ingreso: 12/11/2026 | Fecha del Cargo: 13/11/2026 | Firmado por Susana Isla\nARIANNE NICOLE MOLIA FALCILGIO Y/O FACUNDO HERNÁN MORENO Y/O JUAN MANUEL PARDO Y/O LUCÍA CAROLINA ESTEVEZ Y/O PAULA ALDANA ANGULO Y/O MARÍA ÁNGELES QUIROGA Y/O GIORELLA IARA CARMIGLIO Y/O DONOSO PROTTI MARIA FERNANDA Y/O MARIA JULIA QUINTANA Y/O DAIANA ALEJANDRA HERMAN Y/O MARTINA VICOTRIA TOLEDO, CAMILA LUCIA TRIFILIO, AGUSTINA ROCÍO HERRERA ALVAREZ Y/O RAINIER ALFREDO CORNUZ NAVARRETE Y/O GUTIERREZ CINTHYA AILEN Y/O BARRERA AGUSTINA Y/O ALEXANDRA YAZMIN MUÑOZ Y/O JULIETA CAMPOS POLANCO Y/O AYELIN CLARIBEL VILCA Y/O GABRIELA ELIZABETH SUAREZ Y/O MIRANDA DANA ROCIO.\nDeberá coordinar con el citado profesional la respuesta a este oficio. A sus efectos, el correo de contacto es: OFICIOSDATOSMUNINQN@GMAIL.COM\nSe deja constancia que el presente OFICIO DIGITAL se libra conforme lo dispuesto en la \"Reglamentación del Sistema de Seguimiento de Cédulas, Oficios (SISCOM)\" aprobado por el Tribunal Superior de Justicia mediante Ac. 5831, pto. 23 y sus modificatorias como así por el Dc.529/22 de la Presidencia del TSJ y conforme surge del art. 3 inciso 2 del reglamento aludido, puede verificar su autenticidad a través del mecanismo establecido al pie del presente.\nSaludo a Ud. muy atentamente.-\nAcceda a \"https://exd.jusneuquen.gov.ar/validar_documento\" e ingrese el código EFZqvo1pv para verificar la autenticidad del oficio, y acceder a las copias de traslado que se hubieran adjuntado a la diligencia.\nTambién puede validar escaneando el QR de la derecha o haciendo clic en el mismo.\nhash: 924549ca0aa6a49dac2a2883fd1d7150be5d934f9537bb2fb3c6eb952af b093e\npagina: 2 de 2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "persona_1:evidencia_unica_debil"
+    ],
+    "cantidad_embargados": 1,
+    "personas_embargadas": [
+      {
+        "nombre_embargado": "GABRIEL ARNALDO RAFAEL",
+        "dni_embargado": "",
+        "cuit_cuil_embargado": "",
+        "roles_detectados": [
+          "embargado"
+        ],
+        "variantes_nombre": [
+          "GABRIEL ARNALDO RAFAEL"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "score_total": 6.842,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "dni | cuit",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "GABRIEL ARNALDO RAFAEL",
+            "dni_detectado": "",
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "embargado",
+            "nombre_confidence": 0.9473190903663635,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "objeto de: TRABAR EMBARGO sobre las cuentas de ÑANCÚ, GABRIEL ARNALDO RAFAEL, - DNI/CUIT 32148218 - hasta alcanzar la",
+            "contexto_local": "objeto de: TRABAR EMBARGO sobre las cuentas de ÑANCÚ, GABRIEL ARNALDO RAFAEL, - DNI/CUIT 32148218 - hasta alcanzar la"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "contexto_juridico",
+            "rol_juridico_fuerte"
+          ],
+          "detalle": {
+            "score_total": 6.842,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "embargado"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "requiere_revision": false,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  }
+]
