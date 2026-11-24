@@ -359,7 +359,9 @@ experiments:
 
     input_mode: fragmentos
     # input_file: data/input_fragmentos/fragmentos.csv
-    input_file: data/input_fragmentos/fragmento_20_embargos_17_11.csv
+    # input_file: data/input_fragmentos/fragmento_20_embargos_17_11.csv
+    input_file: data/input_fragmentos/fragmento_20_embargo_23_11.csv
+
     text_column: fragmento
 
     threshold: 0.50
@@ -668,8 +670,9 @@ experiments:
     model: gliner2_multi
     schema: schema_v1_persona_objeto_oficio_fragmentos
     input_mode: fragmentos
-    input_file: data/input_oficios/fragmento_20_solicitud_17_11.csv
+    # input_file: data/input_oficios/fragmento_20_solicitud_17_11.csv
     # input_file: data/input_oficios/qwen3_vl_2000_solicitud_20_casos.csv
+    input_file: data/input_oficios/fragmento_37_solicitud_24_11.csv
     text_column: fragmento
     threshold: 0.50
 

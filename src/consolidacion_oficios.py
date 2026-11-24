@@ -1264,6 +1264,108 @@ def _evaluar_tercero(
 # SCORE
 # ============================================================
 
+# ============================================================
+# V17.7 - CONTEXTO POSITIVO COMPLEMENTARIO (SOLO FRAGMENTOS)
+# Detecta relaciones cercanas entre requerimiento, objeto e identidad.
+# No reemplaza ni restringe la lógica anterior. La señal se añade
+# únicamente si la puntuación contextual original no era positiva,
+# hay un identificador local verificable y no se detectó un tercero.
+# ============================================================
+
+_V17_7_PATRONES={
+ 'posesion_registro': re.compile(r'\b(?:REGISTRA|REGISTRO|REGISTRADO|REGISTRADA|REGISTRAN|MANTIENE|MANTUVO|POSEE|POSEYO|DISPONE|DISPUSO|ES|FUE|RESULTA)\b.{0,52}\b(?:CUENTAS?|USUARIOS?|CLIENTES?|BILLETERAS?|PRODUCTOS?|TARJETAS?|PRESTAMOS?|CREDITOS?)\b.{0,45}\b(?:DE|DEL|A\s+NOMBRE\s+DE)\s*$',re.I),
+ 'cuentas_pertinencia':re.compile(r'\b(?:CUENTAS?|BILLETERAS?|SALDOS?|FONDOS?|PRODUCTOS?|TARJETAS?)\b.{0,65}\b(?:PERTENECIENTES?\s+A|DE\s+TITULARIDAD\s+DE|CORRESPONDIENTES?\s+A|A\s+NOMBRE\s+DE)\s*$',re.I),
+ 'operacion_autor':re.compile(r'\b(?:OPERACIONES?|TRANSFERENCIAS?|COMPRAS?|MOVIMIENTOS?|EXTRACCIONES?|DEPOSITOS?|ACREDITACIONES?)\b.{0,95}\b(?:REALIZAD[AO]S?|EFECTUAD[AO]S?|ORDENAD[AO]S?|PERCIBID[AO]S?)\s+POR\b\s*(?:EL|LA|LOS|LAS)?\s*(?:SR\.?|SRA\.?|CIUDADAN[OA]|SENOR|SENORA)?\s*$',re.I),
+ 'relacion_persona_pedido': re.compile(r'\b(?:REQUIERE|REQUIERA|REQUIRIO|SOLICITA|SOLICITO|INFORME|INFORMAR|DETALLE|IDENTIFIQUE|VERIFIQUE|REMlTA|PROPORCIONE)\b.{0,125}\b(?:RESPECTO\s+DE(?:L)?|ACERCA\s+DE(?:L)?|EN\s+RELACION\s+CON|SOBRE)\s+(?:LA|EL)?\s*(?:SRA\.?|SR\.?|SENOR[A]?|CIUDADAN[OA]|PERSONA|CONTRIBUYENTE)?\s*$',re.I),
+ 'consultado_enunciado':re.compile(r'\b(?:RESPECTO\s+DE(?:L)?|ACERCA\s+DE(?:L)?|EN\s+RELACION\s+CON)\s+(?:LA|EL)?\s*(?:SRA\.?|SR\.?|SENOR[A]?|CIUDADAN[OA]|IMPUTAD[OA]|CONTRIBUYENTE|ACCIONAD[OA])\s*$',re.I),
+ 'laboral_fiscal':re.compile(r'\b(?:HABERES|REMUNERACIONES|IMPORTE[S]?\s+FACTURADOS|FACTURACION|OPERACIONES\s+CONCERTADAS)\b.{0,85}\b(?:PERCIBID[AO]S?\s+POR|A\s+NOMBRE\s+DE|CON|A)\s*$',re.I),
+}
+_V17_7_PEDIDO=re.compile(r'\b(?:INFORME|INFORMAR|INFORMEN|SOLICITA|SOLICITO|SOLICITAR|REQUIERE|REQUIERA|REQUERIR|VERIFICAR|VERIFIQUE|IDENTIFICAR|IDENTIFIQUE|DETALLAR|DETALLE|REMITIR|REMITA|PROPORCIONAR|PROPORCIONE|DATOS|INFORMACION|OFICIO|LO\s+SIGUIENTE|EN\s+CUANTO\s+A)\b',re.I)
+_V17_7_OBJETO=re.compile(r'\b(?:CUENTAS?|BILLETERAS?|SALDOS?|FONDOS?|MOVIMIENTOS?|OPERACIONES?|TRANSFERENCIAS?|COMPRAS?|DATOS|INFORMACION|FACTURACION|FACTURADOS?|HABERES?|REMUNERACIONES?|IDENTIDAD|TITULARIDAD|CREDITOS?|PRESTAMOS?|PRODUCTOS?)\b',re.I)
+_V17_7_NEG=re.compile(r'\b(?:AUTORIZADOS?\s+(?:PARA|AL)|FIRMADO\s+POR|SECRETARI[OA]|JUEZ(?:A)?|LETRADO\s+PATROCINANTE|PERITO|PERITA|DILIGENCIAR)\b',re.I)
+
+def _v17_7_relacion_contextual(e: Evidencia) -> str | None:
+    pos=_buscar_posicion_nombre(e)
+    if pos[0] is None or pos[1] is None:return None
+    if _nombre_parcial_en_lista(e) or not _identificador_cerca_nombre(e):return None
+    ini,fin=pos
+    previo=_normalizar_texto(e.fragmento[max(0,ini-185):ini]); despues=_normalizar_texto(e.fragmento[fin:fin+115]); frag=_normalizar_texto(e.fragmento)
+    if _V17_7_NEG.search(previo[-90:]):return None
+    if not _V17_7_PEDIDO.search(frag) or not _V17_7_OBJETO.search(frag):return None
+    # No atribuir la misma solicitud a cada participante de un pago con varias contrapartes
+    if re.search(r'\b(?:TRANSFERENCIAS?|OPERACIONES?)\b',frag) and re.search(r'\b(?:CUENTA DE DESTINO|DESTINATARIO|TRABAJADORA)\b',frag):return None
+    if any(_V17_7_PATRONES[k].search(previo) for k in _V17_7_PATRONES):
+        return next(k for k in _V17_7_PATRONES if _V17_7_PATRONES[k].search(previo))
+    return None
+
+
+
+# V17.8: familias de contexto positivo para requerimientos, objetos e identidades.
+# EXCLUSIVAMENTE fragmentos: requiere nombre+ID en la misma clausula.
+# Una familia detectada no equivale a aceptar un candidato.
+_V17_8_FAMILIAS = {
+ 'pedido_persona': [
+  r'\b(?:SIRVASE|SIRVANSE|SOLICITA|SOLICITO|SE REQUIERE|SE REQUIERA|REMITA|REMITAN|DETALLE|HAGA SABER|INFORME|INFORMAR|IDENTIFIQUE|VERIFIQUE)\b.{0,105}\b(?:RESPECTO DE|RESPECTO DEL|ACERCA DE|ACERCA DEL|SOBRE|EN RELACION CON|CON RELACION A)\s+(?:(?:LA|EL|LAS|LOS)\s+)?(?:(?:SENORA?|SR|SRA|CIUDADAN[OA]|PERSONA|CONTRIBUYENTE|IMPUTAD[OA])\s*)?$',
+  r'\b(?:RESPECTO|REFERENTE)\s+(?:DE|DEL|A)\s+(?:LA|EL)\s+(?:SENORA?|SR|SRA|CIUDADAN[OA]|CONTRIBUYENTE|IMPUTAD[OA])\s*$',
+ ],
+ 'titularidad_productos': [
+  r'\b(?:CUENTAS?|BILLETERAS?|SALDOS?|FONDOS?|PRODUCTOS?|TARJETAS?|PRESTAMOS?|CREDITOS?)\b.{0,72}\b(?:PERTENECIENTES? A|DE TITULARIDAD DE|CORRESPONDIENTES? A|A NOMBRE DE|REGISTRAD[AO]S? A NOMBRE DE)\s*$',
+  r'\b(?:CLIENTE|USUARIO|TITULAR|COTITULAR)\s+(?:DE|DEL|DE LA|DE LAS)\s+(?:CUENTAS?|BILLETERAS?|PRODUCTOS?|SERVICIOS?)\s+(?:A NOMBRE DE|DE)\s*$',
+ ],
+ 'registro_historico': [
+  r'\b(?:REGISTRA|REGISTRO|REGISTRAN|REGISTRO O REGISTRA|MANTIENE|MANTUVO|POSEE|POSEYO|ES O FUE TITULAR)\b.{0,70}\b(?:CUENTAS?|BILLETERAS?|TARJETAS?|PRESTAMOS?|CREDITOS?|PRODUCTOS?)\b.{0,45}\b(?:A NOMBRE DE|DE TITULARIDAD DE|PERTENECIENTES? A|DE)\s*$',
+ ],
+ 'operacion_sujeto': [
+  r'\b(?:OPERACIONES?|COMPRAS?|MOVIMIENTOS?|EXTRACCIONES?|DEPOSITOS?|ACREDITACIONES?|TRANSFERENCIAS?)\b.{0,92}\b(?:REALIZAD[AO]S?|EFECTUAD[AO]S?|ORDENAD[AO]S?|PERCIBID[AO]S?|RECIBID[AO]S?)\s+POR\s+(?:(?:EL|LA)\s+)?(?:(?:CIUDADAN[OA]|SENOR[A]?|SR|SRA)\s*)?$',
+ ],
+ 'comercial_fiscal_laboral': [
+  r'\b(?:IMPORTES? FACTURADOS?|FACTURACION|OPERACIONES? CONCERTADAS|CONTRATOS? CELEBRADOS|HABERES|REMUNERACIONES)\b.{0,75}\b(?:A|CON|PERCIBID[AO]S? POR|A NOMBRE DE)\s*$',
+  r'\b(?:FISCALIZACION|SITUACION FISCAL|INFORMACION TRIBUTARIA|REGISTROS? TRIBUTARIOS?)\b.{0,85}\b(?:RESPECTO DE|DE LA CONTRIBUYENTE|CORRESPONDIENTES? A)\s*$',
+ ],
+ 'datos_identificacion': [
+  r'\b(?:DATOS PERSONALES|DOMICILIO REGISTRADO|IDENTIFICACION|DATOS REGISTRADOS|INFORMACION)\b.{0,60}\b(?:CORRESPONDIENTES? A|RESPECTO DE|ACERCA DE|DE LA PERSONA|DEL CIUDADANO)\s*$',
+ ],
+}
+_V17_8_FAMILIAS={k:tuple(re.compile(s,re.I) for s in v) for k,v in _V17_8_FAMILIAS.items()}
+_V17_8_REQ=re.compile(r'\b(?:SOLICIT\w*|REQUER\w*|INFORM\w*|REMIT\w*|DETALL\w*|VERIFIC\w*|IDENTIFIC\w*|OFICIO|DATOS|INFORMACION|FACTURACION|FISCALIZACION)\b',re.I)
+_V17_8_OBJ=re.compile(r'\b(?:CUENTAS?|BILLETERAS?|FONDOS?|SALDOS?|MOVIMIENTOS?|OPERACIONES?|TRANSFERENCIAS?|COMPRAS?|PRODUCTOS?|CREDITOS?|PRESTAMOS?|FACTURACION|FACTURADOS?|CONTRATOS?|HABERES?|REMUNERACIONES?|DATOS|INFORMACION|IDENTIFICACION|DOMICILIO|CONTRIBUYENTE|TRIBUTARI[AO]S?)\b',re.I)
+_V17_8_NEG=re.compile(r'\b(?:FIRMADO POR|AUTORIZAD[OA]S? PARA|DILIGENCIAR|LETRAD[OA] PATROCINANTE|SECRETARI[OA]|JUEZ(?:A)?|PERIT[OA]|ABOGAD[OA]S? AUTORIZAD[OA]S?|APODERAD[OA]|EN REPRESENTACION DE|SUSCRIPTO POR)\b',re.I)
+_V17_8_CONTRAPARTE=re.compile(r'\b(?:CUENTA DE DESTINO|DESTINATARIO|TRABAJADORA|RECEPTOR|BENEFICIARIO DE TRANSFERENCIA)\b',re.I)
+
+def _v17_8_relacion_refuerzo(e: Evidencia) -> str | None:
+    """Señal positiva contextual verificable, sin inferir desde texto_completo.
+
+    Evita premiar firmas, autorizados, DNI de terceros y contrapartes
+    ambiguas. Se mantiene el mismo detector ensayado sobre 120 documentos.
+    """
+    pos = _buscar_posicion_nombre(e)
+    if pos[0] is None or pos[1] is None:
+        return None
+    ini, fin = pos
+    antes = _normalizar_texto(e.fragmento[max(0, ini-200):ini])
+    completo = _normalizar_texto(e.fragmento)
+    tipos = [k for k, patrones in _V17_8_FAMILIAS.items()
+             if any(p.search(antes) for p in patrones)]
+    if not tipos:
+        return None
+    if not _identificador_cerca_nombre(e) or _nombre_parcial_en_lista(e):
+        return None
+    if _V17_8_NEG.search(antes[-95:]):
+        return None
+    posterior = _normalizar_texto(e.fragmento[fin:fin+115])
+    # Un nombre repetido como firmante requiere revisión, no refuerzo.
+    if re.search(r'\b(?:FIRMADO POR|SUSCRIPTO POR)\s+'
+                 + re.escape(_normalizar_texto(e.nombre)) + r'\b', posterior):
+        return None
+    if not _V17_8_REQ.search(completo) or not _V17_8_OBJ.search(completo):
+        return None
+    # No premiar automáticamente a ambos participantes de una transferencia.
+    if (re.search(r'\b(?:TRANSFERENCIAS?|OPERACIONES?)\b', completo)
+            and _V17_8_CONTRAPARTE.search(completo)):
+        return None
+    return tipos[0]
+
+
 def _score_contexto(
     evidencia: Evidencia,
 ) -> float:
@@ -1309,6 +1411,20 @@ def _score_contexto(
 
     if tercero:
         score -= 6.0
+
+    # V17.7: mantener la señal complementaria existente sin alterar sus reglas.
+    v17_7_activada = False
+    if score <= 0 and not evidencia.tercero_fuerte:
+        if _v17_7_relacion_contextual(evidencia) is not None:
+            score += 1.5
+            v17_7_activada = True
+
+    # V17.8: refuerzo contextual independiente (+1.5 por fragmento), incluso
+    # si el candidato ya tenía contexto positivo. Nunca sumar dos veces por
+    # la misma activación de V17.7 ni premiar terceros.
+    if not evidencia.tercero_fuerte and not v17_7_activada:
+        if _v17_8_relacion_refuerzo(evidencia) is not None:
+            score += 1.5
 
     return score
 

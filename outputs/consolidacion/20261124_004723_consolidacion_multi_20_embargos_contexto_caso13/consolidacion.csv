@@ -1,0 +1,24 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+1,789511,789511_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+2,789784,789784_1.pdf,RESUELTO,True,False,,1,1,WHITE SHIP S.R.L.,,30-71606996-2,titular,WHITE SHIP S.R.L.,1,1,11.906,False,False,0
+3,789892,789892_1.pdf,RESUELTO_MULTIPLE,True,False,,2,1,JULIO ALBERTO SOPLANES,13.080.347,,embargado,JULIO ALBERTO SOPLANES,1,1,11.489,False,False,0
+3,789892,789892_1.pdf,RESUELTO_MULTIPLE,True,False,,2,2,BRAULIO MAXIMILIANO SOPLANES,29.784.922,,embargado,BRAULIO MAXIMILIANO SOPLANES,1,1,11.481,False,False,0
+4,790065,790065_1.pdf,RESUELTO_MULTIPLE,True,False,,2,1,Jacinta Giménez,,27-05243718-6,titular,JACINTA GIMENEZ | Jacinta Giménez,2,2,17.641,False,False,0
+4,790065,790065_1.pdf,RESUELTO_MULTIPLE,True,False,,2,2,Isa Sebastián Yair,,20-29304863-1,titular,ISA SEBASTIAN YAIR CUIT | Isa Sebastián Yair,2,2,13.775,False,False,0
+5,790073,790073_1.pdf,RESUELTO,True,False,,1,1,NIETO DE LA PUENTE ROXANA,,27-29138049-8,demandado,NIETO DE LA PUENTE ROXANA,2,2,21.652,False,False,0
+6,790090,790090_1.pdf,RESUELTO,True,False,,1,1,Orlando Argentino ROSSI,11.438.646,,embargado,Orlando Argentino ROSSI,1,1,9.832,False,False,0
+7,790107,790107_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,1,NELSON DARÍO BRIZUELA,34.063.787,70330426959,titular,NELSON DARIO | NELSON DARÍO BRIZUELA,4,4,29.004,False,True,4
+7,790107,790107_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,2,MARIA XIMENA RODRIGUEZ COSTANTINO,34.063.787,70330426959,embargado,MARIA XIMENA RODRIGUEZ COSTANTINO | RODRIGUEZ CONSTANTINO MARIA XIMENA,2,2,15.354,False,True,4
+8,790119,790119_1.pdf,RESUELTO,True,False,,1,1,Mario Alberto GALLARDO,26.996.352,,demandado | embargado,Mario Alberto GALLARDO,2,2,22.959,False,False,0
+9,790120,790120_1.pdf,RESUELTO,True,False,,1,1,Noelia Soledad CARDENAS,36.307.261,,embargado,Noelia Soledad CARDENAS,2,2,19.909,False,False,0
+10,790126,790126_1.pdf,RESUELTO,True,False,,1,1,CARLOS GARDEL MORALES MARTÍNEZ,92.726.724,,demandado | embargado,CARLOS GARDEL MORALES MARTÍNEZ,2,2,19.984,False,False,0
+11,790128,790128_1.pdf,RESUELTO,True,False,,1,1,"HERRERA, ALEJANDRO MATÍAS",32.377.252,,demandado,"HERRERA, ALEJANDRO MATÍAS",2,2,24.247,False,False,0
+12,790130,790130_1.pdf,RESUELTO,True,False,,1,1,JARA MIRIAM LILIANA ANTONIA,16.284.693,,demandado,JARA MIRIAM LILIANA ANTONIA,1,1,9.984,False,False,0
+13,790131,790131_1.pdf,RESUELTO,True,False,,1,1,"Sr/Sra. ALBARIÑO, JIMENA CECILIA",37796425,,embargado,"Sr/Sra. ALBARIÑO, JIMENA CECILIA",1,1,9.57,False,False,0
+14,790135,790135_1.pdf,RESUELTO,True,False,,1,1,"ÑANCÚ, GABRIEL ARNALDO RAFAEL",32148218,,embargado,"ÑANCÚ, GABRIEL ARNALDO RAFAEL",1,1,9.342,False,False,0
+15,790137,790137_1.pdf,RESUELTO,True,False,,1,1,"ROLDAN, GUSTAVO ALEJANDRO",,20-18521291-3,embargado,"ROLDAN, GUSTAVO ALEJANDRO",1,1,10.281,False,False,0
+16,790140,790140_1.pdf,RESUELTO,True,False,,1,1,FERNANDEZ AUGUSTO ELIO,,,demandado,FERNANDEZ AUGUSTO ELIO,1,1,8.494,False,False,0
+17,790142,790142_1.pdf,RESUELTO,True,False,,1,1,"ARANDA, ELIDA MAGDALENA",,23-13340228-4,embargado,"ARANDA, ELIDA MAGDALENA",1,1,10.187,False,False,0
+18,790329,790329_1.pdf,RESUELTO,True,False,,1,1,CUAL JORGE LUIS,34.084.389,,embargado,CUAL JORGE LUIS,1,1,9.848,False,False,0
+19,790334,790334_1.pdf,RESUELTO,True,False,,1,1,ROFFE BARBARA,24.089.292,,demandada,ROFFE BARBARA,1,1,9.501,False,False,0
+20,790338,790338_1.pdf,RESUELTO,True,False,,1,1,CARRIZO ANDREA LILIANA,24.075.107,,embargada,"CARRIZO ANDREA LILIANA | CARRIZO, ANDREA LILIANA",2,2,16.073,False,False,0

@@ -1,0 +1,11 @@
+{
+  "total_documentos": 20,
+  "RESUELTO": 15,
+  "RESUELTO_MULTIPLE": 3,
+  "NO_RESUELTO": 2,
+  "total_personas_embargadas": 21,
+  "documentos_requieren_revision": 1,
+  "total_conflictos_identificador": 4,
+  "SUFICIENTES": 17,
+  "INSUFICIENTES": 3
+}

@@ -148,3 +148,18 @@
 2026-11-20 14:29:12,414 INFO __main__ - Documentos cargados: 20
 2026-11-20 14:29:12,498 INFO __main__ - Consolidacion finalizada: documentos=20 resueltos=14 multiples=3 no_resueltos=3 personas=20
 2026-11-20 14:29:12,499 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20261120_142912_consolidacion_multi_20_embargos_20261120
+2026-11-23 01:46:06,776 INFO __main__ - Inicio de consolidacion
+2026-11-23 01:46:06,825 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20261120_141722_multi_v7_fragmentos_thr50\predicciones_por_documento.json
+2026-11-23 01:46:06,864 INFO __main__ - Documentos cargados: 20
+2026-11-23 01:46:06,994 INFO __main__ - Consolidacion finalizada: documentos=20 resueltos=15 multiples=3 no_resueltos=2 personas=21
+2026-11-23 01:46:06,994 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20261123_014606_consolidacion_multi_20_embargos_mejorada_20261123
+2026-11-23 23:59:56,069 INFO __main__ - Inicio de consolidacion
+2026-11-23 23:59:56,078 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20261123_234939_multi_v7_fragmentos_thr50\predicciones_por_documento.json
+2026-11-23 23:59:56,082 INFO __main__ - Documentos cargados: 20
+2026-11-23 23:59:56,167 INFO __main__ - Consolidacion finalizada: documentos=20 resueltos=15 multiples=3 no_resueltos=2 personas=21
+2026-11-23 23:59:56,167 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20261123_235956_consolidacion_multi_20_embargos_fragmentos_nuevos_20261123
+2026-11-24 00:47:23,744 INFO __main__ - Inicio de consolidacion
+2026-11-24 00:47:23,745 INFO __main__ - Archivo de entrada: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\por_documento\20261123_234939_multi_v7_fragmentos_thr50\predicciones_por_documento.json
+2026-11-24 00:47:23,748 INFO __main__ - Documentos cargados: 20
+2026-11-24 00:47:23,841 INFO __main__ - Consolidacion finalizada: documentos=20 resueltos=16 multiples=3 no_resueltos=1 personas=22
+2026-11-24 00:47:23,841 INFO __main__ - Salida: E:\CAROLA\CAROLA TRABAJO\PASANTIA UNNE - AGENTE ASUNTOS LEGALES\identificacion_roles\outputs\consolidacion\20261124_004723_consolidacion_multi_20_embargos_contexto_caso13

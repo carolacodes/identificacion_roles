@@ -333,6 +333,17 @@ PATRONES_CONTEXTO_POSITIVO = (
     r"\bse\s+ha\s+decretado\s+embargo\b",
     r"\bdecretad[oa]\s+el\s+embargo\b",
     r"\bdecr[eé]t(?:a|e)se\s+embargo\b",
+
+    # Cumplimiento de una medida de embargo ya ordenada,
+    # dispuesta o decretada. Esta familia cubre variantes
+    # como "dar cumplimiento con el embargo ordenado",
+    # "cumplimiento del embargo dispuesto" o
+    # "cumplimiento al embargo decretado" sin depender
+    # de una frase exacta del documento.
+    r"\b(?:dar\s+)?cumplimiento\s+"
+    r"(?:con\s+el|del|al)\s+embargo\s+"
+    r"(?:ordenad[oa]|dispuest[oa]|decretad[oa])\b",
+
     r"\bembargo\s+sobre\b",
     r"\btr[aá]base\s+embargo\b",
     r"\btr[aá]bese\s+embargo\b",
@@ -353,10 +364,10 @@ PATRONES_CONTEXTO_POSITIVO = (
 
     # Frases frecuentes que vinculan fondos/cuentas con el sujeto
     # aun cuando la palabra "embargo" quedó fuera del fragmento.
-    r"\b(?:fondos|sumas|cantidades|cuentas|haberes)\b"
-    r".{0,90}\b"
+    r"\b(?:fondos|sumas|cantidades|cuentas|haberes|saldos|activos|dinero|dep[oó]sitos)\b"
+    r".{0,160}\b"
     r"(?:que\s+)?"
-    r"(?:posea|posean|tenga|tengan|perciba|perciban|"
+    r"(?:posea|posean|tenga|tengan|detente|detenten|perciba|perciban|"
     r"pertenezca|pertenezcan)\b",
 
     r"\b(?:cantidades|sumas|fondos)\s+"
@@ -437,6 +448,8 @@ PATRONES_LISTA_TERCEROS = (
     r"\bdiligenciador(?:a|es)?\b",
     r"\bpersonas?\s+facultad[oa]s?\b",
     r"\bfacultad[oa]s?\s+para\s+diligenciar\b",
+    r"\bfacultad[oa]s?\s+para\s+el\s+diligenciamiento\b",
+    r"\bse\s+encuentran?\s+facultad[oa]s?\s+para\s+(?:el\s+)?diligenciamiento\b",
 )
 
 
@@ -488,6 +501,17 @@ class Evidencia:
     dni: str = ""
     cuit_cuil: str = ""
     rol: str = ""
+
+    # Trazabilidad del enriquecimiento deterministico.
+    nombre_original_gliner: str = ""
+    dni_original_gliner: str = ""
+    cuit_cuil_original_gliner: str = ""
+    nombre_recuperado: bool = False
+    dni_recuperado: bool = False
+    cuit_cuil_recuperado: bool = False
+    metodos_recuperacion: list[str] = field(default_factory=list)
+    etiqueta_identificador_original: str = ""
+    recuperacion_bloqueada_motivo: str = ""
 
     nombre_confidence: float | None = None
     dni_confidence: float | None = None
@@ -926,6 +950,211 @@ def _evidencias_misma_persona(
 
 
 # ============================================================
+# RECUPERACION LOCAL DETERMINISTICA
+# ============================================================
+
+TOKENS_NO_APELLIDO_RECUPERABLE = {
+    "SR", "SRA", "SRTA", "DR", "DRA",
+    "DNI", "CUIT", "CUIL", "CBU", "CVU",
+    "ACTOR", "ACTORA", "DEMANDADO", "DEMANDADA",
+    "EMBARGADO", "EMBARGADA", "EJECUTADO", "EJECUTADA",
+    "DEUDOR", "DEUDORA", "TITULAR", "PARTE",
+    "DE", "DEL", "EL", "LA", "LOS", "LAS",
+}
+
+TOKENS_ADMINISTRATIVOS_NOMBRE = {
+    "DNI", "CUIT", "CUIL", "CBU", "CVU",
+    "NRO", "NUMERO", "DOCUMENTO",
+}
+
+
+def _posicion_nombre_texto(
+    fragmento: str,
+    nombre: str,
+) -> tuple[int, int] | None:
+    """Localiza literalmente un nombre dentro del fragmento."""
+    if not fragmento or not nombre:
+        return None
+    match = re.search(
+        re.escape(nombre),
+        fragmento,
+        flags=re.IGNORECASE,
+    )
+    return (match.start(), match.end()) if match else None
+
+
+def _tipo_identificador_por_formato(valor: str) -> str:
+    """Clasifica por estructura; no corrige formatos dudosos."""
+    digitos = _normalizar_identificador(valor)
+    if len(digitos) in (7, 8):
+        return "dni"
+    if len(digitos) == 11:
+        return "cuit_cuil"
+    return ""
+
+
+def _normalizar_etiqueta_identificador(etiqueta: str) -> str:
+    valor = _normalizar_texto(etiqueta).replace(" ", "")
+    if valor == "DNI":
+        return "dni"
+    if valor in {"CUIT", "CUIL", "CUITCUIL", "CUILCUIT"}:
+        return "cuit_cuil"
+    if valor in {"DNICUIT", "CUITDNI", "DNICUIL", "CUILDNI"}:
+        return "mixto"
+    return ""
+
+
+def _tipo_identificador_compatible(etiqueta: str, valor: str) -> str:
+    """Devuelve dni/cuit_cuil solo si etiqueta y estructura son coherentes."""
+    tipo_formato = _tipo_identificador_por_formato(valor)
+    tipo_etiqueta = _normalizar_etiqueta_identificador(etiqueta)
+    if not tipo_formato or not tipo_etiqueta:
+        return ""
+    if tipo_etiqueta == "mixto":
+        return tipo_formato
+    if tipo_etiqueta == tipo_formato:
+        return tipo_formato
+    return ""
+
+
+def _patron_identificador_local() -> re.Pattern[str]:
+    return re.compile(
+        r"\s*(?:[,;:()\-–—]\s*)*"
+        r"(?P<etiqueta>"
+        r"D\.?\s*N\.?\s*I\.?(?:\s*/\s*(?:C\.?\s*U\.?\s*I\.?\s*T\.?|C\.?\s*U\.?\s*I\.?\s*L\.?))?"
+        r"|C\.?\s*U\.?\s*I\.?\s*T\.?(?:\s*/\s*D\.?\s*N\.?\s*I\.?)?"
+        r"|C\.?\s*U\.?\s*I\.?\s*L\.?(?:\s*/\s*D\.?\s*N\.?\s*I\.?)?"
+        r")"
+        r"\s*(?:N[°ºo.]*(?:ro\.?)?|n[uú]mero)?\s*[:#°º.\-]*\s*"
+        r"(?P<valor>[0-9][0-9.\- ]{5,18}[0-9])(?!\d)",
+        re.IGNORECASE,
+    )
+
+
+def _identificador_local_despues_nombre(
+    fragmento: str,
+    nombre: str,
+    max_chars: int = 70,
+) -> dict[str, str] | None:
+    """Busca un identificador inmediatamente asociado al nombre."""
+    posicion = _posicion_nombre_texto(fragmento, nombre)
+    if not posicion:
+        return None
+    _, fin = posicion
+    tramo = fragmento[fin:fin + max_chars]
+    match = _patron_identificador_local().match(tramo)
+    if not match:
+        return None
+    etiqueta = match.group("etiqueta")
+    valor = match.group("valor").strip()
+    return {
+        "etiqueta": etiqueta,
+        "valor": valor,
+        "tipo": _tipo_identificador_compatible(etiqueta, valor),
+    }
+
+
+def _recuperar_apellido_antes_nombre(fragmento: str, nombre: str) -> str | None:
+    """Amplia NOMBRE a APELLIDO, NOMBRE solo con evidencia local literal."""
+    if not fragmento or not nombre:
+        return None
+    patron = re.compile(
+        r"(?<![\w])(?P<apellido>[A-ZÁÉÍÓÚÜÑ]{2,})\s*,\s*"
+        r"(?P<nombre>" + re.escape(nombre) + r")",
+        re.IGNORECASE,
+    )
+    hallazgos: list[str] = []
+    for match in patron.finditer(fragmento):
+        apellido = match.group("apellido")
+        if apellido != apellido.upper():
+            continue
+        if _normalizar_texto(apellido) in TOKENS_NO_APELLIDO_RECUPERABLE:
+            continue
+        nombre_completo = fragmento[match.start("apellido"):match.end("nombre")]
+        if not _identificador_local_despues_nombre(fragmento, nombre_completo):
+            continue
+        hallazgos.append(nombre_completo)
+    unicos = list(dict.fromkeys(hallazgos))
+    return unicos[0] if len(unicos) == 1 else None
+
+
+def _recuperar_token_antes_nombre_sin_coma(fragmento: str, nombre: str) -> str | None:
+    """Recuperacion mas estricta para APELLIDO NOMBRE sin coma."""
+    if not fragmento or not nombre:
+        return None
+    patron = re.compile(
+        r"(?<![\w])(?P<prefijo>[A-ZÁÉÍÓÚÜÑ]{2,})\s+"
+        r"(?P<nombre>" + re.escape(nombre) + r")",
+        re.IGNORECASE,
+    )
+    hallazgos: list[str] = []
+    for match in patron.finditer(fragmento):
+        prefijo = match.group("prefijo")
+        if prefijo != prefijo.upper():
+            continue
+        if _normalizar_texto(prefijo) in TOKENS_NO_APELLIDO_RECUPERABLE:
+            continue
+        nombre_completo = fragmento[match.start("prefijo"):match.end("nombre")]
+        if not _identificador_local_despues_nombre(fragmento, nombre_completo):
+            continue
+        hallazgos.append(nombre_completo)
+    unicos = list(dict.fromkeys(hallazgos))
+    return unicos[0] if len(unicos) == 1 else None
+
+
+def _recuperar_identificador_local(
+    fragmento: str,
+    nombre: str,
+    dni_actual: str,
+    cuit_actual: str,
+) -> dict[str, Any]:
+    """Enriquece un candidato existente; nunca crea una identidad desde cero."""
+    salida: dict[str, Any] = {
+        "dni": dni_actual,
+        "cuit_cuil": cuit_actual,
+        "dni_recuperado": False,
+        "cuit_cuil_recuperado": False,
+        "etiqueta": "",
+        "metodo": "",
+        "bloqueada": "",
+    }
+    encontrado = _identificador_local_despues_nombre(fragmento, nombre)
+    if not encontrado:
+        return salida
+    salida["etiqueta"] = encontrado["etiqueta"]
+    valor = encontrado["valor"]
+    tipo = encontrado["tipo"]
+    if not tipo:
+        salida["bloqueada"] = "etiqueta_identificador_incompatible"
+        return salida
+    if tipo == "dni" and not dni_actual:
+        salida["dni"] = valor
+        salida["dni_recuperado"] = True
+        salida["metodo"] = "dni_local_adyacente"
+    elif tipo == "cuit_cuil" and not cuit_actual:
+        salida["cuit_cuil"] = valor
+        salida["cuit_cuil_recuperado"] = True
+        salida["metodo"] = "cuit_cuil_local_adyacente"
+    return salida
+
+
+def _identificador_cerca_nombre(evidencia: Evidencia) -> bool:
+    """Comprueba asociacion local; no reescribe identificadores."""
+    encontrado = _identificador_local_despues_nombre(
+        evidencia.fragmento,
+        evidencia.nombre,
+    )
+    if not encontrado or not encontrado["tipo"]:
+        return False
+    valor = _normalizar_identificador(encontrado["valor"])
+    if encontrado["tipo"] == "dni":
+        return bool(evidencia.dni) and valor == _normalizar_identificador(evidencia.dni)
+    if encontrado["tipo"] == "cuit_cuil":
+        return bool(evidencia.cuit_cuil) and valor == _normalizar_identificador(evidencia.cuit_cuil)
+    return False
+
+
+# ============================================================
 # CONTEXTO
 # ============================================================
 
@@ -1318,168 +1547,147 @@ def _extraer_evidencias_documento(
 
     evidencias: list[Evidencia] = []
 
-    for resultado in (
-        documento.get(
-            "resultados",
-            [],
-        )
-        or []
-    ):
+    for resultado in (documento.get("resultados", []) or []):
+        fragmento = _texto_seguro(resultado.get("fragmento"))
 
-        fragmento = _texto_seguro(
-            resultado.get(
-                "fragmento"
-            )
-        )
-
-        for candidate in (
-            resultado.get(
-                "candidates",
-                [],
-            )
-            or []
-        ):
-
-            nombre = _texto_seguro(
-                candidate.get(
-                    "nombre_embargado"
-                )
-                or candidate.get(
-                    "nombre"
-                )
+        for candidate in (resultado.get("candidates", []) or []):
+            # Ancla obligatoria de GLiNER: nunca se crea una persona desde regex.
+            nombre_original = _texto_seguro(
+                candidate.get("nombre_embargado")
+                or candidate.get("nombre")
             )
 
-            if not _nombre_es_util(
-                nombre
-            ):
+            if not _nombre_es_util(nombre_original):
                 continue
 
-            start = candidate.get(
-                "nombre_embargado_span_inicio"
+            dni_original = _texto_seguro(
+                candidate.get("dni_embargado")
+                or candidate.get("dni")
+            )
+            cuit_original = _texto_seguro(
+                candidate.get("cuit_cuil_embargado")
+                or candidate.get("cuil_cuit")
             )
 
-            if start is None:
-                start = candidate.get(
-                    "nombre_span_inicio"
-                )
+            nombre = nombre_original
+            nombre_recuperado = False
+            metodos_recuperacion: list[str] = []
 
-            end = candidate.get(
-                "nombre_embargado_span_fin"
+            # No ampliar candidatos de un solo token. Esos casos son
+            # demasiado ambiguos y ya tienen tratamiento de suficiencia.
+            if len(_tokens_nombre(nombre_original)) >= 2:
+                nombre_con_apellido = _recuperar_apellido_antes_nombre(
+                    fragmento,
+                    nombre,
+                )
+                if nombre_con_apellido:
+                    nombre = nombre_con_apellido
+                    nombre_recuperado = True
+                    metodos_recuperacion.append("apellido_antes_nombre")
+                else:
+                    nombre_sin_coma = _recuperar_token_antes_nombre_sin_coma(
+                        fragmento,
+                        nombre,
+                    )
+                    if nombre_sin_coma:
+                        nombre = nombre_sin_coma
+                        nombre_recuperado = True
+                        metodos_recuperacion.append(
+                            "token_anterior_literal_con_identificador"
+                        )
+
+            recuperacion_id = _recuperar_identificador_local(
+                fragmento=fragmento,
+                nombre=nombre,
+                dni_actual=dni_original,
+                cuit_actual=cuit_original,
             )
 
-            if end is None:
-                end = candidate.get(
-                    "nombre_span_fin"
-                )
+            # Para no fortalecer candidatos historicos que ya eran estables,
+            # la recuperacion de un identificador omitido se activa cuando:
+            #   a) el nombre tambien fue completado localmente, o
+            #   b) la etiqueta textual es mixta (DNI/CUIT, CUIT/DNI, etc.).
+            etiqueta_recuperada = _texto_seguro(recuperacion_id["etiqueta"])
+            etiqueta_mixta = (
+                _normalizar_etiqueta_identificador(etiqueta_recuperada)
+                == "mixto"
+            )
+            permitir_recuperacion_id = (
+                nombre_recuperado
+                or etiqueta_mixta
+            )
+
+            if not permitir_recuperacion_id:
+                recuperacion_id["dni"] = dni_original
+                recuperacion_id["cuit_cuil"] = cuit_original
+                recuperacion_id["dni_recuperado"] = False
+                recuperacion_id["cuit_cuil_recuperado"] = False
+                recuperacion_id["metodo"] = ""
+
+            dni = _texto_seguro(recuperacion_id["dni"])
+            cuit_cuil = _texto_seguro(recuperacion_id["cuit_cuil"])
+            if recuperacion_id["metodo"]:
+                metodos_recuperacion.append(recuperacion_id["metodo"])
+
+            # Si se amplio el nombre, los spans originales de GLiNER ya no
+            # representan la entidad completa y se recalculan por busqueda local.
+            start = None
+            end = None
+            if not nombre_recuperado:
+                start = candidate.get("nombre_embargado_span_inicio")
+                if start is None:
+                    start = candidate.get("nombre_span_inicio")
+                end = candidate.get("nombre_embargado_span_fin")
+                if end is None:
+                    end = candidate.get("nombre_span_fin")
 
             evidencia = Evidencia(
-                numero_archivo=_texto_seguro(
-                    documento.get(
-                        "numero_archivo"
-                    )
-                ),
-
-                id_documento=_texto_seguro(
-                    documento.get(
-                        "id"
-                    )
-                ),
-
-                contador_interno=_texto_seguro(
-                    resultado.get(
-                        "contador_interno"
-                    )
-                ),
-
-                palabra_clave=_texto_seguro(
-                    resultado.get(
-                        "palabra_clave"
-                    )
-                ),
-
-                categoria=_texto_seguro(
-                    resultado.get(
-                        "categoria"
-                    )
-                ),
-
+                numero_archivo=_texto_seguro(documento.get("numero_archivo")),
+                id_documento=_texto_seguro(documento.get("id")),
+                contador_interno=_texto_seguro(resultado.get("contador_interno")),
+                palabra_clave=_texto_seguro(resultado.get("palabra_clave")),
+                categoria=_texto_seguro(resultado.get("categoria")),
                 fragmento=fragmento,
-
                 nombre=nombre,
+                dni=dni,
+                cuit_cuil=cuit_cuil,
+                rol=_texto_seguro(candidate.get("rol_embargado")),
 
-                dni=_texto_seguro(
-                    candidate.get(
-                        "dni_embargado"
-                    )
-                    or candidate.get(
-                        "dni"
-                    )
-                ),
-
-                cuit_cuil=_texto_seguro(
-                    candidate.get(
-                        "cuit_cuil_embargado"
-                    )
-                    or candidate.get(
-                        "cuil_cuit"
-                    )
-                ),
-
-                rol=_texto_seguro(
-                    candidate.get(
-                        "rol_embargado"
-                    )
-                ),
+                nombre_original_gliner=(nombre_original if nombre_recuperado else ""),
+                dni_original_gliner=(dni_original if recuperacion_id["dni_recuperado"] else ""),
+                cuit_cuil_original_gliner=(cuit_original if recuperacion_id["cuit_cuil_recuperado"] else ""),
+                nombre_recuperado=nombre_recuperado,
+                dni_recuperado=bool(recuperacion_id["dni_recuperado"]),
+                cuit_cuil_recuperado=bool(recuperacion_id["cuit_cuil_recuperado"]),
+                metodos_recuperacion=metodos_recuperacion,
+                etiqueta_identificador_original=_texto_seguro(recuperacion_id["etiqueta"]),
+                recuperacion_bloqueada_motivo=_texto_seguro(recuperacion_id["bloqueada"]),
 
                 nombre_confidence=(
-                    candidate.get(
-                        "nombre_embargado_confidence"
-                    )
-                    or candidate.get(
-                        "nombre_confidence"
-                    )
+                    candidate.get("nombre_embargado_confidence")
+                    or candidate.get("nombre_confidence")
                 ),
-
                 dni_confidence=(
-                    candidate.get(
-                        "dni_embargado_confidence"
-                    )
-                    or candidate.get(
-                        "dni_confidence"
-                    )
+                    candidate.get("dni_embargado_confidence")
+                    or candidate.get("dni_confidence")
                 ),
-
                 cuit_cuil_confidence=(
-                    candidate.get(
-                        "cuit_cuil_embargado_confidence"
-                    )
-                    or candidate.get(
-                        "cuil_cuit_confidence"
-                    )
+                    candidate.get("cuit_cuil_embargado_confidence")
+                    or candidate.get("cuil_cuit_confidence")
                 ),
-
-                rol_confidence=(
-                    candidate.get(
-                        "rol_embargado_confidence"
-                    )
-                ),
-
+                rol_confidence=candidate.get("rol_embargado_confidence"),
                 nombre_span_inicio=start,
                 nombre_span_fin=end,
-
                 contexto_local=_extraer_contexto_local(
                     fragmento,
                     nombre,
                     start,
                     end,
                 ),
-
                 tipo_entrada="fragmento",
             )
 
-            evidencias.append(
-                evidencia
-            )
+            evidencias.append(evidencia)
 
     return evidencias
 
@@ -1708,43 +1916,32 @@ def _agrupar_evidencias(
 def _nombre_canonico(
     grupo: GrupoPersona,
 ) -> str:
+    """Prioriza variantes completas pero penaliza ruido administrativo."""
+    mejores: list[tuple[int, int, float, str]] = []
 
-    mejores: list[
-        tuple[int, float, str]
-    ] = []
-
-    for variante in (
-        grupo.variantes_nombre
-    ):
-
-        tokens = len(
-            _tokens_nombre(
-                variante
-            )
+    for variante in grupo.variantes_nombre:
+        tokens_lista = _tokens_nombre(variante)
+        tokens_admin = sum(
+            1
+            for token in tokens_lista
+            if token in TOKENS_ADMINISTRATIVOS_NOMBRE
         )
+        tokens_limpios = len(tokens_lista) - tokens_admin
 
         confidencias = [
             evidencia.nombre_confidence
-            for evidencia
-            in grupo.evidencias
+            for evidencia in grupo.evidencias
             if (
-                evidencia.nombre
-                == variante
-                and isinstance(
-                    evidencia.nombre_confidence,
-                    (int, float),
-                )
+                evidencia.nombre == variante
+                and isinstance(evidencia.nombre_confidence, (int, float))
             )
         ]
 
         mejores.append(
             (
-                tokens,
-                max(
-                    confidencias
-                )
-                if confidencias
-                else 0.0,
+                tokens_limpios,
+                -tokens_admin,
+                max(confidencias) if confidencias else 0.0,
                 variante,
             )
         )
@@ -1752,15 +1949,8 @@ def _nombre_canonico(
     if not mejores:
         return ""
 
-    mejores.sort(
-        reverse=True
-    )
-
-    return mejores[
-        0
-    ][
-        2
-    ]
+    mejores.sort(reverse=True)
+    return mejores[0][3]
 
 
 # ============================================================
@@ -2459,14 +2649,41 @@ def _serializar_evidencia(
         "nombre_detectado":
             evidencia.nombre,
 
+        "nombre_original_gliner":
+            evidencia.nombre_original_gliner,
+
         "dni_detectado":
             evidencia.dni,
+
+        "dni_original_gliner":
+            evidencia.dni_original_gliner,
 
         "cuit_cuil_detectado":
             evidencia.cuit_cuil,
 
+        "cuit_cuil_original_gliner":
+            evidencia.cuit_cuil_original_gliner,
+
         "rol_detectado":
             evidencia.rol,
+
+        "nombre_recuperado":
+            evidencia.nombre_recuperado,
+
+        "dni_recuperado":
+            evidencia.dni_recuperado,
+
+        "cuit_cuil_recuperado":
+            evidencia.cuit_cuil_recuperado,
+
+        "metodos_recuperacion":
+            list(evidencia.metodos_recuperacion),
+
+        "etiqueta_identificador_original":
+            evidencia.etiqueta_identificador_original,
+
+        "recuperacion_bloqueada_motivo":
+            evidencia.recuperacion_bloqueada_motivo,
 
         "nombre_confidence":
             evidencia.nombre_confidence,
@@ -2839,6 +3056,34 @@ def evaluar_suficiencia(
 
 
 # ============================================================
+# REVISION MANUAL EXPLICABLE
+# ============================================================
+
+def _generar_revision_manual(
+    conflictos_identificador: list[dict[str, Any]],
+) -> tuple[bool, list[dict[str, str]], str]:
+    """Agrega notas sin cambiar la semantica historica de revision."""
+    motivos: list[dict[str, str]] = []
+
+    if conflictos_identificador:
+        motivos.append({
+            "codigo": "conflicto_identificador",
+            "descripcion": (
+                "Se detectaron identidades incompatibles que comparten "
+                "un DNI o CUIT/CUIL. Revisar las asociaciones antes de "
+                "utilizar el resultado."
+            ),
+        })
+
+    requiere = bool(motivos)
+    descripcion = " ".join(
+        motivo["descripcion"]
+        for motivo in motivos
+    )
+    return requiere, motivos, descripcion
+
+
+# ============================================================
 # CONSOLIDAR DOCUMENTO
 # ============================================================
 
@@ -3026,6 +3271,14 @@ def consolidar_documento(
         )
     )
 
+    (
+        requiere_revision,
+        revision_manual_motivos,
+        revision_manual_descripcion,
+    ) = _generar_revision_manual(
+        conflictos
+    )
+
     return {
         "id":
             documento.get(
@@ -3092,9 +3345,13 @@ def consolidar_documento(
             grupos_descartados,
 
         "requiere_revision":
-            bool(
-                conflictos
-            ),
+            requiere_revision,
+
+        "revision_manual_motivos":
+            revision_manual_motivos,
+
+        "revision_manual_descripcion":
+            revision_manual_descripcion,
 
         "cantidad_conflictos_identificador":
             len(

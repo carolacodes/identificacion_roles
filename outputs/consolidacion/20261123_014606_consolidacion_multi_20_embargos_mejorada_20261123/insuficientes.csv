@@ -1,0 +1,5 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_embargados,indice_embargado,nombre_embargado,dni_embargado,cuit_cuil_embargado,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+1,789511,789511_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada | solo_candidatos_descartados,0,,,,,,,0,0,0,False,False,0
+7,790107,790107_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,1,NELSON DARÍO BRIZUELA,34.063.787,70330426959,titular,NELSON DARIO | NELSON DARÍO BRIZUELA,4,4,29.004,False,True,4
+7,790107,790107_1.pdf,RESUELTO_MULTIPLE,False,True,conflicto_identificador,2,2,MARIA XIMENA RODRIGUEZ COSTANTINO,34.063.787,70330426959,embargado,MARIA XIMENA RODRIGUEZ COSTANTINO | RODRIGUEZ CONSTANTINO MARIA XIMENA,2,2,15.354,False,True,4
+13,790131,790131_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_embargada,0,,,,,,,0,0,0,False,False,0

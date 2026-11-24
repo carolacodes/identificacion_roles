@@ -1,0 +1,38 @@
+﻿numero_archivo,id,nombre_documento,estado,suficiente,requiere_fallback_documento_completo,motivos_insuficiencia,cantidad_personas_objeto_oficio,indice_persona,nombre_persona,dni_persona,cuit_cuil_persona,roles_detectados,variantes_nombre,cantidad_fragmentos_soporte,cantidad_evidencias,score_total,identidad_inconsistente,requiere_revision,cantidad_conflictos_identificador
+1,788347,788347_1.pdf,RESUELTO,True,False,,1,1,Caledonia Argentina Compañía de Seguros SA,,3050003967-8,,Caledonia Argentina Compañía de Seguros SA,1,1,7.488,False,False,0
+2,789454,789454_1.pdf,RESUELTO,True,False,,1,1,"UNGAR, NORBERTO HORACIO",,20-10041809-7,,"UNGAR, NORBERTO HORACIO",1,1,6.259,False,False,0
+3,790063,790063_1.pdf,RESUELTO,True,False,,1,1,Marta Elisa PUGLIESE,4756818,27-04756818-3,causante,Marta Elisa PUGLIESE,2,2,24.817,False,False,0
+4,790072,790072_1.pdf,RESUELTO,True,False,,1,1,GONZALEZ DAVID AVELINO,33903621,,titular,GONZALEZ DAVID AVELINO,1,4,12.957,False,False,0
+5,790081,790081_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio | solo_candidatos_descartados | identidades_estructuradas_requieren_revision_manual,0,,,,,,,0,0,,,True,0
+6,790085,790085_1.pdf,RESUELTO,True,False,,1,1,"SORIA, MARÍA FERNANDA",,27-34953534-9,,"SORIA, MARÍA FERNANDA",1,1,8.919,False,False,0
+7,790089,790089_1.pdf,RESUELTO,True,False,,1,1,Martin Ignacio Galvan,39054617,,,Martin Ignacio Galvan,1,1,6.975,False,False,0
+8,790091,790091_1.pdf,RESUELTO,True,False,,1,1,Horacio Guillermo PÉREZ,22.513.908,,demandado,Horacio Guillermo PÉREZ,1,1,12.451,False,False,0
+9,790092,790092_1.pdf,RESUELTO,True,False,,1,1,Franco Eduardo Cárdenas,32.851.047,20-32851047-3,,Franco Eduardo Cárdenas,1,1,13.031,False,False,0
+10,790094,790094_1.pdf,RESUELTO,True,False,,1,1,Arcadio Samuel Hamil García,37433769,,,Arcadio Samuel Hamil García,1,1,6.918,False,False,0
+11,790097,790097_1.pdf,RESUELTO,True,False,,1,1,Sr. Romero Hector,34.472.193,,actor,Sr. Romero Hector,1,1,9.229,False,False,0
+12,790102,790102_1.pdf,RESUELTO,True,False,,1,1,ENDARA MARIANO ADRIÁN,38.804.970,20-38804970-8,,ENDARA MARIANO ADRIÁN,1,1,13.314,False,False,0
+13,790106,790106_1.pdf,RESUELTO,True,False,,1,1,NANCY SILVANA GRACIANO,27017871,27-27017871-0,,NANCY SILVANA GRACIANO,1,1,10.45,False,False,0
+14,790111,790111_1.pdf,RESUELTO,True,False,,1,1,Susana Esther Gigerey,44.379.117,,,Susana Esther Gigerey,1,1,8.411,False,False,0
+15,790114,790114_1.pdf,RESUELTO,True,False,,1,1,ARIAS MARIA BELEN,37.128.726,,demandada,ARIAS MARIA BELEN,1,1,7.92,False,False,0
+16,790115,790115_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio,0,,,,,,,0,0,,,True,0
+17,790122,790122_1.pdf,NO_RESUELTO,False,True,no_resuelto | sin_persona_objeto_oficio | solo_candidatos_descartados,0,,,,,,,0,0,,,True,0
+18,790129,790129_1.pdf,RESUELTO,True,False,,1,1,"LOPEZ, JOSE LEONARDO",30500719,,,"LOPEZ, JOSE LEONARDO",1,1,6.164,False,False,0
+19,790136,790136_1.pdf,RESUELTO,True,False,,1,1,ANDRADE NORA,18223729,,,ANDRADE NORA,1,1,11.356,False,False,0
+20,790138,790138_1.pdf,RESUELTO,True,False,,1,1,JUAN JOSE CESARIO,33.660.482,,,JUAN JOSE CESARIO,1,1,8.345,False,False,0
+21,780381,780381_1.pdf,RESUELTO,True,False,,1,1,Gabriela Karina Ledesma,,27417562260,,Gabriela Karina Ledesma,1,1,8.975,False,False,0
+22,780618,780618_1.pdf,RESUELTO,True,False,,1,1,Muñoz Marcos Damián,32.981.114,,demandado,Muñoz Marcos Damián,2,2,21.798,False,False,0
+23,780740,780740_1.pdf,RESUELTO,True,False,,1,1,LEANDRO ERAUSQUIN,34.753.007,,actor,LEANDRO ERAUSQUIN,1,1,9.417,False,False,0
+24,784519,784519_1.pdf,RESUELTO,True,False,,1,1,JUAN BELMAR SERRI,33.507.686,,,JUAN BELMAR SERRI,2,2,13.86,False,False,0
+25,784524,784524_1.pdf,RESUELTO,True,False,,1,1,Adrian Delgado,43.922.338,,titular,Adrian Delgado,1,1,9.854,False,False,0
+26,784528,784528_1.pdf,RESUELTO,True,False,,1,1,MUÑOZ JOAQUIN DANIEL,40.948.975,20-40948975-4,titular,MUÑOZ JOAQUIN DANIEL,1,1,16.291,False,False,0
+27,784530,784530_1.pdf,RESUELTO,True,False,,1,1,Rodrigo Exequiel Diaz,34.087.361,20-34087361-1,,Rodrigo Exequiel Diaz,1,1,13.41,False,False,0
+28,784536,784536_1.pdf,RESUELTO,True,False,,1,1,Tiago Alexander Méndez Mourelle,44.939.190,,,Tiago Alexander Méndez Mourelle,1,1,6.846,False,False,0
+29,784537,784537_1.pdf,RESUELTO,False,True,persona_1:evidencia_unica_debil | dni_ocr_malformado_revision_manual,1,1,Pedro Pablo Sangoy,,,,Pedro Pablo Sangoy,1,1,6.915,False,True,0
+30,784558,784558_1.pdf,RESUELTO,True,False,,1,1,SANDRA DEL CARMEN CORDOBA,18.593.084,,,SANDRA DEL CARMEN CORDOBA,1,1,8.197,False,False,0
+31,784560,784560_1.pdf,RESUELTO,True,False,,1,1,Nancy Edith Difabio,18.516.749,,titular,Nancy Edith Difabio,1,1,9.732,False,False,0
+32,784570,784570_1.pdf,RESUELTO,True,False,,1,1,Federico Martin Durbas,31.637.995,,demandada,FEDERICO MARTIN DURBAS | Federico Martin Durbas,2,2,17.799,False,False,0
+33,784585,784585_1.pdf,RESUELTO,True,False,,1,1,Carlos José MENDOZA HERNÁNDEZ,94.478.301,,,Carlos José MENDOZA HERNÁNDEZ,1,1,6.072,False,False,0
+34,784598,784598_1.pdf,RESUELTO,True,False,,1,1,Alejandro Bruno PINTO APARICIO,16.759.558,20-16759558-9,actor,Alejandro Bruno PINTO APARICIO,1,1,14.788,False,False,0
+35,784617,784617_1.pdf,RESUELTO,True,False,,1,1,LAGOMARCINO ZORRILLA ALEJANDRO LIONEL,40736446,,,LAGOMARCINO ZORRILLA ALEJANDRO LIONEL,1,1,8.062,False,False,0
+36,784627,784627_1.pdf,RESUELTO,True,False,,1,1,AGUSTIN FERREYRA,39261503,,causante,AGUSTIN FERREYRA,2,2,19.904,False,False,0
+37,784633,784633_1.pdf,RESUELTO,True,False,,1,1,Silvina Soledad Carita,27.694.948,,actora,SILVINA SOLEDAD CARITA | Silvina Soledad Carita,2,2,17.849,False,False,0

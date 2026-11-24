@@ -1,0 +1,428 @@
+[
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "candidatos_descartados",
+        "descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte."
+      },
+      {
+        "codigo": "identidades_estructuradas_pendientes",
+        "descripcion": "Se recuperaron campos identificatorios desde fragmentos estructurados; comprobar identidad y alcance del requerimiento."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte. Se recuperaron campos identificatorios desde fragmentos estructurados; comprobar identidad y alcance del requerimiento.",
+    "id": "790081",
+    "numero_archivo": "5",
+    "nombre_documento": "790081_1.pdf",
+    "texto_completo": "N° Issue: 619403\nANEXO DATOS PERSONALES - ID USUARIO - 316608679\nResultado 1:\n- Nombre: PIZZERIA - Apellido: NAPOLES - Tipo de Documento: CUIT - Número de documento: 20288024554 - Id: 316608679 - País: AR - Sitio: MLA - Apodo: NAPI399566220250728105840 - E-mail: pizzerianapolescongreso@gmail.com20250728105840 - CVU: None - Dirección: Av Rivadavia 1765 AR-C Zona Congreso ZIP.1033 - Ciudad: Zona Congreso - Provincia: AR-C - Teléfono principal: () 1143730279 - Teléfono alternativo: () - Cuenta de Mercado Pago: 1 - IP de creación: N/A - Código Postal: 1033 - Estado de la cuenta: deactivate - Fecha de registro: 2018-04-23 - Nombre empresa: Martin Ezequiel Farias - Calle: - Ciudad: - Provincia: Capital Federal - Zona: None - País: Argentina - Dirección de ventas: True - Dirección de envíos: True - Dirección de facturación: True - Dirección fiscal: True - Dirección de devolución de venta: True - Latitud: None - Longitud: None - Estado de la dirección: active\n1 de 2\n- Fecha de creación: 2023-10-26 13:43:53.797000 - Fecha de modificación: 2024-11-03 13:54:58.261000 - Saldo actual: 0.0 - Id empresa:\nFrancisco Javier Muñoz\n2 de 2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio",
+      "solo_candidatos_descartados",
+      "identidades_estructuradas_requieren_revision_manual"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_persona": "PIZZERIA",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [],
+        "roles_validados_fragmento": [],
+        "roles_originales_gliner": [],
+        "contradiccion_rol_gliner": false,
+        "variantes_nombre": [
+          "PIZZERIA"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "cantidad_evidencias_independientes": 1,
+        "score_total": 3.982,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cuit | doc",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "PIZZERIA",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9939688444137573,
+            "score_contextual": 0.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "ANEXO DATOS PERSONALES - ID USUARIO - 316608679\nResultado 1:\n- Nombre: PIZZERIA - Apellido: NAPOLES - Tipo de Documento: CUIT - Número de documento: 20288024554 - Id: 316608679",
+            "contexto_local": "ANEXO DATOS PERSONALES - ID USUARIO - 316608679\nResultado 1:\n- Nombre: PIZZERIA - Apellido: NAPOLES - Tipo de Documento: CUIT - Número de documento: 20288024554 - Id: 316608679"
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "nombre_no_valido"
+          ],
+          "detalle": {
+            "score_total": 3.982,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": false,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": false
+          }
+        }
+      }
+    ],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "identidades_recuperadas_revision_manual": [
+      {
+        "nombre_persona": "PIZZERIA NAPOLES",
+        "dni_persona": "",
+        "cuit_cuil_persona": "20288024554",
+        "tipo_identificador": "CUIT",
+        "tipo_identidad": "NO_DETERMINADO",
+        "estado_validacion_identidad": "REQUIERE_REVISION_MANUAL",
+        "origen_recuperacion": "campos_estructurados_en_fragmento",
+        "motivo_revision": "Registro de identidad recuperado; falta verificar el alcance del pedido y la naturaleza de la identidad",
+        "fragmentos_soporte": [
+          {
+            "contador_interno": "1",
+            "fragmento": "ANEXO DATOS PERSONALES - ID USUARIO - 316608679\nResultado 1:\n- Nombre: PIZZERIA - Apellido: NAPOLES - Tipo de Documento: CUIT - Número de documento: 20288024554 - Id: 316608679"
+          }
+        ]
+      }
+    ],
+    "cantidad_identidades_recuperadas_revision_manual": 1,
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "sin_fragmentos_para_gliner",
+        "descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación."
+      },
+      {
+        "codigo": "verificar_objeto_del_pedido",
+        "descripcion": "Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes."
+      }
+    ],
+    "revision_manual_descripcion": "No se generaron fragmentos de entrada para GLiNER2. La ausencia de predicciones no demuestra que el oficio carezca de personas; revisar el texto completo y el proceso de fragmentación. Determinar manualmente si el oficio requiere datos de personas identificadas o si solicita otra información, como autenticidad de comprobantes.",
+    "id": "790115",
+    "numero_archivo": "16",
+    "nombre_documento": "790115_1.pdf",
+    "texto_completo": "MINISTERIO PÚBLICO RÍO NEGRO\nOficina de Investigación en Telecomunicaciones\nOITEL NOTA NRO. 08293/26-GS\nViedma, 3 de noviembre de 2026\nSEÑORA RESPONSABLE AREA DE LEGALES Y RELACIONES GUBERNAMENTALES MERCADO LIBRE S.R.L. S/D\nEn relación a los autos caratulados \"NN S/ ESTAFA\" (Legajo Nro. MPF-BA-04849-2026) que se tramita en 3RA CJ - FISCALIA Nº 1 BARILOCHE, se ha resuelto librar el presente a fin de solicitarle:\n1. Remita todos los datos de registro y resumen de movimientos de la cuenta asociada al ID SELLLER: 2608655560, APODO SELLER: TXOUSDBIGSELLER50432, NOMBRE SELLER: Treasury IT Collector LatamPix XO USD Big Seller, siendo el período de interés el día 11/09/2026.\nAsimismo, solicito se remita lo requerido a la siguiente dirección de correo electrónico: oitel@jusrionegro.gov.ar citando Legajo. MPF-BA-04849-2026 y/o nota de encabezamiento 08293/26-GS.\nSaludo a usted atentamente.\nFirmado digitalmente por BAFFONI David Andres Fecha y hora: 03.11.2026 11:00:56",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 0,
+    "cantidad_grupos_descartados": 0,
+    "grupos_descartados": [],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "identidades_recuperadas_revision_manual": [],
+    "cantidad_identidades_recuperadas_revision_manual": 0,
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "candidatos_descartados",
+        "descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte."
+      }
+    ],
+    "revision_manual_descripcion": "GLiNER2 detectó candidatos, pero la consolidación no aceptó ninguno. Revisar el pedido principal, los identificadores y los motivos individuales de descarte.",
+    "id": "790122",
+    "numero_archivo": "17",
+    "nombre_documento": "790122_1.pdf",
+    "texto_completo": "MINISTERIO PÚBLICO FISCAL PROCURACIÓN GENERAL DE LA NACIÓN REPÚBLICA ARGENTINA\nBuenos Aires, 12 de noviembre de 2026.\nAL REPRESENTANTE LEGAL DE MERCADO LIBRE SRL S / D\nEn mi carácter de Auxiliar Fiscal de la Fiscalía Nacional en lo Criminal y Correccional N° 6 –sita en Cerrito 268 5° piso (C.P. 1010 – Tel. 4356-6332/33, correo electrónico fiscr6-nac@mpf.gov.ar)-, me dirijo a Ud. en el marco del caso Coirón 189093/2026 caratulado “N.N. s/ESTAFA DENUNCIANTE: RODRIGUEZ, MAXIMILIANO”, a fin de requerirle que aporte todos los datos de titularidad que posea acerca de la cuenta a nombre de su cliente Mariano Fabián Ferro, CVU 00000310049970799080, alias “mariano.okk”.\nAsimismo, que informe la totalidad de los movimientos que la cuenta registre el día 15 de octubre de 2026, con acabado detalle, incluyendo fecha y hora de las transacciones, IP, logs de conexión y cuentas de destino.\nAdemás, se estima de utilidad que indique qué información y documentación fue solicitada para la apertura de la misma y que remita copias de todo ello y de las fotografías enviadas para la verificación antropométrica.\nFinalmente, deberá indicar si el cliente realizó desconocimientos de movimientos correspondientes a esa fecha y aportar todas las actuaciones labradas al respecto, indicando la respuesta que se les brindó, junto con las investigaciones internas que se hayan instruido.\nSin más, saluda a usted muy atte.\nUSTARRO Z Cecilia\nFirmado digitalmente por USTARROZ Cecilia Fecha: 2026.11.13 13:31:11 -03'00'",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "NO_RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "no_resuelto",
+      "sin_persona_objeto_oficio",
+      "solo_candidatos_descartados"
+    ],
+    "cantidad_personas_objeto_oficio": 0,
+    "personas_objeto_oficio": [],
+    "cantidad_grupos_candidatos": 1,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_persona": "Mariano Fabián Ferro",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [
+          "titular"
+        ],
+        "roles_validados_fragmento": [],
+        "roles_originales_gliner": [
+          "titular"
+        ],
+        "contradiccion_rol_gliner": false,
+        "variantes_nombre": [
+          "Mariano Fabián Ferro"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "cantidad_evidencias_independientes": 1,
+        "score_total": 6.885,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cliente",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Mariano Fabián Ferro",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "titular",
+            "nombre_confidence": 0.9615330100059509,
+            "score_contextual": 1.5,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "aporte todos los datos de titularidad que posea acerca de la cuenta a nombre de su cliente Mariano Fabián Ferro, CVU 00000310049970799080, alias “mariano.okk”.",
+            "contexto_local": "aporte todos los datos de titularidad que posea acerca de la cuenta a nombre de su cliente Mariano Fabián Ferro, CVU 00000310049970799080, alias “mariano.okk”."
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "sin_identificador_verificable"
+          ],
+          "detalle": {
+            "score_total": 6.885,
+            "total_grupos_documento": 1,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": true,
+              "roles_fuertes_detectados": [
+                "titular"
+              ],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": false,
+              "requerimiento_explicito": false
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true
+          }
+        }
+      }
+    ],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "identidades_recuperadas_revision_manual": [],
+    "cantidad_identidades_recuperadas_revision_manual": 0,
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  },
+  {
+    "revision_manual_motivos": [
+      {
+        "codigo": "dni_ocr_malformado",
+        "descripcion": "Se detectó la persona objeto del oficio, pero el DNI textual tiene 9 dígitos. Identidad provisional: comprobar el DNI contra el documento original; no enviar el identificador a producción sin validación."
+      }
+    ],
+    "revision_manual_descripcion": "Se detectó la persona objeto del oficio, pero el DNI textual tiene 9 dígitos. Identidad provisional: comprobar el DNI contra el documento original; no enviar el identificador a producción sin validación.",
+    "id": "784537",
+    "numero_archivo": "29",
+    "nombre_documento": "784537_1.pdf",
+    "texto_completo": "MPA MINISTERIO PÚBLICO DE LA >ACUSACIÓN\nOFICIO\nEsperanza, 05 de Octubre 2026\nDEPTO. LEGALES\nMERCADO LIBRE.\nOBJETO: Informar respecto cuenta virtual que recibió el dinero de la victima, cliente de esa entidad financiera.\nQuien suscribe, Dr. BENITEZ, Alejandro, Fiscal de la Unidad Fiscal Esperanza – Ministerio Público de la Acusación de la Provincia de Santa Fe, dirige a Ud. El presente, Oficio en el marco de las actuaciones registradas como CUIJ Nº 21-09758331-2, “...S/DENUNCIA P/ESTAFA...”, del cual resultara Denunciante: Bertotti Delia Marta DNI: 4.275.847 a fin de solicitarle tenga a bien informar por su intermedio y a través de la sucursal correspondiente, lo siguiente, relacionado a cuenta:\nSolicito a Ud. tenga a bien Informar datos de movimientos de la cuenta de Pedro Pablo Sangoy DNI:26.556.6320, CLIENTE DE ESA ENTIDAD.\nLo solicitado es en virtud de los términos del artículo que a continuación se transcribe: ARTÍCULO 4. Ley 13.013 - Potestades. El Ministerio Público de la Acusación, en ejercicio de sus funciones, podrá pedir la colaboración de cualquier funcionario y autoridad administrativa del Estado y de las personas privadas físicas o jurídicas, estando éstos obligados a prestarla sin demora y a proporcionar los documentos e informes que le sean requeridos, dentro de los límites legales.-\nA los fines de establecer el autor del hecho, se solicita a Ud. remita a esta instancia la siguiente:\n• Remitir e informar Movimientos registrados en la Cuenta del involucrado, a nombre de Pedro Pablo Sangoy, más precisamente dos transferencias una por un monto de $534.950 y la otra por un monto de $1.069.900, movimiento que tuvo lugar en fecha 04- 06-2026.-\n• Informe DEBITOS - TRANSFERENCIAS y/o TRANSACTIONS que registra la Cuenta bancaria de la Victima, informando datos de titularidad (Nombre y Apellido, DNI, Do- micilio, Teléfono y otros) de las Entidades Bancarias, Financieras y/o Comerciales, de destino.-\nMinisterio Público de la Acusación Provincia de Santa Fe Firmado por: Benitez, Alejandro Franco 06/10/2026 11:15\nFiscalía Regional 1 Unidad Fiscal Moreno 1987 fr1lascolonias@mpa.santafe.gov.ar Esperanza +54 3496 426185 mpa.santafe.gov.ar\nMPA MINISTERIO PÚBLICO DE LA >ACUSACIÓN\n• Sistema utilizado para realizar dichos movimientos, ya sea mediante Pagina Web, Aplicación, Internet, etc. –\n• Sistema utilizado para retirar el dinero, en caso de que fuera por ATM, informar ubicación del cajero automático, como así remitir registros filmicos de dichas extracciones.-\n• Situación actual de la cuenta a la fecha del presente hecho (04/06/26) informada (ACTIVA- BAJA) y motivos de la misma. -\nEl presente pedido obedece a I.P.P, en relación a CUIJ 21-09758331-2 por tareas investigativas realizadas por personal de PDI a mi cargo. -\nSe ruega a usted tenga a bien otorgarle a la presente carácter de muy urgente despacho, adelantando las respuestas a los correos electrónicos: abenitez@mpa.santafe.gov.ar y pdilascolonias@santafe.gov.ar y por correo postal a calle Moreno N° 1987 de la ciudad de Esperanza (C.P 3080) provincia de Santa Fe.-\nSin otro particular, saluda a Ud. Muy atentamente.-\nFiscalía Regional 1 Unidad Fiscal Moreno 1987 fr1lascolonias@mpa.santafe.gov.ar Esperanza +54 3496 426185 mpa.santafe.gov.ar\n2",
+    "tipo_consolidacion": "fragmentos",
+    "estado": "RESUELTO",
+    "suficiente": false,
+    "requiere_fallback_documento_completo": true,
+    "motivos_insuficiencia": [
+      "persona_1:evidencia_unica_debil",
+      "dni_ocr_malformado_revision_manual"
+    ],
+    "cantidad_personas_objeto_oficio": 1,
+    "personas_objeto_oficio": [
+      {
+        "nombre_persona": "Pedro Pablo Sangoy",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [],
+        "roles_validados_fragmento": [],
+        "roles_originales_gliner": [],
+        "contradiccion_rol_gliner": false,
+        "variantes_nombre": [
+          "Pedro Pablo Sangoy"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "cantidad_evidencias_independientes": 1,
+        "score_total": 6.915,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "2",
+            "palabra_clave": "dni | cliente",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "Pedro Pablo Sangoy",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.9717752933502197,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "Solicito a Ud. tenga a bien Informar datos de movimientos de la cuenta de Pedro Pablo Sangoy DNI:26.556.6320, CLIENTE DE ESA ENTIDAD.",
+            "contexto_local": "Solicito a Ud. tenga a bien Informar datos de movimientos de la cuenta de Pedro Pablo Sangoy DNI:26.556.6320, CLIENTE DE ESA ENTIDAD."
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": true,
+          "motivos": [
+            "aceptacion_provisional_dni_ocr_malformado"
+          ],
+          "detalle": {
+            "score_total": 6.915,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1,
+              "identificador_local_verificado": false,
+              "requerimiento_explicito": false
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": true,
+            "dni_ocr_original_no_validado": "26.556.6320",
+            "requiere_revision_manual": true
+          }
+        },
+        "identificador_pendiente_validacion": "26.556.6320",
+        "estado_validacion_identidad": "PROVISIONAL_REQUIERE_REVISION_MANUAL"
+      }
+    ],
+    "cantidad_grupos_candidatos": 2,
+    "cantidad_grupos_descartados": 1,
+    "grupos_descartados": [
+      {
+        "nombre_persona": "victima",
+        "dni_persona": "",
+        "cuit_cuil_persona": "",
+        "roles_detectados": [],
+        "roles_validados_fragmento": [],
+        "roles_originales_gliner": [],
+        "contradiccion_rol_gliner": false,
+        "variantes_nombre": [
+          "victima"
+        ],
+        "cantidad_fragmentos_soporte": 1,
+        "cantidad_evidencias": 1,
+        "cantidad_evidencias_independientes": 1,
+        "score_total": 5.73,
+        "identidad_inconsistente": false,
+        "evidencias": [
+          {
+            "tipo_entrada": "fragmento",
+            "contador_interno": "1",
+            "palabra_clave": "cliente",
+            "categoria": "Datos_Embargado",
+            "nombre_detectado": "victima",
+            "origen_recuperacion_v12": null,
+            "dni_detectado": "",
+            "dni_corregido_ocr": null,
+            "motivo_correccion_ocr": null,
+            "cuit_cuil_detectado": "",
+            "rol_detectado": "",
+            "nombre_confidence": 0.5765354037284851,
+            "score_contextual": 3.0,
+            "tercero_fuerte": false,
+            "motivo_tercero": "",
+            "fragmento": "OBJETO: Informar respecto cuenta virtual que recibió el dinero de la victima, cliente de esa entidad financiera.",
+            "contexto_local": "OBJETO: Informar respecto cuenta virtual que recibió el dinero de la victima, cliente de esa entidad financiera."
+          }
+        ],
+        "decision_consolidacion": {
+          "aceptado": false,
+          "motivos": [
+            "nombre_no_valido"
+          ],
+          "detalle": {
+            "score_total": 5.73,
+            "total_grupos_documento": 2,
+            "senales_consolidacion": {
+              "rol_juridico_fuerte": false,
+              "roles_fuertes_detectados": [],
+              "rol_juridico_apoyo": false,
+              "roles_apoyo_detectados": [],
+              "tiene_identificador": false,
+              "contexto_juridico_positivo": true,
+              "repeticion": false,
+              "cantidad_fragmentos": 1
+            },
+            "tercero_fuerte": false,
+            "contexto_negativo_fuerte": false,
+            "identidad_inconsistente": false,
+            "nombre_estructura_valida": false
+          }
+        }
+      }
+    ],
+    "cantidad_candidatos_incompletos": 0,
+    "candidatos_incompletos": [],
+    "identidades_recuperadas_revision_manual": [],
+    "cantidad_identidades_recuperadas_revision_manual": 0,
+    "requiere_revision": true,
+    "cantidad_conflictos_identificador": 0,
+    "conflictos_identificador": []
+  }
+]
